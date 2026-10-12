@@ -1,0 +1,774 @@
+1
+00:00:00,176 --> 00:00:04,825
+Pi is a great AI agent, coding agent, but you can do all kinds of stuff with it.
+Pi 是一個很棒的人工智慧代理、編碼代理，但你可以用它做各種各樣的事情。
+
+2
+00:00:04,905 --> 00:00:08,544
+And combined with Claude Code, it's been my daily driver for the last few months.
+與 Claude Code 結合，它成為我過去幾個月的日常驅動程式。
+
+3
+00:00:09,249 --> 00:00:10,756
+I actually prefer Pi though.
+但實際上我更喜歡 Pi。
+
+4
+00:00:11,076 --> 00:00:16,190
+I use Claude Code for the Anthropic subscription, but Pi is amazing because it's extremely
+我使用 Claude Code 訂閱 Anthropic，但 Pi 很棒，因為它非常有用
+
+5
+00:00:16,222 --> 00:00:17,793
+minimal and you can make it yours.
+最小，你可以把它變成你的。
+
+6
+00:00:18,210 --> 00:00:21,336
+And these 2 things together are just chef's kiss.
+這兩件事加在一起就是廚師之吻。
+
+7
+00:00:21,993 --> 00:00:25,984
+Now, the minimalism is something the Claude Code team also recently discovered that it's
+現在，克勞德程式碼團隊最近也發現極簡主義
+
+8
+00:00:25,984 --> 00:00:26,449
+quite good.
+相當不錯。
+
+9
+00:00:26,882 --> 00:00:32,429
+They removed over 80% of Claude Code's system prompt and Pi, for example, is even way
+他們刪除了 Claude Code 超過 80% 的系統提示符，例如 Pi，甚至是這樣
+
+10
+00:00:32,429 --> 00:00:33,070
+more minimal.
+更最小。
+
+11
+00:00:33,391 --> 00:00:38,651
+It only has 4 tools out of the box for reading, writing, editing files, and the bash
+它只有 4 個開箱即用的工具，用於讀取、寫入、編輯檔案和 bash
+
+12
+00:00:38,667 --> 00:00:42,805
+tool for running all kinds of commands or executing all kinds of programs, which is of
+運行各種命令或執行各種程序的工具，其
+
+13
+00:00:42,837 --> 00:00:43,847
+course the killer tool.
+當然是殺手級工具。
+
+14
+00:00:44,264 --> 00:00:47,359
+Most agents have that, or most general agents, I should say.
+我應該說，大多數特工，或者說大多數特工，都有這個。
+
+15
+00:00:48,193 --> 00:00:54,287
+And its system prompt and tool definitions combined come out in below
+其係統提示和工具定義組合如下
+
+16
+00:00:54,383 --> 00:00:55,795
+1,000 tokens.
+1,000 個代幣。
+
+17
+00:00:56,148 --> 00:01:01,521
+So that's a very low amount of tokens you're paying for because of course that is loaded
+所以你所支付的代幣數量非常少，因為當然已經加載了
+
+18
+00:01:01,521 --> 00:01:04,745
+into every context window of every agent session you start.
+進入您啟動的每個代理會話的每個上下文視窗。
+
+19
+00:01:04,793 --> 00:01:06,767
+So fewer is better,
+所以越少越好
+
+20
+00:01:08,082 --> 00:01:14,434
+less is more, both from a pricing standpoint, but also it's been shown over and over
+從定價的角度來看，少即是多，而且這一點也被反覆證明
+
+21
+00:01:14,434 --> 00:01:19,006
+again that if you put a lot of potentially irrelevant information into your agent context
+再次強調，如果您將大量可能不相關的資訊放入代理上下文中
+
+22
+00:01:19,006 --> 00:01:21,076
+window, they tend to perform worse.
+窗口期，他們的表現往往會更差。
+
+23
+00:01:21,236 --> 00:01:27,718
+So this is great on its own, but it becomes amazing if you combine that with the extensibility
+因此，這本身就很棒，但如果將其與可擴展性結合起來，就會變得令人驚奇
+
+24
+00:01:27,734 --> 00:01:28,504
+features of Pi.
+圓周率的特性。
+
+25
+00:01:28,873 --> 00:01:33,527
+Now, as you can tell, I'm a big fan of Pi, not just because of the extensibility, also
+現在，如你所知，我是 Pi 的忠實粉絲，不僅因為它的可擴展性，還因為它的可擴展性。
+
+26
+00:01:33,527 --> 00:01:36,753
+because of its tree command, for example, and many other things.
+例如，因為它的樹命令以及許多其他東西。
+
+27
+00:01:36,817 --> 00:01:40,701
+And that's why I created a complete course, link below, where I teach you all about Pi,
+這就是為什麼我創建了一個完整的課程，連結如下，我在那裡教你所有關於 Pi 的知識，
+
+28
+00:01:40,894 --> 00:01:45,307
+its main configuration options, how to run it in a container if you want to, because
+它的主要配置選項，如果你願意的話如何在容器中運行它，因為
+
+29
+00:01:45,307 --> 00:01:46,623
+out of the box it does not.
+開箱即用，但事實並非如此。
+
+30
+00:01:46,687 --> 00:01:52,753
+We'll dive into its various built-in commands and we'll dive into its extensibility and
+我們將深入研究它的各種內建命令，我們將深入研究它的可擴展性和
+
+31
+00:01:52,866 --> 00:01:53,540
+what you can do there.
+你可以在那裡做什麼。
+
+32
+00:01:53,732 --> 00:01:54,519
+It's really great.
+真的很棒。
+
+33
+00:01:54,952 --> 00:01:58,020
+The course and Pi, so link below if you're interested.
+課程和 Pi，如果您有興趣，請點擊下面的連結。
+
+34
+00:01:58,647 --> 00:02:05,602
+And Pi, as mentioned, is amazing because of its extensibility most of all, combined with
+如同前面所提到的，Pi 之所以令人驚奇，最重要的是它的可擴展性，再加上
+
+35
+00:02:05,698 --> 00:02:06,340
+that minimalism.
+那種極簡主義。
+
+36
+00:02:06,501 --> 00:02:10,581
+Now regarding extensibility, you of course have agents, MD, and skills like in all those
+現在關於可擴展性，你當然有代理、MD 和所有這些方面的技能
+
+37
+00:02:10,613 --> 00:02:15,962
+modern general agents, and you can have global and local agents, MD, and skills depending
+現代總代理，您可以根據需要擁有全球和本地代理、MD和技能
+
+38
+00:02:16,058 --> 00:02:20,636
+on if you have global or project-specific instructions or capabilities, but it's the
+如果您有全域或特定於項目的指令或能力，但這是
+
+39
+00:02:20,636 --> 00:02:23,751
+extensions feature that makes Pi Amazing.
+擴充功能讓 Pi 變得神奇。
+
+40
+00:02:24,650 --> 00:02:31,580
+Because Pi has a rich extensions API and the Pi agent is aware of its
+因為Pi有豐富的擴充API並且Pi代理知道它
+
+41
+00:02:31,644 --> 00:02:35,430
+documentation, it's not loaded out of the box, but it knows where to find it.
+文檔，它不是開箱即用的，但它知道在哪裡可以找到它。
+
+42
+00:02:35,655 --> 00:02:39,120
+And so you can ask Pi to improve itself and we'll do that in just a second.
+因此，您可以要求 Pi 自我改進，我們很快就會做到這一點。
+
+43
+00:02:39,650 --> 00:02:42,505
+And then it can tap into this rich extensions API.
+然後它可以利用這個豐富的擴充 API。
+
+44
+00:02:42,633 --> 00:02:47,077
+And of course you could also build extensions on your own, the old school way, writing
+當然，您也可以按照傳統的方式自己建立擴展，編寫
+
+45
+00:02:47,125 --> 00:02:52,333
+code, but Pi can really self- improve because it is aware of the docs.
+程式碼，但 Pi 確實可以自我改進，因為它了解文件。
+
+46
+00:02:52,397 --> 00:02:56,306
+It can build its own extensions, extensions for itself, which is amazing.
+它可以建立自己的擴展，為自己擴展，這是令人驚奇的。
+
+47
+00:02:56,644 --> 00:02:57,963
+And those extensions can do a lot.
+這些擴充可以做很多事情。
+
+48
+00:02:58,189 --> 00:02:59,222
+They can tweak the UI,
+他們可以調整使用者介面，
+
+49
+00:03:00,960 --> 00:03:03,066
+they can register new tools.
+他們可以註冊新工具。
+
+50
+00:03:03,261 --> 00:03:08,301
+So if you want more than the 4 tools for a specific project or in general, maybe you
+因此，如果您想要針對特定項目或一般情況使用 4 種以上的工具，也許您
+
+51
+00:03:08,431 --> 00:03:13,265
+can build an extension or ask Py to build an extension that registers new tools.
+可以建立一個擴充或要求 Py 建構一個註冊新工具的擴充。
+
+52
+00:03:13,927 --> 00:03:19,206
+You can register commands, slash commands that do new things, invoke tools or do something
+您可以註冊命令、執行新操作的斜線命令、呼叫工具或執行某些操作
+
+53
+00:03:19,206 --> 00:03:19,287
+else.
+別的。
+
+54
+00:03:20,863 --> 00:03:21,376
+Way, way more.
+方式，更多。
+
+55
+00:03:21,649 --> 00:03:24,363
+You can do so much with those extensions.
+您可以使用這些擴充功能做很多事情。
+
+56
+00:03:24,877 --> 00:03:28,234
+Now, there also is a marketplace, so to say.
+現在，可以說也有一個市場。
+
+57
+00:03:28,490 --> 00:03:33,597
+It's free, where you find a lot of community-maintained packages, which are mostly extensions,
+它是免費的，您可以在其中找到許多社區維護的軟體包，其中大部分是擴展，
+
+58
+00:03:33,710 --> 00:03:34,962
+could also be skills or both.
+也可以是技能或兩者兼具。
+
+59
+00:03:35,556 --> 00:03:39,956
+And if you, for example, want subagents, which are not built into Pi, you can search
+例如，如果您想要未內建在 Pi 中的子代理，您可以搜尋
+
+60
+00:03:39,956 --> 00:03:44,662
+there and you'll find a trillion subagent extensions to browse, which you could install.
+在那裡，您將找到一萬億個可供瀏覽的子代理擴展，您可以安裝它們。
+
+61
+00:03:44,935 --> 00:03:48,339
+Or again, you could just ask Pi to build its own.
+或者，您也可以要求 Pi 建造自己的。
+
+62
+00:03:48,387 --> 00:03:49,686
+That is all possible.
+這都是可能的。
+
+63
+00:03:50,151 --> 00:03:52,060
+But this marketplace is amazing too.
+但這個市場也很棒。
+
+64
+00:03:52,173 --> 00:03:58,204
+It's really easy to extend Pi with nice, uh, extensions very easily by just taking a
+用很好的，呃，擴展來擴展 Pi 真的很容易，只需採取
+
+65
+00:03:58,204 --> 00:03:59,761
+look at what's there and using those.
+看看那裡有什麼並使用它們。
+
+66
+00:04:00,835 --> 00:04:05,696
+Now, as mentioned, you can also have Pi build its own extensions, and here it's currently
+現在，如前所述，您還可以讓 Pi 建立自己的擴展，目前它在此處
+
+67
+00:04:05,728 --> 00:04:06,418
+working on one.
+正在研究一個。
+
+68
+00:04:06,691 --> 00:04:11,648
+I started this in advance because it can take a bit longer, and the extension I asked
+我提前開始了，因為它可能需要更長的時間，我要求延期
+
+69
+00:04:11,728 --> 00:04:17,614
+it to build is an extension that allows me to, or that gives me a new cross-send command
+it to build 是一個擴展，允許我這樣做，或給我一個新的交叉發送命令
+
+70
+00:04:17,614 --> 00:04:22,553
+I can use in my Pi sessions, which opens a picker that then allows me to choose if I
+我可以在我的 Pi 會話中使用，它會打開一個選擇器，然後允許我選擇是否
+
+71
+00:04:22,633 --> 00:04:28,871
+either want to send the last agent message or a summary of the chat to another session.
+想要將最後一條代理訊息或聊天摘要傳送到另一個會話。
+
+72
+00:04:29,705 --> 00:04:34,275
+Then it should open a picker that allows me to choose which other Pi session to send
+然後它應該會打開一個選擇器，讓我可以選擇要發送的其他 Pi 會話
+
+73
+00:04:34,275 --> 00:04:38,764
+the message to, just like the built-in resume command opens such a picker.
+訊息到，就像內建的恢復命令打開這樣的選擇器一樣。
+
+74
+00:04:39,085 --> 00:04:42,869
+And if I choose a summary, I also want to have another picker that allows me to either
+如果我選擇摘要，我還想要另一個選擇器，它允許我
+
+75
+00:04:43,174 --> 00:04:46,863
+use the default compaction prompt or provide my custom prompt.
+使用預設的壓縮提示或提供我的自訂提示。
+
+76
+00:04:47,569 --> 00:04:49,109
+And yeah, then it should send this.
+是的，那麼它應該發送這個。
+
+77
+00:04:49,269 --> 00:04:53,971
+And then it went ahead, used some of the skills I already had on my system and some of
+然後它繼續前進，使用了我係統上已有的一些技能以及一些
+
+78
+00:04:54,003 --> 00:04:56,956
+the extensions, my subagent extension which I built myself.
+擴展，我自己構建的子代理擴展。
+
+79
+00:04:57,678 --> 00:05:04,273
+And then, uh, well, at some point it presented its findings here, and, uh, I read through
+然後，呃，好吧，在某個時候它在這裡展示了它的發現，而且，呃，我通讀了
+
+80
+00:05:04,273 --> 00:05:10,113
+them, made some decisions, and it now is building that extension on this system so that
+他們做出了一些決定，現在正在該系統上建立該擴展，以便
+
+81
+00:05:10,113 --> 00:05:15,473
+I can then install it and use it and hopefully send messages between different PySessions.
+然後我可以安裝它並使用它，並希望在不同的 PySession 之間發送訊息。
+
+82
+00:05:16,291 --> 00:05:21,684
+And this self-improving part combined with that minimalism, as mentioned, really makes
+如同前面所提到的，這種自我完善的部分與極簡主義結合，確實使
+
+83
+00:05:21,684 --> 00:05:23,578
+Py super powerful.
+py超級強大。
+
+84
+00:05:24,011 --> 00:05:28,376
+Because if you are tackling a specific problem where you need certain tools or where
+因為如果您正在解決需要某些工具或需要某些工具的特定問題
+
+85
+00:05:28,569 --> 00:05:33,448
+your life would be easier if you could just have extra tools, you can just tell Py to
+如果你有額外的工具，你的生活會更容易，你可以告訴 Py
+
+86
+00:05:33,464 --> 00:05:33,752
+build them.
+建造它們。
+
+87
+00:05:34,041 --> 00:05:36,834
+Could be project-specific, don't have to be global.
+可以是特定於專案的，不必是全球性的。
+
+88
+00:05:37,171 --> 00:05:42,531
+If you're missing some capability which you really like about Claude Code or Codex, you
+如果您缺少某些您真正喜歡的 Claude Code 或 Codex 功能，您可以
+
+89
+00:05:42,531 --> 00:05:43,767
+can ask Py to build it.
+可以要求 Py 來建造它。
+
+90
+00:05:44,056 --> 00:05:48,857
+And if you, for example, have Herder installed too, which I have here, it's my daily
+例如，如果你也安裝了 Herder，我這裡就有，這就是我的日常
+
+91
+00:05:48,889 --> 00:05:53,835
+driver, my terminal multiplexer that is agent-aware, that works really well together
+驅動程序，我的終端多路復用器，具有代理意識，可以很好地協同工作
+
+92
+00:05:53,851 --> 00:05:55,473
+with Claude Code and also Pi.
+與 Claude Code 和 Pi 一起。
+
+93
+00:05:55,810 --> 00:05:59,840
+If you have Herder installed, for example, you could even build Pi extensions that are
+例如，如果您安裝了 Herder，您甚至可以建立 Pi 擴展
+
+94
+00:06:00,033 --> 00:06:06,809
+aware of Herder and allow you to tap both into the Pi API and the Herder API to, for
+了解 Herder 並允許您同時利用 Pi API 和 Herder API
+
+95
+00:06:06,809 --> 00:06:13,264
+example, open new panes, to build an extension that branches a session off in a new Herder
+例如，開啟新窗格，建立一個擴展，在新的 Herder 中分支會話
+
+96
+00:06:13,280 --> 00:06:14,549
+pane, which I actually did.
+窗格，我實際上就是這樣做的。
+
+97
+00:06:14,742 --> 00:06:20,856
+I built PyHerder Sidetrack, which gives me a sidetrack command where I could enter a
+我建立了 PyHerder Sidetrack，它為我提供了一個 sidetrack 命令，我可以在其中輸入
+
+98
+00:06:20,856 --> 00:06:21,500
+prompt
+迅速的
+
+99
+00:06:23,975 --> 00:06:25,999
+like this and send this off.
+像這樣並將其發送出去。
+
+100
+00:06:26,224 --> 00:06:29,374
+The agent would have to be done here though, not whilst it's currently working.
+不過，代理必須在這裡完成，而不是在當前工作時完成。
+
+101
+00:06:29,454 --> 00:06:33,474
+I could change this extension, but right now I have to wait for it to be done.
+我可以更改此擴展名，但現在我必須等待它完成。
+
+102
+00:06:33,896 --> 00:06:39,277
+And it would open a new Herder pane and allow me to continue the conversation there.
+它將打開一個新的 Herder 窗格，並允許我在那裡繼續對話。
+
+103
+00:06:39,569 --> 00:06:44,387
+So if I show this manually, if I open a new Herder pane here, and I
+因此，如果我手動顯示此內容，如果我在此處開啟一個新的 Herder 窗格，並且我
+
+104
+00:06:45,887 --> 00:06:51,614
+continue my current conversation, but here it's not actively working because that's the
+繼續我當前的對話，但這裡它沒有積極工作，因為那是
+
+105
+00:06:51,614 --> 00:06:52,778
+upper pane.
+上窗格。
+
+106
+00:06:53,489 --> 00:06:56,773
+Here I can use, what are we working on?
+在這裡我可以使用，我們在做什麼？
+
+107
+00:06:57,938 --> 00:07:00,612
+And now you see a new pane opened there.
+現在您會看到那裡打開了一個新窗格。
+
+108
+00:07:00,744 --> 00:07:01,941
+I can close the other one.
+我可以關閉另一個。
+
+109
+00:07:03,360 --> 00:07:08,013
+And there it now picked up that existing conversation but injected a new message.
+現在它拾取了現有的對話，但注入了一條新訊息。
+
+110
+00:07:08,966 --> 00:07:09,880
+And answers that.
+並回答了這個問題。
+
+111
+00:07:10,104 --> 00:07:11,627
+But this is now in a new session.
+但這現在是在新的會議中。
+
+112
+00:07:12,044 --> 00:07:17,494
+So I basically cloned the session and started it by immediately sending my own message
+所以我基本上克隆了會話並通過立即發送我自己的消息來啟動它
+
+113
+00:07:17,558 --> 00:07:17,815
+in there.
+在那裡。
+
+114
+00:07:18,520 --> 00:07:21,646
+And really, the sky is the limit, so to say.
+事實上，可以說，天空才是極限。
+
+115
+00:07:21,726 --> 00:07:26,327
+You can build most of the things you may be imagining or you may be wanting, and therefore
+您可以建立大部分您可能想像或想要的東西，因此
+
+116
+00:07:26,375 --> 00:07:27,513
+really make Pi yours.
+真正讓 Pi 成為你的。
+
+117
+00:07:27,577 --> 00:07:30,014
+And I know this sounds like a Pi commercial.
+我知道這聽起來像 Pi 廣告。
+
+118
+00:07:30,446 --> 00:07:32,017
+I'm not getting paid or anything.
+我沒有得到報酬或任何東西。
+
+119
+00:07:32,065 --> 00:07:32,931
+I just have that course.
+我只有那個課程。
+
+120
+00:07:33,172 --> 00:07:34,278
+That is how I can get paid.
+這就是我可以獲得報酬的方式。
+
+121
+00:07:34,534 --> 00:07:39,279
+But I truly like Pi and how you can make it yours, how you can build your agent that's
+但我真的很喜歡 Pi 以及如何讓它成為你的，如何建立你的代理
+
+122
+00:07:39,279 --> 00:07:40,545
+perfect for your day-to-day work.
+非常適合您的日常工作。
+
+123
+00:07:41,991 --> 00:07:43,099
+And it's done.
+一切都完成了。
+
+124
+00:07:44,110 --> 00:07:50,052
+So now I'll ask it to install this extension globally on this system.
+所以現在我將要求它在該系統上全域安裝此擴充功能。
+
+125
+00:07:50,117 --> 00:07:51,498
+I won't yet publish it.
+我還不會發布它。
+
+126
+00:07:51,723 --> 00:07:53,505
+I just wanna test it on this system.
+我只是想在這個系統上測試一下。
+
+127
+00:07:53,553 --> 00:07:56,348
+So have it install it because it was working in a folder here.
+所以讓它安裝它，因為它在此處的​​資料夾中工作。
+
+128
+00:07:56,476 --> 00:08:00,652
+So I want to install it so that I can try it out.
+所以我想安裝它以便我可以嘗試一下。
+
+129
+00:08:00,812 --> 00:08:02,049
+And I can already
+我已經可以
+
+130
+00:08:03,301 --> 00:08:07,477
+start a new session in that same folder so that I can then really test it.
+在同一資料夾中啟動一個新會話，以便我可以真正測試它。
+
+131
+00:08:08,023 --> 00:08:11,442
+And then ask what this folder is about and have it analyze it and so on.
+然後詢問這個資料夾的內容並讓它對其進行分析等等。
+
+132
+00:08:12,116 --> 00:08:13,577
+And so here I got an answer.
+所以我在這裡得到了答案。
+
+133
+00:08:13,641 --> 00:08:16,322
+Now I'll just need to wait for the installation to finish.
+現在我只需要等待安裝完成。
+
+134
+00:08:16,916 --> 00:08:17,703
+And it's done.
+一切都完成了。
+
+135
+00:08:18,393 --> 00:08:23,000
+So now we can reload here, also reload here to make sure the extension is loaded.
+所以現在我們可以在這裡重新加載，也可以在這裡重新加載以確保擴充功能已加載。
+
+136
+00:08:23,434 --> 00:08:25,504
+And now I have a cross-send command available.
+現在我有一個可用的交叉發送命令。
+
+137
+00:08:25,842 --> 00:08:29,357
+And if I run this, I get the picker of what I want to send— last agent message, or let's
+如果我運行這個，我會得到我想要發送的內容的選擇器——最後一條代理訊息，或者讓我們
+
+138
+00:08:29,357 --> 00:08:31,589
+say a summary of the chat with the default summary.
+使用預設摘要說出聊天摘要。
+
+139
+00:08:32,183 --> 00:08:35,985
+So I'll let it summarize it, creating a summary of what happened here.
+因此，我將讓它對其進行總結，並對這裡發生的事情進行總結。
+
+140
+00:08:36,738 --> 00:08:39,030
+And then it asks me where I want to send this.
+然後它問我想把這個發送到哪裡。
+
+141
+00:08:39,078 --> 00:08:43,629
+Now I got some sidetracks from, um, playing around with this earlier, but I want this
+現在我從之前的嘗試中得到了一些岔路口，但我想要這個
+
+142
+00:08:43,629 --> 00:08:43,693
+one.
+一。
+
+143
+00:08:43,869 --> 00:08:44,895
+What is this folder about?
+這個資料夾是關於什麼的？
+
+144
+00:08:45,632 --> 00:08:46,962
+Cross-send message, yes.
+交叉發送訊息，是的。
+
+145
+00:08:47,491 --> 00:08:52,330
+And now the way this extension is built, we switch to this session.
+現在這個擴充的建構方式，我們切換到這個會話。
+
+146
+00:08:52,378 --> 00:08:54,397
+So this session was now opened here too.
+所以這次會議現在也在這裡開幕。
+
+147
+00:08:55,263 --> 00:08:58,243
+We can see that is this reply here, right?
+我們可以看到這裡就是這個回覆吧？
+
+148
+00:08:58,324 --> 00:09:00,551
+So this folder, blah blah blah.
+所以這個資料夾，等等等等。
+
+149
+00:09:01,181 --> 00:09:01,784
+We now switched.
+我們現在換了。
+
+150
+00:09:01,850 --> 00:09:05,407
+That is how this extension was built and my summary was appended here.
+這就是這個擴充的建構方式，我的總結附在此。
+
+151
+00:09:07,200 --> 00:09:10,960
+So now we have one merged session and I could close this one.
+現在我們有一個合併會議，我可以關閉這一會議。
+
+152
+00:09:11,330 --> 00:09:14,833
+And if you want an extension like this, it's a different question, depends on how you
+如果您想要這樣的擴展，這是一個不同的問題，取決於您如何
+
+153
+00:09:14,945 --> 00:09:15,202
+work.
+工作。
+
+154
+00:09:15,508 --> 00:09:21,082
+The key thing is you can have Pi build its own extensions and that is one of its most
+關鍵是你可以讓 Pi 建立自己的擴展，這是它最重要的擴展之一
+
+155
+00:09:21,130 --> 00:09:24,369
+amazing features as this small demo hopefully showed you.
+這個小演示希望向您展示令人驚嘆的功能。

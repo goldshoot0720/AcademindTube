@@ -1,0 +1,1369 @@
+1
+00:00:00,192 --> 00:00:02,649
+Let's talk agent skills.
+說說代理技巧吧。
+
+2
+00:00:02,842 --> 00:00:05,619
+And I know you know what an agent skill is.
+我知道你知道什麼是特工技能。
+
+3
+00:00:05,876 --> 00:00:10,613
+The problem just is that many people are not really using agent skills correctly, or
+問題只是很多人並沒有真正正確地使用特工技能，或者
+
+4
+00:00:10,613 --> 00:00:13,005
+at least not to their full potential.
+至少沒有充分發揮他們的潛力。
+
+5
+00:00:13,599 --> 00:00:16,136
+Now, as mentioned, I know you know what an agent skill is.
+現在，如前所述，我知道您知道什麼是特工技能。
+
+6
+00:00:16,393 --> 00:00:20,504
+It's a skill.md file with a description that helps an agent activate that skill in the
+這是一個 Skill.md 文件，其中包含幫助代理啟動該技能的說明
+
+7
+00:00:20,568 --> 00:00:21,162
+right moment.
+正確的時機。
+
+8
+00:00:21,531 --> 00:00:24,245
+And then it's your actual skill instructions.
+然後是你的實際技能說明。
+
+9
+00:00:25,530 --> 00:00:31,669
+Content you'll inject into your coding agent or into whatever agent you're using to make
+您將注入到編碼代理或您用來製作的任何代理中的內容
+
+10
+00:00:31,669 --> 00:00:34,603
+it do certain things the way you want it to.
+它按照您想要的方式做某些事情。
+
+11
+00:00:35,003 --> 00:00:40,309
+Because a skill is, of course, in the end, just a prompt, just some extra context you're
+因為技能當然最終只是一個提示，只是一些你需要的額外背景
+
+12
+00:00:40,309 --> 00:00:44,942
+sending to your agent to execute a certain task.
+發送給您的代理程式以執行特定任務。
+
+13
+00:00:45,198 --> 00:00:50,376
+And it's worth noting, and that's already the first thing some people don't really realize,
+值得注意的是，這已經是一些人沒有真正意識到的第一件事，
+
+14
+00:00:50,953 --> 00:00:54,592
+that a skill is not necessarily just a skill.md file.
+技能不一定只是一個 Skill.md 檔案。
+
+15
+00:00:54,640 --> 00:00:56,596
+For some skills, that may be all you need.
+對於某些技能，這可能是您所需要的。
+
+16
+00:00:56,901 --> 00:01:02,639
+For many skills, you also may have extra references, extra deep dive resources that can
+對於許多技能，您還可能有額外的參考資料、額外的深入研究資源，可以
+
+17
+00:01:02,671 --> 00:01:07,512
+be activated by the agent when needed, because those skills, as you probably know, are
+在需要時由代理人激活，因為正如您可能知道的那樣，這些技能是
+
+18
+00:01:07,641 --> 00:01:10,815
+of course all about incremental discovery.
+當然都是關於增量發現。
+
+19
+00:01:11,183 --> 00:01:17,179
+So the idea is that this entire skill.md file is not even loaded, but instead just the
+所以我們的想法是，整個 Skill.md 檔案甚至沒有加載，而只是加載
+
+20
+00:01:17,179 --> 00:01:20,561
+metadata stuff here that is loaded into every agent session.
+這裡的元資料內容被載入到每個代理會話中。
+
+21
+00:01:21,026 --> 00:01:25,082
+Then because of this description, an agent may decide to activate a skill.
+然後，由於此描述，代理可能決定啟動技能。
+
+22
+00:01:25,514 --> 00:01:30,018
+Then the rest of the skill.md file is read, and then in that skill.md file, you can point
+然後讀取 Skill.md 檔案的其餘部分，然後在該 Skill.md 檔案中，您可以指向
+
+23
+00:01:30,018 --> 00:01:33,223
+at other references so that those are activated when needed.
+在其他參考文獻中，以便在需要時啟動它們。
+
+24
+00:01:33,832 --> 00:01:35,194
+Many people know that.
+很多人都知道這一點。
+
+25
+00:01:35,771 --> 00:01:38,927
+Fewer people know that skills can have more than references.
+很少人知道技能比參考資料更重要。
+
+26
+00:01:38,975 --> 00:01:41,282
+They can have assets, which could be blueprints.
+他們可以擁有資產，這些資產可以是藍圖。
+
+27
+00:01:41,378 --> 00:01:47,547
+Like here, my create plan skill, for example, has a plan blueprint I'd like my agents
+例如，像這裡一樣，我的創建計劃技能有一個計劃藍圖，我希望我的代理人
+
+28
+00:01:47,547 --> 00:01:49,598
+to use when they craft plans.
+當他們制定計劃時使用。
+
+29
+00:01:50,255 --> 00:01:55,334
+And by the way, all these skills are publicly available, all the skills I have here,
+順便說一句，所有這些技能都是公開的，我在這裡擁有的所有技能，
+
+30
+00:01:55,943 --> 00:01:57,545
+and I'll link them below.
+我將在下面鏈接它們。
+
+31
+00:01:58,058 --> 00:01:58,892
+So that's a thing.
+所以這是一件事。
+
+32
+00:01:59,470 --> 00:02:01,668
+And you can also have scripts.
+而且您還可以有腳本。
+
+33
+00:02:01,796 --> 00:02:05,791
+For example, I have a generate image skill, which does what the name implies.
+例如，我有一個生成圖像技能，顧名思義。
+
+34
+00:02:05,887 --> 00:02:08,566
+It helps me generate images with help of AI.
+它幫助我在人工智慧的幫助下產生圖像。
+
+35
+00:02:09,432 --> 00:02:16,122
+And I have a script in there, a TypeScript script, which uses Fall, the Fall service.
+我在那裡有一個腳本，一個 TypeScript 腳本，它使用 Fall，Fall 服務。
+
+36
+00:02:16,748 --> 00:02:23,710
+Fall.ai is a service which offers various AI models through an API so that you can send
+Fall.ai 是一項透過 API 提供各種 AI 模型的服務，以便您可以發送
+
+37
+00:02:23,710 --> 00:02:24,207
+your requests.
+您的要求。
+
+38
+00:02:24,352 --> 00:02:28,473
+There to generate images, text, audio, videos, whatever.
+在那裡生成圖像、文字、音訊、視訊等等。
+
+39
+00:02:28,681 --> 00:02:32,016
+This is my image generation skill, so it's only about those models.
+這是我的圖像生成技能，所以只涉及那些模型。
+
+40
+00:02:32,513 --> 00:02:38,046
+And indeed, I have GPT-Image 2 hardcoded here in my case here for the only image model
+事實上，在我的例子中，我在這裡硬編碼了 GPT-Image 2 作為唯一的圖像模型
+
+41
+00:02:38,046 --> 00:02:38,687
+I want to use.
+我想用。
+
+42
+00:02:38,847 --> 00:02:39,874
+Of course, I could change this.
+當然，我可以改變這一點。
+
+43
+00:02:40,146 --> 00:02:43,882
+And therefore, here I have a skill with a script that generates images.
+因此，在這裡我掌握了生成圖像的腳本的技能。
+
+44
+00:02:43,995 --> 00:02:46,817
+Now, you could ask, why not just a script?
+現在，您可能會問，為什麼不只是一個腳本呢？
+
+45
+00:02:46,881 --> 00:02:52,220
+Why burn those tokens and add that random nature to it when it could be just script?
+當它可能只是腳本時，為什麼要燒掉這些代幣並為其添加隨機性？
+
+46
+00:02:52,717 --> 00:02:59,271
+And that is a good question because I think some things that people give you as skills
+這是一個很好的問題，因為我認為人們給你一些技能
+
+47
+00:02:59,768 --> 00:03:03,806
+could just be scripts, but some things should really be both.
+可能只是腳本，但有些東西確實應該兩者兼而有之。
+
+48
+00:03:03,870 --> 00:03:10,248
+For example, here I have a script for the deterministic part of this skill, for sending
+例如，這裡我有一個用於該技能的確定性部分的腳本，用於發送
+
+49
+00:03:10,280 --> 00:03:13,773
+the request, handling the response, extracting the image, saving the image.
+請求，處理回應，提取圖像，保存圖像。
+
+50
+00:03:14,286 --> 00:03:15,824
+That's handled by the script.
+這是由腳本處理的。
+
+51
+00:03:16,449 --> 00:03:22,788
+But I have a skill So that it, for example, translates my vague instruction of I need
+但我有一項技能，例如，它可以翻譯我的模糊指示：我需要
+
+52
+00:03:22,788 --> 00:03:29,306
+an image of a bicycle in the rain to a proper prompt based on the instructions in that
+雨中自行車的圖像，根據其中的說明進行適當提示
+
+53
+00:03:29,306 --> 00:03:32,998
+skill here, and that it then invokes that script for me.
+技能在這裡，然後它會為我呼叫該腳本。
+
+54
+00:03:33,078 --> 00:03:34,459
+So a little bit of utility there.
+所以有一點實用性。
+
+55
+00:03:34,571 --> 00:03:37,862
+I could write that prompt myself, but that's the nice thing.
+我可以自己寫這個提示，但這很好。
+
+56
+00:03:37,958 --> 00:03:40,254
+I can get the best of both worlds.
+我可以兩全其美。
+
+57
+00:03:41,008 --> 00:03:45,454
+And that's a good example for a skill that is, of course, not related to programming,
+這是一個很好的例子，說明了一項與程式設計無關的技能，
+
+58
+00:03:45,502 --> 00:03:47,987
+but just a general utility skill.
+但只是一般實用技能。
+
+59
+00:03:48,227 --> 00:03:53,532
+Now, in general, agent skills are there for 2 main reasons.
+現在，總的來說，代理技能的存在有兩個主要原因。
+
+60
+00:03:53,597 --> 00:03:56,882
+And the first reason is that they can close a knowledge gap.
+第一個原因是它們可以縮小知識差距。
+
+61
+00:03:57,764 --> 00:04:03,133
+These models have some knowledge from their training data and their fine-tuning, the
+這些模型從訓練資料和微調中獲得了一些知識，
+
+62
+00:04:03,278 --> 00:04:04,736
+reinforcement learning, of course.
+當然是強化學習。
+
+63
+00:04:05,377 --> 00:04:08,791
+That is the knowledge that's baked into the model.
+這就是模型中所包含的知識。
+
+64
+00:04:09,208 --> 00:04:13,199
+Then they can, of course, get extra knowledge from the context you give to them.
+然後他們當然可以從您提供給他們的背景中獲得額外的知識。
+
+65
+00:04:13,520 --> 00:04:17,687
+From your codebase, from your prompt, from any web research they may be doing.
+來自您的程式碼庫，來自您的提示，來自他們可能正在進行的任何網路研究。
+
+66
+00:04:18,601 --> 00:04:25,222
+But then you can also have your own skills that add more knowledge, knowledge about certain
+但你也可以擁有自己的技能，增加更多的知識，關於某些方面的知識
+
+67
+00:04:25,238 --> 00:04:28,267
+tasks, knowledge about certain domains you may be working on.
+任務、有關您可能正在從事的某些領域的知識。
+
+68
+00:04:28,444 --> 00:04:35,064
+For example, if I'm working in a project where I use the Effect library, which is a
+例如，如果我正在一個使用 Effect 庫的專案中工作，這是一個
+
+69
+00:04:35,272 --> 00:04:42,229
+library that's not as baked into those models, maybe where it hasn't seen as much code
+庫沒有融入這些模型中，也許它沒有看到那麼多程式碼
+
+70
+00:04:42,229 --> 00:04:47,440
+as it has for other libraries, I'd like to build a skill for that.
+與其他圖書館一樣，我想為此培養一項技能。
+
+71
+00:04:48,017 --> 00:04:49,252
+And I do that with help of AI.
+我在人工智慧的幫助下做到了這一點。
+
+72
+00:04:49,524 --> 00:04:56,082
+I ask AI to do some web research, to dive into the docs, and to gather
+我要求人工智慧做一些網路研究，深入研究文檔，並收集
+
+73
+00:04:56,130 --> 00:04:58,262
+knowledge about the fact library.
+有關事實庫的知識。
+
+74
+00:04:58,503 --> 00:05:04,900
+I also may give it some specific resources, some specific URLs I wanted to definitely
+我也可能會給它一些特定的資源，一些我想要的特定的 URL
+
+75
+00:05:04,916 --> 00:05:08,476
+visit because I know they contain important knowledge I want to have in the skill.
+訪問是因為我知道它們包含我想要的技能方面的重要知識。
+
+76
+00:05:08,941 --> 00:05:13,847
+But then I let AI gather that knowledge and convert it to a skill.
+但後來我讓人工智慧收集這些知識並將其轉化為技能。
+
+77
+00:05:14,457 --> 00:05:19,192
+And to help with that skill conversion or in general with creating skills, because I
+並幫助實現技能轉換或一般來說創造技能，因為我
+
+78
+00:05:19,208 --> 00:05:24,762
+like AI to create skills, I then fine-tune them myself, but I like AI to use, or I like
+喜歡AI創造技能，然後我自己微調它們，但我喜歡AI使用，或者我喜歡
+
+79
+00:05:24,826 --> 00:05:26,720
+to use AI for creating those skills.
+使用人工智慧來創造這些技能。
+
+80
+00:05:27,074 --> 00:05:33,221
+I have a Create Skill skill, which basically encodes the best practices and patterns
+我有一項創建技能技能，它基本上編碼了最佳實踐和模式
+
+81
+00:05:33,478 --> 00:05:36,351
+I want AI to use when crafting skills.
+我希望在創造技能時使用人工智慧。
+
+82
+00:05:36,945 --> 00:05:41,889
+But then I'm happy to use AI to, for example, create such a knowledge skill that adds
+但我很高興使用人工智慧來創建這樣一種知識技能，可以增加
+
+83
+00:05:42,162 --> 00:05:47,464
+knowledge and makes it easy for AI to, for example, activate that skill whenever it's
+例如，人工智慧可以輕鬆地在需要時啟動該技能
+
+84
+00:05:47,464 --> 00:05:52,717
+working on Effect code or in an Effect codebase to make sure that it's properly using
+處理 Effect 程式碼或 Effect 程式碼庫以確保其正確使用
+
+85
+00:05:52,830 --> 00:05:55,255
+all those features according to the official docs.
+根據官方文檔，所有這些功能。
+
+86
+00:05:55,416 --> 00:05:59,239
+And it doesn't have to constantly reach out to those docs over and over again.
+而且它不必不斷地一遍又一遍地聯繫這些文件。
+
+87
+00:05:59,432 --> 00:06:00,284
+That's the idea.
+就是這個想法。
+
+88
+00:06:01,537 --> 00:06:06,308
+So bridging that knowledge gap is of course one important area where you may want to
+因此，彌合知識差距當然是您可能想要的重要領域
+
+89
+00:06:06,340 --> 00:06:06,935
+use a skill.
+使用一項技能。
+
+90
+00:06:07,545 --> 00:06:08,911
+Another important area.
+另一個重要領域。
+
+91
+00:06:09,296 --> 00:06:11,158
+Is the execution gap.
+就是執行力差距。
+
+92
+00:06:11,720 --> 00:06:17,050
+Knowledge is one thing, but of course, these models also have certain behaviors, certain
+知識是一回事，但當然，這些模型也有某些行為，某些
+
+93
+00:06:17,258 --> 00:06:21,561
+ways of tackling certain tasks, and that may often be what you want.
+處理某些任務的方法，而這通常可能是您想要的。
+
+94
+00:06:21,834 --> 00:06:26,698
+And sometimes, or maybe also often, depending on the domain, they may know better than
+有時，或者也經常，根據領域的不同，他們可能比
+
+95
+00:06:26,794 --> 00:06:32,396
+you, but sometimes you know how certain work needs to be done or how something needs
+你，但有時你知道某些工作需要如何完成，或某些事情需要如何完成
+
+96
+00:06:32,429 --> 00:06:33,279
+to be executed.
+被處決。
+
+97
+00:06:33,328 --> 00:06:36,153
+And that is where you can also use a skill.
+這就是你也可以使用技能的地方。
+
+98
+00:06:37,324 --> 00:06:40,805
+For example, again, that Create Plan skill I already showed you before.
+例如，我之前已經向您展示過「創建計劃」技能。
+
+99
+00:06:41,800 --> 00:06:47,430
+I like my coding agents to create plans for the tasks they tackle.
+我喜歡我的編碼代理為他們處理的任務制定計劃。
+
+100
+00:06:47,976 --> 00:06:52,900
+Now, creating a plan could of course be done with plan mode and you could leverage that
+現在，建立計劃當然可以使用計劃模式來完成，您可以利用它
+
+101
+00:06:52,900 --> 00:06:54,103
+depending on your coding agent.
+取決於您的編碼代理。
+
+102
+00:06:54,152 --> 00:06:58,210
+But for example, I'm using the Pi coding agent, which doesn't have a plan mode.
+但例如，我正在使用 Pi 編碼代理，它沒有計劃模式。
+
+103
+00:06:58,258 --> 00:07:03,600
+And even if I'm using something like Claude Code, I nowadays tend to not use any plan
+即使我使用像 Claude Code 這樣的東西，我現在也傾向於不使用任何計劃
+
+104
+00:07:03,632 --> 00:07:04,322
+mode built in.
+內建模式。
+
+105
+00:07:04,675 --> 00:07:06,632
+Instead, I use such a skill.
+相反，我使用這樣的技能。
+
+106
+00:07:07,883 --> 00:07:14,392
+Implicitly because this skill, due to its description, should get used when
+隱含地是因為根據其描述，該技能應該在以下情況下使用：
+
+107
+00:07:15,001 --> 00:07:18,641
+I ask the user, the agent, to create a plan.
+我要求用戶（代理）制定一個計劃。
+
+108
+00:07:18,849 --> 00:07:23,162
+That's in the description and that works very reliably in my experience.
+這在描述中並且根據我的經驗非常可靠。
+
+109
+00:07:23,771 --> 00:07:28,597
+So what happens then is I ask the agent to create a plan and it will activate that skill.
+那麼接下來發生的事情是我要求代理制定一個計劃，它將激活該技能。
+
+110
+00:07:28,709 --> 00:07:34,144
+Now in that skill, I have details on what creating a plan means.
+現在，在該技能中，我詳細了解了創建計劃的含義。
+
+111
+00:07:34,722 --> 00:07:41,086
+It includes stuff like research, that it should perform research, that it should delegate
+它包括研究之類的東西，它應該進行研究，它應該委託
+
+112
+00:07:41,455 --> 00:07:42,561
+to subagents.
+給子代理。
+
+113
+00:07:42,673 --> 00:07:49,422
+And I have dedicated skills for that as well on how to use subagents, how to split work
+我在這方面也有專門的技能，包括如何使用子代理、如何分配工作
+
+114
+00:07:49,630 --> 00:07:53,798
+in general, and then also in the Pi coding agent, because again, that's the coding agent
+一般來說，然後也在 Pi 編碼代理中，因為同樣，這就是編碼代理
+
+115
+00:07:53,814 --> 00:07:55,064
+I'm mostly using.
+我主要用的是
+
+116
+00:07:55,561 --> 00:07:59,713
+Then I also have instructions on how to plan.
+然後我還有關於如何計劃的說明。
+
+117
+00:08:00,146 --> 00:08:05,163
+So I have a template in there, as I showed you before, how a plan should look like, because
+所以我在那裡有一個模板，正如我之前向您展示的那樣，計劃應該是什麼樣子，因為
+
+118
+00:08:05,275 --> 00:08:06,365
+I review those plans.
+我回顧了這些計劃。
+
+119
+00:08:06,478 --> 00:08:09,988
+I want to have a clear structure and it should all always be the same structure.
+我想要一個清晰的結構，並且應該始終是相同的結構。
+
+120
+00:08:10,726 --> 00:08:12,745
+I have all of that encoded in here.
+我把所有這些都編碼在這裡。
+
+121
+00:08:13,050 --> 00:08:20,039
+I also have a review step encoded in here so that the plan I see has already been reviewed.
+我還在這裡編碼了一個審核步驟，以便我看到的計劃已經過審核。
+
+122
+00:08:20,504 --> 00:08:26,740
+Now, when it comes to that reviewing, I have a dedicated skill because reviews of plans
+現在，說到審查，我有一項專門的技能，因為計劃審查
+
+123
+00:08:26,756 --> 00:08:30,331
+of code also should follow certain rules and patterns.
+程式碼的編寫也應該遵循一定的規則和模式。
+
+124
+00:08:30,443 --> 00:08:35,797
+And in that code review skill, I, for example, also make it clear that tasks should be
+例如，在程式碼審查技能中，我還明確指出任務應該是
+
+125
+00:08:35,877 --> 00:08:40,510
+delegated, should be split, and subagents should be used also to keep the main context
+委託，應該拆分，並且還應該使用子代理來保留主要上下文
+
+126
+00:08:40,429 --> 00:08:41,310
+context window clean.
+上下文視窗乾淨。
+
+127
+00:08:41,982 --> 00:08:48,919
+And I also have rules regarding the scoring of findings and that I don't want to
+我也有關於調查結果評分的規則，但我不想這樣做
+
+128
+00:08:49,031 --> 00:08:54,350
+have all findings be reflected in my plan or in the review that's being generated.
+所有調查結果都反映在我的計劃或正在產生的審查中。
+
+129
+00:08:54,398 --> 00:09:00,823
+Instead, it should judge and it should, for example, avoid adding more and more complexity.
+相反，它應該進行判斷，並且應該避免增加越來越多的複雜性。
+
+130
+00:09:01,207 --> 00:09:07,823
+For that, I also have a decomplex skill here, which is all about defining what too much
+為此，我在這裡還擁有一項分解技能，定義什麼是太多
+
+131
+00:09:07,936 --> 00:09:11,076
+complexity means and how to check for complexity.
+複雜性意味著以及如何檢查複雜性。
+
+132
+00:09:11,862 --> 00:09:16,498
+In all those skills, I make it clear that the user, so I, should be asked if it's not
+在所有這些技能中，我明確表示應該詢問使用者（即我）是否不
+
+133
+00:09:16,498 --> 00:09:19,290
+clear if something's too complex or a real issue.
+明確某件事是否太複雜或是否是一個真正的問題。
+
+134
+00:09:19,338 --> 00:09:25,226
+So I have multiple layers here so that I build a system that works well for me and that,
+所以我這裡有多個層次，這樣我就可以建立一個適合我的系統，
+
+135
+00:09:25,403 --> 00:09:30,970
+for example, for planning, where that reviewing triggers all these other skills, I get
+例如，對於計劃，審查會觸發所有其他技能，我得到
+
+136
+00:09:31,018 --> 00:09:36,729
+a plan that is executable for the most part, that has been reviewed and that is in a
+計劃的大部分內容是可執行的，已經過審查並且正在製定中
+
+137
+00:09:36,729 --> 00:09:37,499
+good shape.
+身材好。
+
+138
+00:09:38,557 --> 00:09:40,802
+That's what I mean with the execution gap.
+這就是我所說的執行差距。
+
+139
+00:09:40,882 --> 00:09:46,492
+Of course, the model can create a plan without my instructions, but in my experience,
+當然，模型可以在沒有我的指示的情況下創建計劃，但根據我的經驗，
+
+140
+00:09:46,508 --> 00:09:52,359
+I get better results with those extra skills that make it very clear how I want it to
+透過這些額外的技能，我獲得了更好的結果，這些技能讓我很清楚我想要它如何
+
+141
+00:09:52,359 --> 00:09:53,209
+work on a plan.
+制定計劃。
+
+142
+00:09:53,465 --> 00:09:56,030
+Now, could I just put that into a prompt instead?
+現在，我可以將其放入提示中嗎？
+
+143
+00:09:56,110 --> 00:09:58,242
+Sure, but I would be doing that over and over again.
+當然可以，但我會一遍又一遍地這樣做。
+
+144
+00:09:58,771 --> 00:10:00,342
+And that's in general good advice.
+總的來說，這是一個很好的建議。
+
+145
+00:10:00,454 --> 00:10:06,870
+If you find yourself asking for the same stuff over and over again or complaining about
+如果您發現自己一遍又一遍地要求相同的東西或抱怨
+
+146
+00:10:06,870 --> 00:10:10,596
+the same errors over and over again, put it in a skill.
+一遍又一遍地犯同樣的錯誤，把它變成一種技能。
+
+147
+00:10:10,869 --> 00:10:14,465
+And also important, write your own skills.
+同樣重要的是，寫下你自己的技能。
+
+148
+00:10:14,578 --> 00:10:21,081
+You can absolutely use my skills or the skills by Matt Pocock or any other skills you
+你絕對可以使用我的技能或 Matt Pocock 的技能或任何其他你想要的技能
+
+149
+00:10:21,081 --> 00:10:21,691
+find out there.
+在那裡找到。
+
+150
+00:10:21,739 --> 00:10:22,783
+Nothing wrong with them.
+他們沒有什麼問題。
+
+151
+00:10:22,847 --> 00:10:27,954
+There are great skills out there and they're especially great starting points.
+那裡有很多很棒的技能，而且它們是特別好的起點。
+
+152
+00:10:28,467 --> 00:10:33,558
+But you should refine them, make them yours, and also build your own skills for your
+但你應該完善它們，使它們成為你的，並為你的工作培養你自己的技能。
+
+153
+00:10:33,670 --> 00:10:38,551
+own workflows and the problems you're facing with agents because everybody works a bit
+自己的工作流程以及您與代理商所面臨的問題，因為每個人都工作一點
+
+154
+00:10:38,583 --> 00:10:42,805
+different and something that works well for me doesn't have to work well for you.
+不同的東西，對我有效的東西不一定對你也有效。
+
+155
+00:10:43,479 --> 00:10:45,502
+That's why it's so important to write your own skills.
+這就是為什麼編寫自己的技能如此重要。
+
+156
+00:10:45,566 --> 00:10:46,657
+And it is simple.
+而且很簡單。
+
+157
+00:10:46,866 --> 00:10:52,613
+A good skill really is just about having a good description so that it's getting activated
+一個好的技能其實就是有一個好的描述，以便它被激活
+
+158
+00:10:52,613 --> 00:10:57,204
+in the right moments and a lean actionable body.
+在正確的時刻和精益可行動的身體。
+
+159
+00:10:57,830 --> 00:10:59,741
+Keep your skills lean.
+保持你的技能精益。
+
+160
+00:10:59,917 --> 00:11:01,892
+I prefer these bullet points here.
+我更喜歡這裡的這些要點。
+
+161
+00:11:02,662 --> 00:11:07,622
+That is not necessary, of course, but avoid having a lot of prose in there.
+當然，這不是必需的，但要避免其中有太多散文。
+
+162
+00:11:07,702 --> 00:11:13,913
+If you're using AI to write skills, which again, I do too, make sure you really
+如果你使用人工智慧來編寫技能（我也這樣做），請確保你真的
+
+163
+00:11:14,379 --> 00:11:21,071
+nudge it towards that style or towards some style that's not overly complex and long
+將其推向那種風格或某種不太複雜和冗長的風格
+
+164
+00:11:21,280 --> 00:11:25,629
+because some AI models tend to give you very thorough and bloated skills.
+因為有些人工智慧模型往往會給你非常徹底且臃腫的技能。
+
+165
+00:11:26,014 --> 00:11:28,438
+And for one, that is all tokens you're paying for.
+其一，這就是您所支付的所有代幣。
+
+166
+00:11:28,582 --> 00:11:31,166
+That is all something that pollutes the context.
+這都是污染環境的事。
+
+167
+00:11:31,856 --> 00:11:37,306
+And therefore, because of that pollution especially, it leads or it can lead to worse
+因此，特別是由於污染，它會導致或可能導致更糟糕的情況
+
+168
+00:11:37,306 --> 00:11:37,723
+results.
+結果。
+
+169
+00:11:37,819 --> 00:11:40,336
+Keep your skills focused and lean.
+保持你的技能專注且精益。
+
+170
+00:11:40,753 --> 00:11:47,069
+Use AI to build them, but then dive into, spend that time to improve that skill because
+使用人工智慧來建立它們，然後深入研究，花時間來提高技能，因為
+
+171
+00:11:47,165 --> 00:11:49,778
+that skill is going to get used over and over again.
+這項技能將被一次又一次地使用。
+
+172
+00:11:49,906 --> 00:11:51,669
+So don't be lazy there.
+所以不要在那裡偷懶。
+
+173
+00:11:52,054 --> 00:11:58,130
+Really make it a good skill and tweak it, adjust it to your liking, to your requirements.
+真正讓它成為一項好技能，並根據你的喜好和要求進行調整。
+
+174
+00:11:58,386 --> 00:12:01,576
+Also, don't treat skills as a static thing.
+另外，不要將技能視為靜態的東西。
+
+175
+00:12:01,768 --> 00:12:02,490
+It's not.
+它不是。
+
+176
+00:12:03,115 --> 00:12:06,385
+It should evolve over time because everything else evolves.
+它應該隨著時間的推移而發展，因為其他一切都在發展。
+
+177
+00:12:06,898 --> 00:12:12,925
+The models change and some models suddenly are way more aggressive or verbose than other
+模型發生了變化，一些模型突然比其他模型更加激進或冗長
+
+178
+00:12:12,925 --> 00:12:13,406
+models.
+模型。
+
+179
+00:12:13,470 --> 00:12:18,215
+So the skills that worked for other models don't necessarily work for a newer model.
+因此，適用於其他模型的技能不一定適用於較新的模型。
+
+180
+00:12:18,440 --> 00:12:19,177
+That's one thing.
+這是一回事。
+
+181
+00:12:19,882 --> 00:12:22,752
+The coding agent harnesses change too.
+編碼代理也利用變化。
+
+182
+00:12:22,992 --> 00:12:24,708
+The tools they may have change.
+他們可能擁有的工具發生了變化。
+
+183
+00:12:24,932 --> 00:12:28,346
+The system prompt that may implicitly be added, that changes.
+可能隱式添加的系統提示會變更。
+
+184
+00:12:28,939 --> 00:12:29,549
+And you change.
+而你改變了。
+
+185
+00:12:29,661 --> 00:12:31,232
+The way you work changes.
+您的工作方式發生了變化。
+
+186
+00:12:31,969 --> 00:12:35,624
+A year ago, we were all writing way more code than we do do now.
+一年前，我們寫的程式碼比現在多得多。
+
+187
+00:12:36,377 --> 00:12:39,807
+We're also changing how and how much code we read.
+我們也改變了閱讀代碼的方式和數量。
+
+188
+00:12:40,096 --> 00:12:43,414
+So of course, our skills also need to evolve.
+當然，我們的技能也需要發展。
+
+189
+00:12:44,071 --> 00:12:50,610
+You could also consider adding an improve skill skill to your skills so that your
+您也可以考慮在您的技能中添加一項提高技能的技能，以便您的
+
+190
+00:12:50,722 --> 00:12:56,300
+agents can automatically improve skills based on certain rules you define whenever they
+代理可以根據您定義的某些規則自動提高技能
+
+191
+00:12:56,412 --> 00:13:02,247
+frequently get something wrong or you frequently correct them on something that was actually
+經常犯錯或你經常糾正一些實際上是錯誤的事情
+
+192
+00:13:02,279 --> 00:13:03,337
+encoded in a skill.
+編碼在技能中。
+
+193
+00:13:03,401 --> 00:13:07,120
+So These are all things you should consider doing.
+所以這些都是你應該考慮要做的事情。
+
+194
+00:13:07,713 --> 00:13:12,762
+A skill you installed half a year ago is not necessarily useful anymore.
+半年前安裝的技能不一定有用。
+
+195
+00:13:13,259 --> 00:13:18,485
+Evolve it, throw it away maybe if it doesn't get the job done anymore, and build your
+發展它，如果它不再能完成工作，就丟掉它，然後建立你的
+
+196
+00:13:18,533 --> 00:13:19,126
+own skills.
+自己的技能。
+
+197
+00:13:19,671 --> 00:13:22,124
+Don't just collect skills created by others.
+不要只是收集別人創造的技能。
+
+198
+00:13:22,460 --> 00:13:28,215
+Also be aware of the fact that I would say there are 4 main types of skills, though of
+另請注意，我想說有 4 種主要類型的技能，儘管
+
+199
+00:13:28,247 --> 00:13:30,379
+course, obviously they also kind of overlap.
+當然，顯然它們也有一些重疊。
+
+200
+00:13:30,974 --> 00:13:34,829
+We have the domain knowledge skill I already talked about, which is, for example, that
+我們擁有我已經討論過的領域知識技能，例如
+
+201
+00:13:34,829 --> 00:13:40,050
+effect skill I like to add to a project to have certain domain-specific knowledge that
+效果技能 我喜歡添加到專案中以獲得某些特定領域的知識
+
+202
+00:13:40,050 --> 00:13:44,950
+matters to a project in a skill so that the agent doesn't have to make requests over
+對專案的一項技能很重要，這樣代理就不必再提出請求
+
+203
+00:13:44,950 --> 00:13:45,545
+and over again.
+一遍又一遍。
+
+204
+00:13:45,673 --> 00:13:46,605
+That can be useful.
+這很有用。
+
+205
+00:13:47,424 --> 00:13:52,951
+I have my workflow skills like that create plan skill I showed you for workflows I repeat
+我有我的工作流程技能，就像我向您展示的工作流程創建計劃技能一樣，我重複一遍
+
+206
+00:13:53,127 --> 00:13:56,517
+over and over again where I also don't want to repeat myself and where I want to have
+一次又一次我也不想重複自己和我想要的地方
+
+207
+00:13:56,517 --> 00:13:57,497
+a clear structure.
+結構清晰。
+
+208
+00:13:58,187 --> 00:14:04,989
+Then I have companion skills, with which I mean skills that explain the usage of certain
+然後我有同儕技能，我的意思是解釋某些特定內容的用法的技能
+
+209
+00:14:05,037 --> 00:14:06,785
+tools to an agent.
+給代理商的工具。
+
+210
+00:14:06,930 --> 00:14:13,475
+For example, I have a Use Pi Subagents skill, which is a skill, as the name suggests,
+例如我有一個Use Pi Subagents技能，顧名思義，這是一個技能，
+
+211
+00:14:13,683 --> 00:14:17,533
+fine-tuned for working with Pi, the Pi coding agent.
+為與 Pi（Pi 編碼代理）配合使用而進行了微調。
+
+212
+00:14:18,159 --> 00:14:24,511
+And that skill has a script, which is there to spin up and control subagents.
+該技能有一個腳本，用於啟動和控制子代理程式。
+
+213
+00:14:24,816 --> 00:14:25,265
+Through Pi.
+透過Pi.
+
+214
+00:14:25,473 --> 00:14:26,707
+I could be using an extension.
+我可以使用擴充功能。
+
+215
+00:14:26,755 --> 00:14:27,974
+I'm using a skill instead.
+我正在使用一項技能。
+
+216
+00:14:28,278 --> 00:14:30,811
+And then that skill explains how to use that script.
+然後該技能解釋如何使用該腳本。
+
+217
+00:14:30,859 --> 00:14:37,432
+So of course, it's kind of like that generate image script, but it still is a skill that
+當然，這有點像生成圖像腳本，但它仍然是一項技能
+
+218
+00:14:37,640 --> 00:14:44,421
+explains how to use that Pi coding agent in which a model may be running and how
+解釋瞭如何使用模型可能在其中運行的 Pi 編碼代理以及如何使用
+
+219
+00:14:44,549 --> 00:14:48,236
+to use it to, for example, work with subagents.
+例如，使用它來與子代理一起工作。
+
+220
+00:14:48,621 --> 00:14:54,680
+Another example could be for any other CLI you install on your system, which you want
+另一個例子可能是您在系統上安裝的任何其他您想要的 CLI
+
+221
+00:14:54,680 --> 00:14:56,459
+to explain to an agent.
+向代理人解釋。
+
+222
+00:14:56,796 --> 00:15:01,908
+And the last type of skill, at least for me, are executables, as I like to call them,
+最後一種技能，至少對我來說，是可執行的，我喜歡這樣稱呼它們，
+
+223
+00:15:02,245 --> 00:15:05,258
+which would, for example, be that Generate Image skill.
+例如，這就是“生成圖像”技能。
+
+224
+00:15:05,690 --> 00:15:11,588
+Or maybe even more than that, for me, it's that VPS Setup Hardening skill I have here.
+或者甚至更重要的是，對我來說，這是我在這裡擁有的 VPS 設定強化技能。
+
+225
+00:15:12,277 --> 00:15:18,191
+This skill has a bunch of scripts and a bunch of configuration templates, for example.
+例如，這項技能有一堆腳本和一堆配置模板。
+
+226
+00:15:18,591 --> 00:15:23,287
+And I use this skill to, for example, configure a new VPS.
+例如，我使用此技能來配置新的 VPS。
+
+227
+00:15:23,560 --> 00:15:30,359
+I could do that all with just scripts, but it does actually require some decisions here
+我可以只用腳本來完成這一切，但它實際上需要在這裡做出一些決定
+
+228
+00:15:30,391 --> 00:15:34,675
+and there, some checks that should be performed, and it's nice to have an agent do that.
+在那裡，應該執行一些檢查，很高興有代理商來做這件事。
+
+229
+00:15:35,606 --> 00:15:40,789
+Obviously, everybody has to decide for themselves if they want to let an agent roam freely
+顯然，是否要讓代理商自由漫遊，每個人都必須自己決定
+
+230
+00:15:40,821 --> 00:15:43,934
+on a VPS, but I have had good experience with that.
+在 VPS 上，但我對此有很好的經驗。
+
+231
+00:15:44,094 --> 00:15:50,561
+I'm using that skill, for example, to execute that workflow of setting up a new VPS
+例如，我正在使用該技能來執行設定新 VPS 的工作流程
+
+232
+00:15:50,706 --> 00:15:54,268
+together with an agent, and I describe how that works.
+與代理人一起，我描述了它是如何運作的。
+
+233
+00:15:54,380 --> 00:15:57,782
+I have clearly described workflow here.
+我在這裡已經清楚地描述了工作流程。
+
+234
+00:15:57,894 --> 00:16:01,007
+And then I have all these hardcoded scripts and configs.
+然後我就有了所有這些硬編碼的腳本和配置。
+
+235
+00:16:01,360 --> 00:16:07,425
+And for all these things, Agent Skills can be really useful and can be considered.
+對於所有這些事情，特工技能確實很有用，可以考慮。
+
+236
+00:16:07,762 --> 00:16:11,757
+And that therefore leaves only 2 remaining questions.
+因此只剩下兩個問題了。
+
+237
+00:16:12,094 --> 00:16:16,635
+One question is where to put those skills, because you can install them globally on your
+一個問題是將這些技能放在哪裡，因為您可以將它們全域安裝在您的電腦上
+
+238
+00:16:16,683 --> 00:16:18,400
+system or locally per project.
+系統或每個項目本地。
+
+239
+00:16:18,833 --> 00:16:23,198
+That, of course, should be relatively easy to answer if you have something like my Create
+當然，如果你有像我的 Create 這樣的東西，這個問題應該相對容易回答
+
+240
+00:16:23,246 --> 00:16:27,814
+plan skill, which applies to many projects, to all the projects I'm working on, it should
+計劃技巧，適用於許多項目，適用於我正在從事的所有項目，它應該
+
+241
+00:16:27,814 --> 00:16:28,680
+be a global skill.
+成為一項全球技能。
+
+242
+00:16:28,872 --> 00:16:33,265
+The generate image skill is a global skill because I may want to generate an image from
+生成圖像技能是一項全局技能，因為我可能想從
+
+243
+00:16:33,425 --> 00:16:34,451
+anywhere on the system.
+系統上的任何位置。
+
+244
+00:16:34,964 --> 00:16:39,997
+On the other hand, that effect skill with the effect library knowledge, that would be
+另一方面，效果技能加上效果庫知識，那就是
+
+245
+00:16:39,997 --> 00:16:43,748
+per project because it doesn't add any value if it's sitting there globally.
+每個項目，因為如果它位於全球範圍內，它不會增加任何價值。
+
+246
+00:16:44,005 --> 00:16:48,076
+Because all the global skills, of course, at least their metadata, their description,
+因為所有的全域技能，當然，至少是它們的元數據，它們的描述，
+
+247
+00:16:48,653 --> 00:16:51,282
+they are always loaded into all your sessions.
+它們總是加載到您的所有會話中。
+
+248
+00:16:51,940 --> 00:16:54,969
+And it's not just about the tokens that are burned by them.
+這不僅僅是他們燒毀的代幣。
+
+249
+00:16:55,050 --> 00:16:56,382
+That's not too bad.
+那還不錯。
+
+250
+00:16:57,232 --> 00:17:03,186
+All these tools, which skills in the end are, simply can lead to worse model performance
+所有這些工具（到底是哪些技能）只會導致模型效能變差
+
+251
+00:17:03,186 --> 00:17:04,342
+the more you have of them.
+你擁有的越多。
+
+252
+00:17:04,872 --> 00:17:08,611
+And therefore, I try to keep my global skills as lean as possible.
+因此，我盡力保持我的全球技能盡可能精益。
+
+253
+00:17:08,804 --> 00:17:12,286
+In general, I try to have as few skills as possible.
+一般來說，我會盡量少掌握技能。
+
+254
+00:17:12,880 --> 00:17:17,278
+And I definitely put everything into a project that can be in a project.
+我絕對把所有可以在專案中的東西都投入到一個專案中。
+
+255
+00:17:17,534 --> 00:17:23,569
+Well, and the other question is, what would you put into AgentsMD or ClaudeMD?
+那麼，另一個問題是，您會在 AgentsMD 或 ClaudeMD 中放入什麼？
+
+256
+00:17:23,874 --> 00:17:28,267
+And For me, these files should be super lean.
+對我來說，這些文件應該非常精簡。
+
+257
+00:17:28,683 --> 00:17:34,678
+I really only put general instructions in there that steer the behavior of the model.
+我實際上只是在其中放置了指導模型行為的一般指令。
+
+258
+00:17:34,726 --> 00:17:37,740
+Something like, keep your responses short.
+例如，讓你的回答簡短一點。
+
+259
+00:17:38,060 --> 00:17:44,296
+Or don't add any legacy or fallback code because models, or at least some models, love
+或不要添加任何遺留或後備程式碼，因為模型或至少某些模型喜歡
+
+260
+00:17:44,328 --> 00:17:44,761
+to do that.
+這樣做。
+
+261
+00:17:45,194 --> 00:17:50,676
+They don't delete code, they just add layer on layer on layer and having such instructions
+他們不會刪除程式碼，他們只是一層一層地添加並有這樣的指令
+
+262
+00:17:50,676 --> 00:17:53,932
+in AgentsMD can help a bit at least.
+AgentsMD 中至少可以提供一點幫助。
+
+263
+00:17:54,092 --> 00:17:55,665
+Now, why not make it a skill?
+現在，為什麼不把它變成一項技能呢？
+
+264
+00:17:55,954 --> 00:17:57,847
+Because a skill must be activated.
+因為必須發動技能。
+
+265
+00:17:58,200 --> 00:18:00,447
+And I don't want to hope for that to be activated.
+我不希望它被激活。
+
+266
+00:18:00,688 --> 00:18:05,550
+If I have hard rules that matter to all the models and all the agents, I put them into
+如果我有對所有模型和所有代理都很重要的硬性規則，我會將它們放入
+
+267
+00:18:05,582 --> 00:18:10,187
+a global agents.md file because you can have global agents and Claude.md files too, not
+全域代理.md 文件，因為您也可以擁有全域代理程式和 Claude.md 文件，而不是
+
+268
+00:18:10,236 --> 00:18:11,616
+just project-specific ones.
+只是特定於項目的。
+
+269
+00:18:12,241 --> 00:18:15,162
+And then they will be loaded for every session and I'm good to go.
+然後每次會話都會加載它們，我就可以開始了。
+
+270
+00:18:15,692 --> 00:18:17,746
+And that's the simple differentiation here for me.
+這對我來說就是簡單的差別。
+
+271
+00:18:17,794 --> 00:18:23,855
+Skills are like tools, like extra patterns or pieces of knowledge that matter often,
+技能就像工具，就像經常重要的額外模式或知識片段，
+
+272
+00:18:24,129 --> 00:18:25,062
+but not always.
+但並非總是如此。
+
+273
+00:18:25,560 --> 00:18:29,920
+If something does matter always, it goes into AgentsMD or ClaudeMD.
+如果某件事確實很重要，那麼它就會進入 AgentsMD 或 ClaudeMD。
+
+274
+00:18:30,788 --> 00:18:35,582
+Yeah, and that is really how you should be using skills in my opinion.
+是的，在我看來，這確實是你應該如何使用技能的方式。

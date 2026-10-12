@@ -1,0 +1,758 @@
+[
+  {
+    "start": 96,
+    "end": 4921,
+    "text": "You can use Claude Code in the CLI, in the terminal user interface, which is probably",
+    "zh": "您可以在 CLI 中的終端使用者介面中使用 Claude Code，這可能是"
+  },
+  {
+    "start": 5001,
+    "end": 6203,
+    "text": "what most developers do.",
+    "zh": "大多數開發人員所做的事情。"
+  },
+  {
+    "start": 6363,
+    "end": 11253,
+    "text": "But Anthropic also has a desktop app, Claude Code as a desktop app.",
+    "zh": "但 Anthropic 也有一個桌面應用程序，Claude Code 作為桌面應用程式。"
+  },
+  {
+    "start": 11894,
+    "end": 14154,
+    "text": "Technically, it's actually not just Claude Code.",
+    "zh": "從技術上講，它實際上不僅僅是克勞德·代碼。"
+  },
+  {
+    "start": 14218,
+    "end": 18787,
+    "text": "There also is the Claude Chat, which is like ChatGPT just in the desktop app.",
+    "zh": "還有 Claude Chat，它就像桌面應用程式中的 ChatGPT。"
+  },
+  {
+    "start": 19492,
+    "end": 22249,
+    "text": "And there is Claude Cowork, which is a general work assistant.",
+    "zh": "還有克勞德·科沃克（Claude Cowork），他是一名普通工作助理。"
+  },
+  {
+    "start": 22297,
+    "end": 24141,
+    "text": "But there also is the Claude Code app.",
+    "zh": "但還有 Claude Code 應用程式。"
+  },
+  {
+    "start": 24558,
+    "end": 29816,
+    "text": "And that's actually not just the CLI wrapped into a desktop app, but it's a really useful",
+    "zh": "這實際上不僅僅是包含在桌面應用程式中的 CLI，而且它非常有用"
+  },
+  {
+    "start": 29912,
+    "end": 32990,
+    "text": "standalone app, especially since the latest update.",
+    "zh": "獨立應用程序，尤其是自最新更新以來。"
+  },
+  {
+    "start": 33055,
+    "end": 35638,
+    "text": "And no, this video is not sponsored by Anthropic.",
+    "zh": "不，該影片不是由 Anthropic 贊助的。"
+  },
+  {
+    "start": 35686,
+    "end": 39857,
+    "text": "I just think this new version of this app is pretty useful, which is why I'll give you",
+    "zh": "我只是覺得這個應用程式的新版本非常有用，這就是為什麼我會給你"
+  },
+  {
+    "start": 39857,
+    "end": 40339,
+    "text": "a walkthrough.",
+    "zh": "演練。"
+  },
+  {
+    "start": 40579,
+    "end": 45376,
+    "text": "If you want to learn way more about Claude Code, about this app, and about the CLI mostly,",
+    "zh": "如果您想進一步了解 Claude Code、此應用程式以及 CLI，"
+  },
+  {
+    "start": 45569,
+    "end": 47189,
+    "text": "I got a complete course on that.",
+    "zh": "我有一個完整的課程。"
+  },
+  {
+    "start": 47318,
+    "end": 50542,
+    "text": "It's fully updated for this new look of this new desktop app.",
+    "zh": "它已針對新桌面應用程式的新外觀進行了全面更新。"
+  },
+  {
+    "start": 50639,
+    "end": 52195,
+    "text": "I did that this morning.",
+    "zh": "我今天早上就這麼做了。"
+  },
+  {
+    "start": 52307,
+    "end": 55500,
+    "text": "It's already live, and that may be useful to you.",
+    "zh": "它已經上線，可能對您有用。"
+  },
+  {
+    "start": 55612,
+    "end": 56543,
+    "text": "So what's in this app?",
+    "zh": "那麼這個應用程式中有什麼？"
+  },
+  {
+    "start": 57120,
+    "end": 63114,
+    "text": "Well, This app has pretty much the same idea you might know from the Codex app or Cursor,",
+    "zh": "嗯，這個應用程式的想法與您可能從 Codex 應用程式或 Cursor 中了解到的想法幾乎相同，"
+  },
+  {
+    "start": 63130,
+    "end": 64829,
+    "text": "the Cursor Agents app if you use that.",
+    "zh": "Cursor Agents 應用程式（如果您使用該應用程式）。"
+  },
+  {
+    "start": 65294,
+    "end": 69075,
+    "text": "You can have multiple projects in there and in each project you can have multiple sessions.",
+    "zh": "您可以在那裡有多個項目，並且在每個項目中您可以有多個會話。"
+  },
+  {
+    "start": 69124,
+    "end": 73883,
+    "text": "You can start a new session, you can then pick a project for this session, you can pick",
+    "zh": "您可以開始一個新會話，然後可以為此會話選擇一個項目，您可以選擇"
+  },
+  {
+    "start": 73883,
+    "end": 74732,
+    "text": "a Git branch.",
+    "zh": "一個 Git 分支。"
+  },
+  {
+    "start": 75149,
+    "end": 77713,
+    "text": "It has a built-in Git worktree feature.",
+    "zh": "它具有內建的 Git 工作樹功能。"
+  },
+  {
+    "start": 77937,
+    "end": 81687,
+    "text": "And in case you don't know what Git worktrees are, the idea is that you have your main",
+    "zh": "如果您不知道 Git 工作樹是什麼，那麼您的主要想法是"
+  },
+  {
+    "start": 82024,
+    "end": 88099,
+    "text": "repo and Git Worktrees are an official Git feature which creates a clone, a local clone",
+    "zh": "repo 和 Git Worktrees 是一個官方的 Git 功能，它創建一個克隆，一個本地克隆"
+  },
+  {
+    "start": 88355,
+    "end": 89221,
+    "text": "of this repo.",
+    "zh": "這個倉庫的。"
+  },
+  {
+    "start": 89269,
+    "end": 95152,
+    "text": "So on your system, the project is kind of copied, not all the files, just the Git-managed",
+    "zh": "所以在你的系統上，專案是複製的，不是所有的文件，只是 Git 管理的"
+  },
+  {
+    "start": 95168,
+    "end": 95729,
+    "text": "files though.",
+    "zh": "文件雖然。"
+  },
+  {
+    "start": 96146,
+    "end": 101484,
+    "text": "And then you have that copy and you can work in the main repo and the copy simultaneously,",
+    "zh": "然後你就擁有了該副本，你可以同時在主儲存庫和副本中工作，"
+  },
+  {
+    "start": 101660,
+    "end": 106710,
+    "text": "have multiple agents running across these different worktrees so that they don't clash",
+    "zh": "讓多個代理程式在這些不同的工作樹上運行，這樣它們就不會發生衝突"
+  },
+  {
+    "start": 106726,
+    "end": 107255,
+    "text": "with each other.",
+    "zh": "與彼此。"
+  },
+  {
+    "start": 107367,
+    "end": 108088,
+    "text": "That's the idea.",
+    "zh": "就是這個想法。"
+  },
+  {
+    "start": 108489,
+    "end": 112320,
+    "text": "And then once you're done, you can merge your worktree changes back into the main repo.",
+    "zh": "完成後，您可以將工作樹變更合併回主儲存庫。"
+  },
+  {
+    "start": 112577,
+    "end": 113138,
+    "text": "That's the idea.",
+    "zh": "就是這個想法。"
+  },
+  {
+    "start": 113218,
+    "end": 118254,
+    "text": "And if you would check this box, the desktop app will create such a work tree for you",
+    "zh": "如果您選取此框，桌面應用程式將為您建立這樣一個工作樹"
+  },
+  {
+    "start": 118415,
+    "end": 122828,
+    "text": "automatically for whatever task you're handing off to it so that you could have multiple",
+    "zh": "自動執行您交給它的任何任務，以便您可以擁有多個"
+  },
+  {
+    "start": 122828,
+    "end": 126181,
+    "text": "agents working in the same repo without clashing, as I mentioned.",
+    "zh": "正如我所提到的，在同一個倉庫中工作的代理不會發生衝突。"
+  },
+  {
+    "start": 126695,
+    "end": 130177,
+    "text": "You can also start cloud tasks from in there.",
+    "zh": "您也可以從那裡啟動雲端任務。"
+  },
+  {
+    "start": 130289,
+    "end": 134734,
+    "text": "I cover this in more depth in my course, but the idea is that if you switch to a cloud",
+    "zh": "我在課程中更深入地介紹了這一點，但想法是，如果您切換到雲"
+  },
+  {
+    "start": 134734,
+    "end": 140671,
+    "text": "environment here, you have to set that up in the Claude Code cloud web interface first.",
+    "zh": "這裡的環境，您必須先在 Claude Code 雲端 Web 介面中進行設定。"
+  },
+  {
+    "start": 140736,
+    "end": 146111,
+    "text": "But if you have that, you could change the primary color to red or something like this.",
+    "zh": "但如果你有的話，你可以將原色改為紅色或類似的顏色。"
+  },
+  {
+    "start": 146512,
+    "end": 150423,
+    "text": "And now if I would submit this, this would not be executed locally, but instead in the",
+    "zh": "現在，如果我提交這個，這將不會在本地執行，而是在"
+  },
+  {
+    "start": 150423,
+    "end": 150695,
+    "text": "cloud.",
+    "zh": "雲。"
+  },
+  {
+    "start": 150759,
+    "end": 154414,
+    "text": "But of course, local is also an option and the default essentially.",
+    "zh": "但當然，本地也是一種選擇，而且本質上是預設的。"
+  },
+  {
+    "start": 155071,
+    "end": 160600,
+    "text": "You can manage your permissions down here, including bypass permissions if you enabled",
+    "zh": "您可以在此處管理您的權限，包括繞過權限（如果您啟用了）"
+  },
+  {
+    "start": 160600,
+    "end": 161466,
+    "text": "that in the settings.",
+    "zh": "設定中的那個。"
+  },
+  {
+    "start": 161882,
+    "end": 167043,
+    "text": "You can switch to plan mode, you can add additional context, and you also got slash commands",
+    "zh": "您可以切換到計劃模式，可以添加其他上下文，並且還可以使用斜線命令"
+  },
+  {
+    "start": 167043,
+    "end": 167588,
+    "text": "available here.",
+    "zh": "可以在這裡找到。"
+  },
+  {
+    "start": 167733,
+    "end": 172781,
+    "text": "If you type slash whatever, you can essentially run all the key commands you know from",
+    "zh": "如果你輸入斜杠，你基本上可以運行你知道的所有關鍵命令"
+  },
+  {
+    "start": 172797,
+    "end": 175089,
+    "text": "the CLI as well, including your skills.",
+    "zh": "以及 CLI，包括您的技能。"
+  },
+  {
+    "start": 175843,
+    "end": 177288,
+    "text": "You can invoke them from there too.",
+    "zh": "您也可以從那裡調用它們。"
+  },
+  {
+    "start": 177689,
+    "end": 183049,
+    "text": "If you don't want to hope that Claude Code decides to load them, you can just actively",
+    "zh": "如果你不想希望 Claude Code 決定加載它們，你可以主動"
+  },
+  {
+    "start": 183065,
+    "end": 184734,
+    "text": "invoke them from here, of course.",
+    "zh": "當然，從這裡調用它們。"
+  },
+  {
+    "start": 185055,
+    "end": 190255,
+    "text": "You could also use voice dictation, and of course, you can also switch easily to different",
+    "zh": "您也可以使用語音聽寫，當然，您也可以輕鬆切換到不同的"
+  },
+  {
+    "start": 190287,
+    "end": 190559,
+    "text": "models.",
+    "zh": "模型。"
+  },
+  {
+    "start": 190624,
+    "end": 192116,
+    "text": "Now, that's all nice.",
+    "zh": "現在，一切都很好。"
+  },
+  {
+    "start": 192469,
+    "end": 195663,
+    "text": "I mean, you can all find that on your own, I guess.",
+    "zh": "我的意思是，我想你們都可以自己找到。"
+  },
+  {
+    "start": 195743,
+    "end": 196850,
+    "text": "Still nice to see it.",
+    "zh": "還是很高興看到它。"
+  },
+  {
+    "start": 197428,
+    "end": 203046,
+    "text": "What is interesting is that if you have an active session, or a session that's already",
+    "zh": "有趣的是，如果您有一個活動會話，或者一個已經存在的會話"
+  },
+  {
+    "start": 203110,
+    "end": 206194,
+    "text": "complete, you have this button here in the top right corner.",
+    "zh": "完成後，右上角有這個按鈕。"
+  },
+  {
+    "start": 206258,
+    "end": 210722,
+    "text": "And that is the most interesting button when doing local development with the Claude",
+    "zh": "這是使用 Claude 進行本地開發時最有趣的按鈕"
+  },
+  {
+    "start": 210819,
+    "end": 211831,
+    "text": "desktop app, I would say.",
+    "zh": "我想說的是桌面應用程式。"
+  },
+  {
+    "start": 212184,
+    "end": 217452,
+    "text": "Because here you can for one view your plan if you did use plan mode.",
+    "zh": "因為如果您使用計劃模式，您可以在這裡查看您的計劃。"
+  },
+  {
+    "start": 217500,
+    "end": 218672,
+    "text": "Here I didn't, so I have none.",
+    "zh": "這裡我沒有，所以我沒有。"
+  },
+  {
+    "start": 219266,
+    "end": 222559,
+    "text": "When it's currently working, you can see your ongoing tasks here too.",
+    "zh": "當它目前正在運行時，您也可以在此處查看正在進行的任務。"
+  },
+  {
+    "start": 222735,
+    "end": 224630,
+    "text": "So the tasks it's going through.",
+    "zh": "所以它正在經歷的任務。"
+  },
+  {
+    "start": 225128,
+    "end": 231084,
+    "text": "But if it's done already, you can for example use the preview feature to have it launch",
+    "zh": "但如果它已經完成，您可以使用預覽功能來啟動它"
+  },
+  {
+    "start": 231148,
+    "end": 235174,
+    "text": "a dev server for you and show you a preview of your website.",
+    "zh": "為您提供開發伺服器並向您展示網站的預覽。"
+  },
+  {
+    "start": 235222,
+    "end": 238254,
+    "text": "If you are working on a website here, you have to set it up once.",
+    "zh": "如果您正在此處開發網站，則必須設定一次。"
+  },
+  {
+    "start": 238350,
+    "end": 242906,
+    "text": "And if you click this button, it actually uses the Claude agent, the Claude models to",
+    "zh": "如果你點擊這個按鈕，它實際上使用 Claude 代理，Claude 模型來"
+  },
+  {
+    "start": 243483,
+    "end": 249354,
+    "text": "write a Claude launch JSON file for you, which will contain the setup instructions or",
+    "zh": "為您編寫 Claude launch JSON 文件，其中包含設定說明或"
+  },
+  {
+    "start": 249370,
+    "end": 251135,
+    "text": "the setup configuration, I should say.",
+    "zh": "我應該說的是設定配置。"
+  },
+  {
+    "start": 251183,
+    "end": 252867,
+    "text": "So that's a one-time step.",
+    "zh": "所以這是一次性的步驟。"
+  },
+  {
+    "start": 253043,
+    "end": 258962,
+    "text": "And once it's done here, you can ask it to go ahead and Start a dev server and start",
+    "zh": "在這裡完成後，您可以要求它繼續啟動開發伺服器並啟動"
+  },
+  {
+    "start": 258962,
+    "end": 259587,
+    "text": "that preview.",
+    "zh": "那個預覽。"
+  },
+  {
+    "start": 260501,
+    "end": 264141,
+    "text": "And then it will indeed show you a preview of your site here.",
+    "zh": "然後它確實會在這裡向您顯示您網站的預覽。"
+  },
+  {
+    "start": 264254,
+    "end": 268856,
+    "text": "Now what is interesting is not just that you have a preview here, which can already be",
+    "zh": "現在有趣的不僅僅是你在這裡有一個預覽，它已經可以了"
+  },
+  {
+    "start": 268856,
+    "end": 269145,
+    "text": "nice.",
+    "zh": "好的。"
+  },
+  {
+    "start": 269225,
+    "end": 272656,
+    "text": "You can prompt away here and see the changes live here to the right.",
+    "zh": "您可以在此處提示並查看右側的變更。"
+  },
+  {
+    "start": 272785,
+    "end": 273570,
+    "text": "That can be nice.",
+    "zh": "那太好了。"
+  },
+  {
+    "start": 274372,
+    "end": 278734,
+    "text": "But the best feature here is this button, this one.",
+    "zh": "但這裡最好的功能是這個按鈕，這個按鈕。"
+  },
+  {
+    "start": 279327,
+    "end": 280402,
+    "text": "I mean, this one is interesting too.",
+    "zh": "我的意思是，這也很有趣。"
+  },
+  {
+    "start": 280530,
+    "end": 282567,
+    "text": "You can switch between mobile and desktop view here.",
+    "zh": "您可以在此處切換行動視圖和桌面視圖。"
+  },
+  {
+    "start": 282952,
+    "end": 286776,
+    "text": "Also switch between the different modes if your app supports it, different light and",
+    "zh": "如果您的應用程式支持，還可以在不同模式之間切換，不同的光線和"
+  },
+  {
+    "start": 286776,
+    "end": 287258,
+    "text": "dark modes.",
+    "zh": "黑暗模式。"
+  },
+  {
+    "start": 287772,
+    "end": 289299,
+    "text": "But this button here is great.",
+    "zh": "但這裡的這個按鈕很棒。"
+  },
+  {
+    "start": 289379,
+    "end": 293669,
+    "text": "It allows you to select an element and then this element is added as context here.",
+    "zh": "它允許您選擇一個元素，然後將該元素添加為此處的上下文。"
+  },
+  {
+    "start": 294826,
+    "end": 297992,
+    "text": "And you can then of course base your prompt on that.",
+    "zh": "然後您當然可以以此為基礎進行提示。"
+  },
+  {
+    "start": 298056,
+    "end": 302314,
+    "text": "So if you know that you want to change something about that element, change the text",
+    "zh": "因此，如果您知道要更改該元素的某些內容，請更改文本"
+  },
+  {
+    "start": 302314,
+    "end": 307312,
+    "text": "to just welcome, you don't need to describe in which file it is and hope that it finds",
+    "zh": "只是歡迎，您不需要描述它在哪個文件中並希望它找到"
+  },
+  {
+    "start": 307312,
+    "end": 307392,
+    "text": "it.",
+    "zh": "它。"
+  },
+  {
+    "start": 307698,
+    "end": 312413,
+    "text": "No, you can just select whatever you're not happy with and that will be added as context",
+    "zh": "不，您可以選擇任何您不滿意的內容，這些內容將作為上下文添加"
+  },
+  {
+    "start": 312413,
+    "end": 312477,
+    "text": "here.",
+    "zh": "這裡。"
+  },
+  {
+    "start": 312525,
+    "end": 315779,
+    "text": "Of course, you can also delete it and that can be a nice feature.",
+    "zh": "當然，您也可以刪除它，這可能是一個很好的功能。"
+  },
+  {
+    "start": 315875,
+    "end": 320716,
+    "text": "And I know other tools have that too, but the Claude Code desktop app now has it as well.",
+    "zh": "我知道其他工具也有這個功能，但 Claude Code 桌面應用程式現在也有它。"
+  },
+  {
+    "start": 321646,
+    "end": 327689,
+    "text": "Now besides that, you also have a div view here and that is also pretty nice and a feature",
+    "zh": "除此之外，你還可以在這裡看到一個 div 視圖，這也是一個非常好的功能"
+  },
+  {
+    "start": 327721,
+    "end": 330222,
+    "text": "I already know from the Codex and also other apps.",
+    "zh": "我已經從 Codex 和其他應用程式中知道了。"
+  },
+  {
+    "start": 330687,
+    "end": 336778,
+    "text": "Here you can easily scroll through your files and see all the changes, everything that",
+    "zh": "在這裡您可以輕鬆地滾動瀏覽文件並查看所有更改以及所有內容"
+  },
+  {
+    "start": 336778,
+    "end": 338494,
+    "text": "is uncommitted essentially here.",
+    "zh": "在這裡基本上沒有承諾。"
+  },
+  {
+    "start": 339119,
+    "end": 343613,
+    "text": "And you cannot just view them, which is already nice because reviewing the code is important",
+    "zh": "而且你不能只查看它們，這已經很好了，因為檢查程式碼很重要"
+  },
+  {
+    "start": 343629,
+    "end": 346406,
+    "text": "unless you're of course wipe coding and don't care about the code at all.",
+    "zh": "除非您當然要擦除程式碼並且根本不關心程式碼。"
+  },
+  {
+    "start": 346680,
+    "end": 352136,
+    "text": "I do care though, but this is nice for code reviews and you can also drop comments here.",
+    "zh": "我確實很關心，但這對於程式碼審查來說很好，你也可以在這裡發表評論。"
+  },
+  {
+    "start": 353879,
+    "end": 360400,
+    "text": "You can say something like remove this or whatever and if you submit this comment, it's",
+    "zh": "你可以說刪除這個或其他什麼，如果你提交這個評論，它就是"
+  },
+  {
+    "start": 360481,
+    "end": 362869,
+    "text": "also added as context here.",
+    "zh": "也在這裡添加為上下文。"
+  },
+  {
+    "start": 363418,
+    "end": 366839,
+    "text": "So now you could send it like this or add some extra instructions.",
+    "zh": "所以現在您可以像這樣發送或添加一些額外的說明。"
+  },
+  {
+    "start": 368022,
+    "end": 374771,
+    "text": "We don't want to use custom variant, whatever, you can send that.",
+    "zh": "我們不想使用自訂變體，無論如何，您可以發送它。"
+  },
+  {
+    "start": 375219,
+    "end": 378009,
+    "text": "And again, you don't have to describe to which file you're referring.",
+    "zh": "再說一次，您不必描述您所引用的文件。"
+  },
+  {
+    "start": 378105,
+    "end": 382449,
+    "text": "Instead, you can just comment inline and then base your prompt on this, which of course",
+    "zh": "相反，您可以只內聯註釋，然後基於此進行提示，當然，"
+  },
+  {
+    "start": 382449,
+    "end": 383779,
+    "text": "can be more convenient.",
+    "zh": "可以更方便。"
+  },
+  {
+    "start": 384693,
+    "end": 387402,
+    "text": "Now, outside of that, you also have a terminal.",
+    "zh": "現在，除此之外，您還有一個終端。"
+  },
+  {
+    "start": 387659,
+    "end": 392869,
+    "text": "So that is essentially the same kind of terminal you, for example, also have in Visual",
+    "zh": "因此，這本質上與您在 Visual 中擁有的終端機類型相同"
+  },
+  {
+    "start": 392869,
+    "end": 393558,
+    "text": "Studio Code.",
+    "zh": "工作室代碼。"
+  },
+  {
+    "start": 393750,
+    "end": 395626,
+    "text": "So you can use the integrated terminal there.",
+    "zh": "所以你可以在那裡使用整合終端。"
+  },
+  {
+    "start": 395834,
+    "end": 398143,
+    "text": "You also have it here in the Claude Code desktop app.",
+    "zh": "您也可以在 Claude Code 桌面應用程式中找到它。"
+  },
+  {
+    "start": 398639,
+    "end": 402412,
+    "text": "And therefore altogether, I think this is pretty nice.",
+    "zh": "因此總的來說，我認為這非常好。"
+  },
+  {
+    "start": 402734,
+    "end": 409111,
+    "text": "Of course, in the end, let's be honest, it is mostly what we already saw from other apps",
+    "zh": "當然，最後，說實話，這主要是我們已經從其他應用程式中看到的"
+  },
+  {
+    "start": 409224,
+    "end": 413545,
+    "text": "like Codex, for example, but it's a nice glow up of the application.",
+    "zh": "例如，像 Codex，但它是應用程式的一個很好的亮點。"
+  },
+  {
+    "start": 413641,
+    "end": 414878,
+    "text": "I like the look and feel.",
+    "zh": "我喜歡它的外觀和感覺。"
+  },
+  {
+    "start": 414927,
+    "end": 417658,
+    "text": "It's really fast and snappy in my first tests.",
+    "zh": "在我的第一次測試中，它確實非常快且敏捷。"
+  },
+  {
+    "start": 418300,
+    "end": 423007,
+    "text": "And I think if you are into this kind of development, if you prefer that over a CLI,",
+    "zh": "我認為如果您喜歡這種開發，如果您更喜歡這種開發而不是 CLI，"
+  },
+  {
+    "start": 423682,
+    "end": 427039,
+    "text": "this is definitely a great improvement over the old Claude.",
+    "zh": "這相對於老克勞德來說絕對是一個很大的進步。"
+  },
+  {
+    "start": 427152,
+    "end": 428119,
+    "text": "Code desktop app.",
+    "zh": "程式碼桌面應用程式。"
+  },
+  {
+    "start": 428344,
+    "end": 430553,
+    "text": "And as mentioned, I already cover it in my course.",
+    "zh": "如前所述，我已經在課程中介紹了它。"
+  },
+  {
+    "start": 430778,
+    "end": 433663,
+    "text": "There I also explain routines, dispatch, and much more.",
+    "zh": "在那裡我還解釋了例行公事、調度等等。"
+  },
+  {
+    "start": 433744,
+    "end": 436500,
+    "text": "But hopefully this quick walkthrough also was helpful.",
+    "zh": "但希望這個快速演練也能有所幫助。"
+  }
+]

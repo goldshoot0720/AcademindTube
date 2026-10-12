@@ -1,8 +1,8 @@
 {
-  "window": "3m",
-  "days": 90,
+  "window": "6m",
+  "days": 180,
   "ref": "2026-10-12",
-  "generated": "2026-10-12T13:36:45",
+  "generated": "2026-10-12T20:31:14",
   "channel": {
     "name": "Academind",
     "handle": "@academind",
@@ -11805,6 +11805,2142 @@
           "end": 557.943,
           "en": "those TUIs, with those CLI coding agents, and if you want to keep stuff organized.",
           "zh": "那些 TUI，那些 CLI 編碼代理，如果你想保持東西井井有條。"
+        }
+      ]
+    },
+    {
+      "id": "QOdCAV0xfEc",
+      "title": "Using Claude Cowork and Codex for Automating ANY Business Task",
+      "date": "20260519",
+      "file": "20260519_QOdCAV0xfEc_using-claude-cowork-and-codex-for-automating-any-business-ta.srt",
+      "cueCount": 176,
+      "issues": 0,
+      "duration": 704,
+      "cues": [
+        {
+          "i": 1,
+          "start": 0.032,
+          "end": 5.509,
+          "en": "Tools like Codex or Cloud Code are pretty good at helping you work with code, right?",
+          "zh": "Codex 或 Cloud Code 等工具非常適合幫助您處理程式碼，對嗎？"
+        },
+        {
+          "i": 2,
+          "start": 5.558,
+          "end": 6.554,
+          "en": "I mean, it's pretty obvious.",
+          "zh": "我的意思是，這很明顯。"
+        },
+        {
+          "i": 3,
+          "start": 6.618,
+          "end": 8.786,
+          "en": "It's Codex, it's Cloud Code, kind of makes sense.",
+          "zh": "它是 Codex，它是 Cloud Code，有點道理。"
+        },
+        {
+          "i": 4,
+          "start": 8.931,
+          "end": 14.666,
+          "en": "But it's important to understand that you can do more with those tools than just work",
+          "zh": "但重要的是要了解，除了工作之外，您還可以使用這些工具做更多事情"
+        },
+        {
+          "i": 5,
+          "start": 14.875,
+          "end": 15.341,
+          "en": "on code.",
+          "zh": "在代碼上。"
+        },
+        {
+          "i": 6,
+          "start": 15.919,
+          "end": 20.642,
+          "en": "And for example, in the Codex course I have, which you find linked below if you're interested,",
+          "zh": "例如，在我的 Codex 課程中，如果您有興趣，可以在下面找到鏈接，"
+        },
+        {
+          "i": 7,
+          "start": 21.059,
+          "end": 25.156,
+          "en": "I do primarily dive into coding and show you all the nitty-gritty details there and some",
+          "zh": "我主要是深入研究編碼並向您展示所有的細節以及一些"
+        },
+        {
+          "i": 8,
+          "start": 25.156,
+          "end": 27.517,
+          "en": "tips and tricks how to get the most out of it.",
+          "zh": "如何充分利用它的提示和技巧。"
+        },
+        {
+          "i": 9,
+          "start": 28.047,
+          "end": 34.944,
+          "en": "I also have some lectures in there where I show you how to use it for non-coding tasks",
+          "zh": "我在那裡還有一些講座，向您展示如何將它用於非編碼任務"
+        },
+        {
+          "i": 10,
+          "start": 34.944,
+          "end": 39.997,
+          "en": "because that is useful to know as well because you may not be a developer, then that",
+          "zh": "因為了解這一點也很有用，因為您可能不是開發人員，那麼"
+        },
+        {
+          "i": 11,
+          "start": 39.997,
+          "end": 40.35,
+          "en": "is great.",
+          "zh": "太棒了。"
+        },
+        {
+          "i": 12,
+          "start": 40.414,
+          "end": 45.675,
+          "en": "But even as a developer, we all got stuff to do that is not directly related to coding",
+          "zh": "但即使作為開發人員，我們也有一些與編碼沒有直接關係的事情要做"
+        },
+        {
+          "i": 13,
+          "start": 46.493,
+          "end": 48.402,
+          "en": "where we might be too lazy to do it manually.",
+          "zh": "我們可能懶得手動完成。"
+        },
+        {
+          "i": 14,
+          "start": 48.691,
+          "end": 52.973,
+          "en": "So for example, in Codex, you can use it to generate images.",
+          "zh": "例如，在 Codex 中，您可以使用它來產生圖像。"
+        },
+        {
+          "i": 15,
+          "start": 53.631,
+          "end": 59.213,
+          "en": "You can ask it to, create here in my case a slide graphic that explains how Tailscale",
+          "zh": "您可以要求它，在我的例子中建立一個幻燈片圖形，解釋 Tailscale 如何"
+        },
+        {
+          "i": 16,
+          "start": 59.325,
+          "end": 59.662,
+          "en": "works.",
+          "zh": "作品。"
+        },
+        {
+          "i": 17,
+          "start": 60.304,
+          "end": 63.929,
+          "en": "Tailscale is an amazing tool for securing your VPS, for example.",
+          "zh": "例如，Tailscale 是一個用於保護 VPS 的絕佳工具。"
+        },
+        {
+          "i": 18,
+          "start": 64.378,
+          "end": 68.982,
+          "en": "And I also got a course on securely setting up a VPS and so on if you're interested.",
+          "zh": "如果您有興趣的話，我還提供了有關安全設定 VPS 等的課程。"
+        },
+        {
+          "i": 19,
+          "start": 69.271,
+          "end": 70.682,
+          "en": "But enough of the plugs for now.",
+          "zh": "但現在插頭已經足夠了。"
+        },
+        {
+          "i": 20,
+          "start": 71.436,
+          "end": 75.254,
+          "en": "And you can activate a skill that's built into Codex, the ImageGen skill.",
+          "zh": "您還可以啟動 Codex 中內建的一項技能，即 ImageGen 技能。"
+        },
+        {
+          "i": 21,
+          "start": 75.607,
+          "end": 76.441,
+          "en": "You shouldn't need to.",
+          "zh": "你不應該需要這樣做。"
+        },
+        {
+          "i": 22,
+          "start": 76.665,
+          "end": 78.863,
+          "en": "It should in theory be able to invoke it itself.",
+          "zh": "理論上它應該能夠呼叫它本身。"
+        },
+        {
+          "i": 23,
+          "start": 78.975,
+          "end": 82.809,
+          "en": "But if you know that you want an image, you can actively invoke it by using",
+          "zh": "但是如果你知道你想要一個圖像，你可以透過使用主動調用它"
+        },
+        {
+          "i": 24,
+          "start": 84.364,
+          "end": 86.255,
+          "en": "and then ImageGen is the skill name.",
+          "zh": "然後ImageGen是技能名稱。"
+        },
+        {
+          "i": 25,
+          "start": 86.688,
+          "end": 90.503,
+          "en": "I got another skill here which I built myself, which is a bit more versatile and uses",
+          "zh": "我在這裡獲得了我自己構建的另一項技能，該技能更加通用並且用途廣泛"
+        },
+        {
+          "i": 26,
+          "start": 90.535,
+          "end": 92.01,
+          "en": "the Fal AI API.",
+          "zh": "Fal AI API。"
+        },
+        {
+          "i": 27,
+          "start": 92.459,
+          "end": 97.509,
+          "en": "But if you use this built-in skill, it will go ahead and use the GPT-Image-2 model by",
+          "zh": "但是，如果您使用此內建技能，它將繼續使用 GPT-Image-2 模型"
+        },
+        {
+          "i": 28,
+          "start": 97.589,
+          "end": 99.56,
+          "en": "OpenAI to produce an image.",
+          "zh": "OpenAI 生成影像。"
+        },
+        {
+          "i": 29,
+          "start": 99.913,
+          "end": 103.52,
+          "en": "So the AI agent does all of that for you, all in Codex.",
+          "zh": "因此，AI 代理會在 Codex 中為您完成所有這些工作。"
+        },
+        {
+          "i": 30,
+          "start": 103.584,
+          "end": 107.896,
+          "en": "You don't have to leave the site, you don't have to interact with the OpenAI API or anything",
+          "zh": "您不必離開網站，也不必與 OpenAI API 或任何其他內容進行交互"
+        },
+        {
+          "i": 31,
+          "start": 107.928,
+          "end": 108.409,
+          "en": "like that.",
+          "zh": "像那樣。"
+        },
+        {
+          "i": 32,
+          "start": 108.89,
+          "end": 113.555,
+          "en": "So if you want to create an infographic or any kind of image, can be an image of a dog,",
+          "zh": "因此，如果您想創建資訊圖表或任何類型的圖像，可以是狗的圖像，"
+        },
+        {
+          "i": 33,
+          "start": 113.683,
+          "end": 116.344,
+          "en": "can be anything, you can do that from inside Codex.",
+          "zh": "可以是任何東西，你可以從 Codex 內部做到這一點。"
+        },
+        {
+          "i": 34,
+          "start": 116.745,
+          "end": 118.091,
+          "en": "And it's, it's still a chat.",
+          "zh": "而且，這仍然是一次聊天。"
+        },
+        {
+          "i": 35,
+          "start": 118.171,
+          "end": 119.181,
+          "en": "You can refine the image.",
+          "zh": "您可以細化圖像。"
+        },
+        {
+          "i": 36,
+          "start": 119.229,
+          "end": 122.035,
+          "en": "You can ask it to add a logo, for example.",
+          "zh": "例如，您可以要求它添加徽標。"
+        },
+        {
+          "i": 37,
+          "start": 122.179,
+          "end": 123.173,
+          "en": "And guess what?",
+          "zh": "你猜怎麼著？"
+        },
+        {
+          "i": 38,
+          "start": 123.542,
+          "end": 124.087,
+          "en": "It does that.",
+          "zh": "它就是這樣做的。"
+        },
+        {
+          "i": 39,
+          "start": 124.135,
+          "end": 128.976,
+          "en": "So that's of course interesting to know because we all got scenarios where we need some",
+          "zh": "所以這當然很有趣，因為我們都有需要一些的場景"
+        },
+        {
+          "i": 40,
+          "start": 129.024,
+          "end": 131.974,
+          "en": "image or tweak some image and anything like that.",
+          "zh": "圖像或調整一些圖像和類似的東西。"
+        },
+        {
+          "i": 41,
+          "start": 132.038,
+          "end": 133.048,
+          "en": "And it doesn't stop there.",
+          "zh": "而且它還不止於此。"
+        },
+        {
+          "i": 42,
+          "start": 133.48,
+          "end": 136.686,
+          "en": "You can also use Codex to analyze data, for example.",
+          "zh": "例如，您也可以使用 Codex 來分析資料。"
+        },
+        {
+          "i": 43,
+          "start": 136.943,
+          "end": 142.281,
+          "en": "It can work with CSV, Excel, PDF documents, and many, many other formats.",
+          "zh": "它可以處理 CSV、Excel、PDF 文件以及許多其他格式。"
+        },
+        {
+          "i": 44,
+          "start": 142.634,
+          "end": 144.269,
+          "en": "It can read such a file.",
+          "zh": "它可以讀取這樣的檔案。"
+        },
+        {
+          "i": 45,
+          "start": 144.702,
+          "end": 145.695,
+          "en": "And you know how it does that?",
+          "zh": "你知道它是怎麼做到的嗎？"
+        },
+        {
+          "i": 46,
+          "start": 145.824,
+          "end": 152.14,
+          "en": "It does that by using code under the hood because code, of course, is not necessarily",
+          "zh": "它透過在幕後使用程式碼來實現這一點，因為程式碼當然不一定是"
+        },
+        {
+          "i": 47,
+          "start": 152.172,
+          "end": 157.189,
+          "en": "just the main product as it is for you as a developer when you are writing code to build",
+          "zh": "只是主要產品，因為它適合您作為開發人員編寫程式碼來構建"
+        },
+        {
+          "i": 48,
+          "start": 157.446,
+          "end": 159.914,
+          "en": "a software, but it can also be just a tool.",
+          "zh": "一個軟體，但它也可以只是一個工具。"
+        },
+        {
+          "i": 49,
+          "start": 160.187,
+          "end": 164.948,
+          "en": "Code can be a tool and it is a tool here used by Codex if you ask it to analyze some",
+          "zh": "程式碼可以是一種工具，如果您要求 Codex 分析某些內容，它就是 Codex 使用的工具"
+        },
+        {
+          "i": 50,
+          "start": 164.996,
+          "end": 166.422,
+          "en": "sales CSV file.",
+          "zh": "銷售 CSV 檔案。"
+        },
+        {
+          "i": 51,
+          "start": 166.759,
+          "end": 170.879,
+          "en": "It writes some code, some Python code, for example, that opens the file, performs some",
+          "zh": "它編寫一些程式碼，例如一些 Python 程式碼，用於開啟檔案、執行某些操作"
+        },
+        {
+          "i": 52,
+          "start": 171.809,
+          "end": 176.249,
+          "en": "analytics, creates some summary statistics, and then it outputs those statistics here",
+          "zh": "分析，創建一些匯總統計數據，然後在此處輸出這些統計數據"
+        },
+        {
+          "i": 53,
+          "start": 176.281,
+          "end": 178.846,
+          "en": "and it doesn't show you the code, it throws away the code.",
+          "zh": "它不會向您顯示程式碼，而是丟棄程式碼。"
+        },
+        {
+          "i": 54,
+          "start": 178.958,
+          "end": 183.837,
+          "en": "It may just create it and use it in memory, but it gives you the final results and it",
+          "zh": "它可能只是創建它並在內存中使用它，但它會為您提供最終結果，並且它"
+        },
+        {
+          "i": 55,
+          "start": 183.837,
+          "end": 187.816,
+          "en": "doesn't hallucinate them, but instead it really calculates them with help of code.",
+          "zh": "不會產生幻覺，而是在程式碼的幫助下真正計算出它們。"
+        },
+        {
+          "i": 56,
+          "start": 188.41,
+          "end": 194.027,
+          "en": "And it can also produce Excel sheets, which you can then also open in the Codex app.",
+          "zh": "它還可以產生 Excel 工作表，然後您也可以在 Codex 應用程式中開啟該工作表。"
+        },
+        {
+          "i": 57,
+          "start": 194.492,
+          "end": 199.852,
+          "en": "And in there you can then have charts if you ask it to create some charts as I did.",
+          "zh": "如果你像我一樣要求它創建一些圖表，你就可以在其中獲得圖表。"
+        },
+        {
+          "i": 58,
+          "start": 200.67,
+          "end": 201.73,
+          "en": "And it doesn't stop there.",
+          "zh": "而且它還不止於此。"
+        },
+        {
+          "i": 59,
+          "start": 201.794,
+          "end": 205.709,
+          "en": "It can also work with PDF documents, also create PDF documents.",
+          "zh": "它還可以處理 PDF 文檔，也可以建立 PDF 文檔。"
+        },
+        {
+          "i": 60,
+          "start": 205.79,
+          "end": 210.457,
+          "en": "So here I ask it to create an executive summary PDF report based on all this data and",
+          "zh": "所以在這裡我要求它根據所有這些數據創建一份執行摘要 PDF 報告"
+        },
+        {
+          "i": 61,
+          "start": 210.457,
+          "end": 212.398,
+          "en": "insights, and it did that.",
+          "zh": "洞察力，它做到了。"
+        },
+        {
+          "i": 62,
+          "start": 213.585,
+          "end": 216.473,
+          "en": "And this is all important stuff to know.",
+          "zh": "這些都是需要了解的重要內容。"
+        },
+        {
+          "i": 63,
+          "start": 216.569,
+          "end": 220.884,
+          "en": "And this is all also covered in my Codex course, which as mentioned is primarily about",
+          "zh": "我的 Codex 課程也涵蓋了這一切，正如前面提到的，該課程主要是關於"
+        },
+        {
+          "i": 64,
+          "start": 220.9,
+          "end": 221.381,
+          "en": "coding though.",
+          "zh": "雖然編碼。"
+        },
+        {
+          "i": 65,
+          "start": 221.477,
+          "end": 222.921,
+          "en": "So coding is the main task.",
+          "zh": "所以編碼是主要任務。"
+        },
+        {
+          "i": 66,
+          "start": 223.611,
+          "end": 228.102,
+          "en": "Nonetheless, I feel like it's important to understand that this is where the companies",
+          "zh": "儘管如此，我覺得重要的是要了解這就是公司的定位"
+        },
+        {
+          "i": 67,
+          "start": 228.102,
+          "end": 231.808,
+          "en": "are heading to and that you can do these things with Codex, for example.",
+          "zh": "例如，您可以使用 Codex 來完成這些操作。"
+        },
+        {
+          "i": 68,
+          "start": 231.952,
+          "end": 234.054,
+          "en": "And of course, Codex It's not the only tool.",
+          "zh": "當然，Codex 並不是唯一的工具。"
+        },
+        {
+          "i": 69,
+          "start": 234.215,
+          "end": 238.678,
+          "en": "We also have Claude Code, and I'll hand it over to Manuel to explain to you how things",
+          "zh": "我們還有克勞德代碼，我會把它交給曼努埃爾來向你解釋事情是如何發生的"
+        },
+        {
+          "i": 70,
+          "start": 238.79,
+          "end": 240.444,
+          "en": "work with the Claude universe.",
+          "zh": "與克勞德宇宙一起工作。"
+        },
+        {
+          "i": 71,
+          "start": 241.182,
+          "end": 247.026,
+          "en": "With Claude or Anthropic, things are the same, but also a bit different than we saw it",
+          "zh": "對於克勞德或人類來說，事情是一樣的，但也與我們看到的有點不同"
+        },
+        {
+          "i": 72,
+          "start": 247.058,
+          "end": 248.583,
+          "en": "with Codex and OpenAI.",
+          "zh": "與 Codex 和 OpenAI 一起。"
+        },
+        {
+          "i": 73,
+          "start": 248.904,
+          "end": 255.743,
+          "en": "Whilst OpenAI uses one combined tool, Codex, Claude tries to separate",
+          "zh": "雖然 OpenAI 使用一種組合工具 Codex，但 Claude 試圖將其分開"
+        },
+        {
+          "i": 74,
+          "start": 255.872,
+          "end": 257.06,
+          "en": "their different users.",
+          "zh": "他們的不同使用者。"
+        },
+        {
+          "i": 75,
+          "start": 257.477,
+          "end": 259.965,
+          "en": "Everything is also combined in one app.",
+          "zh": "所有內容也都合併在一個應用程式中。"
+        },
+        {
+          "i": 76,
+          "start": 260.205,
+          "end": 263.463,
+          "en": "It is the Claude app, which you can download on this page here.",
+          "zh": "這是 Claude 應用程序，您可以在此頁面上下載該應用程式。"
+        },
+        {
+          "i": 77,
+          "start": 264.072,
+          "end": 265.372,
+          "en": "Link is in the video description.",
+          "zh": "連結在影片說明中。"
+        },
+        {
+          "i": 78,
+          "start": 265.902,
+          "end": 269.737,
+          "en": "And in this app, we find 3 different sections.",
+          "zh": "在此應用程式中，我們發現 3 個不同的部分。"
+        },
+        {
+          "i": 79,
+          "start": 270.074,
+          "end": 275.434,
+          "en": "Chat, which is the normal chat interface we know from ChatGPT, Gemini, and so on.",
+          "zh": "Chat，就是我們所知道的ChatGPT、Gemini等的正常聊天介面。"
+        },
+        {
+          "i": 80,
+          "start": 276.091,
+          "end": 281.371,
+          "en": "We have the code section, which is made specifically for coding projects for developers.",
+          "zh": "我們有程式碼部分，專門為開發人員的編碼專案而設計。"
+        },
+        {
+          "i": 81,
+          "start": 281.949,
+          "end": 288.368,
+          "en": "And we have Cowork, which is the non-coding task completion section, so to say.",
+          "zh": "我們還有 Cowork，可以說是非編碼任務完成部分。"
+        },
+        {
+          "i": 82,
+          "start": 288.866,
+          "end": 294.355,
+          "en": "The idea behind Cowork is that it's not only a chat, it completes tasks for you.",
+          "zh": "Cowork 背後的理念是，它不僅僅是聊天，它還能為您完成任務。"
+        },
+        {
+          "i": 83,
+          "start": 294.804,
+          "end": 296.377,
+          "en": "It has local file access.",
+          "zh": "它具有本地文件存取權限。"
+        },
+        {
+          "i": 84,
+          "start": 296.65,
+          "end": 299.426,
+          "en": "It can create files, edit files, delete files.",
+          "zh": "它可以建立文件、編輯文件、刪除文件。"
+        },
+        {
+          "i": 85,
+          "start": 299.795,
+          "end": 304.369,
+          "en": "So it can manage entire projects on your machine for you.",
+          "zh": "因此它可以為您管理機器上的整個專案。"
+        },
+        {
+          "i": 86,
+          "start": 304.594,
+          "end": 308.381,
+          "en": "To understand Cowork, I prepared some demo files for you.",
+          "zh": "為了了解Cowork，我為您準備了一些簡報文件。"
+        },
+        {
+          "i": 87,
+          "start": 308.927,
+          "end": 313.629,
+          "en": "The first file here is about the working policy, the company policy.",
+          "zh": "這裡的第一份文件是關於工作政策，公司政策。"
+        },
+        {
+          "i": 88,
+          "start": 314.127,
+          "end": 317.065,
+          "en": "Of a hypothetical company we have right here.",
+          "zh": "我們這裡有一家假設的公司。"
+        },
+        {
+          "i": 89,
+          "start": 317.595,
+          "end": 324.21,
+          "en": "This folder contains text files, some internal memos, it contains PDFs, an image, so",
+          "zh": "該資料夾包含文字檔案、一些內部備忘錄、PDF、圖像等"
+        },
+        {
+          "i": 90,
+          "start": 324.258,
+          "end": 326.281,
+          "en": "all information about our company.",
+          "zh": "有關我們公司的所有資訊。"
+        },
+        {
+          "i": 91,
+          "start": 326.907,
+          "end": 332.045,
+          "en": "Now what I could do now in Claude Cowork is I could select this folder.",
+          "zh": "現在我在 Claude Cowork 中可以做的是選擇這個資料夾。"
+        },
+        {
+          "i": 92,
+          "start": 332.623,
+          "end": 337.552,
+          "en": "So you always have the option here to work in a project, which we'll do in a few seconds,",
+          "zh": "因此，您始終可以選擇在專案中工作，我們將在幾秒鐘內完成，"
+        },
+        {
+          "i": 93,
+          "start": 337.969,
+          "end": 340.297,
+          "en": "or to simply select a folder.",
+          "zh": "或簡單地選擇一個資料夾。"
+        },
+        {
+          "i": 94,
+          "start": 340.714,
+          "end": 345.176,
+          "en": "Here I'll select this Demo 1 folder containing all those files.",
+          "zh": "在這裡，我將選擇包含所有這些檔案的 Demo 1 資料夾。"
+        },
+        {
+          "i": 95,
+          "start": 345.69,
+          "end": 350.97,
+          "en": "Now I give Claude access to this folder and therefore to all the files, all the data",
+          "zh": "現在我授予 Claude 存取此資料夾的權限，從而授予 Claude 存取所有檔案、所有資料的權限"
+        },
+        {
+          "i": 96,
+          "start": 351.371,
+          "end": 352.511,
+          "en": "inside this folder.",
+          "zh": "在此資料夾內。"
+        },
+        {
+          "i": 97,
+          "start": 353.072,
+          "end": 360.054,
+          "en": "And now I can just ask it to read all the documents, identify the key themes, and then",
+          "zh": "現在我可以要求它閱讀所有文檔，確定關鍵主題，然後"
+        },
+        {
+          "i": 98,
+          "start": 360.054,
+          "end": 364.387,
+          "en": "produce a 1-page executive summary as a Word document.",
+          "zh": "產生 1 頁的執行摘要作為 Word 文件。"
+        },
+        {
+          "i": 99,
+          "start": 365.11,
+          "end": 370.88,
+          "en": "With this, Claude will now start this process, will now complete this task for me.",
+          "zh": "這樣，克勞德現在將開始這個過程，現在將為我完成這個任務。"
+        },
+        {
+          "i": 100,
+          "start": 371.28,
+          "end": 373.94,
+          "en": "You can always check the logic it runs behind.",
+          "zh": "您始終可以檢查它背後運行的邏輯。"
+        },
+        {
+          "i": 101,
+          "start": 374.004,
+          "end": 376.857,
+          "en": "So which commands it runs, which code it uses.",
+          "zh": "那麼它運行哪些命令，使用哪些程式碼。"
+        },
+        {
+          "i": 102,
+          "start": 377.354,
+          "end": 383.892,
+          "en": "As Max explained earlier in Codex, Claude also uses code to complete specific tasks,",
+          "zh": "正如 Max 之前在 Codex 中解釋的那樣，Claude 也使用程式碼來完成特定任務，"
+        },
+        {
+          "i": 103,
+          "start": 384.164,
+          "end": 387.802,
+          "en": "code which is not stored, but just used to complete the tasks.",
+          "zh": "未儲存的程式碼，僅用於完成任務。"
+        },
+        {
+          "i": 104,
+          "start": 387.946,
+          "end": 389.116,
+          "en": "And then it's deleted again.",
+          "zh": "然後又被刪除了。"
+        },
+        {
+          "i": 105,
+          "start": 389.469,
+          "end": 391.119,
+          "en": "Here it reads all our files.",
+          "zh": "它在這裡讀取我們所有的文件。"
+        },
+        {
+          "i": 106,
+          "start": 391.552,
+          "end": 395.292,
+          "en": "Here we find a DocX skill which was used.",
+          "zh": "在這裡我們找到了使用的 DocX 技能。"
+        },
+        {
+          "i": 107,
+          "start": 395.484,
+          "end": 399.705,
+          "en": "This is a built-in skill which allows Claude to create doc files.",
+          "zh": "這是一項內建技能，允許 Claude 建立文件檔案。"
+        },
+        {
+          "i": 108,
+          "start": 400.299,
+          "end": 403.396,
+          "en": "And now we have the finished document as requested.",
+          "zh": "現在我們已經按照要求完成文件了。"
+        },
+        {
+          "i": 109,
+          "start": 403.909,
+          "end": 409.334,
+          "en": "We can access the document from our folder on our machine, but also directly here in",
+          "zh": "我們可以從機器上的資料夾存取該文檔，也可以直接在"
+        },
+        {
+          "i": 110,
+          "start": 409.446,
+          "end": 410.345,
+          "en": "Claude Cowork.",
+          "zh": "克勞德·科沃克."
+        },
+        {
+          "i": 111,
+          "start": 410.714,
+          "end": 417.005,
+          "en": "As instructed, we have a one-page executive summary about the core work policy in this",
+          "zh": "按照指示，我們有一份關於本報告核心工作政策的一頁執行摘要"
+        },
+        {
+          "i": 112,
+          "start": 417.133,
+          "end": 417.791,
+          "en": "company here.",
+          "zh": "公司在這裡。"
+        },
+        {
+          "i": 113,
+          "start": 418.352,
+          "end": 421.589,
+          "en": "And this is one of the big advantages of Claude Cowork here.",
+          "zh": "而這正是 Claude Cowork 在這裡的一大優勢。"
+        },
+        {
+          "i": 114,
+          "start": 422.022,
+          "end": 426.461,
+          "en": "It is a very nice and easy to understand user interface.",
+          "zh": "這是一個非常漂亮且易於理解的使用者介面。"
+        },
+        {
+          "i": 115,
+          "start": 426.83,
+          "end": 432.279,
+          "en": "You get clear questions about the permissions you grant Claude Cowork, for example, to",
+          "zh": "您會收到有關您授予 Claude Cowork 的權限的明確問題，例如"
+        },
+        {
+          "i": 116,
+          "start": 432.359,
+          "end": 434.218,
+          "en": "interact with files on your machine.",
+          "zh": "與電腦上的文件互動。"
+        },
+        {
+          "i": 117,
+          "start": 434.618,
+          "end": 439.747,
+          "en": "And then you can just let it do its work and access the files easily inside the tool.",
+          "zh": "然後您可以讓它完成工作並在工具內輕鬆存取文件。"
+        },
+        {
+          "i": 118,
+          "start": 440.147,
+          "end": 443.0,
+          "en": "So this here was a so-called single session.",
+          "zh": "所以這就是所謂的單一會議。"
+        },
+        {
+          "i": 119,
+          "start": 443.128,
+          "end": 448.401,
+          "en": "So we just gave Claude Cowork access to one folder, completed a task, and then we are",
+          "zh": "所以我們只是授予 Claude Cowork 存取一個資料夾的權限，完成一項任務，然後我們就可以了"
+        },
+        {
+          "i": 120,
+          "start": 448.401,
+          "end": 448.609,
+          "en": "done.",
+          "zh": "完畢。"
+        },
+        {
+          "i": 121,
+          "start": 449.186,
+          "end": 453.097,
+          "en": "But you can also use Claude Cowork for ongoing projects.",
+          "zh": "但您也可以將 Claude Cowork 用於正在進行的專案。"
+        },
+        {
+          "i": 122,
+          "start": 453.37,
+          "end": 458.884,
+          "en": "And as the name indicates, we have a dedicated project section here in Claude Cowork,",
+          "zh": "顧名思義，我們在 Claude Cowork 有一個專門的專案部分，"
+        },
+        {
+          "i": 123,
+          "start": 459.141,
+          "end": 461.786,
+          "en": "which I'll quickly show you in a second example.",
+          "zh": "我將在第二個範例中快速向您展示。"
+        },
+        {
+          "i": 124,
+          "start": 462.026,
+          "end": 468.246,
+          "en": "A cowork has the advantage of giving Claude Cowork more context, more information it",
+          "zh": "Cowork 的優點是可以為 Claude Cowork 提供更多背景資訊、更多信息"
+        },
+        {
+          "i": 125,
+          "start": 468.278,
+          "end": 470.282,
+          "en": "can always access and remember.",
+          "zh": "可以隨時訪問並記住。"
+        },
+        {
+          "i": 126,
+          "start": 470.683,
+          "end": 476.95,
+          "en": "So you can start multiple sessions inside one specific project and always remember the",
+          "zh": "因此，您可以在一個特定專案中啟動多個會話，並始終記住"
+        },
+        {
+          "i": 127,
+          "start": 476.95,
+          "end": 482.545,
+          "en": "information and the context that you provided and also the previously discussed topics.",
+          "zh": "您提供的資訊和上下文以及之前討論的主題。"
+        },
+        {
+          "i": 128,
+          "start": 482.962,
+          "end": 489.598,
+          "en": "So if we create such a new project here and use an existing folder, which is our Demo",
+          "zh": "那麼如果我們在這裡新建一個這樣的項目，並使用一個現有的資料夾，也就是我們的Demo"
+        },
+        {
+          "i": 129,
+          "start": 489.694,
+          "end": 494.054,
+          "en": "2 folder, this folder now contains a single sales report only.",
+          "zh": "2 資料夾，此資料夾現在僅包含單一銷售報告。"
+        },
+        {
+          "i": 130,
+          "start": 494.423,
+          "end": 499.232,
+          "en": "So here we could now add some instructions, we could add additional files, which we won't",
+          "zh": "所以在這裡我們現在可以添加一些指令，我們可以添加其他文件，但我們不會"
+        },
+        {
+          "i": 131,
+          "start": 499.232,
+          "end": 502.71,
+          "en": "do at this stage, but we can now simply create this project.",
+          "zh": "在這個階段，我們可以簡單地創建這個專案。"
+        },
+        {
+          "i": 132,
+          "start": 503.079,
+          "end": 507.711,
+          "en": "So here we are now in this project, we are working in this Demo 2 folder.",
+          "zh": "所以我們現在在這個專案中，我們正在這個 Demo 2 資料夾中工作。"
+        },
+        {
+          "i": 133,
+          "start": 508.032,
+          "end": 514.339,
+          "en": "I want to get started by reading the sales report that we have inside our project folder",
+          "zh": "我想先閱讀項目資料夾中的銷售報告"
+        },
+        {
+          "i": 134,
+          "start": 514.772,
+          "end": 518.96,
+          "en": "to get a rough idea about the core findings and what's going on in general.",
+          "zh": "大致了解核心發現和整體情況。"
+        },
+        {
+          "i": 135,
+          "start": 519.602,
+          "end": 524.272,
+          "en": "So here we get an overview of what went well, what was underperforming, and so on.",
+          "zh": "因此，在這裡我們可以大致了解哪些方面進展順利，哪些方面表現不佳等等。"
+        },
+        {
+          "i": 136,
+          "start": 524.721,
+          "end": 530.097,
+          "en": "And now I can continue with my next task where I want to build an Excel file based on",
+          "zh": "現在我可以繼續執行下一個任務，我想基於以下內容建立 Excel 文件"
+        },
+        {
+          "i": 137,
+          "start": 530.097,
+          "end": 532.359,
+          "en": "the findings in this report.",
+          "zh": "本報告中的調查結果。"
+        },
+        {
+          "i": 138,
+          "start": 532.76,
+          "end": 535.119,
+          "en": "Still in the same project, still in the same chat.",
+          "zh": "仍然在同一個專案中，仍然在同一個聊天中。"
+        },
+        {
+          "i": 139,
+          "start": 535.216,
+          "end": 537.991,
+          "en": "So now I'll create this Excel file.",
+          "zh": "現在我將建立這個 Excel 檔案。"
+        },
+        {
+          "i": 140,
+          "start": 538.6,
+          "end": 544.68,
+          "en": "And now we created that Excel file, which we can again directly access here in our interface.",
+          "zh": "現在我們建立了該 Excel 文件，我們可以再次在介面中直接存取該文件。"
+        },
+        {
+          "i": 141,
+          "start": 545.242,
+          "end": 551.562,
+          "en": "We have different tables for different customers, product lines, and regions.",
+          "zh": "我們針對不同的客戶、產品線和地區有不同的表格。"
+        },
+        {
+          "i": 142,
+          "start": 552.477,
+          "end": 555.845,
+          "en": "And now I can go back to my core project folder.",
+          "zh": "現在我可以返回到我的核心專案資料夾。"
+        },
+        {
+          "i": 143,
+          "start": 556.15,
+          "end": 561.829,
+          "en": "In here, I can find my previous chat and my previous output that was generated.",
+          "zh": "在這裡，我可以找到我之前的聊天以及之前產生的輸出。"
+        },
+        {
+          "i": 144,
+          "start": 562.182,
+          "end": 568.008,
+          "en": "And now I will start a new session inside this project where I have all the context of",
+          "zh": "現在我將在這個專案中開始一個新的會話，其中我有所有的上下文"
+        },
+        {
+          "i": 145,
+          "start": 568.104,
+          "end": 569.339,
+          "en": "the full project in here.",
+          "zh": "完整的項目在這裡。"
+        },
+        {
+          "i": 146,
+          "start": 569.949,
+          "end": 576.593,
+          "en": "And I want to create a PowerPoint presentation now, and I want to follow the brand guidelines",
+          "zh": "我現在想創建一個 PowerPoint 演示文稿，並且我想遵循品牌指南"
+        },
+        {
+          "i": 147,
+          "start": 576.706,
+          "end": 577.7,
+          "en": "for the visual style.",
+          "zh": "為了視覺風格。"
+        },
+        {
+          "i": 148,
+          "start": 578.23,
+          "end": 584.088,
+          "en": "So far we don't have any brand guidelines, so I can just add another folder as context",
+          "zh": "到目前為止，我們沒有任何品牌指南，所以我可以添加另一個資料夾作為上下文"
+        },
+        {
+          "i": 149,
+          "start": 584.088,
+          "end": 587.538,
+          "en": "here, which is this brand template folder.",
+          "zh": "這裡，就是這個品牌模板資料夾。"
+        },
+        {
+          "i": 150,
+          "start": 587.698,
+          "end": 593.445,
+          "en": "Claude will automatically identify this folder as the important one for the brand guidelines.",
+          "zh": "Claude 會自動將此資料夾識別為品牌指南的重要資料夾。"
+        },
+        {
+          "i": 151,
+          "start": 593.943,
+          "end": 596.48,
+          "en": "And now I'll let it finish this task too.",
+          "zh": "現在我也讓它完成這個任務。"
+        },
+        {
+          "i": 152,
+          "start": 597.412,
+          "end": 603.965,
+          "en": "And now if we check the commands it used so far in here, we can see that it used",
+          "zh": "現在，如果我們檢查到目前為止它使用的命令，我們可以看到它使用了"
+        },
+        {
+          "i": 153,
+          "start": 604.463,
+          "end": 607.37,
+          "en": "the brand guidelines doc file.",
+          "zh": "品牌指南文件檔。"
+        },
+        {
+          "i": 154,
+          "start": 607.45,
+          "end": 610.791,
+          "en": "So it identified the branding guidelines that I gave it.",
+          "zh": "所以它確定了我給它的品牌指南。"
+        },
+        {
+          "i": 155,
+          "start": 611.064,
+          "end": 616.428,
+          "en": "And here we have our slides now, which we can again access directly in Claude Cowork.",
+          "zh": "現在我們有了幻燈片，我們可以再次在 Claude Cowork 中直接存取。"
+        },
+        {
+          "i": 156,
+          "start": 616.589,
+          "end": 618.339,
+          "en": "We have some charts.",
+          "zh": "我們有一些圖表。"
+        },
+        {
+          "i": 157,
+          "start": 618.772,
+          "end": 620.055,
+          "en": "We have some tables in here.",
+          "zh": "我們這裡有一些桌子。"
+        },
+        {
+          "i": 158,
+          "start": 620.696,
+          "end": 624.062,
+          "en": "The styling is totally based on our branding template.",
+          "zh": "造型完全基於我們的品牌模板。"
+        },
+        {
+          "i": 159,
+          "start": 624.175,
+          "end": 628.631,
+          "en": "So of course you have full control about the style, the colors, and the look that you",
+          "zh": "因此，您當然可以完全掌控您想要的風格、顏色和外觀。"
+        },
+        {
+          "i": 160,
+          "start": 628.631,
+          "end": 629.497,
+          "en": "want to have in here.",
+          "zh": "想要在這裡擁有。"
+        },
+        {
+          "i": 161,
+          "start": 629.753,
+          "end": 635.765,
+          "en": "And once again, if you go back to the main project menu, you can find this second task",
+          "zh": "再次，如果您返回主項目選單，您可以找到第二個任務"
+        },
+        {
+          "i": 162,
+          "start": 635.781,
+          "end": 642.658,
+          "en": "now down here and also the presentation, which is now created and accessible in our Demo",
+          "zh": "現在在這裡還有演示文稿，現已在我們的演示中創建並可訪問"
+        },
+        {
+          "i": 163,
+          "start": 642.658,
+          "end": 644.101,
+          "en": "2 project folder.",
+          "zh": "2個項目資料夾。"
+        },
+        {
+          "i": 164,
+          "start": 644.342,
+          "end": 647.214,
+          "en": "And these are just the basics of Cloud Cowork.",
+          "zh": "這些只是 Cloud Cowork 的基礎知識。"
+        },
+        {
+          "i": 165,
+          "start": 647.712,
+          "end": 653.152,
+          "en": "Now, if you want to dive deeper into Cloud Cowork and use it for your non-code-related",
+          "zh": "現在，如果您想更深入地了解 Cloud Cowork 並將其用於與程式碼無關的工作"
+        },
+        {
+          "i": 166,
+          "start": 653.168,
+          "end": 657.678,
+          "en": "tasks, we have a brand new course for you, Cloud Cowork: The Practical Guide.",
+          "zh": "任務，我們為您準備了一門全新的課程，Cloud Cowork：實用指南。"
+        },
+        {
+          "i": 167,
+          "start": 658.127,
+          "end": 661.802,
+          "en": "You can find all information about this course in the video description.",
+          "zh": "您可以在影片說明中找到有關本課程的所有資訊。"
+        },
+        {
+          "i": 168,
+          "start": 662.251,
+          "end": 668.446,
+          "en": "It also dives into more advanced Cloud Cowork features like Dispatch, where you can control",
+          "zh": "它還深入探討了更高級的 Cloud Cowork 功能，例如 Dispatch，您可以在其中控制"
+        },
+        {
+          "i": 169,
+          "start": 668.655,
+          "end": 675.168,
+          "en": "Cloud Cowork from your mobile phone, Or also computer use, which allows Claude CoWork",
+          "zh": "Cloud Cowork 透過您的手機，或者也可以使用計算機，這使得 Claude CoWork"
+        },
+        {
+          "i": 170,
+          "start": 675.216,
+          "end": 681.102,
+          "en": "to access your computer to interact with tools on your machine autonomously.",
+          "zh": "存取您的電腦以自主與電腦上的工具進行互動。"
+        },
+        {
+          "i": 171,
+          "start": 681.391,
+          "end": 687.502,
+          "en": "This course also dives into the safety concerns that come with using such agents on your",
+          "zh": "本課程也深入探討了在您的裝置上使用此類代理程式所帶來的安全問題。"
+        },
+        {
+          "i": 172,
+          "start": 687.502,
+          "end": 687.871,
+          "en": "machine.",
+          "zh": "機器。"
+        },
+        {
+          "i": 173,
+          "start": 688.384,
+          "end": 690.678,
+          "en": "So if you're interested, check the course landing page.",
+          "zh": "因此，如果您有興趣，請查看課程登入頁面。"
+        },
+        {
+          "i": 174,
+          "start": 690.951,
+          "end": 694.094,
+          "en": "Otherwise, try Claude CoWork and Codex on your own.",
+          "zh": "否則，請自行嘗試 Claude CoWork 和 Codex。"
+        },
+        {
+          "i": 175,
+          "start": 694.544,
+          "end": 699.259,
+          "en": "As you saw, those are way more than coding agents or coding assistants.",
+          "zh": "正如您所看到的，這些不僅僅是編碼代理或編碼助理。"
+        },
+        {
+          "i": 176,
+          "start": 699.681,
+          "end": 702.848,
+          "en": "They can help you in lots of different tasks nowadays.",
+          "zh": "如今，他們可以幫助您完成許多不同的任務。"
+        }
+      ]
+    },
+    {
+      "id": "N9nU9oLZ30o",
+      "title": "Key features of the NEW Claude Code desktop app you MUST know!",
+      "date": "20260415",
+      "file": "20260415_N9nU9oLZ30o_key-features-of-the-new-claude-code-desktop-app-you-must-kno.srt",
+      "cueCount": 126,
+      "issues": 0,
+      "duration": 437,
+      "cues": [
+        {
+          "i": 1,
+          "start": 0.096,
+          "end": 4.921,
+          "en": "You can use Claude Code in the CLI, in the terminal user interface, which is probably",
+          "zh": "您可以在 CLI 中的終端使用者介面中使用 Claude Code，這可能是"
+        },
+        {
+          "i": 2,
+          "start": 5.001,
+          "end": 6.203,
+          "en": "what most developers do.",
+          "zh": "大多數開發人員所做的事情。"
+        },
+        {
+          "i": 3,
+          "start": 6.363,
+          "end": 11.253,
+          "en": "But Anthropic also has a desktop app, Claude Code as a desktop app.",
+          "zh": "但 Anthropic 也有一個桌面應用程序，Claude Code 作為桌面應用程式。"
+        },
+        {
+          "i": 4,
+          "start": 11.894,
+          "end": 14.154,
+          "en": "Technically, it's actually not just Claude Code.",
+          "zh": "從技術上講，它實際上不僅僅是克勞德·代碼。"
+        },
+        {
+          "i": 5,
+          "start": 14.218,
+          "end": 18.787,
+          "en": "There also is the Claude Chat, which is like ChatGPT just in the desktop app.",
+          "zh": "還有 Claude Chat，它就像桌面應用程式中的 ChatGPT。"
+        },
+        {
+          "i": 6,
+          "start": 19.492,
+          "end": 22.249,
+          "en": "And there is Claude Cowork, which is a general work assistant.",
+          "zh": "還有克勞德·科沃克（Claude Cowork），他是一名普通工作助理。"
+        },
+        {
+          "i": 7,
+          "start": 22.297,
+          "end": 24.141,
+          "en": "But there also is the Claude Code app.",
+          "zh": "但還有 Claude Code 應用程式。"
+        },
+        {
+          "i": 8,
+          "start": 24.558,
+          "end": 29.816,
+          "en": "And that's actually not just the CLI wrapped into a desktop app, but it's a really useful",
+          "zh": "這實際上不僅僅是包含在桌面應用程式中的 CLI，而且它非常有用"
+        },
+        {
+          "i": 9,
+          "start": 29.912,
+          "end": 32.99,
+          "en": "standalone app, especially since the latest update.",
+          "zh": "獨立應用程序，尤其是自最新更新以來。"
+        },
+        {
+          "i": 10,
+          "start": 33.055,
+          "end": 35.638,
+          "en": "And no, this video is not sponsored by Anthropic.",
+          "zh": "不，該影片不是由 Anthropic 贊助的。"
+        },
+        {
+          "i": 11,
+          "start": 35.686,
+          "end": 39.857,
+          "en": "I just think this new version of this app is pretty useful, which is why I'll give you",
+          "zh": "我只是覺得這個應用程式的新版本非常有用，這就是為什麼我會給你"
+        },
+        {
+          "i": 12,
+          "start": 39.857,
+          "end": 40.339,
+          "en": "a walkthrough.",
+          "zh": "演練。"
+        },
+        {
+          "i": 13,
+          "start": 40.579,
+          "end": 45.376,
+          "en": "If you want to learn way more about Claude Code, about this app, and about the CLI mostly,",
+          "zh": "如果您想進一步了解 Claude Code、此應用程式以及 CLI，"
+        },
+        {
+          "i": 14,
+          "start": 45.569,
+          "end": 47.189,
+          "en": "I got a complete course on that.",
+          "zh": "我有一個完整的課程。"
+        },
+        {
+          "i": 15,
+          "start": 47.318,
+          "end": 50.542,
+          "en": "It's fully updated for this new look of this new desktop app.",
+          "zh": "它已針對新桌面應用程式的新外觀進行了全面更新。"
+        },
+        {
+          "i": 16,
+          "start": 50.639,
+          "end": 52.195,
+          "en": "I did that this morning.",
+          "zh": "我今天早上就這麼做了。"
+        },
+        {
+          "i": 17,
+          "start": 52.307,
+          "end": 55.5,
+          "en": "It's already live, and that may be useful to you.",
+          "zh": "它已經上線，可能對您有用。"
+        },
+        {
+          "i": 18,
+          "start": 55.612,
+          "end": 56.543,
+          "en": "So what's in this app?",
+          "zh": "那麼這個應用程式中有什麼？"
+        },
+        {
+          "i": 19,
+          "start": 57.12,
+          "end": 63.114,
+          "en": "Well, This app has pretty much the same idea you might know from the Codex app or Cursor,",
+          "zh": "嗯，這個應用程式的想法與您可能從 Codex 應用程式或 Cursor 中了解到的想法幾乎相同，"
+        },
+        {
+          "i": 20,
+          "start": 63.13,
+          "end": 64.829,
+          "en": "the Cursor Agents app if you use that.",
+          "zh": "Cursor Agents 應用程式（如果您使用該應用程式）。"
+        },
+        {
+          "i": 21,
+          "start": 65.294,
+          "end": 69.075,
+          "en": "You can have multiple projects in there and in each project you can have multiple sessions.",
+          "zh": "您可以在那裡有多個項目，並且在每個項目中您可以有多個會話。"
+        },
+        {
+          "i": 22,
+          "start": 69.124,
+          "end": 73.883,
+          "en": "You can start a new session, you can then pick a project for this session, you can pick",
+          "zh": "您可以開始一個新會話，然後可以為此會話選擇一個項目，您可以選擇"
+        },
+        {
+          "i": 23,
+          "start": 73.883,
+          "end": 74.732,
+          "en": "a Git branch.",
+          "zh": "一個 Git 分支。"
+        },
+        {
+          "i": 24,
+          "start": 75.149,
+          "end": 77.713,
+          "en": "It has a built-in Git worktree feature.",
+          "zh": "它具有內建的 Git 工作樹功能。"
+        },
+        {
+          "i": 25,
+          "start": 77.937,
+          "end": 81.687,
+          "en": "And in case you don't know what Git worktrees are, the idea is that you have your main",
+          "zh": "如果您不知道 Git 工作樹是什麼，那麼您的主要想法是"
+        },
+        {
+          "i": 26,
+          "start": 82.024,
+          "end": 88.099,
+          "en": "repo and Git Worktrees are an official Git feature which creates a clone, a local clone",
+          "zh": "repo 和 Git Worktrees 是一個官方的 Git 功能，它創建一個克隆，一個本地克隆"
+        },
+        {
+          "i": 27,
+          "start": 88.355,
+          "end": 89.221,
+          "en": "of this repo.",
+          "zh": "這個倉庫的。"
+        },
+        {
+          "i": 28,
+          "start": 89.269,
+          "end": 95.152,
+          "en": "So on your system, the project is kind of copied, not all the files, just the Git-managed",
+          "zh": "所以在你的系統上，專案是複製的，不是所有的文件，只是 Git 管理的"
+        },
+        {
+          "i": 29,
+          "start": 95.168,
+          "end": 95.729,
+          "en": "files though.",
+          "zh": "文件雖然。"
+        },
+        {
+          "i": 30,
+          "start": 96.146,
+          "end": 101.484,
+          "en": "And then you have that copy and you can work in the main repo and the copy simultaneously,",
+          "zh": "然後你就擁有了該副本，你可以同時在主儲存庫和副本中工作，"
+        },
+        {
+          "i": 31,
+          "start": 101.66,
+          "end": 106.71,
+          "en": "have multiple agents running across these different worktrees so that they don't clash",
+          "zh": "讓多個代理程式在這些不同的工作樹上運行，這樣它們就不會發生衝突"
+        },
+        {
+          "i": 32,
+          "start": 106.726,
+          "end": 107.255,
+          "en": "with each other.",
+          "zh": "與彼此。"
+        },
+        {
+          "i": 33,
+          "start": 107.367,
+          "end": 108.088,
+          "en": "That's the idea.",
+          "zh": "就是這個想法。"
+        },
+        {
+          "i": 34,
+          "start": 108.489,
+          "end": 112.32,
+          "en": "And then once you're done, you can merge your worktree changes back into the main repo.",
+          "zh": "完成後，您可以將工作樹變更合併回主儲存庫。"
+        },
+        {
+          "i": 35,
+          "start": 112.577,
+          "end": 113.138,
+          "en": "That's the idea.",
+          "zh": "就是這個想法。"
+        },
+        {
+          "i": 36,
+          "start": 113.218,
+          "end": 118.254,
+          "en": "And if you would check this box, the desktop app will create such a work tree for you",
+          "zh": "如果您選取此框，桌面應用程式將為您建立這樣一個工作樹"
+        },
+        {
+          "i": 37,
+          "start": 118.415,
+          "end": 122.828,
+          "en": "automatically for whatever task you're handing off to it so that you could have multiple",
+          "zh": "自動執行您交給它的任何任務，以便您可以擁有多個"
+        },
+        {
+          "i": 38,
+          "start": 122.828,
+          "end": 126.181,
+          "en": "agents working in the same repo without clashing, as I mentioned.",
+          "zh": "正如我所提到的，在同一個倉庫中工作的代理不會發生衝突。"
+        },
+        {
+          "i": 39,
+          "start": 126.695,
+          "end": 130.177,
+          "en": "You can also start cloud tasks from in there.",
+          "zh": "您也可以從那裡啟動雲端任務。"
+        },
+        {
+          "i": 40,
+          "start": 130.289,
+          "end": 134.734,
+          "en": "I cover this in more depth in my course, but the idea is that if you switch to a cloud",
+          "zh": "我在課程中更深入地介紹了這一點，但想法是，如果您切換到雲"
+        },
+        {
+          "i": 41,
+          "start": 134.734,
+          "end": 140.671,
+          "en": "environment here, you have to set that up in the Claude Code cloud web interface first.",
+          "zh": "這裡的環境，您必須先在 Claude Code 雲端 Web 介面中進行設定。"
+        },
+        {
+          "i": 42,
+          "start": 140.736,
+          "end": 146.111,
+          "en": "But if you have that, you could change the primary color to red or something like this.",
+          "zh": "但如果你有的話，你可以將原色改為紅色或類似的顏色。"
+        },
+        {
+          "i": 43,
+          "start": 146.512,
+          "end": 150.423,
+          "en": "And now if I would submit this, this would not be executed locally, but instead in the",
+          "zh": "現在，如果我提交這個，這將不會在本地執行，而是在"
+        },
+        {
+          "i": 44,
+          "start": 150.423,
+          "end": 150.695,
+          "en": "cloud.",
+          "zh": "雲。"
+        },
+        {
+          "i": 45,
+          "start": 150.759,
+          "end": 154.414,
+          "en": "But of course, local is also an option and the default essentially.",
+          "zh": "但當然，本地也是一種選擇，而且本質上是預設的。"
+        },
+        {
+          "i": 46,
+          "start": 155.071,
+          "end": 160.6,
+          "en": "You can manage your permissions down here, including bypass permissions if you enabled",
+          "zh": "您可以在此處管理您的權限，包括繞過權限（如果您啟用了）"
+        },
+        {
+          "i": 47,
+          "start": 160.6,
+          "end": 161.466,
+          "en": "that in the settings.",
+          "zh": "設定中的那個。"
+        },
+        {
+          "i": 48,
+          "start": 161.882,
+          "end": 167.043,
+          "en": "You can switch to plan mode, you can add additional context, and you also got slash commands",
+          "zh": "您可以切換到計劃模式，可以添加其他上下文，並且還可以使用斜線命令"
+        },
+        {
+          "i": 49,
+          "start": 167.043,
+          "end": 167.588,
+          "en": "available here.",
+          "zh": "可以在這裡找到。"
+        },
+        {
+          "i": 50,
+          "start": 167.733,
+          "end": 172.781,
+          "en": "If you type slash whatever, you can essentially run all the key commands you know from",
+          "zh": "如果你輸入斜杠，你基本上可以運行你知道的所有關鍵命令"
+        },
+        {
+          "i": 51,
+          "start": 172.797,
+          "end": 175.089,
+          "en": "the CLI as well, including your skills.",
+          "zh": "以及 CLI，包括您的技能。"
+        },
+        {
+          "i": 52,
+          "start": 175.843,
+          "end": 177.288,
+          "en": "You can invoke them from there too.",
+          "zh": "您也可以從那裡調用它們。"
+        },
+        {
+          "i": 53,
+          "start": 177.689,
+          "end": 183.049,
+          "en": "If you don't want to hope that Claude Code decides to load them, you can just actively",
+          "zh": "如果你不想希望 Claude Code 決定加載它們，你可以主動"
+        },
+        {
+          "i": 54,
+          "start": 183.065,
+          "end": 184.734,
+          "en": "invoke them from here, of course.",
+          "zh": "當然，從這裡調用它們。"
+        },
+        {
+          "i": 55,
+          "start": 185.055,
+          "end": 190.255,
+          "en": "You could also use voice dictation, and of course, you can also switch easily to different",
+          "zh": "您也可以使用語音聽寫，當然，您也可以輕鬆切換到不同的"
+        },
+        {
+          "i": 56,
+          "start": 190.287,
+          "end": 190.559,
+          "en": "models.",
+          "zh": "模型。"
+        },
+        {
+          "i": 57,
+          "start": 190.624,
+          "end": 192.116,
+          "en": "Now, that's all nice.",
+          "zh": "現在，一切都很好。"
+        },
+        {
+          "i": 58,
+          "start": 192.469,
+          "end": 195.663,
+          "en": "I mean, you can all find that on your own, I guess.",
+          "zh": "我的意思是，我想你們都可以自己找到。"
+        },
+        {
+          "i": 59,
+          "start": 195.743,
+          "end": 196.85,
+          "en": "Still nice to see it.",
+          "zh": "還是很高興看到它。"
+        },
+        {
+          "i": 60,
+          "start": 197.428,
+          "end": 203.046,
+          "en": "What is interesting is that if you have an active session, or a session that's already",
+          "zh": "有趣的是，如果您有一個活動會話，或者一個已經存在的會話"
+        },
+        {
+          "i": 61,
+          "start": 203.11,
+          "end": 206.194,
+          "en": "complete, you have this button here in the top right corner.",
+          "zh": "完成後，右上角有這個按鈕。"
+        },
+        {
+          "i": 62,
+          "start": 206.258,
+          "end": 210.722,
+          "en": "And that is the most interesting button when doing local development with the Claude",
+          "zh": "這是使用 Claude 進行本地開發時最有趣的按鈕"
+        },
+        {
+          "i": 63,
+          "start": 210.819,
+          "end": 211.831,
+          "en": "desktop app, I would say.",
+          "zh": "我想說的是桌面應用程式。"
+        },
+        {
+          "i": 64,
+          "start": 212.184,
+          "end": 217.452,
+          "en": "Because here you can for one view your plan if you did use plan mode.",
+          "zh": "因為如果您使用計劃模式，您可以在這裡查看您的計劃。"
+        },
+        {
+          "i": 65,
+          "start": 217.5,
+          "end": 218.672,
+          "en": "Here I didn't, so I have none.",
+          "zh": "這裡我沒有，所以我沒有。"
+        },
+        {
+          "i": 66,
+          "start": 219.266,
+          "end": 222.559,
+          "en": "When it's currently working, you can see your ongoing tasks here too.",
+          "zh": "當它目前正在運行時，您也可以在此處查看正在進行的任務。"
+        },
+        {
+          "i": 67,
+          "start": 222.735,
+          "end": 224.63,
+          "en": "So the tasks it's going through.",
+          "zh": "所以它正在經歷的任務。"
+        },
+        {
+          "i": 68,
+          "start": 225.128,
+          "end": 231.084,
+          "en": "But if it's done already, you can for example use the preview feature to have it launch",
+          "zh": "但如果它已經完成，您可以使用預覽功能來啟動它"
+        },
+        {
+          "i": 69,
+          "start": 231.148,
+          "end": 235.174,
+          "en": "a dev server for you and show you a preview of your website.",
+          "zh": "為您提供開發伺服器並向您展示網站的預覽。"
+        },
+        {
+          "i": 70,
+          "start": 235.222,
+          "end": 238.254,
+          "en": "If you are working on a website here, you have to set it up once.",
+          "zh": "如果您正在此處開發網站，則必須設定一次。"
+        },
+        {
+          "i": 71,
+          "start": 238.35,
+          "end": 242.906,
+          "en": "And if you click this button, it actually uses the Claude agent, the Claude models to",
+          "zh": "如果你點擊這個按鈕，它實際上使用 Claude 代理，Claude 模型來"
+        },
+        {
+          "i": 72,
+          "start": 243.483,
+          "end": 249.354,
+          "en": "write a Claude launch JSON file for you, which will contain the setup instructions or",
+          "zh": "為您編寫 Claude launch JSON 文件，其中包含設定說明或"
+        },
+        {
+          "i": 73,
+          "start": 249.37,
+          "end": 251.135,
+          "en": "the setup configuration, I should say.",
+          "zh": "我應該說的是設定配置。"
+        },
+        {
+          "i": 74,
+          "start": 251.183,
+          "end": 252.867,
+          "en": "So that's a one-time step.",
+          "zh": "所以這是一次性的步驟。"
+        },
+        {
+          "i": 75,
+          "start": 253.043,
+          "end": 258.962,
+          "en": "And once it's done here, you can ask it to go ahead and Start a dev server and start",
+          "zh": "在這裡完成後，您可以要求它繼續啟動開發伺服器並啟動"
+        },
+        {
+          "i": 76,
+          "start": 258.962,
+          "end": 259.587,
+          "en": "that preview.",
+          "zh": "那個預覽。"
+        },
+        {
+          "i": 77,
+          "start": 260.501,
+          "end": 264.141,
+          "en": "And then it will indeed show you a preview of your site here.",
+          "zh": "然後它確實會在這裡向您顯示您網站的預覽。"
+        },
+        {
+          "i": 78,
+          "start": 264.254,
+          "end": 268.856,
+          "en": "Now what is interesting is not just that you have a preview here, which can already be",
+          "zh": "現在有趣的不僅僅是你在這裡有一個預覽，它已經可以了"
+        },
+        {
+          "i": 79,
+          "start": 268.856,
+          "end": 269.145,
+          "en": "nice.",
+          "zh": "好的。"
+        },
+        {
+          "i": 80,
+          "start": 269.225,
+          "end": 272.656,
+          "en": "You can prompt away here and see the changes live here to the right.",
+          "zh": "您可以在此處提示並查看右側的變更。"
+        },
+        {
+          "i": 81,
+          "start": 272.785,
+          "end": 273.57,
+          "en": "That can be nice.",
+          "zh": "那太好了。"
+        },
+        {
+          "i": 82,
+          "start": 274.372,
+          "end": 278.734,
+          "en": "But the best feature here is this button, this one.",
+          "zh": "但這裡最好的功能是這個按鈕，這個按鈕。"
+        },
+        {
+          "i": 83,
+          "start": 279.327,
+          "end": 280.402,
+          "en": "I mean, this one is interesting too.",
+          "zh": "我的意思是，這也很有趣。"
+        },
+        {
+          "i": 84,
+          "start": 280.53,
+          "end": 282.567,
+          "en": "You can switch between mobile and desktop view here.",
+          "zh": "您可以在此處切換行動視圖和桌面視圖。"
+        },
+        {
+          "i": 85,
+          "start": 282.952,
+          "end": 286.776,
+          "en": "Also switch between the different modes if your app supports it, different light and",
+          "zh": "如果您的應用程式支持，還可以在不同模式之間切換，不同的光線和"
+        },
+        {
+          "i": 86,
+          "start": 286.776,
+          "end": 287.258,
+          "en": "dark modes.",
+          "zh": "黑暗模式。"
+        },
+        {
+          "i": 87,
+          "start": 287.772,
+          "end": 289.299,
+          "en": "But this button here is great.",
+          "zh": "但這裡的這個按鈕很棒。"
+        },
+        {
+          "i": 88,
+          "start": 289.379,
+          "end": 293.669,
+          "en": "It allows you to select an element and then this element is added as context here.",
+          "zh": "它允許您選擇一個元素，然後將該元素添加為此處的上下文。"
+        },
+        {
+          "i": 89,
+          "start": 294.826,
+          "end": 297.992,
+          "en": "And you can then of course base your prompt on that.",
+          "zh": "然後您當然可以以此為基礎進行提示。"
+        },
+        {
+          "i": 90,
+          "start": 298.056,
+          "end": 302.314,
+          "en": "So if you know that you want to change something about that element, change the text",
+          "zh": "因此，如果您知道要更改該元素的某些內容，請更改文本"
+        },
+        {
+          "i": 91,
+          "start": 302.314,
+          "end": 307.312,
+          "en": "to just welcome, you don't need to describe in which file it is and hope that it finds",
+          "zh": "只是歡迎，您不需要描述它在哪個文件中並希望它找到"
+        },
+        {
+          "i": 92,
+          "start": 307.312,
+          "end": 307.392,
+          "en": "it.",
+          "zh": "它。"
+        },
+        {
+          "i": 93,
+          "start": 307.698,
+          "end": 312.413,
+          "en": "No, you can just select whatever you're not happy with and that will be added as context",
+          "zh": "不，您可以選擇任何您不滿意的內容，這些內容將作為上下文添加"
+        },
+        {
+          "i": 94,
+          "start": 312.413,
+          "end": 312.477,
+          "en": "here.",
+          "zh": "這裡。"
+        },
+        {
+          "i": 95,
+          "start": 312.525,
+          "end": 315.779,
+          "en": "Of course, you can also delete it and that can be a nice feature.",
+          "zh": "當然，您也可以刪除它，這可能是一個很好的功能。"
+        },
+        {
+          "i": 96,
+          "start": 315.875,
+          "end": 320.716,
+          "en": "And I know other tools have that too, but the Claude Code desktop app now has it as well.",
+          "zh": "我知道其他工具也有這個功能，但 Claude Code 桌面應用程式現在也有它。"
+        },
+        {
+          "i": 97,
+          "start": 321.646,
+          "end": 327.689,
+          "en": "Now besides that, you also have a div view here and that is also pretty nice and a feature",
+          "zh": "除此之外，你還可以在這裡看到一個 div 視圖，這也是一個非常好的功能"
+        },
+        {
+          "i": 98,
+          "start": 327.721,
+          "end": 330.222,
+          "en": "I already know from the Codex and also other apps.",
+          "zh": "我已經從 Codex 和其他應用程式中知道了。"
+        },
+        {
+          "i": 99,
+          "start": 330.687,
+          "end": 336.778,
+          "en": "Here you can easily scroll through your files and see all the changes, everything that",
+          "zh": "在這裡您可以輕鬆地滾動瀏覽文件並查看所有更改以及所有內容"
+        },
+        {
+          "i": 100,
+          "start": 336.778,
+          "end": 338.494,
+          "en": "is uncommitted essentially here.",
+          "zh": "在這裡基本上沒有承諾。"
+        },
+        {
+          "i": 101,
+          "start": 339.119,
+          "end": 343.613,
+          "en": "And you cannot just view them, which is already nice because reviewing the code is important",
+          "zh": "而且你不能只查看它們，這已經很好了，因為檢查程式碼很重要"
+        },
+        {
+          "i": 102,
+          "start": 343.629,
+          "end": 346.406,
+          "en": "unless you're of course wipe coding and don't care about the code at all.",
+          "zh": "除非您當然要擦除程式碼並且根本不關心程式碼。"
+        },
+        {
+          "i": 103,
+          "start": 346.68,
+          "end": 352.136,
+          "en": "I do care though, but this is nice for code reviews and you can also drop comments here.",
+          "zh": "我確實很關心，但這對於程式碼審查來說很好，你也可以在這裡發表評論。"
+        },
+        {
+          "i": 104,
+          "start": 353.879,
+          "end": 360.4,
+          "en": "You can say something like remove this or whatever and if you submit this comment, it's",
+          "zh": "你可以說刪除這個或其他什麼，如果你提交這個評論，它就是"
+        },
+        {
+          "i": 105,
+          "start": 360.481,
+          "end": 362.869,
+          "en": "also added as context here.",
+          "zh": "也在這裡添加為上下文。"
+        },
+        {
+          "i": 106,
+          "start": 363.418,
+          "end": 366.839,
+          "en": "So now you could send it like this or add some extra instructions.",
+          "zh": "所以現在您可以像這樣發送或添加一些額外的說明。"
+        },
+        {
+          "i": 107,
+          "start": 368.022,
+          "end": 374.771,
+          "en": "We don't want to use custom variant, whatever, you can send that.",
+          "zh": "我們不想使用自訂變體，無論如何，您可以發送它。"
+        },
+        {
+          "i": 108,
+          "start": 375.219,
+          "end": 378.009,
+          "en": "And again, you don't have to describe to which file you're referring.",
+          "zh": "再說一次，您不必描述您所引用的文件。"
+        },
+        {
+          "i": 109,
+          "start": 378.105,
+          "end": 382.449,
+          "en": "Instead, you can just comment inline and then base your prompt on this, which of course",
+          "zh": "相反，您可以只內聯註釋，然後基於此進行提示，當然，"
+        },
+        {
+          "i": 110,
+          "start": 382.449,
+          "end": 383.779,
+          "en": "can be more convenient.",
+          "zh": "可以更方便。"
+        },
+        {
+          "i": 111,
+          "start": 384.693,
+          "end": 387.402,
+          "en": "Now, outside of that, you also have a terminal.",
+          "zh": "現在，除此之外，您還有一個終端。"
+        },
+        {
+          "i": 112,
+          "start": 387.659,
+          "end": 392.869,
+          "en": "So that is essentially the same kind of terminal you, for example, also have in Visual",
+          "zh": "因此，這本質上與您在 Visual 中擁有的終端機類型相同"
+        },
+        {
+          "i": 113,
+          "start": 392.869,
+          "end": 393.558,
+          "en": "Studio Code.",
+          "zh": "工作室代碼。"
+        },
+        {
+          "i": 114,
+          "start": 393.75,
+          "end": 395.626,
+          "en": "So you can use the integrated terminal there.",
+          "zh": "所以你可以在那裡使用整合終端。"
+        },
+        {
+          "i": 115,
+          "start": 395.834,
+          "end": 398.143,
+          "en": "You also have it here in the Claude Code desktop app.",
+          "zh": "您也可以在 Claude Code 桌面應用程式中找到它。"
+        },
+        {
+          "i": 116,
+          "start": 398.639,
+          "end": 402.412,
+          "en": "And therefore altogether, I think this is pretty nice.",
+          "zh": "因此總的來說，我認為這非常好。"
+        },
+        {
+          "i": 117,
+          "start": 402.734,
+          "end": 409.111,
+          "en": "Of course, in the end, let's be honest, it is mostly what we already saw from other apps",
+          "zh": "當然，最後，說實話，這主要是我們已經從其他應用程式中看到的"
+        },
+        {
+          "i": 118,
+          "start": 409.224,
+          "end": 413.545,
+          "en": "like Codex, for example, but it's a nice glow up of the application.",
+          "zh": "例如，像 Codex，但它是應用程式的一個很好的亮點。"
+        },
+        {
+          "i": 119,
+          "start": 413.641,
+          "end": 414.878,
+          "en": "I like the look and feel.",
+          "zh": "我喜歡它的外觀和感覺。"
+        },
+        {
+          "i": 120,
+          "start": 414.927,
+          "end": 417.658,
+          "en": "It's really fast and snappy in my first tests.",
+          "zh": "在我的第一次測試中，它確實非常快且敏捷。"
+        },
+        {
+          "i": 121,
+          "start": 418.3,
+          "end": 423.007,
+          "en": "And I think if you are into this kind of development, if you prefer that over a CLI,",
+          "zh": "我認為如果您喜歡這種開發，如果您更喜歡這種開發而不是 CLI，"
+        },
+        {
+          "i": 122,
+          "start": 423.682,
+          "end": 427.039,
+          "en": "this is definitely a great improvement over the old Claude.",
+          "zh": "這相對於老克勞德來說絕對是一個很大的進步。"
+        },
+        {
+          "i": 123,
+          "start": 427.152,
+          "end": 428.119,
+          "en": "Code desktop app.",
+          "zh": "程式碼桌面應用程式。"
+        },
+        {
+          "i": 124,
+          "start": 428.344,
+          "end": 430.553,
+          "en": "And as mentioned, I already cover it in my course.",
+          "zh": "如前所述，我已經在課程中介紹了它。"
+        },
+        {
+          "i": 125,
+          "start": 430.778,
+          "end": 433.663,
+          "en": "There I also explain routines, dispatch, and much more.",
+          "zh": "在那裡我還解釋了例行公事、調度等等。"
+        },
+        {
+          "i": 126,
+          "start": 433.744,
+          "end": 436.5,
+          "en": "But hopefully this quick walkthrough also was helpful.",
+          "zh": "但希望這個快速演練也能有所幫助。"
         }
       ]
     }

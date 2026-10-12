@@ -1,0 +1,779 @@
+1
+00:00:00,016 --> 00:00:04,096
+Herder is one of those tools which I would've loved to discover a bit earlier because
+Herder 是我希望早點發現的工具之一，因為
+
+2
+00:00:04,144 --> 00:00:08,675
+it is amazing, especially for agentic engineering and working with multiple AI agents.
+這是令人驚奇的，特別是對於代理工程和與多個人工智慧代理一起工作。
+
+3
+00:00:09,414 --> 00:00:12,048
+Now, this is not a sponsored video or anything like that.
+現在，這不是贊助影片或類似的東西。
+
+4
+00:00:12,097 --> 00:00:15,502
+It's just an amazing tool and I wanna show you why and how you can use it.
+這是一個了不起的工具，我想向您展示為什麼以及如何使用它。
+
+5
+00:00:15,759 --> 00:00:16,820
+Now, what is Herder?
+現在，赫爾德是什麼？
+
+6
+00:00:17,205 --> 00:00:23,278
+It is a terminal multiplexer, which is a fancy way of saying you can run it and then
+它是一個終端多工器，這是一種奇特的方式，表示您可以運行它，然後
+
+7
+00:00:23,567 --> 00:00:26,892
+you can manage multiple terminal windows in one.
+您可以在一個終端機視窗中管理多個終端機視窗。
+
+8
+00:00:27,326 --> 00:00:29,044
+Obviously, you wouldn't need Herder for that.
+顯然，你不需要 Herder。
+
+9
+00:00:29,092 --> 00:00:34,455
+Of course, you can just spin up multiple terminal windows on your system, right?
+當然，您可以在系統上啟動多個終端窗口，對吧？
+
+10
+00:00:34,568 --> 00:00:35,900
+Well, it's a bit more than that.
+嗯，還不止於此。
+
+11
+00:00:35,949 --> 00:00:41,360
+It is technically a client-server architecture, which means if you start something in
+從技術上講，它是一種客戶端-伺服器架構，這意味著如果您在
+
+12
+00:00:41,456 --> 00:00:46,787
+your Herder session, let's say here I'm starting a PyCodingAgent session and I'm asking
+您的 Herder 會話，假設我正在啟動 PyCodingAgent 會話，並且我要問
+
+13
+00:00:46,835 --> 00:00:48,954
+it, what can you do for me?
+它，你能為我做什麼？
+
+14
+00:00:49,484 --> 00:00:52,278
+I can technically quit this session.
+從技術上講我可以退出本次會議。
+
+15
+00:00:52,712 --> 00:00:57,408
+Session here, and when I restart it, I'm back to where I was.
+會話在這裡，當我重新啟動它時，我又回到了原來的位置。
+
+16
+00:00:57,505 --> 00:00:59,220
+And as you see, it finished its work.
+正如你所看到的，它完成了它的工作。
+
+17
+00:00:59,268 --> 00:01:03,099
+So processes you start here keep on working.
+因此，您從此處開始的流程將繼續發揮作用。
+
+18
+00:01:03,195 --> 00:01:06,946
+They keep on doing what they are doing, not just coding agents, of course, any process
+他們繼續做他們正在做的事情，不僅僅是編碼代理，當然，任何流程
+
+19
+00:01:06,978 --> 00:01:10,633
+you start in such a Herder pane, as it's called, in one of those windows.
+您可以從其中一個視窗中的 Herder 窗格開始。
+
+20
+00:01:11,387 --> 00:01:15,058
+And that, of course, can be super helpful also, for example, when running this on a remote
+當然，這也非常有幫助，例如，在遠端運行時
+
+21
+00:01:15,058 --> 00:01:17,847
+host, on a VPS you're connecting to with SSH.
+主機，位於您透過 SSH 連線的 VPS 上。
+
+22
+00:01:18,199 --> 00:01:21,566
+It works like this because Herder is using a client-server infrastructure.
+它的工作原理是這樣的，因為 Herder 使用的是客戶端-伺服器基礎設施。
+
+23
+00:01:22,031 --> 00:01:26,215
+And when you run Herder, you're connecting with a client to a server that's also automatically
+當您執行 Herder 時，您正在將用戶端連接到伺服器，該伺服器也會自動
+
+24
+00:01:26,215 --> 00:01:30,655
+started if it's not already running, and your sessions then technically run on that server,
+如果尚未運行，則啟動，然後從技術上講，您的會話將在該伺服器上運行，
+
+25
+00:01:30,863 --> 00:01:35,640
+and that server keeps on running even if you close that Herder pane, if you detach from
+即使您關閉 Herder 窗格，如果您從
+
+26
+00:01:35,672 --> 00:01:36,201
+that session.
+那次會議。
+
+27
+00:01:36,314 --> 00:01:37,227
+That's how that works.
+這就是它的工作原理。
+
+28
+00:01:37,275 --> 00:01:40,497
+But still, that is nice, that can be useful.
+但這仍然很好，很有用。
+
+29
+00:01:40,882 --> 00:01:45,771
+But the killer feature of Herder is its deep integration with coding agents.
+但 Herder 的殺手級功能是它與編碼代理的深度整合。
+
+30
+00:01:46,156 --> 00:01:51,670
+You see that there is this sidebar here on the left, and there is this agents part in
+你看到左邊有這個側邊欄，裡面有這個代理部分
+
+31
+00:01:51,783 --> 00:01:57,612
+that sidebar, and that is automatically populated with agent sessions you may have started.
+此側邊欄會自動填入您可能已啟動的代理會話。
+
+32
+00:01:57,709 --> 00:02:04,081
+Herder automatically detects a broad variety of AI agents like Pi, Codex, Claude Code,
+Herder 會自動偵測各種 AI 代理，例如 Pi、Codex、Claude Code、
+
+33
+00:02:04,113 --> 00:02:05,116
+Groq, and many more.
+格羅克等等。
+
+34
+00:02:05,714 --> 00:02:11,634
+And if you start such a coding agent process in Herder, it will add it to this agent
+如果你在 Herder 中啟動這樣一個編碼代理程式進程，它會將其加入到這個代理程式中
+
+35
+00:02:11,634 --> 00:02:12,604
+sidebar here.
+側邊欄在這裡。
+
+36
+00:02:13,348 --> 00:02:17,184
+So if I start a Claude Code session here in my other window
+因此，如果我在另一個視窗中啟動克勞德程式碼會話
+
+37
+00:02:18,952 --> 00:02:21,137
+and I ask it, what's this folder about?
+我問它，這個資料夾是做什麼用的？
+
+38
+00:02:21,603 --> 00:02:23,740
+You see that's also here in the sidebar.
+您會看到它也位於側邊欄中。
+
+39
+00:02:23,933 --> 00:02:26,377
+And you see I got this indicator that it's working.
+你看，我得到了這個指標，表明它正在發揮作用。
+
+40
+00:02:26,788 --> 00:02:30,190
+So it also hooks into those agents and shows you which agent is working, which one is
+因此，它還會連接到這些代理並向您顯示哪個代理正在工作，哪個代理正在工作
+
+41
+00:02:30,287 --> 00:02:30,511
+not.
+不是。
+
+42
+00:02:31,009 --> 00:02:35,808
+And that can be really useful if you, like me, are working sometimes at least on multiple
+如果你像我一樣，有時至少在多個專案上工作，那麼這會非常有用。
+
+43
+00:02:35,824 --> 00:02:40,077
+projects simultaneously, or you have multiple agent sessions going, one for research,
+同時進行項目，或者您有多個代理會話正在進行，其中一個用於研究，
+
+44
+00:02:40,093 --> 00:02:42,565
+one for something else, and you can easily switch.
+一個用於另一個，您可以輕鬆切換。
+
+45
+00:02:42,805 --> 00:02:44,523
+As you also see, you got mouse support.
+正如您所看到的，您獲得了滑鼠支援。
+
+46
+00:02:44,828 --> 00:02:49,931
+It's a terminal-based tool, but you don't need to be a terminal wizard to use it, which
+它是一個基於終端的工具，但您不需要成為終端精靈即可使用它，這
+
+47
+00:02:50,525 --> 00:02:54,875
+I like a lot because I never fully got into NeoVim.
+我很喜歡，因為我從來沒有完全融入 NeoVim。
+
+48
+00:02:54,939 --> 00:03:01,521
+It's just beyond me to memorize all these shortcuts and ways of using it, or I never
+我無法記住所有這些快捷方式和使用方法，或者我從來沒有記住過
+
+49
+00:03:01,521 --> 00:03:04,266
+was willing to take the time to fully learn it.
+願意花時間充分學習它。
+
+50
+00:03:04,394 --> 00:03:06,208
+Here in Herder, you got shortcuts.
+在赫爾德，你有捷徑。
+
+51
+00:03:06,256 --> 00:03:11,201
+You can easily open new workspaces, you can split your panes in various ways, you can
+您可以輕鬆地開啟新的工作區，可以以各種方式分割窗格，您可以
+
+52
+00:03:11,378 --> 00:03:13,256
+open new tabs and stuff like that.
+打開新標籤之類的東西。
+
+53
+00:03:13,320 --> 00:03:15,102
+And I'll get back to how things are organized.
+我會回到事情是如何組織的。
+
+54
+00:03:15,471 --> 00:03:17,863
+You got those shortcuts, but you can also use the mouse.
+您有這些快捷鍵，但您也可以使用滑鼠。
+
+55
+00:03:18,200 --> 00:03:21,267
+You can use the mouse to open a new tab here if you want to.
+如果需要，您可以使用滑鼠在此處開啟新分頁。
+
+56
+00:03:21,491 --> 00:03:25,756
+You can open the mouse and right-click to rename a workspace.
+您可以打開滑鼠並右鍵單擊來重新命名工作區。
+
+57
+00:03:26,061 --> 00:03:28,929
+You can click on menu here to find settings.
+您可以點擊此處的選單來尋找設定。
+
+58
+00:03:28,977 --> 00:03:31,861
+So you can use your mouse here, which is very appealing.
+所以你可以在這裡使用滑鼠，這是非常吸引人的。
+
+59
+00:03:31,990 --> 00:03:36,412
+Obviously, you may ask though, well, why don't I just use a tool like Codex or Cloud
+顯然，您可能會問，好吧，為什麼我不使用 Codex 或 Cloud 這樣的工具
+
+60
+00:03:36,412 --> 00:03:38,031
+Code, the desktop app, I mean?
+我的意思是程式碼，桌面應用程式？
+
+61
+00:03:38,479 --> 00:03:40,386
+There I can also have multiple sessions.
+在那裡我還可以進行多次會議。
+
+62
+00:03:40,579 --> 00:03:42,197
+T3 Code would be another example.
+T3 代碼是另一個例子。
+
+63
+00:03:42,245 --> 00:03:43,078
+And you would be right.
+你是對的。
+
+64
+00:03:43,383 --> 00:03:44,505
+You can, of course, use that.
+當然，您可以使用它。
+
+65
+00:03:44,809 --> 00:03:50,241
+I personally like this terminal-based approach because Of 2 main reasons.
+我個人喜歡這種基於終端的方法，因為有兩個主要原因。
+
+66
+00:03:50,738 --> 00:03:56,058
+For one, I really like working with those tuis of those coding agents.
+其一，我真的很喜歡與這些編碼代理一起工作。
+
+67
+00:03:56,122 --> 00:04:01,426
+For example, Pi has this /tree command where I haven't found a desktop app that would
+例如，Pi 有這個 /tree 命令，但我沒有找到一個桌面應用程式可以
+
+68
+00:04:01,426 --> 00:04:01,907
+support it.
+支持它。
+
+69
+00:04:02,051 --> 00:04:03,590
+It's a feature I really like.
+這是我非常喜歡的功能。
+
+70
+00:04:03,878 --> 00:04:08,093
+And by the way, also a feature I'll explain along with other core Pi features in my upcoming
+順便說一句，我將在即將發布的文章中與其他核心 Pi 功能一起解釋這個功能
+
+71
+00:04:08,141 --> 00:04:08,669
+Pi course.
+圓周率當然。
+
+72
+00:04:08,846 --> 00:04:13,749
+The best way to learn about the release of that is to go to academind.com/community and
+了解該版本發布的最佳方式是訪問 academind.com/community 並
+
+73
+00:04:13,749 --> 00:04:15,191
+sign up for our newsletter there.
+在那裡註冊我們的電子報。
+
+74
+00:04:15,576 --> 00:04:21,251
+Anyways, so I like working with those TUIs, with those native CLI coding agents.
+無論如何，我喜歡使用這些 TUI，使用那些本機 CLI 編碼代理。
+
+75
+00:04:21,908 --> 00:04:26,814
+Also because that allows me to use tools like Py, again, a coding agent I like a lot,
+也因為這讓我可以使用 Py 等工具，Py 也是我非常喜歡的程式設計代理，
+
+76
+00:04:27,118 --> 00:04:30,821
+which is highly extensible and get the best of both worlds, so to say.
+可以說，它是高度可擴展的，並且可以兩全其美。
+
+77
+00:04:31,126 --> 00:04:37,603
+I can enhance Py and then use it in an environment, Herder, which allows me to easily
+我可以增強 Py，然後在 Herder 環境中使用它，這使我可以輕鬆地
+
+78
+00:04:37,699 --> 00:04:40,136
+run multiple sessions side by side and switch between them.
+並行運行多個會話並在它們之間切換。
+
+79
+00:04:40,184 --> 00:04:43,246
+So it is simply my replacement for a capable desktop app.
+所以它只是我對功能強大的桌面應用程式的替代品。
+
+80
+00:04:43,310 --> 00:04:46,275
+And with the mouse support, I can barely tell the difference, to be honest.
+老實說，有了滑鼠支持，我幾乎無法分辨出差異。
+
+81
+00:04:46,596 --> 00:04:47,494
+That's one reason.
+這是原因之一。
+
+82
+00:04:47,574 --> 00:04:53,152
+The other big reason why I'm a big fan of Herder is because it also supports plugins.
+我喜歡 Herder 的另一個重要原因是它還支援插件。
+
+83
+00:04:53,265 --> 00:04:57,288
+It also can be extended and you can of course use coding agents to extend it.
+它也可以擴展，你當然可以使用編碼代理來擴展它。
+
+84
+00:04:57,336 --> 00:04:59,933
+So you have that self-improving software.
+所以你有了自我改進的軟體。
+
+85
+00:04:59,997 --> 00:05:06,409
+You can run a coding agent inside of Herder to tell it to build a Herder plugin to add
+您可以在 Herder 內部運行一個編碼代理，告訴它建立一個 Herder 插件來添加
+
+86
+00:05:06,409 --> 00:05:07,660
+a feature you want to have.
+您想要擁有的功能。
+
+87
+00:05:08,012 --> 00:05:10,753
+For example, here I'm in a project I've been working on.
+例如，我正在參與一個我一直在做的專案。
+
+88
+00:05:11,122 --> 00:05:15,386
+And let's say I want to look at the code because I want to review the work the agent
+假設我想查看程式碼，因為我想檢查代理程式的工作
+
+89
+00:05:15,386 --> 00:05:17,214
+did to give my agent follow-up tasks.
+確實給了我的代理人後續任務。
+
+90
+00:05:17,454 --> 00:05:20,839
+Obviously I could open the this project in VS Code or NeoVim or anything like that.
+顯然我可以在 VS Code 或 NeoVim 或類似的東西中開啟這個專案。
+
+91
+00:05:21,144 --> 00:05:24,257
+I instead installed the Herder File Viewer plugin.
+我安裝了 Herder 檔案檢視器外掛程式。
+
+92
+00:05:24,610 --> 00:05:29,103
+This is a plugin I installed that was created by someone else, though I contributed to
+這是我安裝的一個插件，是由其他人創建的，儘管我做出了貢獻
+
+93
+00:05:29,103 --> 00:05:29,199
+it.
+它。
+
+94
+00:05:29,504 --> 00:05:33,371
+But of course you could also ask Herder to build your own plugin if you want to have
+當然，如果你想要的話，你也可以要求 Herder 建立自己的插件
+
+95
+00:05:33,371 --> 00:05:36,934
+a functionality that's not available in open source plugins.
+開源插件中不提供的功能。
+
+96
+00:05:37,206 --> 00:05:41,443
+With this plugin, for example, I have a new shortcut which opens this file viewer and
+例如，使用此插件，我有一個新的快捷方式可以打開此文件檢視器並
+
+97
+00:05:41,459 --> 00:05:43,240
+now I can see the work my agent did.
+現在我可以看到我的代理人所做的工作。
+
+98
+00:05:43,465 --> 00:05:47,829
+And I also get highlights about changes, so uncommitted changes, and I can dive into
+我還得到了有關更改的重點，因此未提交的更改，我可以深入研究
+
+99
+00:05:47,942 --> 00:05:53,627
+those and take a look and see what changed and then give my agent feedback and so on.
+看看這些，看看發生了什麼變化，然後給我的代理商回饋等等。
+
+100
+00:05:54,141 --> 00:06:01,049
+And I like that extensibility that I can make Herder exactly the tool I want it to be,
+我喜歡這種可擴展性，我可以讓 Herder 成為我想要的工具，
+
+101
+00:06:01,595 --> 00:06:06,286
+just as I can make Pi, for example, as a coding agent, exactly the coding agent I want
+就像我可以製作Pi，例如，作為編碼代理，正是我想要的編碼代理
+
+102
+00:06:06,286 --> 00:06:06,768
+it to be.
+就這樣吧。
+
+103
+00:06:07,234 --> 00:06:11,957
+And yeah, those desktop apps like Codex, T3 Code, they are all great.
+是的，Codex、T3 Code 等桌面應用程式都很棒。
+
+104
+00:06:12,118 --> 00:06:15,524
+And this is maybe just my thing, but I like this extensibility.
+這也許只是我的事，但我喜歡這種可擴展性。
+
+105
+00:06:15,588 --> 00:06:19,775
+I like to be able to fine-tune and tweak everything the way I want it to be.
+我喜歡能夠按照我想要的方式微調和調整一切。
+
+106
+00:06:20,080 --> 00:06:21,555
+Now let's take a step back though.
+現在讓我們退後一步。
+
+107
+00:06:21,828 --> 00:06:25,500
+How exactly can you work in Herder now that we know that it is?
+既然我們知道了，你到底能在 Herder 工作嗎？
+
+108
+00:06:25,676 --> 00:06:30,134
+I mentioned already you can have multiple terminal windows in there, and these are in
+我已經提到你可以有多個終端窗口，這些窗口位於
+
+109
+00:06:30,182 --> 00:06:34,752
+the end organized in workspaces, which are here in that Spaces part of that side area.
+末端組織在工作空間中，這些空間位於該側面區域的空間部分。
+
+110
+00:06:34,897 --> 00:06:39,403
+So you got Agents and Spaces here, you got your workspaces, and each space consists of
+所以你在這裡有代理和空間，你有你的工作空間，每個空間都包含
+
+111
+00:06:39,483 --> 00:06:45,303
+one or more tabs, and those tabs then contain those panes, those terminal windows.
+一個或多個選項卡，然後這些選項卡包含那些窗格、那些終端視窗。
+
+112
+00:06:45,752 --> 00:06:50,801
+So in this project, the mvault project here, I could add a new tab if I wanted to, also
+因此，在這個專案中，這裡的 mvault 專案中，如果我願意的話，我也可以新增一個選項卡
+
+113
+00:06:50,801 --> 00:06:52,966
+of course with a shortcut, both is supported.
+當然，如果有快捷方式，兩者都支援。
+
+114
+00:06:53,430 --> 00:06:58,624
+And in each tab I have one pane by default, but I could add more by splitting it also
+預設情況下，在每個選項卡中我都有一個窗格，但我也可以透過分割它來新增更多窗格
+
+115
+00:06:58,704 --> 00:06:59,329
+with the mouse.
+用滑鼠。
+
+116
+00:06:59,474 --> 00:07:03,545
+So I could split that down, have multiple windows in there, and now in there I could
+所以我可以把它分開，在那裡有多個窗口，現在我可以在那裡
+
+117
+00:07:03,850 --> 00:07:04,090
+work.
+工作。
+
+118
+00:07:04,251 --> 00:07:08,146
+And of course you cannot just use coding agents in there, you can do whatever you want.
+當然，你不能只在那裡使用編碼代理，你可以做任何你想做的事。
+
+119
+00:07:08,194 --> 00:07:11,641
+You can run your normal terminal commands here if you want to.
+如果需要，您可以在此處執行常規終端命令。
+
+120
+00:07:11,865 --> 00:07:16,804
+You can also run NeoVim in there and use that, have your code editor here in, in one
+您也可以在那裡運行 NeoVim 並使用它，將您的程式碼編輯器放在其中，在一個
+
+121
+00:07:16,836 --> 00:07:19,404
+tab or in one pane, have your coding agents in another.
+標籤或一個窗格中，將您的編碼代理程式放在另一個窗格中。
+
+122
+00:07:19,869 --> 00:07:21,266
+All of that is possible.
+所有這一切都是可能的。
+
+123
+00:07:21,731 --> 00:07:28,680
+And that is why I think Herder is a really great tool for doing agentic engineering,
+這就是為什麼我認為 Herder 是進行代理工程的一個非常好的工具，
+
+124
+00:07:28,776 --> 00:07:30,606
+for working on multiple projects.
+用於處理多個項目。
+
+125
+00:07:31,120 --> 00:07:34,907
+And it's easy to use because of the mouse support and has amazing extensibility.
+由於支援滑鼠，它很容易使用，並且具有驚人的可擴展性。
+
+126
+00:07:35,035 --> 00:07:40,652
+And of course has all those shortcuts which allow you to work and move quickly once you
+當然，還有所有這些快捷方式，可以讓您在完成工作後快速工作和移動
+
+127
+00:07:40,652 --> 00:07:41,519
+got the hang of it.
+掌握了竅門。
+
+128
+00:07:41,792 --> 00:07:45,808
+Now, just to be clear, Herder is not a terminal replacement.
+現在，需要澄清的是，赫爾德並不是終端替代品。
+
+129
+00:07:46,130 --> 00:07:51,560
+Rather, you install it as a tool with one simple command on Linux or macOS or on Windows
+相反，您可以在 Linux 或 macOS 或 Windows 上使用一個簡單的命令將其安裝為工具
+
+130
+00:07:51,592 --> 00:07:52,395
+with this command.
+用這個命令。
+
+131
+00:07:52,797 --> 00:07:54,740
+And then you can start it in any terminal.
+然後您可以在任何終端中啟動它。
+
+132
+00:07:54,805 --> 00:07:58,789
+So no matter if you're using the default terminal or PowerShell that ships with your
+因此，無論您使用的是預設終端還是隨您的系統隨附的 PowerShell
+
+133
+00:07:58,837 --> 00:08:04,653
+system, or if you're using Ghosty or Alacritty or whatever it is, you can install Herder
+系統，或者如果您使用 Ghosty 或 Alacritty 或其他任何東西，您可以安裝 Herder
+
+134
+00:08:04,685 --> 00:08:06,339
+and then just start it.
+然後就開始吧。
+
+135
+00:08:06,613 --> 00:08:11,352
+And starting it is really just one command, Herder, and that starts it, brings you back
+啟動它實際上只是一個命令，赫爾德，啟動它，就會帶你回來
+
+136
+00:08:11,352 --> 00:08:12,413
+to your previous layout.
+到您之前的佈局。
+
+137
+00:08:12,477 --> 00:08:15,385
+And as mentioned, the server will keep on running even if you do quit.
+如前所述，即使您退出，伺服器也會繼續運作。
+
+138
+00:08:15,771 --> 00:08:18,406
+So you can always quit and come back later.
+所以你可以隨時退出並稍後再回來。
+
+139
+00:08:18,582 --> 00:08:24,174
+It has many more amazing features like the Herder remote feature, for example, which
+它還有許多令人驚嘆的功能，例如 Herder 遠端功能，
+
+140
+00:08:24,270 --> 00:08:27,387
+allows you to easily connect to a remote instance of Herder.
+讓您輕鬆連線到 Herder 的遠端實例。
+
+141
+00:08:27,500 --> 00:08:31,324
+So this one is one running on a VPS I created.
+所以這個是在我創建的 VPS 上運行的。
+
+142
+00:08:31,597 --> 00:08:33,284
+I installed Herder on there too.
+我也在那裡安裝了 Herder。
+
+143
+00:08:33,670 --> 00:08:39,410
+And of course I could just connect to that VPS and then run Herder there.
+當然，我可以連接到該 VPS，然後在那裡運行 Herder。
+
+144
+00:08:39,554 --> 00:08:44,073
+So now that would be Herder on the VPS, but now I would be running it from inside that
+所以現在是 VPS 上的 Herder，但現在我會從裡面運行它
+
+145
+00:08:44,105 --> 00:08:44,490
+VPS.
+虛擬專用伺服器。
+
+146
+00:08:44,891 --> 00:08:51,188
+Alternatively, I can run it from my MacBook here with herder --remote and then the identifier
+或者，我可以在我的 MacBook 上使用 herder --remote 運行它，然後使用標識符
+
+147
+00:08:51,396 --> 00:08:53,448
+or the IP of my VPS.
+或我的 VPS 的 IP。
+
+148
+00:08:53,960 --> 00:08:58,095
+And then Herder will behind the scenes connect to it via SSH and will still run Herder
+然後 Herder 將在幕後透過 SSH 連接到它並且仍然運行 Herder
+
+149
+00:08:58,191 --> 00:08:58,864
+on the VPS.
+在 VPS 上。
+
+150
+00:08:58,928 --> 00:09:02,798
+But for example, with my key binding and settings, from the MacBook, which is nice.
+但例如，使用 MacBook 上的按鍵綁定和設置，這很好。
+
+151
+00:09:02,862 --> 00:09:04,522
+Lets me bring together both worlds.
+讓我將兩個世界結合在一起。
+
+152
+00:09:05,521 --> 00:09:06,890
+Yeah, and that is Herder.
+是的，那就是赫爾德。
+
+153
+00:09:07,277 --> 00:09:09,726
+I definitely can do more deep dives if you're interested.
+如果你有興趣，我絕對可以進行更深入的研究。
+
+154
+00:09:09,774 --> 00:09:10,193
+Let me know.
+讓我知道。
+
+155
+00:09:10,274 --> 00:09:13,899
+But yeah, give it a try if you're doing agentic engineering, if you like working with
+但是，是的，如果你正在做代理工程，如果你喜歡與
+
+156
+00:09:13,899 --> 00:09:17,943
+those TUIs, with those CLI coding agents, and if you want to keep stuff organized.
+那些 TUI，那些 CLI 編碼代理，如果你想保持東西井井有條。

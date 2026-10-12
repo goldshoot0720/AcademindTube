@@ -1,0 +1,879 @@
+1
+00:00:00,032 --> 00:00:05,509
+Tools like Codex or Cloud Code are pretty good at helping you work with code, right?
+Codex 或 Cloud Code 等工具非常適合幫助您處理程式碼，對嗎？
+
+2
+00:00:05,558 --> 00:00:06,554
+I mean, it's pretty obvious.
+我的意思是，這很明顯。
+
+3
+00:00:06,618 --> 00:00:08,786
+It's Codex, it's Cloud Code, kind of makes sense.
+它是 Codex，它是 Cloud Code，有點道理。
+
+4
+00:00:08,931 --> 00:00:14,666
+But it's important to understand that you can do more with those tools than just work
+但重要的是要了解，除了工作之外，您還可以使用這些工具做更多事情
+
+5
+00:00:14,875 --> 00:00:15,341
+on code.
+在代碼上。
+
+6
+00:00:15,919 --> 00:00:20,642
+And for example, in the Codex course I have, which you find linked below if you're interested,
+例如，在我的 Codex 課程中，如果您有興趣，可以在下面找到鏈接，
+
+7
+00:00:21,059 --> 00:00:25,156
+I do primarily dive into coding and show you all the nitty-gritty details there and some
+我主要是深入研究編碼並向您展示所有的細節以及一些
+
+8
+00:00:25,156 --> 00:00:27,517
+tips and tricks how to get the most out of it.
+如何充分利用它的提示和技巧。
+
+9
+00:00:28,047 --> 00:00:34,944
+I also have some lectures in there where I show you how to use it for non-coding tasks
+我在那裡還有一些講座，向您展示如何將它用於非編碼任務
+
+10
+00:00:34,944 --> 00:00:39,997
+because that is useful to know as well because you may not be a developer, then that
+因為了解這一點也很有用，因為您可能不是開發人員，那麼
+
+11
+00:00:39,997 --> 00:00:40,350
+is great.
+太棒了。
+
+12
+00:00:40,414 --> 00:00:45,675
+But even as a developer, we all got stuff to do that is not directly related to coding
+但即使作為開發人員，我們也有一些與編碼沒有直接關係的事情要做
+
+13
+00:00:46,493 --> 00:00:48,402
+where we might be too lazy to do it manually.
+我們可能懶得手動完成。
+
+14
+00:00:48,691 --> 00:00:52,973
+So for example, in Codex, you can use it to generate images.
+例如，在 Codex 中，您可以使用它來產生圖像。
+
+15
+00:00:53,631 --> 00:00:59,213
+You can ask it to, create here in my case a slide graphic that explains how Tailscale
+您可以要求它，在我的例子中建立一個幻燈片圖形，解釋 Tailscale 如何
+
+16
+00:00:59,325 --> 00:00:59,662
+works.
+作品。
+
+17
+00:01:00,304 --> 00:01:03,929
+Tailscale is an amazing tool for securing your VPS, for example.
+例如，Tailscale 是一個用於保護 VPS 的絕佳工具。
+
+18
+00:01:04,378 --> 00:01:08,982
+And I also got a course on securely setting up a VPS and so on if you're interested.
+如果您有興趣的話，我還提供了有關安全設定 VPS 等的課程。
+
+19
+00:01:09,271 --> 00:01:10,682
+But enough of the plugs for now.
+但現在插頭已經足夠了。
+
+20
+00:01:11,436 --> 00:01:15,254
+And you can activate a skill that's built into Codex, the ImageGen skill.
+您還可以啟動 Codex 中內建的一項技能，即 ImageGen 技能。
+
+21
+00:01:15,607 --> 00:01:16,441
+You shouldn't need to.
+你不應該需要這樣做。
+
+22
+00:01:16,665 --> 00:01:18,863
+It should in theory be able to invoke it itself.
+理論上它應該能夠呼叫它本身。
+
+23
+00:01:18,975 --> 00:01:22,809
+But if you know that you want an image, you can actively invoke it by using
+但是如果你知道你想要一個圖像，你可以透過使用主動調用它
+
+24
+00:01:24,364 --> 00:01:26,255
+and then ImageGen is the skill name.
+然後ImageGen是技能名稱。
+
+25
+00:01:26,688 --> 00:01:30,503
+I got another skill here which I built myself, which is a bit more versatile and uses
+我在這裡獲得了我自己構建的另一項技能，該技能更加通用並且用途廣泛
+
+26
+00:01:30,535 --> 00:01:32,010
+the Fal AI API.
+Fal AI API。
+
+27
+00:01:32,459 --> 00:01:37,509
+But if you use this built-in skill, it will go ahead and use the GPT-Image-2 model by
+但是，如果您使用此內建技能，它將繼續使用 GPT-Image-2 模型
+
+28
+00:01:37,589 --> 00:01:39,560
+OpenAI to produce an image.
+OpenAI 生成影像。
+
+29
+00:01:39,913 --> 00:01:43,520
+So the AI agent does all of that for you, all in Codex.
+因此，AI 代理會在 Codex 中為您完成所有這些工作。
+
+30
+00:01:43,584 --> 00:01:47,896
+You don't have to leave the site, you don't have to interact with the OpenAI API or anything
+您不必離開網站，也不必與 OpenAI API 或任何其他內容進行交互
+
+31
+00:01:47,928 --> 00:01:48,409
+like that.
+像那樣。
+
+32
+00:01:48,890 --> 00:01:53,555
+So if you want to create an infographic or any kind of image, can be an image of a dog,
+因此，如果您想創建資訊圖表或任何類型的圖像，可以是狗的圖像，
+
+33
+00:01:53,683 --> 00:01:56,344
+can be anything, you can do that from inside Codex.
+可以是任何東西，你可以從 Codex 內部做到這一點。
+
+34
+00:01:56,745 --> 00:01:58,091
+And it's, it's still a chat.
+而且，這仍然是一次聊天。
+
+35
+00:01:58,171 --> 00:01:59,181
+You can refine the image.
+您可以細化圖像。
+
+36
+00:01:59,229 --> 00:02:02,035
+You can ask it to add a logo, for example.
+例如，您可以要求它添加徽標。
+
+37
+00:02:02,179 --> 00:02:03,173
+And guess what?
+你猜怎麼著？
+
+38
+00:02:03,542 --> 00:02:04,087
+It does that.
+它就是這樣做的。
+
+39
+00:02:04,135 --> 00:02:08,976
+So that's of course interesting to know because we all got scenarios where we need some
+所以這當然很有趣，因為我們都有需要一些的場景
+
+40
+00:02:09,024 --> 00:02:11,974
+image or tweak some image and anything like that.
+圖像或調整一些圖像和類似的東西。
+
+41
+00:02:12,038 --> 00:02:13,048
+And it doesn't stop there.
+而且它還不止於此。
+
+42
+00:02:13,480 --> 00:02:16,686
+You can also use Codex to analyze data, for example.
+例如，您也可以使用 Codex 來分析資料。
+
+43
+00:02:16,943 --> 00:02:22,281
+It can work with CSV, Excel, PDF documents, and many, many other formats.
+它可以處理 CSV、Excel、PDF 文件以及許多其他格式。
+
+44
+00:02:22,634 --> 00:02:24,269
+It can read such a file.
+它可以讀取這樣的檔案。
+
+45
+00:02:24,702 --> 00:02:25,695
+And you know how it does that?
+你知道它是怎麼做到的嗎？
+
+46
+00:02:25,824 --> 00:02:32,140
+It does that by using code under the hood because code, of course, is not necessarily
+它透過在幕後使用程式碼來實現這一點，因為程式碼當然不一定是
+
+47
+00:02:32,172 --> 00:02:37,189
+just the main product as it is for you as a developer when you are writing code to build
+只是主要產品，因為它適合您作為開發人員編寫程式碼來構建
+
+48
+00:02:37,446 --> 00:02:39,914
+a software, but it can also be just a tool.
+一個軟體，但它也可以只是一個工具。
+
+49
+00:02:40,187 --> 00:02:44,948
+Code can be a tool and it is a tool here used by Codex if you ask it to analyze some
+程式碼可以是一種工具，如果您要求 Codex 分析某些內容，它就是 Codex 使用的工具
+
+50
+00:02:44,996 --> 00:02:46,422
+sales CSV file.
+銷售 CSV 檔案。
+
+51
+00:02:46,759 --> 00:02:50,879
+It writes some code, some Python code, for example, that opens the file, performs some
+它編寫一些程式碼，例如一些 Python 程式碼，用於開啟檔案、執行某些操作
+
+52
+00:02:51,809 --> 00:02:56,249
+analytics, creates some summary statistics, and then it outputs those statistics here
+分析，創建一些匯總統計數據，然後在此處輸出這些統計數據
+
+53
+00:02:56,281 --> 00:02:58,846
+and it doesn't show you the code, it throws away the code.
+它不會向您顯示程式碼，而是丟棄程式碼。
+
+54
+00:02:58,958 --> 00:03:03,837
+It may just create it and use it in memory, but it gives you the final results and it
+它可能只是創建它並在內存中使用它，但它會為您提供最終結果，並且它
+
+55
+00:03:03,837 --> 00:03:07,816
+doesn't hallucinate them, but instead it really calculates them with help of code.
+不會產生幻覺，而是在程式碼的幫助下真正計算出它們。
+
+56
+00:03:08,410 --> 00:03:14,027
+And it can also produce Excel sheets, which you can then also open in the Codex app.
+它還可以產生 Excel 工作表，然後您也可以在 Codex 應用程式中開啟該工作表。
+
+57
+00:03:14,492 --> 00:03:19,852
+And in there you can then have charts if you ask it to create some charts as I did.
+如果你像我一樣要求它創建一些圖表，你就可以在其中獲得圖表。
+
+58
+00:03:20,670 --> 00:03:21,730
+And it doesn't stop there.
+而且它還不止於此。
+
+59
+00:03:21,794 --> 00:03:25,709
+It can also work with PDF documents, also create PDF documents.
+它還可以處理 PDF 文檔，也可以建立 PDF 文檔。
+
+60
+00:03:25,790 --> 00:03:30,457
+So here I ask it to create an executive summary PDF report based on all this data and
+所以在這裡我要求它根據所有這些數據創建一份執行摘要 PDF 報告
+
+61
+00:03:30,457 --> 00:03:32,398
+insights, and it did that.
+洞察力，它做到了。
+
+62
+00:03:33,585 --> 00:03:36,473
+And this is all important stuff to know.
+這些都是需要了解的重要內容。
+
+63
+00:03:36,569 --> 00:03:40,884
+And this is all also covered in my Codex course, which as mentioned is primarily about
+我的 Codex 課程也涵蓋了這一切，正如前面提到的，該課程主要是關於
+
+64
+00:03:40,900 --> 00:03:41,381
+coding though.
+雖然編碼。
+
+65
+00:03:41,477 --> 00:03:42,921
+So coding is the main task.
+所以編碼是主要任務。
+
+66
+00:03:43,611 --> 00:03:48,102
+Nonetheless, I feel like it's important to understand that this is where the companies
+儘管如此，我覺得重要的是要了解這就是公司的定位
+
+67
+00:03:48,102 --> 00:03:51,808
+are heading to and that you can do these things with Codex, for example.
+例如，您可以使用 Codex 來完成這些操作。
+
+68
+00:03:51,952 --> 00:03:54,054
+And of course, Codex It's not the only tool.
+當然，Codex 並不是唯一的工具。
+
+69
+00:03:54,215 --> 00:03:58,678
+We also have Claude Code, and I'll hand it over to Manuel to explain to you how things
+我們還有克勞德代碼，我會把它交給曼努埃爾來向你解釋事情是如何發生的
+
+70
+00:03:58,790 --> 00:04:00,444
+work with the Claude universe.
+與克勞德宇宙一起工作。
+
+71
+00:04:01,182 --> 00:04:07,026
+With Claude or Anthropic, things are the same, but also a bit different than we saw it
+對於克勞德或人類來說，事情是一樣的，但也與我們看到的有點不同
+
+72
+00:04:07,058 --> 00:04:08,583
+with Codex and OpenAI.
+與 Codex 和 OpenAI 一起。
+
+73
+00:04:08,904 --> 00:04:15,743
+Whilst OpenAI uses one combined tool, Codex, Claude tries to separate
+雖然 OpenAI 使用一種組合工具 Codex，但 Claude 試圖將其分開
+
+74
+00:04:15,872 --> 00:04:17,060
+their different users.
+他們的不同使用者。
+
+75
+00:04:17,477 --> 00:04:19,965
+Everything is also combined in one app.
+所有內容也都合併在一個應用程式中。
+
+76
+00:04:20,205 --> 00:04:23,463
+It is the Claude app, which you can download on this page here.
+這是 Claude 應用程序，您可以在此頁面上下載該應用程式。
+
+77
+00:04:24,072 --> 00:04:25,372
+Link is in the video description.
+連結在影片說明中。
+
+78
+00:04:25,902 --> 00:04:29,737
+And in this app, we find 3 different sections.
+在此應用程式中，我們發現 3 個不同的部分。
+
+79
+00:04:30,074 --> 00:04:35,434
+Chat, which is the normal chat interface we know from ChatGPT, Gemini, and so on.
+Chat，就是我們所知道的ChatGPT、Gemini等的正常聊天介面。
+
+80
+00:04:36,091 --> 00:04:41,371
+We have the code section, which is made specifically for coding projects for developers.
+我們有程式碼部分，專門為開發人員的編碼專案而設計。
+
+81
+00:04:41,949 --> 00:04:48,368
+And we have Cowork, which is the non-coding task completion section, so to say.
+我們還有 Cowork，可以說是非編碼任務完成部分。
+
+82
+00:04:48,866 --> 00:04:54,355
+The idea behind Cowork is that it's not only a chat, it completes tasks for you.
+Cowork 背後的理念是，它不僅僅是聊天，它還能為您完成任務。
+
+83
+00:04:54,804 --> 00:04:56,377
+It has local file access.
+它具有本地文件存取權限。
+
+84
+00:04:56,650 --> 00:04:59,426
+It can create files, edit files, delete files.
+它可以建立文件、編輯文件、刪除文件。
+
+85
+00:04:59,795 --> 00:05:04,369
+So it can manage entire projects on your machine for you.
+因此它可以為您管理機器上的整個專案。
+
+86
+00:05:04,594 --> 00:05:08,381
+To understand Cowork, I prepared some demo files for you.
+為了了解Cowork，我為您準備了一些簡報文件。
+
+87
+00:05:08,927 --> 00:05:13,629
+The first file here is about the working policy, the company policy.
+這裡的第一份文件是關於工作政策，公司政策。
+
+88
+00:05:14,127 --> 00:05:17,065
+Of a hypothetical company we have right here.
+我們這裡有一家假設的公司。
+
+89
+00:05:17,595 --> 00:05:24,210
+This folder contains text files, some internal memos, it contains PDFs, an image, so
+該資料夾包含文字檔案、一些內部備忘錄、PDF、圖像等
+
+90
+00:05:24,258 --> 00:05:26,281
+all information about our company.
+有關我們公司的所有資訊。
+
+91
+00:05:26,907 --> 00:05:32,045
+Now what I could do now in Claude Cowork is I could select this folder.
+現在我在 Claude Cowork 中可以做的是選擇這個資料夾。
+
+92
+00:05:32,623 --> 00:05:37,552
+So you always have the option here to work in a project, which we'll do in a few seconds,
+因此，您始終可以選擇在專案中工作，我們將在幾秒鐘內完成，
+
+93
+00:05:37,969 --> 00:05:40,297
+or to simply select a folder.
+或簡單地選擇一個資料夾。
+
+94
+00:05:40,714 --> 00:05:45,176
+Here I'll select this Demo 1 folder containing all those files.
+在這裡，我將選擇包含所有這些檔案的 Demo 1 資料夾。
+
+95
+00:05:45,690 --> 00:05:50,970
+Now I give Claude access to this folder and therefore to all the files, all the data
+現在我授予 Claude 存取此資料夾的權限，從而授予 Claude 存取所有檔案、所有資料的權限
+
+96
+00:05:51,371 --> 00:05:52,511
+inside this folder.
+在此資料夾內。
+
+97
+00:05:53,072 --> 00:06:00,054
+And now I can just ask it to read all the documents, identify the key themes, and then
+現在我可以要求它閱讀所有文檔，確定關鍵主題，然後
+
+98
+00:06:00,054 --> 00:06:04,387
+produce a 1-page executive summary as a Word document.
+產生 1 頁的執行摘要作為 Word 文件。
+
+99
+00:06:05,110 --> 00:06:10,880
+With this, Claude will now start this process, will now complete this task for me.
+這樣，克勞德現在將開始這個過程，現在將為我完成這個任務。
+
+100
+00:06:11,280 --> 00:06:13,940
+You can always check the logic it runs behind.
+您始終可以檢查它背後運行的邏輯。
+
+101
+00:06:14,004 --> 00:06:16,857
+So which commands it runs, which code it uses.
+那麼它運行哪些命令，使用哪些程式碼。
+
+102
+00:06:17,354 --> 00:06:23,892
+As Max explained earlier in Codex, Claude also uses code to complete specific tasks,
+正如 Max 之前在 Codex 中解釋的那樣，Claude 也使用程式碼來完成特定任務，
+
+103
+00:06:24,164 --> 00:06:27,802
+code which is not stored, but just used to complete the tasks.
+未儲存的程式碼，僅用於完成任務。
+
+104
+00:06:27,946 --> 00:06:29,116
+And then it's deleted again.
+然後又被刪除了。
+
+105
+00:06:29,469 --> 00:06:31,119
+Here it reads all our files.
+它在這裡讀取我們所有的文件。
+
+106
+00:06:31,552 --> 00:06:35,292
+Here we find a DocX skill which was used.
+在這裡我們找到了使用的 DocX 技能。
+
+107
+00:06:35,484 --> 00:06:39,705
+This is a built-in skill which allows Claude to create doc files.
+這是一項內建技能，允許 Claude 建立文件檔案。
+
+108
+00:06:40,299 --> 00:06:43,396
+And now we have the finished document as requested.
+現在我們已經按照要求完成文件了。
+
+109
+00:06:43,909 --> 00:06:49,334
+We can access the document from our folder on our machine, but also directly here in
+我們可以從機器上的資料夾存取該文檔，也可以直接在
+
+110
+00:06:49,446 --> 00:06:50,345
+Claude Cowork.
+克勞德·科沃克.
+
+111
+00:06:50,714 --> 00:06:57,005
+As instructed, we have a one-page executive summary about the core work policy in this
+按照指示，我們有一份關於本報告核心工作政策的一頁執行摘要
+
+112
+00:06:57,133 --> 00:06:57,791
+company here.
+公司在這裡。
+
+113
+00:06:58,352 --> 00:07:01,589
+And this is one of the big advantages of Claude Cowork here.
+而這正是 Claude Cowork 在這裡的一大優勢。
+
+114
+00:07:02,022 --> 00:07:06,461
+It is a very nice and easy to understand user interface.
+這是一個非常漂亮且易於理解的使用者介面。
+
+115
+00:07:06,830 --> 00:07:12,279
+You get clear questions about the permissions you grant Claude Cowork, for example, to
+您會收到有關您授予 Claude Cowork 的權限的明確問題，例如
+
+116
+00:07:12,359 --> 00:07:14,218
+interact with files on your machine.
+與電腦上的文件互動。
+
+117
+00:07:14,618 --> 00:07:19,747
+And then you can just let it do its work and access the files easily inside the tool.
+然後您可以讓它完成工作並在工具內輕鬆存取文件。
+
+118
+00:07:20,147 --> 00:07:23,000
+So this here was a so-called single session.
+所以這就是所謂的單一會議。
+
+119
+00:07:23,128 --> 00:07:28,401
+So we just gave Claude Cowork access to one folder, completed a task, and then we are
+所以我們只是授予 Claude Cowork 存取一個資料夾的權限，完成一項任務，然後我們就可以了
+
+120
+00:07:28,401 --> 00:07:28,609
+done.
+完畢。
+
+121
+00:07:29,186 --> 00:07:33,097
+But you can also use Claude Cowork for ongoing projects.
+但您也可以將 Claude Cowork 用於正在進行的專案。
+
+122
+00:07:33,370 --> 00:07:38,884
+And as the name indicates, we have a dedicated project section here in Claude Cowork,
+顧名思義，我們在 Claude Cowork 有一個專門的專案部分，
+
+123
+00:07:39,141 --> 00:07:41,786
+which I'll quickly show you in a second example.
+我將在第二個範例中快速向您展示。
+
+124
+00:07:42,026 --> 00:07:48,246
+A cowork has the advantage of giving Claude Cowork more context, more information it
+Cowork 的優點是可以為 Claude Cowork 提供更多背景資訊、更多信息
+
+125
+00:07:48,278 --> 00:07:50,282
+can always access and remember.
+可以隨時訪問並記住。
+
+126
+00:07:50,683 --> 00:07:56,950
+So you can start multiple sessions inside one specific project and always remember the
+因此，您可以在一個特定專案中啟動多個會話，並始終記住
+
+127
+00:07:56,950 --> 00:08:02,545
+information and the context that you provided and also the previously discussed topics.
+您提供的資訊和上下文以及之前討論的主題。
+
+128
+00:08:02,962 --> 00:08:09,598
+So if we create such a new project here and use an existing folder, which is our Demo
+那麼如果我們在這裡新建一個這樣的項目，並使用一個現有的資料夾，也就是我們的Demo
+
+129
+00:08:09,694 --> 00:08:14,054
+2 folder, this folder now contains a single sales report only.
+2 資料夾，此資料夾現在僅包含單一銷售報告。
+
+130
+00:08:14,423 --> 00:08:19,232
+So here we could now add some instructions, we could add additional files, which we won't
+所以在這裡我們現在可以添加一些指令，我們可以添加其他文件，但我們不會
+
+131
+00:08:19,232 --> 00:08:22,710
+do at this stage, but we can now simply create this project.
+在這個階段，我們可以簡單地創建這個專案。
+
+132
+00:08:23,079 --> 00:08:27,711
+So here we are now in this project, we are working in this Demo 2 folder.
+所以我們現在在這個專案中，我們正在這個 Demo 2 資料夾中工作。
+
+133
+00:08:28,032 --> 00:08:34,339
+I want to get started by reading the sales report that we have inside our project folder
+我想先閱讀項目資料夾中的銷售報告
+
+134
+00:08:34,772 --> 00:08:38,960
+to get a rough idea about the core findings and what's going on in general.
+大致了解核心發現和整體情況。
+
+135
+00:08:39,602 --> 00:08:44,272
+So here we get an overview of what went well, what was underperforming, and so on.
+因此，在這裡我們可以大致了解哪些方面進展順利，哪些方面表現不佳等等。
+
+136
+00:08:44,721 --> 00:08:50,097
+And now I can continue with my next task where I want to build an Excel file based on
+現在我可以繼續執行下一個任務，我想基於以下內容建立 Excel 文件
+
+137
+00:08:50,097 --> 00:08:52,359
+the findings in this report.
+本報告中的調查結果。
+
+138
+00:08:52,760 --> 00:08:55,119
+Still in the same project, still in the same chat.
+仍然在同一個專案中，仍然在同一個聊天中。
+
+139
+00:08:55,216 --> 00:08:57,991
+So now I'll create this Excel file.
+現在我將建立這個 Excel 檔案。
+
+140
+00:08:58,600 --> 00:09:04,680
+And now we created that Excel file, which we can again directly access here in our interface.
+現在我們建立了該 Excel 文件，我們可以再次在介面中直接存取該文件。
+
+141
+00:09:05,242 --> 00:09:11,562
+We have different tables for different customers, product lines, and regions.
+我們針對不同的客戶、產品線和地區有不同的表格。
+
+142
+00:09:12,477 --> 00:09:15,845
+And now I can go back to my core project folder.
+現在我可以返回到我的核心專案資料夾。
+
+143
+00:09:16,150 --> 00:09:21,829
+In here, I can find my previous chat and my previous output that was generated.
+在這裡，我可以找到我之前的聊天以及之前產生的輸出。
+
+144
+00:09:22,182 --> 00:09:28,008
+And now I will start a new session inside this project where I have all the context of
+現在我將在這個專案中開始一個新的會話，其中我有所有的上下文
+
+145
+00:09:28,104 --> 00:09:29,339
+the full project in here.
+完整的項目在這裡。
+
+146
+00:09:29,949 --> 00:09:36,593
+And I want to create a PowerPoint presentation now, and I want to follow the brand guidelines
+我現在想創建一個 PowerPoint 演示文稿，並且我想遵循品牌指南
+
+147
+00:09:36,706 --> 00:09:37,700
+for the visual style.
+為了視覺風格。
+
+148
+00:09:38,230 --> 00:09:44,088
+So far we don't have any brand guidelines, so I can just add another folder as context
+到目前為止，我們沒有任何品牌指南，所以我可以添加另一個資料夾作為上下文
+
+149
+00:09:44,088 --> 00:09:47,538
+here, which is this brand template folder.
+這裡，就是這個品牌模板資料夾。
+
+150
+00:09:47,698 --> 00:09:53,445
+Claude will automatically identify this folder as the important one for the brand guidelines.
+Claude 會自動將此資料夾識別為品牌指南的重要資料夾。
+
+151
+00:09:53,943 --> 00:09:56,480
+And now I'll let it finish this task too.
+現在我也讓它完成這個任務。
+
+152
+00:09:57,412 --> 00:10:03,965
+And now if we check the commands it used so far in here, we can see that it used
+現在，如果我們檢查到目前為止它使用的命令，我們可以看到它使用了
+
+153
+00:10:04,463 --> 00:10:07,370
+the brand guidelines doc file.
+品牌指南文件檔。
+
+154
+00:10:07,450 --> 00:10:10,791
+So it identified the branding guidelines that I gave it.
+所以它確定了我給它的品牌指南。
+
+155
+00:10:11,064 --> 00:10:16,428
+And here we have our slides now, which we can again access directly in Claude Cowork.
+現在我們有了幻燈片，我們可以再次在 Claude Cowork 中直接存取。
+
+156
+00:10:16,589 --> 00:10:18,339
+We have some charts.
+我們有一些圖表。
+
+157
+00:10:18,772 --> 00:10:20,055
+We have some tables in here.
+我們這裡有一些桌子。
+
+158
+00:10:20,696 --> 00:10:24,062
+The styling is totally based on our branding template.
+造型完全基於我們的品牌模板。
+
+159
+00:10:24,175 --> 00:10:28,631
+So of course you have full control about the style, the colors, and the look that you
+因此，您當然可以完全掌控您想要的風格、顏色和外觀。
+
+160
+00:10:28,631 --> 00:10:29,497
+want to have in here.
+想要在這裡擁有。
+
+161
+00:10:29,753 --> 00:10:35,765
+And once again, if you go back to the main project menu, you can find this second task
+再次，如果您返回主項目選單，您可以找到第二個任務
+
+162
+00:10:35,781 --> 00:10:42,658
+now down here and also the presentation, which is now created and accessible in our Demo
+現在在這裡還有演示文稿，現已在我們的演示中創建並可訪問
+
+163
+00:10:42,658 --> 00:10:44,101
+2 project folder.
+2個項目資料夾。
+
+164
+00:10:44,342 --> 00:10:47,214
+And these are just the basics of Cloud Cowork.
+這些只是 Cloud Cowork 的基礎知識。
+
+165
+00:10:47,712 --> 00:10:53,152
+Now, if you want to dive deeper into Cloud Cowork and use it for your non-code-related
+現在，如果您想更深入地了解 Cloud Cowork 並將其用於與程式碼無關的工作
+
+166
+00:10:53,168 --> 00:10:57,678
+tasks, we have a brand new course for you, Cloud Cowork: The Practical Guide.
+任務，我們為您準備了一門全新的課程，Cloud Cowork：實用指南。
+
+167
+00:10:58,127 --> 00:11:01,802
+You can find all information about this course in the video description.
+您可以在影片說明中找到有關本課程的所有資訊。
+
+168
+00:11:02,251 --> 00:11:08,446
+It also dives into more advanced Cloud Cowork features like Dispatch, where you can control
+它還深入探討了更高級的 Cloud Cowork 功能，例如 Dispatch，您可以在其中控制
+
+169
+00:11:08,655 --> 00:11:15,168
+Cloud Cowork from your mobile phone, Or also computer use, which allows Claude CoWork
+Cloud Cowork 透過您的手機，或者也可以使用計算機，這使得 Claude CoWork
+
+170
+00:11:15,216 --> 00:11:21,102
+to access your computer to interact with tools on your machine autonomously.
+存取您的電腦以自主與電腦上的工具進行互動。
+
+171
+00:11:21,391 --> 00:11:27,502
+This course also dives into the safety concerns that come with using such agents on your
+本課程也深入探討了在您的裝置上使用此類代理程式所帶來的安全問題。
+
+172
+00:11:27,502 --> 00:11:27,871
+machine.
+機器。
+
+173
+00:11:28,384 --> 00:11:30,678
+So if you're interested, check the course landing page.
+因此，如果您有興趣，請查看課程登入頁面。
+
+174
+00:11:30,951 --> 00:11:34,094
+Otherwise, try Claude CoWork and Codex on your own.
+否則，請自行嘗試 Claude CoWork 和 Codex。
+
+175
+00:11:34,544 --> 00:11:39,259
+As you saw, those are way more than coding agents or coding assistants.
+正如您所看到的，這些不僅僅是編碼代理或編碼助理。
+
+176
+00:11:39,681 --> 00:11:42,848
+They can help you in lots of different tasks nowadays.
+如今，他們可以幫助您完成許多不同的任務。

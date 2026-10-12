@@ -1,0 +1,68 @@
+{
+  "window": "6m",
+  "days": 180,
+  "ref": "2026-10-12",
+  "count": 10,
+  "videos": [
+    {
+      "id": "jtGSHwXigIg",
+      "title": "Using Effect? Use Alchemy, too!",
+      "date": "20261003",
+      "date_exact": "20261001"
+    },
+    {
+      "id": "51Eb4EtGqrI",
+      "title": "Stop treating Opus 5.5 like the other AI models",
+      "date": "20260929",
+      "date_exact": "20260925"
+    },
+    {
+      "id": "tT_JLVgJiyw",
+      "title": "You MUST learn and use Effect now!",
+      "date": "20260929",
+      "date_exact": "20260924"
+    },
+    {
+      "id": "igFarOfJYSc",
+      "title": "Stop managing AWS by hand",
+      "date": "20260913",
+      "date_exact": "20260820"
+    },
+    {
+      "id": "G-v1hkQ8Sf8",
+      "title": "Self-hosted durable objects are pretty interesting!",
+      "date": "20260913",
+      "date_exact": "20260813"
+    },
+    {
+      "id": "o8-EgQhqdU0",
+      "title": "Here's why I like Pi",
+      "date": "20260813",
+      "date_exact": "20260806"
+    },
+    {
+      "id": "F0pH9aQeDrY",
+      "title": "You're probably not using agent skills right",
+      "date": "20260813",
+      "date_exact": "20260723"
+    },
+    {
+      "id": "2CR9tDNAzB0",
+      "title": "herdr is a must use",
+      "date": "20260813",
+      "date_exact": "20260716"
+    },
+    {
+      "id": "QOdCAV0xfEc",
+      "title": "Using Claude Cowork and Codex for Automating ANY Business Task",
+      "date": "20260613",
+      "date_exact": "20260519"
+    },
+    {
+      "id": "N9nU9oLZ30o",
+      "title": "Key features of the NEW Claude Code desktop app you MUST know!",
+      "date": "20260513",
+      "date_exact": "20260415"
+    }
+  ]
+}

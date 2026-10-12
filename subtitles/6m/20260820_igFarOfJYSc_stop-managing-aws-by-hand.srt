@@ -1,0 +1,1184 @@
+1
+00:00:00,256 --> 00:00:04,119
+AI can make building software, web applications, and so on easier.
+人工智慧可以讓建立軟體、網路應用程式等變得更加容易。
+
+2
+00:00:04,264 --> 00:00:07,389
+But building, of course, is just one building block.
+但建造當然只是其中的一個組成部分。
+
+3
+00:00:07,790 --> 00:00:13,176
+AI cannot just help with building software, it can also help with deploying it.
+人工智慧不僅可以幫助建立軟體，還可以幫助部署軟體。
+
+4
+00:00:13,240 --> 00:00:16,639
+It can also help you manage your AWS account.
+它還可以幫助您管理您的 AWS 帳戶。
+
+5
+00:00:17,504 --> 00:00:24,029
+Because if you ever tried to manage your AWS account manually, you obviously know there
+因為如果您曾經嘗試手動管理您的 AWS 帳戶，您顯然知道這一點
+
+6
+00:00:24,077 --> 00:00:25,295
+is a lot to learn here.
+這裡有很多值得學習的地方。
+
+7
+00:00:25,680 --> 00:00:31,018
+Lots of services, lots of different ways of configuring these services, lots of ways
+很多服務，很多不同的配置這些服務的方法，很多方法
+
+8
+00:00:31,114 --> 00:00:33,313
+of shooting shooting yourself in the foot.
+搬石頭砸自己的腳。
+
+9
+00:00:34,245 --> 00:00:40,509
+Nonetheless, AWS is of course a very powerful cloud provider, and thankfully AI can help
+儘管如此，AWS 當然是一個非常強大的雲端供應商，值得慶幸的是人工智慧可以提供幫助
+
+10
+00:00:40,509 --> 00:00:43,417
+you with managing AWS and your resources.
+您可以管理 AWS 和您的資源。
+
+11
+00:00:43,562 --> 00:00:50,549
+It can do it for you, but there are different levels of using AI here, and you can go
+它可以為你做到這一點，但是這裡使用人工智慧有不同的級別，你可以去
+
+12
+00:00:50,549 --> 00:00:57,039
+from very bad ideas all the way up to very safe, nonetheless very useful ways of leveraging
+從非常糟糕的想法一直到非常安全但非常有用的利用方式
+
+13
+00:00:57,231 --> 00:00:59,609
+AI to help you with AWS.
+AI 可協助您使用 AWS。
+
+14
+00:01:00,924 --> 00:01:06,008
+Now, if you first of all want to build something though, you may want to check out our
+現在，如果您首先想要建立一些東西，您可能需要查看我們的
+
+15
+00:01:06,120 --> 00:01:06,553
+courses.
+課程。
+
+16
+00:01:06,601 --> 00:01:11,798
+We got courses on a broad variety of AI coding agents, of technologies like Bun.
+我們開設了有關各種人工智慧編碼代理以及 Bun 等技術的課程。
+
+17
+00:01:12,471 --> 00:01:17,250
+We have an agents course which gives you all the knowledge about that and much, much
+我們有一個代理課程，可以為您提供有關這方面的所有知識以及很多很多
+
+18
+00:01:17,363 --> 00:01:17,475
+more.
+更多的。
+
+19
+00:01:17,603 --> 00:01:22,029
+And you find links below if you want to take your personal skills in the building area
+如果您想在建築領域發揮個人技能，您可以找到下面的鏈接
+
+20
+00:01:22,029 --> 00:01:22,783
+to the next level.
+到一個新的水平。
+
+21
+00:01:23,537 --> 00:01:28,922
+But now let's take a look at using AWS with AI and how AI can help you there.
+但現在讓我們來看看將 AWS 與 AI 結合使用，以及 AI 如何在這方面為您提供幫助。
+
+22
+00:01:29,547 --> 00:01:31,839
+And let's start with the bad approach.
+讓我們從不好的方法開始。
+
+23
+00:01:32,416 --> 00:01:34,979
+And that would be computer use.
+那就是計算機的使用。
+
+24
+00:01:35,861 --> 00:01:40,475
+Of course, you could just log into your AWS account as I did here.
+當然，您可以像我在這裡一樣登入您的 AWS 帳戶。
+
+25
+00:01:40,988 --> 00:01:47,942
+And then you could use ChatGPT or Claude and enable computer use and tell it to
+然後你可以使用 ChatGPT 或 Claude 並啟用電腦使用並告訴它
+
+26
+00:01:47,974 --> 00:01:49,929
+do whatever you want it to do here.
+在這裡做任何你想讓它做的事。
+
+27
+00:01:50,298 --> 00:01:52,669
+For example, manage some EC2 instances.
+例如，管理一些 EC2 執行個體。
+
+28
+00:01:53,342 --> 00:01:55,746
+You can do that, but it's not great.
+你可以這樣做，但效果並不好。
+
+29
+00:01:56,227 --> 00:01:57,204
+Why is it not great?
+為什麼不太好呢？
+
+30
+00:01:57,268 --> 00:02:00,249
+Because it's slow, because it's potentially expensive.
+因為它很慢，因為它可能很昂貴。
+
+31
+00:02:00,313 --> 00:02:04,255
+Computer use tends to use a decent amount of tokens.
+計算機的使用往往會使用相當數量的代幣。
+
+32
+00:02:04,864 --> 00:02:06,034
+And of course it's insecure.
+當然這是不安全的。
+
+33
+00:02:06,547 --> 00:02:08,983
+And why is that all the case?
+為什麼會這樣呢？
+
+34
+00:02:09,047 --> 00:02:13,582
+Well, that is, well, the slow and the token part is self-explanatory.
+好吧，那就是，好吧，緩慢和象徵性的部分是不言自明的。
+
+35
+00:02:13,999 --> 00:02:19,832
+Insecure, of course, is the case because AI, if used through computer use, can do everything
+當然，情況並不安全，因為人工智慧如果透過電腦使用，可以做任何事情
+
+36
+00:02:19,928 --> 00:02:20,761
+here you can do.
+在這裡你可以做。
+
+37
+00:02:21,050 --> 00:02:22,877
+Obviously, that's the idea behind computer use.
+顯然，這就是電腦使用背後的想法。
+
+38
+00:02:23,085 --> 00:02:25,442
+So yeah, you can do that, but You don't wanna do that.
+所以是的，你可以這樣做，但你不想這樣做。
+
+39
+00:02:26,358 --> 00:02:33,070
+Now what's better but still potentially bad is use the AWS CLI with
+現在更好但仍然可能不好的是使用 AWS CLI
+
+40
+00:02:33,183 --> 00:02:34,644
+broad permissions.
+廣泛的權限。
+
+41
+00:02:35,752 --> 00:02:40,104
+So of course you can use your IAM user account.
+因此，您當然可以使用您的 IAM 使用者帳戶。
+
+42
+00:02:40,184 --> 00:02:44,649
+So in case you don't know, AWS has the concept called IAM, which allows you to manage
+如果您不知道，AWS 有一個稱為 IAM 的概念，它允許您管理
+
+43
+00:02:44,665 --> 00:02:45,195
+permissions.
+權限。
+
+44
+00:02:45,709 --> 00:02:47,202
+And there you can create users.
+您可以在那裡創建用戶。
+
+45
+00:02:47,395 --> 00:02:53,831
+So for example, I have my user here and then I could basically let AI
+例如，我在這裡有我的用戶，然後我基本上可以讓人工智慧
+
+46
+00:02:54,136 --> 00:02:59,137
+assume my user's profile in the CLI and do stuff here.
+在 CLI 中假設我的使用者設定檔並在此處執行操作。
+
+47
+00:02:59,810 --> 00:03:05,517
+So for example, if I wanna get an overview over some of my resources, let's say my VPCs
+舉例來說，如果我想了解一些資源的概覽，比如說我的 VPC
+
+48
+00:03:06,303 --> 00:03:09,781
+and my security groups, I could of course spin up an agent here.
+和我的安全團隊，我當然可以在這裡設立一個代理。
+
+49
+00:03:09,861 --> 00:03:13,628
+I'm using Pi and I could ask it to use my SSO profile.
+我正在使用 Pi，我可以要求它使用我的 SSO 設定檔。
+
+50
+00:03:13,692 --> 00:03:19,640
+So that's like an IAM user but using single sign-on to manage multiple accounts via the
+這就像 IAM 用戶，但使用單一登入透過
+
+51
+00:03:19,640 --> 00:03:20,024
+CLI.
+命令列介面。
+
+52
+00:03:20,201 --> 00:03:25,058
+So I already did log in here locally on my machine and now I'm asking, the AI to use
+所以我已經在我的機器上本地登入了，現在我問，要使用的人工智慧
+
+53
+00:03:25,058 --> 00:03:31,133
+my logged-in CLI, so to say, use my profile and access the account and do something.
+我登入的 CLI，也就是說，使用我的個人資料並存取該帳戶並執行某些操作。
+
+54
+00:03:31,566 --> 00:03:36,583
+And I'm only asking it here to read something, to just give me an overview.
+我只是要求它在這裡閱讀一些內容，只是為了給我一個概述。
+
+55
+00:03:36,632 --> 00:03:38,892
+So clearly it should not create anything.
+很明顯它不應該創造任何東西。
+
+56
+00:03:39,485 --> 00:03:45,128
+But the thing is, I of course have no guarantee that AI will follow my rules here.
+但問題是，我當然不能保證人工智慧會遵守我的規則。
+
+57
+00:03:45,176 --> 00:03:52,165
+It may decide, unlikely, but it may decide that the best way of reading this information
+它可能會決定（不太可能），但它可能會決定閱讀此資訊的最佳方式
+
+58
+00:03:52,165 --> 00:03:58,322
+or of getting this information is to spin up, let's say, an AWS Lambda function, and
+或取得此資訊的方法是啟動一個 AWS Lambda 函數，並且
+
+59
+00:03:58,562 --> 00:04:03,278
+in that function, maybe analyze my account and produce a report.
+在該功能中，也許可以分析我的帳戶並產生報告。
+
+60
+00:04:04,031 --> 00:04:05,010
+It may do that.
+它可能會這樣做。
+
+61
+00:04:05,539 --> 00:04:09,853
+And then I would still get the result I wanted, but along the way, I would have paid
+然後我仍然會得到我想要的結果，但一路走來，我會付出代價
+
+62
+00:04:09,950 --> 00:04:11,297
+for that function execution.
+用於該函數的執行。
+
+63
+00:04:12,227 --> 00:04:19,156
+So things like that can happen if you allow AI to access your account with broad
+因此，如果你允許人工智慧廣泛存取你的帳戶，類似的事情就會發生
+
+64
+00:04:19,188 --> 00:04:21,513
+permissions, as I'm doing right here.
+權限，就像我在這裡所做的那樣。
+
+65
+00:04:21,610 --> 00:04:27,479
+So that is probably not what you want to do because you have no control over what AI
+所以這可能不是你想要做的，因為你無法控制人工智慧的內容
+
+66
+00:04:27,607 --> 00:04:32,432
+does, even if it does give you the intended result in the end.
+確實如此，即使它最終確實給了你預期的結果。
+
+67
+00:04:32,561 --> 00:04:38,925
+And even if these modern models and agents are unlikely to go rogue, but even without
+即使這些現代模特兒和代理人不太可能變得無賴，但即使沒有
+
+68
+00:04:39,150 --> 00:04:44,120
+bad intentions, it's an AI, it doesn't have intentions, but even without that, it may
+惡意，它是人工智慧，它沒有意圖，但即使沒有意圖，它也可能
+
+69
+00:04:44,120 --> 00:04:45,659
+do stuff you don't want it to do.
+做你不希望它做的事情。
+
+70
+00:04:45,979 --> 00:04:49,602
+So that is something to keep in mind here.
+所以這是這裡需要記住的事情。
+
+71
+00:04:49,987 --> 00:04:56,304
+So potentially better than this approach here where you have those broad permissions
+因此，在您擁有廣泛權限的情況下，可能比這種方法更好
+
+72
+00:04:56,304 --> 00:05:03,229
+and you just allow AI to use your profile is to create dedicated users or roles for
+您只需允許人工智慧使用您的個人資料即可建立專用使用者或角色
+
+73
+00:05:03,501 --> 00:05:03,790
+AI.
+人工智慧.
+
+74
+00:05:05,120 --> 00:05:10,618
+So on IAM, you could of course create a new user for AI and give it the right permissions,
+所以在 IAM 上，您當然可以為 AI 創建一個新用戶並賦予其正確的權限，
+
+75
+00:05:10,811 --> 00:05:12,542
+and I'll get back to those right permissions.
+我會恢復這些正確的權限。
+
+76
+00:05:12,750 --> 00:05:14,466
+Or better, you could create a role.
+或者更好的是，您可以創建一個角色。
+
+77
+00:05:15,379 --> 00:05:19,435
+The difference is that users are permanent, roles are temporary.
+差別在於用戶是永久的，角色是臨時的。
+
+78
+00:05:19,627 --> 00:05:25,318
+So with roles, you can create temporary credentials that can be assumed by the AI.
+因此，透過角色，您可以建立人工智慧可以使用的臨時憑證。
+
+79
+00:05:25,462 --> 00:05:30,691
+And the advantage of that is that if the credentials end up in the AI session, if it
+這樣做的好處是，如果憑證最終出現在人工智慧會話中，如果它
+
+80
+00:05:30,691 --> 00:05:35,392
+decides to read your secret key or anything like that, and it's quite likely that this
+決定讀取你的密鑰或類似的東西，很可能這
+
+81
+00:05:35,504 --> 00:05:41,087
+may happen, then you know that those credentials will be invalid after a few hours.
+可能會發生，那麼您就知道這些憑證將在幾個小時後失效。
+
+82
+00:05:41,601 --> 00:05:47,184
+So if they end up in the training data or get exposed in some other way, the damage is
+因此，如果它們最終出現在訓練資料中或以其他方式暴露，造成的損害就是
+
+83
+00:05:47,280 --> 00:05:52,205
+contained and most likely there is no damage by the point in time those credentials may
+包含並且很可能在這些憑證可能的時間點沒有受到損害
+
+84
+00:05:52,270 --> 00:05:54,147
+get shared with others.
+與他人分享。
+
+85
+00:05:54,195 --> 00:05:56,505
+So that's why roles are better because it's temporary.
+這就是為什麼角色更好，因為它是暫時的。
+
+86
+00:05:56,841 --> 00:06:02,568
+And then for example, you could create a role which can be assumed by you.
+例如，您可以建立一個可以由您擔任的角色。
+
+87
+00:06:02,857 --> 00:06:08,680
+So here by my single sign-on profile and in the permissions here, for example, I have
+因此，透過我的單一登入設定檔和這裡的權限，例如，我有
+
+88
+00:06:08,872 --> 00:06:10,043
+read-only access.
+只讀訪問。
+
+89
+00:06:10,139 --> 00:06:16,700
+So I added a permission policy that's actually coming with AWS that gives very broad
+因此，我添加了 AWS 附帶的權限策略，該策略提供了非常廣泛的權限
+
+90
+00:06:16,732 --> 00:06:21,239
+service and resource access but only read-only.
+服務和資源訪問，但僅限唯讀。
+
+91
+00:06:21,399 --> 00:06:27,840
+So with that role, with that permission, whoever has that role can read
+因此，有了這個角色，有了這個權限，任何擁有這個角色的人都可以閱讀
+
+92
+00:06:28,033 --> 00:06:32,151
+basically my entire account, but they can't change anything.
+基本上是我的整個帳戶，但他們無法更改任何內容。
+
+93
+00:06:32,519 --> 00:06:36,749
+And that of course comes with the huge advantage that whoever is using that role can
+當然，這帶來了巨大的優勢，即無論誰使用該角色都可以
+
+94
+00:06:36,829 --> 00:06:41,540
+only do what I allow here and can't, for example, start an AWS Lambda function.
+僅執行我允許的操作，例如，不能啟動 AWS Lambda 函數。
+
+95
+00:06:42,069 --> 00:06:47,613
+So outside of an agent, I could assume that role with this command here.
+因此，在代理之外，我可以使用此命令承擔該角色。
+
+96
+00:06:48,367 --> 00:06:50,806
+And now I get these temporary credentials here.
+現在我在這裡得到這些臨時憑證。
+
+97
+00:06:51,014 --> 00:06:54,015
+And by the way, by the point of time you're watching the video, they will be invalid.
+順便說一句，當您觀看影片時，它們將失效。
+
+98
+00:06:54,063 --> 00:06:56,213
+So you don't need to write them down.
+所以你不需要把它們寫下來。
+
+99
+00:06:57,353 --> 00:07:00,048
+You see, they do expire at some point in time here.
+你看，它們確實會在某個時間點過期。
+
+100
+00:07:00,417 --> 00:07:06,194
+And now I could just copy that output here if I don't really care, start my AI agent,
+現在，如果我不在乎的話，我可以將輸出複製到這裡，啟動我的人工智慧代理，
+
+101
+00:07:06,354 --> 00:07:08,633
+paste all that credential information in here.
+將所有憑證資訊貼到此處。
+
+102
+00:07:08,826 --> 00:07:13,864
+You could also, of course, set up a .env file and store them in there and not directly
+當然，您也可以設定一個 .env 檔案並將它們儲存在那裡，而不是直接儲存
+
+103
+00:07:14,201 --> 00:07:15,469
+share them with your agent.
+與您的代理人分享。
+
+104
+00:07:15,565 --> 00:07:18,694
+But here, since they will expire and since I will delete the role too,
+但在這裡，由於它們將過期並且我也會刪除該角色，
+
+105
+00:07:20,057 --> 00:07:21,500
+I don't care, I'll just share it like this.
+我不管，我就這樣分享吧。
+
+106
+00:07:21,836 --> 00:07:28,297
+And then you could give your agent the task, use this role to gather information,
+然後你可以給你的代理任務，使用這個角色來收集信息，
+
+107
+00:07:28,970 --> 00:07:35,911
+and ask it to create that same overview as before, but now using that role that was assumed.
+並要求它創建與以前相同的概述，但現在使用假定的角色。
+
+108
+00:07:36,264 --> 00:07:41,634
+Now, I will say, in theory, since I'm running this on my system where I did log in with
+現在，我會說，理論上，因為我在我的系統上運行這個，我確實用
+
+109
+00:07:41,634 --> 00:07:45,705
+my single sign-on account, the agent could still use that.
+我的單一登入帳戶，代理仍然可以使用它。
+
+110
+00:07:45,817 --> 00:07:52,760
+So I may actually ensure that that single sign-on session is revoked
+所以我實際上可以確保單點登入會話被撤銷
+
+111
+00:07:52,840 --> 00:07:57,799
+and no longer active to be sure that the agent can't use it even in theory.
+並且不再主動確保代理即使在理論上也無法使用它。
+
+112
+00:07:58,794 --> 00:08:02,998
+Of course, I can also see what the agent is doing and I can see if it's using that role
+當然，我也可以看到代理正在做什麼，我可以看到它是否正在使用該角色
+
+113
+00:08:03,190 --> 00:08:05,019
+and it is, so I'm fine.
+確實如此，所以我很好。
+
+114
+00:08:05,132 --> 00:08:10,186
+But if you wanna be extra safe, you wanna make sure that there are no other ways of the
+但如果你想更加安全，你需要確保沒有其他方法
+
+115
+00:08:10,186 --> 00:08:13,331
+agent performing the task you ask it to perform.
+代理執行您要求其執行的任務。
+
+116
+00:08:14,102 --> 00:08:19,445
+Just to be safe because these agents can be really creative in achieving a certain goal
+只是為了安全起見，因為這些代理商在實現某個目標方面非常有創造力
+
+117
+00:08:20,039 --> 00:08:24,417
+and finding out all kinds of ways around the restrictions you gave them.
+並找出各種方法來繞過你給他們的限制。
+
+118
+00:08:24,465 --> 00:08:26,710
+So you may wanna keep that in mind.
+所以你可能想記住這一點。
+
+119
+00:08:27,190 --> 00:08:32,448
+But still, using specific restricted roles and permissions, of course, is better because
+但是，使用特定的受限角色和權限當然更好，因為
+
+120
+00:08:32,625 --> 00:08:39,165
+all of a sudden you have some control or quite a bit of control, to be fair.
+公平地說，突然間你就擁有了一些控制權或相當多的控制權。
+
+121
+00:08:39,454 --> 00:08:44,102
+Still, the agent can do all kinds of things, but only within the boundaries of the permissions
+儘管如此，代理仍然可以做各種各樣的事情，但僅限於權限範圍內
+
+122
+00:08:44,102 --> 00:08:44,551
+you gave it.
+你給了它。
+
+123
+00:08:45,048 --> 00:08:50,033
+What is still worth pointing out though is that even if you have a permission like I
+但仍然值得指出的是，即使你有像我這樣的許可
+
+124
+00:08:50,033 --> 00:08:55,436
+do here, which only grants read-only access, it's worth keeping in mind that this still,
+在這裡做，只授予只讀訪問權限，值得記住的是，這仍然是，
+
+125
+00:08:55,628 --> 00:09:02,296
+depending on the exact details of the policy, allows the agent to read everything in
+根據保單的具體細節，允許代理商閱讀其中的所有內容
+
+126
+00:09:02,361 --> 00:09:03,707
+your AWS account.
+您的 AWS 帳號。
+
+127
+00:09:03,819 --> 00:09:08,676
+So this is a very broad read-only policy, gives it full access to all my services essentially.
+所以這是一個非常廣泛的只讀策略，本質上使它能夠完全存取我的所有服務。
+
+128
+00:09:09,173 --> 00:09:12,572
+And therefore, of course, data exfiltration could still be an issue.
+因此，當然，資料外洩仍然可能是一個問題。
+
+129
+00:09:12,636 --> 00:09:13,486
+That is worth noting.
+這是值得注意的。
+
+130
+00:09:13,982 --> 00:09:17,445
+Just because something is read-only does not mean it's secure.
+僅僅因為某些東西是只讀的並不意味著它是安全的。
+
+131
+00:09:18,327 --> 00:09:23,504
+This permission in the end allows the agent to do, to read anything in my account.
+該權限最終允許代理執行以下操作：讀取我帳戶中的任何內容。
+
+132
+00:09:23,921 --> 00:09:28,570
+And of course, for example, due to a prompt injection attack or something like that,
+當然，例如，由於即時注入攻擊或類似的情況，
+
+133
+00:09:29,147 --> 00:09:32,994
+this could exfiltrate very sensitive data.
+這可能會洩漏非常敏感的資料。
+
+134
+00:09:33,219 --> 00:09:36,585
+It could exfiltrate data I have in an S3 bucket.
+它可能會洩露我在 S3 儲存桶中的資料。
+
+135
+00:09:37,082 --> 00:09:39,502
+It could exfiltrate all kinds of data.
+它可以洩露各種資料。
+
+136
+00:09:39,583 --> 00:09:42,725
+So read-only does not mean secure.
+所以只讀並不意味著安全。
+
+137
+00:09:43,254 --> 00:09:44,905
+Really important to keep that in mind.
+記住這一點非常重要。
+
+138
+00:09:45,562 --> 00:09:50,323
+And indeed, you may want to have more restricted roles and permission sets therefore,
+事實上，您可能希望擁有更多受限制的角色和權限集，因此，
+
+139
+00:09:50,339 --> 00:09:51,557
+not just for reading.
+不只是為了閱讀。
+
+140
+00:09:51,749 --> 00:09:57,729
+For example, you may want to use an agent also to maybe spin up and manage some EC2 instances,
+例如，您可能還想使用代理程式來啟動和管理一些 EC2 實例，
+
+141
+00:09:58,065 --> 00:10:03,259
+but But instead of giving the agent full access to everything related to EC2, you may
+但是，您可以不讓代理人完全存取與 EC2 相關的所有內容
+
+142
+00:10:03,355 --> 00:10:09,270
+want to have a very specific policy that restricts which resources the agent can read
+想要有一個非常具體的策略來限制代理可以讀取哪些資源
+
+143
+00:10:09,303 --> 00:10:09,944
+and write.
+並寫。
+
+144
+00:10:10,361 --> 00:10:16,083
+For example, here for managing EC2, I have a policy that restricts the amount of instances
+例如，這裡為了管理EC2，我有一個限制實例數量的策略
+
+145
+00:10:16,195 --> 00:10:22,319
+the agent can create to instance types that are rather cheap to make sure that yes, the
+代理可以創建相當便宜的實例類型，以確保是的，
+
+146
+00:10:22,431 --> 00:10:29,020
+agent can create EC2 instances and related resources, but I restrict which kind of resources
+代理可以建立EC2實例和相關資源，但我限制了哪種資源
+
+147
+00:10:29,084 --> 00:10:35,231
+to ensure sure that spinning up very expensive instances, for example, is not possible
+例如，確保不可能啟動非常昂貴的實例
+
+148
+00:10:35,280 --> 00:10:36,773
+to keep costs under control.
+以控製成本。
+
+149
+00:10:36,869 --> 00:10:38,218
+And you could do the same for reading.
+你也可以對閱讀做同樣的事情。
+
+150
+00:10:38,314 --> 00:10:41,669
+You could restrict what can be read and not allow everything.
+您可以限制可以讀取的內容，並且不允許所有內容。
+
+151
+00:10:42,344 --> 00:10:47,610
+And you may wonder, okay, how do I create these policies that look super complex?
+您可能想知道，好吧，我該如何創建這些看起來超級複雜的策略？
+
+152
+00:10:47,706 --> 00:10:52,426
+And even if you know a thing or two about it, it still is not fun to write them.
+即使你對此了解一二，寫它們仍然沒有樂趣。
+
+153
+00:10:52,780 --> 00:10:59,085
+Well, of course, for one, AWS has a visual builder, so you can really
+嗯，當然，首先，AWS 有一個視覺化建構器，所以你真的可以
+
+154
+00:11:00,143 --> 00:11:06,699
+use the AWS resources they give you to build up on blueprints and also build those policies
+使用他們為您提供的 AWS 資源來建立藍圖並建立這些策略
+
+155
+00:11:06,715 --> 00:11:07,036
+like this.
+像這樣。
+
+156
+00:11:07,517 --> 00:11:14,313
+But even easier than that, you can ask an agent to write IAM policies.
+但比這更簡單的是，您可以要求代理程式編寫 IAM 策略。
+
+157
+00:11:14,410 --> 00:11:17,632
+And with that, I don't mean write and automatically use.
+就此而言，我的意思並不是說編寫並自動使用。
+
+158
+00:11:18,097 --> 00:11:21,110
+I mean write, and then you can take a look at them.
+我的意思是寫下來，然後你就可以看一下。
+
+159
+00:11:21,399 --> 00:11:26,897
+And you don't need to be an expert to understand or to get the gist of a policy.
+您無需成為專家即可理解或掌握政策的要點。
+
+160
+00:11:27,234 --> 00:11:31,969
+Of course, if you skim over a policy like this, you can tell what this is about.
+當然，如果你瀏覽這樣的政策，你就能知道它是關於什麼的。
+
+161
+00:11:32,145 --> 00:11:36,175
+That describe actions are probably not about writing anything.
+描述動作可能與寫任何東西無關。
+
+162
+00:11:36,882 --> 00:11:42,582
+That these conditions probably are about restricting the instance types as I showed you.
+正如我向您展示的那樣，這些條件可能與限制實例類型有關。
+
+163
+00:11:43,063 --> 00:11:49,646
+So even without expert knowledge, you can analyze this policy and look over it to see
+因此，即使沒有專業知識，您也可以分析該策略並查看它以了解
+
+164
+00:11:49,646 --> 00:11:51,461
+that it's in line with what you wanted.
+它符合你想要的。
+
+165
+00:11:51,958 --> 00:11:56,839
+And it is also quite likely that the agent wrote a policy you're happy with, to be fair.
+公平地說，代理人也很可能已經制定了您滿意的保單。
+
+166
+00:11:57,448 --> 00:12:02,690
+So you can have an agent write the policy, then you can review it, then you can use it,
+所以你可以讓代理人寫政策，然後你可以審查它，然後你可以使用它，
+
+167
+00:12:02,706 --> 00:12:04,341
+and then you can have an agent use it.
+然後你可以讓代理人使用它。
+
+168
+00:12:04,726 --> 00:12:07,371
+That can be very, very powerful, of course.
+當然，這可能非常非常強大。
+
+169
+00:12:07,547 --> 00:12:13,655
+Now, there are safer alternatives though if you're not happy with letting the agent use
+現在，如果您不滿意讓代理商使用，還有更安全的選擇
+
+170
+00:12:13,703 --> 00:12:14,665
+the CLI.
+CLI。
+
+171
+00:12:14,825 --> 00:12:21,109
+And one safer option would be the AWS MCP server, which is very close to the
+一種更安全的選擇是 AWS MCP 伺服器，它非常接近
+
+172
+00:12:21,253 --> 00:12:22,744
+CLI but not quite.
+CLI 但不完全是。
+
+173
+00:12:23,626 --> 00:12:29,220
+You can install that and then also use roles and policies there to control what the can
+您可以安裝它，然後也可以使用其中的角色和策略來控制可以執行的操作
+
+174
+00:12:29,236 --> 00:12:30,984
+do through the MCP server.
+透過 MCP 伺服器執行。
+
+175
+00:12:31,416 --> 00:12:38,181
+And one nice thing about using the MCP instead of the CLI is that if a request is
+使用 MCP 而不是 CLI 的一個好處是，如果請求是
+
+176
+00:12:38,197 --> 00:12:44,513
+made through the MCP, there is a special condition you can check for in your IAM
+透過 MCP 進行，您可以在 IAM 中檢查一個特殊條件
+
+177
+00:12:44,641 --> 00:12:45,218
+policies.
+政策。
+
+178
+00:12:45,282 --> 00:12:52,047
+You can check whether a resource reading or editing request is made via MCP, and then
+您可以檢查是否透過MCP發出了資源讀取或編輯請求，然後
+
+179
+00:12:52,159 --> 00:12:55,093
+you can either deny or grant that access.
+您可以拒絕或授予該存取權限。
+
+180
+00:12:55,141 --> 00:13:00,255
+So you have an additional field for more fine-grained access so that you could set up
+因此，您有一個額外的字段可以進行更細粒度的訪問，以便您可以設置
+
+181
+00:13:00,255 --> 00:13:06,358
+a policy that clearly denies certain actions if made through the MCP to protect certain
+明確拒絕透過 MCP 採取某些行動以保護某些行為的政策
+
+182
+00:13:06,374 --> 00:13:10,919
+resources, because deny rules always take precedence in AWS.
+資源，因為拒絕規則在 AWS 中始終優先。
+
+183
+00:13:11,257 --> 00:13:12,783
+So that's a little bonus you get there.
+所以這是你得到的一點好處。
+
+184
+00:13:12,959 --> 00:13:16,814
+But other than that, using the CLI or the MCP is pretty close to each other.
+但除此之外，使用 CLI 或 MCP 彼此非常接近。
+
+185
+00:13:17,055 --> 00:13:20,991
+By the way, there also is of course another option besides the CLI and the MCP.
+順便說一句，除了 CLI 和 MCP 之外，當然還有另一種選擇。
+
+186
+00:13:21,713 --> 00:13:24,942
+You could also have the AI just write code, right?
+你也可以讓人工智慧只寫程式碼，對吧？
+
+187
+00:13:25,006 --> 00:13:28,022
+So you have these 3 options essentially.
+所以你基本上有這 3 個選擇。
+
+188
+00:13:28,454 --> 00:13:29,832
+CLI, MCP, code.
+CLI、MCP、代碼。
+
+189
+00:13:29,880 --> 00:13:31,739
+That is what we used thus far, the CLI.
+這就是我們迄今為止所使用的 CLI。
+
+190
+00:13:32,139 --> 00:13:33,245
+You could use the MCP.
+您可以使用 MCP。
+
+191
+00:13:33,501 --> 00:13:40,118
+And of course, the AI can also just write a short script that would use AWS SDKs to
+當然，AI 也可以寫一個簡短的腳本，使用 AWS SDK 來
+
+192
+00:13:40,454 --> 00:13:41,880
+manipulate the account.
+操縱帳戶。
+
+193
+00:13:42,313 --> 00:13:45,869
+Still, permissions are needed, so that doesn't change, but these are your options here.
+不過，仍然需要權限，因此這不會改變，但這些是您的選擇。
+
+194
+00:13:46,478 --> 00:13:50,179
+Now, the safer options use a different approach.
+現在，更安全的選擇使用不同的方法。
+
+195
+00:13:50,323 --> 00:13:56,619
+Instead of leveraging the CLI, MCP, or code, they are all about infrastructure as code.
+它們不是利用 CLI、MCP 或程式碼，而是基礎設施即程式碼。
+
+196
+00:13:57,517 --> 00:14:00,932
+And what does infrastructure as code mean now?
+基礎設施即程式碼現在意味著什麼？
+
+197
+00:14:01,461 --> 00:14:05,244
+That means using something like AWS CloudFormation.
+這意味著使用 AWS CloudFormation 之類的東西。
+
+198
+00:14:05,612 --> 00:14:11,479
+And AWS CloudFormation is all about setting up AWS resources in YAML using a certain
+AWS CloudFormation 就是使用特定的 YAML 格式設定 AWS 資源。
+
+199
+00:14:11,479 --> 00:14:12,922
+structure and syntax, of course.
+當然是結構和語法。
+
+200
+00:14:13,467 --> 00:14:19,334
+And then you can deploy such a template here through the CloudFormation service, which
+然後你可以透過CloudFormation服務在這裡部署這樣的模板，
+
+201
+00:14:19,334 --> 00:14:25,025
+is an official AWS thing, to create the actual resources based on that template.
+是 AWS 的官方產品，用於根據該範本建立實際資源。
+
+202
+00:14:25,410 --> 00:14:30,336
+And of course, you can have an AI agent write such a template for you, but then you're
+當然，你可以讓人工智慧代理為你寫這樣的模板，但隨後你就
+
+203
+00:14:30,400 --> 00:14:35,607
+leveraging an agent for creating the template and you can still deploy it on your own
+利用代理來建立模板，您仍然可以自行部署它
+
+204
+00:14:35,687 --> 00:14:36,395
+as a human.
+作為一個人。
+
+205
+00:14:36,845 --> 00:14:41,819
+So the agent can write the template or use some other infrastructure as code solution.
+因此，代理可以編寫模板或使用其他一些基礎設施作為程式碼解決方案。
+
+206
+00:14:41,868 --> 00:14:42,647
+I'll get back to it.
+我會回過頭來談談。
+
+207
+00:14:43,149 --> 00:14:44,658
+And then in the safest option,
+然後在最安全的選擇中，
+
+208
+00:14:48,440 --> 00:14:50,033
+you review plus deploy.
+您進行審查並部署。
+
+209
+00:14:50,339 --> 00:14:53,800
+So you don't let the agent deploy it automatically or anything like that.
+所以你不要讓代理自動部署它或類似的東西。
+
+210
+00:14:54,186 --> 00:14:55,941
+Instead, you do it manually.
+相反，您可以手動執行此操作。
+
+211
+00:14:56,021 --> 00:14:58,564
+You just use an agent to generate that template just as it may
+您只需使用代理來產生該模板即可
+
+212
+00:15:00,340 --> 00:15:01,623
+generate other code.
+產生其他程式碼。
+
+213
+00:15:01,799 --> 00:15:05,618
+And as mentioned, there are other infrastructure as code solutions.
+如前所述，還有其他基礎架構即程式碼解決方案。
+
+214
+00:15:05,666 --> 00:15:09,757
+CloudFormation can be a bit clunky, but if agents write it, it is quite okay, I have
+CloudFormation可能有點笨重，但是如果代理寫的話，那是完全可以的，我有
+
+215
+00:15:09,757 --> 00:15:10,030
+to say.
+說。
+
+216
+00:15:10,543 --> 00:15:14,409
+But you could be using Terraform, you could be using Pulumi, which allows you to use
+但是你可以使用 Terraform，你可以使用 Pulumi，它允許你使用
+
+217
+00:15:14,409 --> 00:15:18,805
+TypeScript to define your AWS resources, for example, which can be really nice.
+例如，用於定義 AWS 資源的 TypeScript 非常好。
+
+218
+00:15:19,463 --> 00:15:24,083
+You can use Alchemy, which is a rather new solution that also uses TypeScript but then
+您可以使用 Alchemy，這是一個相當新的解決方案，也使用 TypeScript，但隨後
+
+219
+00:15:24,115 --> 00:15:26,329
+uses the Effect library.
+使用效果庫。
+
+220
+00:15:26,762 --> 00:15:32,858
+To basically blend Effect and all the rules and the safety you get from using the Effect
+基本上混合效果和所有規則以及使用效果所獲得的安全性
+
+221
+00:15:32,858 --> 00:15:37,558
+library and create your AWS resources in TypeScript then.
+然後使用 TypeScript 建立您的 AWS 資源。
+
+222
+00:15:38,135 --> 00:15:41,039
+But whatever you use, you can have an agent write that.
+但無論你使用什麼，你都可以讓代理來寫。
+
+223
+00:15:41,199 --> 00:15:46,942
+And then in the safe solution, you have an agent write it, you review, plus the agent
+然後在安全的解決方案中，你有一個代理人寫它，你審查，再加上代理人
+
+224
+00:15:47,118 --> 00:15:48,161
+deploys, let's say.
+部署，比方說。
+
+225
+00:15:48,498 --> 00:15:53,887
+And in the safest option, you deploy so that you're super safe and sure that the agent
+在最安全的選項中，您進行部署，以便超級安全並確保代理
+
+226
+00:15:53,887 --> 00:15:56,374
+is not doing anything in your production environment.
+不在您的生產環境中執行任何操作。
+
+227
+00:15:56,759 --> 00:15:57,769
+Instead, you're doing it.
+相反，你正在這樣做。
+
+228
+00:15:58,763 --> 00:16:05,047
+And that's therefore a set of options you have for letting an AI help you
+因此，這就是讓人工智慧幫助你的一組選項
+
+229
+00:16:05,640 --> 00:16:11,155
+manage your AWS account, your resources, and a couple of things you should simply consider
+管理您的 AWS 帳戶、資源以及您應該簡單考慮的一些事項
+
+230
+00:16:11,267 --> 00:16:12,277
+and be aware of.
+並注意。
+
+231
+00:16:12,725 --> 00:16:19,282
+Because AI can make working with AWS so much more convenient, you really
+因為 AI 可以讓使用 AWS 變得更方便，您真的
+
+232
+00:16:19,282 --> 00:16:20,372
+shouldn't sleep on it.
+不應該睡在上面。
+
+233
+00:16:20,725 --> 00:16:26,640
+And which approach you then use simply depends on your own personal preferences, risk
+然後您使用哪種方法完全取決於您自己的個人喜好、風險
+
+234
+00:16:26,656 --> 00:16:29,685
+profile, and of course, which company you're working at.
+個人資料，當然還有您在哪家公司工作。
+
+235
+00:16:29,927 --> 00:16:30,477
+And so on.
+等等。
+
+236
+00:16:31,480 --> 00:16:36,654
+But not doing any of that is probably not a good idea, which is why I wanted to share
+但不這樣做可能不是一個好主意，這就是為什麼我想分享
+
+237
+00:16:36,654 --> 00:16:36,784
+this.
+這。

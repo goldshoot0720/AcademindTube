@@ -1,0 +1,629 @@
+1
+00:00:00,096 --> 00:00:04,921
+You can use Claude Code in the CLI, in the terminal user interface, which is probably
+您可以在 CLI 中的終端使用者介面中使用 Claude Code，這可能是
+
+2
+00:00:05,001 --> 00:00:06,203
+what most developers do.
+大多數開發人員所做的事情。
+
+3
+00:00:06,363 --> 00:00:11,253
+But Anthropic also has a desktop app, Claude Code as a desktop app.
+但 Anthropic 也有一個桌面應用程序，Claude Code 作為桌面應用程式。
+
+4
+00:00:11,894 --> 00:00:14,154
+Technically, it's actually not just Claude Code.
+從技術上講，它實際上不僅僅是克勞德·代碼。
+
+5
+00:00:14,218 --> 00:00:18,787
+There also is the Claude Chat, which is like ChatGPT just in the desktop app.
+還有 Claude Chat，它就像桌面應用程式中的 ChatGPT。
+
+6
+00:00:19,492 --> 00:00:22,249
+And there is Claude Cowork, which is a general work assistant.
+還有克勞德·科沃克（Claude Cowork），他是一名普通工作助理。
+
+7
+00:00:22,297 --> 00:00:24,141
+But there also is the Claude Code app.
+但還有 Claude Code 應用程式。
+
+8
+00:00:24,558 --> 00:00:29,816
+And that's actually not just the CLI wrapped into a desktop app, but it's a really useful
+這實際上不僅僅是包含在桌面應用程式中的 CLI，而且它非常有用
+
+9
+00:00:29,912 --> 00:00:32,990
+standalone app, especially since the latest update.
+獨立應用程序，尤其是自最新更新以來。
+
+10
+00:00:33,055 --> 00:00:35,638
+And no, this video is not sponsored by Anthropic.
+不，該影片不是由 Anthropic 贊助的。
+
+11
+00:00:35,686 --> 00:00:39,857
+I just think this new version of this app is pretty useful, which is why I'll give you
+我只是覺得這個應用程式的新版本非常有用，這就是為什麼我會給你
+
+12
+00:00:39,857 --> 00:00:40,339
+a walkthrough.
+演練。
+
+13
+00:00:40,579 --> 00:00:45,376
+If you want to learn way more about Claude Code, about this app, and about the CLI mostly,
+如果您想進一步了解 Claude Code、此應用程式以及 CLI，
+
+14
+00:00:45,569 --> 00:00:47,189
+I got a complete course on that.
+我有一個完整的課程。
+
+15
+00:00:47,318 --> 00:00:50,542
+It's fully updated for this new look of this new desktop app.
+它已針對新桌面應用程式的新外觀進行了全面更新。
+
+16
+00:00:50,639 --> 00:00:52,195
+I did that this morning.
+我今天早上就這麼做了。
+
+17
+00:00:52,307 --> 00:00:55,500
+It's already live, and that may be useful to you.
+它已經上線，可能對您有用。
+
+18
+00:00:55,612 --> 00:00:56,543
+So what's in this app?
+那麼這個應用程式中有什麼？
+
+19
+00:00:57,120 --> 00:01:03,114
+Well, This app has pretty much the same idea you might know from the Codex app or Cursor,
+嗯，這個應用程式的想法與您可能從 Codex 應用程式或 Cursor 中了解到的想法幾乎相同，
+
+20
+00:01:03,130 --> 00:01:04,829
+the Cursor Agents app if you use that.
+Cursor Agents 應用程式（如果您使用該應用程式）。
+
+21
+00:01:05,294 --> 00:01:09,075
+You can have multiple projects in there and in each project you can have multiple sessions.
+您可以在那裡有多個項目，並且在每個項目中您可以有多個會話。
+
+22
+00:01:09,124 --> 00:01:13,883
+You can start a new session, you can then pick a project for this session, you can pick
+您可以開始一個新會話，然後可以為此會話選擇一個項目，您可以選擇
+
+23
+00:01:13,883 --> 00:01:14,732
+a Git branch.
+一個 Git 分支。
+
+24
+00:01:15,149 --> 00:01:17,713
+It has a built-in Git worktree feature.
+它具有內建的 Git 工作樹功能。
+
+25
+00:01:17,937 --> 00:01:21,687
+And in case you don't know what Git worktrees are, the idea is that you have your main
+如果您不知道 Git 工作樹是什麼，那麼您的主要想法是
+
+26
+00:01:22,024 --> 00:01:28,099
+repo and Git Worktrees are an official Git feature which creates a clone, a local clone
+repo 和 Git Worktrees 是一個官方的 Git 功能，它創建一個克隆，一個本地克隆
+
+27
+00:01:28,355 --> 00:01:29,221
+of this repo.
+這個倉庫的。
+
+28
+00:01:29,269 --> 00:01:35,152
+So on your system, the project is kind of copied, not all the files, just the Git-managed
+所以在你的系統上，專案是複製的，不是所有的文件，只是 Git 管理的
+
+29
+00:01:35,168 --> 00:01:35,729
+files though.
+文件雖然。
+
+30
+00:01:36,146 --> 00:01:41,484
+And then you have that copy and you can work in the main repo and the copy simultaneously,
+然後你就擁有了該副本，你可以同時在主儲存庫和副本中工作，
+
+31
+00:01:41,660 --> 00:01:46,710
+have multiple agents running across these different worktrees so that they don't clash
+讓多個代理程式在這些不同的工作樹上運行，這樣它們就不會發生衝突
+
+32
+00:01:46,726 --> 00:01:47,255
+with each other.
+與彼此。
+
+33
+00:01:47,367 --> 00:01:48,088
+That's the idea.
+就是這個想法。
+
+34
+00:01:48,489 --> 00:01:52,320
+And then once you're done, you can merge your worktree changes back into the main repo.
+完成後，您可以將工作樹變更合併回主儲存庫。
+
+35
+00:01:52,577 --> 00:01:53,138
+That's the idea.
+就是這個想法。
+
+36
+00:01:53,218 --> 00:01:58,254
+And if you would check this box, the desktop app will create such a work tree for you
+如果您選取此框，桌面應用程式將為您建立這樣一個工作樹
+
+37
+00:01:58,415 --> 00:02:02,828
+automatically for whatever task you're handing off to it so that you could have multiple
+自動執行您交給它的任何任務，以便您可以擁有多個
+
+38
+00:02:02,828 --> 00:02:06,181
+agents working in the same repo without clashing, as I mentioned.
+正如我所提到的，在同一個倉庫中工作的代理不會發生衝突。
+
+39
+00:02:06,695 --> 00:02:10,177
+You can also start cloud tasks from in there.
+您也可以從那裡啟動雲端任務。
+
+40
+00:02:10,289 --> 00:02:14,734
+I cover this in more depth in my course, but the idea is that if you switch to a cloud
+我在課程中更深入地介紹了這一點，但想法是，如果您切換到雲
+
+41
+00:02:14,734 --> 00:02:20,671
+environment here, you have to set that up in the Claude Code cloud web interface first.
+這裡的環境，您必須先在 Claude Code 雲端 Web 介面中進行設定。
+
+42
+00:02:20,736 --> 00:02:26,111
+But if you have that, you could change the primary color to red or something like this.
+但如果你有的話，你可以將原色改為紅色或類似的顏色。
+
+43
+00:02:26,512 --> 00:02:30,423
+And now if I would submit this, this would not be executed locally, but instead in the
+現在，如果我提交這個，這將不會在本地執行，而是在
+
+44
+00:02:30,423 --> 00:02:30,695
+cloud.
+雲。
+
+45
+00:02:30,759 --> 00:02:34,414
+But of course, local is also an option and the default essentially.
+但當然，本地也是一種選擇，而且本質上是預設的。
+
+46
+00:02:35,071 --> 00:02:40,600
+You can manage your permissions down here, including bypass permissions if you enabled
+您可以在此處管理您的權限，包括繞過權限（如果您啟用了）
+
+47
+00:02:40,600 --> 00:02:41,466
+that in the settings.
+設定中的那個。
+
+48
+00:02:41,882 --> 00:02:47,043
+You can switch to plan mode, you can add additional context, and you also got slash commands
+您可以切換到計劃模式，可以添加其他上下文，並且還可以使用斜線命令
+
+49
+00:02:47,043 --> 00:02:47,588
+available here.
+可以在這裡找到。
+
+50
+00:02:47,733 --> 00:02:52,781
+If you type slash whatever, you can essentially run all the key commands you know from
+如果你輸入斜杠，你基本上可以運行你知道的所有關鍵命令
+
+51
+00:02:52,797 --> 00:02:55,089
+the CLI as well, including your skills.
+以及 CLI，包括您的技能。
+
+52
+00:02:55,843 --> 00:02:57,288
+You can invoke them from there too.
+您也可以從那裡調用它們。
+
+53
+00:02:57,689 --> 00:03:03,049
+If you don't want to hope that Claude Code decides to load them, you can just actively
+如果你不想希望 Claude Code 決定加載它們，你可以主動
+
+54
+00:03:03,065 --> 00:03:04,734
+invoke them from here, of course.
+當然，從這裡調用它們。
+
+55
+00:03:05,055 --> 00:03:10,255
+You could also use voice dictation, and of course, you can also switch easily to different
+您也可以使用語音聽寫，當然，您也可以輕鬆切換到不同的
+
+56
+00:03:10,287 --> 00:03:10,559
+models.
+模型。
+
+57
+00:03:10,624 --> 00:03:12,116
+Now, that's all nice.
+現在，一切都很好。
+
+58
+00:03:12,469 --> 00:03:15,663
+I mean, you can all find that on your own, I guess.
+我的意思是，我想你們都可以自己找到。
+
+59
+00:03:15,743 --> 00:03:16,850
+Still nice to see it.
+還是很高興看到它。
+
+60
+00:03:17,428 --> 00:03:23,046
+What is interesting is that if you have an active session, or a session that's already
+有趣的是，如果您有一個活動會話，或者一個已經存在的會話
+
+61
+00:03:23,110 --> 00:03:26,194
+complete, you have this button here in the top right corner.
+完成後，右上角有這個按鈕。
+
+62
+00:03:26,258 --> 00:03:30,722
+And that is the most interesting button when doing local development with the Claude
+這是使用 Claude 進行本地開發時最有趣的按鈕
+
+63
+00:03:30,819 --> 00:03:31,831
+desktop app, I would say.
+我想說的是桌面應用程式。
+
+64
+00:03:32,184 --> 00:03:37,452
+Because here you can for one view your plan if you did use plan mode.
+因為如果您使用計劃模式，您可以在這裡查看您的計劃。
+
+65
+00:03:37,500 --> 00:03:38,672
+Here I didn't, so I have none.
+這裡我沒有，所以我沒有。
+
+66
+00:03:39,266 --> 00:03:42,559
+When it's currently working, you can see your ongoing tasks here too.
+當它目前正在運行時，您也可以在此處查看正在進行的任務。
+
+67
+00:03:42,735 --> 00:03:44,630
+So the tasks it's going through.
+所以它正在經歷的任務。
+
+68
+00:03:45,128 --> 00:03:51,084
+But if it's done already, you can for example use the preview feature to have it launch
+但如果它已經完成，您可以使用預覽功能來啟動它
+
+69
+00:03:51,148 --> 00:03:55,174
+a dev server for you and show you a preview of your website.
+為您提供開發伺服器並向您展示網站的預覽。
+
+70
+00:03:55,222 --> 00:03:58,254
+If you are working on a website here, you have to set it up once.
+如果您正在此處開發網站，則必須設定一次。
+
+71
+00:03:58,350 --> 00:04:02,906
+And if you click this button, it actually uses the Claude agent, the Claude models to
+如果你點擊這個按鈕，它實際上使用 Claude 代理，Claude 模型來
+
+72
+00:04:03,483 --> 00:04:09,354
+write a Claude launch JSON file for you, which will contain the setup instructions or
+為您編寫 Claude launch JSON 文件，其中包含設定說明或
+
+73
+00:04:09,370 --> 00:04:11,135
+the setup configuration, I should say.
+我應該說的是設定配置。
+
+74
+00:04:11,183 --> 00:04:12,867
+So that's a one-time step.
+所以這是一次性的步驟。
+
+75
+00:04:13,043 --> 00:04:18,962
+And once it's done here, you can ask it to go ahead and Start a dev server and start
+在這裡完成後，您可以要求它繼續啟動開發伺服器並啟動
+
+76
+00:04:18,962 --> 00:04:19,587
+that preview.
+那個預覽。
+
+77
+00:04:20,501 --> 00:04:24,141
+And then it will indeed show you a preview of your site here.
+然後它確實會在這裡向您顯示您網站的預覽。
+
+78
+00:04:24,254 --> 00:04:28,856
+Now what is interesting is not just that you have a preview here, which can already be
+現在有趣的不僅僅是你在這裡有一個預覽，它已經可以了
+
+79
+00:04:28,856 --> 00:04:29,145
+nice.
+好的。
+
+80
+00:04:29,225 --> 00:04:32,656
+You can prompt away here and see the changes live here to the right.
+您可以在此處提示並查看右側的變更。
+
+81
+00:04:32,785 --> 00:04:33,570
+That can be nice.
+那太好了。
+
+82
+00:04:34,372 --> 00:04:38,734
+But the best feature here is this button, this one.
+但這裡最好的功能是這個按鈕，這個按鈕。
+
+83
+00:04:39,327 --> 00:04:40,402
+I mean, this one is interesting too.
+我的意思是，這也很有趣。
+
+84
+00:04:40,530 --> 00:04:42,567
+You can switch between mobile and desktop view here.
+您可以在此處切換行動視圖和桌面視圖。
+
+85
+00:04:42,952 --> 00:04:46,776
+Also switch between the different modes if your app supports it, different light and
+如果您的應用程式支持，還可以在不同模式之間切換，不同的光線和
+
+86
+00:04:46,776 --> 00:04:47,258
+dark modes.
+黑暗模式。
+
+87
+00:04:47,772 --> 00:04:49,299
+But this button here is great.
+但這裡的這個按鈕很棒。
+
+88
+00:04:49,379 --> 00:04:53,669
+It allows you to select an element and then this element is added as context here.
+它允許您選擇一個元素，然後將該元素添加為此處的上下文。
+
+89
+00:04:54,826 --> 00:04:57,992
+And you can then of course base your prompt on that.
+然後您當然可以以此為基礎進行提示。
+
+90
+00:04:58,056 --> 00:05:02,314
+So if you know that you want to change something about that element, change the text
+因此，如果您知道要更改該元素的某些內容，請更改文本
+
+91
+00:05:02,314 --> 00:05:07,312
+to just welcome, you don't need to describe in which file it is and hope that it finds
+只是歡迎，您不需要描述它在哪個文件中並希望它找到
+
+92
+00:05:07,312 --> 00:05:07,392
+it.
+它。
+
+93
+00:05:07,698 --> 00:05:12,413
+No, you can just select whatever you're not happy with and that will be added as context
+不，您可以選擇任何您不滿意的內容，這些內容將作為上下文添加
+
+94
+00:05:12,413 --> 00:05:12,477
+here.
+這裡。
+
+95
+00:05:12,525 --> 00:05:15,779
+Of course, you can also delete it and that can be a nice feature.
+當然，您也可以刪除它，這可能是一個很好的功能。
+
+96
+00:05:15,875 --> 00:05:20,716
+And I know other tools have that too, but the Claude Code desktop app now has it as well.
+我知道其他工具也有這個功能，但 Claude Code 桌面應用程式現在也有它。
+
+97
+00:05:21,646 --> 00:05:27,689
+Now besides that, you also have a div view here and that is also pretty nice and a feature
+除此之外，你還可以在這裡看到一個 div 視圖，這也是一個非常好的功能
+
+98
+00:05:27,721 --> 00:05:30,222
+I already know from the Codex and also other apps.
+我已經從 Codex 和其他應用程式中知道了。
+
+99
+00:05:30,687 --> 00:05:36,778
+Here you can easily scroll through your files and see all the changes, everything that
+在這裡您可以輕鬆地滾動瀏覽文件並查看所有更改以及所有內容
+
+100
+00:05:36,778 --> 00:05:38,494
+is uncommitted essentially here.
+在這裡基本上沒有承諾。
+
+101
+00:05:39,119 --> 00:05:43,613
+And you cannot just view them, which is already nice because reviewing the code is important
+而且你不能只查看它們，這已經很好了，因為檢查程式碼很重要
+
+102
+00:05:43,629 --> 00:05:46,406
+unless you're of course wipe coding and don't care about the code at all.
+除非您當然要擦除程式碼並且根本不關心程式碼。
+
+103
+00:05:46,680 --> 00:05:52,136
+I do care though, but this is nice for code reviews and you can also drop comments here.
+我確實很關心，但這對於程式碼審查來說很好，你也可以在這裡發表評論。
+
+104
+00:05:53,879 --> 00:06:00,400
+You can say something like remove this or whatever and if you submit this comment, it's
+你可以說刪除這個或其他什麼，如果你提交這個評論，它就是
+
+105
+00:06:00,481 --> 00:06:02,869
+also added as context here.
+也在這裡添加為上下文。
+
+106
+00:06:03,418 --> 00:06:06,839
+So now you could send it like this or add some extra instructions.
+所以現在您可以像這樣發送或添加一些額外的說明。
+
+107
+00:06:08,022 --> 00:06:14,771
+We don't want to use custom variant, whatever, you can send that.
+我們不想使用自訂變體，無論如何，您可以發送它。
+
+108
+00:06:15,219 --> 00:06:18,009
+And again, you don't have to describe to which file you're referring.
+再說一次，您不必描述您所引用的文件。
+
+109
+00:06:18,105 --> 00:06:22,449
+Instead, you can just comment inline and then base your prompt on this, which of course
+相反，您可以只內聯註釋，然後基於此進行提示，當然，
+
+110
+00:06:22,449 --> 00:06:23,779
+can be more convenient.
+可以更方便。
+
+111
+00:06:24,693 --> 00:06:27,402
+Now, outside of that, you also have a terminal.
+現在，除此之外，您還有一個終端。
+
+112
+00:06:27,659 --> 00:06:32,869
+So that is essentially the same kind of terminal you, for example, also have in Visual
+因此，這本質上與您在 Visual 中擁有的終端機類型相同
+
+113
+00:06:32,869 --> 00:06:33,558
+Studio Code.
+工作室代碼。
+
+114
+00:06:33,750 --> 00:06:35,626
+So you can use the integrated terminal there.
+所以你可以在那裡使用整合終端。
+
+115
+00:06:35,834 --> 00:06:38,143
+You also have it here in the Claude Code desktop app.
+您也可以在 Claude Code 桌面應用程式中找到它。
+
+116
+00:06:38,639 --> 00:06:42,412
+And therefore altogether, I think this is pretty nice.
+因此總的來說，我認為這非常好。
+
+117
+00:06:42,734 --> 00:06:49,111
+Of course, in the end, let's be honest, it is mostly what we already saw from other apps
+當然，最後，說實話，這主要是我們已經從其他應用程式中看到的
+
+118
+00:06:49,224 --> 00:06:53,545
+like Codex, for example, but it's a nice glow up of the application.
+例如，像 Codex，但它是應用程式的一個很好的亮點。
+
+119
+00:06:53,641 --> 00:06:54,878
+I like the look and feel.
+我喜歡它的外觀和感覺。
+
+120
+00:06:54,927 --> 00:06:57,658
+It's really fast and snappy in my first tests.
+在我的第一次測試中，它確實非常快且敏捷。
+
+121
+00:06:58,300 --> 00:07:03,007
+And I think if you are into this kind of development, if you prefer that over a CLI,
+我認為如果您喜歡這種開發，如果您更喜歡這種開發而不是 CLI，
+
+122
+00:07:03,682 --> 00:07:07,039
+this is definitely a great improvement over the old Claude.
+這相對於老克勞德來說絕對是一個很大的進步。
+
+123
+00:07:07,152 --> 00:07:08,119
+Code desktop app.
+程式碼桌面應用程式。
+
+124
+00:07:08,344 --> 00:07:10,553
+And as mentioned, I already cover it in my course.
+如前所述，我已經在課程中介紹了它。
+
+125
+00:07:10,778 --> 00:07:13,663
+There I also explain routines, dispatch, and much more.
+在那裡我還解釋了例行公事、調度等等。
+
+126
+00:07:13,744 --> 00:07:16,500
+But hopefully this quick walkthrough also was helpful.
+但希望這個快速演練也能有所幫助。

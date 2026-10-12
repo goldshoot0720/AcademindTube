@@ -9,7 +9,7 @@ set -euo pipefail
 
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PORT="${PORT:-8777}"
-WINDOW="${WINDOW:-3m}"
+WINDOW="${WINDOW:-6m}"
 HOST="${HOST:-127.0.0.1}"
 
 # Prefer the managed venv (project convention), fall back to any python3.

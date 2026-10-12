@@ -1,0 +1,1058 @@
+[
+  {
+    "start": 32,
+    "end": 5509,
+    "text": "Tools like Codex or Cloud Code are pretty good at helping you work with code, right?",
+    "zh": "Codex 或 Cloud Code 等工具非常適合幫助您處理程式碼，對嗎？"
+  },
+  {
+    "start": 5558,
+    "end": 6554,
+    "text": "I mean, it's pretty obvious.",
+    "zh": "我的意思是，這很明顯。"
+  },
+  {
+    "start": 6618,
+    "end": 8786,
+    "text": "It's Codex, it's Cloud Code, kind of makes sense.",
+    "zh": "它是 Codex，它是 Cloud Code，有點道理。"
+  },
+  {
+    "start": 8931,
+    "end": 14666,
+    "text": "But it's important to understand that you can do more with those tools than just work",
+    "zh": "但重要的是要了解，除了工作之外，您還可以使用這些工具做更多事情"
+  },
+  {
+    "start": 14875,
+    "end": 15341,
+    "text": "on code.",
+    "zh": "在代碼上。"
+  },
+  {
+    "start": 15919,
+    "end": 20642,
+    "text": "And for example, in the Codex course I have, which you find linked below if you're interested,",
+    "zh": "例如，在我的 Codex 課程中，如果您有興趣，可以在下面找到鏈接，"
+  },
+  {
+    "start": 21059,
+    "end": 25156,
+    "text": "I do primarily dive into coding and show you all the nitty-gritty details there and some",
+    "zh": "我主要是深入研究編碼並向您展示所有的細節以及一些"
+  },
+  {
+    "start": 25156,
+    "end": 27517,
+    "text": "tips and tricks how to get the most out of it.",
+    "zh": "如何充分利用它的提示和技巧。"
+  },
+  {
+    "start": 28047,
+    "end": 34944,
+    "text": "I also have some lectures in there where I show you how to use it for non-coding tasks",
+    "zh": "我在那裡還有一些講座，向您展示如何將它用於非編碼任務"
+  },
+  {
+    "start": 34944,
+    "end": 39997,
+    "text": "because that is useful to know as well because you may not be a developer, then that",
+    "zh": "因為了解這一點也很有用，因為您可能不是開發人員，那麼"
+  },
+  {
+    "start": 39997,
+    "end": 40350,
+    "text": "is great.",
+    "zh": "太棒了。"
+  },
+  {
+    "start": 40414,
+    "end": 45675,
+    "text": "But even as a developer, we all got stuff to do that is not directly related to coding",
+    "zh": "但即使作為開發人員，我們也有一些與編碼沒有直接關係的事情要做"
+  },
+  {
+    "start": 46493,
+    "end": 48402,
+    "text": "where we might be too lazy to do it manually.",
+    "zh": "我們可能懶得手動完成。"
+  },
+  {
+    "start": 48691,
+    "end": 52973,
+    "text": "So for example, in Codex, you can use it to generate images.",
+    "zh": "例如，在 Codex 中，您可以使用它來產生圖像。"
+  },
+  {
+    "start": 53631,
+    "end": 59213,
+    "text": "You can ask it to, create here in my case a slide graphic that explains how Tailscale",
+    "zh": "您可以要求它，在我的例子中建立一個幻燈片圖形，解釋 Tailscale 如何"
+  },
+  {
+    "start": 59325,
+    "end": 59662,
+    "text": "works.",
+    "zh": "作品。"
+  },
+  {
+    "start": 60304,
+    "end": 63929,
+    "text": "Tailscale is an amazing tool for securing your VPS, for example.",
+    "zh": "例如，Tailscale 是一個用於保護 VPS 的絕佳工具。"
+  },
+  {
+    "start": 64378,
+    "end": 68982,
+    "text": "And I also got a course on securely setting up a VPS and so on if you're interested.",
+    "zh": "如果您有興趣的話，我還提供了有關安全設定 VPS 等的課程。"
+  },
+  {
+    "start": 69271,
+    "end": 70682,
+    "text": "But enough of the plugs for now.",
+    "zh": "但現在插頭已經足夠了。"
+  },
+  {
+    "start": 71436,
+    "end": 75254,
+    "text": "And you can activate a skill that's built into Codex, the ImageGen skill.",
+    "zh": "您還可以啟動 Codex 中內建的一項技能，即 ImageGen 技能。"
+  },
+  {
+    "start": 75607,
+    "end": 76441,
+    "text": "You shouldn't need to.",
+    "zh": "你不應該需要這樣做。"
+  },
+  {
+    "start": 76665,
+    "end": 78863,
+    "text": "It should in theory be able to invoke it itself.",
+    "zh": "理論上它應該能夠呼叫它本身。"
+  },
+  {
+    "start": 78975,
+    "end": 82809,
+    "text": "But if you know that you want an image, you can actively invoke it by using",
+    "zh": "但是如果你知道你想要一個圖像，你可以透過使用主動調用它"
+  },
+  {
+    "start": 84364,
+    "end": 86255,
+    "text": "and then ImageGen is the skill name.",
+    "zh": "然後ImageGen是技能名稱。"
+  },
+  {
+    "start": 86688,
+    "end": 90503,
+    "text": "I got another skill here which I built myself, which is a bit more versatile and uses",
+    "zh": "我在這裡獲得了我自己構建的另一項技能，該技能更加通用並且用途廣泛"
+  },
+  {
+    "start": 90535,
+    "end": 92010,
+    "text": "the Fal AI API.",
+    "zh": "Fal AI API。"
+  },
+  {
+    "start": 92459,
+    "end": 97509,
+    "text": "But if you use this built-in skill, it will go ahead and use the GPT-Image-2 model by",
+    "zh": "但是，如果您使用此內建技能，它將繼續使用 GPT-Image-2 模型"
+  },
+  {
+    "start": 97589,
+    "end": 99560,
+    "text": "OpenAI to produce an image.",
+    "zh": "OpenAI 生成影像。"
+  },
+  {
+    "start": 99913,
+    "end": 103520,
+    "text": "So the AI agent does all of that for you, all in Codex.",
+    "zh": "因此，AI 代理會在 Codex 中為您完成所有這些工作。"
+  },
+  {
+    "start": 103584,
+    "end": 107896,
+    "text": "You don't have to leave the site, you don't have to interact with the OpenAI API or anything",
+    "zh": "您不必離開網站，也不必與 OpenAI API 或任何其他內容進行交互"
+  },
+  {
+    "start": 107928,
+    "end": 108409,
+    "text": "like that.",
+    "zh": "像那樣。"
+  },
+  {
+    "start": 108890,
+    "end": 113555,
+    "text": "So if you want to create an infographic or any kind of image, can be an image of a dog,",
+    "zh": "因此，如果您想創建資訊圖表或任何類型的圖像，可以是狗的圖像，"
+  },
+  {
+    "start": 113683,
+    "end": 116344,
+    "text": "can be anything, you can do that from inside Codex.",
+    "zh": "可以是任何東西，你可以從 Codex 內部做到這一點。"
+  },
+  {
+    "start": 116745,
+    "end": 118091,
+    "text": "And it's, it's still a chat.",
+    "zh": "而且，這仍然是一次聊天。"
+  },
+  {
+    "start": 118171,
+    "end": 119181,
+    "text": "You can refine the image.",
+    "zh": "您可以細化圖像。"
+  },
+  {
+    "start": 119229,
+    "end": 122035,
+    "text": "You can ask it to add a logo, for example.",
+    "zh": "例如，您可以要求它添加徽標。"
+  },
+  {
+    "start": 122179,
+    "end": 123173,
+    "text": "And guess what?",
+    "zh": "你猜怎麼著？"
+  },
+  {
+    "start": 123542,
+    "end": 124087,
+    "text": "It does that.",
+    "zh": "它就是這樣做的。"
+  },
+  {
+    "start": 124135,
+    "end": 128976,
+    "text": "So that's of course interesting to know because we all got scenarios where we need some",
+    "zh": "所以這當然很有趣，因為我們都有需要一些的場景"
+  },
+  {
+    "start": 129024,
+    "end": 131974,
+    "text": "image or tweak some image and anything like that.",
+    "zh": "圖像或調整一些圖像和類似的東西。"
+  },
+  {
+    "start": 132038,
+    "end": 133048,
+    "text": "And it doesn't stop there.",
+    "zh": "而且它還不止於此。"
+  },
+  {
+    "start": 133480,
+    "end": 136686,
+    "text": "You can also use Codex to analyze data, for example.",
+    "zh": "例如，您也可以使用 Codex 來分析資料。"
+  },
+  {
+    "start": 136943,
+    "end": 142281,
+    "text": "It can work with CSV, Excel, PDF documents, and many, many other formats.",
+    "zh": "它可以處理 CSV、Excel、PDF 文件以及許多其他格式。"
+  },
+  {
+    "start": 142634,
+    "end": 144269,
+    "text": "It can read such a file.",
+    "zh": "它可以讀取這樣的檔案。"
+  },
+  {
+    "start": 144702,
+    "end": 145695,
+    "text": "And you know how it does that?",
+    "zh": "你知道它是怎麼做到的嗎？"
+  },
+  {
+    "start": 145824,
+    "end": 152140,
+    "text": "It does that by using code under the hood because code, of course, is not necessarily",
+    "zh": "它透過在幕後使用程式碼來實現這一點，因為程式碼當然不一定是"
+  },
+  {
+    "start": 152172,
+    "end": 157189,
+    "text": "just the main product as it is for you as a developer when you are writing code to build",
+    "zh": "只是主要產品，因為它適合您作為開發人員編寫程式碼來構建"
+  },
+  {
+    "start": 157446,
+    "end": 159914,
+    "text": "a software, but it can also be just a tool.",
+    "zh": "一個軟體，但它也可以只是一個工具。"
+  },
+  {
+    "start": 160187,
+    "end": 164948,
+    "text": "Code can be a tool and it is a tool here used by Codex if you ask it to analyze some",
+    "zh": "程式碼可以是一種工具，如果您要求 Codex 分析某些內容，它就是 Codex 使用的工具"
+  },
+  {
+    "start": 164996,
+    "end": 166422,
+    "text": "sales CSV file.",
+    "zh": "銷售 CSV 檔案。"
+  },
+  {
+    "start": 166759,
+    "end": 170879,
+    "text": "It writes some code, some Python code, for example, that opens the file, performs some",
+    "zh": "它編寫一些程式碼，例如一些 Python 程式碼，用於開啟檔案、執行某些操作"
+  },
+  {
+    "start": 171809,
+    "end": 176249,
+    "text": "analytics, creates some summary statistics, and then it outputs those statistics here",
+    "zh": "分析，創建一些匯總統計數據，然後在此處輸出這些統計數據"
+  },
+  {
+    "start": 176281,
+    "end": 178846,
+    "text": "and it doesn't show you the code, it throws away the code.",
+    "zh": "它不會向您顯示程式碼，而是丟棄程式碼。"
+  },
+  {
+    "start": 178958,
+    "end": 183837,
+    "text": "It may just create it and use it in memory, but it gives you the final results and it",
+    "zh": "它可能只是創建它並在內存中使用它，但它會為您提供最終結果，並且它"
+  },
+  {
+    "start": 183837,
+    "end": 187816,
+    "text": "doesn't hallucinate them, but instead it really calculates them with help of code.",
+    "zh": "不會產生幻覺，而是在程式碼的幫助下真正計算出它們。"
+  },
+  {
+    "start": 188410,
+    "end": 194027,
+    "text": "And it can also produce Excel sheets, which you can then also open in the Codex app.",
+    "zh": "它還可以產生 Excel 工作表，然後您也可以在 Codex 應用程式中開啟該工作表。"
+  },
+  {
+    "start": 194492,
+    "end": 199852,
+    "text": "And in there you can then have charts if you ask it to create some charts as I did.",
+    "zh": "如果你像我一樣要求它創建一些圖表，你就可以在其中獲得圖表。"
+  },
+  {
+    "start": 200670,
+    "end": 201730,
+    "text": "And it doesn't stop there.",
+    "zh": "而且它還不止於此。"
+  },
+  {
+    "start": 201794,
+    "end": 205709,
+    "text": "It can also work with PDF documents, also create PDF documents.",
+    "zh": "它還可以處理 PDF 文檔，也可以建立 PDF 文檔。"
+  },
+  {
+    "start": 205790,
+    "end": 210457,
+    "text": "So here I ask it to create an executive summary PDF report based on all this data and",
+    "zh": "所以在這裡我要求它根據所有這些數據創建一份執行摘要 PDF 報告"
+  },
+  {
+    "start": 210457,
+    "end": 212398,
+    "text": "insights, and it did that.",
+    "zh": "洞察力，它做到了。"
+  },
+  {
+    "start": 213585,
+    "end": 216473,
+    "text": "And this is all important stuff to know.",
+    "zh": "這些都是需要了解的重要內容。"
+  },
+  {
+    "start": 216569,
+    "end": 220884,
+    "text": "And this is all also covered in my Codex course, which as mentioned is primarily about",
+    "zh": "我的 Codex 課程也涵蓋了這一切，正如前面提到的，該課程主要是關於"
+  },
+  {
+    "start": 220900,
+    "end": 221381,
+    "text": "coding though.",
+    "zh": "雖然編碼。"
+  },
+  {
+    "start": 221477,
+    "end": 222921,
+    "text": "So coding is the main task.",
+    "zh": "所以編碼是主要任務。"
+  },
+  {
+    "start": 223611,
+    "end": 228102,
+    "text": "Nonetheless, I feel like it's important to understand that this is where the companies",
+    "zh": "儘管如此，我覺得重要的是要了解這就是公司的定位"
+  },
+  {
+    "start": 228102,
+    "end": 231808,
+    "text": "are heading to and that you can do these things with Codex, for example.",
+    "zh": "例如，您可以使用 Codex 來完成這些操作。"
+  },
+  {
+    "start": 231952,
+    "end": 234054,
+    "text": "And of course, Codex It's not the only tool.",
+    "zh": "當然，Codex 並不是唯一的工具。"
+  },
+  {
+    "start": 234215,
+    "end": 238678,
+    "text": "We also have Claude Code, and I'll hand it over to Manuel to explain to you how things",
+    "zh": "我們還有克勞德代碼，我會把它交給曼努埃爾來向你解釋事情是如何發生的"
+  },
+  {
+    "start": 238790,
+    "end": 240444,
+    "text": "work with the Claude universe.",
+    "zh": "與克勞德宇宙一起工作。"
+  },
+  {
+    "start": 241182,
+    "end": 247026,
+    "text": "With Claude or Anthropic, things are the same, but also a bit different than we saw it",
+    "zh": "對於克勞德或人類來說，事情是一樣的，但也與我們看到的有點不同"
+  },
+  {
+    "start": 247058,
+    "end": 248583,
+    "text": "with Codex and OpenAI.",
+    "zh": "與 Codex 和 OpenAI 一起。"
+  },
+  {
+    "start": 248904,
+    "end": 255743,
+    "text": "Whilst OpenAI uses one combined tool, Codex, Claude tries to separate",
+    "zh": "雖然 OpenAI 使用一種組合工具 Codex，但 Claude 試圖將其分開"
+  },
+  {
+    "start": 255872,
+    "end": 257060,
+    "text": "their different users.",
+    "zh": "他們的不同使用者。"
+  },
+  {
+    "start": 257477,
+    "end": 259965,
+    "text": "Everything is also combined in one app.",
+    "zh": "所有內容也都合併在一個應用程式中。"
+  },
+  {
+    "start": 260205,
+    "end": 263463,
+    "text": "It is the Claude app, which you can download on this page here.",
+    "zh": "這是 Claude 應用程序，您可以在此頁面上下載該應用程式。"
+  },
+  {
+    "start": 264072,
+    "end": 265372,
+    "text": "Link is in the video description.",
+    "zh": "連結在影片說明中。"
+  },
+  {
+    "start": 265902,
+    "end": 269737,
+    "text": "And in this app, we find 3 different sections.",
+    "zh": "在此應用程式中，我們發現 3 個不同的部分。"
+  },
+  {
+    "start": 270074,
+    "end": 275434,
+    "text": "Chat, which is the normal chat interface we know from ChatGPT, Gemini, and so on.",
+    "zh": "Chat，就是我們所知道的ChatGPT、Gemini等的正常聊天介面。"
+  },
+  {
+    "start": 276091,
+    "end": 281371,
+    "text": "We have the code section, which is made specifically for coding projects for developers.",
+    "zh": "我們有程式碼部分，專門為開發人員的編碼專案而設計。"
+  },
+  {
+    "start": 281949,
+    "end": 288368,
+    "text": "And we have Cowork, which is the non-coding task completion section, so to say.",
+    "zh": "我們還有 Cowork，可以說是非編碼任務完成部分。"
+  },
+  {
+    "start": 288866,
+    "end": 294355,
+    "text": "The idea behind Cowork is that it's not only a chat, it completes tasks for you.",
+    "zh": "Cowork 背後的理念是，它不僅僅是聊天，它還能為您完成任務。"
+  },
+  {
+    "start": 294804,
+    "end": 296377,
+    "text": "It has local file access.",
+    "zh": "它具有本地文件存取權限。"
+  },
+  {
+    "start": 296650,
+    "end": 299426,
+    "text": "It can create files, edit files, delete files.",
+    "zh": "它可以建立文件、編輯文件、刪除文件。"
+  },
+  {
+    "start": 299795,
+    "end": 304369,
+    "text": "So it can manage entire projects on your machine for you.",
+    "zh": "因此它可以為您管理機器上的整個專案。"
+  },
+  {
+    "start": 304594,
+    "end": 308381,
+    "text": "To understand Cowork, I prepared some demo files for you.",
+    "zh": "為了了解Cowork，我為您準備了一些簡報文件。"
+  },
+  {
+    "start": 308927,
+    "end": 313629,
+    "text": "The first file here is about the working policy, the company policy.",
+    "zh": "這裡的第一份文件是關於工作政策，公司政策。"
+  },
+  {
+    "start": 314127,
+    "end": 317065,
+    "text": "Of a hypothetical company we have right here.",
+    "zh": "我們這裡有一家假設的公司。"
+  },
+  {
+    "start": 317595,
+    "end": 324210,
+    "text": "This folder contains text files, some internal memos, it contains PDFs, an image, so",
+    "zh": "該資料夾包含文字檔案、一些內部備忘錄、PDF、圖像等"
+  },
+  {
+    "start": 324258,
+    "end": 326281,
+    "text": "all information about our company.",
+    "zh": "有關我們公司的所有資訊。"
+  },
+  {
+    "start": 326907,
+    "end": 332045,
+    "text": "Now what I could do now in Claude Cowork is I could select this folder.",
+    "zh": "現在我在 Claude Cowork 中可以做的是選擇這個資料夾。"
+  },
+  {
+    "start": 332623,
+    "end": 337552,
+    "text": "So you always have the option here to work in a project, which we'll do in a few seconds,",
+    "zh": "因此，您始終可以選擇在專案中工作，我們將在幾秒鐘內完成，"
+  },
+  {
+    "start": 337969,
+    "end": 340297,
+    "text": "or to simply select a folder.",
+    "zh": "或簡單地選擇一個資料夾。"
+  },
+  {
+    "start": 340714,
+    "end": 345176,
+    "text": "Here I'll select this Demo 1 folder containing all those files.",
+    "zh": "在這裡，我將選擇包含所有這些檔案的 Demo 1 資料夾。"
+  },
+  {
+    "start": 345690,
+    "end": 350970,
+    "text": "Now I give Claude access to this folder and therefore to all the files, all the data",
+    "zh": "現在我授予 Claude 存取此資料夾的權限，從而授予 Claude 存取所有檔案、所有資料的權限"
+  },
+  {
+    "start": 351371,
+    "end": 352511,
+    "text": "inside this folder.",
+    "zh": "在此資料夾內。"
+  },
+  {
+    "start": 353072,
+    "end": 360054,
+    "text": "And now I can just ask it to read all the documents, identify the key themes, and then",
+    "zh": "現在我可以要求它閱讀所有文檔，確定關鍵主題，然後"
+  },
+  {
+    "start": 360054,
+    "end": 364387,
+    "text": "produce a 1-page executive summary as a Word document.",
+    "zh": "產生 1 頁的執行摘要作為 Word 文件。"
+  },
+  {
+    "start": 365110,
+    "end": 370880,
+    "text": "With this, Claude will now start this process, will now complete this task for me.",
+    "zh": "這樣，克勞德現在將開始這個過程，現在將為我完成這個任務。"
+  },
+  {
+    "start": 371280,
+    "end": 373940,
+    "text": "You can always check the logic it runs behind.",
+    "zh": "您始終可以檢查它背後運行的邏輯。"
+  },
+  {
+    "start": 374004,
+    "end": 376857,
+    "text": "So which commands it runs, which code it uses.",
+    "zh": "那麼它運行哪些命令，使用哪些程式碼。"
+  },
+  {
+    "start": 377354,
+    "end": 383892,
+    "text": "As Max explained earlier in Codex, Claude also uses code to complete specific tasks,",
+    "zh": "正如 Max 之前在 Codex 中解釋的那樣，Claude 也使用程式碼來完成特定任務，"
+  },
+  {
+    "start": 384164,
+    "end": 387802,
+    "text": "code which is not stored, but just used to complete the tasks.",
+    "zh": "未儲存的程式碼，僅用於完成任務。"
+  },
+  {
+    "start": 387946,
+    "end": 389116,
+    "text": "And then it's deleted again.",
+    "zh": "然後又被刪除了。"
+  },
+  {
+    "start": 389469,
+    "end": 391119,
+    "text": "Here it reads all our files.",
+    "zh": "它在這裡讀取我們所有的文件。"
+  },
+  {
+    "start": 391552,
+    "end": 395292,
+    "text": "Here we find a DocX skill which was used.",
+    "zh": "在這裡我們找到了使用的 DocX 技能。"
+  },
+  {
+    "start": 395484,
+    "end": 399705,
+    "text": "This is a built-in skill which allows Claude to create doc files.",
+    "zh": "這是一項內建技能，允許 Claude 建立文件檔案。"
+  },
+  {
+    "start": 400299,
+    "end": 403396,
+    "text": "And now we have the finished document as requested.",
+    "zh": "現在我們已經按照要求完成文件了。"
+  },
+  {
+    "start": 403909,
+    "end": 409334,
+    "text": "We can access the document from our folder on our machine, but also directly here in",
+    "zh": "我們可以從機器上的資料夾存取該文檔，也可以直接在"
+  },
+  {
+    "start": 409446,
+    "end": 410345,
+    "text": "Claude Cowork.",
+    "zh": "克勞德·科沃克."
+  },
+  {
+    "start": 410714,
+    "end": 417005,
+    "text": "As instructed, we have a one-page executive summary about the core work policy in this",
+    "zh": "按照指示，我們有一份關於本報告核心工作政策的一頁執行摘要"
+  },
+  {
+    "start": 417133,
+    "end": 417791,
+    "text": "company here.",
+    "zh": "公司在這裡。"
+  },
+  {
+    "start": 418352,
+    "end": 421589,
+    "text": "And this is one of the big advantages of Claude Cowork here.",
+    "zh": "而這正是 Claude Cowork 在這裡的一大優勢。"
+  },
+  {
+    "start": 422022,
+    "end": 426461,
+    "text": "It is a very nice and easy to understand user interface.",
+    "zh": "這是一個非常漂亮且易於理解的使用者介面。"
+  },
+  {
+    "start": 426830,
+    "end": 432279,
+    "text": "You get clear questions about the permissions you grant Claude Cowork, for example, to",
+    "zh": "您會收到有關您授予 Claude Cowork 的權限的明確問題，例如"
+  },
+  {
+    "start": 432359,
+    "end": 434218,
+    "text": "interact with files on your machine.",
+    "zh": "與電腦上的文件互動。"
+  },
+  {
+    "start": 434618,
+    "end": 439747,
+    "text": "And then you can just let it do its work and access the files easily inside the tool.",
+    "zh": "然後您可以讓它完成工作並在工具內輕鬆存取文件。"
+  },
+  {
+    "start": 440147,
+    "end": 443000,
+    "text": "So this here was a so-called single session.",
+    "zh": "所以這就是所謂的單一會議。"
+  },
+  {
+    "start": 443128,
+    "end": 448401,
+    "text": "So we just gave Claude Cowork access to one folder, completed a task, and then we are",
+    "zh": "所以我們只是授予 Claude Cowork 存取一個資料夾的權限，完成一項任務，然後我們就可以了"
+  },
+  {
+    "start": 448401,
+    "end": 448609,
+    "text": "done.",
+    "zh": "完畢。"
+  },
+  {
+    "start": 449186,
+    "end": 453097,
+    "text": "But you can also use Claude Cowork for ongoing projects.",
+    "zh": "但您也可以將 Claude Cowork 用於正在進行的專案。"
+  },
+  {
+    "start": 453370,
+    "end": 458884,
+    "text": "And as the name indicates, we have a dedicated project section here in Claude Cowork,",
+    "zh": "顧名思義，我們在 Claude Cowork 有一個專門的專案部分，"
+  },
+  {
+    "start": 459141,
+    "end": 461786,
+    "text": "which I'll quickly show you in a second example.",
+    "zh": "我將在第二個範例中快速向您展示。"
+  },
+  {
+    "start": 462026,
+    "end": 468246,
+    "text": "A cowork has the advantage of giving Claude Cowork more context, more information it",
+    "zh": "Cowork 的優點是可以為 Claude Cowork 提供更多背景資訊、更多信息"
+  },
+  {
+    "start": 468278,
+    "end": 470282,
+    "text": "can always access and remember.",
+    "zh": "可以隨時訪問並記住。"
+  },
+  {
+    "start": 470683,
+    "end": 476950,
+    "text": "So you can start multiple sessions inside one specific project and always remember the",
+    "zh": "因此，您可以在一個特定專案中啟動多個會話，並始終記住"
+  },
+  {
+    "start": 476950,
+    "end": 482545,
+    "text": "information and the context that you provided and also the previously discussed topics.",
+    "zh": "您提供的資訊和上下文以及之前討論的主題。"
+  },
+  {
+    "start": 482962,
+    "end": 489598,
+    "text": "So if we create such a new project here and use an existing folder, which is our Demo",
+    "zh": "那麼如果我們在這裡新建一個這樣的項目，並使用一個現有的資料夾，也就是我們的Demo"
+  },
+  {
+    "start": 489694,
+    "end": 494054,
+    "text": "2 folder, this folder now contains a single sales report only.",
+    "zh": "2 資料夾，此資料夾現在僅包含單一銷售報告。"
+  },
+  {
+    "start": 494423,
+    "end": 499232,
+    "text": "So here we could now add some instructions, we could add additional files, which we won't",
+    "zh": "所以在這裡我們現在可以添加一些指令，我們可以添加其他文件，但我們不會"
+  },
+  {
+    "start": 499232,
+    "end": 502710,
+    "text": "do at this stage, but we can now simply create this project.",
+    "zh": "在這個階段，我們可以簡單地創建這個專案。"
+  },
+  {
+    "start": 503079,
+    "end": 507711,
+    "text": "So here we are now in this project, we are working in this Demo 2 folder.",
+    "zh": "所以我們現在在這個專案中，我們正在這個 Demo 2 資料夾中工作。"
+  },
+  {
+    "start": 508032,
+    "end": 514339,
+    "text": "I want to get started by reading the sales report that we have inside our project folder",
+    "zh": "我想先閱讀項目資料夾中的銷售報告"
+  },
+  {
+    "start": 514772,
+    "end": 518960,
+    "text": "to get a rough idea about the core findings and what's going on in general.",
+    "zh": "大致了解核心發現和整體情況。"
+  },
+  {
+    "start": 519602,
+    "end": 524272,
+    "text": "So here we get an overview of what went well, what was underperforming, and so on.",
+    "zh": "因此，在這裡我們可以大致了解哪些方面進展順利，哪些方面表現不佳等等。"
+  },
+  {
+    "start": 524721,
+    "end": 530097,
+    "text": "And now I can continue with my next task where I want to build an Excel file based on",
+    "zh": "現在我可以繼續執行下一個任務，我想基於以下內容建立 Excel 文件"
+  },
+  {
+    "start": 530097,
+    "end": 532359,
+    "text": "the findings in this report.",
+    "zh": "本報告中的調查結果。"
+  },
+  {
+    "start": 532760,
+    "end": 535119,
+    "text": "Still in the same project, still in the same chat.",
+    "zh": "仍然在同一個專案中，仍然在同一個聊天中。"
+  },
+  {
+    "start": 535216,
+    "end": 537991,
+    "text": "So now I'll create this Excel file.",
+    "zh": "現在我將建立這個 Excel 檔案。"
+  },
+  {
+    "start": 538600,
+    "end": 544680,
+    "text": "And now we created that Excel file, which we can again directly access here in our interface.",
+    "zh": "現在我們建立了該 Excel 文件，我們可以再次在介面中直接存取該文件。"
+  },
+  {
+    "start": 545242,
+    "end": 551562,
+    "text": "We have different tables for different customers, product lines, and regions.",
+    "zh": "我們針對不同的客戶、產品線和地區有不同的表格。"
+  },
+  {
+    "start": 552477,
+    "end": 555845,
+    "text": "And now I can go back to my core project folder.",
+    "zh": "現在我可以返回到我的核心專案資料夾。"
+  },
+  {
+    "start": 556150,
+    "end": 561829,
+    "text": "In here, I can find my previous chat and my previous output that was generated.",
+    "zh": "在這裡，我可以找到我之前的聊天以及之前產生的輸出。"
+  },
+  {
+    "start": 562182,
+    "end": 568008,
+    "text": "And now I will start a new session inside this project where I have all the context of",
+    "zh": "現在我將在這個專案中開始一個新的會話，其中我有所有的上下文"
+  },
+  {
+    "start": 568104,
+    "end": 569339,
+    "text": "the full project in here.",
+    "zh": "完整的項目在這裡。"
+  },
+  {
+    "start": 569949,
+    "end": 576593,
+    "text": "And I want to create a PowerPoint presentation now, and I want to follow the brand guidelines",
+    "zh": "我現在想創建一個 PowerPoint 演示文稿，並且我想遵循品牌指南"
+  },
+  {
+    "start": 576706,
+    "end": 577700,
+    "text": "for the visual style.",
+    "zh": "為了視覺風格。"
+  },
+  {
+    "start": 578230,
+    "end": 584088,
+    "text": "So far we don't have any brand guidelines, so I can just add another folder as context",
+    "zh": "到目前為止，我們沒有任何品牌指南，所以我可以添加另一個資料夾作為上下文"
+  },
+  {
+    "start": 584088,
+    "end": 587538,
+    "text": "here, which is this brand template folder.",
+    "zh": "這裡，就是這個品牌模板資料夾。"
+  },
+  {
+    "start": 587698,
+    "end": 593445,
+    "text": "Claude will automatically identify this folder as the important one for the brand guidelines.",
+    "zh": "Claude 會自動將此資料夾識別為品牌指南的重要資料夾。"
+  },
+  {
+    "start": 593943,
+    "end": 596480,
+    "text": "And now I'll let it finish this task too.",
+    "zh": "現在我也讓它完成這個任務。"
+  },
+  {
+    "start": 597412,
+    "end": 603965,
+    "text": "And now if we check the commands it used so far in here, we can see that it used",
+    "zh": "現在，如果我們檢查到目前為止它使用的命令，我們可以看到它使用了"
+  },
+  {
+    "start": 604463,
+    "end": 607370,
+    "text": "the brand guidelines doc file.",
+    "zh": "品牌指南文件檔。"
+  },
+  {
+    "start": 607450,
+    "end": 610791,
+    "text": "So it identified the branding guidelines that I gave it.",
+    "zh": "所以它確定了我給它的品牌指南。"
+  },
+  {
+    "start": 611064,
+    "end": 616428,
+    "text": "And here we have our slides now, which we can again access directly in Claude Cowork.",
+    "zh": "現在我們有了幻燈片，我們可以再次在 Claude Cowork 中直接存取。"
+  },
+  {
+    "start": 616589,
+    "end": 618339,
+    "text": "We have some charts.",
+    "zh": "我們有一些圖表。"
+  },
+  {
+    "start": 618772,
+    "end": 620055,
+    "text": "We have some tables in here.",
+    "zh": "我們這裡有一些桌子。"
+  },
+  {
+    "start": 620696,
+    "end": 624062,
+    "text": "The styling is totally based on our branding template.",
+    "zh": "造型完全基於我們的品牌模板。"
+  },
+  {
+    "start": 624175,
+    "end": 628631,
+    "text": "So of course you have full control about the style, the colors, and the look that you",
+    "zh": "因此，您當然可以完全掌控您想要的風格、顏色和外觀。"
+  },
+  {
+    "start": 628631,
+    "end": 629497,
+    "text": "want to have in here.",
+    "zh": "想要在這裡擁有。"
+  },
+  {
+    "start": 629753,
+    "end": 635765,
+    "text": "And once again, if you go back to the main project menu, you can find this second task",
+    "zh": "再次，如果您返回主項目選單，您可以找到第二個任務"
+  },
+  {
+    "start": 635781,
+    "end": 642658,
+    "text": "now down here and also the presentation, which is now created and accessible in our Demo",
+    "zh": "現在在這裡還有演示文稿，現已在我們的演示中創建並可訪問"
+  },
+  {
+    "start": 642658,
+    "end": 644101,
+    "text": "2 project folder.",
+    "zh": "2個項目資料夾。"
+  },
+  {
+    "start": 644342,
+    "end": 647214,
+    "text": "And these are just the basics of Cloud Cowork.",
+    "zh": "這些只是 Cloud Cowork 的基礎知識。"
+  },
+  {
+    "start": 647712,
+    "end": 653152,
+    "text": "Now, if you want to dive deeper into Cloud Cowork and use it for your non-code-related",
+    "zh": "現在，如果您想更深入地了解 Cloud Cowork 並將其用於與程式碼無關的工作"
+  },
+  {
+    "start": 653168,
+    "end": 657678,
+    "text": "tasks, we have a brand new course for you, Cloud Cowork: The Practical Guide.",
+    "zh": "任務，我們為您準備了一門全新的課程，Cloud Cowork：實用指南。"
+  },
+  {
+    "start": 658127,
+    "end": 661802,
+    "text": "You can find all information about this course in the video description.",
+    "zh": "您可以在影片說明中找到有關本課程的所有資訊。"
+  },
+  {
+    "start": 662251,
+    "end": 668446,
+    "text": "It also dives into more advanced Cloud Cowork features like Dispatch, where you can control",
+    "zh": "它還深入探討了更高級的 Cloud Cowork 功能，例如 Dispatch，您可以在其中控制"
+  },
+  {
+    "start": 668655,
+    "end": 675168,
+    "text": "Cloud Cowork from your mobile phone, Or also computer use, which allows Claude CoWork",
+    "zh": "Cloud Cowork 透過您的手機，或者也可以使用計算機，這使得 Claude CoWork"
+  },
+  {
+    "start": 675216,
+    "end": 681102,
+    "text": "to access your computer to interact with tools on your machine autonomously.",
+    "zh": "存取您的電腦以自主與電腦上的工具進行互動。"
+  },
+  {
+    "start": 681391,
+    "end": 687502,
+    "text": "This course also dives into the safety concerns that come with using such agents on your",
+    "zh": "本課程也深入探討了在您的裝置上使用此類代理程式所帶來的安全問題。"
+  },
+  {
+    "start": 687502,
+    "end": 687871,
+    "text": "machine.",
+    "zh": "機器。"
+  },
+  {
+    "start": 688384,
+    "end": 690678,
+    "text": "So if you're interested, check the course landing page.",
+    "zh": "因此，如果您有興趣，請查看課程登入頁面。"
+  },
+  {
+    "start": 690951,
+    "end": 694094,
+    "text": "Otherwise, try Claude CoWork and Codex on your own.",
+    "zh": "否則，請自行嘗試 Claude CoWork 和 Codex。"
+  },
+  {
+    "start": 694544,
+    "end": 699259,
+    "text": "As you saw, those are way more than coding agents or coding assistants.",
+    "zh": "正如您所看到的，這些不僅僅是編碼代理或編碼助理。"
+  },
+  {
+    "start": 699681,
+    "end": 702848,
+    "text": "They can help you in lots of different tasks nowadays.",
+    "zh": "如今，他們可以幫助您完成許多不同的任務。"
+  }
+]
