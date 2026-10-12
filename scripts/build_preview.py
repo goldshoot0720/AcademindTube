@@ -18,10 +18,11 @@ import pathlib
 import re
 import sys
 
-from config import DATA, ROOT, SUBS
+from config import DATA, ROOT, SUBS, load_json
 
 PREVIEW = ROOT / "preview"
 TEMPLATE = PREVIEW / "app.template.html"
+TRANSCRIPTS = DATA / "transcripts"
 CJK = re.compile(r"[\u3400-\u4dbf\u4e00-\u9fff\uf900-\ufaff\u3000-\u303f\uff00-\uffef]")
 
 # index / start --> end / body
@@ -76,6 +77,10 @@ def build(window: str) -> dict:
             continue
         cues = parse_srt(srt.read_text(encoding="utf-8"))
         issues = sum(1 for c in cues if not c["en"] or not c["zh"])
+        # Prefer the real audio length (AssemblyAI's audio_duration_s) so the
+        # displayed duration matches YouTube; the last cue's end runs 1-2s short.
+        transcript = load_json(TRANSCRIPTS / f"{video['id']}.json", {}) or {}
+        duration = transcript.get("audio_duration_s") or (cues[-1]["end"] if cues else 0)
         videos.append({
             "id": video["id"],
             "title": video["title"],
@@ -83,7 +88,7 @@ def build(window: str) -> dict:
             "file": srt.name,
             "cueCount": len(cues),
             "issues": issues,
-            "duration": cues[-1]["end"] if cues else 0,
+            "duration": duration,
             "cues": cues,
         })
         flag = f"  ({issues} 筆未翻譯)" if issues else ""
