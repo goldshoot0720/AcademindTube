@@ -1,0 +1,1208 @@
+[
+  {
+    "start": 256,
+    "end": 3690,
+    "text": "Opus 5.5 is really a model from a different world.",
+    "zh": "Opus 5.5 確實是來自異世界的機種。"
+  },
+  {
+    "start": 3867,
+    "end": 4797,
+    "text": "I'm not joking here.",
+    "zh": "我不是開玩笑。"
+  },
+  {
+    "start": 5471,
+    "end": 8793,
+    "text": "We get new models every week and they're always hyped up.",
+    "zh": "我們每週都會推出新型號，而且它們總是大肆宣傳。"
+  },
+  {
+    "start": 9017,
+    "end": 12644,
+    "text": "We get amazing benchmark numbers and it's the same for Opus 5.5, of course.",
+    "zh": "我們得到了驚人的基準數據，當然 Opus 5.5 也是如此。"
+  },
+  {
+    "start": 13270,
+    "end": 17779,
+    "text": "But I've been using this model for the last 2 days and it really lives up to the hype.",
+    "zh": "但過去兩天我一直在使用這個模型，它確實不負眾望。"
+  },
+  {
+    "start": 18228,
+    "end": 20378,
+    "text": "It is mind-blowingly good.",
+    "zh": "這是令人興奮的好。"
+  },
+  {
+    "start": 20892,
+    "end": 26957,
+    "text": "Now, still, there are a couple of things I found and some things also Anthropic published",
+    "zh": "現在，我仍然發現了一些東西，而 Anthropic 也發布了一些東西"
+  },
+  {
+    "start": 27214,
+    "end": 30006,
+    "text": "you should be aware of when using it to get the most out of it.",
+    "zh": "您在使用它時應該注意，以充分利用它。"
+  },
+  {
+    "start": 30423,
+    "end": 37244,
+    "text": "And my first recommendation is to not treat Opus 5.5 like it's a dumb model or it",
+    "zh": "我的第一個建議是不要把 Opus 5.5 當作一個愚蠢的模型，或者它"
+  },
+  {
+    "start": 37404,
+    "end": 41801,
+    "text": "always wants to do less or more than you want it to do, because we all know that from",
+    "zh": "總是想做比你想要做的更少或更多的事情，因為我們都知道從"
+  },
+  {
+    "start": 41994,
+    "end": 42684,
+    "text": "other models.",
+    "zh": "其他型號。"
+  },
+  {
+    "start": 43197,
+    "end": 50146,
+    "text": "For example, the GPT-6 Astra model is really intelligent on paper and it can do amazing",
+    "zh": "例如，GPT-6 Astra 模型在紙面上確實很智能，它可以做出驚人的事情"
+  },
+  {
+    "start": 50259,
+    "end": 50483,
+    "text": "work.",
+    "zh": "工作。"
+  },
+  {
+    "start": 50981,
+    "end": 56164,
+    "text": "But boy, does it like doing stuff that you don't want it to do or stop too early.",
+    "zh": "但是，天哪，這是否喜歡做一些你不希望它做的事情或太早停止。"
+  },
+  {
+    "start": 56983,
+    "end": 57657,
+    "text": "We've all been there.",
+    "zh": "我們都去過那裡。"
+  },
+  {
+    "start": 57962,
+    "end": 59534,
+    "text": "Plenty of models are like this.",
+    "zh": "很多模型都是這樣的。"
+  },
+  {
+    "start": 60031,
+    "end": 62181,
+    "text": "Opus 5.5 truly is different.",
+    "zh": "Opus 5.5 確實與眾不同。"
+  },
+  {
+    "start": 62373,
+    "end": 68405,
+    "text": "Now, it's absolutely possible still that it forgets to do something you want it to do",
+    "zh": "現在，它仍然有可能忘記做你想讓它做的事情"
+  },
+  {
+    "start": 68629,
+    "end": 72656,
+    "text": "or that it does a bit more, but it's so much better than the other models here.",
+    "zh": "或者說它做得更多一點，但它比這裡的其他模型好得多。"
+  },
+  {
+    "start": 73185,
+    "end": 77228,
+    "text": "If I wanted to draw a graph here on how",
+    "zh": "如果我想在這裡畫一個圖表來說明如何"
+  },
+  {
+    "start": 78479,
+    "end": 84302,
+    "text": "consistent it is, I would say Opus 5.5 is somewhere here.",
+    "zh": "這是一致的，我想說 Opus 5.5 就在這裡。"
+  },
+  {
+    "start": 84928,
+    "end": 91704,
+    "text": "It's consistently doing good work, whereas other models often have a way",
+    "zh": "它始終表現良好，而其他模型通常有辦法"
+  },
+  {
+    "start": 91977,
+    "end": 94369,
+    "text": "higher variance, maybe something like this.",
+    "zh": "更高的方差，也許是這樣的。"
+  },
+  {
+    "start": 95108,
+    "end": 98768,
+    "text": "Though actually other models aren't that much smarter than Opus.",
+    "zh": "儘管實際上其他型號並不比 Opus 聰明多少。"
+  },
+  {
+    "start": 99362,
+    "end": 105752,
+    "text": "But yeah, so that would be other models, Opus, but Opus is just amazingly",
+    "zh": "但是，是的，那就是其他型號，Opus，但 Opus 真是令人驚訝"
+  },
+  {
+    "start": 105785,
+    "end": 107840,
+    "text": "consistent in my experience.",
+    "zh": "與我的經驗一致。"
+  },
+  {
+    "start": 108370,
+    "end": 111741,
+    "text": "So that's the first thing you absolutely should know when working with it.",
+    "zh": "所以這是你在使用它時絕對應該知道的第一件事。"
+  },
+  {
+    "start": 112111,
+    "end": 116349,
+    "text": "You don't need to handhold it as much as you do with other models.",
+    "zh": "您不需要像其他型號那樣頻繁地握住它。"
+  },
+  {
+    "start": 116846,
+    "end": 123245,
+    "text": "The second recommendation is that you really want to try using medium",
+    "zh": "第二個建議是你真的想嘗試使用medium"
+  },
+  {
+    "start": 123822,
+    "end": 124415,
+    "text": "thinking effort.",
+    "zh": "思考努力。"
+  },
+  {
+    "start": 124544,
+    "end": 131263,
+    "text": "Now, the great thing about Opus 5.5 is that it goes really far in your subscription usage,",
+    "zh": "現在，Opus 5.5 的偉大之處在於它在您的訂閱使用方面發揮了巨大作用，"
+  },
+  {
+    "start": 131920,
+    "end": 133989,
+    "text": "even on extra high reasoning.",
+    "zh": "即使是在極高的推理上。"
+  },
+  {
+    "start": 134646,
+    "end": 136218,
+    "text": "I have the $200 subscription.",
+    "zh": "我有 200 美元的訂閱。"
+  },
+  {
+    "start": 136266,
+    "end": 137357,
+    "text": "I've been using it a ton.",
+    "zh": "我已經用了很多次了。"
+  },
+  {
+    "start": 137549,
+    "end": 142793,
+    "text": "I have hit the limit at some point, but I've consistently been using X-High.",
+    "zh": "我在某些時候已經達到了極限，但我一直在使用 X-High。"
+  },
+  {
+    "start": 143226,
+    "end": 144927,
+    "text": "To push it to the limit there.",
+    "zh": "將其推向那裡的極限。"
+  },
+  {
+    "start": 145313,
+    "end": 146308,
+    "text": "I actually have 2 subscriptions.",
+    "zh": "我實際上有 2 個訂閱。"
+  },
+  {
+    "start": 146533,
+    "end": 148796,
+    "text": "On one of them, I've consistently used Extra High.",
+    "zh": "在其中之一上，我一直使用 Extra High。"
+  },
+  {
+    "start": 149342,
+    "end": 155169,
+    "text": "On the other subscription, I switch a bit more and I often stick to Medium and that goes",
+    "zh": "在另一個訂閱上，我切換得更多一些，並且經常堅持使用 Medium，這就是"
+  },
+  {
+    "start": 155506,
+    "end": 156454,
+    "text": "even farther then.",
+    "zh": "甚至更遠。"
+  },
+  {
+    "start": 156582,
+    "end": 159375,
+    "text": "So it's a lot of usage, but even with Extra High, it's okay.",
+    "zh": "所以使用次數很多，但即使使用 Extra High，也沒關係。"
+  },
+  {
+    "start": 159937,
+    "end": 165186,
+    "text": "But the official recommendation, and I can confirm this, is that you wanna try starting",
+    "zh": "但官方的建議，我可以確認這一點，是你想嘗試開始"
+  },
+  {
+    "start": 165235,
+    "end": 170179,
+    "text": "with Medium effort to simply go further, to have less usage consumption.",
+    "zh": "中等努力，只是走得更遠，減少使用消耗。"
+  },
+  {
+    "start": 170773,
+    "end": 175751,
+    "text": "And then maybe ramp it up to high or x-high if you're not happy with the results, or",
+    "zh": "如果您對結果不滿意，則可以將其提高到高或x高，或者"
+  },
+  {
+    "start": 175831,
+    "end": 181659,
+    "text": "if you know that you're going to tackle a complex task where you need maximum intelligence.",
+    "zh": "如果您知道您將要處理一項需要最大程度智力的複雜任務。"
+  },
+  {
+    "start": 182237,
+    "end": 186364,
+    "text": "Now, if you look at the official benchmarks which Anthropic published, you can see the",
+    "zh": "現在，如果您查看 Anthropic 發布的官方基準測試，您可以看到"
+  },
+  {
+    "start": 186412,
+    "end": 187038,
+    "text": "reason for this.",
+    "zh": "這樣做的原因。"
+  },
+  {
+    "start": 187713,
+    "end": 194055,
+    "text": "Here on Terminal Bench, you see medium is not that far below high, and high and x-high",
+    "zh": "在終端工作台上，您會看到中位數並不遠低於高值，而高值和超高值則相差不遠"
+  },
+  {
+    "start": 194296,
+    "end": 195645,
+    "text": "are almost on the same level.",
+    "zh": "幾乎處於同一水平。"
+  },
+  {
+    "start": 196046,
+    "end": 202439,
+    "text": "Interestingly enough, on the Frontier code and CursorBench benchmarks here, there even",
+    "zh": "有趣的是，在 Frontier 程式碼和 CursorBench 基準測試中，甚至有"
+  },
+  {
+    "start": 202792,
+    "end": 208639,
+    "text": "is a decline from high to x-high, or it stays pretty much on the same level.",
+    "zh": "是從高點下降到極高點，或幾乎保持在同一水平。"
+  },
+  {
+    "start": 209153,
+    "end": 214630,
+    "text": "So put in other words, x-high instead of high doesn't make a lot of sense.",
+    "zh": "換句話說，x-high 代替 high 沒有多大意義。"
+  },
+  {
+    "start": 215240,
+    "end": 217232,
+    "text": "I did it for testing purposes, as mentioned.",
+    "zh": "如前所述，我這樣做是為了測試目的。"
+  },
+  {
+    "start": 217505,
+    "end": 221601,
+    "text": "But as I also mentioned, if you just use medium, and I've done that on the other account,",
+    "zh": "但正如我也提到的，如果你只使用媒介，而我已經在另一個帳戶上這樣做了，"
+  },
+  {
+    "start": 222002,
+    "end": 225416,
+    "text": "you get pretty great results and there isn't that much of a difference.",
+    "zh": "你會得到非常好的結果，而且沒有太大的差別。"
+  },
+  {
+    "start": 225913,
+    "end": 230177,
+    "text": "Now, kind of related to that, and we can see that here in the benchmarks too, you really",
+    "zh": "現在，與此相關，我們也可以在基準測試中看到，您確實"
+  },
+  {
+    "start": 230177,
+    "end": 236893,
+    "text": "should avoid max and low because the extra intelligence you get out of max is really",
+    "zh": "應該避免最大值和最小值，因為從最大值中獲得的額外智力實際上是"
+  },
+  {
+    "start": 236893,
+    "end": 239506,
+    "text": "not that great, especially compared to high here.",
+    "zh": "不是那麼好，尤其是與這裡的高水準相比。"
+  },
+  {
+    "start": 240180,
+    "end": 243594,
+    "text": "Also on this benchmark, it's even lower, interestingly enough.",
+    "zh": "有趣的是，在這個基準上，它甚至更低。"
+  },
+  {
+    "start": 244347,
+    "end": 245806,
+    "text": "And low is far too dumb.",
+    "zh": "而且低也太愚蠢了。"
+  },
+  {
+    "start": 246127,
+    "end": 252537,
+    "text": "There is a huge gap between medium and low on on all these benchmarks, but the cost increase",
+    "zh": "在所有這些基準上，中低之間存在巨大差距，但成本增加"
+  },
+  {
+    "start": 252537,
+    "end": 255197,
+    "text": "you have on max just doesn't make it worth it.",
+    "zh": "你有最大的只是不值得。"
+  },
+  {
+    "start": 255646,
+    "end": 259636,
+    "text": "Even if you would have a better result, I mean, it's slightly better here, even then",
+    "zh": "即使你會得到更好的結果，我的意思是，即使如此，這裡也稍​​微好一些"
+  },
+  {
+    "start": 259909,
+    "end": 260983,
+    "text": "you're just paying way more.",
+    "zh": "你只是付出了更多。"
+  },
+  {
+    "start": 261335,
+    "end": 264236,
+    "text": "This is log scale here, so you're paying way more.",
+    "zh": "這裡是對數刻度，所以你要付出更多。"
+  },
+  {
+    "start": 264700,
+    "end": 268322,
+    "text": "Therefore, you should avoid max and low.",
+    "zh": "因此，您應該避免 max 和 low。"
+  },
+  {
+    "start": 269027,
+    "end": 275870,
+    "text": "The ideal level really is medium or high or maybe also X-High, but Medium is a good default.",
+    "zh": "理想的等級確實是中或高，或者也可能是極高，但中是一個很好的預設值。"
+  },
+  {
+    "start": 276334,
+    "end": 282359,
+    "text": "Now, when working on tasks with Opus 5.5, the Anthropic team recommends",
+    "zh": "現在，當使用 Opus 5.5 處理任務時，Anthropic 團隊建議"
+  },
+  {
+    "start": 282968,
+    "end": 289024,
+    "text": "clearly describing when a task should be considered done to make sure that Opus doesn't",
+    "zh": "清楚描述任務何時應被視為完成，以確保 Opus 不會"
+  },
+  {
+    "start": 289024,
+    "end": 289553,
+    "text": "stop early.",
+    "zh": "早點停下來。"
+  },
+  {
+    "start": 289793,
+    "end": 294167,
+    "text": "Now, in my experience, I didn't really need to do that, but that is probably also because",
+    "zh": "現在，根據我的經驗，我真的不需要這樣做，但這也可能是因為"
+  },
+  {
+    "start": 294199,
+    "end": 300176,
+    "text": "I have agent skills and I have an agents.md and Claude.md files where I already describe",
+    "zh": "我有代理技能，並且有一個 Agents.md 和 Claude.md 文件，我已經在其中描述了"
+  },
+  {
+    "start": 300208,
+    "end": 306849,
+    "text": "kind of the loop or the self verification, self-validation steps Opus should go through",
+    "zh": "Opus 應該經歷的循環或自我驗證的類型、自我驗證步驟"
+  },
+  {
+    "start": 306881,
+    "end": 309979,
+    "text": "or any AI agent should go through when working on a task.",
+    "zh": "或任何人工智慧代理在執行任務時都應該經歷的過程。"
+  },
+  {
+    "start": 310332,
+    "end": 314474,
+    "text": "So for example, one of the skills I'm using, my implement plan skill, clearly says that",
+    "zh": "例如，我正在使用的技能之一，我的實施計劃技能，清楚地表明了這一點"
+  },
+  {
+    "start": 314474,
+    "end": 317428,
+    "text": "when all tasks are done, it should review the full diff and so on.",
+    "zh": "當所有任務完成後，它應該檢查完整的差異等等。"
+  },
+  {
+    "start": 317861,
+    "end": 322324,
+    "text": "And earlier before that, I already said that verify every task before moving on, run",
+    "zh": "在此之前，我已經說過在繼續之前驗證每項任務，運行"
+  },
+  {
+    "start": 322356,
+    "end": 328327,
+    "text": "the checks, the plane names, and check anything in the UI with a real browser, with agent",
+    "zh": "檢查、飛機名稱，並使用真實的瀏覽器和代理程式檢查 UI 中的任何內容"
+  },
+  {
+    "start": 328359,
+    "end": 328713,
+    "text": "browser.",
+    "zh": "瀏覽器。"
+  },
+  {
+    "start": 328761,
+    "end": 334217,
+    "text": "So I already have some instructions here and I have other skills too where I tell agents",
+    "zh": "所以我已經在這裡得到了一些指示，並且在告訴代理時我也有其他技能"
+  },
+  {
+    "start": 334474,
+    "end": 338498,
+    "text": "that they should verify their work and that this is part of the implementation.",
+    "zh": "他們應該驗證自己的工作，這是實施的一部分。"
+  },
+  {
+    "start": 338562,
+    "end": 340646,
+    "text": "But it is something you should do.",
+    "zh": "但這是你該做的事情。"
+  },
+  {
+    "start": 340870,
+    "end": 345664,
+    "text": "And if you're working on a specific task where it's maybe not clear what the endpoint",
+    "zh": "如果您正在執行一項特定任務，可能不清楚端點是什麼"
+  },
+  {
+    "start": 345760,
+    "end": 349335,
+    "text": "would be, put that in your prompt, put that in your plan.",
+    "zh": "就是，將其放入您的提示中，將其放入您的計劃中。"
+  },
+  {
+    "start": 349623,
+    "end": 351483,
+    "text": "And you don't need to use plan mode for that, by the way.",
+    "zh": "順便說一句，您不需要為此使用計劃模式。"
+  },
+  {
+    "start": 351547,
+    "end": 354818,
+    "text": "Just bring it up in the discussion with Claude before it gets to work.",
+    "zh": "只需在開始工作之前在與 Claude 的討論中提出即可。"
+  },
+  {
+    "start": 355379,
+    "end": 358649,
+    "text": "And it should ensure that Opus keeps on working and keeps on going.",
+    "zh": "它應該確保 Opus 繼續工作並繼續發展。"
+  },
+  {
+    "start": 359146,
+    "end": 365141,
+    "text": "By the way, I also wrote down all these things here in an article on my page for an upcoming",
+    "zh": "順便說一下，我還在我的頁面上的一篇文章中寫下了所有這些內容，以便即將發布"
+  },
+  {
+    "start": 365253,
+    "end": 368476,
+    "text": "2-week program, which may be interesting for you.",
+    "zh": "為期兩週的課程，您可能會感興趣。"
+  },
+  {
+    "start": 368620,
+    "end": 373525,
+    "text": "Enrollments are not open up yet, but you can pre-register without any obligations to",
+    "zh": "報名尚未開放，但您可以預先註冊，無需承擔任何義務"
+  },
+  {
+    "start": 373525,
+    "end": 374807,
+    "text": "be notified when it starts.",
+    "zh": "開始時收到通知。"
+  },
+  {
+    "start": 374872,
+    "end": 381075,
+    "text": "Because in this 2-week program, I will show you how I build real applications end to",
+    "zh": "因為在這個為期兩週的計劃中，我將向您展示我如何建立真正的應用程式"
+  },
+  {
+    "start": 381187,
+    "end": 387263,
+    "text": "end from research, planning, discussions with the AI to the full implementation using",
+    "zh": "從研究、規劃、與人工智慧的討論到使用的全面實施"
+  },
+  {
+    "start": 387375,
+    "end": 392539,
+    "text": "multiple agents, orchestrating agents, making sure sure that agents self-verify their",
+    "zh": "多個代理，協調代理，確保代理自我驗證他們的"
+  },
+  {
+    "start": 392651,
+    "end": 393662,
+    "text": "work and so on.",
+    "zh": "工作等等。"
+  },
+  {
+    "start": 394048,
+    "end": 395011,
+    "text": "It's a 2-week program.",
+    "zh": "這是一個為期兩週的計劃。"
+  },
+  {
+    "start": 395139,
+    "end": 397659,
+    "text": "As mentioned, we build a full app, we deploy it in the end.",
+    "zh": "如前所述，我們建立了一個完整的應用程序，最後部署了它。"
+  },
+  {
+    "start": 398285,
+    "end": 399473,
+    "text": "This may be interesting for you.",
+    "zh": "這對你來說可能很有趣。"
+  },
+  {
+    "start": 399826,
+    "end": 402249,
+    "text": "So of course you find a link below if you want to learn more.",
+    "zh": "因此，如果您想了解更多信息，當然可以找到下面的連結。"
+  },
+  {
+    "start": 402602,
+    "end": 405395,
+    "text": "And below you also find the link to this article I mentioned.",
+    "zh": "您還可以在下面找到我提到的這篇文章的連結。"
+  },
+  {
+    "start": 405973,
+    "end": 410531,
+    "text": "In that article and related to my previous point, I also basically described that you",
+    "zh": "在那篇文章中，與我之前的觀點相關，我也基本上描述了你"
+  },
+  {
+    "start": 410563,
+    "end": 411366,
+    "text": "want to build a loop.",
+    "zh": "想要建立一個循環。"
+  },
+  {
+    "start": 411430,
+    "end": 416823,
+    "text": "And here I'm not talking about the loop engineering or software factory hype, But about",
+    "zh": "在這裡我不是說循環工程或軟體工廠炒作，而是關於"
+  },
+  {
+    "start": 416823,
+    "end": 418654,
+    "text": "something which of course is kind of related.",
+    "zh": "當然有某種相關的東西。"
+  },
+  {
+    "start": 419056,
+    "end": 425304,
+    "text": "No matter which agent you're working with, you want to always tell them that they should",
+    "zh": "無論您與哪個代理商合作，您都希望始終告訴他們應該"
+  },
+  {
+    "start": 425336,
+    "end": 428693,
+    "text": "verify their own work and you should make sure that they can verify it.",
+    "zh": "驗證他們自己的工作，你應該確保他們可以驗證它。"
+  },
+  {
+    "start": 429014,
+    "end": 434812,
+    "text": "Unit tests are the bare minimum, so to say, but often you can also have them run integration",
+    "zh": "可以這麼說，單元測試是最低限度的，但通常您也可以讓它們運行集成"
+  },
+  {
+    "start": 434812,
+    "end": 439519,
+    "text": "tests, but also simply drive a browser manually, have them drive a browser manually,",
+    "zh": "測試，但也只是手動驅動瀏覽器，讓他們手動驅動瀏覽器，"
+  },
+  {
+    "start": 439856,
+    "end": 445375,
+    "text": "instruct your model to verify verify the work it did, your agent, I mean.",
+    "zh": "我的意思是，指示你的模型驗證它所做的工作，你的代理。"
+  },
+  {
+    "start": 445872,
+    "end": 448677,
+    "text": "And that can look different depending on what you're working.",
+    "zh": "根據您的工作內容，情況可能會有所不同。"
+  },
+  {
+    "start": 448774,
+    "end": 453198,
+    "text": "If you're working on a website, you want to instruct it, as I did in my skill here, that",
+    "zh": "如果你在一個網站上工作，你想指導它，就像我在這裡所做的那樣，"
+  },
+  {
+    "start": 453198,
+    "end": 458696,
+    "text": "it should take a look at the UI using Agent Browser in my case here, or any other browser",
+    "zh": "在我的例子中，應該使用代理瀏覽器或任何其他瀏覽器來查看 UI"
+  },
+  {
+    "start": 458696,
+    "end": 459690,
+    "text": "tool you may have installed.",
+    "zh": "您可能已經安裝的工具。"
+  },
+  {
+    "start": 460139,
+    "end": 466968,
+    "text": "So give your agent, give Opus clear instructions to validate its work and tell it, that's",
+    "zh": "所以給你的代理，給 Opus 明確的指示來驗證它的工作並告訴它，那就是"
+  },
+  {
+    "start": 466968,
+    "end": 470270,
+    "text": "the important part, tell it how to validate that work.",
+    "zh": "重要的部分是告訴它如何驗證該工作。"
+  },
+  {
+    "start": 470671,
+    "end": 473075,
+    "text": "So don't let it guess, don't be vague.",
+    "zh": "所以不要讓它猜測，不要含糊其辭。"
+  },
+  {
+    "start": 473123,
+    "end": 474566,
+    "text": "I mean, that's in general a good idea.",
+    "zh": "我的意思是，這總的來說是個好主意。"
+  },
+  {
+    "start": 474887,
+    "end": 477274,
+    "text": "Don't be vague when prompting your agents.",
+    "zh": "提示您的代理商時不要含糊其辭。"
+  },
+  {
+    "start": 477787,
+    "end": 483171,
+    "text": "Now, when doing any kind of frontend web development work or any other work that involves",
+    "zh": "現在，在進行任何類型的前端 Web 開發工作或任何其他涉及的工作時"
+  },
+  {
+    "start": 483171,
+    "end": 488059,
+    "text": "styling, that includes the creation of presentations, for example, of course, clearly",
+    "zh": "樣式，包括簡報的創建，例如，當然，顯然"
+  },
+  {
+    "start": 488059,
+    "end": 492450,
+    "text": "specify which styles you don't want or you want.",
+    "zh": "指定您不想要或想要哪些樣式。"
+  },
+  {
+    "start": 493011,
+    "end": 493972,
+    "text": "Don't be vague there.",
+    "zh": "那裡不要含糊。"
+  },
+  {
+    "start": 494196,
+    "end": 496552,
+    "text": "Again, being vague, always a bad idea.",
+    "zh": "再說一次，含糊其辭總是個壞主意。"
+  },
+  {
+    "start": 497081,
+    "end": 499693,
+    "text": "Don't say, don't use a generic style.",
+    "zh": "不要說，不要使用通用樣式。"
+  },
+  {
+    "start": 500366,
+    "end": 502918,
+    "text": "Instead, clearly specify what you don't want.",
+    "zh": "相反，明確指出你不想要什麼。"
+  },
+  {
+    "start": 503175,
+    "end": 509465,
+    "text": "No purple gradients, no eyebrows above the titles and so on, these little extra",
+    "zh": "沒有紫色漸變，標題上方沒有眉毛等等，這些額外的東西"
+  },
+  {
+    "start": 509465,
+    "end": 511182,
+    "text": "subtitles agents love to add.",
+    "zh": "字幕代理喜歡添加。"
+  },
+  {
+    "start": 511599,
+    "end": 515723,
+    "text": "Be specific about what you don't want and/or what you want.",
+    "zh": "具體說明您不想要什麼和/或您想要什麼。"
+  },
+  {
+    "start": 516189,
+    "end": 522608,
+    "text": "Again, it's basically the same for all those agents, but Opus 5.5, this model, is really",
+    "zh": "再說一遍，所有這些代理基本上都是一樣的，但 Opus 5.5 這個模型確實是"
+  },
+  {
+    "start": 522672,
+    "end": 526892,
+    "text": "good at following these instructions and some other models are a bit more...",
+    "zh": "善於遵循這些說明，而其他一些型號則更多......"
+  },
+  {
+    "start": 527566,
+    "end": 529360,
+    "text": "Flexible regarding that, to put it like this.",
+    "zh": "靈活一點，可以這麼說。"
+  },
+  {
+    "start": 529585,
+    "end": 534680,
+    "text": "So take advantage of the fact that Opus 5.5 is good at following instructions.",
+    "zh": "因此，請利用 Opus 5.5 擅長遵循指示的事實。"
+  },
+  {
+    "start": 535113,
+    "end": 536651,
+    "text": "This next point is an interesting one.",
+    "zh": "下一點很有趣。"
+  },
+  {
+    "start": 537180,
+    "end": 542837,
+    "text": "Not just for Opus 5.5, but again, because it does so well at following instructions and",
+    "zh": "不僅適用於 Opus 5.5，而且還因為它在遵循說明和操作方面做得非常好"
+  },
+  {
+    "start": 542885,
+    "end": 547308,
+    "text": "because it does so well at orchestrating other agents, encourage it to do so.",
+    "zh": "因為它在協調其他代理方面做得很好，所以鼓勵它這樣做。"
+  },
+  {
+    "start": 547708,
+    "end": 553285,
+    "text": "Now, chances are high that if you're using Opus through Claude Code, it will use subagents",
+    "zh": "現在，如果您透過 Claude Code 使用 Opus，它很可能會使用子代理"
+  },
+  {
+    "start": 553365,
+    "end": 553717,
+    "text": "on its own.",
+    "zh": "靠它自己。"
+  },
+  {
+    "start": 553942,
+    "end": 555722,
+    "text": "But it doesn't hurt to tell it.",
+    "zh": "但說出來也沒什麼不好。"
+  },
+  {
+    "start": 555770,
+    "end": 561160,
+    "text": "Again, in my implement plan skill, which is basically getting activated whenever we settled",
+    "zh": "再說一次，在我的實施計劃技能中，每當我們安定下來時，它基本上就會被激活"
+  },
+  {
+    "start": 561160,
+    "end": 565202,
+    "text": "on a plan that should now be implemented, and it's one of many skills, in that skill,",
+    "zh": "制定一個現在應該實施的計劃，這是眾多技能之一，在該技能中，"
+  },
+  {
+    "start": 565411,
+    "end": 572052,
+    "text": "I tell it to outsource a task to subagents when working on more complex tasks or parallel",
+    "zh": "我告訴它在處理更複雜的任務或並行任務時將任務外包給子代理"
+  },
+  {
+    "start": 572068,
+    "end": 572356,
+    "text": "tasks.",
+    "zh": "任務。"
+  },
+  {
+    "start": 573030,
+    "end": 574105,
+    "text": "And that's missing an S here.",
+    "zh": "這裡缺一個S。"
+  },
+  {
+    "start": 574570,
+    "end": 581179,
+    "text": "So I'm telling it to do that, not because it needs to and it wouldn't do it otherwise,",
+    "zh": "所以我告訴它要這樣做，不是因為它需要這樣做，否則它不會這樣做，"
+  },
+  {
+    "start": 581612,
+    "end": 584787,
+    "text": "But because it increases the chance of it doing it.",
+    "zh": "但因為它增加了這樣做的機會。"
+  },
+  {
+    "start": 584883,
+    "end": 587913,
+    "text": "And of course, also because that skill is getting used for other models too.",
+    "zh": "當然，也是因為該技能也被用於其他模型。"
+  },
+  {
+    "start": 588330,
+    "end": 592483,
+    "text": "But Opus 5.5 is really good at orchestrating.",
+    "zh": "但 Opus 5.5 確實擅長編排。"
+  },
+  {
+    "start": 592900,
+    "end": 595016,
+    "text": "And it's not just the built-in subagents feature.",
+    "zh": "這不僅僅是內建的子代理功能。"
+  },
+  {
+    "start": 595145,
+    "end": 601911,
+    "text": "What I also like to do is have a main orchestration agent, one Claude Code",
+    "zh": "我還喜歡做的是有一個主要的編排代理，一個 Claude Code"
+  },
+  {
+    "start": 601911,
+    "end": 607603,
+    "text": "session, which I have on my machine or some remote machine, which can access other agents.",
+    "zh": "會話，我在我的機器或某些遠端機器上有它，它可以存取其他代理。"
+  },
+  {
+    "start": 607667,
+    "end": 609607,
+    "text": "And Herder is really amazing here.",
+    "zh": "赫爾德在這裡真的很棒。"
+  },
+  {
+    "start": 610217,
+    "end": 611694,
+    "text": "Here's what I'm talking about.",
+    "zh": "這就是我要說的。"
+  },
+  {
+    "start": 611758,
+    "end": 614872,
+    "text": "I have one agent's session here in Herder.",
+    "zh": "我在赫爾德有一位特工的會議。"
+  },
+  {
+    "start": 614952,
+    "end": 619334,
+    "text": "I mean, I have all my agent sessions here, but I have one agent's session, which is a",
+    "zh": "我的意思是，我的所有代理會話都在這裡，但我有一個代理會話，這是一個"
+  },
+  {
+    "start": 619382,
+    "end": 623684,
+    "text": "Claude Code session, which is in a project where I keep track of an index of all the",
+    "zh": "克勞德代碼會話，這是在一個項目中，我在其中跟踪所有"
+  },
+  {
+    "start": 623700,
+    "end": 625690,
+    "text": "agents working across multiple machines.",
+    "zh": "跨多台機器工作的代理。"
+  },
+  {
+    "start": 626204,
+    "end": 633090,
+    "text": "And then I can ask this agent here to instruct other agents to",
+    "zh": "然後我可以請這位特工指示其他特工"
+  },
+  {
+    "start": 633090,
+    "end": 635433,
+    "text": "do other stuff or to check in on other agents.",
+    "zh": "做其他事情或檢查其他代理。"
+  },
+  {
+    "start": 635658,
+    "end": 637295,
+    "text": "This is not the only way of me working.",
+    "zh": "這不是我工作的唯一方式。"
+  },
+  {
+    "start": 637359,
+    "end": 642591,
+    "text": "I do dive into those other sessions too, but this is a nice way of orchestrating multiple",
+    "zh": "我也深入研究了其他會議，但這是編排多個會議的好方法"
+  },
+  {
+    "start": 642639,
+    "end": 646953,
+    "text": "agents that maybe need to work in parallel, or if I lost track of what some agent was",
+    "zh": "可能需要並行工作的代理，或者如果我不知道某個代理是什麼"
+  },
+  {
+    "start": 647065,
+    "end": 647338,
+    "text": "doing.",
+    "zh": "正在做。"
+  },
+  {
+    "start": 647787,
+    "end": 652085,
+    "text": "And that works really well for me because Opus is so good at orchestrating.",
+    "zh": "這對我來說非常有效，因為 Opus 非常擅長編排。"
+  },
+  {
+    "start": 652133,
+    "end": 653881,
+    "text": "So that is something for you to consider.",
+    "zh": "所以這是你需要考慮的事情。"
+  },
+  {
+    "start": 654266,
+    "end": 659173,
+    "text": "Actively encourage it to do that, to create those subagents and to orchestrate.",
+    "zh": "積極鼓勵它這樣做，創建這些子代理並進行協調。"
+  },
+  {
+    "start": 659879,
+    "end": 665492,
+    "text": "And my last tip or recommendation is give it complex work.",
+    "zh": "我的最後一個建議或建議是給它複雜的工作。"
+  },
+  {
+    "start": 665828,
+    "end": 666438,
+    "text": "It can do it.",
+    "zh": "它可以做到。"
+  },
+  {
+    "start": 667160,
+    "end": 674138,
+    "text": "Big mistake I see from many developers is that you try to micromanage those",
+    "zh": "我從許多開發人員那裡看到的一個大錯誤是，你試圖對這些進行微觀管理"
+  },
+  {
+    "start": 674171,
+    "end": 674507,
+    "text": "agents.",
+    "zh": "代理。"
+  },
+  {
+    "start": 674812,
+    "end": 679529,
+    "text": "And that was necessary a year ago, or for some models, even a few months ago.",
+    "zh": "一年前，或對於某些模型，甚至幾個月前，這是必要的。"
+  },
+  {
+    "start": 680107,
+    "end": 684374,
+    "text": "For some models like GPT-6 Astra, it still is kind of necessary.",
+    "zh": "對於像 GPT-6 Astra 這樣的一些型號，它仍然是必要的。"
+  },
+  {
+    "start": 684438,
+    "end": 689059,
+    "text": "You can give it big tasks, but you really need to give it some guardrails and instructions",
+    "zh": "你可以給它很大的任務，但你確實需要給它一些護欄和指示"
+  },
+  {
+    "start": 689075,
+    "end": 691594,
+    "text": "to make sure it sticks to that task and so on.",
+    "zh": "確保它堅持該任務等等。"
+  },
+  {
+    "start": 691642,
+    "end": 692829,
+    "text": "And it's a bit difficult to wield.",
+    "zh": "而且操作起來有點困難。"
+  },
+  {
+    "start": 693102,
+    "end": 699418,
+    "text": "But with Opus 5.5, my experience is that it just is really amazing at big tasks.",
+    "zh": "但對於 Opus 5.5，我的經驗是它在完成大型任務時確實令人驚嘆。"
+  },
+  {
+    "start": 699738,
+    "end": 705333,
+    "text": "I had it migrate an entire project, an entire website from one tech stack to another.",
+    "zh": "我讓它將整個專案、整個網站從一個技術堆疊遷移到另一個技術堆疊。"
+  },
+  {
+    "start": 705429,
+    "end": 708875,
+    "text": "And I'm not talking about a static site with 3 pages here.",
+    "zh": "我這裡討論的不是 3 個頁面的靜態網站。"
+  },
+  {
+    "start": 709276,
+    "end": 710863,
+    "text": "It just kept on working.",
+    "zh": "它只是繼續工作。"
+  },
+  {
+    "start": 711120,
+    "end": 716105,
+    "text": "I migrated an entire library to use Effect, which is an amazing TypeScript library I",
+    "zh": "我遷移了整個庫來使用 Effect，這是一個令人驚嘆的 TypeScript 庫"
+  },
+  {
+    "start": 716105,
+    "end": 717852,
+    "text": "talked about in another video on this channel.",
+    "zh": "在該頻道的另一個視頻中談到過。"
+  },
+  {
+    "start": 718269,
+    "end": 720994,
+    "text": "And it kept on working for hours and worked its way through it.",
+    "zh": "它持續工作了幾個小時並完成了它。"
+  },
+  {
+    "start": 721074,
+    "end": 723126,
+    "text": "And I have a beautiful, great result.",
+    "zh": "我得到了一個美麗而偉大的結果。"
+  },
+  {
+    "start": 723703,
+    "end": 725532,
+    "text": "Obviously with Concreto, Great prompts.",
+    "zh": "顯然，使用 Concreto，提示很棒。"
+  },
+  {
+    "start": 725580,
+    "end": 728728,
+    "text": "So planning, discussions, that's all important.",
+    "zh": "所以計劃、討論，這都很重要。"
+  },
+  {
+    "start": 728777,
+    "end": 730977,
+    "text": "I'm not talking about vague prompts here.",
+    "zh": "我不是在這裡談論模糊的提示。"
+  },
+  {
+    "start": 731507,
+    "end": 737017,
+    "text": "But once you did that work, once you made sure that you're on the same page, once you",
+    "zh": "但是一旦你完成了這項工作，一旦你確保你們在同一頁上，一旦你"
+  },
+  {
+    "start": 737033,
+    "end": 742430,
+    "text": "have a clear plan, and not just you, but the model has it too, give it complex tasks.",
+    "zh": "有一個清晰的計劃，不只是你，模型也有，給它複雜的任務。"
+  },
+  {
+    "start": 742735,
+    "end": 746782,
+    "text": "Make it clear, as I explained, when that task is complete.",
+    "zh": "正如我所解釋的，要明確指出任務何時完成。"
+  },
+  {
+    "start": 747152,
+    "end": 750316,
+    "text": "Make it clear which checks it should perform.",
+    "zh": "明確應執行哪些檢查。"
+  },
+  {
+    "start": 750686,
+    "end": 753127,
+    "text": "Also maybe specify which pitfalls exist.",
+    "zh": "也可以指定存在哪些陷阱。"
+  },
+  {
+    "start": 753496,
+    "end": 755230,
+    "text": "Or what it should watch out for.",
+    "zh": "或者說應該注意什麼。"
+  },
+  {
+    "start": 755920,
+    "end": 758311,
+    "text": "But then give it complex tasks.",
+    "zh": "但然後給它複雜的任務。"
+  },
+  {
+    "start": 758648,
+    "end": 764154,
+    "text": "Don't prompt on small tasks or don't just work on small tasks.",
+    "zh": "不要提示小任務，或不要只處理小任務。"
+  },
+  {
+    "start": 764571,
+    "end": 765438,
+    "text": "Be ambitious.",
+    "zh": "要有雄心壯志。"
+  },
+  {
+    "start": 765566,
+    "end": 766224,
+    "text": "It can do it.",
+    "zh": "它可以做到。"
+  },
+  {
+    "start": 766272,
+    "end": 771232,
+    "text": "This is really a model that can reliably work through complex big tasks.",
+    "zh": "這確實是一個可以可靠地完成複雜大任務的模型。"
+  },
+  {
+    "start": 771665,
+    "end": 773575,
+    "text": "Take advantage of that.",
+    "zh": "利用這一點。"
+  },
+  {
+    "start": 773735,
+    "end": 777652,
+    "text": "Give it complex tasks and have it do complex work.",
+    "zh": "給它複雜的任務並讓它做複雜的工作。"
+  },
+  {
+    "start": 778053,
+    "end": 779834,
+    "text": "These are my experiences with that model.",
+    "zh": "這些是我對該模型的體驗。"
+  },
+  {
+    "start": 780075,
+    "end": 784281,
+    "text": "Obviously, it's just been 2 days, but I've been I've totally been blown away, and I would",
+    "zh": "顯然，才過了兩天，但我已經完全被震撼了，我會"
+  },
+  {
+    "start": 784281,
+    "end": 788647,
+    "text": "recommend using this model in general and using it like this specifically.",
+    "zh": "建議一般情況下使用此模型，並具體使用此模型。"
+  }
+]

@@ -1,0 +1,11200 @@
+{
+  "id": "51Eb4EtGqrI",
+  "title": "Stop treating Opus 5.5 like the other AI models",
+  "text": "Opus 5.5 is really a model from a different world. I'm not joking here. We get new models every week and they're always hyped up. We get amazing benchmark numbers and it's the same for Opus 5.5, of course. But I've been using this model for the last 2 days and it really lives up to the hype. It is mind-blowingly good. Now, still, there are a couple of things I found and some things also Anthropic published you should be aware of when using it to get the most out of it. And my first recommendation is to not treat Opus 5.5 like it's a dumb model or it always wants to do less or more than you want it to do, because we all know that from other models. For example, the GPT-6 Astra model is really intelligent on paper and it can do amazing work. But boy, does it like doing stuff that you don't want it to do or stop too early. We've all been there. Plenty of models are like this. Opus 5.5 truly is different. Now, it's absolutely possible still that it forgets to do something you want it to do or that it does a bit more, but it's so much better than the other models here. If I wanted to draw a graph here on how consistent it is, I would say Opus 5.5 is somewhere here. It's consistently doing good work, whereas other models often have a way higher variance, maybe something like this. Though actually other models aren't that much smarter than Opus. But yeah, so that would be other models, Opus, but Opus is just amazingly consistent in my experience. So that's the first thing you absolutely should know when working with it. You don't need to handhold it as much as you do with other models. The second recommendation is that you really want to try using medium thinking effort. Now, the great thing about Opus 5.5 is that it goes really far in your subscription usage, even on extra high reasoning. I have the $200 subscription. I've been using it a ton. I have hit the limit at some point, but I've consistently been using X-High. To push it to the limit there. I actually have 2 subscriptions. On one of them, I've consistently used Extra High. On the other subscription, I switch a bit more and I often stick to Medium and that goes even farther then. So it's a lot of usage, but even with Extra High, it's okay. But the official recommendation, and I can confirm this, is that you wanna try starting with Medium effort to simply go further, to have less usage consumption. And then maybe ramp it up to high or x-high if you're not happy with the results, or if you know that you're going to tackle a complex task where you need maximum intelligence. Now, if you look at the official benchmarks which Anthropic published, you can see the reason for this. Here on Terminal Bench, you see medium is not that far below high, and high and x-high are almost on the same level. Interestingly enough, on the Frontier code and CursorBench benchmarks here, there even is a decline from high to x-high, or it stays pretty much on the same level. So put in other words, x-high instead of high doesn't make a lot of sense. I did it for testing purposes, as mentioned. But as I also mentioned, if you just use medium, and I've done that on the other account, you get pretty great results and there isn't that much of a difference. Now, kind of related to that, and we can see that here in the benchmarks too, you really should avoid max and low because the extra intelligence you get out of max is really not that great, especially compared to high here. Also on this benchmark, it's even lower, interestingly enough. And low is far too dumb. There is a huge gap between medium and low on on all these benchmarks, but the cost increase you have on max just doesn't make it worth it. Even if you would have a better result, I mean, it's slightly better here, even then you're just paying way more. This is log scale here, so you're paying way more. Therefore, you should avoid max and low. The ideal level really is medium or high or maybe also X-High, but Medium is a good default. Now, when working on tasks with Opus 5.5, the Anthropic team recommends clearly describing when a task should be considered done to make sure that Opus doesn't stop early. Now, in my experience, I didn't really need to do that, but that is probably also because I have agent skills and I have an agents.md and Claude.md files where I already describe kind of the loop or the self verification, self-validation steps Opus should go through or any AI agent should go through when working on a task. So for example, one of the skills I'm using, my implement plan skill, clearly says that when all tasks are done, it should review the full diff and so on. And earlier before that, I already said that verify every task before moving on, run the checks, the plane names, and check anything in the UI with a real browser, with agent browser. So I already have some instructions here and I have other skills too where I tell agents that they should verify their work and that this is part of the implementation. But it is something you should do. And if you're working on a specific task where it's maybe not clear what the endpoint would be, put that in your prompt, put that in your plan. And you don't need to use plan mode for that, by the way. Just bring it up in the discussion with Claude before it gets to work. And it should ensure that Opus keeps on working and keeps on going. By the way, I also wrote down all these things here in an article on my page for an upcoming 2-week program, which may be interesting for you. Enrollments are not open up yet, but you can pre-register without any obligations to be notified when it starts. Because in this 2-week program, I will show you how I build real applications end to end from research, planning, discussions with the AI to the full implementation using multiple agents, orchestrating agents, making sure sure that agents self-verify their work and so on. It's a 2-week program. As mentioned, we build a full app, we deploy it in the end. This may be interesting for you. So of course you find a link below if you want to learn more. And below you also find the link to this article I mentioned. In that article and related to my previous point, I also basically described that you want to build a loop. And here I'm not talking about the loop engineering or software factory hype, But about something which of course is kind of related. No matter which agent you're working with, you want to always tell them that they should verify their own work and you should make sure that they can verify it. Unit tests are the bare minimum, so to say, but often you can also have them run integration tests, but also simply drive a browser manually, have them drive a browser manually, instruct your model to verify verify the work it did, your agent, I mean. And that can look different depending on what you're working. If you're working on a website, you want to instruct it, as I did in my skill here, that it should take a look at the UI using Agent Browser in my case here, or any other browser tool you may have installed. So give your agent, give Opus clear instructions to validate its work and tell it, that's the important part, tell it how to validate that work. So don't let it guess, don't be vague. I mean, that's in general a good idea. Don't be vague when prompting your agents. Now, when doing any kind of frontend web development work or any other work that involves styling, that includes the creation of presentations, for example, of course, clearly specify which styles you don't want or you want. Don't be vague there. Again, being vague, always a bad idea. Don't say, don't use a generic style. Instead, clearly specify what you don't want. No purple gradients, no eyebrows above the titles and so on, these little extra subtitles agents love to add. Be specific about what you don't want and/or what you want. Again, it's basically the same for all those agents, but Opus 5.5, this model, is really good at following these instructions and some other models are a bit more... Flexible regarding that, to put it like this. So take advantage of the fact that Opus 5.5 is good at following instructions. This next point is an interesting one. Not just for Opus 5.5, but again, because it does so well at following instructions and because it does so well at orchestrating other agents, encourage it to do so. Now, chances are high that if you're using Opus through Claude Code, it will use subagents on its own. But it doesn't hurt to tell it. Again, in my implement plan skill, which is basically getting activated whenever we settled on a plan that should now be implemented, and it's one of many skills, in that skill, I tell it to outsource a task to subagents when working on more complex tasks or parallel tasks. And that's missing an S here. So I'm telling it to do that, not because it needs to and it wouldn't do it otherwise, But because it increases the chance of it doing it. And of course, also because that skill is getting used for other models too. But Opus 5.5 is really good at orchestrating. And it's not just the built-in subagents feature. What I also like to do is have a main orchestration agent, one Claude Code session, which I have on my machine or some remote machine, which can access other agents. And Herder is really amazing here. Here's what I'm talking about. I have one agent's session here in Herder. I mean, I have all my agent sessions here, but I have one agent's session, which is a Claude Code session, which is in a project where I keep track of an index of all the agents working across multiple machines. And then I can ask this agent here to instruct other agents to do other stuff or to check in on other agents. This is not the only way of me working. I do dive into those other sessions too, but this is a nice way of orchestrating multiple agents that maybe need to work in parallel, or if I lost track of what some agent was doing. And that works really well for me because Opus is so good at orchestrating. So that is something for you to consider. Actively encourage it to do that, to create those subagents and to orchestrate. And my last tip or recommendation is give it complex work. It can do it. Big mistake I see from many developers is that you try to micromanage those agents. And that was necessary a year ago, or for some models, even a few months ago. For some models like GPT-6 Astra, it still is kind of necessary. You can give it big tasks, but you really need to give it some guardrails and instructions to make sure it sticks to that task and so on. And it's a bit difficult to wield. But with Opus 5.5, my experience is that it just is really amazing at big tasks. I had it migrate an entire project, an entire website from one tech stack to another. And I'm not talking about a static site with 3 pages here. It just kept on working. I migrated an entire library to use Effect, which is an amazing TypeScript library I talked about in another video on this channel. And it kept on working for hours and worked its way through it. And I have a beautiful, great result. Obviously with Concreto, Great prompts. So planning, discussions, that's all important. I'm not talking about vague prompts here. But once you did that work, once you made sure that you're on the same page, once you have a clear plan, and not just you, but the model has it too, give it complex tasks. Make it clear, as I explained, when that task is complete. Make it clear which checks it should perform. Also maybe specify which pitfalls exist. Or what it should watch out for. But then give it complex tasks. Don't prompt on small tasks or don't just work on small tasks. Be ambitious. It can do it. This is really a model that can reliably work through complex big tasks. Take advantage of that. Give it complex tasks and have it do complex work. These are my experiences with that model. Obviously, it's just been 2 days, but I've been I've totally been blown away, and I would recommend using this model in general and using it like this specifically.",
+  "language_code": "en_us",
+  "audio_duration_s": 790,
+  "utterances": [],
+  "words": [
+    {
+      "start": 256,
+      "end": 577,
+      "text": "Opus"
+    },
+    {
+      "start": 593,
+      "end": 1283,
+      "text": "5.5"
+    },
+    {
+      "start": 1476,
+      "end": 1604,
+      "text": "is"
+    },
+    {
+      "start": 2102,
+      "end": 2406,
+      "text": "really"
+    },
+    {
+      "start": 2679,
+      "end": 2695,
+      "text": "a"
+    },
+    {
+      "start": 2695,
+      "end": 3000,
+      "text": "model"
+    },
+    {
+      "start": 3000,
+      "end": 3145,
+      "text": "from"
+    },
+    {
+      "start": 3161,
+      "end": 3177,
+      "text": "a"
+    },
+    {
+      "start": 3177,
+      "end": 3562,
+      "text": "different"
+    },
+    {
+      "start": 3562,
+      "end": 3690,
+      "text": "world."
+    },
+    {
+      "start": 3867,
+      "end": 3963,
+      "text": "I'm"
+    },
+    {
+      "start": 3963,
+      "end": 4155,
+      "text": "not"
+    },
+    {
+      "start": 4204,
+      "end": 4573,
+      "text": "joking"
+    },
+    {
+      "start": 4605,
+      "end": 4797,
+      "text": "here."
+    },
+    {
+      "start": 5471,
+      "end": 5551,
+      "text": "We"
+    },
+    {
+      "start": 5568,
+      "end": 5792,
+      "text": "get"
+    },
+    {
+      "start": 5792,
+      "end": 5921,
+      "text": "new"
+    },
+    {
+      "start": 5953,
+      "end": 6418,
+      "text": "models"
+    },
+    {
+      "start": 6996,
+      "end": 7172,
+      "text": "every"
+    },
+    {
+      "start": 7236,
+      "end": 7477,
+      "text": "week"
+    },
+    {
+      "start": 7894,
+      "end": 7958,
+      "text": "and"
+    },
+    {
+      "start": 7974,
+      "end": 8119,
+      "text": "they're"
+    },
+    {
+      "start": 8135,
+      "end": 8424,
+      "text": "always"
+    },
+    {
+      "start": 8456,
+      "end": 8761,
+      "text": "hyped"
+    },
+    {
+      "start": 8761,
+      "end": 8793,
+      "text": "up."
+    },
+    {
+      "start": 9017,
+      "end": 9082,
+      "text": "We"
+    },
+    {
+      "start": 9098,
+      "end": 9258,
+      "text": "get"
+    },
+    {
+      "start": 9258,
+      "end": 9627,
+      "text": "amazing"
+    },
+    {
+      "start": 9659,
+      "end": 9980,
+      "text": "benchmark"
+    },
+    {
+      "start": 9980,
+      "end": 10301,
+      "text": "numbers"
+    },
+    {
+      "start": 10301,
+      "end": 10397,
+      "text": "and"
+    },
+    {
+      "start": 10446,
+      "end": 10606,
+      "text": "it's"
+    },
+    {
+      "start": 10606,
+      "end": 10638,
+      "text": "the"
+    },
+    {
+      "start": 10638,
+      "end": 10895,
+      "text": "same"
+    },
+    {
+      "start": 11023,
+      "end": 11200,
+      "text": "for"
+    },
+    {
+      "start": 11521,
+      "end": 11809,
+      "text": "Opus"
+    },
+    {
+      "start": 11809,
+      "end": 12082,
+      "text": "5.5,"
+    },
+    {
+      "start": 12162,
+      "end": 12403,
+      "text": "of"
+    },
+    {
+      "start": 12451,
+      "end": 12644,
+      "text": "course."
+    },
+    {
+      "start": 13270,
+      "end": 13350,
+      "text": "But"
+    },
+    {
+      "start": 13350,
+      "end": 13494,
+      "text": "I've"
+    },
+    {
+      "start": 13494,
+      "end": 13558,
+      "text": "been"
+    },
+    {
+      "start": 13655,
+      "end": 13879,
+      "text": "using"
+    },
+    {
+      "start": 13911,
+      "end": 14072,
+      "text": "this"
+    },
+    {
+      "start": 14072,
+      "end": 14473,
+      "text": "model"
+    },
+    {
+      "start": 14714,
+      "end": 14826,
+      "text": "for"
+    },
+    {
+      "start": 14826,
+      "end": 14890,
+      "text": "the"
+    },
+    {
+      "start": 14890,
+      "end": 15452,
+      "text": "last"
+    },
+    {
+      "start": 15612,
+      "end": 15757,
+      "text": "2"
+    },
+    {
+      "start": 15757,
+      "end": 16046,
+      "text": "days"
+    },
+    {
+      "start": 16559,
+      "end": 16623,
+      "text": "and"
+    },
+    {
+      "start": 16655,
+      "end": 16768,
+      "text": "it"
+    },
+    {
+      "start": 16864,
+      "end": 17089,
+      "text": "really"
+    },
+    {
+      "start": 17121,
+      "end": 17361,
+      "text": "lives"
+    },
+    {
+      "start": 17361,
+      "end": 17522,
+      "text": "up"
+    },
+    {
+      "start": 17522,
+      "end": 17602,
+      "text": "to"
+    },
+    {
+      "start": 17602,
+      "end": 17666,
+      "text": "the"
+    },
+    {
+      "start": 17666,
+      "end": 17779,
+      "text": "hype."
+    },
+    {
+      "start": 18228,
+      "end": 18372,
+      "text": "It"
+    },
+    {
+      "start": 18549,
+      "end": 18693,
+      "text": "is"
+    },
+    {
+      "start": 19447,
+      "end": 20218,
+      "text": "mind-blowingly"
+    },
+    {
+      "start": 20234,
+      "end": 20378,
+      "text": "good."
+    },
+    {
+      "start": 20892,
+      "end": 20988,
+      "text": "Now,"
+    },
+    {
+      "start": 21229,
+      "end": 21501,
+      "text": "still,"
+    },
+    {
+      "start": 22095,
+      "end": 22207,
+      "text": "there"
+    },
+    {
+      "start": 22255,
+      "end": 22400,
+      "text": "are"
+    },
+    {
+      "start": 22400,
+      "end": 22416,
+      "text": "a"
+    },
+    {
+      "start": 22480,
+      "end": 22689,
+      "text": "couple"
+    },
+    {
+      "start": 22721,
+      "end": 22785,
+      "text": "of"
+    },
+    {
+      "start": 22897,
+      "end": 23106,
+      "text": "things"
+    },
+    {
+      "start": 23844,
+      "end": 23892,
+      "text": "I"
+    },
+    {
+      "start": 23940,
+      "end": 24293,
+      "text": "found"
+    },
+    {
+      "start": 24582,
+      "end": 24646,
+      "text": "and"
+    },
+    {
+      "start": 24678,
+      "end": 24823,
+      "text": "some"
+    },
+    {
+      "start": 24887,
+      "end": 25080,
+      "text": "things"
+    },
+    {
+      "start": 25288,
+      "end": 25705,
+      "text": "also"
+    },
+    {
+      "start": 26026,
+      "end": 26508,
+      "text": "Anthropic"
+    },
+    {
+      "start": 26508,
+      "end": 26957,
+      "text": "published"
+    },
+    {
+      "start": 27214,
+      "end": 27310,
+      "text": "you"
+    },
+    {
+      "start": 27310,
+      "end": 27599,
+      "text": "should"
+    },
+    {
+      "start": 27952,
+      "end": 28032,
+      "text": "be"
+    },
+    {
+      "start": 28032,
+      "end": 28241,
+      "text": "aware"
+    },
+    {
+      "start": 28273,
+      "end": 28401,
+      "text": "of"
+    },
+    {
+      "start": 28433,
+      "end": 28514,
+      "text": "when"
+    },
+    {
+      "start": 28578,
+      "end": 28802,
+      "text": "using"
+    },
+    {
+      "start": 28851,
+      "end": 28963,
+      "text": "it"
+    },
+    {
+      "start": 29091,
+      "end": 29188,
+      "text": "to"
+    },
+    {
+      "start": 29188,
+      "end": 29332,
+      "text": "get"
+    },
+    {
+      "start": 29332,
+      "end": 29412,
+      "text": "the"
+    },
+    {
+      "start": 29412,
+      "end": 29701,
+      "text": "most"
+    },
+    {
+      "start": 29701,
+      "end": 29797,
+      "text": "out"
+    },
+    {
+      "start": 29797,
+      "end": 29878,
+      "text": "of"
+    },
+    {
+      "start": 29878,
+      "end": 30006,
+      "text": "it."
+    },
+    {
+      "start": 30423,
+      "end": 30664,
+      "text": "And"
+    },
+    {
+      "start": 30664,
+      "end": 30840,
+      "text": "my"
+    },
+    {
+      "start": 30840,
+      "end": 31386,
+      "text": "first"
+    },
+    {
+      "start": 31386,
+      "end": 32012,
+      "text": "recommendation"
+    },
+    {
+      "start": 32509,
+      "end": 32654,
+      "text": "is"
+    },
+    {
+      "start": 32766,
+      "end": 32943,
+      "text": "to"
+    },
+    {
+      "start": 33569,
+      "end": 34034,
+      "text": "not"
+    },
+    {
+      "start": 34034,
+      "end": 34355,
+      "text": "treat"
+    },
+    {
+      "start": 34852,
+      "end": 35173,
+      "text": "Opus"
+    },
+    {
+      "start": 35173,
+      "end": 35751,
+      "text": "5.5"
+    },
+    {
+      "start": 35751,
+      "end": 35912,
+      "text": "like"
+    },
+    {
+      "start": 35912,
+      "end": 36056,
+      "text": "it's"
+    },
+    {
+      "start": 36056,
+      "end": 36136,
+      "text": "a"
+    },
+    {
+      "start": 36201,
+      "end": 36329,
+      "text": "dumb"
+    },
+    {
+      "start": 36538,
+      "end": 36875,
+      "text": "model"
+    },
+    {
+      "start": 36875,
+      "end": 37115,
+      "text": "or"
+    },
+    {
+      "start": 37115,
+      "end": 37244,
+      "text": "it"
+    },
+    {
+      "start": 37404,
+      "end": 37709,
+      "text": "always"
+    },
+    {
+      "start": 37886,
+      "end": 38126,
+      "text": "wants"
+    },
+    {
+      "start": 38126,
+      "end": 38207,
+      "text": "to"
+    },
+    {
+      "start": 38207,
+      "end": 38319,
+      "text": "do"
+    },
+    {
+      "start": 38527,
+      "end": 38816,
+      "text": "less"
+    },
+    {
+      "start": 38945,
+      "end": 39041,
+      "text": "or"
+    },
+    {
+      "start": 39041,
+      "end": 39298,
+      "text": "more"
+    },
+    {
+      "start": 39426,
+      "end": 39587,
+      "text": "than"
+    },
+    {
+      "start": 39587,
+      "end": 39715,
+      "text": "you"
+    },
+    {
+      "start": 39811,
+      "end": 40052,
+      "text": "want"
+    },
+    {
+      "start": 40052,
+      "end": 40132,
+      "text": "it"
+    },
+    {
+      "start": 40132,
+      "end": 40196,
+      "text": "to"
+    },
+    {
+      "start": 40229,
+      "end": 40373,
+      "text": "do,"
+    },
+    {
+      "start": 40389,
+      "end": 40710,
+      "text": "because"
+    },
+    {
+      "start": 40710,
+      "end": 40774,
+      "text": "we"
+    },
+    {
+      "start": 40854,
+      "end": 40903,
+      "text": "all"
+    },
+    {
+      "start": 41031,
+      "end": 41336,
+      "text": "know"
+    },
+    {
+      "start": 41352,
+      "end": 41657,
+      "text": "that"
+    },
+    {
+      "start": 41657,
+      "end": 41801,
+      "text": "from"
+    },
+    {
+      "start": 41994,
+      "end": 42251,
+      "text": "other"
+    },
+    {
+      "start": 42251,
+      "end": 42684,
+      "text": "models."
+    },
+    {
+      "start": 43197,
+      "end": 43326,
+      "text": "For"
+    },
+    {
+      "start": 43342,
+      "end": 43968,
+      "text": "example,"
+    },
+    {
+      "start": 44160,
+      "end": 44241,
+      "text": "the"
+    },
+    {
+      "start": 44305,
+      "end": 45155,
+      "text": "GPT-6"
+    },
+    {
+      "start": 45348,
+      "end": 45749,
+      "text": "Astra"
+    },
+    {
+      "start": 45749,
+      "end": 46054,
+      "text": "model"
+    },
+    {
+      "start": 46166,
+      "end": 46214,
+      "text": "is"
+    },
+    {
+      "start": 46391,
+      "end": 46696,
+      "text": "really"
+    },
+    {
+      "start": 46969,
+      "end": 47819,
+      "text": "intelligent"
+    },
+    {
+      "start": 47916,
+      "end": 47964,
+      "text": "on"
+    },
+    {
+      "start": 48012,
+      "end": 48557,
+      "text": "paper"
+    },
+    {
+      "start": 48798,
+      "end": 48894,
+      "text": "and"
+    },
+    {
+      "start": 48894,
+      "end": 49055,
+      "text": "it"
+    },
+    {
+      "start": 49055,
+      "end": 49424,
+      "text": "can"
+    },
+    {
+      "start": 49536,
+      "end": 49745,
+      "text": "do"
+    },
+    {
+      "start": 49761,
+      "end": 50146,
+      "text": "amazing"
+    },
+    {
+      "start": 50259,
+      "end": 50483,
+      "text": "work."
+    },
+    {
+      "start": 50981,
+      "end": 51189,
+      "text": "But"
+    },
+    {
+      "start": 51221,
+      "end": 51414,
+      "text": "boy,"
+    },
+    {
+      "start": 51767,
+      "end": 51912,
+      "text": "does"
+    },
+    {
+      "start": 52249,
+      "end": 52441,
+      "text": "it"
+    },
+    {
+      "start": 52441,
+      "end": 52842,
+      "text": "like"
+    },
+    {
+      "start": 52906,
+      "end": 53099,
+      "text": "doing"
+    },
+    {
+      "start": 53147,
+      "end": 53420,
+      "text": "stuff"
+    },
+    {
+      "start": 53532,
+      "end": 53693,
+      "text": "that"
+    },
+    {
+      "start": 53693,
+      "end": 53789,
+      "text": "you"
+    },
+    {
+      "start": 53789,
+      "end": 53966,
+      "text": "don't"
+    },
+    {
+      "start": 54094,
+      "end": 54271,
+      "text": "want"
+    },
+    {
+      "start": 54271,
+      "end": 54351,
+      "text": "it"
+    },
+    {
+      "start": 54351,
+      "end": 54495,
+      "text": "to"
+    },
+    {
+      "start": 54495,
+      "end": 54608,
+      "text": "do"
+    },
+    {
+      "start": 54993,
+      "end": 55153,
+      "text": "or"
+    },
+    {
+      "start": 55153,
+      "end": 55554,
+      "text": "stop"
+    },
+    {
+      "start": 55570,
+      "end": 55683,
+      "text": "too"
+    },
+    {
+      "start": 55795,
+      "end": 56164,
+      "text": "early."
+    },
+    {
+      "start": 56983,
+      "end": 57143,
+      "text": "We've"
+    },
+    {
+      "start": 57159,
+      "end": 57272,
+      "text": "all"
+    },
+    {
+      "start": 57320,
+      "end": 57448,
+      "text": "been"
+    },
+    {
+      "start": 57480,
+      "end": 57657,
+      "text": "there."
+    },
+    {
+      "start": 57962,
+      "end": 58363,
+      "text": "Plenty"
+    },
+    {
+      "start": 58363,
+      "end": 58491,
+      "text": "of"
+    },
+    {
+      "start": 58587,
+      "end": 58892,
+      "text": "models"
+    },
+    {
+      "start": 59068,
+      "end": 59117,
+      "text": "are"
+    },
+    {
+      "start": 59165,
+      "end": 59405,
+      "text": "like"
+    },
+    {
+      "start": 59405,
+      "end": 59534,
+      "text": "this."
+    },
+    {
+      "start": 60031,
+      "end": 60368,
+      "text": "Opus"
+    },
+    {
+      "start": 60368,
+      "end": 61138,
+      "text": "5.5"
+    },
+    {
+      "start": 61234,
+      "end": 61635,
+      "text": "truly"
+    },
+    {
+      "start": 61715,
+      "end": 61780,
+      "text": "is"
+    },
+    {
+      "start": 61892,
+      "end": 62181,
+      "text": "different."
+    },
+    {
+      "start": 62373,
+      "end": 62485,
+      "text": "Now,"
+    },
+    {
+      "start": 63095,
+      "end": 63255,
+      "text": "it's"
+    },
+    {
+      "start": 63400,
+      "end": 63865,
+      "text": "absolutely"
+    },
+    {
+      "start": 63881,
+      "end": 64362,
+      "text": "possible"
+    },
+    {
+      "start": 64394,
+      "end": 64731,
+      "text": "still"
+    },
+    {
+      "start": 65164,
+      "end": 65341,
+      "text": "that"
+    },
+    {
+      "start": 65341,
+      "end": 65598,
+      "text": "it"
+    },
+    {
+      "start": 65966,
+      "end": 66624,
+      "text": "forgets"
+    },
+    {
+      "start": 66624,
+      "end": 66769,
+      "text": "to"
+    },
+    {
+      "start": 66769,
+      "end": 67009,
+      "text": "do"
+    },
+    {
+      "start": 67330,
+      "end": 67635,
+      "text": "something"
+    },
+    {
+      "start": 67667,
+      "end": 67795,
+      "text": "you"
+    },
+    {
+      "start": 67827,
+      "end": 68068,
+      "text": "want"
+    },
+    {
+      "start": 68068,
+      "end": 68148,
+      "text": "it"
+    },
+    {
+      "start": 68148,
+      "end": 68228,
+      "text": "to"
+    },
+    {
+      "start": 68228,
+      "end": 68405,
+      "text": "do"
+    },
+    {
+      "start": 68629,
+      "end": 68678,
+      "text": "or"
+    },
+    {
+      "start": 68774,
+      "end": 68886,
+      "text": "that"
+    },
+    {
+      "start": 68886,
+      "end": 68998,
+      "text": "it"
+    },
+    {
+      "start": 69031,
+      "end": 69271,
+      "text": "does"
+    },
+    {
+      "start": 69271,
+      "end": 69287,
+      "text": "a"
+    },
+    {
+      "start": 69335,
+      "end": 69496,
+      "text": "bit"
+    },
+    {
+      "start": 69496,
+      "end": 69752,
+      "text": "more,"
+    },
+    {
+      "start": 69913,
+      "end": 70057,
+      "text": "but"
+    },
+    {
+      "start": 70153,
+      "end": 70426,
+      "text": "it's"
+    },
+    {
+      "start": 70458,
+      "end": 70699,
+      "text": "so"
+    },
+    {
+      "start": 70699,
+      "end": 70843,
+      "text": "much"
+    },
+    {
+      "start": 70956,
+      "end": 71308,
+      "text": "better"
+    },
+    {
+      "start": 71597,
+      "end": 71726,
+      "text": "than"
+    },
+    {
+      "start": 71758,
+      "end": 71918,
+      "text": "the"
+    },
+    {
+      "start": 71918,
+      "end": 72095,
+      "text": "other"
+    },
+    {
+      "start": 72095,
+      "end": 72447,
+      "text": "models"
+    },
+    {
+      "start": 72480,
+      "end": 72656,
+      "text": "here."
+    },
+    {
+      "start": 73185,
+      "end": 73233,
+      "text": "If"
+    },
+    {
+      "start": 73426,
+      "end": 73554,
+      "text": "I"
+    },
+    {
+      "start": 73747,
+      "end": 74084,
+      "text": "wanted"
+    },
+    {
+      "start": 74084,
+      "end": 74308,
+      "text": "to"
+    },
+    {
+      "start": 74308,
+      "end": 74597,
+      "text": "draw"
+    },
+    {
+      "start": 74725,
+      "end": 74741,
+      "text": "a"
+    },
+    {
+      "start": 74806,
+      "end": 75159,
+      "text": "graph"
+    },
+    {
+      "start": 75287,
+      "end": 75624,
+      "text": "here"
+    },
+    {
+      "start": 76153,
+      "end": 76378,
+      "text": "on"
+    },
+    {
+      "start": 77035,
+      "end": 77228,
+      "text": "how"
+    },
+    {
+      "start": 78479,
+      "end": 79362,
+      "text": "consistent"
+    },
+    {
+      "start": 79378,
+      "end": 79522,
+      "text": "it"
+    },
+    {
+      "start": 79602,
+      "end": 79747,
+      "text": "is,"
+    },
+    {
+      "start": 80565,
+      "end": 80613,
+      "text": "I"
+    },
+    {
+      "start": 80661,
+      "end": 80805,
+      "text": "would"
+    },
+    {
+      "start": 80805,
+      "end": 80982,
+      "text": "say"
+    },
+    {
+      "start": 81206,
+      "end": 81543,
+      "text": "Opus"
+    },
+    {
+      "start": 81543,
+      "end": 82393,
+      "text": "5.5"
+    },
+    {
+      "start": 82506,
+      "end": 82634,
+      "text": "is"
+    },
+    {
+      "start": 83388,
+      "end": 83966,
+      "text": "somewhere"
+    },
+    {
+      "start": 84094,
+      "end": 84302,
+      "text": "here."
+    },
+    {
+      "start": 84928,
+      "end": 85089,
+      "text": "It's"
+    },
+    {
+      "start": 85217,
+      "end": 86325,
+      "text": "consistently"
+    },
+    {
+      "start": 86437,
+      "end": 86726,
+      "text": "doing"
+    },
+    {
+      "start": 87321,
+      "end": 87674,
+      "text": "good"
+    },
+    {
+      "start": 87722,
+      "end": 88107,
+      "text": "work,"
+    },
+    {
+      "start": 88669,
+      "end": 89055,
+      "text": "whereas"
+    },
+    {
+      "start": 89311,
+      "end": 89488,
+      "text": "other"
+    },
+    {
+      "start": 89488,
+      "end": 90018,
+      "text": "models"
+    },
+    {
+      "start": 90756,
+      "end": 91158,
+      "text": "often"
+    },
+    {
+      "start": 91158,
+      "end": 91399,
+      "text": "have"
+    },
+    {
+      "start": 91399,
+      "end": 91559,
+      "text": "a"
+    },
+    {
+      "start": 91575,
+      "end": 91704,
+      "text": "way"
+    },
+    {
+      "start": 91977,
+      "end": 92394,
+      "text": "higher"
+    },
+    {
+      "start": 92699,
+      "end": 93229,
+      "text": "variance,"
+    },
+    {
+      "start": 93566,
+      "end": 93743,
+      "text": "maybe"
+    },
+    {
+      "start": 93743,
+      "end": 94048,
+      "text": "something"
+    },
+    {
+      "start": 94048,
+      "end": 94224,
+      "text": "like"
+    },
+    {
+      "start": 94224,
+      "end": 94369,
+      "text": "this."
+    },
+    {
+      "start": 95108,
+      "end": 95252,
+      "text": "Though"
+    },
+    {
+      "start": 95332,
+      "end": 95718,
+      "text": "actually"
+    },
+    {
+      "start": 95894,
+      "end": 96055,
+      "text": "other"
+    },
+    {
+      "start": 96055,
+      "end": 96360,
+      "text": "models"
+    },
+    {
+      "start": 96874,
+      "end": 97098,
+      "text": "aren't"
+    },
+    {
+      "start": 97098,
+      "end": 97291,
+      "text": "that"
+    },
+    {
+      "start": 97676,
+      "end": 97805,
+      "text": "much"
+    },
+    {
+      "start": 97901,
+      "end": 98303,
+      "text": "smarter"
+    },
+    {
+      "start": 98303,
+      "end": 98463,
+      "text": "than"
+    },
+    {
+      "start": 98463,
+      "end": 98768,
+      "text": "Opus."
+    },
+    {
+      "start": 99362,
+      "end": 99459,
+      "text": "But"
+    },
+    {
+      "start": 99507,
+      "end": 99764,
+      "text": "yeah,"
+    },
+    {
+      "start": 100165,
+      "end": 100374,
+      "text": "so"
+    },
+    {
+      "start": 100390,
+      "end": 100583,
+      "text": "that"
+    },
+    {
+      "start": 100583,
+      "end": 100727,
+      "text": "would"
+    },
+    {
+      "start": 100727,
+      "end": 100823,
+      "text": "be"
+    },
+    {
+      "start": 101433,
+      "end": 101658,
+      "text": "other"
+    },
+    {
+      "start": 101674,
+      "end": 102060,
+      "text": "models,"
+    },
+    {
+      "start": 102878,
+      "end": 103264,
+      "text": "Opus,"
+    },
+    {
+      "start": 103858,
+      "end": 104067,
+      "text": "but"
+    },
+    {
+      "start": 104243,
+      "end": 104532,
+      "text": "Opus"
+    },
+    {
+      "start": 104645,
+      "end": 104709,
+      "text": "is"
+    },
+    {
+      "start": 104805,
+      "end": 105078,
+      "text": "just"
+    },
+    {
+      "start": 105078,
+      "end": 105752,
+      "text": "amazingly"
+    },
+    {
+      "start": 105785,
+      "end": 106555,
+      "text": "consistent"
+    },
+    {
+      "start": 106989,
+      "end": 107037,
+      "text": "in"
+    },
+    {
+      "start": 107149,
+      "end": 107230,
+      "text": "my"
+    },
+    {
+      "start": 107294,
+      "end": 107840,
+      "text": "experience."
+    },
+    {
+      "start": 108370,
+      "end": 108578,
+      "text": "So"
+    },
+    {
+      "start": 108578,
+      "end": 108835,
+      "text": "that's"
+    },
+    {
+      "start": 108835,
+      "end": 108980,
+      "text": "the"
+    },
+    {
+      "start": 109076,
+      "end": 109493,
+      "text": "first"
+    },
+    {
+      "start": 109558,
+      "end": 109686,
+      "text": "thing"
+    },
+    {
+      "start": 109782,
+      "end": 109847,
+      "text": "you"
+    },
+    {
+      "start": 110104,
+      "end": 110537,
+      "text": "absolutely"
+    },
+    {
+      "start": 110537,
+      "end": 110778,
+      "text": "should"
+    },
+    {
+      "start": 110826,
+      "end": 110922,
+      "text": "know"
+    },
+    {
+      "start": 111003,
+      "end": 111099,
+      "text": "when"
+    },
+    {
+      "start": 111163,
+      "end": 111484,
+      "text": "working"
+    },
+    {
+      "start": 111484,
+      "end": 111661,
+      "text": "with"
+    },
+    {
+      "start": 111661,
+      "end": 111741,
+      "text": "it."
+    },
+    {
+      "start": 112111,
+      "end": 112255,
+      "text": "You"
+    },
+    {
+      "start": 112351,
+      "end": 112769,
+      "text": "don't"
+    },
+    {
+      "start": 112769,
+      "end": 112978,
+      "text": "need"
+    },
+    {
+      "start": 113010,
+      "end": 113138,
+      "text": "to"
+    },
+    {
+      "start": 113154,
+      "end": 113748,
+      "text": "handhold"
+    },
+    {
+      "start": 113748,
+      "end": 113861,
+      "text": "it"
+    },
+    {
+      "start": 114037,
+      "end": 114182,
+      "text": "as"
+    },
+    {
+      "start": 114294,
+      "end": 114519,
+      "text": "much"
+    },
+    {
+      "start": 114615,
+      "end": 114663,
+      "text": "as"
+    },
+    {
+      "start": 114760,
+      "end": 114856,
+      "text": "you"
+    },
+    {
+      "start": 114936,
+      "end": 115049,
+      "text": "do"
+    },
+    {
+      "start": 115418,
+      "end": 115643,
+      "text": "with"
+    },
+    {
+      "start": 115643,
+      "end": 115771,
+      "text": "other"
+    },
+    {
+      "start": 115835,
+      "end": 116349,
+      "text": "models."
+    },
+    {
+      "start": 116846,
+      "end": 116943,
+      "text": "The"
+    },
+    {
+      "start": 117360,
+      "end": 118129,
+      "text": "second"
+    },
+    {
+      "start": 118129,
+      "end": 118899,
+      "text": "recommendation"
+    },
+    {
+      "start": 119492,
+      "end": 119717,
+      "text": "is"
+    },
+    {
+      "start": 119909,
+      "end": 120166,
+      "text": "that"
+    },
+    {
+      "start": 120294,
+      "end": 120358,
+      "text": "you"
+    },
+    {
+      "start": 120695,
+      "end": 121080,
+      "text": "really"
+    },
+    {
+      "start": 121192,
+      "end": 121433,
+      "text": "want"
+    },
+    {
+      "start": 121433,
+      "end": 121593,
+      "text": "to"
+    },
+    {
+      "start": 121593,
+      "end": 121946,
+      "text": "try"
+    },
+    {
+      "start": 122074,
+      "end": 122443,
+      "text": "using"
+    },
+    {
+      "start": 122700,
+      "end": 123245,
+      "text": "medium"
+    },
+    {
+      "start": 123822,
+      "end": 124047,
+      "text": "thinking"
+    },
+    {
+      "start": 124159,
+      "end": 124415,
+      "text": "effort."
+    },
+    {
+      "start": 124544,
+      "end": 124656,
+      "text": "Now,"
+    },
+    {
+      "start": 125121,
+      "end": 125185,
+      "text": "the"
+    },
+    {
+      "start": 125201,
+      "end": 125602,
+      "text": "great"
+    },
+    {
+      "start": 125602,
+      "end": 125714,
+      "text": "thing"
+    },
+    {
+      "start": 125762,
+      "end": 126051,
+      "text": "about"
+    },
+    {
+      "start": 126163,
+      "end": 126468,
+      "text": "Opus"
+    },
+    {
+      "start": 126484,
+      "end": 127270,
+      "text": "5.5"
+    },
+    {
+      "start": 127350,
+      "end": 127414,
+      "text": "is"
+    },
+    {
+      "start": 127526,
+      "end": 127815,
+      "text": "that"
+    },
+    {
+      "start": 128232,
+      "end": 128296,
+      "text": "it"
+    },
+    {
+      "start": 128392,
+      "end": 128697,
+      "text": "goes"
+    },
+    {
+      "start": 128954,
+      "end": 129258,
+      "text": "really"
+    },
+    {
+      "start": 129355,
+      "end": 129643,
+      "text": "far"
+    },
+    {
+      "start": 129932,
+      "end": 129980,
+      "text": "in"
+    },
+    {
+      "start": 130076,
+      "end": 130204,
+      "text": "your"
+    },
+    {
+      "start": 130253,
+      "end": 130878,
+      "text": "subscription"
+    },
+    {
+      "start": 130878,
+      "end": 131263,
+      "text": "usage,"
+    },
+    {
+      "start": 131920,
+      "end": 132209,
+      "text": "even"
+    },
+    {
+      "start": 132562,
+      "end": 132610,
+      "text": "on"
+    },
+    {
+      "start": 132818,
+      "end": 133251,
+      "text": "extra"
+    },
+    {
+      "start": 133299,
+      "end": 133492,
+      "text": "high"
+    },
+    {
+      "start": 133620,
+      "end": 133989,
+      "text": "reasoning."
+    },
+    {
+      "start": 134646,
+      "end": 134711,
+      "text": "I"
+    },
+    {
+      "start": 134727,
+      "end": 134871,
+      "text": "have"
+    },
+    {
+      "start": 134887,
+      "end": 135047,
+      "text": "the"
+    },
+    {
+      "start": 135047,
+      "end": 135528,
+      "text": "$200"
+    },
+    {
+      "start": 135641,
+      "end": 136218,
+      "text": "subscription."
+    },
+    {
+      "start": 136266,
+      "end": 136491,
+      "text": "I've"
+    },
+    {
+      "start": 136491,
+      "end": 136587,
+      "text": "been"
+    },
+    {
+      "start": 136587,
+      "end": 136859,
+      "text": "using"
+    },
+    {
+      "start": 136908,
+      "end": 136988,
+      "text": "it"
+    },
+    {
+      "start": 136988,
+      "end": 137004,
+      "text": "a"
+    },
+    {
+      "start": 137132,
+      "end": 137357,
+      "text": "ton."
+    },
+    {
+      "start": 137549,
+      "end": 137565,
+      "text": "I"
+    },
+    {
+      "start": 137773,
+      "end": 138078,
+      "text": "have"
+    },
+    {
+      "start": 138174,
+      "end": 138431,
+      "text": "hit"
+    },
+    {
+      "start": 138431,
+      "end": 138575,
+      "text": "the"
+    },
+    {
+      "start": 138575,
+      "end": 138800,
+      "text": "limit"
+    },
+    {
+      "start": 138896,
+      "end": 139008,
+      "text": "at"
+    },
+    {
+      "start": 139008,
+      "end": 139265,
+      "text": "some"
+    },
+    {
+      "start": 139393,
+      "end": 139762,
+      "text": "point,"
+    },
+    {
+      "start": 140275,
+      "end": 140387,
+      "text": "but"
+    },
+    {
+      "start": 140500,
+      "end": 140724,
+      "text": "I've"
+    },
+    {
+      "start": 140740,
+      "end": 141526,
+      "text": "consistently"
+    },
+    {
+      "start": 141558,
+      "end": 141686,
+      "text": "been"
+    },
+    {
+      "start": 141782,
+      "end": 142151,
+      "text": "using"
+    },
+    {
+      "start": 142344,
+      "end": 142793,
+      "text": "X-High."
+    },
+    {
+      "start": 143226,
+      "end": 143386,
+      "text": "To"
+    },
+    {
+      "start": 143804,
+      "end": 144125,
+      "text": "push"
+    },
+    {
+      "start": 144125,
+      "end": 144205,
+      "text": "it"
+    },
+    {
+      "start": 144205,
+      "end": 144350,
+      "text": "to"
+    },
+    {
+      "start": 144350,
+      "end": 144430,
+      "text": "the"
+    },
+    {
+      "start": 144430,
+      "end": 144751,
+      "text": "limit"
+    },
+    {
+      "start": 144751,
+      "end": 144927,
+      "text": "there."
+    },
+    {
+      "start": 145313,
+      "end": 145377,
+      "text": "I"
+    },
+    {
+      "start": 145409,
+      "end": 145602,
+      "text": "actually"
+    },
+    {
+      "start": 145602,
+      "end": 145714,
+      "text": "have"
+    },
+    {
+      "start": 145730,
+      "end": 145826,
+      "text": "2"
+    },
+    {
+      "start": 145826,
+      "end": 146308,
+      "text": "subscriptions."
+    },
+    {
+      "start": 146533,
+      "end": 146581,
+      "text": "On"
+    },
+    {
+      "start": 146613,
+      "end": 146725,
+      "text": "one"
+    },
+    {
+      "start": 146758,
+      "end": 146806,
+      "text": "of"
+    },
+    {
+      "start": 146854,
+      "end": 146966,
+      "text": "them,"
+    },
+    {
+      "start": 147159,
+      "end": 147239,
+      "text": "I've"
+    },
+    {
+      "start": 147319,
+      "end": 147865,
+      "text": "consistently"
+    },
+    {
+      "start": 147897,
+      "end": 148186,
+      "text": "used"
+    },
+    {
+      "start": 148395,
+      "end": 148700,
+      "text": "Extra"
+    },
+    {
+      "start": 148700,
+      "end": 148796,
+      "text": "High."
+    },
+    {
+      "start": 149342,
+      "end": 149422,
+      "text": "On"
+    },
+    {
+      "start": 149422,
+      "end": 149551,
+      "text": "the"
+    },
+    {
+      "start": 149567,
+      "end": 149743,
+      "text": "other"
+    },
+    {
+      "start": 149743,
+      "end": 150193,
+      "text": "subscription,"
+    },
+    {
+      "start": 150851,
+      "end": 150899,
+      "text": "I"
+    },
+    {
+      "start": 151509,
+      "end": 151878,
+      "text": "switch"
+    },
+    {
+      "start": 152087,
+      "end": 152103,
+      "text": "a"
+    },
+    {
+      "start": 152151,
+      "end": 152376,
+      "text": "bit"
+    },
+    {
+      "start": 152376,
+      "end": 152649,
+      "text": "more"
+    },
+    {
+      "start": 152874,
+      "end": 152938,
+      "text": "and"
+    },
+    {
+      "start": 153018,
+      "end": 153082,
+      "text": "I"
+    },
+    {
+      "start": 153259,
+      "end": 153596,
+      "text": "often"
+    },
+    {
+      "start": 153596,
+      "end": 153837,
+      "text": "stick"
+    },
+    {
+      "start": 153837,
+      "end": 153965,
+      "text": "to"
+    },
+    {
+      "start": 153965,
+      "end": 154302,
+      "text": "Medium"
+    },
+    {
+      "start": 154704,
+      "end": 154768,
+      "text": "and"
+    },
+    {
+      "start": 154800,
+      "end": 154977,
+      "text": "that"
+    },
+    {
+      "start": 154977,
+      "end": 155169,
+      "text": "goes"
+    },
+    {
+      "start": 155506,
+      "end": 155811,
+      "text": "even"
+    },
+    {
+      "start": 155988,
+      "end": 156325,
+      "text": "farther"
+    },
+    {
+      "start": 156325,
+      "end": 156454,
+      "text": "then."
+    },
+    {
+      "start": 156582,
+      "end": 156726,
+      "text": "So"
+    },
+    {
+      "start": 156726,
+      "end": 156871,
+      "text": "it's"
+    },
+    {
+      "start": 156871,
+      "end": 157015,
+      "text": "a"
+    },
+    {
+      "start": 157031,
+      "end": 157224,
+      "text": "lot"
+    },
+    {
+      "start": 157224,
+      "end": 157336,
+      "text": "of"
+    },
+    {
+      "start": 157369,
+      "end": 157706,
+      "text": "usage,"
+    },
+    {
+      "start": 157995,
+      "end": 158107,
+      "text": "but"
+    },
+    {
+      "start": 158171,
+      "end": 158380,
+      "text": "even"
+    },
+    {
+      "start": 158396,
+      "end": 158557,
+      "text": "with"
+    },
+    {
+      "start": 158637,
+      "end": 158878,
+      "text": "Extra"
+    },
+    {
+      "start": 158878,
+      "end": 158974,
+      "text": "High,"
+    },
+    {
+      "start": 159038,
+      "end": 159150,
+      "text": "it's"
+    },
+    {
+      "start": 159150,
+      "end": 159375,
+      "text": "okay."
+    },
+    {
+      "start": 159937,
+      "end": 160146,
+      "text": "But"
+    },
+    {
+      "start": 160178,
+      "end": 160226,
+      "text": "the"
+    },
+    {
+      "start": 160242,
+      "end": 160659,
+      "text": "official"
+    },
+    {
+      "start": 160659,
+      "end": 161205,
+      "text": "recommendation,"
+    },
+    {
+      "start": 161286,
+      "end": 161446,
+      "text": "and"
+    },
+    {
+      "start": 161446,
+      "end": 161542,
+      "text": "I"
+    },
+    {
+      "start": 161542,
+      "end": 161831,
+      "text": "can"
+    },
+    {
+      "start": 161863,
+      "end": 162233,
+      "text": "confirm"
+    },
+    {
+      "start": 162345,
+      "end": 162473,
+      "text": "this,"
+    },
+    {
+      "start": 163132,
+      "end": 163196,
+      "text": "is"
+    },
+    {
+      "start": 163308,
+      "end": 163549,
+      "text": "that"
+    },
+    {
+      "start": 163549,
+      "end": 163661,
+      "text": "you"
+    },
+    {
+      "start": 163934,
+      "end": 164191,
+      "text": "wanna"
+    },
+    {
+      "start": 164191,
+      "end": 164544,
+      "text": "try"
+    },
+    {
+      "start": 164673,
+      "end": 165186,
+      "text": "starting"
+    },
+    {
+      "start": 165235,
+      "end": 165491,
+      "text": "with"
+    },
+    {
+      "start": 165491,
+      "end": 165909,
+      "text": "Medium"
+    },
+    {
+      "start": 166037,
+      "end": 166471,
+      "text": "effort"
+    },
+    {
+      "start": 166679,
+      "end": 166824,
+      "text": "to"
+    },
+    {
+      "start": 167000,
+      "end": 167322,
+      "text": "simply"
+    },
+    {
+      "start": 167322,
+      "end": 167466,
+      "text": "go"
+    },
+    {
+      "start": 167546,
+      "end": 167948,
+      "text": "further,"
+    },
+    {
+      "start": 168028,
+      "end": 168140,
+      "text": "to"
+    },
+    {
+      "start": 168140,
+      "end": 168333,
+      "text": "have"
+    },
+    {
+      "start": 168847,
+      "end": 169119,
+      "text": "less"
+    },
+    {
+      "start": 169248,
+      "end": 169585,
+      "text": "usage"
+    },
+    {
+      "start": 169633,
+      "end": 170179,
+      "text": "consumption."
+    },
+    {
+      "start": 170773,
+      "end": 170837,
+      "text": "And"
+    },
+    {
+      "start": 170853,
+      "end": 170982,
+      "text": "then"
+    },
+    {
+      "start": 171014,
+      "end": 171271,
+      "text": "maybe"
+    },
+    {
+      "start": 171399,
+      "end": 171672,
+      "text": "ramp"
+    },
+    {
+      "start": 171672,
+      "end": 171801,
+      "text": "it"
+    },
+    {
+      "start": 171801,
+      "end": 171849,
+      "text": "up"
+    },
+    {
+      "start": 171977,
+      "end": 172186,
+      "text": "to"
+    },
+    {
+      "start": 172539,
+      "end": 172812,
+      "text": "high"
+    },
+    {
+      "start": 173037,
+      "end": 173230,
+      "text": "or"
+    },
+    {
+      "start": 173246,
+      "end": 173695,
+      "text": "x-high"
+    },
+    {
+      "start": 174000,
+      "end": 174081,
+      "text": "if"
+    },
+    {
+      "start": 174129,
+      "end": 174225,
+      "text": "you're"
+    },
+    {
+      "start": 174225,
+      "end": 174418,
+      "text": "not"
+    },
+    {
+      "start": 174450,
+      "end": 174771,
+      "text": "happy"
+    },
+    {
+      "start": 174787,
+      "end": 174851,
+      "text": "with"
+    },
+    {
+      "start": 174851,
+      "end": 174948,
+      "text": "the"
+    },
+    {
+      "start": 174948,
+      "end": 175429,
+      "text": "results,"
+    },
+    {
+      "start": 175574,
+      "end": 175751,
+      "text": "or"
+    },
+    {
+      "start": 175831,
+      "end": 175975,
+      "text": "if"
+    },
+    {
+      "start": 175975,
+      "end": 176136,
+      "text": "you"
+    },
+    {
+      "start": 176136,
+      "end": 176280,
+      "text": "know"
+    },
+    {
+      "start": 176473,
+      "end": 176618,
+      "text": "that"
+    },
+    {
+      "start": 176618,
+      "end": 176842,
+      "text": "you're"
+    },
+    {
+      "start": 177035,
+      "end": 177164,
+      "text": "going"
+    },
+    {
+      "start": 177196,
+      "end": 177420,
+      "text": "to"
+    },
+    {
+      "start": 177517,
+      "end": 177934,
+      "text": "tackle"
+    },
+    {
+      "start": 177934,
+      "end": 178063,
+      "text": "a"
+    },
+    {
+      "start": 178063,
+      "end": 178560,
+      "text": "complex"
+    },
+    {
+      "start": 178560,
+      "end": 179026,
+      "text": "task"
+    },
+    {
+      "start": 179026,
+      "end": 179139,
+      "text": "where"
+    },
+    {
+      "start": 179187,
+      "end": 179267,
+      "text": "you"
+    },
+    {
+      "start": 179283,
+      "end": 179540,
+      "text": "need"
+    },
+    {
+      "start": 179909,
+      "end": 180535,
+      "text": "maximum"
+    },
+    {
+      "start": 181049,
+      "end": 181659,
+      "text": "intelligence."
+    },
+    {
+      "start": 182237,
+      "end": 182270,
+      "text": "Now,"
+    },
+    {
+      "start": 182302,
+      "end": 182366,
+      "text": "if"
+    },
+    {
+      "start": 182398,
+      "end": 182478,
+      "text": "you"
+    },
+    {
+      "start": 182478,
+      "end": 182655,
+      "text": "look"
+    },
+    {
+      "start": 182655,
+      "end": 182735,
+      "text": "at"
+    },
+    {
+      "start": 182735,
+      "end": 182783,
+      "text": "the"
+    },
+    {
+      "start": 182815,
+      "end": 183137,
+      "text": "official"
+    },
+    {
+      "start": 183137,
+      "end": 183779,
+      "text": "benchmarks"
+    },
+    {
+      "start": 183779,
+      "end": 183907,
+      "text": "which"
+    },
+    {
+      "start": 183956,
+      "end": 184421,
+      "text": "Anthropic"
+    },
+    {
+      "start": 184421,
+      "end": 184871,
+      "text": "published,"
+    },
+    {
+      "start": 185529,
+      "end": 185593,
+      "text": "you"
+    },
+    {
+      "start": 185625,
+      "end": 185738,
+      "text": "can"
+    },
+    {
+      "start": 185786,
+      "end": 186187,
+      "text": "see"
+    },
+    {
+      "start": 186268,
+      "end": 186364,
+      "text": "the"
+    },
+    {
+      "start": 186412,
+      "end": 186733,
+      "text": "reason"
+    },
+    {
+      "start": 186749,
+      "end": 186894,
+      "text": "for"
+    },
+    {
+      "start": 186894,
+      "end": 187038,
+      "text": "this."
+    },
+    {
+      "start": 187713,
+      "end": 187905,
+      "text": "Here"
+    },
+    {
+      "start": 187954,
+      "end": 188082,
+      "text": "on"
+    },
+    {
+      "start": 188114,
+      "end": 188580,
+      "text": "Terminal"
+    },
+    {
+      "start": 188596,
+      "end": 188805,
+      "text": "Bench,"
+    },
+    {
+      "start": 188821,
+      "end": 188917,
+      "text": "you"
+    },
+    {
+      "start": 188917,
+      "end": 189238,
+      "text": "see"
+    },
+    {
+      "start": 189238,
+      "end": 189688,
+      "text": "medium"
+    },
+    {
+      "start": 190266,
+      "end": 190330,
+      "text": "is"
+    },
+    {
+      "start": 190458,
+      "end": 190860,
+      "text": "not"
+    },
+    {
+      "start": 191004,
+      "end": 191213,
+      "text": "that"
+    },
+    {
+      "start": 191309,
+      "end": 191438,
+      "text": "far"
+    },
+    {
+      "start": 191647,
+      "end": 192144,
+      "text": "below"
+    },
+    {
+      "start": 192209,
+      "end": 192466,
+      "text": "high,"
+    },
+    {
+      "start": 193092,
+      "end": 193156,
+      "text": "and"
+    },
+    {
+      "start": 193252,
+      "end": 193573,
+      "text": "high"
+    },
+    {
+      "start": 193573,
+      "end": 193702,
+      "text": "and"
+    },
+    {
+      "start": 193734,
+      "end": 194055,
+      "text": "x-high"
+    },
+    {
+      "start": 194296,
+      "end": 194344,
+      "text": "are"
+    },
+    {
+      "start": 194601,
+      "end": 194890,
+      "text": "almost"
+    },
+    {
+      "start": 194954,
+      "end": 195002,
+      "text": "on"
+    },
+    {
+      "start": 195019,
+      "end": 195099,
+      "text": "the"
+    },
+    {
+      "start": 195099,
+      "end": 195340,
+      "text": "same"
+    },
+    {
+      "start": 195404,
+      "end": 195645,
+      "text": "level."
+    },
+    {
+      "start": 196046,
+      "end": 196592,
+      "text": "Interestingly"
+    },
+    {
+      "start": 196624,
+      "end": 197010,
+      "text": "enough,"
+    },
+    {
+      "start": 197347,
+      "end": 197395,
+      "text": "on"
+    },
+    {
+      "start": 197444,
+      "end": 197572,
+      "text": "the"
+    },
+    {
+      "start": 197572,
+      "end": 197942,
+      "text": "Frontier"
+    },
+    {
+      "start": 198054,
+      "end": 198359,
+      "text": "code"
+    },
+    {
+      "start": 198777,
+      "end": 199098,
+      "text": "and"
+    },
+    {
+      "start": 199098,
+      "end": 199805,
+      "text": "CursorBench"
+    },
+    {
+      "start": 200303,
+      "end": 200736,
+      "text": "benchmarks"
+    },
+    {
+      "start": 200736,
+      "end": 200961,
+      "text": "here,"
+    },
+    {
+      "start": 201764,
+      "end": 201957,
+      "text": "there"
+    },
+    {
+      "start": 202246,
+      "end": 202439,
+      "text": "even"
+    },
+    {
+      "start": 202792,
+      "end": 202937,
+      "text": "is"
+    },
+    {
+      "start": 203274,
+      "end": 203290,
+      "text": "a"
+    },
+    {
+      "start": 203692,
+      "end": 204463,
+      "text": "decline"
+    },
+    {
+      "start": 204800,
+      "end": 205025,
+      "text": "from"
+    },
+    {
+      "start": 205202,
+      "end": 205410,
+      "text": "high"
+    },
+    {
+      "start": 205539,
+      "end": 205683,
+      "text": "to"
+    },
+    {
+      "start": 205764,
+      "end": 206133,
+      "text": "x-high,"
+    },
+    {
+      "start": 206406,
+      "end": 206454,
+      "text": "or"
+    },
+    {
+      "start": 206888,
+      "end": 206968,
+      "text": "it"
+    },
+    {
+      "start": 206968,
+      "end": 207354,
+      "text": "stays"
+    },
+    {
+      "start": 207627,
+      "end": 207804,
+      "text": "pretty"
+    },
+    {
+      "start": 207804,
+      "end": 208029,
+      "text": "much"
+    },
+    {
+      "start": 208029,
+      "end": 208093,
+      "text": "on"
+    },
+    {
+      "start": 208093,
+      "end": 208173,
+      "text": "the"
+    },
+    {
+      "start": 208173,
+      "end": 208414,
+      "text": "same"
+    },
+    {
+      "start": 208430,
+      "end": 208639,
+      "text": "level."
+    },
+    {
+      "start": 209153,
+      "end": 209378,
+      "text": "So"
+    },
+    {
+      "start": 209474,
+      "end": 209635,
+      "text": "put"
+    },
+    {
+      "start": 209635,
+      "end": 209683,
+      "text": "in"
+    },
+    {
+      "start": 209715,
+      "end": 209924,
+      "text": "other"
+    },
+    {
+      "start": 209940,
+      "end": 210325,
+      "text": "words,"
+    },
+    {
+      "start": 210823,
+      "end": 211273,
+      "text": "x-high"
+    },
+    {
+      "start": 211562,
+      "end": 211948,
+      "text": "instead"
+    },
+    {
+      "start": 211948,
+      "end": 212060,
+      "text": "of"
+    },
+    {
+      "start": 212124,
+      "end": 212397,
+      "text": "high"
+    },
+    {
+      "start": 213570,
+      "end": 213875,
+      "text": "doesn't"
+    },
+    {
+      "start": 213891,
+      "end": 214052,
+      "text": "make"
+    },
+    {
+      "start": 214052,
+      "end": 214116,
+      "text": "a"
+    },
+    {
+      "start": 214116,
+      "end": 214228,
+      "text": "lot"
+    },
+    {
+      "start": 214228,
+      "end": 214309,
+      "text": "of"
+    },
+    {
+      "start": 214357,
+      "end": 214630,
+      "text": "sense."
+    },
+    {
+      "start": 215240,
+      "end": 215289,
+      "text": "I"
+    },
+    {
+      "start": 215417,
+      "end": 215594,
+      "text": "did"
+    },
+    {
+      "start": 215594,
+      "end": 215658,
+      "text": "it"
+    },
+    {
+      "start": 215658,
+      "end": 215819,
+      "text": "for"
+    },
+    {
+      "start": 215819,
+      "end": 216188,
+      "text": "testing"
+    },
+    {
+      "start": 216220,
+      "end": 216670,
+      "text": "purposes,"
+    },
+    {
+      "start": 216782,
+      "end": 216831,
+      "text": "as"
+    },
+    {
+      "start": 216863,
+      "end": 217232,
+      "text": "mentioned."
+    },
+    {
+      "start": 217505,
+      "end": 217650,
+      "text": "But"
+    },
+    {
+      "start": 217650,
+      "end": 217714,
+      "text": "as"
+    },
+    {
+      "start": 217810,
+      "end": 217859,
+      "text": "I"
+    },
+    {
+      "start": 217891,
+      "end": 218164,
+      "text": "also"
+    },
+    {
+      "start": 218164,
+      "end": 218597,
+      "text": "mentioned,"
+    },
+    {
+      "start": 218967,
+      "end": 219079,
+      "text": "if"
+    },
+    {
+      "start": 219095,
+      "end": 219208,
+      "text": "you"
+    },
+    {
+      "start": 219208,
+      "end": 219513,
+      "text": "just"
+    },
+    {
+      "start": 219513,
+      "end": 219690,
+      "text": "use"
+    },
+    {
+      "start": 219738,
+      "end": 220027,
+      "text": "medium,"
+    },
+    {
+      "start": 220155,
+      "end": 220220,
+      "text": "and"
+    },
+    {
+      "start": 220220,
+      "end": 220380,
+      "text": "I've"
+    },
+    {
+      "start": 220380,
+      "end": 220525,
+      "text": "done"
+    },
+    {
+      "start": 220557,
+      "end": 220702,
+      "text": "that"
+    },
+    {
+      "start": 220702,
+      "end": 220798,
+      "text": "on"
+    },
+    {
+      "start": 220798,
+      "end": 220926,
+      "text": "the"
+    },
+    {
+      "start": 220942,
+      "end": 221119,
+      "text": "other"
+    },
+    {
+      "start": 221119,
+      "end": 221601,
+      "text": "account,"
+    },
+    {
+      "start": 222002,
+      "end": 222130,
+      "text": "you"
+    },
+    {
+      "start": 222162,
+      "end": 222451,
+      "text": "get"
+    },
+    {
+      "start": 222627,
+      "end": 222852,
+      "text": "pretty"
+    },
+    {
+      "start": 222884,
+      "end": 223124,
+      "text": "great"
+    },
+    {
+      "start": 223124,
+      "end": 223637,
+      "text": "results"
+    },
+    {
+      "start": 223765,
+      "end": 223829,
+      "text": "and"
+    },
+    {
+      "start": 223926,
+      "end": 224038,
+      "text": "there"
+    },
+    {
+      "start": 224310,
+      "end": 224567,
+      "text": "isn't"
+    },
+    {
+      "start": 224567,
+      "end": 224775,
+      "text": "that"
+    },
+    {
+      "start": 224775,
+      "end": 224903,
+      "text": "much"
+    },
+    {
+      "start": 224903,
+      "end": 225048,
+      "text": "of"
+    },
+    {
+      "start": 225048,
+      "end": 225064,
+      "text": "a"
+    },
+    {
+      "start": 225064,
+      "end": 225416,
+      "text": "difference."
+    },
+    {
+      "start": 225913,
+      "end": 226009,
+      "text": "Now,"
+    },
+    {
+      "start": 226074,
+      "end": 226298,
+      "text": "kind"
+    },
+    {
+      "start": 226330,
+      "end": 226410,
+      "text": "of"
+    },
+    {
+      "start": 226410,
+      "end": 226795,
+      "text": "related"
+    },
+    {
+      "start": 226795,
+      "end": 226939,
+      "text": "to"
+    },
+    {
+      "start": 226955,
+      "end": 227099,
+      "text": "that,"
+    },
+    {
+      "start": 227276,
+      "end": 227356,
+      "text": "and"
+    },
+    {
+      "start": 227356,
+      "end": 227436,
+      "text": "we"
+    },
+    {
+      "start": 227436,
+      "end": 227548,
+      "text": "can"
+    },
+    {
+      "start": 227596,
+      "end": 227837,
+      "text": "see"
+    },
+    {
+      "start": 227837,
+      "end": 227997,
+      "text": "that"
+    },
+    {
+      "start": 227997,
+      "end": 228189,
+      "text": "here"
+    },
+    {
+      "start": 228189,
+      "end": 228270,
+      "text": "in"
+    },
+    {
+      "start": 228270,
+      "end": 228350,
+      "text": "the"
+    },
+    {
+      "start": 228350,
+      "end": 228815,
+      "text": "benchmarks"
+    },
+    {
+      "start": 228815,
+      "end": 228991,
+      "text": "too,"
+    },
+    {
+      "start": 229696,
+      "end": 229856,
+      "text": "you"
+    },
+    {
+      "start": 229921,
+      "end": 230177,
+      "text": "really"
+    },
+    {
+      "start": 230177,
+      "end": 230402,
+      "text": "should"
+    },
+    {
+      "start": 230402,
+      "end": 230786,
+      "text": "avoid"
+    },
+    {
+      "start": 230818,
+      "end": 231379,
+      "text": "max"
+    },
+    {
+      "start": 231684,
+      "end": 231748,
+      "text": "and"
+    },
+    {
+      "start": 231796,
+      "end": 231940,
+      "text": "low"
+    },
+    {
+      "start": 232662,
+      "end": 233111,
+      "text": "because"
+    },
+    {
+      "start": 233287,
+      "end": 233399,
+      "text": "the"
+    },
+    {
+      "start": 233527,
+      "end": 233848,
+      "text": "extra"
+    },
+    {
+      "start": 233848,
+      "end": 234457,
+      "text": "intelligence"
+    },
+    {
+      "start": 234505,
+      "end": 234633,
+      "text": "you"
+    },
+    {
+      "start": 234649,
+      "end": 234810,
+      "text": "get"
+    },
+    {
+      "start": 234890,
+      "end": 235066,
+      "text": "out"
+    },
+    {
+      "start": 235066,
+      "end": 235226,
+      "text": "of"
+    },
+    {
+      "start": 235226,
+      "end": 235803,
+      "text": "max"
+    },
+    {
+      "start": 236493,
+      "end": 236557,
+      "text": "is"
+    },
+    {
+      "start": 236653,
+      "end": 236893,
+      "text": "really"
+    },
+    {
+      "start": 236893,
+      "end": 237086,
+      "text": "not"
+    },
+    {
+      "start": 237086,
+      "end": 237278,
+      "text": "that"
+    },
+    {
+      "start": 237294,
+      "end": 237615,
+      "text": "great,"
+    },
+    {
+      "start": 237631,
+      "end": 238080,
+      "text": "especially"
+    },
+    {
+      "start": 238112,
+      "end": 238641,
+      "text": "compared"
+    },
+    {
+      "start": 238673,
+      "end": 238929,
+      "text": "to"
+    },
+    {
+      "start": 239057,
+      "end": 239106,
+      "text": "high"
+    },
+    {
+      "start": 239394,
+      "end": 239506,
+      "text": "here."
+    },
+    {
+      "start": 240180,
+      "end": 240388,
+      "text": "Also"
+    },
+    {
+      "start": 240420,
+      "end": 240564,
+      "text": "on"
+    },
+    {
+      "start": 240757,
+      "end": 240997,
+      "text": "this"
+    },
+    {
+      "start": 240997,
+      "end": 241494,
+      "text": "benchmark,"
+    },
+    {
+      "start": 241558,
+      "end": 241718,
+      "text": "it's"
+    },
+    {
+      "start": 241783,
+      "end": 242007,
+      "text": "even"
+    },
+    {
+      "start": 242039,
+      "end": 242456,
+      "text": "lower,"
+    },
+    {
+      "start": 242824,
+      "end": 243385,
+      "text": "interestingly"
+    },
+    {
+      "start": 243385,
+      "end": 243594,
+      "text": "enough."
+    },
+    {
+      "start": 244347,
+      "end": 244556,
+      "text": "And"
+    },
+    {
+      "start": 244604,
+      "end": 244684,
+      "text": "low"
+    },
+    {
+      "start": 244908,
+      "end": 244972,
+      "text": "is"
+    },
+    {
+      "start": 245085,
+      "end": 245277,
+      "text": "far"
+    },
+    {
+      "start": 245389,
+      "end": 245565,
+      "text": "too"
+    },
+    {
+      "start": 245565,
+      "end": 245806,
+      "text": "dumb."
+    },
+    {
+      "start": 246127,
+      "end": 246239,
+      "text": "There"
+    },
+    {
+      "start": 246271,
+      "end": 246335,
+      "text": "is"
+    },
+    {
+      "start": 246431,
+      "end": 246447,
+      "text": "a"
+    },
+    {
+      "start": 246447,
+      "end": 246800,
+      "text": "huge"
+    },
+    {
+      "start": 246912,
+      "end": 247168,
+      "text": "gap"
+    },
+    {
+      "start": 247168,
+      "end": 247489,
+      "text": "between"
+    },
+    {
+      "start": 247489,
+      "end": 247938,
+      "text": "medium"
+    },
+    {
+      "start": 248130,
+      "end": 248194,
+      "text": "and"
+    },
+    {
+      "start": 248355,
+      "end": 248403,
+      "text": "low"
+    },
+    {
+      "start": 248435,
+      "end": 248499,
+      "text": "on"
+    },
+    {
+      "start": 248820,
+      "end": 248868,
+      "text": "on"
+    },
+    {
+      "start": 248996,
+      "end": 249124,
+      "text": "all"
+    },
+    {
+      "start": 249252,
+      "end": 249380,
+      "text": "these"
+    },
+    {
+      "start": 249493,
+      "end": 250053,
+      "text": "benchmarks,"
+    },
+    {
+      "start": 250678,
+      "end": 250823,
+      "text": "but"
+    },
+    {
+      "start": 250919,
+      "end": 251015,
+      "text": "the"
+    },
+    {
+      "start": 251079,
+      "end": 251656,
+      "text": "cost"
+    },
+    {
+      "start": 252057,
+      "end": 252537,
+      "text": "increase"
+    },
+    {
+      "start": 252537,
+      "end": 252617,
+      "text": "you"
+    },
+    {
+      "start": 252617,
+      "end": 252858,
+      "text": "have"
+    },
+    {
+      "start": 252858,
+      "end": 252986,
+      "text": "on"
+    },
+    {
+      "start": 253018,
+      "end": 253595,
+      "text": "max"
+    },
+    {
+      "start": 253964,
+      "end": 254220,
+      "text": "just"
+    },
+    {
+      "start": 254220,
+      "end": 254524,
+      "text": "doesn't"
+    },
+    {
+      "start": 254540,
+      "end": 254717,
+      "text": "make"
+    },
+    {
+      "start": 254717,
+      "end": 254829,
+      "text": "it"
+    },
+    {
+      "start": 254845,
+      "end": 255117,
+      "text": "worth"
+    },
+    {
+      "start": 255117,
+      "end": 255197,
+      "text": "it."
+    },
+    {
+      "start": 255646,
+      "end": 255967,
+      "text": "Even"
+    },
+    {
+      "start": 255967,
+      "end": 256143,
+      "text": "if"
+    },
+    {
+      "start": 256143,
+      "end": 256319,
+      "text": "you"
+    },
+    {
+      "start": 256383,
+      "end": 256544,
+      "text": "would"
+    },
+    {
+      "start": 256544,
+      "end": 256800,
+      "text": "have"
+    },
+    {
+      "start": 256800,
+      "end": 256816,
+      "text": "a"
+    },
+    {
+      "start": 256944,
+      "end": 257249,
+      "text": "better"
+    },
+    {
+      "start": 257249,
+      "end": 257713,
+      "text": "result,"
+    },
+    {
+      "start": 257729,
+      "end": 257745,
+      "text": "I"
+    },
+    {
+      "start": 257810,
+      "end": 257906,
+      "text": "mean,"
+    },
+    {
+      "start": 257970,
+      "end": 258178,
+      "text": "it's"
+    },
+    {
+      "start": 258178,
+      "end": 258547,
+      "text": "slightly"
+    },
+    {
+      "start": 258547,
+      "end": 258755,
+      "text": "better"
+    },
+    {
+      "start": 258771,
+      "end": 258899,
+      "text": "here,"
+    },
+    {
+      "start": 259332,
+      "end": 259460,
+      "text": "even"
+    },
+    {
+      "start": 259508,
+      "end": 259636,
+      "text": "then"
+    },
+    {
+      "start": 259909,
+      "end": 260053,
+      "text": "you're"
+    },
+    {
+      "start": 260053,
+      "end": 260229,
+      "text": "just"
+    },
+    {
+      "start": 260229,
+      "end": 260438,
+      "text": "paying"
+    },
+    {
+      "start": 260614,
+      "end": 260806,
+      "text": "way"
+    },
+    {
+      "start": 260806,
+      "end": 260983,
+      "text": "more."
+    },
+    {
+      "start": 261335,
+      "end": 261415,
+      "text": "This"
+    },
+    {
+      "start": 261511,
+      "end": 261559,
+      "text": "is"
+    },
+    {
+      "start": 261736,
+      "end": 262088,
+      "text": "log"
+    },
+    {
+      "start": 262088,
+      "end": 262425,
+      "text": "scale"
+    },
+    {
+      "start": 262553,
+      "end": 262665,
+      "text": "here,"
+    },
+    {
+      "start": 262890,
+      "end": 263082,
+      "text": "so"
+    },
+    {
+      "start": 263098,
+      "end": 263242,
+      "text": "you're"
+    },
+    {
+      "start": 263258,
+      "end": 263482,
+      "text": "paying"
+    },
+    {
+      "start": 263675,
+      "end": 263867,
+      "text": "way"
+    },
+    {
+      "start": 263931,
+      "end": 264236,
+      "text": "more."
+    },
+    {
+      "start": 264700,
+      "end": 265053,
+      "text": "Therefore,"
+    },
+    {
+      "start": 265261,
+      "end": 265357,
+      "text": "you"
+    },
+    {
+      "start": 265357,
+      "end": 265582,
+      "text": "should"
+    },
+    {
+      "start": 265582,
+      "end": 266127,
+      "text": "avoid"
+    },
+    {
+      "start": 266479,
+      "end": 267056,
+      "text": "max"
+    },
+    {
+      "start": 267585,
+      "end": 267889,
+      "text": "and"
+    },
+    {
+      "start": 268066,
+      "end": 268322,
+      "text": "low."
+    },
+    {
+      "start": 269027,
+      "end": 269155,
+      "text": "The"
+    },
+    {
+      "start": 269364,
+      "end": 269796,
+      "text": "ideal"
+    },
+    {
+      "start": 269860,
+      "end": 270133,
+      "text": "level"
+    },
+    {
+      "start": 270389,
+      "end": 270710,
+      "text": "really"
+    },
+    {
+      "start": 270710,
+      "end": 270774,
+      "text": "is"
+    },
+    {
+      "start": 270886,
+      "end": 271255,
+      "text": "medium"
+    },
+    {
+      "start": 271623,
+      "end": 271767,
+      "text": "or"
+    },
+    {
+      "start": 271767,
+      "end": 272040,
+      "text": "high"
+    },
+    {
+      "start": 272585,
+      "end": 272649,
+      "text": "or"
+    },
+    {
+      "start": 272713,
+      "end": 273033,
+      "text": "maybe"
+    },
+    {
+      "start": 273114,
+      "end": 273274,
+      "text": "also"
+    },
+    {
+      "start": 273290,
+      "end": 273755,
+      "text": "X-High,"
+    },
+    {
+      "start": 274011,
+      "end": 274444,
+      "text": "but"
+    },
+    {
+      "start": 274556,
+      "end": 274828,
+      "text": "Medium"
+    },
+    {
+      "start": 274828,
+      "end": 274940,
+      "text": "is"
+    },
+    {
+      "start": 275036,
+      "end": 275133,
+      "text": "a"
+    },
+    {
+      "start": 275357,
+      "end": 275501,
+      "text": "good"
+    },
+    {
+      "start": 275533,
+      "end": 275870,
+      "text": "default."
+    },
+    {
+      "start": 276334,
+      "end": 276510,
+      "text": "Now,"
+    },
+    {
+      "start": 276895,
+      "end": 277007,
+      "text": "when"
+    },
+    {
+      "start": 277135,
+      "end": 277504,
+      "text": "working"
+    },
+    {
+      "start": 277520,
+      "end": 277568,
+      "text": "on"
+    },
+    {
+      "start": 277616,
+      "end": 278193,
+      "text": "tasks"
+    },
+    {
+      "start": 278337,
+      "end": 278545,
+      "text": "with"
+    },
+    {
+      "start": 278802,
+      "end": 279122,
+      "text": "Opus"
+    },
+    {
+      "start": 279122,
+      "end": 279939,
+      "text": "5.5,"
+    },
+    {
+      "start": 280260,
+      "end": 280340,
+      "text": "the"
+    },
+    {
+      "start": 280644,
+      "end": 281077,
+      "text": "Anthropic"
+    },
+    {
+      "start": 281141,
+      "end": 281429,
+      "text": "team"
+    },
+    {
+      "start": 281766,
+      "end": 282359,
+      "text": "recommends"
+    },
+    {
+      "start": 282968,
+      "end": 283592,
+      "text": "clearly"
+    },
+    {
+      "start": 283689,
+      "end": 284538,
+      "text": "describing"
+    },
+    {
+      "start": 284890,
+      "end": 285018,
+      "text": "when"
+    },
+    {
+      "start": 285243,
+      "end": 285259,
+      "text": "a"
+    },
+    {
+      "start": 285307,
+      "end": 285868,
+      "text": "task"
+    },
+    {
+      "start": 285868,
+      "end": 286124,
+      "text": "should"
+    },
+    {
+      "start": 286188,
+      "end": 286268,
+      "text": "be"
+    },
+    {
+      "start": 286332,
+      "end": 286797,
+      "text": "considered"
+    },
+    {
+      "start": 286829,
+      "end": 287037,
+      "text": "done"
+    },
+    {
+      "start": 287374,
+      "end": 287438,
+      "text": "to"
+    },
+    {
+      "start": 287470,
+      "end": 287790,
+      "text": "make"
+    },
+    {
+      "start": 287790,
+      "end": 288031,
+      "text": "sure"
+    },
+    {
+      "start": 288031,
+      "end": 288239,
+      "text": "that"
+    },
+    {
+      "start": 288335,
+      "end": 288624,
+      "text": "Opus"
+    },
+    {
+      "start": 288752,
+      "end": 289024,
+      "text": "doesn't"
+    },
+    {
+      "start": 289024,
+      "end": 289296,
+      "text": "stop"
+    },
+    {
+      "start": 289313,
+      "end": 289553,
+      "text": "early."
+    },
+    {
+      "start": 289793,
+      "end": 289873,
+      "text": "Now,"
+    },
+    {
+      "start": 289953,
+      "end": 290001,
+      "text": "in"
+    },
+    {
+      "start": 290034,
+      "end": 290146,
+      "text": "my"
+    },
+    {
+      "start": 290258,
+      "end": 290739,
+      "text": "experience,"
+    },
+    {
+      "start": 291139,
+      "end": 291203,
+      "text": "I"
+    },
+    {
+      "start": 291235,
+      "end": 291460,
+      "text": "didn't"
+    },
+    {
+      "start": 291460,
+      "end": 291604,
+      "text": "really"
+    },
+    {
+      "start": 291636,
+      "end": 291732,
+      "text": "need"
+    },
+    {
+      "start": 291732,
+      "end": 291844,
+      "text": "to"
+    },
+    {
+      "start": 291876,
+      "end": 291972,
+      "text": "do"
+    },
+    {
+      "start": 291972,
+      "end": 292197,
+      "text": "that,"
+    },
+    {
+      "start": 292421,
+      "end": 292517,
+      "text": "but"
+    },
+    {
+      "start": 292597,
+      "end": 292693,
+      "text": "that"
+    },
+    {
+      "start": 292693,
+      "end": 292773,
+      "text": "is"
+    },
+    {
+      "start": 292918,
+      "end": 293446,
+      "text": "probably"
+    },
+    {
+      "start": 293478,
+      "end": 293735,
+      "text": "also"
+    },
+    {
+      "start": 293799,
+      "end": 294167,
+      "text": "because"
+    },
+    {
+      "start": 294199,
+      "end": 294231,
+      "text": "I"
+    },
+    {
+      "start": 294344,
+      "end": 294456,
+      "text": "have"
+    },
+    {
+      "start": 294584,
+      "end": 294840,
+      "text": "agent"
+    },
+    {
+      "start": 294840,
+      "end": 295209,
+      "text": "skills"
+    },
+    {
+      "start": 295321,
+      "end": 295465,
+      "text": "and"
+    },
+    {
+      "start": 295465,
+      "end": 295593,
+      "text": "I"
+    },
+    {
+      "start": 295625,
+      "end": 295818,
+      "text": "have"
+    },
+    {
+      "start": 295818,
+      "end": 295914,
+      "text": "an"
+    },
+    {
+      "start": 296042,
+      "end": 296603,
+      "text": "agents.md"
+    },
+    {
+      "start": 296603,
+      "end": 296683,
+      "text": "and"
+    },
+    {
+      "start": 296683,
+      "end": 297244,
+      "text": "Claude.md"
+    },
+    {
+      "start": 297244,
+      "end": 297532,
+      "text": "files"
+    },
+    {
+      "start": 298205,
+      "end": 298381,
+      "text": "where"
+    },
+    {
+      "start": 298590,
+      "end": 298638,
+      "text": "I"
+    },
+    {
+      "start": 298830,
+      "end": 299295,
+      "text": "already"
+    },
+    {
+      "start": 299583,
+      "end": 300176,
+      "text": "describe"
+    },
+    {
+      "start": 300208,
+      "end": 300528,
+      "text": "kind"
+    },
+    {
+      "start": 300528,
+      "end": 300656,
+      "text": "of"
+    },
+    {
+      "start": 300833,
+      "end": 301025,
+      "text": "the"
+    },
+    {
+      "start": 301169,
+      "end": 301634,
+      "text": "loop"
+    },
+    {
+      "start": 301634,
+      "end": 301810,
+      "text": "or"
+    },
+    {
+      "start": 301810,
+      "end": 301890,
+      "text": "the"
+    },
+    {
+      "start": 301970,
+      "end": 302627,
+      "text": "self"
+    },
+    {
+      "start": 302852,
+      "end": 303718,
+      "text": "verification,"
+    },
+    {
+      "start": 303735,
+      "end": 304842,
+      "text": "self-validation"
+    },
+    {
+      "start": 304842,
+      "end": 305211,
+      "text": "steps"
+    },
+    {
+      "start": 305725,
+      "end": 306062,
+      "text": "Opus"
+    },
+    {
+      "start": 306062,
+      "end": 306239,
+      "text": "should"
+    },
+    {
+      "start": 306303,
+      "end": 306544,
+      "text": "go"
+    },
+    {
+      "start": 306608,
+      "end": 306849,
+      "text": "through"
+    },
+    {
+      "start": 306881,
+      "end": 307090,
+      "text": "or"
+    },
+    {
+      "start": 307090,
+      "end": 307314,
+      "text": "any"
+    },
+    {
+      "start": 307427,
+      "end": 307619,
+      "text": "AI"
+    },
+    {
+      "start": 307667,
+      "end": 307972,
+      "text": "agent"
+    },
+    {
+      "start": 307972,
+      "end": 308117,
+      "text": "should"
+    },
+    {
+      "start": 308149,
+      "end": 308374,
+      "text": "go"
+    },
+    {
+      "start": 308374,
+      "end": 308534,
+      "text": "through"
+    },
+    {
+      "start": 308615,
+      "end": 308743,
+      "text": "when"
+    },
+    {
+      "start": 308871,
+      "end": 309209,
+      "text": "working"
+    },
+    {
+      "start": 309209,
+      "end": 309305,
+      "text": "on"
+    },
+    {
+      "start": 309337,
+      "end": 309433,
+      "text": "a"
+    },
+    {
+      "start": 309433,
+      "end": 309979,
+      "text": "task."
+    },
+    {
+      "start": 310332,
+      "end": 310621,
+      "text": "So"
+    },
+    {
+      "start": 310701,
+      "end": 310798,
+      "text": "for"
+    },
+    {
+      "start": 310798,
+      "end": 311183,
+      "text": "example,"
+    },
+    {
+      "start": 311263,
+      "end": 311327,
+      "text": "one"
+    },
+    {
+      "start": 311376,
+      "end": 311440,
+      "text": "of"
+    },
+    {
+      "start": 311440,
+      "end": 311520,
+      "text": "the"
+    },
+    {
+      "start": 311520,
+      "end": 311777,
+      "text": "skills"
+    },
+    {
+      "start": 311777,
+      "end": 311905,
+      "text": "I'm"
+    },
+    {
+      "start": 311905,
+      "end": 312210,
+      "text": "using,"
+    },
+    {
+      "start": 312307,
+      "end": 312483,
+      "text": "my"
+    },
+    {
+      "start": 312483,
+      "end": 312788,
+      "text": "implement"
+    },
+    {
+      "start": 312804,
+      "end": 313077,
+      "text": "plan"
+    },
+    {
+      "start": 313125,
+      "end": 313318,
+      "text": "skill,"
+    },
+    {
+      "start": 313751,
+      "end": 313992,
+      "text": "clearly"
+    },
+    {
+      "start": 313992,
+      "end": 314217,
+      "text": "says"
+    },
+    {
+      "start": 314265,
+      "end": 314474,
+      "text": "that"
+    },
+    {
+      "start": 314474,
+      "end": 314586,
+      "text": "when"
+    },
+    {
+      "start": 314795,
+      "end": 314843,
+      "text": "all"
+    },
+    {
+      "start": 314891,
+      "end": 315293,
+      "text": "tasks"
+    },
+    {
+      "start": 315293,
+      "end": 315341,
+      "text": "are"
+    },
+    {
+      "start": 315373,
+      "end": 315581,
+      "text": "done,"
+    },
+    {
+      "start": 315774,
+      "end": 315854,
+      "text": "it"
+    },
+    {
+      "start": 315854,
+      "end": 315983,
+      "text": "should"
+    },
+    {
+      "start": 316015,
+      "end": 316352,
+      "text": "review"
+    },
+    {
+      "start": 316352,
+      "end": 316496,
+      "text": "the"
+    },
+    {
+      "start": 316496,
+      "end": 316609,
+      "text": "full"
+    },
+    {
+      "start": 316657,
+      "end": 316914,
+      "text": "diff"
+    },
+    {
+      "start": 316914,
+      "end": 317058,
+      "text": "and"
+    },
+    {
+      "start": 317058,
+      "end": 317187,
+      "text": "so"
+    },
+    {
+      "start": 317203,
+      "end": 317428,
+      "text": "on."
+    },
+    {
+      "start": 317861,
+      "end": 317925,
+      "text": "And"
+    },
+    {
+      "start": 318086,
+      "end": 318503,
+      "text": "earlier"
+    },
+    {
+      "start": 318503,
+      "end": 318888,
+      "text": "before"
+    },
+    {
+      "start": 318888,
+      "end": 319033,
+      "text": "that,"
+    },
+    {
+      "start": 319049,
+      "end": 319129,
+      "text": "I"
+    },
+    {
+      "start": 319129,
+      "end": 319402,
+      "text": "already"
+    },
+    {
+      "start": 319402,
+      "end": 319723,
+      "text": "said"
+    },
+    {
+      "start": 319723,
+      "end": 319916,
+      "text": "that"
+    },
+    {
+      "start": 320012,
+      "end": 320429,
+      "text": "verify"
+    },
+    {
+      "start": 320429,
+      "end": 320638,
+      "text": "every"
+    },
+    {
+      "start": 320654,
+      "end": 320991,
+      "text": "task"
+    },
+    {
+      "start": 320991,
+      "end": 321264,
+      "text": "before"
+    },
+    {
+      "start": 321296,
+      "end": 321521,
+      "text": "moving"
+    },
+    {
+      "start": 321617,
+      "end": 321746,
+      "text": "on,"
+    },
+    {
+      "start": 322179,
+      "end": 322324,
+      "text": "run"
+    },
+    {
+      "start": 322356,
+      "end": 322516,
+      "text": "the"
+    },
+    {
+      "start": 322516,
+      "end": 322902,
+      "text": "checks,"
+    },
+    {
+      "start": 322918,
+      "end": 323078,
+      "text": "the"
+    },
+    {
+      "start": 323078,
+      "end": 323367,
+      "text": "plane"
+    },
+    {
+      "start": 323479,
+      "end": 323849,
+      "text": "names,"
+    },
+    {
+      "start": 324202,
+      "end": 324266,
+      "text": "and"
+    },
+    {
+      "start": 324362,
+      "end": 324539,
+      "text": "check"
+    },
+    {
+      "start": 324683,
+      "end": 324972,
+      "text": "anything"
+    },
+    {
+      "start": 325069,
+      "end": 325181,
+      "text": "in"
+    },
+    {
+      "start": 325181,
+      "end": 325293,
+      "text": "the"
+    },
+    {
+      "start": 325390,
+      "end": 325807,
+      "text": "UI"
+    },
+    {
+      "start": 326208,
+      "end": 326321,
+      "text": "with"
+    },
+    {
+      "start": 326369,
+      "end": 326433,
+      "text": "a"
+    },
+    {
+      "start": 326513,
+      "end": 326658,
+      "text": "real"
+    },
+    {
+      "start": 326690,
+      "end": 327268,
+      "text": "browser,"
+    },
+    {
+      "start": 327733,
+      "end": 327974,
+      "text": "with"
+    },
+    {
+      "start": 328054,
+      "end": 328327,
+      "text": "agent"
+    },
+    {
+      "start": 328359,
+      "end": 328713,
+      "text": "browser."
+    },
+    {
+      "start": 328761,
+      "end": 328937,
+      "text": "So"
+    },
+    {
+      "start": 328937,
+      "end": 329082,
+      "text": "I"
+    },
+    {
+      "start": 329162,
+      "end": 329387,
+      "text": "already"
+    },
+    {
+      "start": 329419,
+      "end": 329756,
+      "text": "have"
+    },
+    {
+      "start": 329756,
+      "end": 329868,
+      "text": "some"
+    },
+    {
+      "start": 329901,
+      "end": 330398,
+      "text": "instructions"
+    },
+    {
+      "start": 330446,
+      "end": 330575,
+      "text": "here"
+    },
+    {
+      "start": 330767,
+      "end": 330848,
+      "text": "and"
+    },
+    {
+      "start": 330848,
+      "end": 330944,
+      "text": "I"
+    },
+    {
+      "start": 330944,
+      "end": 331056,
+      "text": "have"
+    },
+    {
+      "start": 331169,
+      "end": 331345,
+      "text": "other"
+    },
+    {
+      "start": 331345,
+      "end": 331714,
+      "text": "skills"
+    },
+    {
+      "start": 331747,
+      "end": 331955,
+      "text": "too"
+    },
+    {
+      "start": 332469,
+      "end": 332662,
+      "text": "where"
+    },
+    {
+      "start": 332854,
+      "end": 332902,
+      "text": "I"
+    },
+    {
+      "start": 333240,
+      "end": 333464,
+      "text": "tell"
+    },
+    {
+      "start": 333656,
+      "end": 334217,
+      "text": "agents"
+    },
+    {
+      "start": 334474,
+      "end": 334795,
+      "text": "that"
+    },
+    {
+      "start": 334795,
+      "end": 334955,
+      "text": "they"
+    },
+    {
+      "start": 334955,
+      "end": 335275,
+      "text": "should"
+    },
+    {
+      "start": 335275,
+      "end": 335756,
+      "text": "verify"
+    },
+    {
+      "start": 335756,
+      "end": 335933,
+      "text": "their"
+    },
+    {
+      "start": 336061,
+      "end": 336398,
+      "text": "work"
+    },
+    {
+      "start": 336398,
+      "end": 336574,
+      "text": "and"
+    },
+    {
+      "start": 336863,
+      "end": 336975,
+      "text": "that"
+    },
+    {
+      "start": 337023,
+      "end": 337183,
+      "text": "this"
+    },
+    {
+      "start": 337183,
+      "end": 337247,
+      "text": "is"
+    },
+    {
+      "start": 337344,
+      "end": 337664,
+      "text": "part"
+    },
+    {
+      "start": 337664,
+      "end": 337728,
+      "text": "of"
+    },
+    {
+      "start": 337760,
+      "end": 337824,
+      "text": "the"
+    },
+    {
+      "start": 337824,
+      "end": 338498,
+      "text": "implementation."
+    },
+    {
+      "start": 338562,
+      "end": 338706,
+      "text": "But"
+    },
+    {
+      "start": 339187,
+      "end": 339267,
+      "text": "it"
+    },
+    {
+      "start": 339267,
+      "end": 339331,
+      "text": "is"
+    },
+    {
+      "start": 339363,
+      "end": 339652,
+      "text": "something"
+    },
+    {
+      "start": 339748,
+      "end": 339860,
+      "text": "you"
+    },
+    {
+      "start": 339989,
+      "end": 340373,
+      "text": "should"
+    },
+    {
+      "start": 340486,
+      "end": 340646,
+      "text": "do."
+    },
+    {
+      "start": 340870,
+      "end": 341047,
+      "text": "And"
+    },
+    {
+      "start": 341047,
+      "end": 341191,
+      "text": "if"
+    },
+    {
+      "start": 341191,
+      "end": 341351,
+      "text": "you're"
+    },
+    {
+      "start": 341367,
+      "end": 341688,
+      "text": "working"
+    },
+    {
+      "start": 341704,
+      "end": 341768,
+      "text": "on"
+    },
+    {
+      "start": 341784,
+      "end": 341832,
+      "text": "a"
+    },
+    {
+      "start": 341848,
+      "end": 342345,
+      "text": "specific"
+    },
+    {
+      "start": 342345,
+      "end": 342810,
+      "text": "task"
+    },
+    {
+      "start": 342810,
+      "end": 343147,
+      "text": "where"
+    },
+    {
+      "start": 343532,
+      "end": 343692,
+      "text": "it's"
+    },
+    {
+      "start": 343692,
+      "end": 343932,
+      "text": "maybe"
+    },
+    {
+      "start": 343932,
+      "end": 344173,
+      "text": "not"
+    },
+    {
+      "start": 344173,
+      "end": 344526,
+      "text": "clear"
+    },
+    {
+      "start": 344654,
+      "end": 344766,
+      "text": "what"
+    },
+    {
+      "start": 344894,
+      "end": 345006,
+      "text": "the"
+    },
+    {
+      "start": 345119,
+      "end": 345664,
+      "text": "endpoint"
+    },
+    {
+      "start": 345760,
+      "end": 345904,
+      "text": "would"
+    },
+    {
+      "start": 345936,
+      "end": 346193,
+      "text": "be,"
+    },
+    {
+      "start": 346818,
+      "end": 347058,
+      "text": "put"
+    },
+    {
+      "start": 347123,
+      "end": 347363,
+      "text": "that"
+    },
+    {
+      "start": 347363,
+      "end": 347459,
+      "text": "in"
+    },
+    {
+      "start": 347459,
+      "end": 347587,
+      "text": "your"
+    },
+    {
+      "start": 347700,
+      "end": 348100,
+      "text": "prompt,"
+    },
+    {
+      "start": 348245,
+      "end": 348501,
+      "text": "put"
+    },
+    {
+      "start": 348501,
+      "end": 348662,
+      "text": "that"
+    },
+    {
+      "start": 348662,
+      "end": 348806,
+      "text": "in"
+    },
+    {
+      "start": 348806,
+      "end": 348934,
+      "text": "your"
+    },
+    {
+      "start": 348982,
+      "end": 349335,
+      "text": "plan."
+    },
+    {
+      "start": 349623,
+      "end": 349688,
+      "text": "And"
+    },
+    {
+      "start": 349688,
+      "end": 349784,
+      "text": "you"
+    },
+    {
+      "start": 349784,
+      "end": 349976,
+      "text": "don't"
+    },
+    {
+      "start": 349976,
+      "end": 350024,
+      "text": "need"
+    },
+    {
+      "start": 350024,
+      "end": 350169,
+      "text": "to"
+    },
+    {
+      "start": 350169,
+      "end": 350329,
+      "text": "use"
+    },
+    {
+      "start": 350345,
+      "end": 350537,
+      "text": "plan"
+    },
+    {
+      "start": 350537,
+      "end": 350794,
+      "text": "mode"
+    },
+    {
+      "start": 350906,
+      "end": 351034,
+      "text": "for"
+    },
+    {
+      "start": 351066,
+      "end": 351178,
+      "text": "that,"
+    },
+    {
+      "start": 351227,
+      "end": 351323,
+      "text": "by"
+    },
+    {
+      "start": 351323,
+      "end": 351435,
+      "text": "the"
+    },
+    {
+      "start": 351451,
+      "end": 351483,
+      "text": "way."
+    },
+    {
+      "start": 351547,
+      "end": 351868,
+      "text": "Just"
+    },
+    {
+      "start": 352108,
+      "end": 352317,
+      "text": "bring"
+    },
+    {
+      "start": 352349,
+      "end": 352429,
+      "text": "it"
+    },
+    {
+      "start": 352493,
+      "end": 352573,
+      "text": "up"
+    },
+    {
+      "start": 352653,
+      "end": 352734,
+      "text": "in"
+    },
+    {
+      "start": 352734,
+      "end": 352814,
+      "text": "the"
+    },
+    {
+      "start": 352814,
+      "end": 353279,
+      "text": "discussion"
+    },
+    {
+      "start": 353311,
+      "end": 353519,
+      "text": "with"
+    },
+    {
+      "start": 353535,
+      "end": 353872,
+      "text": "Claude"
+    },
+    {
+      "start": 353872,
+      "end": 354112,
+      "text": "before"
+    },
+    {
+      "start": 354112,
+      "end": 354192,
+      "text": "it"
+    },
+    {
+      "start": 354192,
+      "end": 354433,
+      "text": "gets"
+    },
+    {
+      "start": 354433,
+      "end": 354529,
+      "text": "to"
+    },
+    {
+      "start": 354577,
+      "end": 354818,
+      "text": "work."
+    },
+    {
+      "start": 355379,
+      "end": 355603,
+      "text": "And"
+    },
+    {
+      "start": 355715,
+      "end": 355795,
+      "text": "it"
+    },
+    {
+      "start": 355795,
+      "end": 355972,
+      "text": "should"
+    },
+    {
+      "start": 355972,
+      "end": 356308,
+      "text": "ensure"
+    },
+    {
+      "start": 356357,
+      "end": 356501,
+      "text": "that"
+    },
+    {
+      "start": 356581,
+      "end": 356838,
+      "text": "Opus"
+    },
+    {
+      "start": 356838,
+      "end": 357094,
+      "text": "keeps"
+    },
+    {
+      "start": 357094,
+      "end": 357206,
+      "text": "on"
+    },
+    {
+      "start": 357238,
+      "end": 357607,
+      "text": "working"
+    },
+    {
+      "start": 357880,
+      "end": 357944,
+      "text": "and"
+    },
+    {
+      "start": 357960,
+      "end": 358200,
+      "text": "keeps"
+    },
+    {
+      "start": 358200,
+      "end": 358248,
+      "text": "on"
+    },
+    {
+      "start": 358360,
+      "end": 358649,
+      "text": "going."
+    },
+    {
+      "start": 359146,
+      "end": 359178,
+      "text": "By"
+    },
+    {
+      "start": 359178,
+      "end": 359274,
+      "text": "the"
+    },
+    {
+      "start": 359306,
+      "end": 359402,
+      "text": "way,"
+    },
+    {
+      "start": 359643,
+      "end": 359691,
+      "text": "I"
+    },
+    {
+      "start": 359867,
+      "end": 360124,
+      "text": "also"
+    },
+    {
+      "start": 360204,
+      "end": 360589,
+      "text": "wrote"
+    },
+    {
+      "start": 360589,
+      "end": 360877,
+      "text": "down"
+    },
+    {
+      "start": 361150,
+      "end": 361198,
+      "text": "all"
+    },
+    {
+      "start": 361326,
+      "end": 361534,
+      "text": "these"
+    },
+    {
+      "start": 361727,
+      "end": 362015,
+      "text": "things"
+    },
+    {
+      "start": 362047,
+      "end": 362320,
+      "text": "here"
+    },
+    {
+      "start": 362673,
+      "end": 362817,
+      "text": "in"
+    },
+    {
+      "start": 362913,
+      "end": 362977,
+      "text": "an"
+    },
+    {
+      "start": 363154,
+      "end": 363538,
+      "text": "article"
+    },
+    {
+      "start": 363634,
+      "end": 363779,
+      "text": "on"
+    },
+    {
+      "start": 363795,
+      "end": 363971,
+      "text": "my"
+    },
+    {
+      "start": 363971,
+      "end": 364244,
+      "text": "page"
+    },
+    {
+      "start": 364356,
+      "end": 364468,
+      "text": "for"
+    },
+    {
+      "start": 364468,
+      "end": 364564,
+      "text": "an"
+    },
+    {
+      "start": 364692,
+      "end": 365141,
+      "text": "upcoming"
+    },
+    {
+      "start": 365253,
+      "end": 365959,
+      "text": "2-week"
+    },
+    {
+      "start": 365959,
+      "end": 366504,
+      "text": "program,"
+    },
+    {
+      "start": 367001,
+      "end": 367145,
+      "text": "which"
+    },
+    {
+      "start": 367257,
+      "end": 367418,
+      "text": "may"
+    },
+    {
+      "start": 367418,
+      "end": 367578,
+      "text": "be"
+    },
+    {
+      "start": 367578,
+      "end": 368027,
+      "text": "interesting"
+    },
+    {
+      "start": 368059,
+      "end": 368379,
+      "text": "for"
+    },
+    {
+      "start": 368379,
+      "end": 368476,
+      "text": "you."
+    },
+    {
+      "start": 368620,
+      "end": 369165,
+      "text": "Enrollments"
+    },
+    {
+      "start": 369165,
+      "end": 369261,
+      "text": "are"
+    },
+    {
+      "start": 369261,
+      "end": 369566,
+      "text": "not"
+    },
+    {
+      "start": 369566,
+      "end": 369758,
+      "text": "open"
+    },
+    {
+      "start": 369806,
+      "end": 369886,
+      "text": "up"
+    },
+    {
+      "start": 369966,
+      "end": 370207,
+      "text": "yet,"
+    },
+    {
+      "start": 370223,
+      "end": 370383,
+      "text": "but"
+    },
+    {
+      "start": 370383,
+      "end": 370511,
+      "text": "you"
+    },
+    {
+      "start": 370527,
+      "end": 370656,
+      "text": "can"
+    },
+    {
+      "start": 370704,
+      "end": 371746,
+      "text": "pre-register"
+    },
+    {
+      "start": 371746,
+      "end": 372146,
+      "text": "without"
+    },
+    {
+      "start": 372146,
+      "end": 372355,
+      "text": "any"
+    },
+    {
+      "start": 372371,
+      "end": 373076,
+      "text": "obligations"
+    },
+    {
+      "start": 373429,
+      "end": 373525,
+      "text": "to"
+    },
+    {
+      "start": 373525,
+      "end": 373653,
+      "text": "be"
+    },
+    {
+      "start": 373669,
+      "end": 374150,
+      "text": "notified"
+    },
+    {
+      "start": 374150,
+      "end": 374311,
+      "text": "when"
+    },
+    {
+      "start": 374311,
+      "end": 374407,
+      "text": "it"
+    },
+    {
+      "start": 374407,
+      "end": 374807,
+      "text": "starts."
+    },
+    {
+      "start": 374872,
+      "end": 375160,
+      "text": "Because"
+    },
+    {
+      "start": 375192,
+      "end": 375240,
+      "text": "in"
+    },
+    {
+      "start": 375272,
+      "end": 375593,
+      "text": "this"
+    },
+    {
+      "start": 375593,
+      "end": 375994,
+      "text": "2-week"
+    },
+    {
+      "start": 375994,
+      "end": 376523,
+      "text": "program,"
+    },
+    {
+      "start": 377100,
+      "end": 377148,
+      "text": "I"
+    },
+    {
+      "start": 377420,
+      "end": 377533,
+      "text": "will"
+    },
+    {
+      "start": 377597,
+      "end": 377965,
+      "text": "show"
+    },
+    {
+      "start": 378062,
+      "end": 378126,
+      "text": "you"
+    },
+    {
+      "start": 378302,
+      "end": 378542,
+      "text": "how"
+    },
+    {
+      "start": 378703,
+      "end": 378831,
+      "text": "I"
+    },
+    {
+      "start": 379039,
+      "end": 379472,
+      "text": "build"
+    },
+    {
+      "start": 379584,
+      "end": 379809,
+      "text": "real"
+    },
+    {
+      "start": 379905,
+      "end": 380530,
+      "text": "applications"
+    },
+    {
+      "start": 380707,
+      "end": 380963,
+      "text": "end"
+    },
+    {
+      "start": 380963,
+      "end": 381075,
+      "text": "to"
+    },
+    {
+      "start": 381187,
+      "end": 381412,
+      "text": "end"
+    },
+    {
+      "start": 381428,
+      "end": 381716,
+      "text": "from"
+    },
+    {
+      "start": 382085,
+      "end": 382614,
+      "text": "research,"
+    },
+    {
+      "start": 382710,
+      "end": 383255,
+      "text": "planning,"
+    },
+    {
+      "start": 383352,
+      "end": 384025,
+      "text": "discussions"
+    },
+    {
+      "start": 384153,
+      "end": 384377,
+      "text": "with"
+    },
+    {
+      "start": 384409,
+      "end": 384570,
+      "text": "the"
+    },
+    {
+      "start": 384570,
+      "end": 384762,
+      "text": "AI"
+    },
+    {
+      "start": 385435,
+      "end": 385580,
+      "text": "to"
+    },
+    {
+      "start": 385708,
+      "end": 385916,
+      "text": "the"
+    },
+    {
+      "start": 386013,
+      "end": 386125,
+      "text": "full"
+    },
+    {
+      "start": 386173,
+      "end": 386974,
+      "text": "implementation"
+    },
+    {
+      "start": 386974,
+      "end": 387263,
+      "text": "using"
+    },
+    {
+      "start": 387375,
+      "end": 387776,
+      "text": "multiple"
+    },
+    {
+      "start": 387840,
+      "end": 388193,
+      "text": "agents,"
+    },
+    {
+      "start": 388337,
+      "end": 388882,
+      "text": "orchestrating"
+    },
+    {
+      "start": 389042,
+      "end": 389539,
+      "text": "agents,"
+    },
+    {
+      "start": 390421,
+      "end": 390725,
+      "text": "making"
+    },
+    {
+      "start": 390725,
+      "end": 390870,
+      "text": "sure"
+    },
+    {
+      "start": 390790,
+      "end": 390934,
+      "text": "sure"
+    },
+    {
+      "start": 390982,
+      "end": 391127,
+      "text": "that"
+    },
+    {
+      "start": 391207,
+      "end": 391496,
+      "text": "agents"
+    },
+    {
+      "start": 391544,
+      "end": 392427,
+      "text": "self-verify"
+    },
+    {
+      "start": 392427,
+      "end": 392539,
+      "text": "their"
+    },
+    {
+      "start": 392651,
+      "end": 392972,
+      "text": "work"
+    },
+    {
+      "start": 393053,
+      "end": 393245,
+      "text": "and"
+    },
+    {
+      "start": 393245,
+      "end": 393454,
+      "text": "so"
+    },
+    {
+      "start": 393550,
+      "end": 393662,
+      "text": "on."
+    },
+    {
+      "start": 394048,
+      "end": 394192,
+      "text": "It's"
+    },
+    {
+      "start": 394208,
+      "end": 394224,
+      "text": "a"
+    },
+    {
+      "start": 394337,
+      "end": 394674,
+      "text": "2-week"
+    },
+    {
+      "start": 394674,
+      "end": 395011,
+      "text": "program."
+    },
+    {
+      "start": 395139,
+      "end": 395203,
+      "text": "As"
+    },
+    {
+      "start": 395235,
+      "end": 395540,
+      "text": "mentioned,"
+    },
+    {
+      "start": 395556,
+      "end": 395717,
+      "text": "we"
+    },
+    {
+      "start": 395717,
+      "end": 395942,
+      "text": "build"
+    },
+    {
+      "start": 395942,
+      "end": 396118,
+      "text": "a"
+    },
+    {
+      "start": 396118,
+      "end": 396230,
+      "text": "full"
+    },
+    {
+      "start": 396343,
+      "end": 396519,
+      "text": "app,"
+    },
+    {
+      "start": 396600,
+      "end": 396680,
+      "text": "we"
+    },
+    {
+      "start": 396680,
+      "end": 397033,
+      "text": "deploy"
+    },
+    {
+      "start": 397145,
+      "end": 397242,
+      "text": "it"
+    },
+    {
+      "start": 397242,
+      "end": 397290,
+      "text": "in"
+    },
+    {
+      "start": 397386,
+      "end": 397466,
+      "text": "the"
+    },
+    {
+      "start": 397547,
+      "end": 397659,
+      "text": "end."
+    },
+    {
+      "start": 398285,
+      "end": 398510,
+      "text": "This"
+    },
+    {
+      "start": 398510,
+      "end": 398606,
+      "text": "may"
+    },
+    {
+      "start": 398606,
+      "end": 398702,
+      "text": "be"
+    },
+    {
+      "start": 398702,
+      "end": 399103,
+      "text": "interesting"
+    },
+    {
+      "start": 399168,
+      "end": 399280,
+      "text": "for"
+    },
+    {
+      "start": 399392,
+      "end": 399473,
+      "text": "you."
+    },
+    {
+      "start": 399826,
+      "end": 400115,
+      "text": "So"
+    },
+    {
+      "start": 400211,
+      "end": 400275,
+      "text": "of"
+    },
+    {
+      "start": 400291,
+      "end": 400532,
+      "text": "course"
+    },
+    {
+      "start": 400532,
+      "end": 400612,
+      "text": "you"
+    },
+    {
+      "start": 400612,
+      "end": 400853,
+      "text": "find"
+    },
+    {
+      "start": 400853,
+      "end": 400869,
+      "text": "a"
+    },
+    {
+      "start": 400869,
+      "end": 401094,
+      "text": "link"
+    },
+    {
+      "start": 401094,
+      "end": 401318,
+      "text": "below"
+    },
+    {
+      "start": 401559,
+      "end": 401607,
+      "text": "if"
+    },
+    {
+      "start": 401655,
+      "end": 401736,
+      "text": "you"
+    },
+    {
+      "start": 401736,
+      "end": 401864,
+      "text": "want"
+    },
+    {
+      "start": 401864,
+      "end": 401896,
+      "text": "to"
+    },
+    {
+      "start": 401896,
+      "end": 402105,
+      "text": "learn"
+    },
+    {
+      "start": 402137,
+      "end": 402249,
+      "text": "more."
+    },
+    {
+      "start": 402602,
+      "end": 402747,
+      "text": "And"
+    },
+    {
+      "start": 402939,
+      "end": 403308,
+      "text": "below"
+    },
+    {
+      "start": 403341,
+      "end": 403485,
+      "text": "you"
+    },
+    {
+      "start": 403565,
+      "end": 403806,
+      "text": "also"
+    },
+    {
+      "start": 403806,
+      "end": 404127,
+      "text": "find"
+    },
+    {
+      "start": 404127,
+      "end": 404207,
+      "text": "the"
+    },
+    {
+      "start": 404207,
+      "end": 404384,
+      "text": "link"
+    },
+    {
+      "start": 404384,
+      "end": 404480,
+      "text": "to"
+    },
+    {
+      "start": 404480,
+      "end": 404689,
+      "text": "this"
+    },
+    {
+      "start": 404705,
+      "end": 404946,
+      "text": "article"
+    },
+    {
+      "start": 404946,
+      "end": 405042,
+      "text": "I"
+    },
+    {
+      "start": 405042,
+      "end": 405395,
+      "text": "mentioned."
+    },
+    {
+      "start": 405973,
+      "end": 406053,
+      "text": "In"
+    },
+    {
+      "start": 406053,
+      "end": 406214,
+      "text": "that"
+    },
+    {
+      "start": 406294,
+      "end": 406679,
+      "text": "article"
+    },
+    {
+      "start": 406936,
+      "end": 407000,
+      "text": "and"
+    },
+    {
+      "start": 407016,
+      "end": 407401,
+      "text": "related"
+    },
+    {
+      "start": 407433,
+      "end": 407530,
+      "text": "to"
+    },
+    {
+      "start": 407530,
+      "end": 407610,
+      "text": "my"
+    },
+    {
+      "start": 407658,
+      "end": 408140,
+      "text": "previous"
+    },
+    {
+      "start": 408140,
+      "end": 408444,
+      "text": "point,"
+    },
+    {
+      "start": 408862,
+      "end": 409022,
+      "text": "I"
+    },
+    {
+      "start": 409103,
+      "end": 409359,
+      "text": "also"
+    },
+    {
+      "start": 409359,
+      "end": 409777,
+      "text": "basically"
+    },
+    {
+      "start": 409841,
+      "end": 410306,
+      "text": "described"
+    },
+    {
+      "start": 410306,
+      "end": 410467,
+      "text": "that"
+    },
+    {
+      "start": 410467,
+      "end": 410531,
+      "text": "you"
+    },
+    {
+      "start": 410563,
+      "end": 410708,
+      "text": "want"
+    },
+    {
+      "start": 410708,
+      "end": 410740,
+      "text": "to"
+    },
+    {
+      "start": 410804,
+      "end": 410996,
+      "text": "build"
+    },
+    {
+      "start": 411045,
+      "end": 411061,
+      "text": "a"
+    },
+    {
+      "start": 411125,
+      "end": 411366,
+      "text": "loop."
+    },
+    {
+      "start": 411430,
+      "end": 411526,
+      "text": "And"
+    },
+    {
+      "start": 411526,
+      "end": 411703,
+      "text": "here"
+    },
+    {
+      "start": 411703,
+      "end": 411815,
+      "text": "I'm"
+    },
+    {
+      "start": 411927,
+      "end": 412120,
+      "text": "not"
+    },
+    {
+      "start": 412248,
+      "end": 412618,
+      "text": "talking"
+    },
+    {
+      "start": 412650,
+      "end": 413115,
+      "text": "about"
+    },
+    {
+      "start": 413372,
+      "end": 413516,
+      "text": "the"
+    },
+    {
+      "start": 413532,
+      "end": 413869,
+      "text": "loop"
+    },
+    {
+      "start": 413918,
+      "end": 414463,
+      "text": "engineering"
+    },
+    {
+      "start": 414560,
+      "end": 414608,
+      "text": "or"
+    },
+    {
+      "start": 414672,
+      "end": 415330,
+      "text": "software"
+    },
+    {
+      "start": 415378,
+      "end": 415827,
+      "text": "factory"
+    },
+    {
+      "start": 415924,
+      "end": 416181,
+      "text": "hype,"
+    },
+    {
+      "start": 416502,
+      "end": 416646,
+      "text": "But"
+    },
+    {
+      "start": 416646,
+      "end": 416823,
+      "text": "about"
+    },
+    {
+      "start": 416823,
+      "end": 417112,
+      "text": "something"
+    },
+    {
+      "start": 417128,
+      "end": 417240,
+      "text": "which"
+    },
+    {
+      "start": 417240,
+      "end": 417353,
+      "text": "of"
+    },
+    {
+      "start": 417385,
+      "end": 417722,
+      "text": "course"
+    },
+    {
+      "start": 417722,
+      "end": 417787,
+      "text": "is"
+    },
+    {
+      "start": 417851,
+      "end": 418060,
+      "text": "kind"
+    },
+    {
+      "start": 418092,
+      "end": 418236,
+      "text": "of"
+    },
+    {
+      "start": 418252,
+      "end": 418654,
+      "text": "related."
+    },
+    {
+      "start": 419056,
+      "end": 419168,
+      "text": "No"
+    },
+    {
+      "start": 419168,
+      "end": 419537,
+      "text": "matter"
+    },
+    {
+      "start": 419618,
+      "end": 419762,
+      "text": "which"
+    },
+    {
+      "start": 419939,
+      "end": 420276,
+      "text": "agent"
+    },
+    {
+      "start": 420276,
+      "end": 420501,
+      "text": "you're"
+    },
+    {
+      "start": 420581,
+      "end": 420887,
+      "text": "working"
+    },
+    {
+      "start": 420919,
+      "end": 421160,
+      "text": "with,"
+    },
+    {
+      "start": 421545,
+      "end": 421609,
+      "text": "you"
+    },
+    {
+      "start": 421882,
+      "end": 422188,
+      "text": "want"
+    },
+    {
+      "start": 422188,
+      "end": 422332,
+      "text": "to"
+    },
+    {
+      "start": 422509,
+      "end": 422894,
+      "text": "always"
+    },
+    {
+      "start": 423087,
+      "end": 423360,
+      "text": "tell"
+    },
+    {
+      "start": 423553,
+      "end": 423681,
+      "text": "them"
+    },
+    {
+      "start": 424533,
+      "end": 424741,
+      "text": "that"
+    },
+    {
+      "start": 424774,
+      "end": 424854,
+      "text": "they"
+    },
+    {
+      "start": 425015,
+      "end": 425304,
+      "text": "should"
+    },
+    {
+      "start": 425336,
+      "end": 425898,
+      "text": "verify"
+    },
+    {
+      "start": 425898,
+      "end": 426010,
+      "text": "their"
+    },
+    {
+      "start": 426123,
+      "end": 426267,
+      "text": "own"
+    },
+    {
+      "start": 426364,
+      "end": 426557,
+      "text": "work"
+    },
+    {
+      "start": 426557,
+      "end": 426685,
+      "text": "and"
+    },
+    {
+      "start": 426685,
+      "end": 426765,
+      "text": "you"
+    },
+    {
+      "start": 426765,
+      "end": 426910,
+      "text": "should"
+    },
+    {
+      "start": 426942,
+      "end": 427087,
+      "text": "make"
+    },
+    {
+      "start": 427103,
+      "end": 427295,
+      "text": "sure"
+    },
+    {
+      "start": 427327,
+      "end": 427488,
+      "text": "that"
+    },
+    {
+      "start": 427488,
+      "end": 427552,
+      "text": "they"
+    },
+    {
+      "start": 427649,
+      "end": 428034,
+      "text": "can"
+    },
+    {
+      "start": 428131,
+      "end": 428629,
+      "text": "verify"
+    },
+    {
+      "start": 428629,
+      "end": 428693,
+      "text": "it."
+    },
+    {
+      "start": 429014,
+      "end": 429351,
+      "text": "Unit"
+    },
+    {
+      "start": 429351,
+      "end": 429721,
+      "text": "tests"
+    },
+    {
+      "start": 429833,
+      "end": 429881,
+      "text": "are"
+    },
+    {
+      "start": 429913,
+      "end": 430074,
+      "text": "the"
+    },
+    {
+      "start": 430074,
+      "end": 430251,
+      "text": "bare"
+    },
+    {
+      "start": 430331,
+      "end": 430684,
+      "text": "minimum,"
+    },
+    {
+      "start": 430733,
+      "end": 430958,
+      "text": "so"
+    },
+    {
+      "start": 430958,
+      "end": 431102,
+      "text": "to"
+    },
+    {
+      "start": 431102,
+      "end": 431311,
+      "text": "say,"
+    },
+    {
+      "start": 431680,
+      "end": 431921,
+      "text": "but"
+    },
+    {
+      "start": 431986,
+      "end": 432467,
+      "text": "often"
+    },
+    {
+      "start": 432467,
+      "end": 432532,
+      "text": "you"
+    },
+    {
+      "start": 432628,
+      "end": 432773,
+      "text": "can"
+    },
+    {
+      "start": 432949,
+      "end": 433447,
+      "text": "also"
+    },
+    {
+      "start": 433752,
+      "end": 433993,
+      "text": "have"
+    },
+    {
+      "start": 433993,
+      "end": 434074,
+      "text": "them"
+    },
+    {
+      "start": 434090,
+      "end": 434234,
+      "text": "run"
+    },
+    {
+      "start": 434234,
+      "end": 434812,
+      "text": "integration"
+    },
+    {
+      "start": 434812,
+      "end": 435037,
+      "text": "tests,"
+    },
+    {
+      "start": 435053,
+      "end": 435182,
+      "text": "but"
+    },
+    {
+      "start": 435359,
+      "end": 435599,
+      "text": "also"
+    },
+    {
+      "start": 435599,
+      "end": 435905,
+      "text": "simply"
+    },
+    {
+      "start": 435937,
+      "end": 436467,
+      "text": "drive"
+    },
+    {
+      "start": 436499,
+      "end": 436579,
+      "text": "a"
+    },
+    {
+      "start": 436579,
+      "end": 437141,
+      "text": "browser"
+    },
+    {
+      "start": 437141,
+      "end": 437591,
+      "text": "manually,"
+    },
+    {
+      "start": 437623,
+      "end": 437832,
+      "text": "have"
+    },
+    {
+      "start": 437945,
+      "end": 438057,
+      "text": "them"
+    },
+    {
+      "start": 438185,
+      "end": 438603,
+      "text": "drive"
+    },
+    {
+      "start": 438603,
+      "end": 438651,
+      "text": "a"
+    },
+    {
+      "start": 438651,
+      "end": 439053,
+      "text": "browser"
+    },
+    {
+      "start": 439053,
+      "end": 439519,
+      "text": "manually,"
+    },
+    {
+      "start": 439856,
+      "end": 440643,
+      "text": "instruct"
+    },
+    {
+      "start": 440659,
+      "end": 440852,
+      "text": "your"
+    },
+    {
+      "start": 440996,
+      "end": 441446,
+      "text": "model"
+    },
+    {
+      "start": 441783,
+      "end": 441960,
+      "text": "to"
+    },
+    {
+      "start": 441960,
+      "end": 442474,
+      "text": "verify"
+    },
+    {
+      "start": 442362,
+      "end": 442875,
+      "text": "verify"
+    },
+    {
+      "start": 443323,
+      "end": 443404,
+      "text": "the"
+    },
+    {
+      "start": 443548,
+      "end": 443804,
+      "text": "work"
+    },
+    {
+      "start": 443868,
+      "end": 444045,
+      "text": "it"
+    },
+    {
+      "start": 444045,
+      "end": 444349,
+      "text": "did,"
+    },
+    {
+      "start": 444365,
+      "end": 444542,
+      "text": "your"
+    },
+    {
+      "start": 444670,
+      "end": 444991,
+      "text": "agent,"
+    },
+    {
+      "start": 445007,
+      "end": 445087,
+      "text": "I"
+    },
+    {
+      "start": 445151,
+      "end": 445375,
+      "text": "mean."
+    },
+    {
+      "start": 445872,
+      "end": 445952,
+      "text": "And"
+    },
+    {
+      "start": 445952,
+      "end": 446097,
+      "text": "that"
+    },
+    {
+      "start": 446129,
+      "end": 446417,
+      "text": "can"
+    },
+    {
+      "start": 446529,
+      "end": 446642,
+      "text": "look"
+    },
+    {
+      "start": 446690,
+      "end": 447090,
+      "text": "different"
+    },
+    {
+      "start": 447090,
+      "end": 447427,
+      "text": "depending"
+    },
+    {
+      "start": 447427,
+      "end": 447539,
+      "text": "on"
+    },
+    {
+      "start": 447652,
+      "end": 447988,
+      "text": "what"
+    },
+    {
+      "start": 448052,
+      "end": 448341,
+      "text": "you're"
+    },
+    {
+      "start": 448373,
+      "end": 448677,
+      "text": "working."
+    },
+    {
+      "start": 448774,
+      "end": 448918,
+      "text": "If"
+    },
+    {
+      "start": 448918,
+      "end": 449078,
+      "text": "you're"
+    },
+    {
+      "start": 449094,
+      "end": 449383,
+      "text": "working"
+    },
+    {
+      "start": 449415,
+      "end": 449479,
+      "text": "on"
+    },
+    {
+      "start": 449479,
+      "end": 449495,
+      "text": "a"
+    },
+    {
+      "start": 449495,
+      "end": 449960,
+      "text": "website,"
+    },
+    {
+      "start": 449976,
+      "end": 450104,
+      "text": "you"
+    },
+    {
+      "start": 450216,
+      "end": 450425,
+      "text": "want"
+    },
+    {
+      "start": 450457,
+      "end": 450505,
+      "text": "to"
+    },
+    {
+      "start": 450521,
+      "end": 451034,
+      "text": "instruct"
+    },
+    {
+      "start": 451034,
+      "end": 451146,
+      "text": "it,"
+    },
+    {
+      "start": 451242,
+      "end": 451306,
+      "text": "as"
+    },
+    {
+      "start": 451499,
+      "end": 451611,
+      "text": "I"
+    },
+    {
+      "start": 451659,
+      "end": 451835,
+      "text": "did"
+    },
+    {
+      "start": 451835,
+      "end": 451964,
+      "text": "in"
+    },
+    {
+      "start": 451964,
+      "end": 452076,
+      "text": "my"
+    },
+    {
+      "start": 452076,
+      "end": 452396,
+      "text": "skill"
+    },
+    {
+      "start": 452525,
+      "end": 452589,
+      "text": "here,"
+    },
+    {
+      "start": 453022,
+      "end": 453198,
+      "text": "that"
+    },
+    {
+      "start": 453198,
+      "end": 453342,
+      "text": "it"
+    },
+    {
+      "start": 453342,
+      "end": 453791,
+      "text": "should"
+    },
+    {
+      "start": 454208,
+      "end": 454480,
+      "text": "take"
+    },
+    {
+      "start": 454480,
+      "end": 454544,
+      "text": "a"
+    },
+    {
+      "start": 454544,
+      "end": 454721,
+      "text": "look"
+    },
+    {
+      "start": 454721,
+      "end": 454801,
+      "text": "at"
+    },
+    {
+      "start": 454849,
+      "end": 454913,
+      "text": "the"
+    },
+    {
+      "start": 454945,
+      "end": 455218,
+      "text": "UI"
+    },
+    {
+      "start": 455490,
+      "end": 455795,
+      "text": "using"
+    },
+    {
+      "start": 456372,
+      "end": 456612,
+      "text": "Agent"
+    },
+    {
+      "start": 456628,
+      "end": 456949,
+      "text": "Browser"
+    },
+    {
+      "start": 456949,
+      "end": 457029,
+      "text": "in"
+    },
+    {
+      "start": 457029,
+      "end": 457189,
+      "text": "my"
+    },
+    {
+      "start": 457189,
+      "end": 457430,
+      "text": "case"
+    },
+    {
+      "start": 457430,
+      "end": 457542,
+      "text": "here,"
+    },
+    {
+      "start": 457734,
+      "end": 457783,
+      "text": "or"
+    },
+    {
+      "start": 457815,
+      "end": 458039,
+      "text": "any"
+    },
+    {
+      "start": 458055,
+      "end": 458296,
+      "text": "other"
+    },
+    {
+      "start": 458296,
+      "end": 458696,
+      "text": "browser"
+    },
+    {
+      "start": 458696,
+      "end": 458841,
+      "text": "tool"
+    },
+    {
+      "start": 458937,
+      "end": 459001,
+      "text": "you"
+    },
+    {
+      "start": 459017,
+      "end": 459097,
+      "text": "may"
+    },
+    {
+      "start": 459097,
+      "end": 459257,
+      "text": "have"
+    },
+    {
+      "start": 459273,
+      "end": 459690,
+      "text": "installed."
+    },
+    {
+      "start": 460139,
+      "end": 460412,
+      "text": "So"
+    },
+    {
+      "start": 460957,
+      "end": 461245,
+      "text": "give"
+    },
+    {
+      "start": 461421,
+      "end": 461630,
+      "text": "your"
+    },
+    {
+      "start": 461822,
+      "end": 462319,
+      "text": "agent,"
+    },
+    {
+      "start": 462399,
+      "end": 462576,
+      "text": "give"
+    },
+    {
+      "start": 462720,
+      "end": 463040,
+      "text": "Opus"
+    },
+    {
+      "start": 463040,
+      "end": 463393,
+      "text": "clear"
+    },
+    {
+      "start": 463441,
+      "end": 464131,
+      "text": "instructions"
+    },
+    {
+      "start": 464163,
+      "end": 464291,
+      "text": "to"
+    },
+    {
+      "start": 464483,
+      "end": 464980,
+      "text": "validate"
+    },
+    {
+      "start": 464980,
+      "end": 465188,
+      "text": "its"
+    },
+    {
+      "start": 465188,
+      "end": 465445,
+      "text": "work"
+    },
+    {
+      "start": 465445,
+      "end": 465509,
+      "text": "and"
+    },
+    {
+      "start": 465685,
+      "end": 465958,
+      "text": "tell"
+    },
+    {
+      "start": 466150,
+      "end": 466375,
+      "text": "it,"
+    },
+    {
+      "start": 466727,
+      "end": 466968,
+      "text": "that's"
+    },
+    {
+      "start": 466968,
+      "end": 467032,
+      "text": "the"
+    },
+    {
+      "start": 467032,
+      "end": 467369,
+      "text": "important"
+    },
+    {
+      "start": 467369,
+      "end": 467609,
+      "text": "part,"
+    },
+    {
+      "start": 467833,
+      "end": 468042,
+      "text": "tell"
+    },
+    {
+      "start": 468154,
+      "end": 468346,
+      "text": "it"
+    },
+    {
+      "start": 468475,
+      "end": 468683,
+      "text": "how"
+    },
+    {
+      "start": 468875,
+      "end": 468956,
+      "text": "to"
+    },
+    {
+      "start": 469356,
+      "end": 469821,
+      "text": "validate"
+    },
+    {
+      "start": 469837,
+      "end": 469982,
+      "text": "that"
+    },
+    {
+      "start": 470014,
+      "end": 470270,
+      "text": "work."
+    },
+    {
+      "start": 470671,
+      "end": 470975,
+      "text": "So"
+    },
+    {
+      "start": 470975,
+      "end": 471280,
+      "text": "don't"
+    },
+    {
+      "start": 471280,
+      "end": 471440,
+      "text": "let"
+    },
+    {
+      "start": 471440,
+      "end": 471585,
+      "text": "it"
+    },
+    {
+      "start": 471617,
+      "end": 471889,
+      "text": "guess,"
+    },
+    {
+      "start": 472258,
+      "end": 472578,
+      "text": "don't"
+    },
+    {
+      "start": 472578,
+      "end": 472739,
+      "text": "be"
+    },
+    {
+      "start": 472739,
+      "end": 473075,
+      "text": "vague."
+    },
+    {
+      "start": 473123,
+      "end": 473139,
+      "text": "I"
+    },
+    {
+      "start": 473155,
+      "end": 473348,
+      "text": "mean,"
+    },
+    {
+      "start": 473380,
+      "end": 473604,
+      "text": "that's"
+    },
+    {
+      "start": 473604,
+      "end": 473684,
+      "text": "in"
+    },
+    {
+      "start": 473684,
+      "end": 474037,
+      "text": "general"
+    },
+    {
+      "start": 474037,
+      "end": 474165,
+      "text": "a"
+    },
+    {
+      "start": 474165,
+      "end": 474310,
+      "text": "good"
+    },
+    {
+      "start": 474262,
+      "end": 474566,
+      "text": "idea."
+    },
+    {
+      "start": 474887,
+      "end": 475207,
+      "text": "Don't"
+    },
+    {
+      "start": 475207,
+      "end": 475367,
+      "text": "be"
+    },
+    {
+      "start": 475447,
+      "end": 475704,
+      "text": "vague"
+    },
+    {
+      "start": 475704,
+      "end": 475816,
+      "text": "when"
+    },
+    {
+      "start": 475944,
+      "end": 476425,
+      "text": "prompting"
+    },
+    {
+      "start": 476569,
+      "end": 476697,
+      "text": "your"
+    },
+    {
+      "start": 476906,
+      "end": 477274,
+      "text": "agents."
+    },
+    {
+      "start": 477787,
+      "end": 477883,
+      "text": "Now,"
+    },
+    {
+      "start": 478091,
+      "end": 478236,
+      "text": "when"
+    },
+    {
+      "start": 478492,
+      "end": 478797,
+      "text": "doing"
+    },
+    {
+      "start": 479534,
+      "end": 479710,
+      "text": "any"
+    },
+    {
+      "start": 479774,
+      "end": 479966,
+      "text": "kind"
+    },
+    {
+      "start": 480014,
+      "end": 480079,
+      "text": "of"
+    },
+    {
+      "start": 480095,
+      "end": 480639,
+      "text": "frontend"
+    },
+    {
+      "start": 480655,
+      "end": 480784,
+      "text": "web"
+    },
+    {
+      "start": 480784,
+      "end": 481280,
+      "text": "development"
+    },
+    {
+      "start": 481312,
+      "end": 481569,
+      "text": "work"
+    },
+    {
+      "start": 481569,
+      "end": 481633,
+      "text": "or"
+    },
+    {
+      "start": 481777,
+      "end": 481921,
+      "text": "any"
+    },
+    {
+      "start": 482098,
+      "end": 482322,
+      "text": "other"
+    },
+    {
+      "start": 482338,
+      "end": 482659,
+      "text": "work"
+    },
+    {
+      "start": 482659,
+      "end": 482819,
+      "text": "that"
+    },
+    {
+      "start": 482819,
+      "end": 483171,
+      "text": "involves"
+    },
+    {
+      "start": 483171,
+      "end": 483748,
+      "text": "styling,"
+    },
+    {
+      "start": 483876,
+      "end": 484021,
+      "text": "that"
+    },
+    {
+      "start": 484021,
+      "end": 484485,
+      "text": "includes"
+    },
+    {
+      "start": 484517,
+      "end": 484662,
+      "text": "the"
+    },
+    {
+      "start": 484662,
+      "end": 485062,
+      "text": "creation"
+    },
+    {
+      "start": 485062,
+      "end": 485207,
+      "text": "of"
+    },
+    {
+      "start": 485239,
+      "end": 485896,
+      "text": "presentations,"
+    },
+    {
+      "start": 485960,
+      "end": 486040,
+      "text": "for"
+    },
+    {
+      "start": 486040,
+      "end": 486489,
+      "text": "example,"
+    },
+    {
+      "start": 486505,
+      "end": 486569,
+      "text": "of"
+    },
+    {
+      "start": 486665,
+      "end": 486873,
+      "text": "course,"
+    },
+    {
+      "start": 487386,
+      "end": 488059,
+      "text": "clearly"
+    },
+    {
+      "start": 488059,
+      "end": 488844,
+      "text": "specify"
+    },
+    {
+      "start": 489149,
+      "end": 489373,
+      "text": "which"
+    },
+    {
+      "start": 489405,
+      "end": 490014,
+      "text": "styles"
+    },
+    {
+      "start": 490591,
+      "end": 490671,
+      "text": "you"
+    },
+    {
+      "start": 490927,
+      "end": 491296,
+      "text": "don't"
+    },
+    {
+      "start": 491328,
+      "end": 491745,
+      "text": "want"
+    },
+    {
+      "start": 491809,
+      "end": 491953,
+      "text": "or"
+    },
+    {
+      "start": 491953,
+      "end": 492017,
+      "text": "you"
+    },
+    {
+      "start": 492193,
+      "end": 492450,
+      "text": "want."
+    },
+    {
+      "start": 493011,
+      "end": 493315,
+      "text": "Don't"
+    },
+    {
+      "start": 493315,
+      "end": 493411,
+      "text": "be"
+    },
+    {
+      "start": 493475,
+      "end": 493732,
+      "text": "vague"
+    },
+    {
+      "start": 493732,
+      "end": 493972,
+      "text": "there."
+    },
+    {
+      "start": 494196,
+      "end": 494405,
+      "text": "Again,"
+    },
+    {
+      "start": 494693,
+      "end": 494886,
+      "text": "being"
+    },
+    {
+      "start": 494934,
+      "end": 495254,
+      "text": "vague,"
+    },
+    {
+      "start": 495639,
+      "end": 495943,
+      "text": "always"
+    },
+    {
+      "start": 495959,
+      "end": 495975,
+      "text": "a"
+    },
+    {
+      "start": 495991,
+      "end": 496200,
+      "text": "bad"
+    },
+    {
+      "start": 496200,
+      "end": 496552,
+      "text": "idea."
+    },
+    {
+      "start": 497081,
+      "end": 497321,
+      "text": "Don't"
+    },
+    {
+      "start": 497321,
+      "end": 497530,
+      "text": "say,"
+    },
+    {
+      "start": 498443,
+      "end": 498715,
+      "text": "don't"
+    },
+    {
+      "start": 498715,
+      "end": 498956,
+      "text": "use"
+    },
+    {
+      "start": 498956,
+      "end": 499020,
+      "text": "a"
+    },
+    {
+      "start": 499020,
+      "end": 499437,
+      "text": "generic"
+    },
+    {
+      "start": 499437,
+      "end": 499693,
+      "text": "style."
+    },
+    {
+      "start": 500366,
+      "end": 500832,
+      "text": "Instead,"
+    },
+    {
+      "start": 501024,
+      "end": 501474,
+      "text": "clearly"
+    },
+    {
+      "start": 501506,
+      "end": 502100,
+      "text": "specify"
+    },
+    {
+      "start": 502212,
+      "end": 502372,
+      "text": "what"
+    },
+    {
+      "start": 502372,
+      "end": 502469,
+      "text": "you"
+    },
+    {
+      "start": 502469,
+      "end": 502693,
+      "text": "don't"
+    },
+    {
+      "start": 502709,
+      "end": 502918,
+      "text": "want."
+    },
+    {
+      "start": 503175,
+      "end": 503431,
+      "text": "No"
+    },
+    {
+      "start": 503431,
+      "end": 503833,
+      "text": "purple"
+    },
+    {
+      "start": 503833,
+      "end": 504795,
+      "text": "gradients,"
+    },
+    {
+      "start": 505100,
+      "end": 505341,
+      "text": "no"
+    },
+    {
+      "start": 505822,
+      "end": 506529,
+      "text": "eyebrows"
+    },
+    {
+      "start": 506625,
+      "end": 507010,
+      "text": "above"
+    },
+    {
+      "start": 507202,
+      "end": 507459,
+      "text": "the"
+    },
+    {
+      "start": 507523,
+      "end": 507973,
+      "text": "titles"
+    },
+    {
+      "start": 508005,
+      "end": 508101,
+      "text": "and"
+    },
+    {
+      "start": 508101,
+      "end": 508181,
+      "text": "so"
+    },
+    {
+      "start": 508229,
+      "end": 508534,
+      "text": "on,"
+    },
+    {
+      "start": 508647,
+      "end": 508855,
+      "text": "these"
+    },
+    {
+      "start": 508871,
+      "end": 509080,
+      "text": "little"
+    },
+    {
+      "start": 509192,
+      "end": 509465,
+      "text": "extra"
+    },
+    {
+      "start": 509465,
+      "end": 510219,
+      "text": "subtitles"
+    },
+    {
+      "start": 510316,
+      "end": 510637,
+      "text": "agents"
+    },
+    {
+      "start": 510653,
+      "end": 510877,
+      "text": "love"
+    },
+    {
+      "start": 510877,
+      "end": 510957,
+      "text": "to"
+    },
+    {
+      "start": 511038,
+      "end": 511182,
+      "text": "add."
+    },
+    {
+      "start": 511599,
+      "end": 511856,
+      "text": "Be"
+    },
+    {
+      "start": 511936,
+      "end": 512642,
+      "text": "specific"
+    },
+    {
+      "start": 512642,
+      "end": 512851,
+      "text": "about"
+    },
+    {
+      "start": 512899,
+      "end": 513044,
+      "text": "what"
+    },
+    {
+      "start": 513044,
+      "end": 513188,
+      "text": "you"
+    },
+    {
+      "start": 513220,
+      "end": 513525,
+      "text": "don't"
+    },
+    {
+      "start": 513605,
+      "end": 513958,
+      "text": "want"
+    },
+    {
+      "start": 514167,
+      "end": 514616,
+      "text": "and/or"
+    },
+    {
+      "start": 514985,
+      "end": 515130,
+      "text": "what"
+    },
+    {
+      "start": 515226,
+      "end": 515354,
+      "text": "you"
+    },
+    {
+      "start": 515451,
+      "end": 515723,
+      "text": "want."
+    },
+    {
+      "start": 516189,
+      "end": 516462,
+      "text": "Again,"
+    },
+    {
+      "start": 516831,
+      "end": 516991,
+      "text": "it's"
+    },
+    {
+      "start": 516991,
+      "end": 517537,
+      "text": "basically"
+    },
+    {
+      "start": 517537,
+      "end": 517569,
+      "text": "the"
+    },
+    {
+      "start": 517569,
+      "end": 517842,
+      "text": "same"
+    },
+    {
+      "start": 517874,
+      "end": 518002,
+      "text": "for"
+    },
+    {
+      "start": 518098,
+      "end": 518146,
+      "text": "all"
+    },
+    {
+      "start": 518355,
+      "end": 518580,
+      "text": "those"
+    },
+    {
+      "start": 518580,
+      "end": 518901,
+      "text": "agents,"
+    },
+    {
+      "start": 518917,
+      "end": 519190,
+      "text": "but"
+    },
+    {
+      "start": 519703,
+      "end": 520072,
+      "text": "Opus"
+    },
+    {
+      "start": 520184,
+      "end": 521292,
+      "text": "5.5,"
+    },
+    {
+      "start": 521388,
+      "end": 521452,
+      "text": "this"
+    },
+    {
+      "start": 521564,
+      "end": 521950,
+      "text": "model,"
+    },
+    {
+      "start": 521966,
+      "end": 522014,
+      "text": "is"
+    },
+    {
+      "start": 522351,
+      "end": 522608,
+      "text": "really"
+    },
+    {
+      "start": 522672,
+      "end": 522848,
+      "text": "good"
+    },
+    {
+      "start": 522848,
+      "end": 522977,
+      "text": "at"
+    },
+    {
+      "start": 523009,
+      "end": 523538,
+      "text": "following"
+    },
+    {
+      "start": 523635,
+      "end": 523811,
+      "text": "these"
+    },
+    {
+      "start": 523811,
+      "end": 524581,
+      "text": "instructions"
+    },
+    {
+      "start": 525175,
+      "end": 525239,
+      "text": "and"
+    },
+    {
+      "start": 525255,
+      "end": 525448,
+      "text": "some"
+    },
+    {
+      "start": 525560,
+      "end": 525753,
+      "text": "other"
+    },
+    {
+      "start": 525753,
+      "end": 526186,
+      "text": "models"
+    },
+    {
+      "start": 526362,
+      "end": 526411,
+      "text": "are"
+    },
+    {
+      "start": 526459,
+      "end": 526539,
+      "text": "a"
+    },
+    {
+      "start": 526539,
+      "end": 526716,
+      "text": "bit"
+    },
+    {
+      "start": 526716,
+      "end": 526892,
+      "text": "more..."
+    },
+    {
+      "start": 527566,
+      "end": 528127,
+      "text": "Flexible"
+    },
+    {
+      "start": 528143,
+      "end": 528495,
+      "text": "regarding"
+    },
+    {
+      "start": 528543,
+      "end": 528720,
+      "text": "that,"
+    },
+    {
+      "start": 528768,
+      "end": 528864,
+      "text": "to"
+    },
+    {
+      "start": 528864,
+      "end": 528960,
+      "text": "put"
+    },
+    {
+      "start": 528960,
+      "end": 529024,
+      "text": "it"
+    },
+    {
+      "start": 529024,
+      "end": 529184,
+      "text": "like"
+    },
+    {
+      "start": 529184,
+      "end": 529360,
+      "text": "this."
+    },
+    {
+      "start": 529585,
+      "end": 529809,
+      "text": "So"
+    },
+    {
+      "start": 529809,
+      "end": 530162,
+      "text": "take"
+    },
+    {
+      "start": 530226,
+      "end": 530851,
+      "text": "advantage"
+    },
+    {
+      "start": 530851,
+      "end": 530947,
+      "text": "of"
+    },
+    {
+      "start": 530947,
+      "end": 531027,
+      "text": "the"
+    },
+    {
+      "start": 531027,
+      "end": 531315,
+      "text": "fact"
+    },
+    {
+      "start": 531588,
+      "end": 531716,
+      "text": "that"
+    },
+    {
+      "start": 531812,
+      "end": 532133,
+      "text": "Opus"
+    },
+    {
+      "start": 532149,
+      "end": 532758,
+      "text": "5.5"
+    },
+    {
+      "start": 532950,
+      "end": 533078,
+      "text": "is"
+    },
+    {
+      "start": 533190,
+      "end": 533399,
+      "text": "good"
+    },
+    {
+      "start": 533511,
+      "end": 533639,
+      "text": "at"
+    },
+    {
+      "start": 533655,
+      "end": 534040,
+      "text": "following"
+    },
+    {
+      "start": 534056,
+      "end": 534680,
+      "text": "instructions."
+    },
+    {
+      "start": 535113,
+      "end": 535289,
+      "text": "This"
+    },
+    {
+      "start": 535337,
+      "end": 535546,
+      "text": "next"
+    },
+    {
+      "start": 535578,
+      "end": 535834,
+      "text": "point"
+    },
+    {
+      "start": 535834,
+      "end": 535882,
+      "text": "is"
+    },
+    {
+      "start": 535930,
+      "end": 536059,
+      "text": "an"
+    },
+    {
+      "start": 536059,
+      "end": 536459,
+      "text": "interesting"
+    },
+    {
+      "start": 536539,
+      "end": 536651,
+      "text": "one."
+    },
+    {
+      "start": 537180,
+      "end": 537437,
+      "text": "Not"
+    },
+    {
+      "start": 537581,
+      "end": 537965,
+      "text": "just"
+    },
+    {
+      "start": 537997,
+      "end": 538110,
+      "text": "for"
+    },
+    {
+      "start": 538222,
+      "end": 538542,
+      "text": "Opus"
+    },
+    {
+      "start": 538542,
+      "end": 539247,
+      "text": "5.5,"
+    },
+    {
+      "start": 539360,
+      "end": 539600,
+      "text": "but"
+    },
+    {
+      "start": 539664,
+      "end": 539872,
+      "text": "again,"
+    },
+    {
+      "start": 540001,
+      "end": 540449,
+      "text": "because"
+    },
+    {
+      "start": 540545,
+      "end": 540609,
+      "text": "it"
+    },
+    {
+      "start": 540722,
+      "end": 540930,
+      "text": "does"
+    },
+    {
+      "start": 540962,
+      "end": 541186,
+      "text": "so"
+    },
+    {
+      "start": 541266,
+      "end": 541395,
+      "text": "well"
+    },
+    {
+      "start": 541507,
+      "end": 541651,
+      "text": "at"
+    },
+    {
+      "start": 541667,
+      "end": 541891,
+      "text": "following"
+    },
+    {
+      "start": 541939,
+      "end": 542532,
+      "text": "instructions"
+    },
+    {
+      "start": 542709,
+      "end": 542837,
+      "text": "and"
+    },
+    {
+      "start": 542885,
+      "end": 543301,
+      "text": "because"
+    },
+    {
+      "start": 543301,
+      "end": 543414,
+      "text": "it"
+    },
+    {
+      "start": 543510,
+      "end": 543734,
+      "text": "does"
+    },
+    {
+      "start": 543766,
+      "end": 543942,
+      "text": "so"
+    },
+    {
+      "start": 544007,
+      "end": 544135,
+      "text": "well"
+    },
+    {
+      "start": 544311,
+      "end": 544455,
+      "text": "at"
+    },
+    {
+      "start": 544551,
+      "end": 545096,
+      "text": "orchestrating"
+    },
+    {
+      "start": 545192,
+      "end": 545353,
+      "text": "other"
+    },
+    {
+      "start": 545353,
+      "end": 545769,
+      "text": "agents,"
+    },
+    {
+      "start": 546090,
+      "end": 546586,
+      "text": "encourage"
+    },
+    {
+      "start": 546586,
+      "end": 546715,
+      "text": "it"
+    },
+    {
+      "start": 546715,
+      "end": 546811,
+      "text": "to"
+    },
+    {
+      "start": 546811,
+      "end": 546987,
+      "text": "do"
+    },
+    {
+      "start": 546987,
+      "end": 547308,
+      "text": "so."
+    },
+    {
+      "start": 547708,
+      "end": 547804,
+      "text": "Now,"
+    },
+    {
+      "start": 547997,
+      "end": 548381,
+      "text": "chances"
+    },
+    {
+      "start": 548429,
+      "end": 548509,
+      "text": "are"
+    },
+    {
+      "start": 548557,
+      "end": 548766,
+      "text": "high"
+    },
+    {
+      "start": 548830,
+      "end": 548974,
+      "text": "that"
+    },
+    {
+      "start": 548974,
+      "end": 549118,
+      "text": "if"
+    },
+    {
+      "start": 549118,
+      "end": 549423,
+      "text": "you're"
+    },
+    {
+      "start": 549439,
+      "end": 549743,
+      "text": "using"
+    },
+    {
+      "start": 550000,
+      "end": 550368,
+      "text": "Opus"
+    },
+    {
+      "start": 550400,
+      "end": 550737,
+      "text": "through"
+    },
+    {
+      "start": 550737,
+      "end": 551121,
+      "text": "Claude"
+    },
+    {
+      "start": 551121,
+      "end": 551426,
+      "text": "Code,"
+    },
+    {
+      "start": 551939,
+      "end": 552067,
+      "text": "it"
+    },
+    {
+      "start": 552163,
+      "end": 552275,
+      "text": "will"
+    },
+    {
+      "start": 552403,
+      "end": 552612,
+      "text": "use"
+    },
+    {
+      "start": 552660,
+      "end": 553285,
+      "text": "subagents"
+    },
+    {
+      "start": 553365,
+      "end": 553397,
+      "text": "on"
+    },
+    {
+      "start": 553397,
+      "end": 553605,
+      "text": "its"
+    },
+    {
+      "start": 553605,
+      "end": 553717,
+      "text": "own."
+    },
+    {
+      "start": 553942,
+      "end": 554102,
+      "text": "But"
+    },
+    {
+      "start": 554102,
+      "end": 554230,
+      "text": "it"
+    },
+    {
+      "start": 554327,
+      "end": 554792,
+      "text": "doesn't"
+    },
+    {
+      "start": 554824,
+      "end": 555209,
+      "text": "hurt"
+    },
+    {
+      "start": 555209,
+      "end": 555369,
+      "text": "to"
+    },
+    {
+      "start": 555369,
+      "end": 555578,
+      "text": "tell"
+    },
+    {
+      "start": 555642,
+      "end": 555722,
+      "text": "it."
+    },
+    {
+      "start": 555770,
+      "end": 556059,
+      "text": "Again,"
+    },
+    {
+      "start": 556428,
+      "end": 556476,
+      "text": "in"
+    },
+    {
+      "start": 556588,
+      "end": 556685,
+      "text": "my"
+    },
+    {
+      "start": 556909,
+      "end": 557326,
+      "text": "implement"
+    },
+    {
+      "start": 557390,
+      "end": 557791,
+      "text": "plan"
+    },
+    {
+      "start": 557791,
+      "end": 558064,
+      "text": "skill,"
+    },
+    {
+      "start": 558192,
+      "end": 558321,
+      "text": "which"
+    },
+    {
+      "start": 558369,
+      "end": 558481,
+      "text": "is"
+    },
+    {
+      "start": 558513,
+      "end": 558962,
+      "text": "basically"
+    },
+    {
+      "start": 558994,
+      "end": 559203,
+      "text": "getting"
+    },
+    {
+      "start": 559299,
+      "end": 559748,
+      "text": "activated"
+    },
+    {
+      "start": 559796,
+      "end": 560294,
+      "text": "whenever"
+    },
+    {
+      "start": 560422,
+      "end": 560615,
+      "text": "we"
+    },
+    {
+      "start": 560695,
+      "end": 561160,
+      "text": "settled"
+    },
+    {
+      "start": 561160,
+      "end": 561272,
+      "text": "on"
+    },
+    {
+      "start": 561320,
+      "end": 561385,
+      "text": "a"
+    },
+    {
+      "start": 561385,
+      "end": 561673,
+      "text": "plan"
+    },
+    {
+      "start": 561721,
+      "end": 561882,
+      "text": "that"
+    },
+    {
+      "start": 561882,
+      "end": 562042,
+      "text": "should"
+    },
+    {
+      "start": 562042,
+      "end": 562122,
+      "text": "now"
+    },
+    {
+      "start": 562203,
+      "end": 562315,
+      "text": "be"
+    },
+    {
+      "start": 562363,
+      "end": 562924,
+      "text": "implemented,"
+    },
+    {
+      "start": 563342,
+      "end": 563422,
+      "text": "and"
+    },
+    {
+      "start": 563422,
+      "end": 563630,
+      "text": "it's"
+    },
+    {
+      "start": 563630,
+      "end": 563694,
+      "text": "one"
+    },
+    {
+      "start": 563743,
+      "end": 563807,
+      "text": "of"
+    },
+    {
+      "start": 563807,
+      "end": 564047,
+      "text": "many"
+    },
+    {
+      "start": 564047,
+      "end": 564336,
+      "text": "skills,"
+    },
+    {
+      "start": 564593,
+      "end": 564657,
+      "text": "in"
+    },
+    {
+      "start": 564689,
+      "end": 564881,
+      "text": "that"
+    },
+    {
+      "start": 564930,
+      "end": 565202,
+      "text": "skill,"
+    },
+    {
+      "start": 565411,
+      "end": 565459,
+      "text": "I"
+    },
+    {
+      "start": 565571,
+      "end": 565764,
+      "text": "tell"
+    },
+    {
+      "start": 565828,
+      "end": 565940,
+      "text": "it"
+    },
+    {
+      "start": 565972,
+      "end": 566117,
+      "text": "to"
+    },
+    {
+      "start": 566277,
+      "end": 566806,
+      "text": "outsource"
+    },
+    {
+      "start": 566935,
+      "end": 566951,
+      "text": "a"
+    },
+    {
+      "start": 566999,
+      "end": 567496,
+      "text": "task"
+    },
+    {
+      "start": 567817,
+      "end": 567993,
+      "text": "to"
+    },
+    {
+      "start": 567993,
+      "end": 568779,
+      "text": "subagents"
+    },
+    {
+      "start": 568779,
+      "end": 568892,
+      "text": "when"
+    },
+    {
+      "start": 568940,
+      "end": 569293,
+      "text": "working"
+    },
+    {
+      "start": 569485,
+      "end": 569549,
+      "text": "on"
+    },
+    {
+      "start": 569886,
+      "end": 570063,
+      "text": "more"
+    },
+    {
+      "start": 570063,
+      "end": 570688,
+      "text": "complex"
+    },
+    {
+      "start": 570688,
+      "end": 571185,
+      "text": "tasks"
+    },
+    {
+      "start": 571185,
+      "end": 571378,
+      "text": "or"
+    },
+    {
+      "start": 571426,
+      "end": 572052,
+      "text": "parallel"
+    },
+    {
+      "start": 572068,
+      "end": 572356,
+      "text": "tasks."
+    },
+    {
+      "start": 573030,
+      "end": 573094,
+      "text": "And"
+    },
+    {
+      "start": 573110,
+      "end": 573335,
+      "text": "that's"
+    },
+    {
+      "start": 573335,
+      "end": 573560,
+      "text": "missing"
+    },
+    {
+      "start": 573592,
+      "end": 573640,
+      "text": "an"
+    },
+    {
+      "start": 573752,
+      "end": 573864,
+      "text": "S"
+    },
+    {
+      "start": 573977,
+      "end": 574105,
+      "text": "here."
+    },
+    {
+      "start": 574570,
+      "end": 574859,
+      "text": "So"
+    },
+    {
+      "start": 574939,
+      "end": 575099,
+      "text": "I'm"
+    },
+    {
+      "start": 575276,
+      "end": 575725,
+      "text": "telling"
+    },
+    {
+      "start": 575821,
+      "end": 575966,
+      "text": "it"
+    },
+    {
+      "start": 576142,
+      "end": 576367,
+      "text": "to"
+    },
+    {
+      "start": 576383,
+      "end": 576543,
+      "text": "do"
+    },
+    {
+      "start": 576623,
+      "end": 577008,
+      "text": "that,"
+    },
+    {
+      "start": 577602,
+      "end": 577923,
+      "text": "not"
+    },
+    {
+      "start": 577923,
+      "end": 578372,
+      "text": "because"
+    },
+    {
+      "start": 578404,
+      "end": 578580,
+      "text": "it"
+    },
+    {
+      "start": 578580,
+      "end": 578981,
+      "text": "needs"
+    },
+    {
+      "start": 579029,
+      "end": 579142,
+      "text": "to"
+    },
+    {
+      "start": 579430,
+      "end": 579511,
+      "text": "and"
+    },
+    {
+      "start": 579543,
+      "end": 579655,
+      "text": "it"
+    },
+    {
+      "start": 579831,
+      "end": 580200,
+      "text": "wouldn't"
+    },
+    {
+      "start": 580249,
+      "end": 580377,
+      "text": "do"
+    },
+    {
+      "start": 580409,
+      "end": 580537,
+      "text": "it"
+    },
+    {
+      "start": 580714,
+      "end": 581179,
+      "text": "otherwise,"
+    },
+    {
+      "start": 581612,
+      "end": 581772,
+      "text": "But"
+    },
+    {
+      "start": 581772,
+      "end": 582221,
+      "text": "because"
+    },
+    {
+      "start": 582333,
+      "end": 582478,
+      "text": "it"
+    },
+    {
+      "start": 582478,
+      "end": 583071,
+      "text": "increases"
+    },
+    {
+      "start": 583135,
+      "end": 583295,
+      "text": "the"
+    },
+    {
+      "start": 583295,
+      "end": 583809,
+      "text": "chance"
+    },
+    {
+      "start": 584177,
+      "end": 584338,
+      "text": "of"
+    },
+    {
+      "start": 584338,
+      "end": 584482,
+      "text": "it"
+    },
+    {
+      "start": 584482,
+      "end": 584626,
+      "text": "doing"
+    },
+    {
+      "start": 584722,
+      "end": 584787,
+      "text": "it."
+    },
+    {
+      "start": 584883,
+      "end": 584963,
+      "text": "And"
+    },
+    {
+      "start": 584963,
+      "end": 585027,
+      "text": "of"
+    },
+    {
+      "start": 585059,
+      "end": 585268,
+      "text": "course,"
+    },
+    {
+      "start": 585364,
+      "end": 585540,
+      "text": "also"
+    },
+    {
+      "start": 585540,
+      "end": 585829,
+      "text": "because"
+    },
+    {
+      "start": 585941,
+      "end": 586053,
+      "text": "that"
+    },
+    {
+      "start": 586117,
+      "end": 586374,
+      "text": "skill"
+    },
+    {
+      "start": 586422,
+      "end": 586470,
+      "text": "is"
+    },
+    {
+      "start": 586566,
+      "end": 586727,
+      "text": "getting"
+    },
+    {
+      "start": 586807,
+      "end": 587047,
+      "text": "used"
+    },
+    {
+      "start": 587047,
+      "end": 587112,
+      "text": "for"
+    },
+    {
+      "start": 587224,
+      "end": 587384,
+      "text": "other"
+    },
+    {
+      "start": 587384,
+      "end": 587753,
+      "text": "models"
+    },
+    {
+      "start": 587785,
+      "end": 587913,
+      "text": "too."
+    },
+    {
+      "start": 588330,
+      "end": 588474,
+      "text": "But"
+    },
+    {
+      "start": 588651,
+      "end": 588971,
+      "text": "Opus"
+    },
+    {
+      "start": 588987,
+      "end": 589837,
+      "text": "5.5"
+    },
+    {
+      "start": 590334,
+      "end": 590398,
+      "text": "is"
+    },
+    {
+      "start": 590575,
+      "end": 590879,
+      "text": "really"
+    },
+    {
+      "start": 590976,
+      "end": 591200,
+      "text": "good"
+    },
+    {
+      "start": 591617,
+      "end": 591681,
+      "text": "at"
+    },
+    {
+      "start": 591858,
+      "end": 592483,
+      "text": "orchestrating."
+    },
+    {
+      "start": 592900,
+      "end": 592996,
+      "text": "And"
+    },
+    {
+      "start": 593012,
+      "end": 593172,
+      "text": "it's"
+    },
+    {
+      "start": 593220,
+      "end": 593397,
+      "text": "not"
+    },
+    {
+      "start": 593397,
+      "end": 593637,
+      "text": "just"
+    },
+    {
+      "start": 593637,
+      "end": 593717,
+      "text": "the"
+    },
+    {
+      "start": 593798,
+      "end": 594086,
+      "text": "built-in"
+    },
+    {
+      "start": 594134,
+      "end": 594824,
+      "text": "subagents"
+    },
+    {
+      "start": 594840,
+      "end": 595016,
+      "text": "feature."
+    },
+    {
+      "start": 595145,
+      "end": 595305,
+      "text": "What"
+    },
+    {
+      "start": 595385,
+      "end": 595433,
+      "text": "I"
+    },
+    {
+      "start": 595722,
+      "end": 595946,
+      "text": "also"
+    },
+    {
+      "start": 595962,
+      "end": 596219,
+      "text": "like"
+    },
+    {
+      "start": 596219,
+      "end": 596363,
+      "text": "to"
+    },
+    {
+      "start": 596363,
+      "end": 596539,
+      "text": "do"
+    },
+    {
+      "start": 596988,
+      "end": 597053,
+      "text": "is"
+    },
+    {
+      "start": 597149,
+      "end": 597453,
+      "text": "have"
+    },
+    {
+      "start": 597630,
+      "end": 597646,
+      "text": "a"
+    },
+    {
+      "start": 598111,
+      "end": 598496,
+      "text": "main"
+    },
+    {
+      "start": 598832,
+      "end": 599698,
+      "text": "orchestration"
+    },
+    {
+      "start": 600195,
+      "end": 600580,
+      "text": "agent,"
+    },
+    {
+      "start": 600612,
+      "end": 600740,
+      "text": "one"
+    },
+    {
+      "start": 601253,
+      "end": 601622,
+      "text": "Claude"
+    },
+    {
+      "start": 601654,
+      "end": 601911,
+      "text": "Code"
+    },
+    {
+      "start": 601911,
+      "end": 602344,
+      "text": "session,"
+    },
+    {
+      "start": 602456,
+      "end": 602584,
+      "text": "which"
+    },
+    {
+      "start": 602680,
+      "end": 602761,
+      "text": "I"
+    },
+    {
+      "start": 602761,
+      "end": 602953,
+      "text": "have"
+    },
+    {
+      "start": 602953,
+      "end": 603017,
+      "text": "on"
+    },
+    {
+      "start": 603097,
+      "end": 603274,
+      "text": "my"
+    },
+    {
+      "start": 603274,
+      "end": 603707,
+      "text": "machine"
+    },
+    {
+      "start": 603723,
+      "end": 603771,
+      "text": "or"
+    },
+    {
+      "start": 603835,
+      "end": 604011,
+      "text": "some"
+    },
+    {
+      "start": 604123,
+      "end": 604444,
+      "text": "remote"
+    },
+    {
+      "start": 604444,
+      "end": 604829,
+      "text": "machine,"
+    },
+    {
+      "start": 605342,
+      "end": 605551,
+      "text": "which"
+    },
+    {
+      "start": 605647,
+      "end": 605871,
+      "text": "can"
+    },
+    {
+      "start": 606048,
+      "end": 606432,
+      "text": "access"
+    },
+    {
+      "start": 606849,
+      "end": 607090,
+      "text": "other"
+    },
+    {
+      "start": 607250,
+      "end": 607603,
+      "text": "agents."
+    },
+    {
+      "start": 607667,
+      "end": 607779,
+      "text": "And"
+    },
+    {
+      "start": 607907,
+      "end": 608372,
+      "text": "Herder"
+    },
+    {
+      "start": 608372,
+      "end": 608437,
+      "text": "is"
+    },
+    {
+      "start": 608613,
+      "end": 608918,
+      "text": "really"
+    },
+    {
+      "start": 608950,
+      "end": 609399,
+      "text": "amazing"
+    },
+    {
+      "start": 609495,
+      "end": 609607,
+      "text": "here."
+    },
+    {
+      "start": 610217,
+      "end": 610554,
+      "text": "Here's"
+    },
+    {
+      "start": 610554,
+      "end": 610682,
+      "text": "what"
+    },
+    {
+      "start": 610779,
+      "end": 610923,
+      "text": "I'm"
+    },
+    {
+      "start": 611019,
+      "end": 611389,
+      "text": "talking"
+    },
+    {
+      "start": 611437,
+      "end": 611694,
+      "text": "about."
+    },
+    {
+      "start": 611758,
+      "end": 611838,
+      "text": "I"
+    },
+    {
+      "start": 611838,
+      "end": 612047,
+      "text": "have"
+    },
+    {
+      "start": 612143,
+      "end": 612287,
+      "text": "one"
+    },
+    {
+      "start": 612946,
+      "end": 613475,
+      "text": "agent's"
+    },
+    {
+      "start": 613523,
+      "end": 613973,
+      "text": "session"
+    },
+    {
+      "start": 614005,
+      "end": 614198,
+      "text": "here"
+    },
+    {
+      "start": 614390,
+      "end": 614438,
+      "text": "in"
+    },
+    {
+      "start": 614486,
+      "end": 614872,
+      "text": "Herder."
+    },
+    {
+      "start": 614952,
+      "end": 614984,
+      "text": "I"
+    },
+    {
+      "start": 614984,
+      "end": 615096,
+      "text": "mean,"
+    },
+    {
+      "start": 615193,
+      "end": 615209,
+      "text": "I"
+    },
+    {
+      "start": 615209,
+      "end": 615353,
+      "text": "have"
+    },
+    {
+      "start": 615353,
+      "end": 615401,
+      "text": "all"
+    },
+    {
+      "start": 615466,
+      "end": 615642,
+      "text": "my"
+    },
+    {
+      "start": 615690,
+      "end": 615931,
+      "text": "agent"
+    },
+    {
+      "start": 615931,
+      "end": 616348,
+      "text": "sessions"
+    },
+    {
+      "start": 616397,
+      "end": 616525,
+      "text": "here,"
+    },
+    {
+      "start": 616878,
+      "end": 616926,
+      "text": "but"
+    },
+    {
+      "start": 616926,
+      "end": 616958,
+      "text": "I"
+    },
+    {
+      "start": 616958,
+      "end": 617119,
+      "text": "have"
+    },
+    {
+      "start": 617215,
+      "end": 617408,
+      "text": "one"
+    },
+    {
+      "start": 617616,
+      "end": 618355,
+      "text": "agent's"
+    },
+    {
+      "start": 618676,
+      "end": 619077,
+      "text": "session,"
+    },
+    {
+      "start": 619125,
+      "end": 619238,
+      "text": "which"
+    },
+    {
+      "start": 619238,
+      "end": 619318,
+      "text": "is"
+    },
+    {
+      "start": 619318,
+      "end": 619334,
+      "text": "a"
+    },
+    {
+      "start": 619382,
+      "end": 619671,
+      "text": "Claude"
+    },
+    {
+      "start": 619703,
+      "end": 620072,
+      "text": "Code"
+    },
+    {
+      "start": 620120,
+      "end": 620570,
+      "text": "session,"
+    },
+    {
+      "start": 620650,
+      "end": 620762,
+      "text": "which"
+    },
+    {
+      "start": 620827,
+      "end": 620907,
+      "text": "is"
+    },
+    {
+      "start": 620971,
+      "end": 621051,
+      "text": "in"
+    },
+    {
+      "start": 621051,
+      "end": 621132,
+      "text": "a"
+    },
+    {
+      "start": 621132,
+      "end": 621629,
+      "text": "project"
+    },
+    {
+      "start": 621629,
+      "end": 621774,
+      "text": "where"
+    },
+    {
+      "start": 621774,
+      "end": 621870,
+      "text": "I"
+    },
+    {
+      "start": 621870,
+      "end": 622175,
+      "text": "keep"
+    },
+    {
+      "start": 622175,
+      "end": 622416,
+      "text": "track"
+    },
+    {
+      "start": 622512,
+      "end": 622608,
+      "text": "of"
+    },
+    {
+      "start": 622608,
+      "end": 622673,
+      "text": "an"
+    },
+    {
+      "start": 622817,
+      "end": 623170,
+      "text": "index"
+    },
+    {
+      "start": 623170,
+      "end": 623315,
+      "text": "of"
+    },
+    {
+      "start": 623315,
+      "end": 623427,
+      "text": "all"
+    },
+    {
+      "start": 623555,
+      "end": 623684,
+      "text": "the"
+    },
+    {
+      "start": 623700,
+      "end": 624101,
+      "text": "agents"
+    },
+    {
+      "start": 624101,
+      "end": 624326,
+      "text": "working"
+    },
+    {
+      "start": 624374,
+      "end": 624647,
+      "text": "across"
+    },
+    {
+      "start": 624759,
+      "end": 625112,
+      "text": "multiple"
+    },
+    {
+      "start": 625112,
+      "end": 625690,
+      "text": "machines."
+    },
+    {
+      "start": 626204,
+      "end": 626268,
+      "text": "And"
+    },
+    {
+      "start": 626428,
+      "end": 626557,
+      "text": "then"
+    },
+    {
+      "start": 626990,
+      "end": 627022,
+      "text": "I"
+    },
+    {
+      "start": 627231,
+      "end": 627536,
+      "text": "can"
+    },
+    {
+      "start": 628194,
+      "end": 628595,
+      "text": "ask"
+    },
+    {
+      "start": 629093,
+      "end": 629430,
+      "text": "this"
+    },
+    {
+      "start": 629639,
+      "end": 629896,
+      "text": "agent"
+    },
+    {
+      "start": 629896,
+      "end": 630072,
+      "text": "here"
+    },
+    {
+      "start": 630538,
+      "end": 630730,
+      "text": "to"
+    },
+    {
+      "start": 631324,
+      "end": 631886,
+      "text": "instruct"
+    },
+    {
+      "start": 631966,
+      "end": 632207,
+      "text": "other"
+    },
+    {
+      "start": 632287,
+      "end": 632817,
+      "text": "agents"
+    },
+    {
+      "start": 632945,
+      "end": 633090,
+      "text": "to"
+    },
+    {
+      "start": 633090,
+      "end": 633234,
+      "text": "do"
+    },
+    {
+      "start": 633250,
+      "end": 633443,
+      "text": "other"
+    },
+    {
+      "start": 633443,
+      "end": 633844,
+      "text": "stuff"
+    },
+    {
+      "start": 633973,
+      "end": 634021,
+      "text": "or"
+    },
+    {
+      "start": 634069,
+      "end": 634229,
+      "text": "to"
+    },
+    {
+      "start": 634229,
+      "end": 634486,
+      "text": "check"
+    },
+    {
+      "start": 634631,
+      "end": 634727,
+      "text": "in"
+    },
+    {
+      "start": 634727,
+      "end": 634839,
+      "text": "on"
+    },
+    {
+      "start": 634871,
+      "end": 635032,
+      "text": "other"
+    },
+    {
+      "start": 635032,
+      "end": 635433,
+      "text": "agents."
+    },
+    {
+      "start": 635658,
+      "end": 635851,
+      "text": "This"
+    },
+    {
+      "start": 635851,
+      "end": 635931,
+      "text": "is"
+    },
+    {
+      "start": 635931,
+      "end": 636091,
+      "text": "not"
+    },
+    {
+      "start": 636139,
+      "end": 636236,
+      "text": "the"
+    },
+    {
+      "start": 636236,
+      "end": 636525,
+      "text": "only"
+    },
+    {
+      "start": 636541,
+      "end": 636637,
+      "text": "way"
+    },
+    {
+      "start": 636637,
+      "end": 636765,
+      "text": "of"
+    },
+    {
+      "start": 636798,
+      "end": 637022,
+      "text": "me"
+    },
+    {
+      "start": 637022,
+      "end": 637295,
+      "text": "working."
+    },
+    {
+      "start": 637359,
+      "end": 637391,
+      "text": "I"
+    },
+    {
+      "start": 637520,
+      "end": 637696,
+      "text": "do"
+    },
+    {
+      "start": 637696,
+      "end": 638017,
+      "text": "dive"
+    },
+    {
+      "start": 638017,
+      "end": 638162,
+      "text": "into"
+    },
+    {
+      "start": 638162,
+      "end": 638290,
+      "text": "those"
+    },
+    {
+      "start": 638467,
+      "end": 638579,
+      "text": "other"
+    },
+    {
+      "start": 638643,
+      "end": 639093,
+      "text": "sessions"
+    },
+    {
+      "start": 639125,
+      "end": 639350,
+      "text": "too,"
+    },
+    {
+      "start": 639606,
+      "end": 639735,
+      "text": "but"
+    },
+    {
+      "start": 639767,
+      "end": 639944,
+      "text": "this"
+    },
+    {
+      "start": 639944,
+      "end": 640024,
+      "text": "is"
+    },
+    {
+      "start": 640088,
+      "end": 640104,
+      "text": "a"
+    },
+    {
+      "start": 640104,
+      "end": 640682,
+      "text": "nice"
+    },
+    {
+      "start": 640730,
+      "end": 640891,
+      "text": "way"
+    },
+    {
+      "start": 641276,
+      "end": 641340,
+      "text": "of"
+    },
+    {
+      "start": 641516,
+      "end": 642110,
+      "text": "orchestrating"
+    },
+    {
+      "start": 642238,
+      "end": 642591,
+      "text": "multiple"
+    },
+    {
+      "start": 642639,
+      "end": 642960,
+      "text": "agents"
+    },
+    {
+      "start": 642960,
+      "end": 643120,
+      "text": "that"
+    },
+    {
+      "start": 643120,
+      "end": 643312,
+      "text": "maybe"
+    },
+    {
+      "start": 643312,
+      "end": 643505,
+      "text": "need"
+    },
+    {
+      "start": 643521,
+      "end": 643617,
+      "text": "to"
+    },
+    {
+      "start": 643617,
+      "end": 643794,
+      "text": "work"
+    },
+    {
+      "start": 643794,
+      "end": 643938,
+      "text": "in"
+    },
+    {
+      "start": 643938,
+      "end": 644547,
+      "text": "parallel,"
+    },
+    {
+      "start": 644756,
+      "end": 644820,
+      "text": "or"
+    },
+    {
+      "start": 644820,
+      "end": 644996,
+      "text": "if"
+    },
+    {
+      "start": 645044,
+      "end": 645125,
+      "text": "I"
+    },
+    {
+      "start": 645125,
+      "end": 645461,
+      "text": "lost"
+    },
+    {
+      "start": 645461,
+      "end": 645862,
+      "text": "track"
+    },
+    {
+      "start": 645943,
+      "end": 646135,
+      "text": "of"
+    },
+    {
+      "start": 646167,
+      "end": 646343,
+      "text": "what"
+    },
+    {
+      "start": 646343,
+      "end": 646568,
+      "text": "some"
+    },
+    {
+      "start": 646568,
+      "end": 646825,
+      "text": "agent"
+    },
+    {
+      "start": 646825,
+      "end": 646953,
+      "text": "was"
+    },
+    {
+      "start": 647065,
+      "end": 647338,
+      "text": "doing."
+    },
+    {
+      "start": 647787,
+      "end": 647851,
+      "text": "And"
+    },
+    {
+      "start": 647867,
+      "end": 648075,
+      "text": "that"
+    },
+    {
+      "start": 648172,
+      "end": 648524,
+      "text": "works"
+    },
+    {
+      "start": 648733,
+      "end": 648957,
+      "text": "really"
+    },
+    {
+      "start": 649054,
+      "end": 649166,
+      "text": "well"
+    },
+    {
+      "start": 649230,
+      "end": 649423,
+      "text": "for"
+    },
+    {
+      "start": 649423,
+      "end": 649711,
+      "text": "me"
+    },
+    {
+      "start": 650032,
+      "end": 650481,
+      "text": "because"
+    },
+    {
+      "start": 650657,
+      "end": 650978,
+      "text": "Opus"
+    },
+    {
+      "start": 650994,
+      "end": 651042,
+      "text": "is"
+    },
+    {
+      "start": 651074,
+      "end": 651203,
+      "text": "so"
+    },
+    {
+      "start": 651235,
+      "end": 651411,
+      "text": "good"
+    },
+    {
+      "start": 651411,
+      "end": 651555,
+      "text": "at"
+    },
+    {
+      "start": 651555,
+      "end": 652085,
+      "text": "orchestrating."
+    },
+    {
+      "start": 652133,
+      "end": 652421,
+      "text": "So"
+    },
+    {
+      "start": 652502,
+      "end": 652678,
+      "text": "that"
+    },
+    {
+      "start": 652678,
+      "end": 652710,
+      "text": "is"
+    },
+    {
+      "start": 652710,
+      "end": 653015,
+      "text": "something"
+    },
+    {
+      "start": 653063,
+      "end": 653127,
+      "text": "for"
+    },
+    {
+      "start": 653223,
+      "end": 653320,
+      "text": "you"
+    },
+    {
+      "start": 653320,
+      "end": 653448,
+      "text": "to"
+    },
+    {
+      "start": 653464,
+      "end": 653881,
+      "text": "consider."
+    },
+    {
+      "start": 654266,
+      "end": 654731,
+      "text": "Actively"
+    },
+    {
+      "start": 654763,
+      "end": 655244,
+      "text": "encourage"
+    },
+    {
+      "start": 655244,
+      "end": 655469,
+      "text": "it"
+    },
+    {
+      "start": 655469,
+      "end": 655581,
+      "text": "to"
+    },
+    {
+      "start": 655581,
+      "end": 655725,
+      "text": "do"
+    },
+    {
+      "start": 655725,
+      "end": 655934,
+      "text": "that,"
+    },
+    {
+      "start": 656270,
+      "end": 656543,
+      "text": "to"
+    },
+    {
+      "start": 656832,
+      "end": 657377,
+      "text": "create"
+    },
+    {
+      "start": 657409,
+      "end": 657585,
+      "text": "those"
+    },
+    {
+      "start": 657585,
+      "end": 658355,
+      "text": "subagents"
+    },
+    {
+      "start": 658355,
+      "end": 658483,
+      "text": "and"
+    },
+    {
+      "start": 658596,
+      "end": 658676,
+      "text": "to"
+    },
+    {
+      "start": 658756,
+      "end": 659173,
+      "text": "orchestrate."
+    },
+    {
+      "start": 659879,
+      "end": 660023,
+      "text": "And"
+    },
+    {
+      "start": 660215,
+      "end": 660472,
+      "text": "my"
+    },
+    {
+      "start": 660536,
+      "end": 661098,
+      "text": "last"
+    },
+    {
+      "start": 661498,
+      "end": 661803,
+      "text": "tip"
+    },
+    {
+      "start": 661803,
+      "end": 661899,
+      "text": "or"
+    },
+    {
+      "start": 661899,
+      "end": 662717,
+      "text": "recommendation"
+    },
+    {
+      "start": 662926,
+      "end": 662990,
+      "text": "is"
+    },
+    {
+      "start": 663663,
+      "end": 663904,
+      "text": "give"
+    },
+    {
+      "start": 663904,
+      "end": 664112,
+      "text": "it"
+    },
+    {
+      "start": 664305,
+      "end": 664946,
+      "text": "complex"
+    },
+    {
+      "start": 665171,
+      "end": 665492,
+      "text": "work."
+    },
+    {
+      "start": 665828,
+      "end": 665957,
+      "text": "It"
+    },
+    {
+      "start": 665989,
+      "end": 666149,
+      "text": "can"
+    },
+    {
+      "start": 666149,
+      "end": 666277,
+      "text": "do"
+    },
+    {
+      "start": 666310,
+      "end": 666438,
+      "text": "it."
+    },
+    {
+      "start": 667160,
+      "end": 667368,
+      "text": "Big"
+    },
+    {
+      "start": 667416,
+      "end": 667914,
+      "text": "mistake"
+    },
+    {
+      "start": 668154,
+      "end": 668202,
+      "text": "I"
+    },
+    {
+      "start": 668250,
+      "end": 668636,
+      "text": "see"
+    },
+    {
+      "start": 669181,
+      "end": 669325,
+      "text": "from"
+    },
+    {
+      "start": 669438,
+      "end": 669726,
+      "text": "many"
+    },
+    {
+      "start": 669759,
+      "end": 670416,
+      "text": "developers"
+    },
+    {
+      "start": 671026,
+      "end": 671090,
+      "text": "is"
+    },
+    {
+      "start": 671202,
+      "end": 671491,
+      "text": "that"
+    },
+    {
+      "start": 671507,
+      "end": 671571,
+      "text": "you"
+    },
+    {
+      "start": 671668,
+      "end": 671989,
+      "text": "try"
+    },
+    {
+      "start": 671989,
+      "end": 672181,
+      "text": "to"
+    },
+    {
+      "start": 672871,
+      "end": 673657,
+      "text": "micromanage"
+    },
+    {
+      "start": 673930,
+      "end": 674138,
+      "text": "those"
+    },
+    {
+      "start": 674171,
+      "end": 674507,
+      "text": "agents."
+    },
+    {
+      "start": 674812,
+      "end": 674876,
+      "text": "And"
+    },
+    {
+      "start": 674876,
+      "end": 675005,
+      "text": "that"
+    },
+    {
+      "start": 675053,
+      "end": 675181,
+      "text": "was"
+    },
+    {
+      "start": 675358,
+      "end": 675983,
+      "text": "necessary"
+    },
+    {
+      "start": 676256,
+      "end": 676288,
+      "text": "a"
+    },
+    {
+      "start": 676481,
+      "end": 676609,
+      "text": "year"
+    },
+    {
+      "start": 676657,
+      "end": 676962,
+      "text": "ago,"
+    },
+    {
+      "start": 677443,
+      "end": 677492,
+      "text": "or"
+    },
+    {
+      "start": 677540,
+      "end": 677716,
+      "text": "for"
+    },
+    {
+      "start": 677716,
+      "end": 677973,
+      "text": "some"
+    },
+    {
+      "start": 678021,
+      "end": 678390,
+      "text": "models,"
+    },
+    {
+      "start": 678502,
+      "end": 678727,
+      "text": "even"
+    },
+    {
+      "start": 678727,
+      "end": 678807,
+      "text": "a"
+    },
+    {
+      "start": 678807,
+      "end": 678919,
+      "text": "few"
+    },
+    {
+      "start": 678951,
+      "end": 679240,
+      "text": "months"
+    },
+    {
+      "start": 679240,
+      "end": 679529,
+      "text": "ago."
+    },
+    {
+      "start": 680107,
+      "end": 680219,
+      "text": "For"
+    },
+    {
+      "start": 680267,
+      "end": 680476,
+      "text": "some"
+    },
+    {
+      "start": 680588,
+      "end": 680877,
+      "text": "models"
+    },
+    {
+      "start": 680973,
+      "end": 681149,
+      "text": "like"
+    },
+    {
+      "start": 681149,
+      "end": 681775,
+      "text": "GPT-6"
+    },
+    {
+      "start": 681855,
+      "end": 682256,
+      "text": "Astra,"
+    },
+    {
+      "start": 682337,
+      "end": 682417,
+      "text": "it"
+    },
+    {
+      "start": 682417,
+      "end": 682866,
+      "text": "still"
+    },
+    {
+      "start": 682914,
+      "end": 683043,
+      "text": "is"
+    },
+    {
+      "start": 683139,
+      "end": 683620,
+      "text": "kind"
+    },
+    {
+      "start": 683620,
+      "end": 683732,
+      "text": "of"
+    },
+    {
+      "start": 683797,
+      "end": 684374,
+      "text": "necessary."
+    },
+    {
+      "start": 684438,
+      "end": 684567,
+      "text": "You"
+    },
+    {
+      "start": 684599,
+      "end": 684759,
+      "text": "can"
+    },
+    {
+      "start": 684759,
+      "end": 684936,
+      "text": "give"
+    },
+    {
+      "start": 684936,
+      "end": 685048,
+      "text": "it"
+    },
+    {
+      "start": 685080,
+      "end": 685241,
+      "text": "big"
+    },
+    {
+      "start": 685305,
+      "end": 685786,
+      "text": "tasks,"
+    },
+    {
+      "start": 685802,
+      "end": 685962,
+      "text": "but"
+    },
+    {
+      "start": 685962,
+      "end": 686139,
+      "text": "you"
+    },
+    {
+      "start": 686588,
+      "end": 686893,
+      "text": "really"
+    },
+    {
+      "start": 686941,
+      "end": 687134,
+      "text": "need"
+    },
+    {
+      "start": 687166,
+      "end": 687294,
+      "text": "to"
+    },
+    {
+      "start": 687326,
+      "end": 687422,
+      "text": "give"
+    },
+    {
+      "start": 687422,
+      "end": 687487,
+      "text": "it"
+    },
+    {
+      "start": 687487,
+      "end": 687647,
+      "text": "some"
+    },
+    {
+      "start": 687711,
+      "end": 688369,
+      "text": "guardrails"
+    },
+    {
+      "start": 688369,
+      "end": 688465,
+      "text": "and"
+    },
+    {
+      "start": 688465,
+      "end": 689059,
+      "text": "instructions"
+    },
+    {
+      "start": 689075,
+      "end": 689171,
+      "text": "to"
+    },
+    {
+      "start": 689171,
+      "end": 689332,
+      "text": "make"
+    },
+    {
+      "start": 689332,
+      "end": 689524,
+      "text": "sure"
+    },
+    {
+      "start": 689572,
+      "end": 689701,
+      "text": "it"
+    },
+    {
+      "start": 689893,
+      "end": 690294,
+      "text": "sticks"
+    },
+    {
+      "start": 690294,
+      "end": 690423,
+      "text": "to"
+    },
+    {
+      "start": 690455,
+      "end": 690695,
+      "text": "that"
+    },
+    {
+      "start": 690695,
+      "end": 691096,
+      "text": "task"
+    },
+    {
+      "start": 691096,
+      "end": 691177,
+      "text": "and"
+    },
+    {
+      "start": 691177,
+      "end": 691305,
+      "text": "so"
+    },
+    {
+      "start": 691321,
+      "end": 691594,
+      "text": "on."
+    },
+    {
+      "start": 691642,
+      "end": 691754,
+      "text": "And"
+    },
+    {
+      "start": 691754,
+      "end": 691899,
+      "text": "it's"
+    },
+    {
+      "start": 691899,
+      "end": 691963,
+      "text": "a"
+    },
+    {
+      "start": 691963,
+      "end": 692075,
+      "text": "bit"
+    },
+    {
+      "start": 692075,
+      "end": 692460,
+      "text": "difficult"
+    },
+    {
+      "start": 692460,
+      "end": 692588,
+      "text": "to"
+    },
+    {
+      "start": 692621,
+      "end": 692829,
+      "text": "wield."
+    },
+    {
+      "start": 693102,
+      "end": 693262,
+      "text": "But"
+    },
+    {
+      "start": 693262,
+      "end": 693374,
+      "text": "with"
+    },
+    {
+      "start": 693647,
+      "end": 693903,
+      "text": "Opus"
+    },
+    {
+      "start": 693903,
+      "end": 694593,
+      "text": "5.5,"
+    },
+    {
+      "start": 694689,
+      "end": 694817,
+      "text": "my"
+    },
+    {
+      "start": 694929,
+      "end": 695490,
+      "text": "experience"
+    },
+    {
+      "start": 695490,
+      "end": 695554,
+      "text": "is"
+    },
+    {
+      "start": 696147,
+      "end": 696388,
+      "text": "that"
+    },
+    {
+      "start": 696388,
+      "end": 696628,
+      "text": "it"
+    },
+    {
+      "start": 696628,
+      "end": 697093,
+      "text": "just"
+    },
+    {
+      "start": 697109,
+      "end": 697157,
+      "text": "is"
+    },
+    {
+      "start": 697494,
+      "end": 697750,
+      "text": "really"
+    },
+    {
+      "start": 697815,
+      "end": 698199,
+      "text": "amazing"
+    },
+    {
+      "start": 698632,
+      "end": 698792,
+      "text": "at"
+    },
+    {
+      "start": 698792,
+      "end": 699017,
+      "text": "big"
+    },
+    {
+      "start": 699033,
+      "end": 699418,
+      "text": "tasks."
+    },
+    {
+      "start": 699738,
+      "end": 699882,
+      "text": "I"
+    },
+    {
+      "start": 699898,
+      "end": 700139,
+      "text": "had"
+    },
+    {
+      "start": 700139,
+      "end": 700203,
+      "text": "it"
+    },
+    {
+      "start": 700315,
+      "end": 701005,
+      "text": "migrate"
+    },
+    {
+      "start": 701421,
+      "end": 701518,
+      "text": "an"
+    },
+    {
+      "start": 701518,
+      "end": 701950,
+      "text": "entire"
+    },
+    {
+      "start": 702143,
+      "end": 702864,
+      "text": "project,"
+    },
+    {
+      "start": 702880,
+      "end": 702928,
+      "text": "an"
+    },
+    {
+      "start": 702976,
+      "end": 703425,
+      "text": "entire"
+    },
+    {
+      "start": 703425,
+      "end": 703794,
+      "text": "website"
+    },
+    {
+      "start": 703842,
+      "end": 704018,
+      "text": "from"
+    },
+    {
+      "start": 704163,
+      "end": 704291,
+      "text": "one"
+    },
+    {
+      "start": 704467,
+      "end": 704659,
+      "text": "tech"
+    },
+    {
+      "start": 704724,
+      "end": 704980,
+      "text": "stack"
+    },
+    {
+      "start": 704980,
+      "end": 705092,
+      "text": "to"
+    },
+    {
+      "start": 705108,
+      "end": 705333,
+      "text": "another."
+    },
+    {
+      "start": 705429,
+      "end": 705557,
+      "text": "And"
+    },
+    {
+      "start": 705557,
+      "end": 705637,
+      "text": "I'm"
+    },
+    {
+      "start": 705685,
+      "end": 705926,
+      "text": "not"
+    },
+    {
+      "start": 705926,
+      "end": 706295,
+      "text": "talking"
+    },
+    {
+      "start": 706327,
+      "end": 706503,
+      "text": "about"
+    },
+    {
+      "start": 706503,
+      "end": 706567,
+      "text": "a"
+    },
+    {
+      "start": 706567,
+      "end": 706968,
+      "text": "static"
+    },
+    {
+      "start": 706968,
+      "end": 707336,
+      "text": "site"
+    },
+    {
+      "start": 707609,
+      "end": 707769,
+      "text": "with"
+    },
+    {
+      "start": 708010,
+      "end": 708250,
+      "text": "3"
+    },
+    {
+      "start": 708250,
+      "end": 708715,
+      "text": "pages"
+    },
+    {
+      "start": 708715,
+      "end": 708875,
+      "text": "here."
+    },
+    {
+      "start": 709276,
+      "end": 709533,
+      "text": "It"
+    },
+    {
+      "start": 709533,
+      "end": 709805,
+      "text": "just"
+    },
+    {
+      "start": 709917,
+      "end": 710222,
+      "text": "kept"
+    },
+    {
+      "start": 710318,
+      "end": 710398,
+      "text": "on"
+    },
+    {
+      "start": 710559,
+      "end": 710863,
+      "text": "working."
+    },
+    {
+      "start": 711120,
+      "end": 711168,
+      "text": "I"
+    },
+    {
+      "start": 711216,
+      "end": 711825,
+      "text": "migrated"
+    },
+    {
+      "start": 711857,
+      "end": 711937,
+      "text": "an"
+    },
+    {
+      "start": 711937,
+      "end": 712210,
+      "text": "entire"
+    },
+    {
+      "start": 712322,
+      "end": 712787,
+      "text": "library"
+    },
+    {
+      "start": 712883,
+      "end": 713043,
+      "text": "to"
+    },
+    {
+      "start": 713043,
+      "end": 713300,
+      "text": "use"
+    },
+    {
+      "start": 713300,
+      "end": 713989,
+      "text": "Effect,"
+    },
+    {
+      "start": 714342,
+      "end": 714470,
+      "text": "which"
+    },
+    {
+      "start": 714518,
+      "end": 714662,
+      "text": "is"
+    },
+    {
+      "start": 714662,
+      "end": 714742,
+      "text": "an"
+    },
+    {
+      "start": 714742,
+      "end": 715191,
+      "text": "amazing"
+    },
+    {
+      "start": 715223,
+      "end": 715624,
+      "text": "TypeScript"
+    },
+    {
+      "start": 715624,
+      "end": 716025,
+      "text": "library"
+    },
+    {
+      "start": 716025,
+      "end": 716105,
+      "text": "I"
+    },
+    {
+      "start": 716105,
+      "end": 716426,
+      "text": "talked"
+    },
+    {
+      "start": 716426,
+      "end": 716666,
+      "text": "about"
+    },
+    {
+      "start": 716666,
+      "end": 716714,
+      "text": "in"
+    },
+    {
+      "start": 716746,
+      "end": 717019,
+      "text": "another"
+    },
+    {
+      "start": 717067,
+      "end": 717275,
+      "text": "video"
+    },
+    {
+      "start": 717291,
+      "end": 717355,
+      "text": "on"
+    },
+    {
+      "start": 717387,
+      "end": 717548,
+      "text": "this"
+    },
+    {
+      "start": 717548,
+      "end": 717852,
+      "text": "channel."
+    },
+    {
+      "start": 718269,
+      "end": 718333,
+      "text": "And"
+    },
+    {
+      "start": 718413,
+      "end": 718477,
+      "text": "it"
+    },
+    {
+      "start": 718509,
+      "end": 718894,
+      "text": "kept"
+    },
+    {
+      "start": 718894,
+      "end": 718958,
+      "text": "on"
+    },
+    {
+      "start": 718990,
+      "end": 719295,
+      "text": "working"
+    },
+    {
+      "start": 719375,
+      "end": 719535,
+      "text": "for"
+    },
+    {
+      "start": 719616,
+      "end": 719872,
+      "text": "hours"
+    },
+    {
+      "start": 719872,
+      "end": 719936,
+      "text": "and"
+    },
+    {
+      "start": 720016,
+      "end": 720289,
+      "text": "worked"
+    },
+    {
+      "start": 720289,
+      "end": 720433,
+      "text": "its"
+    },
+    {
+      "start": 720497,
+      "end": 720593,
+      "text": "way"
+    },
+    {
+      "start": 720593,
+      "end": 720882,
+      "text": "through"
+    },
+    {
+      "start": 720898,
+      "end": 720994,
+      "text": "it."
+    },
+    {
+      "start": 721074,
+      "end": 721138,
+      "text": "And"
+    },
+    {
+      "start": 721154,
+      "end": 721235,
+      "text": "I"
+    },
+    {
+      "start": 721235,
+      "end": 721395,
+      "text": "have"
+    },
+    {
+      "start": 721395,
+      "end": 721539,
+      "text": "a"
+    },
+    {
+      "start": 721539,
+      "end": 721972,
+      "text": "beautiful,"
+    },
+    {
+      "start": 722196,
+      "end": 722533,
+      "text": "great"
+    },
+    {
+      "start": 722661,
+      "end": 723126,
+      "text": "result."
+    },
+    {
+      "start": 723703,
+      "end": 724120,
+      "text": "Obviously"
+    },
+    {
+      "start": 724344,
+      "end": 724569,
+      "text": "with"
+    },
+    {
+      "start": 724585,
+      "end": 724857,
+      "text": "Concreto,"
+    },
+    {
+      "start": 724890,
+      "end": 725163,
+      "text": "Great"
+    },
+    {
+      "start": 725163,
+      "end": 725532,
+      "text": "prompts."
+    },
+    {
+      "start": 725580,
+      "end": 725869,
+      "text": "So"
+    },
+    {
+      "start": 726287,
+      "end": 726817,
+      "text": "planning,"
+    },
+    {
+      "start": 726849,
+      "end": 727492,
+      "text": "discussions,"
+    },
+    {
+      "start": 727508,
+      "end": 727893,
+      "text": "that's"
+    },
+    {
+      "start": 728038,
+      "end": 728086,
+      "text": "all"
+    },
+    {
+      "start": 728214,
+      "end": 728728,
+      "text": "important."
+    },
+    {
+      "start": 728777,
+      "end": 728937,
+      "text": "I'm"
+    },
+    {
+      "start": 728937,
+      "end": 729258,
+      "text": "not"
+    },
+    {
+      "start": 729258,
+      "end": 729628,
+      "text": "talking"
+    },
+    {
+      "start": 729660,
+      "end": 729869,
+      "text": "about"
+    },
+    {
+      "start": 730046,
+      "end": 730399,
+      "text": "vague"
+    },
+    {
+      "start": 730463,
+      "end": 730865,
+      "text": "prompts"
+    },
+    {
+      "start": 730865,
+      "end": 730977,
+      "text": "here."
+    },
+    {
+      "start": 731507,
+      "end": 731668,
+      "text": "But"
+    },
+    {
+      "start": 731893,
+      "end": 732118,
+      "text": "once"
+    },
+    {
+      "start": 732310,
+      "end": 732407,
+      "text": "you"
+    },
+    {
+      "start": 732889,
+      "end": 733162,
+      "text": "did"
+    },
+    {
+      "start": 733194,
+      "end": 733419,
+      "text": "that"
+    },
+    {
+      "start": 733579,
+      "end": 733917,
+      "text": "work,"
+    },
+    {
+      "start": 734141,
+      "end": 734398,
+      "text": "once"
+    },
+    {
+      "start": 734398,
+      "end": 734495,
+      "text": "you"
+    },
+    {
+      "start": 734495,
+      "end": 734945,
+      "text": "made"
+    },
+    {
+      "start": 734945,
+      "end": 735218,
+      "text": "sure"
+    },
+    {
+      "start": 735218,
+      "end": 735426,
+      "text": "that"
+    },
+    {
+      "start": 735426,
+      "end": 735587,
+      "text": "you're"
+    },
+    {
+      "start": 735603,
+      "end": 735651,
+      "text": "on"
+    },
+    {
+      "start": 735699,
+      "end": 735780,
+      "text": "the"
+    },
+    {
+      "start": 735780,
+      "end": 736117,
+      "text": "same"
+    },
+    {
+      "start": 736246,
+      "end": 736535,
+      "text": "page,"
+    },
+    {
+      "start": 736711,
+      "end": 736888,
+      "text": "once"
+    },
+    {
+      "start": 736888,
+      "end": 737017,
+      "text": "you"
+    },
+    {
+      "start": 737033,
+      "end": 737370,
+      "text": "have"
+    },
+    {
+      "start": 737370,
+      "end": 737450,
+      "text": "a"
+    },
+    {
+      "start": 737450,
+      "end": 737739,
+      "text": "clear"
+    },
+    {
+      "start": 737932,
+      "end": 738205,
+      "text": "plan,"
+    },
+    {
+      "start": 738334,
+      "end": 738414,
+      "text": "and"
+    },
+    {
+      "start": 738414,
+      "end": 738559,
+      "text": "not"
+    },
+    {
+      "start": 738575,
+      "end": 738880,
+      "text": "just"
+    },
+    {
+      "start": 738880,
+      "end": 739040,
+      "text": "you,"
+    },
+    {
+      "start": 739056,
+      "end": 739233,
+      "text": "but"
+    },
+    {
+      "start": 739233,
+      "end": 739313,
+      "text": "the"
+    },
+    {
+      "start": 739313,
+      "end": 739651,
+      "text": "model"
+    },
+    {
+      "start": 739699,
+      "end": 739827,
+      "text": "has"
+    },
+    {
+      "start": 739940,
+      "end": 740084,
+      "text": "it"
+    },
+    {
+      "start": 740084,
+      "end": 740213,
+      "text": "too,"
+    },
+    {
+      "start": 740743,
+      "end": 741048,
+      "text": "give"
+    },
+    {
+      "start": 741048,
+      "end": 741209,
+      "text": "it"
+    },
+    {
+      "start": 741209,
+      "end": 741932,
+      "text": "complex"
+    },
+    {
+      "start": 741932,
+      "end": 742430,
+      "text": "tasks."
+    },
+    {
+      "start": 742735,
+      "end": 742992,
+      "text": "Make"
+    },
+    {
+      "start": 742992,
+      "end": 743136,
+      "text": "it"
+    },
+    {
+      "start": 743136,
+      "end": 743715,
+      "text": "clear,"
+    },
+    {
+      "start": 744100,
+      "end": 744164,
+      "text": "as"
+    },
+    {
+      "start": 744261,
+      "end": 744277,
+      "text": "I"
+    },
+    {
+      "start": 744277,
+      "end": 744726,
+      "text": "explained,"
+    },
+    {
+      "start": 745000,
+      "end": 745208,
+      "text": "when"
+    },
+    {
+      "start": 745305,
+      "end": 745562,
+      "text": "that"
+    },
+    {
+      "start": 745562,
+      "end": 745979,
+      "text": "task"
+    },
+    {
+      "start": 746044,
+      "end": 746092,
+      "text": "is"
+    },
+    {
+      "start": 746204,
+      "end": 746782,
+      "text": "complete."
+    },
+    {
+      "start": 747152,
+      "end": 747409,
+      "text": "Make"
+    },
+    {
+      "start": 747409,
+      "end": 747537,
+      "text": "it"
+    },
+    {
+      "start": 747570,
+      "end": 748212,
+      "text": "clear"
+    },
+    {
+      "start": 748453,
+      "end": 748581,
+      "text": "which"
+    },
+    {
+      "start": 748838,
+      "end": 749336,
+      "text": "checks"
+    },
+    {
+      "start": 749336,
+      "end": 749481,
+      "text": "it"
+    },
+    {
+      "start": 749481,
+      "end": 749674,
+      "text": "should"
+    },
+    {
+      "start": 749738,
+      "end": 750316,
+      "text": "perform."
+    },
+    {
+      "start": 750686,
+      "end": 750927,
+      "text": "Also"
+    },
+    {
+      "start": 750927,
+      "end": 751184,
+      "text": "maybe"
+    },
+    {
+      "start": 751184,
+      "end": 751778,
+      "text": "specify"
+    },
+    {
+      "start": 751810,
+      "end": 751955,
+      "text": "which"
+    },
+    {
+      "start": 752067,
+      "end": 752597,
+      "text": "pitfalls"
+    },
+    {
+      "start": 752693,
+      "end": 753127,
+      "text": "exist."
+    },
+    {
+      "start": 753496,
+      "end": 753544,
+      "text": "Or"
+    },
+    {
+      "start": 753914,
+      "end": 754074,
+      "text": "what"
+    },
+    {
+      "start": 754074,
+      "end": 754219,
+      "text": "it"
+    },
+    {
+      "start": 754219,
+      "end": 754363,
+      "text": "should"
+    },
+    {
+      "start": 754636,
+      "end": 754877,
+      "text": "watch"
+    },
+    {
+      "start": 754941,
+      "end": 755101,
+      "text": "out"
+    },
+    {
+      "start": 755101,
+      "end": 755230,
+      "text": "for."
+    },
+    {
+      "start": 755920,
+      "end": 756032,
+      "text": "But"
+    },
+    {
+      "start": 756161,
+      "end": 756289,
+      "text": "then"
+    },
+    {
+      "start": 756722,
+      "end": 756979,
+      "text": "give"
+    },
+    {
+      "start": 756979,
+      "end": 757092,
+      "text": "it"
+    },
+    {
+      "start": 757188,
+      "end": 757750,
+      "text": "complex"
+    },
+    {
+      "start": 757750,
+      "end": 758311,
+      "text": "tasks."
+    },
+    {
+      "start": 758648,
+      "end": 759050,
+      "text": "Don't"
+    },
+    {
+      "start": 759050,
+      "end": 759660,
+      "text": "prompt"
+    },
+    {
+      "start": 760157,
+      "end": 760366,
+      "text": "on"
+    },
+    {
+      "start": 760831,
+      "end": 761329,
+      "text": "small"
+    },
+    {
+      "start": 761457,
+      "end": 762035,
+      "text": "tasks"
+    },
+    {
+      "start": 762035,
+      "end": 762244,
+      "text": "or"
+    },
+    {
+      "start": 762244,
+      "end": 762565,
+      "text": "don't"
+    },
+    {
+      "start": 762565,
+      "end": 762805,
+      "text": "just"
+    },
+    {
+      "start": 762805,
+      "end": 763062,
+      "text": "work"
+    },
+    {
+      "start": 763062,
+      "end": 763110,
+      "text": "on"
+    },
+    {
+      "start": 763158,
+      "end": 763512,
+      "text": "small"
+    },
+    {
+      "start": 763688,
+      "end": 764154,
+      "text": "tasks."
+    },
+    {
+      "start": 764571,
+      "end": 764828,
+      "text": "Be"
+    },
+    {
+      "start": 764908,
+      "end": 765438,
+      "text": "ambitious."
+    },
+    {
+      "start": 765566,
+      "end": 765694,
+      "text": "It"
+    },
+    {
+      "start": 765710,
+      "end": 765919,
+      "text": "can"
+    },
+    {
+      "start": 765951,
+      "end": 766160,
+      "text": "do"
+    },
+    {
+      "start": 766176,
+      "end": 766224,
+      "text": "it."
+    },
+    {
+      "start": 766272,
+      "end": 766497,
+      "text": "This"
+    },
+    {
+      "start": 766497,
+      "end": 766561,
+      "text": "is"
+    },
+    {
+      "start": 766818,
+      "end": 767123,
+      "text": "really"
+    },
+    {
+      "start": 767155,
+      "end": 767171,
+      "text": "a"
+    },
+    {
+      "start": 767171,
+      "end": 767524,
+      "text": "model"
+    },
+    {
+      "start": 767861,
+      "end": 768038,
+      "text": "that"
+    },
+    {
+      "start": 768038,
+      "end": 768391,
+      "text": "can"
+    },
+    {
+      "start": 768519,
+      "end": 769209,
+      "text": "reliably"
+    },
+    {
+      "start": 769322,
+      "end": 769723,
+      "text": "work"
+    },
+    {
+      "start": 769723,
+      "end": 769964,
+      "text": "through"
+    },
+    {
+      "start": 769964,
+      "end": 770606,
+      "text": "complex"
+    },
+    {
+      "start": 770606,
+      "end": 770766,
+      "text": "big"
+    },
+    {
+      "start": 770782,
+      "end": 771232,
+      "text": "tasks."
+    },
+    {
+      "start": 771665,
+      "end": 771986,
+      "text": "Take"
+    },
+    {
+      "start": 772291,
+      "end": 772869,
+      "text": "advantage"
+    },
+    {
+      "start": 773238,
+      "end": 773382,
+      "text": "of"
+    },
+    {
+      "start": 773414,
+      "end": 773575,
+      "text": "that."
+    },
+    {
+      "start": 773735,
+      "end": 773960,
+      "text": "Give"
+    },
+    {
+      "start": 773960,
+      "end": 774105,
+      "text": "it"
+    },
+    {
+      "start": 774442,
+      "end": 775084,
+      "text": "complex"
+    },
+    {
+      "start": 775084,
+      "end": 775565,
+      "text": "tasks"
+    },
+    {
+      "start": 775822,
+      "end": 775886,
+      "text": "and"
+    },
+    {
+      "start": 775966,
+      "end": 776159,
+      "text": "have"
+    },
+    {
+      "start": 776159,
+      "end": 776319,
+      "text": "it"
+    },
+    {
+      "start": 776319,
+      "end": 776464,
+      "text": "do"
+    },
+    {
+      "start": 776464,
+      "end": 777186,
+      "text": "complex"
+    },
+    {
+      "start": 777347,
+      "end": 777652,
+      "text": "work."
+    },
+    {
+      "start": 778053,
+      "end": 778197,
+      "text": "These"
+    },
+    {
+      "start": 778229,
+      "end": 778278,
+      "text": "are"
+    },
+    {
+      "start": 778310,
+      "end": 778470,
+      "text": "my"
+    },
+    {
+      "start": 778470,
+      "end": 779000,
+      "text": "experiences"
+    },
+    {
+      "start": 779032,
+      "end": 779208,
+      "text": "with"
+    },
+    {
+      "start": 779208,
+      "end": 779433,
+      "text": "that"
+    },
+    {
+      "start": 779433,
+      "end": 779834,
+      "text": "model."
+    },
+    {
+      "start": 780075,
+      "end": 780444,
+      "text": "Obviously,"
+    },
+    {
+      "start": 780476,
+      "end": 780573,
+      "text": "it's"
+    },
+    {
+      "start": 780637,
+      "end": 780878,
+      "text": "just"
+    },
+    {
+      "start": 780878,
+      "end": 781006,
+      "text": "been"
+    },
+    {
+      "start": 781038,
+      "end": 781199,
+      "text": "2"
+    },
+    {
+      "start": 781199,
+      "end": 781407,
+      "text": "days,"
+    },
+    {
+      "start": 781504,
+      "end": 781600,
+      "text": "but"
+    },
+    {
+      "start": 781664,
+      "end": 781809,
+      "text": "I've"
+    },
+    {
+      "start": 781841,
+      "end": 782049,
+      "text": "been"
+    },
+    {
+      "start": 782259,
+      "end": 782388,
+      "text": "I've"
+    },
+    {
+      "start": 782388,
+      "end": 782776,
+      "text": "totally"
+    },
+    {
+      "start": 782809,
+      "end": 782971,
+      "text": "been"
+    },
+    {
+      "start": 782971,
+      "end": 783245,
+      "text": "blown"
+    },
+    {
+      "start": 783278,
+      "end": 783488,
+      "text": "away,"
+    },
+    {
+      "start": 783941,
+      "end": 784006,
+      "text": "and"
+    },
+    {
+      "start": 784086,
+      "end": 784135,
+      "text": "I"
+    },
+    {
+      "start": 784167,
+      "end": 784281,
+      "text": "would"
+    },
+    {
+      "start": 784281,
+      "end": 784750,
+      "text": "recommend"
+    },
+    {
+      "start": 784750,
+      "end": 785041,
+      "text": "using"
+    },
+    {
+      "start": 785073,
+      "end": 785235,
+      "text": "this"
+    },
+    {
+      "start": 785235,
+      "end": 785477,
+      "text": "model"
+    },
+    {
+      "start": 785477,
+      "end": 785574,
+      "text": "in"
+    },
+    {
+      "start": 785623,
+      "end": 786157,
+      "text": "general"
+    },
+    {
+      "start": 786270,
+      "end": 786448,
+      "text": "and"
+    },
+    {
+      "start": 786998,
+      "end": 787224,
+      "text": "using"
+    },
+    {
+      "start": 787321,
+      "end": 787418,
+      "text": "it"
+    },
+    {
+      "start": 787418,
+      "end": 787645,
+      "text": "like"
+    },
+    {
+      "start": 787645,
+      "end": 787839,
+      "text": "this"
+    },
+    {
+      "start": 788000,
+      "end": 788647,
+      "text": "specifically."
+    }
+  ]
+}

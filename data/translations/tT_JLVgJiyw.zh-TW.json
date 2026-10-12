@@ -1,0 +1,1016 @@
+[
+  {
+    "start": 176,
+    "end": 5447,
+    "text": "If you're doing any work related to TypeScript, you should be using the Effect library",
+    "zh": "如果您正在做任何與 TypeScript 相關的工作，您應該使用 Effect 程式庫"
+  },
+  {
+    "start": 5623,
+    "end": 6537,
+    "text": "and here's why.",
+    "zh": "原因如下。"
+  },
+  {
+    "start": 7161,
+    "end": 10238,
+    "text": "Now, maybe you already heard or read about it.",
+    "zh": "現在，也許您已經聽說過或讀到過它。"
+  },
+  {
+    "start": 10286,
+    "end": 15381,
+    "text": "There is a little mini hype around it, I feel like, but it's a really good library.",
+    "zh": "我覺得它周圍有一些小炒作，但它是一個非常好的庫。"
+  },
+  {
+    "start": 15877,
+    "end": 20812,
+    "text": "Now, if you go to the official website, effect.website, you'll learn that Effect is all",
+    "zh": "現在，如果你造訪官方網站effect.website，你會發現Effect就是全部"
+  },
+  {
+    "start": 20860,
+    "end": 25475,
+    "text": "about reliable TypeScript for the AI era, but what does that mean, right?",
+    "zh": "關於人工智慧時代可靠的 TypeScript，但這意味著什麼，對嗎？"
+  },
+  {
+    "start": 26132,
+    "end": 28487,
+    "text": "I prepared some examples here.",
+    "zh": "我在這裡準備了一些例子。"
+  },
+  {
+    "start": 29497,
+    "end": 31678,
+    "text": "And you find it below, it's on GitHub.",
+    "zh": "您可以在下面找到它，它位於 GitHub 上。"
+  },
+  {
+    "start": 32624,
+    "end": 36216,
+    "text": "And let's take a look at some TypeScript code without Effect because that helps understand",
+    "zh": "讓我們來看看一些沒有 Effect 的 TypeScript 程式碼，因為這有助於理解"
+  },
+  {
+    "start": 36312,
+    "end": 38092,
+    "text": "why you may wanna use Effect.",
+    "zh": "為什麼你可能想使用效果。"
+  },
+  {
+    "start": 39198,
+    "end": 40641,
+    "text": "Here's a function getUser.",
+    "zh": "這是一個函數 getUser。"
+  },
+  {
+    "start": 41122,
+    "end": 45965,
+    "text": "It uses a dummy database implementation which I have here to find a user by ID and that",
+    "zh": "它使用一個虛擬資料庫實現，我在這裡透過 ID 尋找用戶，並且"
+  },
+  {
+    "start": 46013,
+    "end": 52171,
+    "text": "yields a promise, a promise which will resolve to a user or null.",
+    "zh": "產生一個承諾，一個將解析為使用者或 null 的承諾。"
+  },
+  {
+    "start": 53229,
+    "end": 55827,
+    "text": "If we don't have a user, we therefore throw an error.",
+    "zh": "如果我們沒有用戶，我們就會拋出錯誤。"
+  },
+  {
+    "start": 56100,
+    "end": 60003,
+    "text": "We also throw an error if we got an invalid ID, otherwise we return the user.",
+    "zh": "如果我們得到一個無效的 ID，我們也會拋出一個錯誤，否則我們會回傳該使用者。"
+  },
+  {
+    "start": 60132,
+    "end": 61192,
+    "text": "What's the return type?",
+    "zh": "回傳類型是什麼？"
+  },
+  {
+    "start": 61819,
+    "end": 64984,
+    "text": "It is a promise that resolves to a user in the end.",
+    "zh": "這是最終對使用者所做的承諾。"
+  },
+  {
+    "start": 65450,
+    "end": 66735,
+    "text": "And that's the interesting part.",
+    "zh": "這就是有趣的部分。"
+  },
+  {
+    "start": 67860,
+    "end": 73852,
+    "text": "The information that we could get an error is not something TypeScript knows about and",
+    "zh": "我們可能得到錯誤的資訊不是 TypeScript 知道的，並且"
+  },
+  {
+    "start": 73884,
+    "end": 75892,
+    "text": "that is just how TypeScript works.",
+    "zh": "這就是 TypeScript 的工作原理。"
+  },
+  {
+    "start": 76680,
+    "end": 79748,
+    "text": "Errors are not part of the type system so to say.",
+    "zh": "可以這麼說，錯誤不是類型系統的一部分。"
+  },
+  {
+    "start": 79812,
+    "end": 85606,
+    "text": "I mean, yes, you can create an error and use any class or any value type you want for",
+    "zh": "我的意思是，是的，您可以創建一個錯誤並使用您想要的任何類別或任何值類型"
+  },
+  {
+    "start": 85606,
+    "end": 85783,
+    "text": "that.",
+    "zh": "那。"
+  },
+  {
+    "start": 85847,
+    "end": 90592,
+    "text": "So the error itself will have a type, but the fact that a function can yield an error,",
+    "zh": "所以錯誤本身會有一個類型，但事實上函數可以產生錯誤，"
+  },
+  {
+    "start": 91137,
+    "end": 94472,
+    "text": "that is not something TypeScript knows about.",
+    "zh": "TypeScript 不知道這一點。"
+  },
+  {
+    "start": 94648,
+    "end": 95994,
+    "text": "Now, why is that a problem?",
+    "zh": "現在，為什麼這是一個問題？"
+  },
+  {
+    "start": 96668,
+    "end": 102503,
+    "text": "It already, if we're being honest, could be a problem before AI, but with AI, it could",
+    "zh": "老實說，在人工智慧出現之前，這可能已經是一個問題了，但有了人工智慧，它可能會"
+  },
+  {
+    "start": 102519,
+    "end": 106334,
+    "text": "of course happen depending on which model you're using and how complex your project is,",
+    "zh": "當然，具體情況取決於您使用的模型以及專案的複雜程度，"
+  },
+  {
+    "start": 107152,
+    "end": 113067,
+    "text": "that AI simply doesn't anticipate and handle all the errors some function in your code",
+    "zh": "人工智慧根本無法預測和處理程式碼中某些功能的所有錯誤"
+  },
+  {
+    "start": 113244,
+    "end": 114029,
+    "text": "may be generating.",
+    "zh": "可能正在生成。"
+  },
+  {
+    "start": 114302,
+    "end": 117524,
+    "text": "And again, it's possible that this is also true for you.",
+    "zh": "再說一次，這可能對你來說也是如此。"
+  },
+  {
+    "start": 118293,
+    "end": 122621,
+    "text": "The code you wrote, you also may not have handled all the errors that could happen, but",
+    "zh": "您編寫的程式碼，您也可能沒有處理所有可能發生的錯誤，但是"
+  },
+  {
+    "start": 122637,
+    "end": 124801,
+    "text": "that's not an excuse for not doing better though.",
+    "zh": "但這並不是不做得更好的藉口。"
+  },
+  {
+    "start": 125122,
+    "end": 130107,
+    "text": "And that's exactly one major benefit, it's not the only one, the Effect Library brings",
+    "zh": "這正是效果庫帶來的一大好處，但它不是唯一的好處"
+  },
+  {
+    "start": 130171,
+    "end": 130797,
+    "text": "to the table.",
+    "zh": "到桌子上。"
+  },
+  {
+    "start": 131839,
+    "end": 137866,
+    "text": "There you can define your error types here using that tagged error data type.",
+    "zh": "您可以使用標記的錯誤資料類型在此定義錯誤類型。"
+  },
+  {
+    "start": 138090,
+    "end": 144054,
+    "text": "And then if you build your function using the Effect Library, using effect fn to define",
+    "zh": "然後，如果您使用效果庫建立函數，請使用effect fn 來定義"
+  },
+  {
+    "start": 144054,
+    "end": 150050,
+    "text": "a function in the Effect Library world, where you then use a generator, but nothing to",
+    "zh": "效果庫世界中的一個函數，然後您可以在其中使用生成器，但無需執行任何操作"
+  },
+  {
+    "start": 150050,
+    "end": 150745,
+    "text": "be afraid of.",
+    "zh": "害怕。"
+  },
+  {
+    "start": 150859,
+    "end": 152815,
+    "text": "You can think of it as a normal function here for now.",
+    "zh": "現在你可以將其視為一個普通函數。"
+  },
+  {
+    "start": 154106,
+    "end": 158691,
+    "text": "If you do that and you use Effect features in there for trying to",
+    "zh": "如果您這樣做並使用其中的效果功能來嘗試"
+  },
+  {
+    "start": 160499,
+    "end": 166966,
+    "text": "call a promise to find a user, you can catch the error, you can yield your error like",
+    "zh": "呼叫 Promise 來尋找用戶，您可以捕獲錯誤，您可以產生錯誤，例如"
+  },
+  {
+    "start": 167031,
+    "end": 173840,
+    "text": "this, and suddenly the return type of that thing here is an Effect which will give you",
+    "zh": "這個，突然間，這裡那個東西的返回類型是一個 Effect ，它會給你"
+  },
+  {
+    "start": 173840,
+    "end": 179321,
+    "text": "a user if things go well things go well, but which may also instead yield an error.",
+    "zh": "用戶如果一切順利，一切都會順利，但也可能產生錯誤。"
+  },
+  {
+    "start": 179434,
+    "end": 184192,
+    "text": "So you get a richer return type, you got more type information out of the code.",
+    "zh": "因此，您可以獲得更豐富的返回類型，從程式碼中獲得更多類型資訊。"
+  },
+  {
+    "start": 184528,
+    "end": 188405,
+    "text": "Now I'll be honest, code like this can look frightening, right?",
+    "zh": "現在我說實話，這樣的程式碼看起來很可怕，對吧？"
+  },
+  {
+    "start": 189335,
+    "end": 195791,
+    "text": "And if we wouldn't have AI, I'm not sure if Effect would become",
+    "zh": "如果我們沒有人工智慧，我不確定 Effect 是否會變成"
+  },
+  {
+    "start": 196144,
+    "end": 202456,
+    "text": "popular because the code you write with it can look intimidating and it definitely has",
+    "zh": "流行是因為你用它寫的程式碼看起來很嚇人，而且它確實有"
+  },
+  {
+    "start": 202488,
+    "end": 204939,
+    "text": "some boilerplate to it.",
+    "zh": "一些樣板文件。"
+  },
+  {
+    "start": 205212,
+    "end": 207648,
+    "text": "But with AI, that doesn't matter too much anymore.",
+    "zh": "但有了人工智慧，這一切就不再那麼重要了。"
+  },
+  {
+    "start": 207760,
+    "end": 211608,
+    "text": "It's the AI writing that code for us now, or at least for many of us.",
+    "zh": "現在是人工智慧為我們編寫程式碼，或至少為我們許多人編寫程式碼。"
+  },
+  {
+    "start": 211704,
+    "end": 213675,
+    "text": "It definitely writes my code nowadays.",
+    "zh": "現在它肯定會寫我的程式碼。"
+  },
+  {
+    "start": 214894,
+    "end": 221771,
+    "text": "And therefore, I don't care about how complex the code looks like or how much",
+    "zh": "因此，我不關心程式碼看起來有多複雜或有多少"
+  },
+  {
+    "start": 221947,
+    "end": 223438,
+    "text": "boilerplate there may be in there.",
+    "zh": "那裡可能有樣板。"
+  },
+  {
+    "start": 223887,
+    "end": 230154,
+    "text": "I do care about the benefits though, which is that we can't miss errors that easily.",
+    "zh": "不過，我確實關心好處，那就是我們不能輕易錯過錯誤。"
+  },
+  {
+    "start": 230219,
+    "end": 234996,
+    "text": "Now, of course, you could still miss an error here if something in here could go wrong,",
+    "zh": "當然，如果這裡出現問題，您仍然可能會錯過這裡的錯誤，"
+  },
+  {
+    "start": 235044,
+    "end": 241007,
+    "text": "if there could be a database error connection loss here and therefore this throws, well,",
+    "zh": "如果這裡可能存在資料庫錯誤連線遺失，因此會拋出，那麼，"
+  },
+  {
+    "start": 241183,
+    "end": 245944,
+    "text": "we would be catching this actually, but you could of course not have that code here where",
+    "zh": "我們實際上會捕捉到這一點，但你當然不能在這裡有該程式碼"
+  },
+  {
+    "start": 246072,
+    "end": 250801,
+    "text": "you catch potential database errors and then still you could have so-called defects which",
+    "zh": "您發現了潛在的資料庫錯誤，但仍然可能存在所謂的缺陷"
+  },
+  {
+    "start": 250881,
+    "end": 256572,
+    "text": "are unexpected errors or errors you missed, but at least for all the errors you can anticipate,",
+    "zh": "是意外錯誤或您錯過的錯誤，但至少對於您可以預見的所有錯誤，"
+  },
+  {
+    "start": 256893,
+    "end": 263625,
+    "text": "you then got better type handling, so to say, more information in your type system and",
+    "zh": "然後你就得到了更好的類型處理，也就是說，你的類型系統中有更多信息"
+  },
+  {
+    "start": 263625,
+    "end": 269445,
+    "text": "that's nice, that helps AI write better code and that's one of the main benefits, Effect",
+    "zh": "這很好，可以幫助人工智慧編寫更好的程式碼，這是主要好處之一，效果"
+  },
+  {
+    "start": 269558,
+    "end": 275677,
+    "text": "brings to the table— better error-related typing or type safety.",
+    "zh": "帶來了更好的錯誤相關類型或類型安全性。"
+  },
+  {
+    "start": 275773,
+    "end": 277042,
+    "text": "It's not the only thing though.",
+    "zh": "但這不是唯一的事。"
+  },
+  {
+    "start": 278327,
+    "end": 284638,
+    "text": "So the handling error stuff here is interesting, but we also got help regarding services",
+    "zh": "所以這裡處理錯誤的東西很有趣，但我們也得到了有關服務的幫助"
+  },
+  {
+    "start": 284671,
+    "end": 285714,
+    "text": "and dependency injection.",
+    "zh": "和依賴注入。"
+  },
+  {
+    "start": 285811,
+    "end": 291191,
+    "text": "Now dependency injection, in case you don't know, is a general pattern not invented by",
+    "zh": "現在，如果您不知道的話，依賴注入是一種通用模式，並非由"
+  },
+  {
+    "start": 291817,
+    "end": 292733,
+    "text": "Effect in any way.",
+    "zh": "任何方式的效果。"
+  },
+  {
+    "start": 293423,
+    "end": 298049,
+    "text": "The idea is that you have some code And in that code you need some dependencies.",
+    "zh": "這個想法是你有一些程式碼並且在該程式碼中你需要一些依賴項。"
+  },
+  {
+    "start": 298225,
+    "end": 303461,
+    "text": "You need, for example, a mailer service which allows you to send out emails, maybe a",
+    "zh": "例如，您需要一個允許您發送電子郵件的郵件服務，也許是一個"
+  },
+  {
+    "start": 303846,
+    "end": 308407,
+    "text": "repository service which allows you to get some data, maybe any other kind of service,",
+    "zh": "存儲庫服務，允許您獲取一些數據，也許是任何其他類型的服務，"
+  },
+  {
+    "start": 308584,
+    "end": 310816,
+    "text": "a logging service, whatever it is, right?",
+    "zh": "日誌服務，不管它是什麼，對吧？"
+  },
+  {
+    "start": 311233,
+    "end": 313434,
+    "text": "You have that dependency in your code.",
+    "zh": "您的程式碼中有這種依賴性。"
+  },
+  {
+    "start": 313498,
+    "end": 319841,
+    "text": "And of course you could just import it at the top of your file, manually pass the dependency,",
+    "zh": "當然，您可以將其導入文件頂部，手動傳遞依賴項，"
+  },
+  {
+    "start": 319922,
+    "end": 322057,
+    "text": "the object or whatever into the function.",
+    "zh": "將物件或任何內容放入函數中。"
+  },
+  {
+    "start": 323533,
+    "end": 328711,
+    "text": "But alternatively, you can also use a dependency injection system, which has the advantage",
+    "zh": "但是，您也可以使用依賴注入系統，它的優點是"
+  },
+  {
+    "start": 328743,
+    "end": 335059,
+    "text": "that you may not need to duplicate as much code, that it's easier to swap out one dependency",
+    "zh": "您可能不需要複製那麼多程式碼，換出一個依賴項會更容易"
+  },
+  {
+    "start": 335059,
+    "end": 339275,
+    "text": "implementation for another one, for example, one mailer service for another one.",
+    "zh": "實現另一項服務，例如，一項郵件服務用於另一項服務。"
+  },
+  {
+    "start": 339964,
+    "end": 345687,
+    "text": "There are some advantages to dependency injection in general, and Effect gives you the",
+    "zh": "一般來說，依賴注入有一些優點，Effect 為您提供了"
+  },
+  {
+    "start": 345735,
+    "end": 351394,
+    "text": "building blocks to define such services and to then provide the service implementations,",
+    "zh": "建構塊來定義此類服務，然後提供服務實現，"
+  },
+  {
+    "start": 351426,
+    "end": 353654,
+    "text": "which again could then easily be swapped out.",
+    "zh": "然後又可以輕易地更換掉。"
+  },
+  {
+    "start": 354520,
+    "end": 360117,
+    "text": "The advantage with AI again is that you got more type information here because",
+    "zh": "人工智慧的優勢在於你可以在這裡獲得更多類型信息，因為"
+  },
+  {
+    "start": 360983,
+    "end": 367029,
+    "text": "Effect does not give you, not just give you type information about the expected return",
+    "zh": "Effect 不給你，不僅僅是給你關於預期回報的類型信息"
+  },
+  {
+    "start": 367061,
+    "end": 373605,
+    "text": "type of a function and potential errors, but it also has dependency type information.",
+    "zh": "函數的類型和潛在錯誤，但它也有依賴類型資訊。"
+  },
+  {
+    "start": 374182,
+    "end": 380549,
+    "text": "This Effect generic type here has 3 type parameters and the first one is the return type,",
+    "zh": "這裡的 Effect 泛型類型有 3 個型別參數，第一個是回傳型別，"
+  },
+  {
+    "start": 380613,
+    "end": 387267,
+    "text": "the second one is the errors you're anticipating 3rd one is the dependencies this effect",
+    "zh": "第二個是您預期的錯誤第三個是影響此效果的依賴項"
+  },
+  {
+    "start": 387267,
+    "end": 387523,
+    "text": "needs.",
+    "zh": "需要。"
+  },
+  {
+    "start": 387748,
+    "end": 394175,
+    "text": "And that again ensures that AI has a lower chance or no chance if you are",
+    "zh": "這再次確保了人工智慧的機會較低或沒有機會，如果你是"
+  },
+  {
+    "start": 394559,
+    "end": 399929,
+    "text": "throwing linting and type checking errors of missing important dependencies that a piece",
+    "zh": "拋出 linting 和類型檢查錯誤，因為缺少重要的依賴項"
+  },
+  {
+    "start": 399945,
+    "end": 400586,
+    "text": "of code needs.",
+    "zh": "的程式碼需求。"
+  },
+  {
+    "start": 400650,
+    "end": 405618,
+    "text": "It simply helps AI put together a program that will just work.",
+    "zh": "它只是幫助人工智慧組合出一個可以正常運作的程式。"
+  },
+  {
+    "start": 405763,
+    "end": 407301,
+    "text": "That is the idea.",
+    "zh": "這就是我們的想法。"
+  },
+  {
+    "start": 407622,
+    "end": 410539,
+    "text": "Now, of course, you don't have to use the dependency injection pattern.",
+    "zh": "當然，現在您不必使用依賴項注入模式。"
+  },
+  {
+    "start": 410651,
+    "end": 412959,
+    "text": "Effect does not require it.",
+    "zh": "效果不需要它。"
+  },
+  {
+    "start": 413232,
+    "end": 418646,
+    "text": "But it is something you will likely use automatically if you switch to Effect as your",
+    "zh": "但如果您切換到效果作為您的應用程序，您可能會自動使用它。"
+  },
+  {
+    "start": 418951,
+    "end": 420928,
+    "text": "main program framework.",
+    "zh": "主程式框架。"
+  },
+  {
+    "start": 421040,
+    "end": 423113,
+    "text": "And that's how I think of Effect.",
+    "zh": "這就是我對 Effect 的看法。"
+  },
+  {
+    "start": 423418,
+    "end": 428865,
+    "text": "Instead, it's really a framework for building applications in a certain way, following",
+    "zh": "相反，它實際上是一個以某種方式構建應用程式的框架，如下"
+  },
+  {
+    "start": 428913,
+    "end": 429700,
+    "text": "certain rules.",
+    "zh": "一定的規則。"
+  },
+  {
+    "start": 429764,
+    "end": 436737,
+    "text": "And talking about following the rules, there is an extra library distributed",
+    "zh": "說到遵守規則，有一個額外的分散式庫"
+  },
+  {
+    "start": 436770,
+    "end": 439469,
+    "text": "by the Effect people, the tsgo library.",
+    "zh": "由 Effect 人員、tsgo 圖書館提供。"
+  },
+  {
+    "start": 439742,
+    "end": 446282,
+    "text": "This is a library which replaces your TypeScript compiler in this project with an adjusted",
+    "zh": "這是一個函式庫，它用經過調整的版本替換了該專案中的 TypeScript 編譯器"
+  },
+  {
+    "start": 446314,
+    "end": 452935,
+    "text": "version that's capable of understanding the Effect rules and",
+    "zh": "能夠理解效果規則的版本"
+  },
+  {
+    "start": 453031,
+    "end": 457904,
+    "text": "throwing type errors if the code violates them because there are certain rules which",
+    "zh": "如果程式碼違反了類型錯誤，則會拋出類型錯誤，因為存在某些規則"
+  },
+  {
+    "start": 458016,
+    "end": 464316,
+    "text": "the normal TypeScript compiler just can't catch, which is why we replace it with that",
+    "zh": "普通的 TypeScript 編譯器無法捕獲，這就是為什麼我們用它來取代它"
+  },
+  {
+    "start": 464412,
+    "end": 465919,
+    "text": "Effect-adjusted version.",
+    "zh": "效果調整版本。"
+  },
+  {
+    "start": 466095,
+    "end": 470055,
+    "text": "You don't have to do that, but you can do it to get more type safety.",
+    "zh": "您不必這樣做，但可以這樣做以獲得更多的類型安全性。"
+  },
+  {
+    "start": 470744,
+    "end": 475425,
+    "text": "And in the tsconfig, you can then control which rules to handle how.",
+    "zh": "然後在 tsconfig 中，您可以控制處理哪些規則。"
+  },
+  {
+    "start": 475665,
+    "end": 481805,
+    "text": "For example, there is an anti-pattern when working with Effect where inside of an Effect",
+    "zh": "例如，使用 Effect 時，在 Effect 內部存在一個反模式"
+  },
+  {
+    "start": 481805,
+    "end": 487976,
+    "text": "you shouldn't start another Effect and you could promote this to throw an actual error",
+    "zh": "你不應該啟動另一個 Effect 並且你可以提升它來拋出一個實際的錯誤"
+  },
+  {
+    "start": 487976,
+    "end": 490958,
+    "text": "if you have that in your code, things like that.",
+    "zh": "如果你的程式碼中有這樣的東西，類似的事情。"
+  },
+  {
+    "start": 491182,
+    "end": 493074,
+    "text": "Now, why am I mentioning this?",
+    "zh": "現在，我為什麼要提到這一點？"
+  },
+  {
+    "start": 493202,
+    "end": 498140,
+    "text": "Because it's likely that you're not the person or the thing writing the code, but that",
+    "zh": "因為很可能您不是編寫程式碼的人或物，但是"
+  },
+  {
+    "start": 498316,
+    "end": 499021,
+    "text": "AI does.",
+    "zh": "人工智慧確實如此。"
+  },
+  {
+    "start": 499454,
+    "end": 503397,
+    "text": "But then it's a good idea, at least right now with the current models, it's my experience,",
+    "zh": "但這是一個好主意，至少現在對於目前的模型來說，這是我的經驗，"
+  },
+  {
+    "start": 503542,
+    "end": 509601,
+    "text": "that it's a good idea to give them rules and guardrails to kind of force them to write",
+    "zh": "給他們規則和護欄來強迫他們寫作是個好主意"
+  },
+  {
+    "start": 509697,
+    "end": 510387,
+    "text": "correct code.",
+    "zh": "正確的代碼。"
+  },
+  {
+    "start": 510435,
+    "end": 512727,
+    "text": "And that is exactly what Effect gives us.",
+    "zh": "這正是 Effect 帶給我們的。"
+  },
+  {
+    "start": 512999,
+    "end": 515340,
+    "text": "It gives us this extra type information.",
+    "zh": "它為我們提供了額外的類型資訊。"
+  },
+  {
+    "start": 515644,
+    "end": 518738,
+    "text": "It gives us some nice features for building programs.",
+    "zh": "它為我們提供了一些構建程序的好功能。"
+  },
+  {
+    "start": 519075,
+    "end": 525936,
+    "text": "And it gives us tools like this tsgo package for enforcing these rules, for",
+    "zh": "它為我們提供了像 tsgo 套件這樣的工具來執行這些規則，"
+  },
+  {
+    "start": 526288,
+    "end": 532925,
+    "text": "throwing errors so that you can have AI write code and it'll just face errors if it wrote",
+    "zh": "拋出錯誤，這樣你就可以讓 AI 寫程式碼，如果它寫，它只會面臨錯誤"
+  },
+  {
+    "start": 533021,
+    "end": 539851,
+    "text": "incorrect code or code that violates And that's exactly why I'm a big",
+    "zh": "不正確的程式碼或違反的程式碼這正是我成為大人物的原因"
+  },
+  {
+    "start": 539916,
+    "end": 544181,
+    "text": "fan of Effect for all the applications I'm building with help of AI.",
+    "zh": "我在 AI 的幫助下建立的所有應用程式的 Effect 粉絲。"
+  },
+  {
+    "start": 544662,
+    "end": 548174,
+    "text": "And then there's a third advantage I don't wanna miss.",
+    "zh": "我不想錯過第三個優勢。"
+  },
+  {
+    "start": 548895,
+    "end": 552952,
+    "text": "But before I get to the third advantage, I wanna mention that I put together a program,",
+    "zh": "但在我談到第三個優勢之前，我想提一下我寫了一個程序，"
+  },
+  {
+    "start": 553097,
+    "end": 558661,
+    "text": "or I am putting together a program right now, a 2-week program where I share all my knowledge",
+    "zh": "或者我現在正在整理一個計劃，一個為期兩週的計劃，我將在其中分享我所有的知識"
+  },
+  {
+    "start": 558709,
+    "end": 561836,
+    "text": "about how to build applications, web applications with AI.",
+    "zh": "關於如何使用人工智慧建立應用程式、Web 應用程式。"
+  },
+  {
+    "start": 562702,
+    "end": 568079,
+    "text": "Where we will dive into the research part, the planning part, where we'll set up Effect",
+    "zh": "我們將深入研究部分、規劃部分，我們將在其中設定效果"
+  },
+  {
+    "start": 568079,
+    "end": 570102,
+    "text": "and we'll also be using Alchemy and Cloudflare.",
+    "zh": "我們也將使用 Alchemy 和 Cloudflare。"
+  },
+  {
+    "start": 570246,
+    "end": 572526,
+    "text": "And I'll explain all these things in the program.",
+    "zh": "我將在程序中解釋所有這些事情。"
+  },
+  {
+    "start": 573055,
+    "end": 579556,
+    "text": "And where we set up a project in which AI can work very well and where it can get work",
+    "zh": "我們在哪裡建立了一個人工智慧可以很好地工作以及它可以發揮作用的項目"
+  },
+  {
+    "start": 579556,
+    "end": 582124,
+    "text": "done, where you can get work done with AI.",
+    "zh": "完成，您可以在其中使用人工智慧完成工作。"
+  },
+  {
+    "start": 582205,
+    "end": 587068,
+    "text": "And I'll walk you through an entire real project from the planning and research and discussion",
+    "zh": "我將引導您完成整個真實專案的規劃、研究和討論"
+  },
+  {
+    "start": 587084,
+    "end": 592622,
+    "text": "part all the way through the implementation and the deployment with AI so that you can",
+    "zh": "全程使用人工智慧進行實施和部署，以便您可以"
+  },
+  {
+    "start": 592638,
+    "end": 598387,
+    "text": "really learn how to use AI as a developer, also using Effect.",
+    "zh": "身為開發人員，真正學習如何使用 AI，同時也使用 Effect。"
+  },
+  {
+    "start": 598805,
+    "end": 603286,
+    "text": "But with that, back to the 3rd advantage, which I see, and that is that Effect comes",
+    "zh": "但說到這裡，回到我所看到的第三個優勢，那就是效果來了"
+  },
+  {
+    "start": 603398,
+    "end": 606498,
+    "text": "with lots of useful stuff built in.",
+    "zh": "內建了很多有用的東西。"
+  },
+  {
+    "start": 607478,
+    "end": 612441,
+    "text": "In its core, it's about the enhanced type safety, but then it feels like the Effect team",
+    "zh": "其核心是增強類型安全性，但感覺就像 Effect 團隊"
+  },
+  {
+    "start": 612473,
+    "end": 617949,
+    "text": "figured, oh, why don't we just add anything application developers typically need?",
+    "zh": "我想，哦，為什麼我們不添加應用程式開發人員通常需要的任何內容？"
+  },
+  {
+    "start": 618174,
+    "end": 625123,
+    "text": "So you got utility functionality around Retries, because many",
+    "zh": "所以你得到了圍繞重試的實用功能，因為很多"
+  },
+  {
+    "start": 625155,
+    "end": 629160,
+    "text": "applications do stuff that could fail where you maybe want to retry.",
+    "zh": "應用程式執行的操作可能會在您想要重試時失敗。"
+  },
+  {
+    "start": 629320,
+    "end": 633213,
+    "text": "You can write the logic on your own, you can have AI write it on your own, it will probably",
+    "zh": "你可以自己寫邏輯，你可以讓AI自己寫，它可能會"
+  },
+  {
+    "start": 633309,
+    "end": 633581,
+    "text": "work.",
+    "zh": "工作。"
+  },
+  {
+    "start": 634430,
+    "end": 636705,
+    "text": "You can also use what somebody else built for you.",
+    "zh": "您也可以使用其他人為您建立的內容。"
+  },
+  {
+    "start": 636850,
+    "end": 642537,
+    "text": "Oh, as a side note, by the way, Effect itself is dependency-free.",
+    "zh": "哦，順便說一句，Effect 本身是無依賴性的。"
+  },
+  {
+    "start": 642857,
+    "end": 648096,
+    "text": "So you install Effect and you got no other dependencies unless you install them.",
+    "zh": "所以你安裝了 Effect 並且你沒有其他依賴項，除非你安裝它們。"
+  },
+  {
+    "start": 648561,
+    "end": 652726,
+    "text": "So that's of course good in a world where we got more and more supply chain attacks.",
+    "zh": "因此，在供應鏈受到越來越多攻擊的世界裡，這當然是件好事。"
+  },
+  {
+    "start": 652790,
+    "end": 653927,
+    "text": "That's another advantage too.",
+    "zh": "這也是另一個優點。"
+  },
+  {
+    "start": 654392,
+    "end": 657709,
+    "text": "But yeah, we got retry and timeout related utility functions.",
+    "zh": "但是，是的，我們有重試和超時相關的實用函數。"
+  },
+  {
+    "start": 657757,
+    "end": 660577,
+    "text": "We got concurrency related utility functions.",
+    "zh": "我們得到了與並發相關的實用函數。"
+  },
+  {
+    "start": 660961,
+    "end": 666121,
+    "text": "We got queue related utility functions and APIs so that you can easily create a queue",
+    "zh": "我們提供了與佇列相關的實用函數和 API，以便您可以輕鬆建立佇列"
+  },
+  {
+    "start": 666553,
+    "end": 670271,
+    "text": "in your project if you need to queue jobs and work through them step by step.",
+    "zh": "在您的專案中，如果您需要對作業進行排隊並逐步完成它們。"
+  },
+  {
+    "start": 670799,
+    "end": 677225,
+    "text": "Rate limiting, schema, if you wanna replace SOD, Effect comes with its own type schema",
+    "zh": "速率限制，模式，如果你想替換SOD，Effect有自己的型別模式"
+  },
+  {
+    "start": 677850,
+    "end": 681887,
+    "text": "API where you can define your schemas and validate against them and so on.",
+    "zh": "您可以在 API 中定義模式並對其進行驗證等等。"
+  },
+  {
+    "start": 682898,
+    "end": 687888,
+    "text": "Config, where if you need to load config and want to enforce type safety for environment",
+    "zh": "配置，如果您需要載入配置並希望強制環境的類型安全"
+  },
+  {
+    "start": 687888,
+    "end": 690408,
+    "text": "variables and so on, it's all there.",
+    "zh": "變數等等，都在那裡。"
+  },
+  {
+    "start": 690680,
+    "end": 696345,
+    "text": "And there is so much more if you dive into the docs, into the reference, you'll see there",
+    "zh": "如果您深入研究文件、參考資料，您會發現更多內容"
+  },
+  {
+    "start": 696457,
+    "end": 702683,
+    "text": "is SQL-related utility stuff, AI-related utility things, much, much more.",
+    "zh": "是與 SQL 相關的實用程式、與 AI 相關的實用程式等等。"
+  },
+  {
+    "start": 702972,
+    "end": 705571,
+    "text": "There really is a lot in there.",
+    "zh": "裡面確實有很多東西。"
+  },
+  {
+    "start": 705764,
+    "end": 709117,
+    "text": "Also under guides, you'll see they can help you with so much.",
+    "zh": "同樣在指導下，您會發現他們可以為您提供很多幫助。"
+  },
+  {
+    "start": 710272,
+    "end": 711266,
+    "text": "And that's why I'm a fan.",
+    "zh": "這就是我成為粉絲的原因。"
+  },
+  {
+    "start": 711314,
+    "end": 717210,
+    "text": "That's why I'm a big fan of Effect because improved type safety, guardrails for those",
+    "zh": "這就是為什麼我是 Effect 的忠實粉絲，因為它改進了類型安全性，為那些"
+  },
+  {
+    "start": 717723,
+    "end": 724501,
+    "text": "AI agents, a clear structure, clear rules on how you build your program and so many building",
+    "zh": "人工智慧代理、清晰的結構、關於如何構建程序的明確規則以及如此多的構建"
+  },
+  {
+    "start": 724533,
+    "end": 726232,
+    "text": "blocks which most programs need.",
+    "zh": "大多數程式需要的區塊。"
+  },
+  {
+    "start": 727433,
+    "end": 731183,
+    "text": "So yeah, if you're not using Effect yet, definitely give it a look.",
+    "zh": "所以，是的，如果您還沒有使用 Effect，請務必看看。"
+  },
+  {
+    "start": 731359,
+    "end": 736198,
+    "text": "It can look intimidating, but then again, you may not be writing the code and definitely",
+    "zh": "它可能看起來很嚇人，但話又說回來，您可能不會編寫程式碼，而且絕對"
+  },
+  {
+    "start": 736374,
+    "end": 741685,
+    "text": "take a look at that program I put together because that may be very interesting for seeing",
+    "zh": "看看我整理的那個程序，因為這可能會很有趣"
+  },
+  {
+    "start": 741750,
+    "end": 742873,
+    "text": "it all in action.",
+    "zh": "這一切都在行動。"
+  }
+]

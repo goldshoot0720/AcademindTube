@@ -1,0 +1,3581 @@
+{
+  "fetched": "2026-10-12",
+  "count": 715,
+  "videos": [
+    {
+      "id": "jtGSHwXigIg",
+      "title": "Using Effect? Use Alchemy, too!",
+      "date": "20261002"
+    },
+    {
+      "id": "51Eb4EtGqrI",
+      "title": "Stop treating Opus 5.5 like the other AI models",
+      "date": "20260928"
+    },
+    {
+      "id": "tT_JLVgJiyw",
+      "title": "You MUST learn and use Effect now!",
+      "date": "20260928"
+    },
+    {
+      "id": "igFarOfJYSc",
+      "title": "Stop managing AWS by hand",
+      "date": "20260912"
+    },
+    {
+      "id": "G-v1hkQ8Sf8",
+      "title": "Self-hosted durable objects are pretty interesting!",
+      "date": "20260912"
+    },
+    {
+      "id": "o8-EgQhqdU0",
+      "title": "Here's why I like Pi",
+      "date": "20260812"
+    },
+    {
+      "id": "F0pH9aQeDrY",
+      "title": "You're probably not using agent skills right",
+      "date": "20260812"
+    },
+    {
+      "id": "2CR9tDNAzB0",
+      "title": "herdr is a must use",
+      "date": "20260812"
+    },
+    {
+      "id": "QOdCAV0xfEc",
+      "title": "Using Claude Cowork and Codex for Automating ANY Business Task",
+      "date": "20260612"
+    },
+    {
+      "id": "N9nU9oLZ30o",
+      "title": "Key features of the NEW Claude Code desktop app you MUST know!",
+      "date": "20260512"
+    },
+    {
+      "id": "Fs6YDVJq5As",
+      "title": "Protecting against supply chain attacks - full guide",
+      "date": "20260412"
+    },
+    {
+      "id": "eLaf8rCSwIM",
+      "title": "5 ways of using Claude Code remotely - and when to use which",
+      "date": "20260412"
+    },
+    {
+      "id": "BC4xJzNqutc",
+      "title": "You're likely missing out on agent skills true potential!",
+      "date": "20260412"
+    },
+    {
+      "id": "Ads1B6_2Yjg",
+      "title": "Getting the most out of Codex",
+      "date": "20260312"
+    },
+    {
+      "id": "WwdIYp5fuxY",
+      "title": "My top 6 tips & ways of using Claude Code efficiently",
+      "date": "20260212"
+    },
+    {
+      "id": "O3DhX5tX67c",
+      "title": "Automatic animations via the browser's View Transitions API",
+      "date": "20260212"
+    },
+    {
+      "id": "1NX2kmvbWFQ",
+      "title": "Making Sense of OKLCH() & Modern CSS Colors",
+      "date": "20260212"
+    },
+    {
+      "id": "R23_GNPx7f0",
+      "title": "No more quirky JS-based workarounds!",
+      "date": "20260112"
+    },
+    {
+      "id": "XVasJ3shTYo",
+      "title": "Build truly reusable components!",
+      "date": "20260112"
+    },
+    {
+      "id": "DXdGzNyV030",
+      "title": "Stop using JS for managing modals!",
+      "date": "20260112"
+    },
+    {
+      "id": "_PMYMJrNcME",
+      "title": "How to upload files to S3 & R2 with ease (and React)",
+      "date": "20251212"
+    },
+    {
+      "id": "OcvaJ9Lm-lc",
+      "title": "It's more than just a \"nice alternative\"",
+      "date": "20251112"
+    },
+    {
+      "id": "BKS4lDIhPaM",
+      "title": "Node.js can do that?",
+      "date": "20251112"
+    },
+    {
+      "id": "f4pCSMjGeRY",
+      "title": "AGAIN another BEST model...? Testing Veo 3.1 with Replicate in n8n.",
+      "date": "20251112"
+    },
+    {
+      "id": "p3lFCY4nTjI",
+      "title": "I built my own Sora 2 video generation workflow with n8n",
+      "date": "20251012"
+    },
+    {
+      "id": "Rm1pCbKDRPw",
+      "title": "I Built a YouTube Research Copilot",
+      "date": "20251012"
+    },
+    {
+      "id": "t-oNHD-9DdQ",
+      "title": "But THIS is where the real change happens.",
+      "date": "20251012"
+    },
+    {
+      "id": "Zz7VPZRvoh4",
+      "title": "Hard times, great deals! 💰",
+      "date": "20251012"
+    },
+    {
+      "id": "qNs0Dxs5JVI",
+      "title": "Don't avoid AI as a developer - embrace it!",
+      "date": "20251012"
+    },
+    {
+      "id": "Igt89sDaboE",
+      "title": "Next.js 15 is here! Does it fix Next 14?",
+      "date": "20251012"
+    },
+    {
+      "id": "-MMjFX5UfN4",
+      "title": "🤯 Express.js 5 is here (since a month already, actually)",
+      "date": "20251012"
+    },
+    {
+      "id": "N9zOhpqLTiM",
+      "title": "(Un)expected winners & interesting trends",
+      "date": "20241012"
+    },
+    {
+      "id": "uajb6dkd2Ik",
+      "title": "My Angular course just got a HUGE update! 🎉",
+      "date": "20241012"
+    },
+    {
+      "id": "g8MgdgaOfS8",
+      "title": "ACT QUICK and GET ACCESS to 49 Courses NOW!",
+      "date": "20241012"
+    },
+    {
+      "id": "JTLDuL0BtUE",
+      "title": "Angular 18 is EXACTLY what we needed",
+      "date": "20241012"
+    },
+    {
+      "id": "1QI_6Ccj0j8",
+      "title": "Time to dive DEEP into the App Router...",
+      "date": "20241012"
+    },
+    {
+      "id": "9A6XzkhkuGY",
+      "title": "CSS Animations & Transitions - What You Need To Know in 6 Minutes",
+      "date": "20241012"
+    },
+    {
+      "id": "RUoZ2XBa_tw",
+      "title": "Does it work & is it a good idea? 🤔",
+      "date": "20241012"
+    },
+    {
+      "id": "ujBBiPtyAd8",
+      "title": "Use JavaScript without writing JavaScript...",
+      "date": "20241012"
+    },
+    {
+      "id": "V1f8MOQiHRw",
+      "title": "You might not need useEffect() ...",
+      "date": "20241012"
+    },
+    {
+      "id": "1R02JJczFBg",
+      "title": "How To Use It & Why It's Awesome",
+      "date": "20241012"
+    },
+    {
+      "id": "174kDnSUJj4",
+      "title": "10 Visual Studio Code Shortcuts You Should Know in 2024",
+      "date": "20241012"
+    },
+    {
+      "id": "oMzdnVdoWqE",
+      "title": "How React aims to help with cross-platform development",
+      "date": "20241012"
+    },
+    {
+      "id": "t18Kzj9S8-M",
+      "title": "Understanding Signals",
+      "date": "20241012"
+    },
+    {
+      "id": "3nyk9LjRTs8",
+      "title": "OpenAI did it again ... with SORA!",
+      "date": "20241012"
+    },
+    {
+      "id": "59VJwevCCQg",
+      "title": "10 Essential Git Commands You Should Understand When Working With GitHub",
+      "date": "20241012"
+    },
+    {
+      "id": "CMgxu_P81-o",
+      "title": "How I would learn & master it if I were to start over again",
+      "date": "20241012"
+    },
+    {
+      "id": "hnmTiXEY4X8",
+      "title": "You might not need useState()!",
+      "date": "20241012"
+    },
+    {
+      "id": "G3dj0HcLpTU",
+      "title": "Launching something new...",
+      "date": "20241012"
+    },
+    {
+      "id": "oDDcZhKqUxQ",
+      "title": "5 Modern CSS Features You Should Know In 2024",
+      "date": "20241012"
+    },
+    {
+      "id": "-diI7xTANmw",
+      "title": "You might've missed the Angular Renaissance...",
+      "date": "20241012"
+    },
+    {
+      "id": "oQiEZ8adag0",
+      "title": "React's becoming a bit weird...",
+      "date": "20241012"
+    },
+    {
+      "id": "BeRrN7wLKxg",
+      "title": "I got TWO exciting things to share! Let's go! Find out what's next!",
+      "date": "20241012"
+    },
+    {
+      "id": "QLxQlEM9WI4",
+      "title": "Thank you 🙏 We added 200 extra slots",
+      "date": "20241012"
+    },
+    {
+      "id": "T0Cnx--66Zk",
+      "title": "This is going to sell out fast!",
+      "date": "20241012"
+    },
+    {
+      "id": "d0daPe9q35w",
+      "title": "Angular's Renaissance",
+      "date": "20241012"
+    },
+    {
+      "id": "wGR7xjQ1qas",
+      "title": "Early Bird Black Friday Discounts + Dall-E 3 Added to ChatGPT Course!",
+      "date": "20241012"
+    },
+    {
+      "id": "krSMUqbzUKs",
+      "title": "NEW content everywhere!",
+      "date": "20241012"
+    },
+    {
+      "id": "RmveJc8_voo",
+      "title": "How AI tools like GitHub Copilot & Cursor IDE boost my productivity as a developer!",
+      "date": "20231012"
+    },
+    {
+      "id": "HYOh74IPD-w",
+      "title": "Yes, there is a discount link in the video description... ;-)",
+      "date": "20231012"
+    },
+    {
+      "id": "tQ14lVuPLgM",
+      "title": "Is ChatGPT Still Best?",
+      "date": "20231012"
+    },
+    {
+      "id": "2KIaYyn44oI",
+      "title": "Will ChatGPT Replace Us? Or You?",
+      "date": "20231012"
+    },
+    {
+      "id": "qalOpo6Mc-8",
+      "title": "Angular 16 is a milestone release!",
+      "date": "20231012"
+    },
+    {
+      "id": "rxYQe1JLfuI",
+      "title": "Getting Started with SolidJS",
+      "date": "20231012"
+    },
+    {
+      "id": "jl5uWkYJSCY",
+      "title": "It's end-to-end testing time!",
+      "date": "20231012"
+    },
+    {
+      "id": "w14cgW9pVkg",
+      "title": "Is SolidJS the better ReactJS?",
+      "date": "20231012"
+    },
+    {
+      "id": "HrTwNiOsNGo",
+      "title": "Why you HAVE TO KNOW These Commands to FIX your GIT Projects!",
+      "date": "20231012"
+    },
+    {
+      "id": "4baq00tHfmA",
+      "title": "Get started with React.js & React Router 6+",
+      "date": "20231012"
+    },
+    {
+      "id": "1LkOa7Ky2ak",
+      "title": "Why React.js is taking a new direction",
+      "date": "20231012"
+    },
+    {
+      "id": "5EsLj3JOdE0",
+      "title": "The past, current state & future of JavaScript frameworks",
+      "date": "20231012"
+    },
+    {
+      "id": "PjzvIESpcso",
+      "title": "It was about time! 🎉",
+      "date": "20231012"
+    },
+    {
+      "id": "ulQA5tjJark",
+      "title": "Git & GitHub Crash Course 2023",
+      "date": "20231012"
+    },
+    {
+      "id": "RBYJTop1e-g",
+      "title": "Remix Crash Course 2023 (React Framework)",
+      "date": "20231012"
+    },
+    {
+      "id": "dQ6ZLYm_4yk",
+      "title": "Academind Pro Black Friday & New Prices",
+      "date": "20231012"
+    },
+    {
+      "id": "XMLWyhAZx9Q",
+      "title": "My last course for this year!",
+      "date": "20231012"
+    },
+    {
+      "id": "qAWeMZkR_VY",
+      "title": "NextJS 13 & Why it's complicated",
+      "date": "20231012"
+    },
+    {
+      "id": "bDDuLuCqHg0",
+      "title": "NextJS 13 - First Look at the /app Folder & Complete Demo",
+      "date": "20231012"
+    },
+    {
+      "id": "muc_k9gVNfs",
+      "title": "New Course Announcement",
+      "date": "20231012"
+    },
+    {
+      "id": "L2kzUg6IzxM",
+      "title": "React Router 6.4 - Getting Started",
+      "date": "20221012"
+    },
+    {
+      "id": "X8U-6RuZMW8",
+      "title": "Triggering an AWS Lambda Function For S3 File Uploads | AWS in Action",
+      "date": "20221012"
+    },
+    {
+      "id": "pc2o7pkZTQ0",
+      "title": "Optimizing Content Delivery with CloudFront & Using Custom Domains Route 53 | AWS in Action",
+      "date": "20221012"
+    },
+    {
+      "id": "zFhjh0ZeRhQ",
+      "title": "Creating & Using Managed SQL Databases with RDS & EC2 | AWS in Action",
+      "date": "20221012"
+    },
+    {
+      "id": "iuzAvDtXwks",
+      "title": "IAM Roles & EC2 Instance Profile - Connecting EC2 to DynamoDB | AWS in Action",
+      "date": "20221012"
+    },
+    {
+      "id": "DN2QU18o2wc",
+      "title": "Creating & Configuring DynamoDB Tables | AWS in Action",
+      "date": "20221012"
+    },
+    {
+      "id": "CoYDMebOcQE",
+      "title": "Creating a VPC & Subnets (Public & Private) from Scratch | AWS in Action",
+      "date": "20221012"
+    },
+    {
+      "id": "cf9jQc4xzpo",
+      "title": "EC2 Auto Scaling & Elastic Load Balancer | AWS in Action",
+      "date": "20221012"
+    },
+    {
+      "id": "O7cF8-bz2jE",
+      "title": "Bootstrapping EC2 Instances with Userdata | AWS in Action",
+      "date": "20221012"
+    },
+    {
+      "id": "9li3TxwPCCY",
+      "title": "Building Custom EC2 AMIs (Amazon Machine Images) | AWS in Action",
+      "date": "20221012"
+    },
+    {
+      "id": "74e1asRdR7k",
+      "title": "Launching, configuring, connecting & using an EC2 Instance | AWS in Action",
+      "date": "20221012"
+    },
+    {
+      "id": "EdRE1EH_G-4",
+      "title": "Using EBS Volumes with EC2 Instances | AWS in Action",
+      "date": "20221012"
+    },
+    {
+      "id": "BILHiDG72CA",
+      "title": "Creating & Using EFS File Systems (e.g. with EC2) | AWS in Action",
+      "date": "20221012"
+    },
+    {
+      "id": "hNKHa7r2iOs",
+      "title": "What is AWS & Cloud Computing?",
+      "date": "20221012"
+    },
+    {
+      "id": "PnuIQe0NNmg",
+      "title": "We got a new course!",
+      "date": "20221012"
+    },
+    {
+      "id": "ew6ljePlSSc",
+      "title": "Angular 14 might change the way we write Angular components!",
+      "date": "20221012"
+    },
+    {
+      "id": "VozPNrt-LfE",
+      "title": "React Native Crash Course | Build a Complete App",
+      "date": "20221012"
+    },
+    {
+      "id": "iOGJ9hNpjQg",
+      "title": "Flutter 3 - What's New For Mobile App Developers?",
+      "date": "20221012"
+    },
+    {
+      "id": "jB06IVIUCHQ",
+      "title": "5 Years Academind | THANK YOU!",
+      "date": "20221012"
+    },
+    {
+      "id": "CrKuPfLWYRM",
+      "title": "NEW COURSE ANNOUNCEMENT | Brand-New Course Release",
+      "date": "20221012"
+    },
+    {
+      "id": "ayIKwIQspt8",
+      "title": "Power BI - The Practical Guide: FULL COURSE UPDATE 2022 Live Now!",
+      "date": "20221012"
+    },
+    {
+      "id": "lDukIAymutM",
+      "title": "useTransition() vs useDeferredValue | React 18",
+      "date": "20221012"
+    },
+    {
+      "id": "N0DhCV_-Qbg",
+      "title": "React 18 - What's New, What Changed & Upgrade Guide",
+      "date": "20221012"
+    },
+    {
+      "id": "t-wp5craGD8",
+      "title": "Complete Course Re-recorded!",
+      "date": "20221012"
+    },
+    {
+      "id": "UQtXNYrAzaw",
+      "title": "Creating a Drawer with HTML & CSS Only - NO JavaScript!",
+      "date": "20221012"
+    },
+    {
+      "id": "eNm54O1Ibbc",
+      "title": "Start 2022 Strong - Academind Udemy Course Sales Starts Now!",
+      "date": "20221012"
+    },
+    {
+      "id": "i9uAgkKEuNU",
+      "title": "100 Days of Code - Web Development  Bootcamp - Full Course: Day 1 - 8",
+      "date": "20221012"
+    },
+    {
+      "id": "PzruCOcLZT8",
+      "title": "SQL (MySQL + postgreSQL) Installation & Setup Guide for MacOS & Windows",
+      "date": "20221012"
+    },
+    {
+      "id": "DWtQU8VP3Hg",
+      "title": "SQL Crash Course for Beginners 2022 (MySQL & PostgreSQL) - No prior knowledge required!",
+      "date": "20221012"
+    },
+    {
+      "id": "Eff3cXZ-ZR4",
+      "title": "Black Week Sale 2021 Is Live Now!",
+      "date": "20221012"
+    },
+    {
+      "id": "GpqAZ-Vk3hc",
+      "title": "One More Course!",
+      "date": "20221012"
+    },
+    {
+      "id": "zEQiNFAwDGo",
+      "title": "React Router 6 - What Changed & Upgrading Guide",
+      "date": "20221012"
+    },
+    {
+      "id": "h_SSu1zu8uA",
+      "title": "Our biggest course ever!",
+      "date": "20221012"
+    },
+    {
+      "id": "LiN8IwUWfCI",
+      "title": "What we did over the last months...",
+      "date": "20221012"
+    },
+    {
+      "id": "tQ70MSH6dEY",
+      "title": "New Udemy Course Out Now!",
+      "date": "20211012"
+    },
+    {
+      "id": "hAUMDeUEZJY",
+      "title": "New Course Announcement!",
+      "date": "20211012"
+    },
+    {
+      "id": "t7DrJqcUviA",
+      "title": "Python Django Course for Beginners 2021 - Learn Django from Scratch in this 100% Free & Tutorial!",
+      "date": "20211012"
+    },
+    {
+      "id": "MFuwkrseXVE",
+      "title": "Next.js Crash Course for Beginners - Learn NextJS from Scratch in this 100% Free Tutorial!",
+      "date": "20211012"
+    },
+    {
+      "id": "6-v8LFLztHg",
+      "title": "Django - Full Course Now On Udemy!",
+      "date": "20211012"
+    },
+    {
+      "id": "Dorf8i6lCuk",
+      "title": "React Crash Course for Beginners - Learn ReactJS from Scratch in this 100% Free Tutorial!",
+      "date": "20211012"
+    },
+    {
+      "id": "mUk6PlLaWk0",
+      "title": "New Course Announcement!",
+      "date": "20211012"
+    },
+    {
+      "id": "oqKgIF2Pczo",
+      "title": "New Course Announcement!",
+      "date": "20211012"
+    },
+    {
+      "id": "4IIWib5MZKg",
+      "title": "What are \"Pure Functions\" and \"Side Effects\"?",
+      "date": "20211012"
+    },
+    {
+      "id": "of7isf3YBZ4",
+      "title": "What is \"Composition\" in React.js, Angular or Vue Apps?",
+      "date": "20211012"
+    },
+    {
+      "id": "IzUUj8J41YQ",
+      "title": "New Course Announcement",
+      "date": "20211012"
+    },
+    {
+      "id": "g8-Xrpl_Uhk",
+      "title": "What is \"State\" in Programming?",
+      "date": "20211012"
+    },
+    {
+      "id": "UgBWUt4Y-sY",
+      "title": "Getting Started with Web Dev in 2021 [Web Development Guide]",
+      "date": "20211012"
+    },
+    {
+      "id": "MLIKTBvgAGY",
+      "title": "Web Development In 2021: The Top 3 Trends You Should Know!",
+      "date": "20211012"
+    },
+    {
+      "id": "Ko2aBSNrGss",
+      "title": "We Wish You a Merry Christmas (and have a special gift)",
+      "date": "20211012"
+    },
+    {
+      "id": "mQ4zmFy4d7Y",
+      "title": "Ionic & Vue.js - Full Tutorial (Build a Complete App)",
+      "date": "20211012"
+    },
+    {
+      "id": "2Jd7FMOVQSA",
+      "title": "We got a special offer you should not miss :)",
+      "date": "20211012"
+    },
+    {
+      "id": "KbLCr-VTMRY",
+      "title": "New Course Announcement: Clean Code",
+      "date": "20211012"
+    },
+    {
+      "id": "d-PPOS-VsC8",
+      "title": "Docker - Complete Tutorial  [Docker For Everyone In 2 Hours]",
+      "date": "20211012"
+    },
+    {
+      "id": "1mzlOUyPkzU",
+      "title": "Join Now! Docker & Kubernetes - The Complete Guide (New Course)",
+      "date": "20211012"
+    },
+    {
+      "id": "ly4niPr9vUo",
+      "title": "Git Tutorial for Beginners - The Basics",
+      "date": "20211012"
+    },
+    {
+      "id": "ejHwv8qmumc",
+      "title": "New Course Incoming!",
+      "date": "20211012"
+    },
+    {
+      "id": "bwItFdPt-6M",
+      "title": "Vue 3 Composition API Introduction [FULL TUTORIAL]",
+      "date": "20201012"
+    },
+    {
+      "id": "A5cVyjrKx_Q",
+      "title": "Vue 3 - What's New? What Changed?",
+      "date": "20201012"
+    },
+    {
+      "id": "ogWoUU2DXBU",
+      "title": "macOS Terminal (zsh) - The Beginners' Guide",
+      "date": "20201012"
+    },
+    {
+      "id": "41GSinwoMYA",
+      "title": "JavaScript Data Structures: Getting Started",
+      "date": "20201012"
+    },
+    {
+      "id": "oEFPFc36weY",
+      "title": "Running a XSS Attack + How to defend",
+      "date": "20201012"
+    },
+    {
+      "id": "Gwup7MV_fXs",
+      "title": "Why \"vanilla JavaScript first\" might NOT be the best approach!",
+      "date": "20201012"
+    },
+    {
+      "id": "PtP3KC_Wgsc",
+      "title": "New Course: Deno.js + Free Node Course Update",
+      "date": "20201012"
+    },
+    {
+      "id": "2ktqHGca0Nk",
+      "title": "Why we still need Web Developers (despite services like Wix, Squarespace etc).",
+      "date": "20201012"
+    },
+    {
+      "id": "dGitIJMpf_4",
+      "title": "Power BI Crash Course for Beginners 2020 - Analyze & Visualize Data with Power BI Desktop",
+      "date": "20201012"
+    },
+    {
+      "id": "aHJCt2adSWA",
+      "title": "Building an interactive chart with D3.js",
+      "date": "20201012"
+    },
+    {
+      "id": "ZOeWdkq-L90",
+      "title": "Exploring D3.js Data Binding/ Joins",
+      "date": "20201012"
+    },
+    {
+      "id": "TOJ9yjvlapY",
+      "title": "D3.js - A Practical Introduction",
+      "date": "20201012"
+    },
+    {
+      "id": "JgWm6sQwS_I",
+      "title": "JavaScript Algorithms Crash Course - Learn Algorithms & \"Big O\" from the Ground Up!",
+      "date": "20201012"
+    },
+    {
+      "id": "3Vl8a3zYjiw",
+      "title": "What is Deno & Will it replace Node.js?",
+      "date": "20201012"
+    },
+    {
+      "id": "ug56AF2FaDQ",
+      "title": "500k: Thank you & Livestream",
+      "date": "20201012"
+    },
+    {
+      "id": "XWNq7XJuwoo",
+      "title": "Avoiding JavaScript Type Conversion Issues - How Type Coercion Works",
+      "date": "20201012"
+    },
+    {
+      "id": "tiRhFGnCltw",
+      "title": "Making Sense of the Tricky Parts of JavaScript",
+      "date": "20201012"
+    },
+    {
+      "id": "_03VKmdrxV8",
+      "title": "Ionic + React - Tutorial for Beginners",
+      "date": "20201012"
+    },
+    {
+      "id": "lYWYWyX04JI",
+      "title": "Angular vs React vs Vue [2020 Update]",
+      "date": "20201012"
+    },
+    {
+      "id": "fP_kA90DgIU",
+      "title": "When do you need \"bind()\"? Indirect vs Direct JavaScript Function Execution Tutorial",
+      "date": "20201012"
+    },
+    {
+      "id": "K4n5mjLUgEg",
+      "title": "Angular 9, Ionic 5, React Navigation 5 - Web Dev Update February 2020",
+      "date": "20201012"
+    },
+    {
+      "id": "TcdhAxDWWxM",
+      "title": "Angular 9 - What's New? What changed?",
+      "date": "20201012"
+    },
+    {
+      "id": "BwuLxPH8IDs",
+      "title": "TypeScript Course for Beginners - Learn TypeScript from Scratch!",
+      "date": "20201012"
+    },
+    {
+      "id": "ZNfy4glIO5c",
+      "title": "My 2020 Goals (& why you shouldn't just set professional goals)",
+      "date": "20201012"
+    },
+    {
+      "id": "aoE-92Ac4zE",
+      "title": "Functional, Procedural & Object-oriented Programming - An Overview",
+      "date": "20201012"
+    },
+    {
+      "id": "V-xK3sbc7xI",
+      "title": "Vue 3 & A First Look at the Composition API",
+      "date": "20201012"
+    },
+    {
+      "id": "Pw8U9l8acPA",
+      "title": "2020 Top Web Development Trends",
+      "date": "20201012"
+    },
+    {
+      "id": "2yddJwL1Tpg",
+      "title": "MERN Stack - React.js Node, Express & MongoDB Crash Course - Tutorial for Beginners",
+      "date": "20201012"
+    },
+    {
+      "id": "2qDywOS7VAc",
+      "title": "JavaScript Course for Beginners 2020 - Learn JavaScript from Scratch!",
+      "date": "20201012"
+    },
+    {
+      "id": "kWfxZ2jDmP8",
+      "title": "How I Stay Motivated & Continue Growing!",
+      "date": "20201012"
+    },
+    {
+      "id": "I6mCTKst9II",
+      "title": "What's the Difference? What's Better?",
+      "date": "20201012"
+    },
+    {
+      "id": "NMiEREulVLc",
+      "title": "Why you should look into these React component styling options!",
+      "date": "20191012"
+    },
+    {
+      "id": "qM4G1Ai2ZpE",
+      "title": "Sending JavaScript Http Requests with Axios",
+      "date": "20191012"
+    },
+    {
+      "id": "23hrM4saaMk",
+      "title": "Sending JavaScript Http Requests with the fetch() API",
+      "date": "20191012"
+    },
+    {
+      "id": "4K33w-0-p2c",
+      "title": "Sending JavaScript Http Requests with XMLHttpRequest",
+      "date": "20191012"
+    },
+    {
+      "id": "5XlYQRGgYrY",
+      "title": "MEAN, MERN, MEVN - What they're all about...",
+      "date": "20191012"
+    },
+    {
+      "id": "PeAOEAmR0D0",
+      "title": "REST vs GraphQL - What's the best kind of API?",
+      "date": "20191012"
+    },
+    {
+      "id": "qSRrxpdMpVc",
+      "title": "React Native Tutorial for Beginners - Crash Course 2020",
+      "date": "20191012"
+    },
+    {
+      "id": "PKRXbLnfXXk",
+      "title": "Which one is best for you? Flutter, React Native, Ionic or NativeScript?",
+      "date": "20191012"
+    },
+    {
+      "id": "-ZaFppts_KU",
+      "title": "Is it possible? My Thoughts!",
+      "date": "20191012"
+    },
+    {
+      "id": "CzEwoo-Av2k",
+      "title": "Is PHP Dead?",
+      "date": "20191012"
+    },
+    {
+      "id": "oqjDF0As0Ec",
+      "title": "When to use which (and how they differ).",
+      "date": "20191012"
+    },
+    {
+      "id": "x0uinJvhNxI",
+      "title": "Flutter Crash Course for Beginners - Build a Flutter App with Google's Flutter & Dart",
+      "date": "20191012"
+    },
+    {
+      "id": "ulfU5vY6I78",
+      "title": "Nest.js with MongoDB - Complete Example",
+      "date": "20191012"
+    },
+    {
+      "id": "F_oOtaxb0L8",
+      "title": "Learn Nest.js from Scratch by building an API",
+      "date": "20191012"
+    },
+    {
+      "id": "dsAalk1NpVk",
+      "title": "Why Angular, React & Vue shouldn't directly send Database Queries",
+      "date": "20191012"
+    },
+    {
+      "id": "5_IC_ZJrVMg",
+      "title": "Angular 8 - What's New? What changed?",
+      "date": "20191012"
+    },
+    {
+      "id": "LaswEEqcgv0",
+      "title": "Tuples & Tuple Unpacking in Python",
+      "date": "20191012"
+    },
+    {
+      "id": "DZyWNS4fVE0",
+      "title": "Svelte vs React vs Angular vs Vue",
+      "date": "20191012"
+    },
+    {
+      "id": "LIfIRdRlD58",
+      "title": "Svelte - Quickstart & Thorough Introduction Tutorial",
+      "date": "20191012"
+    },
+    {
+      "id": "E1ZAVEmRwyI",
+      "title": "Python - List Comprehensions Tutorial",
+      "date": "20191012"
+    },
+    {
+      "id": "IS7UUnaSYLc",
+      "title": "Flutter in 2019 & Beyond",
+      "date": "20191012"
+    },
+    {
+      "id": "62rfTxvnTgk",
+      "title": "React Native in 2019 & Beyond",
+      "date": "20191012"
+    },
+    {
+      "id": "2-akTTZyrcM",
+      "title": "A Complete Web Development Learning Path",
+      "date": "20191012"
+    },
+    {
+      "id": "Kg0Q_YaQ3Gk",
+      "title": "Dynamic Websites vs Static Pages vs Single Page Apps (SPAs)",
+      "date": "20191012"
+    },
+    {
+      "id": "hJHvdBlSxug",
+      "title": "How The Web Works - The Big Picture",
+      "date": "20191012"
+    },
+    {
+      "id": "SC74AXdOCh4",
+      "title": "Vue.js in 2019 & Beyond",
+      "date": "20191012"
+    },
+    {
+      "id": "XWfHTLm6ECQ",
+      "title": "React.js in 2019 & Beyond",
+      "date": "20191012"
+    },
+    {
+      "id": "Dk6sphzmKO8",
+      "title": "Angular in 2019 & Beyond",
+      "date": "20191012"
+    },
+    {
+      "id": "kDdTgxv2Vv0",
+      "title": "Python Tutorial for Beginners - Crash Course 2020 | Build a Game with Python",
+      "date": "20191012"
+    },
+    {
+      "id": "r2ga-iXS5i4",
+      "title": "Ionic 4 & Angular Tutorial For Beginners - Crash Course",
+      "date": "20191012"
+    },
+    {
+      "id": "KWOi7yu_KLA",
+      "title": "Academind goes Instagram",
+      "date": "20191012"
+    },
+    {
+      "id": "0nAqNLeeJaU",
+      "title": "Ionic 4 Complete Course Update",
+      "date": "20191012"
+    },
+    {
+      "id": "R_7XRX7nLsw",
+      "title": "useContext() + useReducer() = Magic?",
+      "date": "20191012"
+    },
+    {
+      "id": "-MlNBTSg_Ww",
+      "title": "React.js Hooks Crash Course",
+      "date": "20191012"
+    },
+    {
+      "id": "OvM4hIxrqAw",
+      "title": "React Context vs Redux - Who wins?",
+      "date": "20191012"
+    },
+    {
+      "id": "MCXdDl68L1M",
+      "title": "#23 Finish! | Build a Complete App with GraphQL, Node.js, MongoDB and React.js",
+      "date": "20191012"
+    },
+    {
+      "id": "WDyK2ebBSSc",
+      "title": "Don't miss Ionic 4!",
+      "date": "20191012"
+    },
+    {
+      "id": "EBCdokSCU7g",
+      "title": "#22 Creating Charts | Build a Complete App with GraphQL, Node.js, MongoDB and React.js",
+      "date": "20191012"
+    },
+    {
+      "id": "DFSgyX9HXNA",
+      "title": "#21 Improving Queries & Bugfixing | Build a Complete App with GraphQL, Node.js, MongoDB and React.js",
+      "date": "20191012"
+    },
+    {
+      "id": "GWugdZES05U",
+      "title": "#20 Using Dataloader | Build a Complete App with GraphQL, Node.js, MongoDB and React.js",
+      "date": "20191012"
+    },
+    {
+      "id": "7VgytHjiLqU",
+      "title": "#19 Cancel Bookings | Build a Complete App with GraphQL, Node.js, MongoDB and React.js",
+      "date": "20191012"
+    },
+    {
+      "id": "DcCSq2Y9bow",
+      "title": "NativeScript Tutorial for Beginners - Build iOS, Android and Web Apps with NativeScript and Angular",
+      "date": "20191012"
+    },
+    {
+      "id": "7smx9VgiGIo",
+      "title": "#18 Bookings | Build a Complete App with GraphQL, Node.js, MongoDB and React.js",
+      "date": "20191012"
+    },
+    {
+      "id": "VyICeJW9vDI",
+      "title": "#17 Adding Event Features | Build a Complete App with GraphQL, Node.js, MongoDB and React.js",
+      "date": "20191012"
+    },
+    {
+      "id": "8lS3D4-THiA",
+      "title": "NativeScript + Angular - Build Real Native Mobile Apps for iOS and Android",
+      "date": "20191012"
+    },
+    {
+      "id": "A3WwR_TxNyQ",
+      "title": "#16 Adding Events | Build a Complete App with GraphQL, Node.js, MongoDB and React.js",
+      "date": "20191012"
+    },
+    {
+      "id": "2rXtTi0Pn9E",
+      "title": "#15 Adding a Modal | Build a Complete App with GraphQL, Node.js, MongoDB and React.js",
+      "date": "20191012"
+    },
+    {
+      "id": "wMg_b1zZcag",
+      "title": "#14 Using the Token | Build a Complete App with GraphQL, Node.js, MongoDB and React.js",
+      "date": "20191012"
+    },
+    {
+      "id": "VdwH3RDRXNM",
+      "title": "#13 Hitting the API | Build a Complete App with GraphQL, Node.js, MongoDB and React.js",
+      "date": "20191012"
+    },
+    {
+      "id": "0gCGzQvoB9o",
+      "title": "#12 Adding a Navbar | Build a Complete App with GraphQL, Node.js, MongoDB and React.js",
+      "date": "20191012"
+    },
+    {
+      "id": "JmFSGqbmzT4",
+      "title": "#11 The React Frontend | Build a Complete App with GraphQL, Node.js, MongoDB and React.js",
+      "date": "20191012"
+    },
+    {
+      "id": "uk9YHJsOjVo",
+      "title": "#10 Adding User Authentication | Build a Complete App with GraphQL, Node.js, MongoDB and React.js",
+      "date": "20191012"
+    },
+    {
+      "id": "6y44oPKfqXU",
+      "title": "#9 Refactoring our Code | Build a Complete App with GraphQL, Node.js, MongoDB and React.js",
+      "date": "20191012"
+    },
+    {
+      "id": "Sr-NvyqkuLI",
+      "title": "Merry Christmas & A Happy New Year!",
+      "date": "20191012"
+    },
+    {
+      "id": "WcyYYD5xkuQ",
+      "title": "#8 Adding Bookings | Build a Complete App with GraphQL, Node.js, MongoDB and React.js",
+      "date": "20191012"
+    },
+    {
+      "id": "bgq7FRSPDpI",
+      "title": "#7 Dynamic Relations | Build a Complete App with GraphQL, Node.js, MongoDB and React.js",
+      "date": "20191012"
+    },
+    {
+      "id": "Y8PXMbr0Kqo",
+      "title": "What is the JAMStack?",
+      "date": "20191012"
+    },
+    {
+      "id": "MRrcUQhZwBc",
+      "title": "#6 Adding Relations | Build a Complete App with GraphQL, Node.js, MongoDB and React.js",
+      "date": "20191012"
+    },
+    {
+      "id": "sOUNgOx0GcU",
+      "title": "#5 GraphQL + MongoDB | Build a Complete App with GraphQL, Node.js, MongoDB and React.js",
+      "date": "20191012"
+    },
+    {
+      "id": "KXPD11CQLGE",
+      "title": "Building an Advent Calendar with JavaScript, HTML & CSS",
+      "date": "20191012"
+    },
+    {
+      "id": "6YlXANbXt0g",
+      "title": "#4 Types & Data | Build a Complete App with GraphQL, Node.js, MongoDB and React.js",
+      "date": "20191012"
+    },
+    {
+      "id": "LXTyzk2uud0",
+      "title": "#3 Schemas & Resolvers | Build a Complete App with GraphQL, Node.js, MongoDB and React.js",
+      "date": "20191012"
+    },
+    {
+      "id": "VLm3Y7Odb74",
+      "title": "Top 8 Web Development Trends 2019",
+      "date": "20191012"
+    },
+    {
+      "id": "R6dxh-vnaJw",
+      "title": "New Course: Web Components & Custom HTML Elements (incl. Stencil.js)",
+      "date": "20191012"
+    },
+    {
+      "id": "yvEEeKMuxn0",
+      "title": "#2 API Design & Project Setup | Build a Complete App with GraphQL, Node.js, MongoDB and React.js",
+      "date": "20191012"
+    },
+    {
+      "id": "23aQdrS58e0",
+      "title": "Anaconda (Conda) for Python - What & Why?",
+      "date": "20191012"
+    },
+    {
+      "id": "7giZGFDGnkc",
+      "title": "#1 What is GraphQL? | Build a Complete App with GraphQL, Node.js, MongoDB and React.js",
+      "date": "20191012"
+    },
+    {
+      "id": "qErBw-R2Ybk",
+      "title": "Python - Matplotlib Tutorial for Beginners",
+      "date": "20191012"
+    },
+    {
+      "id": "oQfNYqz8pLs",
+      "title": "Python - Accessing Nested Dictionary Keys",
+      "date": "20191012"
+    },
+    {
+      "id": "C7TFgfY7JdE",
+      "title": "Node.js Tutorial for Beginners - Getting Started with NodeJS Basics",
+      "date": "20191012"
+    },
+    {
+      "id": "cXP_i5-nTXg",
+      "title": "Python for Data Analysis Tutorial - Setup, Read File & First Chart",
+      "date": "20191012"
+    },
+    {
+      "id": "BnasObkCGtQ",
+      "title": "React 16.6 - What's New? Theory + Practice",
+      "date": "20191012"
+    },
+    {
+      "id": "C2dAfK9L8Jg",
+      "title": "New Course: Node.js - The Complete Guide OUT NOW",
+      "date": "20191012"
+    },
+    {
+      "id": "4Fl5GH4eYZ8",
+      "title": "JavaScript Testing - Mocking Async Code",
+      "date": "20191012"
+    },
+    {
+      "id": "jW4peJBTHcA",
+      "title": "Just About Us - How It All Started and Quick Room Tour",
+      "date": "20181012"
+    },
+    {
+      "id": "r9HdJ8P6GQI",
+      "title": "JavaScript Testing Introduction Tutorial - Unit Tests, Integration Tests & e2e Tests",
+      "date": "20181012"
+    },
+    {
+      "id": "evoMp5N8hk0",
+      "title": "New Course + Future Plans + Your Ideas",
+      "date": "20181012"
+    },
+    {
+      "id": "H7X25hZ1Pq8",
+      "title": "How to Become a Better Web Developer - My Thoughts",
+      "date": "20181012"
+    },
+    {
+      "id": "Pv9flm-80vM",
+      "title": "JS \"this\" and Function References - What is it all about?",
+      "date": "20181012"
+    },
+    {
+      "id": "CRlGDDprdOQ",
+      "title": "Git MERGE vs REBASE",
+      "date": "20181012"
+    },
+    {
+      "id": "VELru-FCWDM",
+      "title": "MongoDB Complete Introduction & Summary",
+      "date": "20181012"
+    },
+    {
+      "id": "DeU6opFU_zw",
+      "title": "Git STASH Explained in Simple Words",
+      "date": "20181012"
+    },
+    {
+      "id": "RrJ5tpvkSFI",
+      "title": "Angular - \"routerLink\" vs \"href\" and Losing State",
+      "date": "20181012"
+    },
+    {
+      "id": "nSmMkeNjjPg",
+      "title": "VueJS - CLI 3 Tutorial",
+      "date": "20181012"
+    },
+    {
+      "id": "TkT4iFRkaZk",
+      "title": "AWS All Services Overview",
+      "date": "20181012"
+    },
+    {
+      "id": "SWZ_4YBFBhs",
+      "title": "React.js vs Angular vs Vue",
+      "date": "20181012"
+    },
+    {
+      "id": "ZS_kXvOeQ5Y",
+      "title": "SQL vs NoSQL or MySQL vs MongoDB",
+      "date": "20181012"
+    },
+    {
+      "id": "ugjfB5HLfPM",
+      "title": "Vanilla JavaScript Modal - JavaScript Only!",
+      "date": "20181012"
+    },
+    {
+      "id": "Nw18SQ9mU6I",
+      "title": "Vanilla JavaScript Modal - With CSS display",
+      "date": "20181012"
+    },
+    {
+      "id": "dUlz4tc9LSo",
+      "title": "React without JSX and without a Build Workflow",
+      "date": "20181012"
+    },
+    {
+      "id": "hOtZhNb4TKg",
+      "title": "JavaScript Security: Hide your Code?",
+      "date": "20181012"
+    },
+    {
+      "id": "_wFJj94kSTU",
+      "title": "Static vs Dynamic Websites - What's the Difference?",
+      "date": "20181012"
+    },
+    {
+      "id": "bnYJRYFsrSw",
+      "title": "React Native vs Flutter",
+      "date": "20181012"
+    },
+    {
+      "id": "GLSG_Wh_YWc",
+      "title": "Flutter Tutorial for Beginners - Build iOS and Android Apps with Google's Flutter & Dart",
+      "date": "20181012"
+    },
+    {
+      "id": "pkdgVYehiTE",
+      "title": "Frontend vs Backend vs Fullstack Web Development - What should you learn?",
+      "date": "20181012"
+    },
+    {
+      "id": "l6nmysZKHFU",
+      "title": "ReactJS - Build a Responsive Navigation Bar & Side Drawer Tutorial",
+      "date": "20181012"
+    },
+    {
+      "id": "mVnZVw4KJnc",
+      "title": "GitHub Tutorial for Beginners | The Basics",
+      "date": "20181012"
+    },
+    {
+      "id": "1tRLveSyNz8",
+      "title": "Angular - Node - MongoDB & Express (MEAN) Tutorial for Beginners - Getting Started",
+      "date": "20181012"
+    },
+    {
+      "id": "5YtNQJQu31Y",
+      "title": "Angular Service Worker Tutorial",
+      "date": "20181012"
+    },
+    {
+      "id": "_OZVJpLHUaI",
+      "title": "Git Tutorial for Beginners - Crash Course",
+      "date": "20181012"
+    },
+    {
+      "id": "VqCgcpAypFQ",
+      "title": "Visual Studio Code Tutorial for Beginners - Introduction",
+      "date": "20181012"
+    },
+    {
+      "id": "EBnTZwr0RSs",
+      "title": "Angular Material Custom Theme Tutorial",
+      "date": "20181012"
+    },
+    {
+      "id": "ao-nY-9biWs",
+      "title": "Angular Material Data Table Tutorial",
+      "date": "20181012"
+    },
+    {
+      "id": "Q6qhzG7mObU",
+      "title": "Angular Material Responsive Navigation Tutorial",
+      "date": "20181012"
+    },
+    {
+      "id": "u679SQsfRVM",
+      "title": "Angular Material Introduction & Setup",
+      "date": "20181012"
+    },
+    {
+      "id": "X9fdpGthrXA",
+      "title": "Fix your RxJS 6 Imports & Operators - What's New in RxJS 6?",
+      "date": "20181012"
+    },
+    {
+      "id": "y73NMviRoPY",
+      "title": "Angular Elements Introduction & Walkthrough",
+      "date": "20181012"
+    },
+    {
+      "id": "Xr5l7lT--YU",
+      "title": "Angular 6 Upgrade - Breaking Changes & Features - What's New?",
+      "date": "20181012"
+    },
+    {
+      "id": "KARxDX5DTgY",
+      "title": "Python Tutorial for Beginners - Learn Python by Building a Blockchain & Cryptocurrency",
+      "date": "20181012"
+    },
+    {
+      "id": "VG_oJVAFVD4",
+      "title": "Deploying a Static Website | Beginner's Course | Last Part",
+      "date": "20181012"
+    },
+    {
+      "id": "o_WI2-wSudc",
+      "title": "Build a Responsive Side Navigation Bar | CSS and JavaScript",
+      "date": "20181012"
+    },
+    {
+      "id": "WJ2PQe-pQJw",
+      "title": "jQuery vs Vue, React and Angular",
+      "date": "20181012"
+    },
+    {
+      "id": "8cb4auJt1TA",
+      "title": "JavaScript Tutorial | Form Validation | Part 3",
+      "date": "20181012"
+    },
+    {
+      "id": "OUz2Cxf5gqY",
+      "title": "JavaScript Tutorial | Modals & Loops | Part 2",
+      "date": "20181012"
+    },
+    {
+      "id": "o5ffh3KUaTM",
+      "title": "JavaScript Tutorial | Creating a Modal with JavaScript | Part 1",
+      "date": "20181012"
+    },
+    {
+      "id": "wNX7lWzchow",
+      "title": "CSS Tutorial for Beginners - Getting Started",
+      "date": "20181012"
+    },
+    {
+      "id": "vmXIGdP8KN8",
+      "title": "Vanilla CSS vs Bootstrap vs Tailwind CSS - Which one should you choose?",
+      "date": "20181012"
+    },
+    {
+      "id": "yaZzJ37Qb0U",
+      "title": "React 16.3 - New Context API, Updated Lifecycle Hooks, New Ref API",
+      "date": "20181012"
+    },
+    {
+      "id": "JHCKab2oS4s",
+      "title": "Final Touches & Deploying the Blog | Nuxt.js & Storyblok - Building a Complete Blog",
+      "date": "20181012"
+    },
+    {
+      "id": "Yq6Ddu_QAiY",
+      "title": "Storyblok Live Preview! | Nuxt.js & Storyblok - Building a Complete Blog",
+      "date": "20181012"
+    },
+    {
+      "id": "UIh4P5rNjac",
+      "title": "Adding Storyblok CMS | Nuxt.js & Storyblok - Building a Complete Blog",
+      "date": "20181012"
+    },
+    {
+      "id": "RSIclWvNTdQ",
+      "title": "CSS Grid vs Flexbox",
+      "date": "20181012"
+    },
+    {
+      "id": "Dc_5BpIB4X4",
+      "title": "The Frontend | Nuxt.js & Storyblok - Building a Complete Blog",
+      "date": "20181012"
+    },
+    {
+      "id": "6Ovw43Dkp44",
+      "title": "Bootstrap 4 Theme Customization (with Sass) | BOOTSTRAP 4 TUTORIAL",
+      "date": "20181012"
+    },
+    {
+      "id": "K-ccGZYRWzs",
+      "title": "Bootstrap 4 Forms & Buttons | BOOTSTRAP 4 TUTORIAL",
+      "date": "20181012"
+    },
+    {
+      "id": "N3RK2dZpQXs",
+      "title": "Bootstrap 4 Alerts & Modals | BOOTSTRAP 4 TUTORIAL",
+      "date": "20181012"
+    },
+    {
+      "id": "23bpce-5s8I",
+      "title": "Bootstrap 4 Navbar Concepts | BOOTSTRAP 4 TUTORIAL",
+      "date": "20181012"
+    },
+    {
+      "id": "qmPmwdshCMw",
+      "title": "Using the Bootstrap 4 Grid  | BOOTSTRAP 4 TUTORIAL",
+      "date": "20181012"
+    },
+    {
+      "id": "7g8Gg2QVdeU",
+      "title": "Bootstrap 4 Concepts & Setup | BOOTSTRAP 4 TUTORIAL",
+      "date": "20181012"
+    },
+    {
+      "id": "FmujhWcgaiI",
+      "title": "Storyblok and Nuxt.js | Behind the Scenes of Academind",
+      "date": "20181012"
+    },
+    {
+      "id": "VqnJwh6E9ak",
+      "title": "Vue Image Upload Made Easy",
+      "date": "20181012"
+    },
+    {
+      "id": "XeiOnkEI7XI",
+      "title": "React Image Upload Made Easy",
+      "date": "20181012"
+    },
+    {
+      "id": "YkvqLNcJz3Y",
+      "title": "Angular Image Upload Made Easy",
+      "date": "20181012"
+    },
+    {
+      "id": "nteDXuqBfn0",
+      "title": "Nuxt.js - Introduction by Project",
+      "date": "20181012"
+    },
+    {
+      "id": "vi_fuay06TI",
+      "title": "Firebase Cloud Functions - Reacting to Database Events",
+      "date": "20181012"
+    },
+    {
+      "id": "qZ1EFnFOGvE",
+      "title": "Firebase Cloud Functions - Creating a REST Endpoint with Cloud Functions",
+      "date": "20181012"
+    },
+    {
+      "id": "5zeXFC_-gMQ",
+      "title": "What is Webpack - academind.com Snippet",
+      "date": "20181012"
+    },
+    {
+      "id": "Km83f-ZP0Wg",
+      "title": "What is Laravel - academind.com Snippet",
+      "date": "20181012"
+    },
+    {
+      "id": "lNiGH21gMiw",
+      "title": "What is Node.js - academind.com Snippet",
+      "date": "20181012"
+    },
+    {
+      "id": "YGsmWKMMiYs",
+      "title": "Firebase Cloud Functions - Resizing Images after Upload",
+      "date": "20181012"
+    },
+    {
+      "id": "qcECaRgU4uI",
+      "title": "Firebase Cloud Functions - Run Code on Demand",
+      "date": "20181012"
+    },
+    {
+      "id": "AgrWeFJWRTg",
+      "title": "What is JavaScript - academind.com Snippet",
+      "date": "20181012"
+    },
+    {
+      "id": "ua3Y-X6-WQc",
+      "title": "What is CSS - academind.com Snippet",
+      "date": "20181012"
+    },
+    {
+      "id": "3V2q5E4wwko",
+      "title": "What is HTML - academind.com Snippet",
+      "date": "20181012"
+    },
+    {
+      "id": "AxlWNQUr_So",
+      "title": "What is Web Development - academind.com Snippet",
+      "date": "20181012"
+    },
+    {
+      "id": "Lz1R4QDbMJc",
+      "title": "What is Firebase - academind.com Snippet",
+      "date": "20181012"
+    },
+    {
+      "id": "wXpjIXmX5OA",
+      "title": "What is AWS - academind.com Snippet",
+      "date": "20181012"
+    },
+    {
+      "id": "Z4cAy1be_LA",
+      "title": "Questions & Answers with Max",
+      "date": "20181012"
+    },
+    {
+      "id": "AiennznBzT0",
+      "title": "What is Power BI - academind.com Snippet",
+      "date": "20181012"
+    },
+    {
+      "id": "itJnSmKRK_g",
+      "title": "What are Progressive Web Apps (PWAs) - academind.com Snippet",
+      "date": "20181012"
+    },
+    {
+      "id": "3I8EFGIORRc",
+      "title": "What is Vue.js - academind.com Snippet",
+      "date": "20181012"
+    },
+    {
+      "id": "OUSz_24ljgY",
+      "title": "What is React - academind.com Snippet",
+      "date": "20181012"
+    },
+    {
+      "id": "b9gnX62ZMTU",
+      "title": "What is Angular - academind.com Snippet",
+      "date": "20181012"
+    },
+    {
+      "id": "Ozllfl-03c8",
+      "title": "Vue.js - Common Questions (and Answers!)",
+      "date": "20181012"
+    },
+    {
+      "id": "XI27nSXSrYs",
+      "title": "React - Common Questions (and Answers!)",
+      "date": "20181012"
+    },
+    {
+      "id": "g13dSerjICk",
+      "title": "Top 8 Web Development Trends 2018",
+      "date": "20181012"
+    },
+    {
+      "id": "-NEIfsnEGQY",
+      "title": "Angular - Common Questions (and Answers!)",
+      "date": "20181012"
+    },
+    {
+      "id": "yLkcWclLc5g",
+      "title": "100k + Academind 2.0 - What a Start of 2018!",
+      "date": "20181012"
+    },
+    {
+      "id": "NdUbYr7YLII",
+      "title": "CSS - Finishing the CSS Section | Beginner's Course | #13",
+      "date": "20181012"
+    },
+    {
+      "id": "ucuNgSOFDZ0",
+      "title": "Adding Controllers | Creating a REST API with Node.js",
+      "date": "20181012"
+    },
+    {
+      "id": "wFqkWczC0jA",
+      "title": "CSS - Media Queries & Viewport | Beginner's Course | #12",
+      "date": "20181012"
+    },
+    {
+      "id": "8Ip0pcwbWYM",
+      "title": "JWT Route Protection | Creating a REST API with Node.js",
+      "date": "20181012"
+    },
+    {
+      "id": "tyRdGA1akUQ",
+      "title": "CSS - Fonts | Beginner's Course | #11",
+      "date": "20181012"
+    },
+    {
+      "id": "0D5EEKH97NA",
+      "title": "Adding User Login & JWT Signing | Creating a REST API with Node.js",
+      "date": "20181012"
+    },
+    {
+      "id": "_EP2qCmLzSE",
+      "title": "Adding User Signup | Creating a REST API with Node.js",
+      "date": "20181012"
+    },
+    {
+      "id": "stsGPZbYd7c",
+      "title": "Merry Christmas | Academind Bakes some \"Special\" Biscuits",
+      "date": "20181012"
+    },
+    {
+      "id": "dLGr1Qb2nKc",
+      "title": "CSS - Box Sizing | Beginner's Course | #10",
+      "date": "20181012"
+    },
+    {
+      "id": "srPXMt1Q0nY",
+      "title": "Uploading an Image | Creating a REST API with Node.js",
+      "date": "20181012"
+    },
+    {
+      "id": "rb8smP_xTTY",
+      "title": "React Native vs Ionic vs NativeScript vs Android/ iOS Native Apps",
+      "date": "20181012"
+    },
+    {
+      "id": "3p0wmR973Fw",
+      "title": "Populating Queries with Mongoose | Creating a REST API with Node.js",
+      "date": "20181012"
+    },
+    {
+      "id": "VKuY8QscZwY",
+      "title": "Managing Orders with Mongoose | Creating a REST API with Node.js",
+      "date": "20181012"
+    },
+    {
+      "id": "vgNW-uuVUYo",
+      "title": "CSS - Flexbox Applied | Beginner's Course | #9",
+      "date": "20181012"
+    },
+    {
+      "id": "lApggVS0icc",
+      "title": "Google Maps & Angular | ANGULAR SNIPPETS",
+      "date": "20181012"
+    },
+    {
+      "id": "CMDsTMV2AgI",
+      "title": "Mongoose Validation | Creating a REST API with Node.js",
+      "date": "20181012"
+    },
+    {
+      "id": "RdlEEfx912M",
+      "title": "CSS Flexbox Tutorial for Beginners | Flex-Items | 2/2",
+      "date": "20181012"
+    },
+    {
+      "id": "6ZnfsJ6mM5c",
+      "title": "React Native Tutorial for Beginners - Getting Started",
+      "date": "20181012"
+    },
+    {
+      "id": "WDrU305J1yw",
+      "title": "MongoDB and Mongoose | Creating a REST API with Node.js",
+      "date": "20181012"
+    },
+    {
+      "id": "siKKg8Y_tQY",
+      "title": "CSS Flexbox Tutorial for Beginners | Basics & Container | 1/2",
+      "date": "20181012"
+    },
+    {
+      "id": "zoSJ3bNGPp0",
+      "title": "Parsing the Body & Handling CORS | Creating a REST API with Node.js",
+      "date": "20181012"
+    },
+    {
+      "id": "YS2bTVYBoK8",
+      "title": "CSS - Display | Beginner's Course | #8",
+      "date": "20181012"
+    },
+    {
+      "id": "M1P5_nz5lTU",
+      "title": "React Native | New Course | OUT NOW!",
+      "date": "20181012"
+    },
+    {
+      "id": "UVAMha41dwo",
+      "title": "Handling Errors & Improving the Project Setup | Creating a REST API with Node.js",
+      "date": "20181012"
+    },
+    {
+      "id": "oaZWpGUy414",
+      "title": "CSS - Position | Beginner's Course | #7",
+      "date": "20181012"
+    },
+    {
+      "id": "wmAP2xvNs08",
+      "title": "CSS Positioning Tutorial for Beginners",
+      "date": "20181012"
+    },
+    {
+      "id": "FV1Ugv1Temg",
+      "title": "Adding More Routes to the API | Creating a REST API with Node.js",
+      "date": "20181012"
+    },
+    {
+      "id": "sZHICEVdvEI",
+      "title": "CSS - Box Model and Classes | Beginner's Course | #6",
+      "date": "20181012"
+    },
+    {
+      "id": "blQ60skPzl0",
+      "title": "Planning & First Steps | Creating a REST API with Node.js",
+      "date": "20181012"
+    },
+    {
+      "id": "0oXYLzuucwE",
+      "title": "What is a RESTful API? | Creating a REST API with Node.js",
+      "date": "20181012"
+    },
+    {
+      "id": "zwgSc3EntWM",
+      "title": "CSS - The Basics | Beginner's Course | #5",
+      "date": "20181012"
+    },
+    {
+      "id": "A5z_mxjjwKw",
+      "title": "HTML Course - Diving Deeper into HTML | Beginner's Tutorial | #4",
+      "date": "20181012"
+    },
+    {
+      "id": "NXG0ETguPsg",
+      "title": "HTML Course - Diving into HTML | Beginner's Tutorial | #3",
+      "date": "20181012"
+    },
+    {
+      "id": "vjMbrhMpyWE",
+      "title": "HTML Course - How Web Developers Work | Beginner's Tutorial | #2",
+      "date": "20181012"
+    },
+    {
+      "id": "OxOx3WI3Df4",
+      "title": "HTML Course - How the Web Works | Beginner's Tutorial | #1",
+      "date": "20181012"
+    },
+    {
+      "id": "RqZqmTUOaUo",
+      "title": "Adobe Creative Cloud | Video Editing for Online Tutorials | The Basics",
+      "date": "20181012"
+    },
+    {
+      "id": "ZBijAgbDP9w",
+      "title": "Web Dev - Where to look things up",
+      "date": "20181012"
+    },
+    {
+      "id": "6HYkN84PGfk",
+      "title": "Where to start in Web Development?",
+      "date": "20181012"
+    },
+    {
+      "id": "Lm_swJhK7Xw",
+      "title": "CSS | Burger Builder | Tutorial",
+      "date": "20181012"
+    },
+    {
+      "id": "pgAvVxowaYU",
+      "title": "ReactJS Tutorial for Beginners - Getting Started with React",
+      "date": "20181012"
+    },
+    {
+      "id": "ERkv0eESGa4",
+      "title": "OUT NOW | React - The Complete Guide | New Udemy Course",
+      "date": "20181012"
+    },
+    {
+      "id": "waR7KnQoZtc",
+      "title": "No need to get Frustrated | REGEX DEMYSTIFIED",
+      "date": "20181012"
+    },
+    {
+      "id": "iISYlfJR2b0",
+      "title": "Asking Max | New REACT Udemy Course",
+      "date": "20181012"
+    },
+    {
+      "id": "4Y9W4uY0B4s",
+      "title": "Matching Passwords | REGEX DEMYSTIFIED",
+      "date": "20181012"
+    },
+    {
+      "id": "gttm2KCR0YI",
+      "title": "New Udemy Course | Teaser",
+      "date": "20181012"
+    },
+    {
+      "id": "NrzFle7RD0g",
+      "title": "Grouping | REGEX DEMYSTIFIED",
+      "date": "20181012"
+    },
+    {
+      "id": "GE-0K0izHVE",
+      "title": "Matching Mail Addresses | REGEX DEMYSTIFIED",
+      "date": "20181012"
+    },
+    {
+      "id": "enfkyPr10dc",
+      "title": "Matching Full Words | REGEX DEMYSTIFIED",
+      "date": "20171012"
+    },
+    {
+      "id": "NppArBz5umo",
+      "title": "Ranges & Quantifiers | REGEX DEMYSTIFIED",
+      "date": "20171012"
+    },
+    {
+      "id": "_ssS5iUXHBY",
+      "title": "Creating Regex Patterns | REGEX DEMYSTIFIED",
+      "date": "20171012"
+    },
+    {
+      "id": "0LKdKixl5Ug",
+      "title": "Regular Expressions Introduction | REGEX DEMYSTIFIED",
+      "date": "20171012"
+    },
+    {
+      "id": "Yp_oiCWV_no",
+      "title": "Stencil | Nesting & Component Communication",
+      "date": "20171012"
+    },
+    {
+      "id": "g4jsOCUD4lA",
+      "title": "Stencil | Props, State & Tons of Decorators",
+      "date": "20171012"
+    },
+    {
+      "id": "MqMYaT1GlWY",
+      "title": "Stencil | Getting Started",
+      "date": "20171012"
+    },
+    {
+      "id": "I3jTvWj8JrQ",
+      "title": "Building Our First PWA | Example Project",
+      "date": "20171012"
+    },
+    {
+      "id": "0RoT17Xwj24",
+      "title": "Finishing Our Project | Vue.js + Vuetify + Firebase FULL PROJECT",
+      "date": "20171012"
+    },
+    {
+      "id": "dap6yIe1uK4",
+      "title": "Progressive Web Apps (PWA) Tutorial for Beginners - Getting Started",
+      "date": "20171012"
+    },
+    {
+      "id": "37GenPjwSFc",
+      "title": "Dive into Progressive Web Apps (PWAs)!",
+      "date": "20171012"
+    },
+    {
+      "id": "BZ9FcjsA9ZU",
+      "title": "Fetching User State | Vue.js + Vuetify + Firebase FULL PROJECT",
+      "date": "20171012"
+    },
+    {
+      "id": "d4nUU8vCT8U",
+      "title": "Register for Meetups | Vue.js + Vuetify + Firebase FULL PROJECT",
+      "date": "20171012"
+    },
+    {
+      "id": "fls6uX7WWSs",
+      "title": "Editing Date and Time | Vue.js + Vuetify + Firebase FULL PROJECT",
+      "date": "20171012"
+    },
+    {
+      "id": "m1eLTtZHGs4",
+      "title": "Power BI Tutorial for Beginners - Getting Started",
+      "date": "20171012"
+    },
+    {
+      "id": "zKRdwpMEaP8",
+      "title": "Editing Meetups | Vue.js + Vuetify + Firebase FULL PROJECT",
+      "date": "20171012"
+    },
+    {
+      "id": "LoqvkwtLBR8",
+      "title": "Behind the Scenes | Our Equipment",
+      "date": "20171012"
+    },
+    {
+      "id": "J2Wp4_XRsWc",
+      "title": "Uploading Images | Vue.js + Vuetify + Firebase FULL PROJECT",
+      "date": "20171012"
+    },
+    {
+      "id": "0VDXzHUbCLY",
+      "title": "Excel - Nice to know - CHARTS & SLIDERS",
+      "date": "20171012"
+    },
+    {
+      "id": "XljsGqsZyL4",
+      "title": "Prevent unauthenticated Access | Vue.js + Vuetify + Firebase FULL PROJECT",
+      "date": "20171012"
+    },
+    {
+      "id": "ycu1zZ_uHF8",
+      "title": "Firebase Database Rules | Firebase with Abe (Google Developer)",
+      "date": "20171012"
+    },
+    {
+      "id": "xwx4ua056Nc",
+      "title": "Storing Data on Firebase | Vue.js + Vuetify + Firebase FULL PROJECT",
+      "date": "20171012"
+    },
+    {
+      "id": "wEcXYxjGN9o",
+      "title": "How to Structure Firebase (NoSQL) Data | Firebase with Abe (Google Developer)",
+      "date": "20171012"
+    },
+    {
+      "id": "fuhhQFt5Ybk",
+      "title": "Auth State Feedback with Vuex | Vue.js + Vuetify + Firebase FULL PROJECT",
+      "date": "20171012"
+    },
+    {
+      "id": "dWwCq8eB3ec",
+      "title": "Using the Firebase SDK | Firebase with Abe (Google Developer)",
+      "date": "20171012"
+    },
+    {
+      "id": "mi1GtQ5xn2M",
+      "title": "Firebase Overview | Firebase with Abe (Google Developer)",
+      "date": "20171012"
+    },
+    {
+      "id": "MdZCRP2uKdE",
+      "title": "Adding Firebase Authentication | Vue.js + Vuetify + Firebase FULL PROJECT",
+      "date": "20171012"
+    },
+    {
+      "id": "fhCcP2a5OpI",
+      "title": "Udemy Tech Talk 2017 | Max on Stage at Udemy Live",
+      "date": "20171012"
+    },
+    {
+      "id": "a0Q3fZQ7YoA",
+      "title": "Academind went to San Francisco | Our Journey",
+      "date": "20171012"
+    },
+    {
+      "id": "KM07PpcSrKg",
+      "title": "Power BI | Quick Project | Power BI Service",
+      "date": "20171012"
+    },
+    {
+      "id": "MpiMn5Bcmdg",
+      "title": "A Signup View & Form | Vue.js + Vuetify + Firebase FULL PROJECT",
+      "date": "20171012"
+    },
+    {
+      "id": "_gR-L7atGCM",
+      "title": "Firebase | Vue.js + Vuetify + Firebase FULL PROJECT",
+      "date": "20171012"
+    },
+    {
+      "id": "FISiBpfrgyE",
+      "title": "Power BI | Quick Project | Data Model",
+      "date": "20171012"
+    },
+    {
+      "id": "X8mpO9Fn2_Y",
+      "title": "Adding a Date Filter (Pipe) | Vue.js + Vuetify + Firebase FULL PROJECT",
+      "date": "20171012"
+    },
+    {
+      "id": "mhK761NH5EA",
+      "title": "Adding Date & Time Pickers | Vue.js + Vuetify + Firebase FULL PROJECT",
+      "date": "20171012"
+    },
+    {
+      "id": "j18T8DI6nlI",
+      "title": "Power BI | Quick Project | Intro & Query Editor",
+      "date": "20171012"
+    },
+    {
+      "id": "hjqywdE2IAc",
+      "title": "Adding a \"Create Meetup\" Form | Vue.js + Vuetify + Firebase FULL PROJECT",
+      "date": "20171012"
+    },
+    {
+      "id": "jgWnccjXR4I",
+      "title": "Callbacks vs Promises vs RxJs Observables vs async/ await",
+      "date": "20171012"
+    },
+    {
+      "id": "GcyjaJZaVLg",
+      "title": "Manage State with Vuex | Vue.js + Vuetify + Firebase FULL PROJECT",
+      "date": "20171012"
+    },
+    {
+      "id": "F_BYg2QGsC0",
+      "title": "SPAs vs MPAs/MVC - Are Single Page Apps always better?",
+      "date": "20171012"
+    },
+    {
+      "id": "8AMagSTe0l8",
+      "title": "AWS | Big Data | Athena Project | QuickSight",
+      "date": "20171012"
+    },
+    {
+      "id": "wYhl0gZjG2I",
+      "title": "Angular Essentials Course",
+      "date": "20171012"
+    },
+    {
+      "id": "AesqUS2udb4",
+      "title": "Adding a Meetup List & Single Meetup Card | Vue.js + Vuetify + Firebase FULL PROJECT",
+      "date": "20171012"
+    },
+    {
+      "id": "mxLm-mC-n54",
+      "title": "AWS | Big Data | Athena Project | Understanding Athena",
+      "date": "20171012"
+    },
+    {
+      "id": "Qh9w76olnlQ",
+      "title": "Updating the Project to Vuetify 0.14 and Vue 2.4 | Vue.js + Vuetify + Firebase FULL PROJECT",
+      "date": "20171012"
+    },
+    {
+      "id": "at6QjSwKOuA",
+      "title": "A Carousel on the Home Page | Vue.js + Vuetify + Firebase FULL PROJECT",
+      "date": "20171012"
+    },
+    {
+      "id": "3FtTK6P37jQ",
+      "title": "AWS | Big Data | Athena Project | S3 Cloud Storage",
+      "date": "20171012"
+    },
+    {
+      "id": "e4M2MvU5QuQ",
+      "title": "Dynamic Menu | Vue.js + Vuetify + Firebase FULL PROJECT",
+      "date": "20171012"
+    },
+    {
+      "id": "bfhC5nn9xWE",
+      "title": "AWS | Big Data | Athena Project | Introduction",
+      "date": "20171012"
+    },
+    {
+      "id": "NMFoyAnWkOE",
+      "title": "First Steps with Vuetify | Vue.js + Vuetify + Firebase FULL PROJECT",
+      "date": "20171012"
+    },
+    {
+      "id": "CM-ui3tjgdk",
+      "title": "Setting the Project up | Vue.js + Vuetify + Firebase FULL PROJECT",
+      "date": "20171012"
+    },
+    {
+      "id": "TeJ3rEi_zzA",
+      "title": "Excel - Nice to know - DATA TABLE & FLOATING CHART - PART 2",
+      "date": "20171012"
+    },
+    {
+      "id": "dIkPb8krORU",
+      "title": "Planning the App | Vue.js + Vuetify + Firebase FULL PROJECT",
+      "date": "20171012"
+    },
+    {
+      "id": "lxMIOIZOBeE",
+      "title": "Excel - Nice to know -  DATA TABLE & FLOATING CHART - PART 1",
+      "date": "20171012"
+    },
+    {
+      "id": "FXY1UyQfSFw",
+      "title": "Starting soon ... | FULL PROJECT with Vue.js + Vuetify + Firebase!",
+      "date": "20171012"
+    },
+    {
+      "id": "eracVWTSqLs",
+      "title": "Connecting a SPA to a Serverless API | Amazon Web Services BASICS",
+      "date": "20171012"
+    },
+    {
+      "id": "TiyMnchoTR8",
+      "title": "Power BI Desktop - Preview Features and Weekday Sorting",
+      "date": "20171012"
+    },
+    {
+      "id": "D0cUdSIaTlc",
+      "title": "Academind Channel Trailer",
+      "date": "20171012"
+    },
+    {
+      "id": "CkbkMznVqQk",
+      "title": "Serverless with Lambda & API Gateway | Amazon Web Services BASICS",
+      "date": "20171012"
+    },
+    {
+      "id": "bGDMeD6kOz0",
+      "title": "AWS VPC & Subnets | Amazon Web Services BASICS",
+      "date": "20171012"
+    },
+    {
+      "id": "hh6ItJbCUQ0",
+      "title": "Amazon (AWS) QuickSight Tutorial for Beginners",
+      "date": "20171012"
+    },
+    {
+      "id": "lZMkgOMYYIg",
+      "title": "EC2 for Humans | Amazon Web Services BASICS",
+      "date": "20171012"
+    },
+    {
+      "id": "PKjbuxnispM",
+      "title": "Elastic Beanstalk Features & Config | Amazon Web Services BASICS",
+      "date": "20171012"
+    },
+    {
+      "id": "dGUd9skhdsk",
+      "title": "Analyzing your Topic Wishlist",
+      "date": "20171012"
+    },
+    {
+      "id": "ISVaMijczKc",
+      "title": "Deploying a Laravel App via Elastic Beanstalk | Amazon Web Services BASICS",
+      "date": "20171012"
+    },
+    {
+      "id": "9CKsX6MOPDQ",
+      "title": "Account Security with IAM | Amazon Web Services BASICS",
+      "date": "20171012"
+    },
+    {
+      "id": "_Y3eBod2cJE",
+      "title": "Excel - Nice to know - SELF REFERENCING CELLS",
+      "date": "20171012"
+    },
+    {
+      "id": "zYOOY_DVnjo",
+      "title": "Series Kickoff - Amazon Web Services BASICS",
+      "date": "20171012"
+    },
+    {
+      "id": "ubCNZRNjhyo",
+      "title": "Getting Started with AWS | Amazon Web Services BASICS",
+      "date": "20171012"
+    },
+    {
+      "id": "-mwNLRbfKmU",
+      "title": "BehaviorSubject | RxJS TUTORIAL",
+      "date": "20171012"
+    },
+    {
+      "id": "bPFOSjShI6s",
+      "title": "Power BI Desktop - Group By, Big Data and DAX Studio",
+      "date": "20171012"
+    },
+    {
+      "id": "6lKoLwGlglE",
+      "title": "switchMap() | RxJS TUTORIAL",
+      "date": "20171012"
+    },
+    {
+      "id": "09e8DyujVcU",
+      "title": "NEW NAME + GIVEAWAY",
+      "date": "20171012"
+    },
+    {
+      "id": "b59tcUwfpWU",
+      "title": "mergeMap() | RxJS TUTORIAL",
+      "date": "20171012"
+    },
+    {
+      "id": "QVWNID8s9cA",
+      "title": "Power BI Desktop - Column from Examples",
+      "date": "20171012"
+    },
+    {
+      "id": "jC0tKU2S_Gg",
+      "title": "Vue.js + RxJS - Using vue-rx (third-party package)",
+      "date": "20171012"
+    },
+    {
+      "id": "0Jo_Q8NYd3I",
+      "title": "Vue.js + RxJS - The Basics",
+      "date": "20171012"
+    },
+    {
+      "id": "vhBwvC-h5Bg",
+      "title": "Power BI Desktop  - What is that?",
+      "date": "20171012"
+    },
+    {
+      "id": "Eg4tvoCG1jE",
+      "title": "Power BI Desktop - Our first project in 15 minutes",
+      "date": "20171012"
+    },
+    {
+      "id": "IVBJ3-M_YsQ",
+      "title": "pluck() | RxJS TUTORIAL",
+      "date": "20171012"
+    },
+    {
+      "id": "KMX1mFEmM3E",
+      "title": "Angular vs React.js vs Vue.js - My Thoughts!",
+      "date": "20171012"
+    },
+    {
+      "id": "d4ZwFaWo-Xg",
+      "title": "Excel - Nice to know - CHOOSE & IF",
+      "date": "20171012"
+    },
+    {
+      "id": "myEeo2rZc3g",
+      "title": "scan() vs reduce() | RxJS TUTORIAL",
+      "date": "20171012"
+    },
+    {
+      "id": "QbNUD5ca99A",
+      "title": "debounceTime & distinctUntilChanged | RxJS TUTORIAL",
+      "date": "20171012"
+    },
+    {
+      "id": "X5NBLrM8oEE",
+      "title": "Channel Analytics in Excel – Output section part 2/2",
+      "date": "20171012"
+    },
+    {
+      "id": "tk5x8By3yYk",
+      "title": "THE filter() OPERATOR | RxJS TUTORIAL",
+      "date": "20171012"
+    },
+    {
+      "id": "rdK92pf3abs",
+      "title": "RxJS SUBJECT (~EventEmitter) | RxJS TUTORIAL",
+      "date": "20171012"
+    },
+    {
+      "id": "8jHQ_G5Do84",
+      "title": "Channel Analytics in Excel – Output section part 1/2",
+      "date": "20171012"
+    },
+    {
+      "id": "-nYQJkMpOHU",
+      "title": "RxJS OPERATORS LIKE map() OR throttleTime() | RxJS TUTORIAL",
+      "date": "20171012"
+    },
+    {
+      "id": "Tux1nhBPl_w",
+      "title": "OBSERVABLES, OBSERVERS & SUBSCRIPTIONS | RxJS TUTORIAL",
+      "date": "20171012"
+    },
+    {
+      "id": "zio3obss-2g",
+      "title": "Channel Analytics in Excel – Analysis sheet 2/2",
+      "date": "20171012"
+    },
+    {
+      "id": "T9wOu11uU6U",
+      "title": "RxJS - What and Why?",
+      "date": "20171012"
+    },
+    {
+      "id": "IYuh8hIyvfE",
+      "title": "USING 3RD PARTY PACKAGES LIKE JQUERY| Webpack 2 Basics Tutorial",
+      "date": "20171012"
+    },
+    {
+      "id": "naoZ64t88RE",
+      "title": "Channel Analytics in Excel – Analysis sheet 1/2",
+      "date": "20171012"
+    },
+    {
+      "id": "y_RFOaSDL8I",
+      "title": "WEBPACK + MULTIPLE HTML FILES | Webpack 2 Basics Tutorial",
+      "date": "20171012"
+    },
+    {
+      "id": "9ooYYRLdg_g",
+      "title": "JavaScript - Reference vs Primitive Values/ Types",
+      "date": "20171012"
+    },
+    {
+      "id": "GTUPO2_OFBU",
+      "title": "Channel Analytics in Excel – Finishing our Input Section",
+      "date": "20171012"
+    },
+    {
+      "id": "CzLiXgRUt4g",
+      "title": "HTML + IMAGE LOADERS | Webpack 2 Basics Tutorial",
+      "date": "20171012"
+    },
+    {
+      "id": "htPYk6QxacQ",
+      "title": "Angular Tutorial for Beginners",
+      "date": "20171012"
+    },
+    {
+      "id": "nFTcnjMldO4",
+      "title": "Channel Analytics in Excel - Data Import and Preparation",
+      "date": "20171012"
+    },
+    {
+      "id": "UzePErBZ6yo",
+      "title": "Update - More Content",
+      "date": "20171012"
+    },
+    {
+      "id": "YkHKoMRh_pU",
+      "title": "New Course: Styling & Animating Angular Apps",
+      "date": "20171012"
+    },
+    {
+      "id": "8vnkM8JgjpU",
+      "title": "BASIC BABEL + SCSS WORKFLOW | Webpack 2 Basics Tutorial",
+      "date": "20171012"
+    },
+    {
+      "id": "8DDVr6wjJzQ",
+      "title": "THE WEBPACK CORE CONCEPTS | Webpack 2 Basics Tutorial",
+      "date": "20171012"
+    },
+    {
+      "id": "cChkPnpN15c",
+      "title": "Angular 4 - What's New?",
+      "date": "20171012"
+    },
+    {
+      "id": "HNRt0lODCQM",
+      "title": "USING THE WEBPACK DEV SERVER | Webpack 2 Basics Tutorial",
+      "date": "20171012"
+    },
+    {
+      "id": "GU-2T7k9NfI",
+      "title": "WHAT IS WEBPACK, HOW DOES IT WORK? | Webpack 2 Basics Tutorial",
+      "date": "20171012"
+    },
+    {
+      "id": "DgWlNAudNlg",
+      "title": "IONIC 2 FULL APP (2/2) - GEOLOCATION & MAPS | Ionic 2 + Angular to build a full Mobile Application",
+      "date": "20171012"
+    },
+    {
+      "id": "LHzAa4NKFx0",
+      "title": "IONIC 2 FULL APP (1/2) THE BASICS | Ionic 2 + Angular to build a full Mobile Application",
+      "date": "20171012"
+    },
+    {
+      "id": "cxqs7gPy_3E",
+      "title": "SIGNING IN WITH VUE.JS | Laravel + Angular 2 / Vue.js 2",
+      "date": "20171012"
+    },
+    {
+      "id": "yJ0Wqnoa6s4",
+      "title": "SENDING THE JWT WITH VUE.JS | Laravel + Angular 2 / Vue.js 2",
+      "date": "20171012"
+    },
+    {
+      "id": "2pCUxZZq68I",
+      "title": "SIGNING UP WITH VUE.JS | Laravel + Angular 2 / Vue.js 2",
+      "date": "20171012"
+    },
+    {
+      "id": "eU0hUXNNdLQ",
+      "title": "SENDING THE JWT WITH ANGULAR | Laravel + Angular 2 / Vue.js 2",
+      "date": "20171012"
+    },
+    {
+      "id": "pT9_FngJuzY",
+      "title": "SIGNIN IN ANGULAR APP | Laravel + Angular 2 / Vue.js 2",
+      "date": "20171012"
+    },
+    {
+      "id": "8SKRZS090VA",
+      "title": "SIGNUP IN ANGULAR APP | Laravel + Angular 2 / Vue.js 2",
+      "date": "20171012"
+    },
+    {
+      "id": "jWYqulDpZWo",
+      "title": "LARAVEL JWT MIDDLEWARE | Laravel + Angular 2 / Vue.js 2",
+      "date": "20171012"
+    },
+    {
+      "id": "ka-Nn3sifnc",
+      "title": "LARAVEL PARSE JWT | Laravel + Angular 2 / Vue.js 2",
+      "date": "20171012"
+    },
+    {
+      "id": "5NchGeHv8GE",
+      "title": "LARAVEL API + SPA SIGNIN| Laravel + Angular 2 / Vue.js 2",
+      "date": "20171012"
+    },
+    {
+      "id": "9Jf0Etr8CEE",
+      "title": "LARAVEL API + SPA SIGNUP | Laravel + Angular 2 / Vue.js 2",
+      "date": "20171012"
+    },
+    {
+      "id": "gxlp0P26kTw",
+      "title": "LARAVEL API + SPA AUTH THEORY | Laravel + Angular 2 / Vue.js 2",
+      "date": "20171012"
+    },
+    {
+      "id": "WDuy4RLLx4M",
+      "title": "VUE.JS 2 FRONTEND 3/3 | Laravel + Angular 2 / Vue.js 2",
+      "date": "20171012"
+    },
+    {
+      "id": "XZqjyvpT2e4",
+      "title": "VUE.JS 2 FRONTEND 2/3 | Laravel + Angular 2 / Vue.js 2",
+      "date": "20171012"
+    },
+    {
+      "id": "fOCusH_iqEM",
+      "title": "VUE.JS 2 FRONTEND 1/3 | Laravel + Angular 2 / Vue.js 2",
+      "date": "20171012"
+    },
+    {
+      "id": "VKfVjuRob10",
+      "title": "New Courses: Ionic 2 and Laravel (on Udemy and Pluralsight)",
+      "date": "20171012"
+    },
+    {
+      "id": "yDH4JBwrlZM",
+      "title": "FINISHING THE ANGULAR 2 FRONTEND | Laravel + Angular 2 / Vue.js 2",
+      "date": "20171012"
+    },
+    {
+      "id": "84bXch-YIvI",
+      "title": "CORS | Laravel + Angular 2 / Vue.js 2",
+      "date": "20171012"
+    },
+    {
+      "id": "g4GLfjcYhoQ",
+      "title": "ANGULAR 2 FRONTEND | Laravel + Angular 2 / Vue.js 2",
+      "date": "20171012"
+    },
+    {
+      "id": "4uajiXW5R3o",
+      "title": "BACKEND WITH LARAVEL | Laravel + Angular 2 / Vue.js 2",
+      "date": "20171012"
+    },
+    {
+      "id": "vu7l574xVao",
+      "title": "THEORY | Laravel + Angular 2 / Vue.js 2",
+      "date": "20171012"
+    },
+    {
+      "id": "5z8joUGkGKE",
+      "title": "BONUS | VueJS 2 & Vuex | Learning the Basics",
+      "date": "20171012"
+    },
+    {
+      "id": "kRI4YLMjgHQ",
+      "title": "ACTIONS | VueJS 2 & Vuex | Learning the Basics",
+      "date": "20171012"
+    },
+    {
+      "id": "dkFWOsKrPAI",
+      "title": "MUTATIONS | VueJS & Vuex | Learning the Basics",
+      "date": "20171012"
+    },
+    {
+      "id": "vVYEeEHlj6I",
+      "title": "MERRY CHRISTMAS & GIVEAWAY",
+      "date": "20171012"
+    },
+    {
+      "id": "iw1eajzWQAM",
+      "title": "GETTERS | VueJS & Vuex | Learning the Basics",
+      "date": "20171012"
+    },
+    {
+      "id": "2CSr2vBApSI",
+      "title": "STATE & STORE | VueJS & Vuex | Learning the Basics",
+      "date": "20171012"
+    },
+    {
+      "id": "ZYzAwFi5Xzo",
+      "title": "ROUTE NAVIGATION & PARAMETERS | VueJS | Learning the Basics",
+      "date": "20171012"
+    },
+    {
+      "id": "4lk9-PYensI",
+      "title": "ROUTING SETUP | VueJS | Learning the Basics",
+      "date": "20171012"
+    },
+    {
+      "id": "PPmg7ntQjzc",
+      "title": "COMPONENT COMMUNICATION (PROPS / EVENTS) | VueJS | Learning the Basics",
+      "date": "20171012"
+    },
+    {
+      "id": "FWQSuskE5UA",
+      "title": "COMPONENTS AND .VUE FILES | VueJS | Learning the Basics",
+      "date": "20171012"
+    },
+    {
+      "id": "6noJ0dlG7jM",
+      "title": "THE VUE CLI AND .VUE FILES | VueJS | Learning the Basics",
+      "date": "20171012"
+    },
+    {
+      "id": "kskV1q4iokk",
+      "title": "COMPONENTS | VueJS | Learning the Basics",
+      "date": "20171012"
+    },
+    {
+      "id": "Dh0E9aaedEA",
+      "title": "FILTERS | VueJS | Learning the Basics",
+      "date": "20171012"
+    },
+    {
+      "id": "sI_vgLd_CyU",
+      "title": "CONDITIONALS & LISTS | VueJS | Learning the Basics",
+      "date": "20171012"
+    },
+    {
+      "id": "cx2WnT_sckA",
+      "title": "COMPUTED PROPERTIES | VueJS | Learning the Basics",
+      "date": "20171012"
+    },
+    {
+      "id": "N198LSY_jTw",
+      "title": "BINDING HTML ATTRIBUTES | VueJS | Learning the Basics",
+      "date": "20171012"
+    },
+    {
+      "id": "8gkT_yWvP3c",
+      "title": "EVENTS & METHODS | VueJS | Learning the Basics",
+      "date": "20171012"
+    },
+    {
+      "id": "nyJSd6V2DRI",
+      "title": "GETTING STARTED with VueJS | VueJS | Learning the Basics",
+      "date": "20171012"
+    },
+    {
+      "id": "BlDTVWG70lc",
+      "title": "VueJS Announcement!",
+      "date": "20171012"
+    },
+    {
+      "id": "kYVPoo9iGNQ",
+      "title": "ReactJS & CSS Animations Basics - #4 Animations with ReactCSSTransitionGroup",
+      "date": "20171012"
+    },
+    {
+      "id": "-nCOjH0XOos",
+      "title": "ReactJS & CSS Animations Basics - #3 Transitions with ReactCSSTransitionGroup",
+      "date": "20171012"
+    },
+    {
+      "id": "8E6J0ZfeyBU",
+      "title": "ReactJS & CSS Animations Basics - #2 CSS Animation Basics",
+      "date": "20171012"
+    },
+    {
+      "id": "ztvNwFV0Ai0",
+      "title": "ReactJS & CSS Animations Basics - #1 CSS Transition Basics",
+      "date": "20171012"
+    },
+    {
+      "id": "BHtVJbJpnNU",
+      "title": "ROUTING - Angular 2.0 Final - Getting Started",
+      "date": "20171012"
+    },
+    {
+      "id": "fPtacabLEJc",
+      "title": "CROSS COMPONENT COMMUNICATION - Angular 2.0 Final - Getting Started",
+      "date": "20171012"
+    },
+    {
+      "id": "Mz8lb81AAe4",
+      "title": "SERVICES & DEPENDENCY INJECTION - Angular 2.0 Final - Getting Started",
+      "date": "20171012"
+    },
+    {
+      "id": "ZgK39WkH_1g",
+      "title": "LISTS, EVENTS & DATABINDING - Angular 2.0 Final - Getting Started",
+      "date": "20171012"
+    },
+    {
+      "id": "PzO5sPWh6Ig",
+      "title": "CREATING A COMPONENT - Angular 2.0 Final - Getting Started",
+      "date": "20171012"
+    },
+    {
+      "id": "WuDC_6gyvcQ",
+      "title": "COMPONENTS & APPMODULE - Angular 2.0 Final - Getting Started",
+      "date": "20171012"
+    },
+    {
+      "id": "nvD2Dvzj8_E",
+      "title": "SETUP & CLI - Angular 2.0 Final - Getting Started",
+      "date": "20161012"
+    },
+    {
+      "id": "h892pHdLQtM",
+      "title": "ReactJS / Redux Tutorial - #10 Async Actions",
+      "date": "20161012"
+    },
+    {
+      "id": "dSTGFzS2zyA",
+      "title": "ReactJS / Redux Tutorial - #11 Wrap Up & Further Resources",
+      "date": "20161012"
+    },
+    {
+      "id": "YmGm-qwbJdc",
+      "title": "ReactJS / Redux Tutorial - #9 A better Project Structure",
+      "date": "20161012"
+    },
+    {
+      "id": "m2q3Dyr6To4",
+      "title": "ReactJS / Redux Tutorial - #8 Containers & Components (Smart & Dumb Components)",
+      "date": "20161012"
+    },
+    {
+      "id": "tfuZ7uZmVyg",
+      "title": "ReactJS / Redux Tutorial - #7 Connect ReactJS and Redux",
+      "date": "20161012"
+    },
+    {
+      "id": "AgO7YcJeBh4",
+      "title": "ReactJS / Redux Tutorial - #6 Redux Middleware",
+      "date": "20161012"
+    },
+    {
+      "id": "BVvBa18o8Es",
+      "title": "ReactJS / Redux Tutorial - #5 Multiple Reducers",
+      "date": "20161012"
+    },
+    {
+      "id": "7bMTJxvEJiE",
+      "title": "ReactJS / Redux Tutorial - #4 Working with State and Immutability",
+      "date": "20161012"
+    },
+    {
+      "id": "8nZribKoUJ4",
+      "title": "What's New in Laravel 5.3? - Sending Mails with Mailables",
+      "date": "20161012"
+    },
+    {
+      "id": "qrsle5quS7A",
+      "title": "ReactJS / Redux Tutorial - #1 Introduction",
+      "date": "20161012"
+    },
+    {
+      "id": "ZKCYqJu4n3s",
+      "title": "ReactJS / Redux Tutorial - #3 Using Redux",
+      "date": "20161012"
+    },
+    {
+      "id": "D2MqT4OEgoE",
+      "title": "ReactJS / Redux Tutorial - #2 What is Redux? Why use it?",
+      "date": "20161012"
+    },
+    {
+      "id": "QlZ6QrlK29g",
+      "title": "What's New in Laravel 5.3? - Changes to the Auth Middleware",
+      "date": "20161012"
+    },
+    {
+      "id": "5pt_igBTCsI",
+      "title": "ReactJS Basics - #16 React Router - Navigation & Parameters",
+      "date": "20161012"
+    },
+    {
+      "id": "czzae0bKoDA",
+      "title": "What's New in Laravel 5.3? - The $loop Variable",
+      "date": "20161012"
+    },
+    {
+      "id": "eofpZPRUnP8",
+      "title": "ReactJS Basics - #15 React Router - Route Setup",
+      "date": "20161012"
+    },
+    {
+      "id": "lkTKRXt4PIw",
+      "title": "What's New in Laravel 5.3? - Directory Structure & Route File Changes",
+      "date": "20161012"
+    },
+    {
+      "id": "Oioo0IdoEls",
+      "title": "ReactJS Basics - #14 Component Lifecycle",
+      "date": "20161012"
+    },
+    {
+      "id": "IK9k9hSuYeA",
+      "title": "ReactJS Basics - #13 Two-Way-Binding",
+      "date": "20161012"
+    },
+    {
+      "id": "5Xew--ycx0o",
+      "title": "ReactJS Basics - #12 Passing Data between Parent and Child Components",
+      "date": "20161012"
+    },
+    {
+      "id": "2teBTI0_eRw",
+      "title": "ReactJS Basics - #11 Communicating between Parent and Child Component",
+      "date": "20161012"
+    },
+    {
+      "id": "SEkfzqIgvTo",
+      "title": "ReactJS Basics - #10 Stateless Components",
+      "date": "20161012"
+    },
+    {
+      "id": "Iw2BLUjQo1E",
+      "title": "ReactJS Basics - #9 How does ReactJS update the DOM?",
+      "date": "20161012"
+    },
+    {
+      "id": "e5n9j9n83OM",
+      "title": "ReactJS Basics - #8 State of Components",
+      "date": "20161012"
+    },
+    {
+      "id": "OcM__8q6p4c",
+      "title": "ReactJS Basics - #7 Events & ReactJS",
+      "date": "20161012"
+    },
+    {
+      "id": "GIU8ekYndKw",
+      "title": "ReactJS Basics - #6 Passing Data with Props",
+      "date": "20161012"
+    },
+    {
+      "id": "1JZEmYwRGoU",
+      "title": "ReactJS Basics - #5 Outputting dynamic Data",
+      "date": "20161012"
+    },
+    {
+      "id": "9wK4gHoOh1g",
+      "title": "ReactJS Basics - #4 Multiple Components",
+      "date": "20161012"
+    },
+    {
+      "id": "_mj72QqsOs4",
+      "title": "JavaScript Tutorial for Beginners - Getting Started",
+      "date": "20161012"
+    },
+    {
+      "id": "IEf1KAcK6A8",
+      "title": "ES6 JavaScript Tutorial for Beginners - Getting Started",
+      "date": "20161012"
+    },
+    {
+      "id": "uextYhQGP6k",
+      "title": "ReactJS Basics - #2 Setup Workspace with Webpack",
+      "date": "20161012"
+    },
+    {
+      "id": "LEu7FxUUr90",
+      "title": "ReactJS Basics - #2.5 Set up Git",
+      "date": "20161012"
+    },
+    {
+      "id": "JPT3bFIwJYA",
+      "title": "ReactJS Basics - #1 What is React?",
+      "date": "20161012"
+    },
+    {
+      "id": "G40iHC-h0c0",
+      "title": "ReactJS Basics - #3 First Component",
+      "date": "20161012"
+    },
+    {
+      "id": "UlGZY15ter4",
+      "title": "Laravel 5.2 PHP - Build a Shopping Cart - #16 Finishing Touches (Reupload)",
+      "date": "20161012"
+    },
+    {
+      "id": "M9nXcs4x03A",
+      "title": "Laravel 5.2 PHP - Build a Shopping Cart - #16 Finishing Touches",
+      "date": "20161012"
+    },
+    {
+      "id": "YDpso0S2FDA",
+      "title": "NodeJS / Express / MongoDB - Build a Shopping Cart - #20 Finishing Touches",
+      "date": "20161012"
+    },
+    {
+      "id": "CbOC0VJtVCs",
+      "title": "NodeJS / Express / MongoDB - Build a Shopping Cart - #19 Displaying Orders in the User Profile",
+      "date": "20161012"
+    },
+    {
+      "id": "2LDcnkQLwp8",
+      "title": "Laravel 5.2 PHP - Build a Shopping Cart - #15 Displaying Orders in the User Profile",
+      "date": "20161012"
+    },
+    {
+      "id": "qcVQNOd7vkw",
+      "title": "NodeJS / Express / MongoDB - Build a Shopping Cart - #18 Forcing User Login",
+      "date": "20161012"
+    },
+    {
+      "id": "9VxiFhl6e8o",
+      "title": "Laravel 5.2 PHP - Build a Shopping Cart - #14 Forcing User Login",
+      "date": "20161012"
+    },
+    {
+      "id": "626Evir2eqY",
+      "title": "NodeJS / Express / MongoDB - Build a Shopping Cart - #17 Storing Orders in the Database",
+      "date": "20161012"
+    },
+    {
+      "id": "DBjPIabiRNg",
+      "title": "Angular 2 Tutorial - Complete Introduction - Angular 2 CLI Setup, Components, Databinding",
+      "date": "20161012"
+    },
+    {
+      "id": "6u2xVBgaRb0",
+      "title": "Laravel 5.2 PHP - Build a Shopping Cart - #13 Storing Orders in the Database",
+      "date": "20161012"
+    },
+    {
+      "id": "C44F4iQWuoE",
+      "title": "NodeJS / Express / MongoDB - Build a Shopping Cart - #16 Making Charges with Stripe",
+      "date": "20161012"
+    },
+    {
+      "id": "iDA6GeGm0YQ",
+      "title": "Build a RESTful API with Laravel - Pluralsight Course Announcement",
+      "date": "20161012"
+    },
+    {
+      "id": "bu0J-j5qYas",
+      "title": "Laravel 5.2 PHP - Build a Shopping Cart - #12 Stripe Charging a Credit Card",
+      "date": "20161012"
+    },
+    {
+      "id": "3meH2TK4KuI",
+      "title": "NodeJS / Express / MongoDB - Build a Shopping Cart - #15 Stripe Verifying Credit Cards",
+      "date": "20161012"
+    },
+    {
+      "id": "pF0nGWb9bps",
+      "title": "NodeJS / Express / MongoDB - Build a Shopping Cart - #14 Stripe Payment Views",
+      "date": "20161012"
+    },
+    {
+      "id": "dGkQwBWel4Q",
+      "title": "Laravel 5.2 PHP - Build a Shopping Cart - #11 Stripe Credit Card Verification",
+      "date": "20161012"
+    },
+    {
+      "id": "jNWDrw3vRU4",
+      "title": "Laravel 5.2 PHP - Build a Shopping Cart - #10 Stripe Payments View",
+      "date": "20161012"
+    },
+    {
+      "id": "hds8To2x7g8",
+      "title": "NodeJS / Express / MongoDB - Build a Shopping Cart - #13 Cart Views",
+      "date": "20161012"
+    },
+    {
+      "id": "L_5BZKe0Ab4",
+      "title": "Laravel 5.2 PHP - Build a Shopping Cart - #9 Cart Views",
+      "date": "20161012"
+    },
+    {
+      "id": "_pVKGCzbMwg",
+      "title": "NodeJS / Express / MongoDB - Build a Shopping Cart - #12 Cart Model",
+      "date": "20161012"
+    },
+    {
+      "id": "g32awc4HrLA",
+      "title": "NodeJS / Express / MongoDB - Build a Shopping Cart - #11 Adding a Session Store",
+      "date": "20161012"
+    },
+    {
+      "id": "XxNZMI5V3t4",
+      "title": "Angular 2 & NodeJS (MEAN 2.0) Tutorial for Beginners - Getting Started",
+      "date": "20161012"
+    },
+    {
+      "id": "4J939dDUH4M",
+      "title": "Laravel 5.2 PHP - Build a Shopping Cart - #8 Cart Model & Session Storage",
+      "date": "20161012"
+    },
+    {
+      "id": "XVYApTfR6XE",
+      "title": "NodeJS / Express / MongoDB - Build a Shopping Cart - #10 Route Grouping & Protection (Middleware)",
+      "date": "20161012"
+    },
+    {
+      "id": "oPmL9zSgUe8",
+      "title": "NodeJS / Express / MongoDB - Build a Shopping Cart - #9 Sign In",
+      "date": "20161012"
+    },
+    {
+      "id": "i8FpTjQbzZk",
+      "title": "Laravel 5.2 PHP - Build a Shopping Cart - #7 Middleware & Route Protection",
+      "date": "20161012"
+    },
+    {
+      "id": "js5hI2moBY4",
+      "title": "NodeJS / Express / MongoDB - Build a Shopping Cart - #8 Validation",
+      "date": "20161012"
+    },
+    {
+      "id": "GHNLWHGCBEc",
+      "title": "NodeJS / Express / MongoDB - Build a Shopping Cart - #7 Sign Up with Passport",
+      "date": "20161012"
+    },
+    {
+      "id": "5leoqeeZqCw",
+      "title": "Laravel 5.2 PHP - Build a Shopping Cart - #6 User Sign In",
+      "date": "20161012"
+    },
+    {
+      "id": "waAqEjjssxU",
+      "title": "NodeJS / Express / MongoDB - Build a Shopping Cart - #6 Sign Up View, CSRF Protection & User Model",
+      "date": "20161012"
+    },
+    {
+      "id": "ufIK3PzwYf4",
+      "title": "Laravel 5.2 PHP - Build a Shopping Cart - #5 User Sign Up",
+      "date": "20161012"
+    },
+    {
+      "id": "dSQ1CYLHWYM",
+      "title": "NodeJS / Express / MongoDB - Build a Shopping Cart - #5 Outputting Data",
+      "date": "20161012"
+    },
+    {
+      "id": "StNSpiy-Ikc",
+      "title": "Laravel 5.2 PHP - Build a Shopping Cart - #4 Outputting Product Data",
+      "date": "20161012"
+    },
+    {
+      "id": "V30Rpqi6kYE",
+      "title": "NodeJS / Express / MongoDB - Build a Shopping Cart - #4 Seeding Data",
+      "date": "20161012"
+    },
+    {
+      "id": "arkYCiCP6-g",
+      "title": "NodeJS / Express / MongoDB - Build a Shopping Cart - #3 MongoDB / Mongoose Setup",
+      "date": "20161012"
+    },
+    {
+      "id": "Tsr3NgoExfo",
+      "title": "Laravel 5.2 PHP - Build a Shopping Cart - #3 Data Migrations & Seeding",
+      "date": "20161012"
+    },
+    {
+      "id": "riSKBb7KbFI",
+      "title": "NodeJS / Express / MongoDB - Build a Shopping Cart - #2 Product Index View",
+      "date": "20161012"
+    },
+    {
+      "id": "Fhv250daKKg",
+      "title": "Laravel 5.2 PHP - Build a Shopping Cart - #2 Product Index View",
+      "date": "20161012"
+    },
+    {
+      "id": "-3vvxn78MH4",
+      "title": "NodeJS / Express / MongoDB - Build a Shopping Cart - #1 Intro & Setup",
+      "date": "20161012"
+    },
+    {
+      "id": "oc1_DHfL89k",
+      "title": "Laravel 5.2 PHP - Build a Shopping Cart - #1 Intro & Setup",
+      "date": "20161012"
+    },
+    {
+      "id": "OjNl7jpxb1g",
+      "title": "Angular 2 Full App Tutorial - Weather App - #10 Observable Power",
+      "date": "20161012"
+    },
+    {
+      "id": "56TizEw2LgI",
+      "title": "New Laravel & NodeJS Project: Shopping Cart",
+      "date": "20161012"
+    },
+    {
+      "id": "2mxDXYh2vp0",
+      "title": "Angular 2 Full App Tutorial - Weather App - #10 Observable Power",
+      "date": "20161012"
+    },
+    {
+      "id": "52j2r9oXKJw",
+      "title": "Laravel Homestead Tutorial - #3 Configuration",
+      "date": "20161012"
+    },
+    {
+      "id": "67bny7v0BpU",
+      "title": "Angular 2 Full App Tutorial - Weather App - #10 Observable Power",
+      "date": "20161012"
+    },
+    {
+      "id": "YuvHbC3aBaA",
+      "title": "Laravel Homestead Tutorial - #2 Setup",
+      "date": "20161012"
+    },
+    {
+      "id": "0AKMvpbMoH0",
+      "title": "Laravel Homestead Tutorial - #1 Introduction",
+      "date": "20161012"
+    },
+    {
+      "id": "zszkRlvN5os",
+      "title": "Angular 2 Full App Tutorial - Weather App - #9 Requesting Data via HTTP",
+      "date": "20161012"
+    },
+    {
+      "id": "9oymMiq2SOs",
+      "title": "PHPStorm Introduction - Navigating around",
+      "date": "20161012"
+    },
+    {
+      "id": "MuTA1I0IID8",
+      "title": "PHPStorm Introduction - Changing the Appearance",
+      "date": "20161012"
+    },
+    {
+      "id": "Lx67-QG2Uho",
+      "title": "Angular 2 Full App Tutorial - Weather App - #8 Adding a Form",
+      "date": "20161012"
+    },
+    {
+      "id": "EmUerC9dMSs",
+      "title": "Angular 2 Full App Tutorial - Weather App - #7 Adding a Service",
+      "date": "20161012"
+    },
+    {
+      "id": "h4A0-53Olm4",
+      "title": "Node.js + Express - Tutorial - Mongoose",
+      "date": "20161012"
+    },
+    {
+      "id": "JnyBjeMmJyY",
+      "title": "Node.js + Express - Tutorial - MongoDB + Monk",
+      "date": "20161012"
+    },
+    {
+      "id": "g8AB5jt-D00",
+      "title": "Angular 2 Full App Tutorial - Weather App - #6 Property Binding",
+      "date": "20161012"
+    },
+    {
+      "id": "vBzg0Us5MDk",
+      "title": "Laravel Tutorial - Filemanager/ Image Upload with a WYSIWYG Editor (TinyMCE)",
+      "date": "20161012"
+    },
+    {
+      "id": "Y-SvIFS4J8o",
+      "title": "Laravel Tutorial - WYSIWYG Editor Integration (TinyMCE)",
+      "date": "20161012"
+    },
+    {
+      "id": "u8WYJOp_NX0",
+      "title": "Angular 2 Full App Tutorial - Weather App - #5 NgFor, Local Variables, Lifecycle",
+      "date": "20161012"
+    },
+    {
+      "id": "-JcgwLIh0Z4",
+      "title": "Node.js + Express - Tutorial - Update and Delete Data with MongoDB",
+      "date": "20161012"
+    },
+    {
+      "id": "21aVzSN30f8",
+      "title": "Laravel Tutorial - ACL (User Roles) - #4 Final Touches",
+      "date": "20161012"
+    },
+    {
+      "id": "2u1bJWc9nN4",
+      "title": "Laravel Tutorial - ACL (User Roles) - #3 Middleware",
+      "date": "20161012"
+    },
+    {
+      "id": "d1d4-0v8Zmk",
+      "title": "Laravel Tutorial - ACL (User Roles) - #2 Database Setup & Migrations",
+      "date": "20161012"
+    },
+    {
+      "id": "Kas2w2DBuFg",
+      "title": "Laravel Tutorial - ACL (User Roles) - #1 Setup & Intro",
+      "date": "20161012"
+    },
+    {
+      "id": "hGKV_0djMn4",
+      "title": "Angular 2 Full App Tutorial - Weather App - #4 Custom Classes & String Interpolation",
+      "date": "20161012"
+    },
+    {
+      "id": "ZKwrOXl5TDI",
+      "title": "Node.js + Express - Tutorial - Insert and Get Data with MongoDB",
+      "date": "20161012"
+    },
+    {
+      "id": "3fj9sx7UXfE",
+      "title": "Node.js + Express - Tutorial - Setup MongoDB",
+      "date": "20161012"
+    },
+    {
+      "id": "7WI0WKY8U4M",
+      "title": "Angular 2 Full App Tutorial - Weather App - #3 Create first Components",
+      "date": "20161012"
+    },
+    {
+      "id": "d6Dp4Dyeke8",
+      "title": "Angular 2 Complete Course - Sections 1 & 2",
+      "date": "20161012"
+    },
+    {
+      "id": "hE5zeEiVqpw",
+      "title": "Node.js + Express - Tutorial - Express-Validator and Express-Session (Validation & Sessions)",
+      "date": "20161012"
+    },
+    {
+      "id": "mghrMCsDpug",
+      "title": "The Laravel Playground",
+      "date": "20161012"
+    },
+    {
+      "id": "l2QnzdB6EDU",
+      "title": "Laravel 5.2 PHP Build  a social network - Wrap Up",
+      "date": "20161012"
+    },
+    {
+      "id": "gj6wJudsgCE",
+      "title": "Angular 2 Full App Tutorial - Weather App - #2 Components & Directives",
+      "date": "20161012"
+    },
+    {
+      "id": "r7EhBTPlQkk",
+      "title": "Angular 2 Full App Tutorial - Weather App - #1 Introduction",
+      "date": "20161012"
+    },
+    {
+      "id": "Sb8xyCa2p7A",
+      "title": "Node.js + Express - Tutorial - GET and POST Requests",
+      "date": "20161012"
+    },
+    {
+      "id": "1srD3Mdvf50",
+      "title": "Node.js + Express - Tutorial - Handlebars Templating Engine",
+      "date": "20161012"
+    },
+    {
+      "id": "sLGkQjEbOyE",
+      "title": "Laravel 5.2 PHP Build  a social network - Likes & Dislikes (3/3 - Updating the View)",
+      "date": "20161012"
+    },
+    {
+      "id": "drM19VKbCgU",
+      "title": "Laravel 5.2 PHP Build  a social network - Likes & Dislikes (2/3 - Finishing the Backend)",
+      "date": "20161012"
+    },
+    {
+      "id": "y5qZJ7sYN88",
+      "title": "Laravel 5.2 PHP Build  a social network - Likes & Dislikes (1/3 - Models & AJAX)",
+      "date": "20161012"
+    },
+    {
+      "id": "DSp9ExFw3Ig",
+      "title": "Node.js + Express - Tutorial - PugJS Templating Engine (formerly JADE)",
+      "date": "20161012"
+    },
+    {
+      "id": "bf8L9tQi_MQ",
+      "title": "Node.js + Express - Tutorial - Express Project Structure & First little App",
+      "date": "20161012"
+    },
+    {
+      "id": "gqcBptGjHTo",
+      "title": "Node.js + Express - Tutorial - Setup of Express",
+      "date": "20161012"
+    },
+    {
+      "id": "45dAt9Gz8rE",
+      "title": "Node.js + Express - Tutorial - What is Express? And why should we use it?",
+      "date": "20161012"
+    },
+    {
+      "id": "cwB-H7wJItc",
+      "title": "Laravel 5.2 PHP Build  a social network - Image Upload",
+      "date": "20161012"
+    },
+    {
+      "id": "tQT2Vn8BaHo",
+      "title": "Laravel 5.2 PHP Build  a social network - User Account",
+      "date": "20161012"
+    },
+    {
+      "id": "fjdTvsVKmNU",
+      "title": "Web Design Tutorial - Adobe Illustrator - Creating a Speech Bubble",
+      "date": "20161012"
+    },
+    {
+      "id": "xiCk5OGCdCE",
+      "title": "Laravel 5.2 PHP Build  a social network - Updating DB & View",
+      "date": "20161012"
+    },
+    {
+      "id": "tiMLxUKrB-g",
+      "title": "Node.js - Tutorial - Routing",
+      "date": "20161012"
+    },
+    {
+      "id": "xJmI1ugIOXU",
+      "title": "Web Design Tutorial - Adobe Illustrator - Introduction to Illustrator and the UI",
+      "date": "20161012"
+    },
+    {
+      "id": "p5eCYKiZN-4",
+      "title": "Node.js - Tutorial - Rendering HTML as Response",
+      "date": "20161012"
+    },
+    {
+      "id": "ioxgbkxIGwE",
+      "title": "Node.js - Tutorial - My IDE",
+      "date": "20161012"
+    },
+    {
+      "id": "L2YXZ5fZcqM",
+      "title": "Laravel 5.2 PHP Build  a social network - Edit Posts with AJAX Request",
+      "date": "20161012"
+    },
+    {
+      "id": "vSGaHQ19fDQ",
+      "title": "Web Design Tutorial - Adobe Photoshop & Illustrator - Vectors vs Pixels",
+      "date": "20161012"
+    },
+    {
+      "id": "FK6dlRfQunc",
+      "title": "Web Design Tutorial - Adobe Photoshop & Illustrator - Introduction",
+      "date": "20161012"
+    },
+    {
+      "id": "NemVc0_pnzM",
+      "title": "Node.js - Tutorial - JavaScript Modules & Anonymous Functions",
+      "date": "20161012"
+    },
+    {
+      "id": "VNw6EGDltNk",
+      "title": "Laravel 5.2 PHP Build  a social network - Use jQuery to fetch Post Content",
+      "date": "20161012"
+    },
+    {
+      "id": "JH4qVqplC8E",
+      "title": "Node.js - Tutorial - First Application",
+      "date": "20161012"
+    },
+    {
+      "id": "65a5QQ3ZR2g",
+      "title": "Node.js - Tutorial - Introduction",
+      "date": "20161012"
+    },
+    {
+      "id": "IczOmFOlG3w",
+      "title": "Laravel 5.2 PHP Build  a social network - Editing Posts (View)",
+      "date": "20161012"
+    },
+    {
+      "id": "E9kzgAxtTwM",
+      "title": "Laravel 5.2 PHP Build  a social network - User Logout & Fixing Post Deletion",
+      "date": "20161012"
+    },
+    {
+      "id": "B_dlH02ZO1U",
+      "title": "Future Plans for this channel",
+      "date": "20161012"
+    },
+    {
+      "id": "c7khcdJdxXw",
+      "title": "1.000 Subscribers - THANK YOU",
+      "date": "20161012"
+    },
+    {
+      "id": "VoYzc3TLwmQ",
+      "title": "Laravel 5.2 PHP Build  a social network - Deleting Posts",
+      "date": "20161012"
+    },
+    {
+      "id": "VuSLCrR64mw",
+      "title": "Laravel 5.2 PHP Build  a social network - Outputting Posts",
+      "date": "20161012"
+    },
+    {
+      "id": "b64E6zPG1cg",
+      "title": "Angular 2 Tutorial (2016) - Angular 2 & Firebase Example App",
+      "date": "20161012"
+    },
+    {
+      "id": "8zIWGhVmTKk",
+      "title": "Laravel 5.2 PHP Build  a social network - Post Validation & Outputting Errors",
+      "date": "20161012"
+    },
+    {
+      "id": "z-1bdYTNWm8",
+      "title": "Laravel 5.2 PHP Build  a social network - Creating Posts (Model & Controller)",
+      "date": "20161012"
+    },
+    {
+      "id": "PkiHgAmYLec",
+      "title": "Laravel 5.2 PHP Build  a social network - Creating the Dashboard View",
+      "date": "20161012"
+    },
+    {
+      "id": "vrdHEBkGAow",
+      "title": "Angular 2 Tutorial (2016) - Angular 2 & jQuery (use with caution!)",
+      "date": "20161012"
+    },
+    {
+      "id": "S1cQkAu0gtE",
+      "title": "Angular 2 Course Announcement",
+      "date": "20161012"
+    },
+    {
+      "id": "4ECNmNWFEBA",
+      "title": "Laravel 5.2 PHP Build  a social network - Middleware & Route Protection",
+      "date": "20161012"
+    },
+    {
+      "id": "gybCjXYBgNA",
+      "title": "Laravel 5.2 PHP Build  a social network - Input Validation",
+      "date": "20161012"
+    },
+    {
+      "id": "HPvMD0lck70",
+      "title": "Angular 2 Tutorial (2016) - Dependency Injection (2/2)",
+      "date": "20161012"
+    },
+    {
+      "id": "cVoV9kVH1SA",
+      "title": "Angular 2 Tutorial (2016) - Dependency Injection (1/2)",
+      "date": "20161012"
+    },
+    {
+      "id": "atWUeGBIAAM",
+      "title": "Laravel 5.2 PHP Build  a social network - Logging users in",
+      "date": "20161012"
+    },
+    {
+      "id": "3ke5c6nzVC0",
+      "title": "Angular 2 Tutorial (2016) - Inputs & Outputs",
+      "date": "20161012"
+    },
+    {
+      "id": "hJIc9lVTJj4",
+      "title": "Laravel 5.2 PHP Build  a social network - Signup Controller & Model",
+      "date": "20161012"
+    },
+    {
+      "id": "KYElZJb09Qk",
+      "title": "Angular 2 Tutorial (2016) - Pipes",
+      "date": "20161012"
+    },
+    {
+      "id": "IRR3ydBUEgY",
+      "title": "Laravel 5.2 PHP Build  a social network - Signup & Login Screen",
+      "date": "20161012"
+    },
+    {
+      "id": "_dd4-HEPejU",
+      "title": "Laravel 5.2 PHP Build a social network - Setup & Introduction",
+      "date": "20161012"
+    },
+    {
+      "id": "I-EiQD3x8xY",
+      "title": "Angular 2 Tutorial - WTF are Components, Directives and Dataflow?",
+      "date": "20161012"
+    },
+    {
+      "id": "L7xPwhwbcHE",
+      "title": "Angular 2 Tutorial (2016) - HTTP (GET and POST to RESTful Service)",
+      "date": "20161012"
+    },
+    {
+      "id": "LyRgKQjsGa4",
+      "title": "Angular 2 Tutorial (2016) - Forms using Angular 2 Formbuilder",
+      "date": "20161012"
+    },
+    {
+      "id": "FrnYzx2zrk8",
+      "title": "Angular 2 Tutorial (2016) - Forms (with Two-Way Databinding)",
+      "date": "20161012"
+    },
+    {
+      "id": "Dv_5An-OvCk",
+      "title": "Angular 2 Tutorial (2016) - Routing with Parameters",
+      "date": "20161012"
+    },
+    {
+      "id": "WXzdp8rwgcQ",
+      "title": "Angular 2 Tutorial (2016) - Inserting Data with Services + More Routing",
+      "date": "20161012"
+    },
+    {
+      "id": "wZ_5des_6_c",
+      "title": "Angular.js 2 Tutorial - Full app in 20 Minutes",
+      "date": "20161012"
+    },
+    {
+      "id": "amrzliujiag",
+      "title": "Angular 2 Tutorial (2016) - Routing",
+      "date": "20161012"
+    },
+    {
+      "id": "-ZVZzq4xhv0",
+      "title": "Angular 2 Tutorial (2016) - Two Way Databinding",
+      "date": "20161012"
+    },
+    {
+      "id": "SEM6-TkuOgo",
+      "title": "Angular 2 Tutorial (2016) - Services",
+      "date": "20161012"
+    },
+    {
+      "id": "mZRKCQsFlro",
+      "title": "Angular 2 Tutorial (2016) - Multiple Components + ngFor Directive",
+      "date": "20161012"
+    },
+    {
+      "id": "0scZXATiGSY",
+      "title": "Angular 2 Tutorial (2016) - Setting up the Development Environment",
+      "date": "20161012"
+    },
+    {
+      "id": "PELRx7zYbPk",
+      "title": "Angular 2 Tutorial - The Architecture of an Angular 2 Application",
+      "date": "20161012"
+    },
+    {
+      "id": "fyfY5aqbLNI",
+      "title": "Angular 2 Tutorial (2016) - Introduction",
+      "date": "20161012"
+    },
+    {
+      "id": "hU8oxbwKesQ",
+      "title": "Angular 2 Tutorial (2016) - Components (incl. Data Binding, Two-Way Binding!)",
+      "date": "20161012"
+    },
+    {
+      "id": "ft2gCJl-jlo",
+      "title": "Real Beginners Corner: HTML, CSS & JavaScript Basics - #3 Basic HTML Tags (2/2)",
+      "date": "20161012"
+    },
+    {
+      "id": "saxfZqR2INM",
+      "title": "Real Beginners Corner: HTML, CSS & JavaScript Basics - #3 Basic HTML Tags (1/2)",
+      "date": "20161012"
+    },
+    {
+      "id": "zwEL8Kfdt1o",
+      "title": "Real Beginners Corner: HTML, CSS & JavaScript Basics - #2 HTML Introduction",
+      "date": "20161012"
+    },
+    {
+      "id": "8FxVEioS41U",
+      "title": "Real Beginners Corner: HTML, CSS & JavaScript Basics - #1 The Basics about a Web Page",
+      "date": "20161012"
+    },
+    {
+      "id": "HhElHpiAWp8",
+      "title": "Wordpress Custom Theme and Website - #8 - Adding Search Functionality to your WordPress Site",
+      "date": "20161012"
+    },
+    {
+      "id": "_TgSq1ULelA",
+      "title": "Wordpress Custom Theme and Website - #7 - Adding and styling Post Meta Information",
+      "date": "20161012"
+    },
+    {
+      "id": "_FPEYG5fX34",
+      "title": "Stylin' Around - Building a real Grid with CSS Flexbox - #2",
+      "date": "20161012"
+    },
+    {
+      "id": "MIJCkATvDSQ",
+      "title": "Wordpress Custom Theme and Website - #6 - Adding Templates for Pages and Posts + Creating an Excerpt",
+      "date": "20161012"
+    },
+    {
+      "id": "PZLx8QG6HlA",
+      "title": "Stylin' Around - Building a real Grid with CSS Flexbox - #1",
+      "date": "20161012"
+    },
+    {
+      "id": "cK3CAx0cuZs",
+      "title": "Stylin' Around - Flexbox Introduction - Part 2: The Flex Children",
+      "date": "20161012"
+    },
+    {
+      "id": "BrmRCL0RTgo",
+      "title": "Wordpress Custom Theme and Website - #4 - Creating a Navigation Menu",
+      "date": "20161012"
+    },
+    {
+      "id": "JszJ0kqvyMo",
+      "title": "Wordpress Custom Theme and Website - #5 - Styling the Menu",
+      "date": "20161012"
+    },
+    {
+      "id": "-jbE_a0rrvM",
+      "title": "Wordpress Custom Theme and Website - #3 - Splitting into Templates",
+      "date": "20161012"
+    },
+    {
+      "id": "SeD-go4vQmk",
+      "title": "Stylin' Around - Flexbox Introduction - Part 1: The Flex Container",
+      "date": "20161012"
+    },
+    {
+      "id": "NwOKwQPbrnM",
+      "title": "Stylin' Around - Creating a sticky Navigation Bar - Part 2",
+      "date": "20161012"
+    },
+    {
+      "id": "azlhEegg5LA",
+      "title": "Stylin' Around - Creating a sticky Navigation Bar - Part 1",
+      "date": "20161012"
+    },
+    {
+      "id": "UYPpx4uPk10",
+      "title": "Wordpress Custom Theme and Website - #2 - Creating the Theme and Setting Up a Basic Skeleton",
+      "date": "20161012"
+    },
+    {
+      "id": "O5-1NkC-Rvc",
+      "title": "Wordpress Custom Theme and Website - #1 - Setup and First Steps",
+      "date": "20161012"
+    }
+  ]
+}

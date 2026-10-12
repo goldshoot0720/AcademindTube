@@ -1,0 +1,25 @@
+# Secrets
+.secrets/
+.env
+
+# Audio / media (large, transient)
+audio/
+*.mp3
+*.m4a
+*.webm
+*.mp4
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS
+.DS_Store
+
+# Pipeline scratch
+data/tmp/
+
+# Agent workspace data
+.workbuddy-ai/

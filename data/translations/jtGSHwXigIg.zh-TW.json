@@ -1,0 +1,1076 @@
+[
+  {
+    "start": 96,
+    "end": 5384,
+    "text": "If you're building web applications using TypeScript to be specific, you shouldn't sleep",
+    "zh": "如果您正在使用 TypeScript 建立 Web 應用程序，那麼您不應該睡覺"
+  },
+  {
+    "start": 5545,
+    "end": 9632,
+    "text": "on the Alchemy library framework, whatever you wanna call it.",
+    "zh": "在 Alchemy 庫框架上，無論你想怎麼稱呼它。"
+  },
+  {
+    "start": 10353,
+    "end": 11683,
+    "text": "It's really amazing.",
+    "zh": "真是太神奇了。"
+  },
+  {
+    "start": 11731,
+    "end": 17982,
+    "text": "Now, last week I shared my thoughts about Effect and that Effect is really good when",
+    "zh": "現在，上週我分享了我對 Effect 的想法，當 Effect 非常好時"
+  },
+  {
+    "start": 17982,
+    "end": 19103,
+    "text": "working with AI agents.",
+    "zh": "與人工智慧代理合作。"
+  },
+  {
+    "start": 19488,
+    "end": 25787,
+    "text": "Alchemy kind of builds up on Effect, but it's actually about managing the infrastructure",
+    "zh": "Alchemy 有點建立在 Effect 的基礎上，但它實際上是關於管理基礎設施"
+  },
+  {
+    "start": 25915,
+    "end": 27229,
+    "text": "that powers your application.",
+    "zh": "為您的應用程式提供動力。"
+  },
+  {
+    "start": 27277,
+    "end": 29136,
+    "text": "It's about deploying that infrastructure.",
+    "zh": "這是關於部署該基礎設施的。"
+  },
+  {
+    "start": 29184,
+    "end": 32906,
+    "text": "It's about infrastructure as code and merging that with your code.",
+    "zh": "這是關於基礎設施即代碼並將其與您的程式碼合併。"
+  },
+  {
+    "start": 32954,
+    "end": 34559,
+    "text": "And I got an example for you.",
+    "zh": "我給你舉了一個例子。"
+  },
+  {
+    "start": 35121,
+    "end": 37335,
+    "text": "So I got a very simple codebase here.",
+    "zh": "所以我在這裡得到了一個非常簡單的程式碼庫。"
+  },
+  {
+    "start": 37705,
+    "end": 39518,
+    "text": "And first, an example without Alchemy.",
+    "zh": "首先，舉一個沒有煉金術的例子。"
+  },
+  {
+    "start": 39951,
+    "end": 45135,
+    "text": "Let's say we want to deploy on Cloudflare, which is already one of the better use cases",
+    "zh": "假設我們想要在 Cloudflare 上部署，這已經是更好的用例之一"
+  },
+  {
+    "start": 45247,
+    "end": 50382,
+    "text": "because if you do that, by default you can write your worker code.",
+    "zh": "因為如果你這樣做，預設情況下你可以編寫你的工作代碼。"
+  },
+  {
+    "start": 50462,
+    "end": 55453,
+    "text": "Workers are that Cloudflare primitive that allows you to run code in the cloud.",
+    "zh": "Workers 是 Cloudflare 原語，可讓您在雲端中執行程式碼。"
+  },
+  {
+    "start": 55501,
+    "end": 59884,
+    "text": "You can think of them as AWS Lambda on Cloudflare, in case you know that.",
+    "zh": "如果您知道的話，您可以將它們視為 Cloudflare 上的 AWS Lambda。"
+  },
+  {
+    "start": 60173,
+    "end": 65680,
+    "text": "So it's not an entire server, it's just a thing that temporarily spins up when your code",
+    "zh": "所以它不是一個完整的伺服器，它只是當你的程式碼運行時臨時旋轉的東西"
+  },
+  {
+    "start": 65712,
+    "end": 70191,
+    "text": "needs to execute, for example, because of an incoming request, and then shuts down so",
+    "zh": "例如，由於傳入請求而需要執行，然後關閉"
+  },
+  {
+    "start": 70191,
+    "end": 75136,
+    "text": "that you only pay for when it's actually executing versus a complete server where you",
+    "zh": "您只需在實際執行時付費，而不是在完整的伺服器上付費"
+  },
+  {
+    "start": 75168,
+    "end": 75922,
+    "text": "always pay.",
+    "zh": "總是付錢。"
+  },
+  {
+    "start": 76292,
+    "end": 81702,
+    "text": "Of course, this on-demand per-request execution can be more expensive than a server if",
+    "zh": "當然，這種按請求按需執行的成本可能比伺服器更昂貴，如果"
+  },
+  {
+    "start": 81750,
+    "end": 84464,
+    "text": "you have a lot of execution, but That's a totally different story.",
+    "zh": "你有很多執行力，但那是一個完全不同的故事。"
+  },
+  {
+    "start": 84737,
+    "end": 90166,
+    "text": "Workers are really great and without Alchemy, this is how a worker could look like, how",
+    "zh": "工人真的很偉大，沒有煉金術，工人就是這個樣子，怎麼辦"
+  },
+  {
+    "start": 90182,
+    "end": 90969,
+    "text": "you could define it.",
+    "zh": "你可以定義它。"
+  },
+  {
+    "start": 91146,
+    "end": 97250,
+    "text": "And then the great thing about Cloudflare is out of the box, it already follows an infrastructure",
+    "zh": "Cloudflare 的優點在於開箱即用，它已經遵循基礎設施"
+  },
+  {
+    "start": 97346,
+    "end": 98117,
+    "text": "as code approach.",
+    "zh": "作為程式碼方法。"
+  },
+  {
+    "start": 98230,
+    "end": 105056,
+    "text": "You have this wrangler.jsonc file here and in there you define your worker, the",
+    "zh": "您在這裡有這個 wrangler.jsonc 文件，您可以在其中定義您的工作人員，即"
+  },
+  {
+    "start": 105056,
+    "end": 108317,
+    "text": "entry point to the worker, any dependencies this worker may have.",
+    "zh": "工作人員的入口點，該工作人員可能具有的任何依賴項。"
+  },
+  {
+    "start": 108446,
+    "end": 114034,
+    "text": "So any buckets, R2 buckets, which is object storage, the worker may rely on and so on.",
+    "zh": "所以任何桶，R2桶，這是物件存儲，worker可能依賴的等等。"
+  },
+  {
+    "start": 114146,
+    "end": 115190,
+    "text": "So that's already great.",
+    "zh": "所以這已經很棒了。"
+  },
+  {
+    "start": 116634,
+    "end": 122365,
+    "text": "Still, it's also something where you have to link these files together, where you have",
+    "zh": "儘管如此，您還必須將這些文件連結在一起，您必須"
+  },
+  {
+    "start": 122397,
+    "end": 124676,
+    "text": "to make sure that you have the correct entry point here and so on.",
+    "zh": "確保您在這裡有正確的入口點等等。"
+  },
+  {
+    "start": 125206,
+    "end": 127421,
+    "text": "But it's definitely all good and doable.",
+    "zh": "但這絕對是好的且可行。"
+  },
+  {
+    "start": 127855,
+    "end": 133649,
+    "text": "But when it comes to that bucket here, for example, you need to create it first.",
+    "zh": "但是，例如，當涉及到這裡的儲存桶時，您需要先建立它。"
+  },
+  {
+    "start": 134340,
+    "end": 138128,
+    "text": "You can do that in the Cloudflare dashboard, which means you need to log into your Cloudflare",
+    "zh": "您可以在 Cloudflare 儀表板中執行此操作，這表示您需要登入 Cloudflare"
+  },
+  {
+    "start": 138128,
+    "end": 142269,
+    "text": "account and create the bucket there, or you could run a command like this.",
+    "zh": "帳戶並在那裡建立儲存桶，或者您可以執行這樣的命令。"
+  },
+  {
+    "start": 142398,
+    "end": 144869,
+    "text": "So not too bad, but it's an extra step.",
+    "zh": "所以還不錯，但這是一個額外的步驟。"
+  },
+  {
+    "start": 145270,
+    "end": 148271,
+    "text": "And of course, you must make sure that you get the name right here.",
+    "zh": "當然，您必須確保您在此處獲得正確的名稱。"
+  },
+  {
+    "start": 148961,
+    "end": 152765,
+    "text": "So when you create it, you must have the same name as you then specify here.",
+    "zh": "因此，當您建立它時，您必須具有與此處指定的名稱相同的名稱。"
+  },
+  {
+    "start": 153118,
+    "end": 154113,
+    "text": "Otherwise, it will fail.",
+    "zh": "否則就會失敗。"
+  },
+  {
+    "start": 154161,
+    "end": 156023,
+    "text": "So you see where I'm getting at.",
+    "zh": "所以你明白我的意思了。"
+  },
+  {
+    "start": 156103,
+    "end": 158975,
+    "text": "There are things here that you can mess up.",
+    "zh": "這裡有些事情你可能會搞砸。"
+  },
+  {
+    "start": 159056,
+    "end": 163742,
+    "text": "And it's also annoying that you have to do this manually, especially now in a world where",
+    "zh": "而且你必須手動執行此操作也很煩人，尤其是在現在的世界中"
+  },
+  {
+    "start": 163806,
+    "end": 165716,
+    "text": "we use AI agents for a lot of work.",
+    "zh": "我們使用人工智慧代理來完成很多工作。"
+  },
+  {
+    "start": 165956,
+    "end": 167786,
+    "text": "That's the kind of problem Alchemy solves.",
+    "zh": "這就是 Alchemy 解決的問題。"
+  },
+  {
+    "start": 168155,
+    "end": 170881,
+    "text": "It's also not the first package to solve this problem.",
+    "zh": "它也不是第一個解決這個問題的包。"
+  },
+  {
+    "start": 170945,
+    "end": 173783,
+    "text": "There are others like Terraform, Pulumi, and so on.",
+    "zh": "還有其他的，如 Terraform、Pulumi 等。"
+  },
+  {
+    "start": 174215,
+    "end": 175161,
+    "text": "But Alchemy is amazing.",
+    "zh": "但煉金術是驚人的。"
+  },
+  {
+    "start": 175257,
+    "end": 175706,
+    "text": "You'll see why.",
+    "zh": "你就會明白為什麼。"
+  },
+  {
+    "start": 176395,
+    "end": 178527,
+    "text": "Because Alchemy is just a TypeScript program.",
+    "zh": "因為 Alchemy 只是一個 TypeScript 程式。"
+  },
+  {
+    "start": 178800,
+    "end": 181429,
+    "text": "Or if you use Alchemy, you're just writing TypeScript.",
+    "zh": "或者，如果您使用 Alchemy，那麼您只是在編寫 TypeScript。"
+  },
+  {
+    "start": 181782,
+    "end": 185020,
+    "text": "Specifically, you're writing TypeScript with Effect.",
+    "zh": "具體來說，您正在使用 Effect 編寫 TypeScript。"
+  },
+  {
+    "start": 185356,
+    "end": 187328,
+    "text": "Again, I talked about Effect in another video.",
+    "zh": "我在另一個視頻中再次談到了效果。"
+  },
+  {
+    "start": 187392,
+    "end": 191832,
+    "text": "It's a TypeScript library that gives you a certain way of writing your programs, certain",
+    "zh": "它是一個 TypeScript 函式庫，為您提供編寫程式的特定方式，某些"
+  },
+  {
+    "start": 191945,
+    "end": 196513,
+    "text": "rules and guidelines to follow, which is really great if you're working with AI agents",
+    "zh": "要遵循的規則和指南，如果您與人工智慧代理一起工作，這真的很棒"
+  },
+  {
+    "start": 196513,
+    "end": 201869,
+    "text": "because at least right now, if you have some rules and some guidelines for those agents,",
+    "zh": "因為至少現在，如果你對這些特工有一些規則和指導方針，"
+  },
+  {
+    "start": 202447,
+    "end": 206430,
+    "text": "the code they generate tends to be a bit better in my experience.",
+    "zh": "根據我的經驗，他們產生的程式碼往往會更好一些。"
+  },
+  {
+    "start": 206623,
+    "end": 212324,
+    "text": "So when you have installed that in your project, you can and you must or should create",
+    "zh": "因此，當您在專案中安裝了它後，您可以而且必須或應該創建"
+  },
+  {
+    "start": 212324,
+    "end": 213962,
+    "text": "such an alchemy.run.ts file.",
+    "zh": "這樣的 alchemy.run.ts 檔案。"
+  },
+  {
+    "start": 214412,
+    "end": 217945,
+    "text": "And in there you create your Alchemy stack.",
+    "zh": "並在其中創建您的 Alchemy 堆疊。"
+  },
+  {
+    "start": 218186,
+    "end": 219744,
+    "text": "And you can also have multiple stacks.",
+    "zh": "而且你還可以有多個堆疊。"
+  },
+  {
+    "start": 219792,
+    "end": 220691,
+    "text": "Now what is a stack?",
+    "zh": "現在什麼是堆疊？"
+  },
+  {
+    "start": 220996,
+    "end": 225108,
+    "text": "A stack is just a collection of resources that belong together.",
+    "zh": "堆疊只是屬於在一起的資源的集合。"
+  },
+  {
+    "start": 225172,
+    "end": 226553,
+    "text": "That's the idea of a stack.",
+    "zh": "這就是堆疊的想法。"
+  },
+  {
+    "start": 226842,
+    "end": 231500,
+    "text": "So one application that combines a bunch of different things could be one stack.",
+    "zh": "因此，一個組合了一堆不同事物的應用程式可能是一個堆疊。"
+  },
+  {
+    "start": 232143,
+    "end": 234986,
+    "text": "Now that stack has a name which is mostly for you.",
+    "zh": "現在該堆疊有了一個主要適合您的名稱。"
+  },
+  {
+    "start": 235693,
+    "end": 240512,
+    "text": "Then you define the provider because Alchemy does not just support Cloudflare, that's",
+    "zh": "然後定義提供者，因為 Alchemy 不僅支援 Cloudflare，"
+  },
+  {
+    "start": 240512,
+    "end": 245090,
+    "text": "amazing, it supports lots of providers and new ones are added basically every day.",
+    "zh": "令人驚訝的是，它支援許多提供者，基本上每天都會添加新的提供者。"
+  },
+  {
+    "start": 245491,
+    "end": 250149,
+    "text": "You can use it with Cloudflare, you can use it with AWS, with Hetzner, Fly, you see it",
+    "zh": "你可以將它與 Cloudflare 一起使用，你可以將它與 AWS 一起使用，與 Hetzner、Fly 一起使用，你看到了"
+  },
+  {
+    "start": 250149,
+    "end": 255482,
+    "text": "here and if you visit the website alchemy.run chances are high that there are many new",
+    "zh": "在這裡，如果您訪問網站 alchemy.run，很可能會發現許多新內容"
+  },
+  {
+    "start": 256252,
+    "end": 257390,
+    "text": "providers you can use.",
+    "zh": "您可以使用的提供者。"
+  },
+  {
+    "start": 257455,
+    "end": 260709,
+    "text": "It's also not just about hosting or about running your code.",
+    "zh": "它也不僅僅是關於託管或運行程式碼。"
+  },
+  {
+    "start": 261061,
+    "end": 263562,
+    "text": "There also are database providers.",
+    "zh": "還有資料庫提供者。"
+  },
+  {
+    "start": 263626,
+    "end": 267986,
+    "text": "So if you have a database in the cloud and you don't want to use the database offering",
+    "zh": "因此，如果您在雲端中擁有資料庫並且不想使用該資料庫產品"
+  },
+  {
+    "start": 268034,
+    "end": 274447,
+    "text": "of AWS or so, for example, and it has some utility functionality for even defining CLI",
+    "zh": "例如，AWS 等，它具有一些實用功能，甚至可以定義 CLI"
+  },
+  {
+    "start": 274447,
+    "end": 278727,
+    "text": "commands, Docker containers, and much, much more.",
+    "zh": "命令、Docker 容器等等。"
+  },
+  {
+    "start": 279256,
+    "end": 285956,
+    "text": "The idea behind Alchemy is that it is the library you need for defining everything",
+    "zh": "Alchemy 背後的想法是，它是定義一切所需的函式庫"
+  },
+  {
+    "start": 286213,
+    "end": 287639,
+    "text": "around your main application.",
+    "zh": "圍繞您的主要應用程式。"
+  },
+  {
+    "start": 288297,
+    "end": 292487,
+    "text": "Which mostly is the infrastructure where it runs, but potentially is more than that.",
+    "zh": "其中主要是它運作的基礎設施，但可能不只這些。"
+  },
+  {
+    "start": 293032,
+    "end": 298265,
+    "text": "So you have this stack, you define which provider you want, could be AWS, here it's Cloudflare.",
+    "zh": "所以你有了這個堆疊，你可以定義你想要的供應商，可以是 AWS，這裡是 Cloudflare。"
+  },
+  {
+    "start": 298811,
+    "end": 304493,
+    "text": "You then define a state, which is basically where Alchemy will store information about",
+    "zh": "然後，您定義一個狀態，這基本上是 Alchemy 儲存以下資訊的地方"
+  },
+  {
+    "start": 304605,
+    "end": 306322,
+    "text": "what was deployed before.",
+    "zh": "之前部署了什麼。"
+  },
+  {
+    "start": 306515,
+    "end": 313192,
+    "text": "Because the idea is that when you use Alchemy, if you deploy this, you deploy it via",
+    "zh": "因為這個想法是，當你使用 Alchemy 時，如果你部署它，你可以透過"
+  },
+  {
+    "start": 313192,
+    "end": 317700,
+    "text": "a CLI command and Alchemy will check What was deployed in the past?",
+    "zh": "CLI 指令和 Alchemy 將檢查過去部署了什麼？"
+  },
+  {
+    "start": 318149,
+    "end": 319495,
+    "text": "What was changed in the code?",
+    "zh": "程式碼中發生了什麼變化？"
+  },
+  {
+    "start": 319848,
+    "end": 321964,
+    "text": "Which changes do I need to apply?",
+    "zh": "我需要應用哪些變更？"
+  },
+  {
+    "start": 322413,
+    "end": 327862,
+    "text": "The first time you deploy, that means it will have to deploy everything, but the next",
+    "zh": "第一次部署時，這意味著必須部署所有內容，但下一次部署"
+  },
+  {
+    "start": 327862,
+    "end": 333600,
+    "text": "times thereafter, it will only make updates to the deployed resources if that suffices.",
+    "zh": "此後，它只會在足夠的情況下對已部署的資源進行更新。"
+  },
+  {
+    "start": 334434,
+    "end": 335604,
+    "text": "And that's the really nice thing.",
+    "zh": "這真是一件好事。"
+  },
+  {
+    "start": 335732,
+    "end": 338441,
+    "text": "Example, you don't need to do that manually in the dashboard.",
+    "zh": "例如，您不需要在儀表板中手動執行此操作。"
+  },
+  {
+    "start": 338745,
+    "end": 340829,
+    "text": "Instead, Alchemy does it for you.",
+    "zh": "相反，Alchemy 會為您做到這一點。"
+  },
+  {
+    "start": 341070,
+    "end": 346263,
+    "text": "And again, that's the same concept you may know from other infrastructure as code providers.",
+    "zh": "同樣，這與您可能從其他基礎設施（如程式碼提供者）中了解到的概念相同。"
+  },
+  {
+    "start": 346375,
+    "end": 348892,
+    "text": "So what's the kicker for Alchemy then?",
+    "zh": "那麼煉金術的關鍵是什麼呢？"
+  },
+  {
+    "start": 349822,
+    "end": 355416,
+    "text": "Well, what's nice is for one that it works with so many providers, but what I like a",
+    "zh": "嗯，好的一點是它可以與如此多的提供者合作，但我喜歡的是"
+  },
+  {
+    "start": 355416,
+    "end": 361732,
+    "text": "lot is that it embraces Effect, which again forces agents to write this code correctly.",
+    "zh": "重要的是它包含了 Effect，這再次迫使智能體正確編寫這段程式碼。"
+  },
+  {
+    "start": 361989,
+    "end": 368016,
+    "text": "And it does not just do that, but it also blends infrastructure with your application",
+    "zh": "它不僅做到了這一點，而且還將基礎設施與您的應用程式融合在一起"
+  },
+  {
+    "start": 368080,
+    "end": 368369,
+    "text": "logic.",
+    "zh": "邏輯。"
+  },
+  {
+    "start": 368417,
+    "end": 369314,
+    "text": "And you can see it here.",
+    "zh": "你可以在這裡看到它。"
+  },
+  {
+    "start": 370084,
+    "end": 375278,
+    "text": "I got my worker code here in worker.ts and it's no longer in the shape I had when I did",
+    "zh": "我在worker.ts 中取得了我的工作程式碼，但它不再是我之前的狀態了"
+  },
+  {
+    "start": 375310,
+    "end": 376239,
+    "text": "not use Alchemy.",
+    "zh": "不使用煉金術。"
+  },
+  {
+    "start": 376432,
+    "end": 378723,
+    "text": "There it was just such an exported object.",
+    "zh": "那裡就是這樣一個導出的物件。"
+  },
+  {
+    "start": 379139,
+    "end": 385612,
+    "text": "With Alchemy, my worker is a Cloudflare worker thing which I export coming from",
+    "zh": "對於 Alchemy，我的工作人員是 Cloudflare 工作人員，我從以下位置匯出該工作人員"
+  },
+  {
+    "start": 385949,
+    "end": 386333,
+    "text": "Alchemy.",
+    "zh": "煉金術。"
+  },
+  {
+    "start": 387087,
+    "end": 392903,
+    "text": "And that thing here defines a worker and most importantly, it defines the main code as",
+    "zh": "這裡的東西定義了一個工人，最重要的是，它將主要代碼定義為"
+  },
+  {
+    "start": 393255,
+    "end": 399552,
+    "text": "an effect using the Effect library, the code that should run when that worker is activated.",
+    "zh": "使用 Effect 函式庫的效果，即啟動該工作程序時應執行的程式碼。"
+  },
+  {
+    "start": 400385,
+    "end": 403958,
+    "text": "So when a request reaches that worker, for example, in this case, it'll send back some",
+    "zh": "因此，當請求到達該工作人員時，例如在本例中，它會被發回一些"
+  },
+  {
+    "start": 404006,
+    "end": 404807,
+    "text": "HTML code.",
+    "zh": "HTML 程式碼。"
+  },
+  {
+    "start": 405417,
+    "end": 406732,
+    "text": "Using Effect.",
+    "zh": "使用效果。"
+  },
+  {
+    "start": 407759,
+    "end": 409011,
+    "text": "That is what it does.",
+    "zh": "這就是它的作用。"
+  },
+  {
+    "start": 409107,
+    "end": 410664,
+    "text": "Now, that's in the worker.ts file.",
+    "zh": "現在，它位於worker.ts 檔案中。"
+  },
+  {
+    "start": 410808,
+    "end": 413696,
+    "text": "In alchemy.run, I'm importing that worker.",
+    "zh": "在 alchemy.run 中，我正在匯入該工作人員。"
+  },
+  {
+    "start": 414001,
+    "end": 416296,
+    "text": "Here it has name website, but that could be anything.",
+    "zh": "這裡它有名稱網站，但可以是任何東西。"
+  },
+  {
+    "start": 416825,
+    "end": 421896,
+    "text": "And then I yield it here as a dependency and Alchemy will automatically inject it so",
+    "zh": "然後我在這裡將它作為依賴項生成，Alchemy 會自動注入它，這樣"
+  },
+  {
+    "start": 421896,
+    "end": 423340,
+    "text": "that it's available in this function.",
+    "zh": "它可以在這個函數中使用。"
+  },
+  {
+    "start": 423645,
+    "end": 428122,
+    "text": "And then I return it like this, pointing at the website URL.",
+    "zh": "然後我像這樣返回它，指向網站 URL。"
+  },
+  {
+    "start": 428635,
+    "end": 429711,
+    "text": "It's just some internals.",
+    "zh": "這只是一些內部情況。"
+  },
+  {
+    "start": 429823,
+    "end": 434651,
+    "text": "In the end, this links the worker code to this stack here.",
+    "zh": "最後，這將工作程式碼連結到此處的該堆疊。"
+  },
+  {
+    "start": 435276,
+    "end": 437424,
+    "text": "And that's the really amazing part.",
+    "zh": "這才是真正令人驚奇的部分。"
+  },
+  {
+    "start": 437600,
+    "end": 443756,
+    "text": "Your application code and your infrastructure code, they live side by side and both use",
+    "zh": "您的應用程式程式碼和基礎設施代碼，它們並存並且都使用"
+  },
+  {
+    "start": 443772,
+    "end": 444942,
+    "text": "and leverage Effect.",
+    "zh": "和槓桿效應。"
+  },
+  {
+    "start": 445135,
+    "end": 449944,
+    "text": "Hence, you get the advantage of the increased type safety Effect gives you, of the extra",
+    "zh": "因此，您可以獲得 Effect 為您提供的增強類型的安全性以及額外的優勢"
+  },
+  {
+    "start": 449944,
+    "end": 452444,
+    "text": "guardrails it gives you for your agent.",
+    "zh": "它為您的代理提供了護欄。"
+  },
+  {
+    "start": 452893,
+    "end": 459305,
+    "text": "And as a developer, no matter if you're using AI agents or not, you have the advantage,",
+    "zh": "身為開發者，無論你是否使用人工智慧代理，你都有優勢，"
+  },
+  {
+    "start": 459385,
+    "end": 463217,
+    "text": "at least for me it's an advantage, that your business logic and the infrastructure is",
+    "zh": "至少對我來說這是一個優勢，你的業務邏輯和基礎設施是"
+  },
+  {
+    "start": 463649,
+    "end": 464675,
+    "text": "blended into each other.",
+    "zh": "相互融合。"
+  },
+  {
+    "start": 464996,
+    "end": 468234,
+    "text": "And for example, here you can't mess up names.",
+    "zh": "例如，在這裡你不能搞亂名字。"
+  },
+  {
+    "start": 468314,
+    "end": 474181,
+    "text": "If I move on to the other example with the bucket, you will see that in alchemy.run now",
+    "zh": "如果我繼續使用桶的另一個範例，您現在將在 alchemy.run 中看到它"
+  },
+  {
+    "start": 474309,
+    "end": 476073,
+    "text": "it's no longer just the website worker.",
+    "zh": "它不再只是網站工作人員。"
+  },
+  {
+    "start": 476137,
+    "end": 480128,
+    "text": "Instead, there also is a bucket which I'm importing from that worker file too.",
+    "zh": "相反，我也從該工作文件匯入一個儲存桶。"
+  },
+  {
+    "start": 480561,
+    "end": 485066,
+    "text": "Because in worker.ts I have my worker, but I also have the documents bucket.",
+    "zh": "因為在worker.ts中我有我的worker，但我也有文檔儲存桶。"
+  },
+  {
+    "start": 485611,
+    "end": 490869,
+    "text": "And this, once everything is deployed, will create the bucket on Cloudflare in this case.",
+    "zh": "在本例中，一旦部署了所有內容，就會在 Cloudflare 上建立儲存桶。"
+  },
+  {
+    "start": 491205,
+    "end": 496111,
+    "text": "So no need to manually create it with another CLI command or anything like this.",
+    "zh": "因此無需使用其他 CLI 命令或類似命令手動建立它。"
+  },
+  {
+    "start": 496656,
+    "end": 501481,
+    "text": "And yet it is deployed automatically and they're linked together because it's just TypeScript",
+    "zh": "然而它是自動部署的，並且它們連結在一起，因為它只是 TypeScript"
+  },
+  {
+    "start": 501481,
+    "end": 507300,
+    "text": "code where I use the documents bucket in my worker and Alchemy understands this relation,",
+    "zh": "我在工作人員中使用文件儲存桶的程式碼，並且 Alchemy 理解這種關係，"
+  },
+  {
+    "start": 507396,
+    "end": 512189,
+    "text": "makes sure that we are using the right references behind the scenes.",
+    "zh": "確保我們在幕後使用正確的參考。"
+  },
+  {
+    "start": 512638,
+    "end": 518152,
+    "text": "So the references you had to manually set up when not using Alchemy, where you made it",
+    "zh": "因此，在不使用 Alchemy 時，您必須手動設定引用，也就是您在哪裡建立的"
+  },
+  {
+    "start": 518152,
+    "end": 523298,
+    "text": "very clear which bucket with which name should be exposed to the worker, that is no longer",
+    "zh": "非常清楚應該向工作人員公開哪個儲存桶的名稱，這不再是"
+  },
+  {
+    "start": 523298,
+    "end": 524933,
+    "text": "needed when using Alchemy.",
+    "zh": "使用煉金術時需要。"
+  },
+  {
+    "start": 525510,
+    "end": 530628,
+    "text": "And then again, you can blend your business logic for a file upload service here with",
+    "zh": "然後，您可以將文件上傳服務的業務邏輯與"
+  },
+  {
+    "start": 530885,
+    "end": 531962,
+    "text": "the infrastructure code.",
+    "zh": "基礎設施代碼。"
+  },
+  {
+    "start": 532428,
+    "end": 535657,
+    "text": "And I like that a lot and I build all my projects with that.",
+    "zh": "我非常喜歡這一點，我用它來建立我所有的項目。"
+  },
+  {
+    "start": 536509,
+    "end": 542020,
+    "text": "And speaking of building projects with that, I have a 2-week program coming up.",
+    "zh": "說到以此建構項目，我即將進行為期兩週的計畫。"
+  },
+  {
+    "start": 542229,
+    "end": 547322,
+    "text": "Enrollments are not open yet, but you can sign up to be notified when they do open up.",
+    "zh": "註冊尚未開放，但您可以註冊以便在開放時收到通知。"
+  },
+  {
+    "start": 547692,
+    "end": 553091,
+    "text": "And in that program, I share how I build applications with Effect, with Alchemy, with",
+    "zh": "在該計劃中，我分享瞭如何使用 Effect、Alchemy 和"
+  },
+  {
+    "start": 553219,
+    "end": 555899,
+    "text": "Cloudflare, but most importantly, with AI agents.",
+    "zh": "Cloudflare，但最重要的是，具有 AI 代理程式。"
+  },
+  {
+    "start": 555947,
+    "end": 562116,
+    "text": "I share how I approach this right from the start regarding research, planning, um, and",
+    "zh": "我分享我如何從一開始就研究、規劃、嗯，以及"
+  },
+  {
+    "start": 562132,
+    "end": 567404,
+    "text": "then of course instructing agents, orchestrating agents step by step until we build and",
+    "zh": "然後當然是逐步指導代理、編排代理，直到我們建立並"
+  },
+  {
+    "start": 567484,
+    "end": 570288,
+    "text": "deploy a real project in that 2-week program.",
+    "zh": "在為期兩週的計劃中部署一個真實的專案。"
+  },
+  {
+    "start": 570929,
+    "end": 574727,
+    "text": "Uh, more details are on that page here, which you of course also find linked below the",
+    "zh": "呃，更多詳細資訊在該頁面上，您當然也可以在下面找到鏈接"
+  },
+  {
+    "start": 574727,
+    "end": 575047,
+    "text": "video.",
+    "zh": "影片."
+  },
+  {
+    "start": 575111,
+    "end": 579694,
+    "text": "And if that sounds interesting and you maybe also want to see in action how I use Alchemy",
+    "zh": "如果這聽起來很有趣，並且您可能還想看看我如何使用 Alchemy"
+  },
+  {
+    "start": 579742,
+    "end": 584154,
+    "text": "on more than just a dummy project here, that program may be interesting for you.",
+    "zh": "這裡不僅僅是一個虛擬項目，該程式可能對您來說很有趣。"
+  },
+  {
+    "start": 584957,
+    "end": 589149,
+    "text": "Besides that, what may also be interesting for you is I have open source projects like",
+    "zh": "除此之外，您可能還感興趣的是我有像這樣的開源項目"
+  },
+  {
+    "start": 589149,
+    "end": 594866,
+    "text": "this emailer GitHub repository, which is in the end an email sending service, a mass",
+    "zh": "這個電子郵件程式 GitHub 儲存庫，它最終是一個電子郵件發送服務，一個品質"
+  },
+  {
+    "start": 594914,
+    "end": 597275,
+    "text": "email sending service, which you can deploy yourself.",
+    "zh": "電子郵件發送服務，您可以自行部署。"
+  },
+  {
+    "start": 597340,
+    "end": 598368,
+    "text": "It's free, it's open source.",
+    "zh": "它是免費的，它是開源的。"
+  },
+  {
+    "start": 599010,
+    "end": 603892,
+    "text": "I'm not even selling it in any way right now, which you can use to send out marketing",
+    "zh": "我現在甚至不會以任何方式出售它，你可以用它來發送行銷訊息"
+  },
+  {
+    "start": 603925,
+    "end": 607474,
+    "text": "email if you don't wanna pay for services that do that for you.",
+    "zh": "如果您不想為為您提供服務的服務付費，請發送電子郵件。"
+  },
+  {
+    "start": 607602,
+    "end": 608871,
+    "text": "You need an AWS account.",
+    "zh": "您需要一個 AWS 帳戶。"
+  },
+  {
+    "start": 609000,
+    "end": 613252,
+    "text": "So here I'm not using Cloudflare because when I'm recording this, they don't have a mass",
+    "zh": "所以在這裡我沒有使用 Cloudflare 因為當我錄製這個時，他們沒有質量"
+  },
+  {
+    "start": 613316,
+    "end": 614823,
+    "text": "marketing email sending service.",
+    "zh": "行銷電子郵件發送服務。"
+  },
+  {
+    "start": 615624,
+    "end": 619712,
+    "text": "I'm using that, but you will see that if you dive into the code there, it's the same",
+    "zh": "我正在使用它，但是如果你深入研究那裡的程式碼，你會發現它是相同的"
+  },
+  {
+    "start": 619728,
+    "end": 624329,
+    "text": "logic just with way more services, AWS services here.",
+    "zh": "邏輯只是更多的服務，這裡是AWS服務。"
+  },
+  {
+    "start": 624842,
+    "end": 630597,
+    "text": "But in this code, you will see that I'm setting up SNS subscriptions, CloudWatch alarms.",
+    "zh": "但在此程式碼中，您將看到我正在設定 SNS 訂閱、CloudWatch 警報。"
+  },
+  {
+    "start": 631094,
+    "end": 636657,
+    "text": "You will see that if you dive deeper into this application, into the backend source,",
+    "zh": "你會發現，如果你深入研究這個應用程序，研究後端原始碼，"
+  },
+  {
+    "start": 637587,
+    "end": 644234,
+    "text": "There you will have the dispatcher here, which is a Lambda function, which is the",
+    "zh": "在這裡您將看到調度程序，它是一個 Lambda 函數，它是"
+  },
+  {
+    "start": 644267,
+    "end": 650818,
+    "text": "worker equivalent of AWS in the end, which is responsible for dispatching messages, getting",
+    "zh": "最後worker相當於AWS，負責調度訊息，獲取"
+  },
+  {
+    "start": 650850,
+    "end": 652809,
+    "text": "them from a queue and sending them out.",
+    "zh": "將它們從隊列中取出並將它們發送出去。"
+  },
+  {
+    "start": 652857,
+    "end": 659665,
+    "text": "And here you can see on a bigger project how Alchemy allows you to blend business",
+    "zh": "在這裡，您可以在一個更大的專案中看到 Alchemy 如何幫助您混合業務"
+  },
+  {
+    "start": 659745,
+    "end": 661142,
+    "text": "logic with infrastructure.",
+    "zh": "邏輯與基礎設施。"
+  },
+  {
+    "start": 662956,
+    "end": 669255,
+    "text": "And I think the type safety, the great usability for AI agents and the general idea",
+    "zh": "我認為類型安全、人工智慧代理的巨大可用性以及整體思路"
+  },
+  {
+    "start": 669848,
+    "end": 671162,
+    "text": "just is amazing.",
+    "zh": "真是太棒了。"
+  },
+  {
+    "start": 671306,
+    "end": 673021,
+    "text": "Infrastructure as code is not new.",
+    "zh": "基礎設施即程式碼並不是什麼新鮮事。"
+  },
+  {
+    "start": 673149,
+    "end": 673919,
+    "text": "No, it isn't.",
+    "zh": "不，不是。"
+  },
+  {
+    "start": 674271,
+    "end": 677412,
+    "text": "But Alchemy executes it perfectly for me at least.",
+    "zh": "但 Alchemy 至少對我來說完美地執行了它。"
+  },
+  {
+    "start": 677573,
+    "end": 683134,
+    "text": "So if you're building a project and you're looking to not create resources manually in",
+    "zh": "因此，如果您正在建立一個專案並且您希望不手動建立資源"
+  },
+  {
+    "start": 683166,
+    "end": 686981,
+    "text": "some dashboard and instead have an easy way, take a look at Alchemy.",
+    "zh": "一些儀表板，有一個簡單的方法，看看 Alchemy。"
+  },
+  {
+    "start": 687237,
+    "end": 691837,
+    "text": "And if you want to learn more and see more about it, maybe that program which I mentioned",
+    "zh": "如果您想了解更多信息並了解更多信息，也許我提到的那個程序"
+  },
+  {
+    "start": 691837,
+    "end": 692863,
+    "text": "is interesting to you too.",
+    "zh": "你也很有興趣。"
+  }
+]
