@@ -17,6 +17,7 @@
   }
   *{box-sizing:border-box}
   html,body{margin:0;padding:0}
+  [hidden]{display:none !important}
   body{
     background:var(--bg); color:var(--text); font-family:var(--font);
     font-size:14px; line-height:1.5; -webkit-font-smoothing:antialiased;
@@ -30,13 +31,22 @@
     display:flex; align-items:center; gap:16px; padding:0 16px;
     background:var(--bg); border-bottom:1px solid var(--border);
   }
-  .brand{display:flex;align-items:center;gap:8px;font-weight:700;font-size:17px;letter-spacing:-.2px;white-space:nowrap}
+  .brand{
+    display:flex;align-items:center;gap:8px;font-weight:700;font-size:17px;
+    letter-spacing:-.2px;white-space:nowrap;color:inherit;text-decoration:none;
+  }
   .brand .mark{
     width:28px;height:20px;border-radius:5px;background:#ff0033;
     display:grid;place-items:center;flex:none;
   }
   .brand .mark svg{width:11px;height:11px;fill:#fff}
   .brand small{font-weight:500;color:var(--muted);font-size:11px;letter-spacing:0}
+  .back{
+    display:inline-flex;align-items:center;gap:6px;height:34px;padding:0 13px;
+    border-radius:999px;background:var(--bg-alt);border:1px solid var(--border);
+    font-size:13px;font-weight:600;color:var(--muted);text-decoration:none;white-space:nowrap;
+  }
+  .back:hover{background:var(--bg-hover);color:var(--text)}
   .search{
     flex:1; max-width:520px; display:flex; align-items:center; gap:8px;
     border:1px solid var(--border-strong); border-radius:999px; padding:0 14px; height:38px;
@@ -52,6 +62,111 @@
     font-size:12px;color:var(--muted);white-space:nowrap;
   }
   .chip b{color:var(--text);font-weight:600}
+  @media (max-width:900px){ .chip{display:none} }
+
+  /* ---------- channel home ---------- */
+  .home{max-width:1400px;margin:0 auto;padding:0 24px 64px}
+  .banner{
+    aspect-ratio:6.2/1; max-height:190px; border-radius:14px; overflow:hidden;
+    background:linear-gradient(135deg,#5b2ea6,#9a6ee0); margin-top:20px;
+  }
+  .banner img{width:100%;height:100%;object-fit:cover;display:block}
+  .chan-head{display:flex;align-items:flex-start;gap:22px;padding:20px 0 4px}
+  .chan-avatar{
+    width:128px;height:128px;border-radius:50%;flex:none;object-fit:cover;
+    background:#ececec;box-shadow:0 0 0 1px var(--border);
+  }
+  .chan-info{min-width:0;flex:1}
+  .chan-info h1{
+    font-size:26px;font-weight:700;margin:0 0 6px;line-height:1.25;
+    display:flex;align-items:center;gap:7px;
+  }
+  .verified{
+    width:15px;height:15px;flex:none;fill:#606060;
+  }
+  .chan-meta{color:var(--muted);font-size:13px}
+  .chan-desc{
+    color:var(--muted);font-size:13px;margin:9px 0 0;line-height:1.6;
+    white-space:pre-line;display:-webkit-box;-webkit-line-clamp:2;
+    -webkit-box-orient:vertical;overflow:hidden;
+  }
+  .chan-desc.open{-webkit-line-clamp:unset}
+  .more{color:var(--text);font-weight:600;font-size:13px;margin-top:4px}
+  .chan-actions{display:flex;gap:10px;flex:none;align-items:center}
+  .subscribe{
+    height:38px;padding:0 18px;border-radius:999px;
+    background:var(--text);color:#fff;font-weight:600;font-size:14px;
+  }
+  .subscribe.on{background:var(--bg-alt);color:var(--text);border:1px solid var(--border)}
+  .ghost-btn{
+    height:38px;padding:0 16px;border-radius:999px;background:var(--bg-alt);
+    border:1px solid var(--border);font-weight:600;font-size:14px;
+  }
+  .ghost-btn:hover{background:var(--bg-hover)}
+  @media (max-width:760px){
+    .chan-head{flex-wrap:wrap}
+    .chan-avatar{width:88px;height:88px}
+    .chan-info h1{font-size:21px}
+  }
+
+  .tabs{
+    display:flex;gap:26px;border-bottom:1px solid var(--border);
+    margin:16px 0 22px;overflow-x:auto;scrollbar-width:none;
+  }
+  .tabs::-webkit-scrollbar{display:none}
+  .tab{
+    padding:11px 2px;font-size:14px;font-weight:600;color:var(--muted);
+    border-bottom:2px solid transparent;white-space:nowrap;
+  }
+  .tab:hover{color:var(--text)}
+  .tab.active{color:var(--text);border-bottom-color:var(--text)}
+
+  .sec-head{display:flex;align-items:center;gap:12px;margin:0 0 16px;flex-wrap:wrap}
+  .sec-head h2{font-size:18px;font-weight:700;margin:0}
+  .sec-head .count{color:var(--muted);font-size:12px}
+  .sec-head .sortchips{margin-left:auto}
+  .sortchips{display:flex;gap:8px}
+  .sortchip{
+    height:32px;padding:0 15px;border-radius:999px;background:var(--bg-alt);
+    border:1px solid var(--border);font-size:13px;font-weight:600;color:var(--muted);
+  }
+  .sortchip:hover{background:var(--bg-hover)}
+  .sortchip.active{background:var(--text);color:#fff;border-color:var(--text)}
+
+  .featured{
+    display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);gap:24px;
+    padding:18px;border:1px solid var(--border);border-radius:14px;
+    margin-bottom:28px;width:100%;text-align:left;
+  }
+  .featured:hover{border-color:var(--border-strong);background:#fcfcfc}
+  .featured .thumb{position:relative;aspect-ratio:16/9;border-radius:10px;overflow:hidden;background:#e9e9e9}
+  .featured .finfo{grid-column:2;min-width:0}
+  .featured .ftitle{display:block;font-size:19px;font-weight:700;margin:0 0 8px;line-height:1.35}
+  .featured .fmeta{display:block;color:var(--muted);font-size:13px;margin:0 0 10px}
+  .featured .fdesc{display:block;color:var(--muted);font-size:13px;line-height:1.7}
+  .featured .ftag{
+    display:inline-block;margin-bottom:10px;padding:3px 9px;border-radius:999px;
+    background:var(--accent-soft);color:var(--accent);font-size:11px;font-weight:700;
+  }
+  @media (max-width:900px){ .featured{grid-template-columns:minmax(0,1fr)} }
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:22px 16px}
+  .card{display:flex;flex-direction:column;text-align:left;padding:0;width:100%}
+  .card .thumb{position:relative;aspect-ratio:16/9;border-radius:10px;overflow:hidden;background:#e9e9e9}
+  .card .thumb img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .18s}
+  .card:hover .thumb img{transform:scale(1.02)}
+  .card .ct{
+    font-weight:600;font-size:14px;line-height:1.4;margin:10px 0 4px;
+    display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
+  }
+  .card:hover .ct{color:var(--accent)}
+  .card .cm{color:var(--muted);font-size:12px;line-height:1.55}
+  .dur{
+    position:absolute;right:5px;bottom:5px;background:rgba(0,0,0,.82);color:#fff;
+    font-size:11px;font-weight:600;padding:2px 5px;border-radius:4px;
+    font-variant-numeric:tabular-nums;
+  }
+  .empty-state{padding:40px;text-align:center;color:var(--muted);font-size:13px}
 
   /* ---------- layout ---------- */
   .layout{
@@ -92,16 +207,13 @@
   .meta .subline{color:var(--muted);font-size:13px;margin:-4px 0 14px}
   .channel-row{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
   .avatar{
-    width:40px;height:40px;border-radius:50%;flex:none;
+    width:40px;height:40px;border-radius:50%;flex:none;overflow:hidden;
     background:linear-gradient(135deg,#ff0033,#ff7a00);
     display:grid;place-items:center;color:#fff;font-weight:700;font-size:15px;
   }
+  .avatar img{width:100%;height:100%;object-fit:cover;display:block}
   .channel-name{font-weight:600}
   .channel-subs{color:var(--muted);font-size:12px}
-  .subscribe{
-    margin-left:4px;height:36px;padding:0 16px;border-radius:999px;
-    background:var(--text);color:#fff;font-weight:600;font-size:13px;
-  }
   .actions{margin-left:auto;display:flex;gap:8px;flex-wrap:wrap}
   .pill{
     display:inline-flex;align-items:center;gap:7px;height:36px;padding:0 14px;
@@ -172,10 +284,6 @@
     position:relative;aspect-ratio:16/9;border-radius:8px;overflow:hidden;background:#ddd;
   }
   .thumb img{width:100%;height:100%;object-fit:cover;display:block}
-  .thumb .dur{
-    position:absolute;right:4px;bottom:4px;background:rgba(0,0,0,.8);color:#fff;
-    font-size:11px;padding:1px 4px;border-radius:4px;font-variant-numeric:tabular-nums;
-  }
   .rel .info{min-width:0}
   .rel .rt{
     font-weight:600;font-size:13px;line-height:1.4;margin-bottom:4px;
@@ -202,13 +310,14 @@
 <body>
 
 <header class="topbar">
-  <div class="brand">
+  <a class="brand" href="#/">
     <span class="mark"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
     AcademindTube <small>雙語字幕預覽</small>
-  </div>
+  </a>
+  <a class="back" id="btnBack" href="#/" hidden>← 首頁</a>
   <label class="search">
     <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
-    <input id="q" type="search" placeholder="搜尋字幕文字（英文或中文）" autocomplete="off" />
+    <input id="q" type="search" placeholder="搜尋影片標題" autocomplete="off" />
   </label>
   <div class="spacer"></div>
   <span class="chip">視窗 <b id="chipWindow">1m</b></span>
@@ -216,7 +325,49 @@
   <span class="chip">字幕段數 <b id="chipCues">–</b></span>
 </header>
 
-<main class="layout">
+<!-- ======================= channel home ======================= -->
+<main class="home" id="homeView">
+  <div class="banner"><img id="chanBanner" alt="" /></div>
+
+  <div class="chan-head">
+    <img class="chan-avatar" id="chanAvatar" alt="" />
+    <div class="chan-info">
+      <h1 id="chanName">–</h1>
+      <div class="chan-meta" id="chanMeta">–</div>
+      <p class="chan-desc" id="chanDesc"></p>
+      <button class="more" id="btnMore" hidden>…更多</button>
+    </div>
+    <div class="chan-actions">
+      <button class="subscribe" id="btnSubscribe">訂閱</button>
+      <button class="ghost-btn">加入</button>
+    </div>
+  </div>
+
+  <nav class="tabs" id="tabs">
+    <button class="tab active" data-tab="home">首頁</button>
+    <button class="tab" data-tab="videos">影片</button>
+    <button class="tab" data-tab="shorts">Shorts</button>
+    <button class="tab" data-tab="live">直播</button>
+    <button class="tab" data-tab="playlists">播放清單</button>
+    <button class="tab" data-tab="community">社群</button>
+  </nav>
+
+  <button class="featured" id="featured" hidden></button>
+
+  <div class="sec-head">
+    <h2 id="gridTitle">最新上傳</h2>
+    <span class="count" id="gridCount"></span>
+    <div class="sortchips" id="sortChips" hidden>
+      <button class="sortchip active" data-sort="new">最新</button>
+      <button class="sortchip" data-sort="old">最早</button>
+    </div>
+  </div>
+  <div class="grid" id="grid"></div>
+  <div class="empty-state" id="gridEmpty" hidden></div>
+</main>
+
+<!-- ======================= watch ======================= -->
+<main class="layout" id="watchView" hidden>
   <section class="primary">
     <div class="player-wrap">
       <div id="player"></div>
@@ -233,12 +384,12 @@
       <h1 id="title">–</h1>
       <div class="subline" id="subline">–</div>
       <div class="channel-row">
-        <div class="avatar">A</div>
+        <div class="avatar" id="chAvatar"></div>
         <div>
-          <div class="channel-name">Academind</div>
-          <div class="channel-subs">YouTube 頻道 · 自動產製雙語字幕</div>
+          <div class="channel-name" id="chName">Academind</div>
+          <div class="channel-subs" id="chSubs">YouTube 頻道 · 自動產製雙語字幕</div>
         </div>
-        <button class="subscribe">訂閱</button>
+        <button class="subscribe" id="btnSubscribe2">訂閱</button>
         <div class="actions">
           <button class="pill" id="btnLike">
             <svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1z"/></svg>
@@ -309,38 +460,153 @@
   };
   const fmtDate = (d) => (d && d.length === 8)
     ? d.slice(0,4) + "-" + d.slice(4,6) + "-" + d.slice(6,8) : (d || "—");
+  const fmtCount = (n) => {
+    if (n == null) return null;
+    if (n >= 10000) return (n/10000).toFixed(1).replace(/\.0$/,"") + "萬";
+    return String(n);
+  };
   const toast = (msg) => {
     const t = $("toast"); t.textContent = msg; t.classList.add("show");
-    clearTimeout(toast._t); toast._t = setTimeout(() => t.classList.remove("show"), 1600);
+    clearTimeout(toast._t); toast._t = setTimeout(() => t.classList.remove("show"), 1800);
   };
+  const thumbHi = (id) => `https://i.ytimg.com/vi/${id}/hq720.jpg`;
+  const thumbLo = (id) => `https://i.ytimg.com/vi/${id}/mqdefault.jpg`;
 
   /* ---------------- state ---------------- */
-  const state = { v:0, cues:[], active:-1, query:"", follow:true, cc:true, capPx:20 };
-  let player = null, ytReady = false, apiFailed = false;
+  const state = {
+    view:"home", tab:"home", sort:"new",
+    v:0, cues:[], active:-1, query:"", follow:true, cc:true,
+    loadedId:null, userNav:false,
+  };
+  let player = null, ytReady = false, apiReady = false;
 
   const videos = DATA.videos || [];
+  const CH = DATA.channel || {};
 
   /* ---------------- header ---------------- */
   $("chipWindow").textContent = DATA.window || "—";
   $("chipVideos").textContent = videos.length;
   $("chipCues").textContent = videos.reduce((n,v) => n + v.cueCount, 0);
 
+  /* ---------------- channel identity ---------------- */
+  function renderChannel(){
+    const name = CH.name || "Academind";
+    $("chanName").innerHTML = esc(name) +
+      ' <svg class="verified" viewBox="0 0 24 24" aria-label="已驗證"><path d="M12 2l2.4 1.8 3-.3 1 2.9 2.6 1.6-1 2.9 1 2.9-2.6 1.6-1 2.9-3-.3L12 22l-2.4-1.8-3 .3-1-2.9L3 16l1-2.9L3 10.2l2.6-1.6 1-2.9 3 .3L12 2zm-1.2 13.3l5-5-1.3-1.3-3.7 3.7-1.8-1.8L7.7 12l3.1 3.3z"/></svg>';
+
+    const parts = [];
+    if (CH.handle) parts.push(CH.handle);
+    const subs = fmtCount(CH.follower_count);
+    if (subs) parts.push(subs + "位訂閱者");
+    parts.push((CH.indexed_count || videos.length) + " 部影片（已索引）");
+    $("chanMeta").textContent = parts.join(" · ");
+
+    if (CH.banner) $("chanBanner").src = CH.banner;
+    if (CH.avatar){
+      $("chanAvatar").src = CH.avatar;
+      $("chAvatar").innerHTML = `<img src="${esc(CH.avatar)}" alt="" />`;
+    } else {
+      $("chanAvatar").style.display = "none";
+      $("chAvatar").textContent = (name[0] || "A").toUpperCase();
+    }
+    $("chName").textContent = name;
+    $("chSubs").textContent = "YouTube 頻道 · 自動產製雙語字幕";
+
+    const desc = CH.description || "";
+    $("chanDesc").textContent = desc;
+    if (desc.length > 140){
+      $("btnMore").hidden = false;
+      $("btnMore").onclick = () => {
+        const open = $("chanDesc").classList.toggle("open");
+        $("btnMore").textContent = open ? "顯示較少" : "…更多";
+      };
+    }
+    document.title = name + " · 雙語字幕預覽";
+  }
+
+  /* ---------------- cards ---------------- */
+  function thumbHTML(v){
+    return `<span class="thumb">
+      <img src="${thumbHi(v.id)}" alt="" loading="lazy"
+           onerror="this.onerror=null;this.src='${thumbLo(v.id)}'" />
+      <span class="dur">${fmtClock(v.duration)}</span>
+    </span>`;
+  }
+
+  function cardHTML(v, i){
+    return `<button class="card" data-i="${i}">
+      ${thumbHTML(v)}
+      <span class="ct">${esc(v.title)}</span>
+      <span class="cm">${esc(CH.name || "Academind")}</span>
+      <span class="cm">${v.cueCount} 段雙語字幕 · ${fmtClock(v.duration)} · ${esc(fmtDate(v.date))}</span>
+    </button>`;
+  }
+
+  function featuredHTML(v, i){
+    return `<span class="thumb" style="grid-column:1">
+        <img src="${thumbHi(v.id)}" alt="" onerror="this.onerror=null;this.src='${thumbLo(v.id)}'" />
+        <span class="dur">${fmtClock(v.duration)}</span>
+      </span>
+      <span class="finfo">
+        <span class="ftag">最新影片</span>
+        <span class="ftitle">${esc(v.title)}</span>
+        <span class="fmeta">${v.cueCount} 段雙語字幕 · 片長 ${fmtClock(v.duration)} · 上傳於 ${esc(fmtDate(v.date))}</span>
+        <span class="fdesc">已產生英中雙語字幕（${v.cueCount} 段，翻譯狀態：${
+          v.issues ? v.issues + " 段待補" : "全部已翻譯"}）。點擊即可進入播放頁，字幕會隨影片同步疊加顯示。</span>
+      </span>`;
+  }
+
+  /* ---------------- home grid ---------------- */
+  function renderGrid(){
+    const q = state.query.trim().toLowerCase();
+    let items = videos.map((v, i) => ({ v, i }));
+    if (q) items = items.filter(o => o.v.title.toLowerCase().includes(q));
+    if (state.sort === "old") items = items.slice().reverse();
+
+    const total = items.length;
+    let featuredItem = null;
+    if (state.tab === "home" && !q && items.length){ featuredItem = items[0]; items = items.slice(1); }
+
+    $("featured").hidden = !featuredItem;
+    if (featuredItem){
+      $("featured").innerHTML = featuredHTML(featuredItem.v, featuredItem.i);
+      $("featured").onclick = () => go(featuredItem.i);
+    }
+
+    $("gridTitle").textContent = state.tab === "home" ? "最新上傳" : "所有影片";
+    $("sortChips").hidden = state.tab !== "videos";
+    $("gridCount").textContent = q
+      ? `符合「${state.query}」共 ${total} 部`
+      : `共 ${total} 部`;
+
+    if (!total){
+      $("grid").innerHTML = "";
+      $("gridEmpty").hidden = false;
+      $("gridEmpty").textContent = `找不到符合「${state.query}」的影片`;
+      return;
+    }
+    $("gridEmpty").hidden = true;
+    $("grid").innerHTML = items.map(o => cardHTML(o.v, o.i)).join("");
+    $("grid").querySelectorAll(".card").forEach(el => {
+      el.onclick = () => go(Number(el.dataset.i));
+    });
+  }
+
   /* ---------------- related list ---------------- */
   function renderRelated(){
     $("related").innerHTML = videos.map((v,i) => `
       <button class="rel${i===state.v?" playing":""}" data-i="${i}">
         <span class="thumb">
-          <img src="https://i.ytimg.com/vi/${esc(v.id)}/mqdefault.jpg" alt="" loading="lazy"
-               onerror="this.style.display='none'" />
+          <img src="${thumbLo(v.id)}" alt="" loading="lazy" onerror="this.style.display='none'" />
           <span class="dur">${fmtClock(v.duration)}</span>
         </span>
         <span class="info">
           <span class="rt">${esc(v.title)}</span>
-          <span class="rm">Academind<br />${esc(fmtDate(v.date))} · ${v.cueCount} 段字幕</span>
+          <span class="rm">${esc(CH.name || "Academind")}<br />${esc(fmtDate(v.date))} · ${v.cueCount} 段字幕</span>
         </span>
       </button>`).join("");
     $("related").querySelectorAll(".rel").forEach(el => {
-      el.onclick = () => switchVideo(Number(el.dataset.i));
+      el.onclick = () => go(Number(el.dataset.i));
     });
   }
 
@@ -355,7 +621,7 @@
     $("descStats").textContent = `${v.cueCount} 段雙語字幕 · ${fmtClock(v.duration)}`;
     $("descText").textContent =
       `此頁為 AcademindTube 字幕流程的本地預覽：影片音訊經 AssemblyAI 轉錄、逐句翻譯為繁體中文後，` +
-      `輸出成雙語 SRT，再由本頁疊在播放器上同步顯示。點右側相關影片可切換其他支。`;
+      `輸出成雙語 SRT，再由本頁疊在播放器上同步顯示。點右側相關影片或按「← 首頁」可切換其他支。`;
     const issues = v.issues || 0;
     $("descKv").innerHTML = `
       <span>影片 ID <b>${esc(v.id)}</b></span>
@@ -363,7 +629,7 @@
       <span>字幕檔 <b>${esc(fmtDate(v.date))}</b></span>
       <span>翻譯狀態 <b class="${issues ? "badge-warn" : "badge-ok"}">${
         issues ? issues + " 段待補" : "全部已翻譯"}</b></span>`;
-    document.title = v.title + " · AcademindTube 預覽";
+    document.title = v.title + " · " + (CH.name || "Academind") + " 預覽";
   }
 
   /* ---------------- transcript ---------------- */
@@ -446,35 +712,36 @@
   }
 
   /* ---------------- player ---------------- */
-  function loadVideo(i, autoplay){
-    state.v = i;
-    const v = videos[i];
-    if (!v) return;
-    state.cues = v.cues;
-    state.active = -1;
-    $("captions").hidden = true;
-    renderRelated(); renderMeta(); renderCues();
-    if (player && ytReady){
-      if (autoplay) player.loadVideoById(v.id); else player.cueVideoById(v.id);
-    }
-  }
-  function switchVideo(i){ loadVideo(i, true); }
-
-  window.onYouTubeIframeAPIReady = function(){
+  function ensurePlayer(){
+    if (player || !apiReady) return;
     player = new YT.Player("player", {
-      videoId: videos[0] ? videos[0].id : "",
+      videoId: videos[state.v] ? videos[state.v].id : "",
       playerVars: { rel:0, modestbranding:1, playsinline:1, cc_load_policy:0 },
       events: {
         onReady: function(){
           ytReady = true;
+          state.loadedId = videos[state.v] ? videos[state.v].id : null;
           $("fallback").classList.remove("show");
-          loadVideo(state.v, false);
+          syncPlayer(false);
           setInterval(tick, 120);
         },
         onError: function(){ $("fallback").classList.add("show"); }
       }
     });
-  };
+  }
+
+  function syncPlayer(autoplay){
+    const v = videos[state.v];
+    if (!v) return;
+    ensurePlayer();
+    if (!ytReady) return;
+    if (state.loadedId === v.id){
+      if (autoplay) player.playVideo();
+      return;
+    }
+    state.loadedId = v.id;
+    if (autoplay) player.loadVideoById(v.id); else player.cueVideoById(v.id);
+  }
 
   function findCue(t){
     const c = state.cues;
@@ -488,6 +755,7 @@
   }
 
   function tick(){
+    if (state.view !== "watch") return;
     if (!player || !ytReady || typeof player.getCurrentTime !== "function") return;
     const t = player.getCurrentTime();
     const i = findCue(t);
@@ -504,8 +772,97 @@
     }
   }
 
-  /* ---------------- controls ---------------- */
-  $("q").addEventListener("input", (e) => { state.query = e.target.value; renderCues(); });
+  /* ---------------- routing ---------------- */
+  function go(i, replace){
+    const v = videos[i];
+    if (!v) return;
+    state.userNav = true;
+    const h = "#/v/" + v.id;
+    if (location.hash === h){ showWatch(i); return; }
+    if (replace) location.replace(location.pathname + location.search + h);
+    else location.hash = h;
+  }
+
+  function showHome(){
+    if (state.view === "watch" && ytReady && player) player.pauseVideo();
+    state.view = "home";
+    $("homeView").hidden = false;
+    $("watchView").hidden = true;
+    $("btnBack").hidden = true;
+    if ($("q").placeholder !== "搜尋影片標題"){ $("q").placeholder = "搜尋影片標題"; }
+    document.title = (CH.name || "Academind") + " · 雙語字幕預覽";
+    renderGrid();
+  }
+
+  function showWatch(i){
+    const v = videos[i];
+    if (!v) return showHome();
+    const autoplay = !!state.userNav;
+    state.userNav = false;
+    state.view = "watch";
+    state.v = i;
+    state.cues = v.cues;
+    state.active = -1;
+
+    $("homeView").hidden = true;
+    $("watchView").hidden = false;
+    $("btnBack").hidden = false;
+    if ($("q").placeholder !== "搜尋字幕文字（英文或中文）"){
+      $("q").placeholder = "搜尋字幕文字（英文或中文）";
+    }
+    $("captions").hidden = true;
+
+    renderMeta(); renderCues(); renderRelated();
+    syncPlayer(autoplay);
+    window.scrollTo({ top:0 });
+  }
+
+  function route(){
+    const m = (location.hash || "").match(/^#\/v\/([\w-]+)/);
+    if (!m){ showHome(); return; }
+    const i = videos.findIndex(v => v.id === m[1]);
+    if (i < 0){ location.replace(location.pathname + location.search); showHome(); return; }
+    showWatch(i);
+  }
+
+  /* ---------------- home controls ---------------- */
+  $("tabs").addEventListener("click", (e) => {
+    const btn = e.target.closest(".tab");
+    if (!btn) return;
+    const tab = btn.dataset.tab;
+    if (tab !== "home" && tab !== "videos"){
+      toast("預覽版只收錄「影片」分頁");
+      return;
+    }
+    state.tab = tab;
+    $("tabs").querySelectorAll(".tab").forEach(t =>
+      t.classList.toggle("active", t.dataset.tab === tab));
+    renderGrid();
+  });
+
+  $("sortChips").addEventListener("click", (e) => {
+    const btn = e.target.closest(".sortchip");
+    if (!btn) return;
+    state.sort = btn.dataset.sort;
+    $("sortChips").querySelectorAll(".sortchip").forEach(c =>
+      c.classList.toggle("active", c.dataset.sort === state.sort));
+    renderGrid();
+  });
+
+  $("btnSubscribe").onclick = (e) => {
+    const on = e.currentTarget.classList.toggle("on");
+    e.currentTarget.textContent = on ? "已訂閱" : "訂閱";
+  };
+  $("btnSubscribe2").onclick = (e) => {
+    const on = e.currentTarget.classList.toggle("on");
+    e.currentTarget.textContent = on ? "已訂閱" : "訂閱";
+  };
+
+  /* ---------------- watch controls ---------------- */
+  $("q").addEventListener("input", (e) => {
+    state.query = e.target.value;
+    if (state.view === "watch") renderCues(); else renderGrid();
+  });
 
   $("btnCc").onclick = () => { state.cc = !state.cc; applyCc(); if (state.cc) setActive(state.active, true); };
 
@@ -535,6 +892,7 @@
   $("btnLike").onclick = (e) => e.currentTarget.classList.toggle("on");
 
   document.addEventListener("keydown", (e) => {
+    if (state.view !== "watch") return;
     if (e.target.tagName === "INPUT") return;
     const k = e.key.toLowerCase();
     if (k === " "){ e.preventDefault(); if (!ytReady) return;
@@ -559,20 +917,22 @@
   }
 
   /* ---------------- boot ---------------- */
-  renderRelated();
-  renderMeta();
-  state.cues = videos[0] ? videos[0].cues : [];
-  renderCues();
+  renderChannel();
   applyCc();
-  $("fallback").classList.add("show");
+  window.addEventListener("hashchange", route);
+  route();
+
+  window.onYouTubeIframeAPIReady = function(){
+    apiReady = true;
+    if (state.view === "watch") syncPlayer(false);
+  };
 
   if (!document.querySelector('script[src*="iframe_api"]')){
     const s = document.createElement("script");
     s.src = "https://www.youtube.com/iframe_api";
-    s.onerror = () => { apiFailed = true; $("fallback").classList.add("show"); };
+    s.onerror = () => { $("fallback").classList.add("show"); };
     document.head.appendChild(s);
   }
-  setTimeout(() => { if (!ytReady) $("fallback").classList.add("show"); }, 4000);
 })();
 </script>
 </body>

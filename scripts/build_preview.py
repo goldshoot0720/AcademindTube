@@ -94,11 +94,14 @@ def build(window: str) -> dict:
         flag = f"  ({issues} 筆未翻譯)" if issues else ""
         print(f"  {video['id']}  {len(cues):>4} cues  {srt.name}{flag}")
 
+    channel = load_json(DATA / "channel_meta.json", {}) or {}
+
     return {
         "window": window,
         "days": payload.get("days"),
         "ref": payload.get("ref"),
         "generated": dt.datetime.now().isoformat(timespec="seconds"),
+        "channel": channel,
         "videos": videos,
     }
 
