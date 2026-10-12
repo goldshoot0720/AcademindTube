@@ -476,7 +476,7 @@
   const state = {
     view:"home", tab:"home", sort:"new",
     v:0, cues:[], active:-1, query:"", follow:true, cc:true,
-    loadedId:null, userNav:false,
+    loadedId:null,
   };
   let player = null, ytReady = false, apiReady = false;
 
@@ -716,13 +716,13 @@
     if (player || !apiReady) return;
     player = new YT.Player("player", {
       videoId: videos[state.v] ? videos[state.v].id : "",
-      playerVars: { rel:0, modestbranding:1, playsinline:1, cc_load_policy:0 },
+      playerVars: { rel:0, modestbranding:1, playsinline:1, cc_load_policy:0, autoplay:1 },
       events: {
         onReady: function(){
           ytReady = true;
           state.loadedId = videos[state.v] ? videos[state.v].id : null;
           $("fallback").classList.remove("show");
-          syncPlayer(false);
+          syncPlayer();
           setInterval(tick, 120);
         },
         onError: function(){ $("fallback").classList.add("show"); }
@@ -730,17 +730,42 @@
     });
   }
 
-  function syncPlayer(autoplay){
+  /* Entering the watch view always starts playback. Browsers may refuse
+     unmuted autoplay on a cold load, so fall back to resuming on the first
+     pointer/key event instead of leaving a dead play button. */
+  let gestureArmed = false;
+  function guardAutoplay(){
+    setTimeout(() => {
+      if (state.view !== "watch" || !ytReady) return;
+      if (typeof player.getPlayerState !== "function") return;
+      const s = player.getPlayerState();
+      if (s === 1 || s === 3) return;              // playing / buffering
+      if (gestureArmed) return;
+      gestureArmed = true;
+      toast("瀏覽器阻擋自動播放，點一下畫面即可播放");
+      const resume = () => {
+        document.removeEventListener("pointerdown", resume, true);
+        document.removeEventListener("keydown", resume, true);
+        gestureArmed = false;
+        try { player.playVideo(); } catch (e) {}
+      };
+      document.addEventListener("pointerdown", resume, true);
+      document.addEventListener("keydown", resume, true);
+    }, 900);
+  }
+
+  function syncPlayer(){
     const v = videos[state.v];
     if (!v) return;
     ensurePlayer();
     if (!ytReady) return;
     if (state.loadedId === v.id){
-      if (autoplay) player.playVideo();
-      return;
+      player.playVideo();
+    } else {
+      state.loadedId = v.id;
+      player.loadVideoById(v.id);
     }
-    state.loadedId = v.id;
-    if (autoplay) player.loadVideoById(v.id); else player.cueVideoById(v.id);
+    guardAutoplay();
   }
 
   function findCue(t){
@@ -776,7 +801,6 @@
   function go(i, replace){
     const v = videos[i];
     if (!v) return;
-    state.userNav = true;
     const h = "#/v/" + v.id;
     if (location.hash === h){ showWatch(i); return; }
     if (replace) location.replace(location.pathname + location.search + h);
@@ -797,8 +821,6 @@
   function showWatch(i){
     const v = videos[i];
     if (!v) return showHome();
-    const autoplay = !!state.userNav;
-    state.userNav = false;
     state.view = "watch";
     state.v = i;
     state.cues = v.cues;
@@ -813,7 +835,7 @@
     $("captions").hidden = true;
 
     renderMeta(); renderCues(); renderRelated();
-    syncPlayer(autoplay);
+    syncPlayer();
     window.scrollTo({ top:0 });
   }
 
@@ -924,7 +946,7 @@
 
   window.onYouTubeIframeAPIReady = function(){
     apiReady = true;
-    if (state.view === "watch") syncPlayer(false);
+    if (state.view === "watch") syncPlayer();
   };
 
   if (!document.querySelector('script[src*="iframe_api"]')){
