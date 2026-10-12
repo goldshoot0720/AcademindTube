@@ -1,0 +1,56 @@
+{
+  "window": "3m",
+  "days": 90,
+  "ref": "2026-10-12",
+  "count": 8,
+  "videos": [
+    {
+      "id": "jtGSHwXigIg",
+      "title": "Using Effect? Use Alchemy, too!",
+      "date": "20261002",
+      "date_exact": "20261001"
+    },
+    {
+      "id": "51Eb4EtGqrI",
+      "title": "Stop treating Opus 5.5 like the other AI models",
+      "date": "20260928",
+      "date_exact": "20260925"
+    },
+    {
+      "id": "tT_JLVgJiyw",
+      "title": "You MUST learn and use Effect now!",
+      "date": "20260928",
+      "date_exact": "20260924"
+    },
+    {
+      "id": "igFarOfJYSc",
+      "title": "Stop managing AWS by hand",
+      "date": "20260912",
+      "date_exact": "20260820"
+    },
+    {
+      "id": "G-v1hkQ8Sf8",
+      "title": "Self-hosted durable objects are pretty interesting!",
+      "date": "20260912",
+      "date_exact": "20260813"
+    },
+    {
+      "id": "o8-EgQhqdU0",
+      "title": "Here's why I like Pi",
+      "date": "20260812",
+      "date_exact": "20260806"
+    },
+    {
+      "id": "F0pH9aQeDrY",
+      "title": "You're probably not using agent skills right",
+      "date": "20260812",
+      "date_exact": "20260723"
+    },
+    {
+      "id": "2CR9tDNAzB0",
+      "title": "herdr is a must use",
+      "date": "20260812",
+      "date_exact": "20260716"
+    }
+  ]
+}

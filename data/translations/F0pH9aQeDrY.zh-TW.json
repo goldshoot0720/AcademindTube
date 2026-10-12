@@ -1,0 +1,1646 @@
+[
+  {
+    "start": 192,
+    "end": 2649,
+    "text": "Let's talk agent skills.",
+    "zh": "說說代理技巧吧。"
+  },
+  {
+    "start": 2842,
+    "end": 5619,
+    "text": "And I know you know what an agent skill is.",
+    "zh": "我知道你知道什麼是特工技能。"
+  },
+  {
+    "start": 5876,
+    "end": 10613,
+    "text": "The problem just is that many people are not really using agent skills correctly, or",
+    "zh": "問題只是很多人並沒有真正正確地使用特工技能，或者"
+  },
+  {
+    "start": 10613,
+    "end": 13005,
+    "text": "at least not to their full potential.",
+    "zh": "至少沒有充分發揮他們的潛力。"
+  },
+  {
+    "start": 13599,
+    "end": 16136,
+    "text": "Now, as mentioned, I know you know what an agent skill is.",
+    "zh": "現在，如前所述，我知道您知道什麼是特工技能。"
+  },
+  {
+    "start": 16393,
+    "end": 20504,
+    "text": "It's a skill.md file with a description that helps an agent activate that skill in the",
+    "zh": "這是一個 Skill.md 文件，其中包含幫助代理啟動該技能的說明"
+  },
+  {
+    "start": 20568,
+    "end": 21162,
+    "text": "right moment.",
+    "zh": "正確的時機。"
+  },
+  {
+    "start": 21531,
+    "end": 24245,
+    "text": "And then it's your actual skill instructions.",
+    "zh": "然後是你的實際技能說明。"
+  },
+  {
+    "start": 25530,
+    "end": 31669,
+    "text": "Content you'll inject into your coding agent or into whatever agent you're using to make",
+    "zh": "您將注入到編碼代理或您用來製作的任何代理中的內容"
+  },
+  {
+    "start": 31669,
+    "end": 34603,
+    "text": "it do certain things the way you want it to.",
+    "zh": "它按照您想要的方式做某些事情。"
+  },
+  {
+    "start": 35003,
+    "end": 40309,
+    "text": "Because a skill is, of course, in the end, just a prompt, just some extra context you're",
+    "zh": "因為技能當然最終只是一個提示，只是一些你需要的額外背景"
+  },
+  {
+    "start": 40309,
+    "end": 44942,
+    "text": "sending to your agent to execute a certain task.",
+    "zh": "發送給您的代理程式以執行特定任務。"
+  },
+  {
+    "start": 45198,
+    "end": 50376,
+    "text": "And it's worth noting, and that's already the first thing some people don't really realize,",
+    "zh": "值得注意的是，這已經是一些人沒有真正意識到的第一件事，"
+  },
+  {
+    "start": 50953,
+    "end": 54592,
+    "text": "that a skill is not necessarily just a skill.md file.",
+    "zh": "技能不一定只是一個 Skill.md 檔案。"
+  },
+  {
+    "start": 54640,
+    "end": 56596,
+    "text": "For some skills, that may be all you need.",
+    "zh": "對於某些技能，這可能是您所需要的。"
+  },
+  {
+    "start": 56901,
+    "end": 62639,
+    "text": "For many skills, you also may have extra references, extra deep dive resources that can",
+    "zh": "對於許多技能，您還可能有額外的參考資料、額外的深入研究資源，可以"
+  },
+  {
+    "start": 62671,
+    "end": 67512,
+    "text": "be activated by the agent when needed, because those skills, as you probably know, are",
+    "zh": "在需要時由代理人激活，因為正如您可能知道的那樣，這些技能是"
+  },
+  {
+    "start": 67641,
+    "end": 70815,
+    "text": "of course all about incremental discovery.",
+    "zh": "當然都是關於增量發現。"
+  },
+  {
+    "start": 71183,
+    "end": 77179,
+    "text": "So the idea is that this entire skill.md file is not even loaded, but instead just the",
+    "zh": "所以我們的想法是，整個 Skill.md 檔案甚至沒有加載，而只是加載"
+  },
+  {
+    "start": 77179,
+    "end": 80561,
+    "text": "metadata stuff here that is loaded into every agent session.",
+    "zh": "這裡的元資料內容被載入到每個代理會話中。"
+  },
+  {
+    "start": 81026,
+    "end": 85082,
+    "text": "Then because of this description, an agent may decide to activate a skill.",
+    "zh": "然後，由於此描述，代理可能決定啟動技能。"
+  },
+  {
+    "start": 85514,
+    "end": 90018,
+    "text": "Then the rest of the skill.md file is read, and then in that skill.md file, you can point",
+    "zh": "然後讀取 Skill.md 檔案的其餘部分，然後在該 Skill.md 檔案中，您可以指向"
+  },
+  {
+    "start": 90018,
+    "end": 93223,
+    "text": "at other references so that those are activated when needed.",
+    "zh": "在其他參考文獻中，以便在需要時啟動它們。"
+  },
+  {
+    "start": 93832,
+    "end": 95194,
+    "text": "Many people know that.",
+    "zh": "很多人都知道這一點。"
+  },
+  {
+    "start": 95771,
+    "end": 98927,
+    "text": "Fewer people know that skills can have more than references.",
+    "zh": "很少人知道技能比參考資料更重要。"
+  },
+  {
+    "start": 98975,
+    "end": 101282,
+    "text": "They can have assets, which could be blueprints.",
+    "zh": "他們可以擁有資產，這些資產可以是藍圖。"
+  },
+  {
+    "start": 101378,
+    "end": 107547,
+    "text": "Like here, my create plan skill, for example, has a plan blueprint I'd like my agents",
+    "zh": "例如，像這裡一樣，我的創建計劃技能有一個計劃藍圖，我希望我的代理人"
+  },
+  {
+    "start": 107547,
+    "end": 109598,
+    "text": "to use when they craft plans.",
+    "zh": "當他們制定計劃時使用。"
+  },
+  {
+    "start": 110255,
+    "end": 115334,
+    "text": "And by the way, all these skills are publicly available, all the skills I have here,",
+    "zh": "順便說一句，所有這些技能都是公開的，我在這裡擁有的所有技能，"
+  },
+  {
+    "start": 115943,
+    "end": 117545,
+    "text": "and I'll link them below.",
+    "zh": "我將在下面鏈接它們。"
+  },
+  {
+    "start": 118058,
+    "end": 118892,
+    "text": "So that's a thing.",
+    "zh": "所以這是一件事。"
+  },
+  {
+    "start": 119470,
+    "end": 121668,
+    "text": "And you can also have scripts.",
+    "zh": "而且您還可以有腳本。"
+  },
+  {
+    "start": 121796,
+    "end": 125791,
+    "text": "For example, I have a generate image skill, which does what the name implies.",
+    "zh": "例如，我有一個生成圖像技能，顧名思義。"
+  },
+  {
+    "start": 125887,
+    "end": 128566,
+    "text": "It helps me generate images with help of AI.",
+    "zh": "它幫助我在人工智慧的幫助下產生圖像。"
+  },
+  {
+    "start": 129432,
+    "end": 136122,
+    "text": "And I have a script in there, a TypeScript script, which uses Fall, the Fall service.",
+    "zh": "我在那裡有一個腳本，一個 TypeScript 腳本，它使用 Fall，Fall 服務。"
+  },
+  {
+    "start": 136748,
+    "end": 143710,
+    "text": "Fall.ai is a service which offers various AI models through an API so that you can send",
+    "zh": "Fall.ai 是一項透過 API 提供各種 AI 模型的服務，以便您可以發送"
+  },
+  {
+    "start": 143710,
+    "end": 144207,
+    "text": "your requests.",
+    "zh": "您的要求。"
+  },
+  {
+    "start": 144352,
+    "end": 148473,
+    "text": "There to generate images, text, audio, videos, whatever.",
+    "zh": "在那裡生成圖像、文字、音訊、視訊等等。"
+  },
+  {
+    "start": 148681,
+    "end": 152016,
+    "text": "This is my image generation skill, so it's only about those models.",
+    "zh": "這是我的圖像生成技能，所以只涉及那些模型。"
+  },
+  {
+    "start": 152513,
+    "end": 158046,
+    "text": "And indeed, I have GPT-Image 2 hardcoded here in my case here for the only image model",
+    "zh": "事實上，在我的例子中，我在這裡硬編碼了 GPT-Image 2 作為唯一的圖像模型"
+  },
+  {
+    "start": 158046,
+    "end": 158687,
+    "text": "I want to use.",
+    "zh": "我想用。"
+  },
+  {
+    "start": 158847,
+    "end": 159874,
+    "text": "Of course, I could change this.",
+    "zh": "當然，我可以改變這一點。"
+  },
+  {
+    "start": 160146,
+    "end": 163882,
+    "text": "And therefore, here I have a skill with a script that generates images.",
+    "zh": "因此，在這裡我掌握了生成圖像的腳本的技能。"
+  },
+  {
+    "start": 163995,
+    "end": 166817,
+    "text": "Now, you could ask, why not just a script?",
+    "zh": "現在，您可能會問，為什麼不只是一個腳本呢？"
+  },
+  {
+    "start": 166881,
+    "end": 172220,
+    "text": "Why burn those tokens and add that random nature to it when it could be just script?",
+    "zh": "當它可能只是腳本時，為什麼要燒掉這些代幣並為其添加隨機性？"
+  },
+  {
+    "start": 172717,
+    "end": 179271,
+    "text": "And that is a good question because I think some things that people give you as skills",
+    "zh": "這是一個很好的問題，因為我認為人們給你一些技能"
+  },
+  {
+    "start": 179768,
+    "end": 183806,
+    "text": "could just be scripts, but some things should really be both.",
+    "zh": "可能只是腳本，但有些東西確實應該兩者兼而有之。"
+  },
+  {
+    "start": 183870,
+    "end": 190248,
+    "text": "For example, here I have a script for the deterministic part of this skill, for sending",
+    "zh": "例如，這裡我有一個用於該技能的確定性部分的腳本，用於發送"
+  },
+  {
+    "start": 190280,
+    "end": 193773,
+    "text": "the request, handling the response, extracting the image, saving the image.",
+    "zh": "請求，處理回應，提取圖像，保存圖像。"
+  },
+  {
+    "start": 194286,
+    "end": 195824,
+    "text": "That's handled by the script.",
+    "zh": "這是由腳本處理的。"
+  },
+  {
+    "start": 196449,
+    "end": 202788,
+    "text": "But I have a skill So that it, for example, translates my vague instruction of I need",
+    "zh": "但我有一項技能，例如，它可以翻譯我的模糊指示：我需要"
+  },
+  {
+    "start": 202788,
+    "end": 209306,
+    "text": "an image of a bicycle in the rain to a proper prompt based on the instructions in that",
+    "zh": "雨中自行車的圖像，根據其中的說明進行適當提示"
+  },
+  {
+    "start": 209306,
+    "end": 212998,
+    "text": "skill here, and that it then invokes that script for me.",
+    "zh": "技能在這裡，然後它會為我呼叫該腳本。"
+  },
+  {
+    "start": 213078,
+    "end": 214459,
+    "text": "So a little bit of utility there.",
+    "zh": "所以有一點實用性。"
+  },
+  {
+    "start": 214571,
+    "end": 217862,
+    "text": "I could write that prompt myself, but that's the nice thing.",
+    "zh": "我可以自己寫這個提示，但這很好。"
+  },
+  {
+    "start": 217958,
+    "end": 220254,
+    "text": "I can get the best of both worlds.",
+    "zh": "我可以兩全其美。"
+  },
+  {
+    "start": 221008,
+    "end": 225454,
+    "text": "And that's a good example for a skill that is, of course, not related to programming,",
+    "zh": "這是一個很好的例子，說明了一項與程式設計無關的技能，"
+  },
+  {
+    "start": 225502,
+    "end": 227987,
+    "text": "but just a general utility skill.",
+    "zh": "但只是一般實用技能。"
+  },
+  {
+    "start": 228227,
+    "end": 233532,
+    "text": "Now, in general, agent skills are there for 2 main reasons.",
+    "zh": "現在，總的來說，代理技能的存在有兩個主要原因。"
+  },
+  {
+    "start": 233597,
+    "end": 236882,
+    "text": "And the first reason is that they can close a knowledge gap.",
+    "zh": "第一個原因是它們可以縮小知識差距。"
+  },
+  {
+    "start": 237764,
+    "end": 243133,
+    "text": "These models have some knowledge from their training data and their fine-tuning, the",
+    "zh": "這些模型從訓練資料和微調中獲得了一些知識，"
+  },
+  {
+    "start": 243278,
+    "end": 244736,
+    "text": "reinforcement learning, of course.",
+    "zh": "當然是強化學習。"
+  },
+  {
+    "start": 245377,
+    "end": 248791,
+    "text": "That is the knowledge that's baked into the model.",
+    "zh": "這就是模型中所包含的知識。"
+  },
+  {
+    "start": 249208,
+    "end": 253199,
+    "text": "Then they can, of course, get extra knowledge from the context you give to them.",
+    "zh": "然後他們當然可以從您提供給他們的背景中獲得額外的知識。"
+  },
+  {
+    "start": 253520,
+    "end": 257687,
+    "text": "From your codebase, from your prompt, from any web research they may be doing.",
+    "zh": "來自您的程式碼庫，來自您的提示，來自他們可能正在進行的任何網路研究。"
+  },
+  {
+    "start": 258601,
+    "end": 265222,
+    "text": "But then you can also have your own skills that add more knowledge, knowledge about certain",
+    "zh": "但你也可以擁有自己的技能，增加更多的知識，關於某些方面的知識"
+  },
+  {
+    "start": 265238,
+    "end": 268267,
+    "text": "tasks, knowledge about certain domains you may be working on.",
+    "zh": "任務、有關您可能正在從事的某些領域的知識。"
+  },
+  {
+    "start": 268444,
+    "end": 275064,
+    "text": "For example, if I'm working in a project where I use the Effect library, which is a",
+    "zh": "例如，如果我正在一個使用 Effect 庫的專案中工作，這是一個"
+  },
+  {
+    "start": 275272,
+    "end": 282229,
+    "text": "library that's not as baked into those models, maybe where it hasn't seen as much code",
+    "zh": "庫沒有融入這些模型中，也許它沒有看到那麼多程式碼"
+  },
+  {
+    "start": 282229,
+    "end": 287440,
+    "text": "as it has for other libraries, I'd like to build a skill for that.",
+    "zh": "與其他圖書館一樣，我想為此培養一項技能。"
+  },
+  {
+    "start": 288017,
+    "end": 289252,
+    "text": "And I do that with help of AI.",
+    "zh": "我在人工智慧的幫助下做到了這一點。"
+  },
+  {
+    "start": 289524,
+    "end": 296082,
+    "text": "I ask AI to do some web research, to dive into the docs, and to gather",
+    "zh": "我要求人工智慧做一些網路研究，深入研究文檔，並收集"
+  },
+  {
+    "start": 296130,
+    "end": 298262,
+    "text": "knowledge about the fact library.",
+    "zh": "有關事實庫的知識。"
+  },
+  {
+    "start": 298503,
+    "end": 304900,
+    "text": "I also may give it some specific resources, some specific URLs I wanted to definitely",
+    "zh": "我也可能會給它一些特定的資源，一些我想要的特定的 URL"
+  },
+  {
+    "start": 304916,
+    "end": 308476,
+    "text": "visit because I know they contain important knowledge I want to have in the skill.",
+    "zh": "訪問是因為我知道它們包含我想要的技能方面的重要知識。"
+  },
+  {
+    "start": 308941,
+    "end": 313847,
+    "text": "But then I let AI gather that knowledge and convert it to a skill.",
+    "zh": "但後來我讓人工智慧收集這些知識並將其轉化為技能。"
+  },
+  {
+    "start": 314457,
+    "end": 319192,
+    "text": "And to help with that skill conversion or in general with creating skills, because I",
+    "zh": "並幫助實現技能轉換或一般來說創造技能，因為我"
+  },
+  {
+    "start": 319208,
+    "end": 324762,
+    "text": "like AI to create skills, I then fine-tune them myself, but I like AI to use, or I like",
+    "zh": "喜歡AI創造技能，然後我自己微調它們，但我喜歡AI使用，或者我喜歡"
+  },
+  {
+    "start": 324826,
+    "end": 326720,
+    "text": "to use AI for creating those skills.",
+    "zh": "使用人工智慧來創造這些技能。"
+  },
+  {
+    "start": 327074,
+    "end": 333221,
+    "text": "I have a Create Skill skill, which basically encodes the best practices and patterns",
+    "zh": "我有一項創建技能技能，它基本上編碼了最佳實踐和模式"
+  },
+  {
+    "start": 333478,
+    "end": 336351,
+    "text": "I want AI to use when crafting skills.",
+    "zh": "我希望在創造技能時使用人工智慧。"
+  },
+  {
+    "start": 336945,
+    "end": 341889,
+    "text": "But then I'm happy to use AI to, for example, create such a knowledge skill that adds",
+    "zh": "但我很高興使用人工智慧來創建這樣一種知識技能，可以增加"
+  },
+  {
+    "start": 342162,
+    "end": 347464,
+    "text": "knowledge and makes it easy for AI to, for example, activate that skill whenever it's",
+    "zh": "例如，人工智慧可以輕鬆地在需要時啟動該技能"
+  },
+  {
+    "start": 347464,
+    "end": 352717,
+    "text": "working on Effect code or in an Effect codebase to make sure that it's properly using",
+    "zh": "處理 Effect 程式碼或 Effect 程式碼庫以確保其正確使用"
+  },
+  {
+    "start": 352830,
+    "end": 355255,
+    "text": "all those features according to the official docs.",
+    "zh": "根據官方文檔，所有這些功能。"
+  },
+  {
+    "start": 355416,
+    "end": 359239,
+    "text": "And it doesn't have to constantly reach out to those docs over and over again.",
+    "zh": "而且它不必不斷地一遍又一遍地聯繫這些文件。"
+  },
+  {
+    "start": 359432,
+    "end": 360284,
+    "text": "That's the idea.",
+    "zh": "就是這個想法。"
+  },
+  {
+    "start": 361537,
+    "end": 366308,
+    "text": "So bridging that knowledge gap is of course one important area where you may want to",
+    "zh": "因此，彌合知識差距當然是您可能想要的重要領域"
+  },
+  {
+    "start": 366340,
+    "end": 366935,
+    "text": "use a skill.",
+    "zh": "使用一項技能。"
+  },
+  {
+    "start": 367545,
+    "end": 368911,
+    "text": "Another important area.",
+    "zh": "另一個重要領域。"
+  },
+  {
+    "start": 369296,
+    "end": 371158,
+    "text": "Is the execution gap.",
+    "zh": "就是執行力差距。"
+  },
+  {
+    "start": 371720,
+    "end": 377050,
+    "text": "Knowledge is one thing, but of course, these models also have certain behaviors, certain",
+    "zh": "知識是一回事，但當然，這些模型也有某些行為，某些"
+  },
+  {
+    "start": 377258,
+    "end": 381561,
+    "text": "ways of tackling certain tasks, and that may often be what you want.",
+    "zh": "處理某些任務的方法，而這通常可能是您想要的。"
+  },
+  {
+    "start": 381834,
+    "end": 386698,
+    "text": "And sometimes, or maybe also often, depending on the domain, they may know better than",
+    "zh": "有時，或者也經常，根據領域的不同，他們可能比"
+  },
+  {
+    "start": 386794,
+    "end": 392396,
+    "text": "you, but sometimes you know how certain work needs to be done or how something needs",
+    "zh": "你，但有時你知道某些工作需要如何完成，或某些事情需要如何完成"
+  },
+  {
+    "start": 392429,
+    "end": 393279,
+    "text": "to be executed.",
+    "zh": "被處決。"
+  },
+  {
+    "start": 393328,
+    "end": 396153,
+    "text": "And that is where you can also use a skill.",
+    "zh": "這就是你也可以使用技能的地方。"
+  },
+  {
+    "start": 397324,
+    "end": 400805,
+    "text": "For example, again, that Create Plan skill I already showed you before.",
+    "zh": "例如，我之前已經向您展示過「創建計劃」技能。"
+  },
+  {
+    "start": 401800,
+    "end": 407430,
+    "text": "I like my coding agents to create plans for the tasks they tackle.",
+    "zh": "我喜歡我的編碼代理為他們處理的任務制定計劃。"
+  },
+  {
+    "start": 407976,
+    "end": 412900,
+    "text": "Now, creating a plan could of course be done with plan mode and you could leverage that",
+    "zh": "現在，建立計劃當然可以使用計劃模式來完成，您可以利用它"
+  },
+  {
+    "start": 412900,
+    "end": 414103,
+    "text": "depending on your coding agent.",
+    "zh": "取決於您的編碼代理。"
+  },
+  {
+    "start": 414152,
+    "end": 418210,
+    "text": "But for example, I'm using the Pi coding agent, which doesn't have a plan mode.",
+    "zh": "但例如，我正在使用 Pi 編碼代理，它沒有計劃模式。"
+  },
+  {
+    "start": 418258,
+    "end": 423600,
+    "text": "And even if I'm using something like Claude Code, I nowadays tend to not use any plan",
+    "zh": "即使我使用像 Claude Code 這樣的東西，我現在也傾向於不使用任何計劃"
+  },
+  {
+    "start": 423632,
+    "end": 424322,
+    "text": "mode built in.",
+    "zh": "內建模式。"
+  },
+  {
+    "start": 424675,
+    "end": 426632,
+    "text": "Instead, I use such a skill.",
+    "zh": "相反，我使用這樣的技能。"
+  },
+  {
+    "start": 427883,
+    "end": 434392,
+    "text": "Implicitly because this skill, due to its description, should get used when",
+    "zh": "隱含地是因為根據其描述，該技能應該在以下情況下使用："
+  },
+  {
+    "start": 435001,
+    "end": 438641,
+    "text": "I ask the user, the agent, to create a plan.",
+    "zh": "我要求用戶（代理）制定一個計劃。"
+  },
+  {
+    "start": 438849,
+    "end": 443162,
+    "text": "That's in the description and that works very reliably in my experience.",
+    "zh": "這在描述中並且根據我的經驗非常可靠。"
+  },
+  {
+    "start": 443771,
+    "end": 448597,
+    "text": "So what happens then is I ask the agent to create a plan and it will activate that skill.",
+    "zh": "那麼接下來發生的事情是我要求代理制定一個計劃，它將激活該技能。"
+  },
+  {
+    "start": 448709,
+    "end": 454144,
+    "text": "Now in that skill, I have details on what creating a plan means.",
+    "zh": "現在，在該技能中，我詳細了解了創建計劃的含義。"
+  },
+  {
+    "start": 454722,
+    "end": 461086,
+    "text": "It includes stuff like research, that it should perform research, that it should delegate",
+    "zh": "它包括研究之類的東西，它應該進行研究，它應該委託"
+  },
+  {
+    "start": 461455,
+    "end": 462561,
+    "text": "to subagents.",
+    "zh": "給子代理。"
+  },
+  {
+    "start": 462673,
+    "end": 469422,
+    "text": "And I have dedicated skills for that as well on how to use subagents, how to split work",
+    "zh": "我在這方面也有專門的技能，包括如何使用子代理、如何分配工作"
+  },
+  {
+    "start": 469630,
+    "end": 473798,
+    "text": "in general, and then also in the Pi coding agent, because again, that's the coding agent",
+    "zh": "一般來說，然後也在 Pi 編碼代理中，因為同樣，這就是編碼代理"
+  },
+  {
+    "start": 473814,
+    "end": 475064,
+    "text": "I'm mostly using.",
+    "zh": "我主要用的是"
+  },
+  {
+    "start": 475561,
+    "end": 479713,
+    "text": "Then I also have instructions on how to plan.",
+    "zh": "然後我還有關於如何計劃的說明。"
+  },
+  {
+    "start": 480146,
+    "end": 485163,
+    "text": "So I have a template in there, as I showed you before, how a plan should look like, because",
+    "zh": "所以我在那裡有一個模板，正如我之前向您展示的那樣，計劃應該是什麼樣子，因為"
+  },
+  {
+    "start": 485275,
+    "end": 486365,
+    "text": "I review those plans.",
+    "zh": "我回顧了這些計劃。"
+  },
+  {
+    "start": 486478,
+    "end": 489988,
+    "text": "I want to have a clear structure and it should all always be the same structure.",
+    "zh": "我想要一個清晰的結構，並且應該始終是相同的結構。"
+  },
+  {
+    "start": 490726,
+    "end": 492745,
+    "text": "I have all of that encoded in here.",
+    "zh": "我把所有這些都編碼在這裡。"
+  },
+  {
+    "start": 493050,
+    "end": 500039,
+    "text": "I also have a review step encoded in here so that the plan I see has already been reviewed.",
+    "zh": "我還在這裡編碼了一個審核步驟，以便我看到的計劃已經過審核。"
+  },
+  {
+    "start": 500504,
+    "end": 506740,
+    "text": "Now, when it comes to that reviewing, I have a dedicated skill because reviews of plans",
+    "zh": "現在，說到審查，我有一項專門的技能，因為計劃審查"
+  },
+  {
+    "start": 506756,
+    "end": 510331,
+    "text": "of code also should follow certain rules and patterns.",
+    "zh": "程式碼的編寫也應該遵循一定的規則和模式。"
+  },
+  {
+    "start": 510443,
+    "end": 515797,
+    "text": "And in that code review skill, I, for example, also make it clear that tasks should be",
+    "zh": "例如，在程式碼審查技能中，我還明確指出任務應該是"
+  },
+  {
+    "start": 515877,
+    "end": 520510,
+    "text": "delegated, should be split, and subagents should be used also to keep the main context",
+    "zh": "委託，應該拆分，並且還應該使用子代理來保留主要上下文"
+  },
+  {
+    "start": 520429,
+    "end": 521310,
+    "text": "context window clean.",
+    "zh": "上下文視窗乾淨。"
+  },
+  {
+    "start": 521982,
+    "end": 528919,
+    "text": "And I also have rules regarding the scoring of findings and that I don't want to",
+    "zh": "我也有關於調查結果評分的規則，但我不想這樣做"
+  },
+  {
+    "start": 529031,
+    "end": 534350,
+    "text": "have all findings be reflected in my plan or in the review that's being generated.",
+    "zh": "所有調查結果都反映在我的計劃或正在產生的審查中。"
+  },
+  {
+    "start": 534398,
+    "end": 540823,
+    "text": "Instead, it should judge and it should, for example, avoid adding more and more complexity.",
+    "zh": "相反，它應該進行判斷，並且應該避免增加越來越多的複雜性。"
+  },
+  {
+    "start": 541207,
+    "end": 547823,
+    "text": "For that, I also have a decomplex skill here, which is all about defining what too much",
+    "zh": "為此，我在這裡還擁有一項分解技能，定義什麼是太多"
+  },
+  {
+    "start": 547936,
+    "end": 551076,
+    "text": "complexity means and how to check for complexity.",
+    "zh": "複雜性意味著以及如何檢查複雜性。"
+  },
+  {
+    "start": 551862,
+    "end": 556498,
+    "text": "In all those skills, I make it clear that the user, so I, should be asked if it's not",
+    "zh": "在所有這些技能中，我明確表示應該詢問使用者（即我）是否不"
+  },
+  {
+    "start": 556498,
+    "end": 559290,
+    "text": "clear if something's too complex or a real issue.",
+    "zh": "明確某件事是否太複雜或是否是一個真正的問題。"
+  },
+  {
+    "start": 559338,
+    "end": 565226,
+    "text": "So I have multiple layers here so that I build a system that works well for me and that,",
+    "zh": "所以我這裡有多個層次，這樣我就可以建立一個適合我的系統，"
+  },
+  {
+    "start": 565403,
+    "end": 570970,
+    "text": "for example, for planning, where that reviewing triggers all these other skills, I get",
+    "zh": "例如，對於計劃，審查會觸發所有其他技能，我得到"
+  },
+  {
+    "start": 571018,
+    "end": 576729,
+    "text": "a plan that is executable for the most part, that has been reviewed and that is in a",
+    "zh": "計劃的大部分內容是可執行的，已經過審查並且正在製定中"
+  },
+  {
+    "start": 576729,
+    "end": 577499,
+    "text": "good shape.",
+    "zh": "身材好。"
+  },
+  {
+    "start": 578557,
+    "end": 580802,
+    "text": "That's what I mean with the execution gap.",
+    "zh": "這就是我所說的執行差距。"
+  },
+  {
+    "start": 580882,
+    "end": 586492,
+    "text": "Of course, the model can create a plan without my instructions, but in my experience,",
+    "zh": "當然，模型可以在沒有我的指示的情況下創建計劃，但根據我的經驗，"
+  },
+  {
+    "start": 586508,
+    "end": 592359,
+    "text": "I get better results with those extra skills that make it very clear how I want it to",
+    "zh": "透過這些額外的技能，我獲得了更好的結果，這些技能讓我很清楚我想要它如何"
+  },
+  {
+    "start": 592359,
+    "end": 593209,
+    "text": "work on a plan.",
+    "zh": "制定計劃。"
+  },
+  {
+    "start": 593465,
+    "end": 596030,
+    "text": "Now, could I just put that into a prompt instead?",
+    "zh": "現在，我可以將其放入提示中嗎？"
+  },
+  {
+    "start": 596110,
+    "end": 598242,
+    "text": "Sure, but I would be doing that over and over again.",
+    "zh": "當然可以，但我會一遍又一遍地這樣做。"
+  },
+  {
+    "start": 598771,
+    "end": 600342,
+    "text": "And that's in general good advice.",
+    "zh": "總的來說，這是一個很好的建議。"
+  },
+  {
+    "start": 600454,
+    "end": 606870,
+    "text": "If you find yourself asking for the same stuff over and over again or complaining about",
+    "zh": "如果您發現自己一遍又一遍地要求相同的東西或抱怨"
+  },
+  {
+    "start": 606870,
+    "end": 610596,
+    "text": "the same errors over and over again, put it in a skill.",
+    "zh": "一遍又一遍地犯同樣的錯誤，把它變成一種技能。"
+  },
+  {
+    "start": 610869,
+    "end": 614465,
+    "text": "And also important, write your own skills.",
+    "zh": "同樣重要的是，寫下你自己的技能。"
+  },
+  {
+    "start": 614578,
+    "end": 621081,
+    "text": "You can absolutely use my skills or the skills by Matt Pocock or any other skills you",
+    "zh": "你絕對可以使用我的技能或 Matt Pocock 的技能或任何其他你想要的技能"
+  },
+  {
+    "start": 621081,
+    "end": 621691,
+    "text": "find out there.",
+    "zh": "在那裡找到。"
+  },
+  {
+    "start": 621739,
+    "end": 622783,
+    "text": "Nothing wrong with them.",
+    "zh": "他們沒有什麼問題。"
+  },
+  {
+    "start": 622847,
+    "end": 627954,
+    "text": "There are great skills out there and they're especially great starting points.",
+    "zh": "那裡有很多很棒的技能，而且它們是特別好的起點。"
+  },
+  {
+    "start": 628467,
+    "end": 633558,
+    "text": "But you should refine them, make them yours, and also build your own skills for your",
+    "zh": "但你應該完善它們，使它們成為你的，並為你的工作培養你自己的技能。"
+  },
+  {
+    "start": 633670,
+    "end": 638551,
+    "text": "own workflows and the problems you're facing with agents because everybody works a bit",
+    "zh": "自己的工作流程以及您與代理商所面臨的問題，因為每個人都工作一點"
+  },
+  {
+    "start": 638583,
+    "end": 642805,
+    "text": "different and something that works well for me doesn't have to work well for you.",
+    "zh": "不同的東西，對我有效的東西不一定對你也有效。"
+  },
+  {
+    "start": 643479,
+    "end": 645502,
+    "text": "That's why it's so important to write your own skills.",
+    "zh": "這就是為什麼編寫自己的技能如此重要。"
+  },
+  {
+    "start": 645566,
+    "end": 646657,
+    "text": "And it is simple.",
+    "zh": "而且很簡單。"
+  },
+  {
+    "start": 646866,
+    "end": 652613,
+    "text": "A good skill really is just about having a good description so that it's getting activated",
+    "zh": "一個好的技能其實就是有一個好的描述，以便它被激活"
+  },
+  {
+    "start": 652613,
+    "end": 657204,
+    "text": "in the right moments and a lean actionable body.",
+    "zh": "在正確的時刻和精益可行動的身體。"
+  },
+  {
+    "start": 657830,
+    "end": 659741,
+    "text": "Keep your skills lean.",
+    "zh": "保持你的技能精益。"
+  },
+  {
+    "start": 659917,
+    "end": 661892,
+    "text": "I prefer these bullet points here.",
+    "zh": "我更喜歡這裡的這些要點。"
+  },
+  {
+    "start": 662662,
+    "end": 667622,
+    "text": "That is not necessary, of course, but avoid having a lot of prose in there.",
+    "zh": "當然，這不是必需的，但要避免其中有太多散文。"
+  },
+  {
+    "start": 667702,
+    "end": 673913,
+    "text": "If you're using AI to write skills, which again, I do too, make sure you really",
+    "zh": "如果你使用人工智慧來編寫技能（我也這樣做），請確保你真的"
+  },
+  {
+    "start": 674379,
+    "end": 681071,
+    "text": "nudge it towards that style or towards some style that's not overly complex and long",
+    "zh": "將其推向那種風格或某種不太複雜和冗長的風格"
+  },
+  {
+    "start": 681280,
+    "end": 685629,
+    "text": "because some AI models tend to give you very thorough and bloated skills.",
+    "zh": "因為有些人工智慧模型往往會給你非常徹底且臃腫的技能。"
+  },
+  {
+    "start": 686014,
+    "end": 688438,
+    "text": "And for one, that is all tokens you're paying for.",
+    "zh": "其一，這就是您所支付的所有代幣。"
+  },
+  {
+    "start": 688582,
+    "end": 691166,
+    "text": "That is all something that pollutes the context.",
+    "zh": "這都是污染環境的事。"
+  },
+  {
+    "start": 691856,
+    "end": 697306,
+    "text": "And therefore, because of that pollution especially, it leads or it can lead to worse",
+    "zh": "因此，特別是由於污染，它會導致或可能導致更糟糕的情況"
+  },
+  {
+    "start": 697306,
+    "end": 697723,
+    "text": "results.",
+    "zh": "結果。"
+  },
+  {
+    "start": 697819,
+    "end": 700336,
+    "text": "Keep your skills focused and lean.",
+    "zh": "保持你的技能專注且精益。"
+  },
+  {
+    "start": 700753,
+    "end": 707069,
+    "text": "Use AI to build them, but then dive into, spend that time to improve that skill because",
+    "zh": "使用人工智慧來建立它們，然後深入研究，花時間來提高技能，因為"
+  },
+  {
+    "start": 707165,
+    "end": 709778,
+    "text": "that skill is going to get used over and over again.",
+    "zh": "這項技能將被一次又一次地使用。"
+  },
+  {
+    "start": 709906,
+    "end": 711669,
+    "text": "So don't be lazy there.",
+    "zh": "所以不要在那裡偷懶。"
+  },
+  {
+    "start": 712054,
+    "end": 718130,
+    "text": "Really make it a good skill and tweak it, adjust it to your liking, to your requirements.",
+    "zh": "真正讓它成為一項好技能，並根據你的喜好和要求進行調整。"
+  },
+  {
+    "start": 718386,
+    "end": 721576,
+    "text": "Also, don't treat skills as a static thing.",
+    "zh": "另外，不要將技能視為靜態的東西。"
+  },
+  {
+    "start": 721768,
+    "end": 722490,
+    "text": "It's not.",
+    "zh": "它不是。"
+  },
+  {
+    "start": 723115,
+    "end": 726385,
+    "text": "It should evolve over time because everything else evolves.",
+    "zh": "它應該隨著時間的推移而發展，因為其他一切都在發展。"
+  },
+  {
+    "start": 726898,
+    "end": 732925,
+    "text": "The models change and some models suddenly are way more aggressive or verbose than other",
+    "zh": "模型發生了變化，一些模型突然比其他模型更加激進或冗長"
+  },
+  {
+    "start": 732925,
+    "end": 733406,
+    "text": "models.",
+    "zh": "模型。"
+  },
+  {
+    "start": 733470,
+    "end": 738215,
+    "text": "So the skills that worked for other models don't necessarily work for a newer model.",
+    "zh": "因此，適用於其他模型的技能不一定適用於較新的模型。"
+  },
+  {
+    "start": 738440,
+    "end": 739177,
+    "text": "That's one thing.",
+    "zh": "這是一回事。"
+  },
+  {
+    "start": 739882,
+    "end": 742752,
+    "text": "The coding agent harnesses change too.",
+    "zh": "編碼代理也利用變化。"
+  },
+  {
+    "start": 742992,
+    "end": 744708,
+    "text": "The tools they may have change.",
+    "zh": "他們可能擁有的工具發生了變化。"
+  },
+  {
+    "start": 744932,
+    "end": 748346,
+    "text": "The system prompt that may implicitly be added, that changes.",
+    "zh": "可能隱式添加的系統提示會變更。"
+  },
+  {
+    "start": 748939,
+    "end": 749549,
+    "text": "And you change.",
+    "zh": "而你改變了。"
+  },
+  {
+    "start": 749661,
+    "end": 751232,
+    "text": "The way you work changes.",
+    "zh": "您的工作方式發生了變化。"
+  },
+  {
+    "start": 751969,
+    "end": 755624,
+    "text": "A year ago, we were all writing way more code than we do do now.",
+    "zh": "一年前，我們寫的程式碼比現在多得多。"
+  },
+  {
+    "start": 756377,
+    "end": 759807,
+    "text": "We're also changing how and how much code we read.",
+    "zh": "我們也改變了閱讀代碼的方式和數量。"
+  },
+  {
+    "start": 760096,
+    "end": 763414,
+    "text": "So of course, our skills also need to evolve.",
+    "zh": "當然，我們的技能也需要發展。"
+  },
+  {
+    "start": 764071,
+    "end": 770610,
+    "text": "You could also consider adding an improve skill skill to your skills so that your",
+    "zh": "您也可以考慮在您的技能中添加一項提高技能的技能，以便您的"
+  },
+  {
+    "start": 770722,
+    "end": 776300,
+    "text": "agents can automatically improve skills based on certain rules you define whenever they",
+    "zh": "代理可以根據您定義的某些規則自動提高技能"
+  },
+  {
+    "start": 776412,
+    "end": 782247,
+    "text": "frequently get something wrong or you frequently correct them on something that was actually",
+    "zh": "經常犯錯或你經常糾正一些實際上是錯誤的事情"
+  },
+  {
+    "start": 782279,
+    "end": 783337,
+    "text": "encoded in a skill.",
+    "zh": "編碼在技能中。"
+  },
+  {
+    "start": 783401,
+    "end": 787120,
+    "text": "So These are all things you should consider doing.",
+    "zh": "所以這些都是你應該考慮要做的事情。"
+  },
+  {
+    "start": 787713,
+    "end": 792762,
+    "text": "A skill you installed half a year ago is not necessarily useful anymore.",
+    "zh": "半年前安裝的技能不一定有用。"
+  },
+  {
+    "start": 793259,
+    "end": 798485,
+    "text": "Evolve it, throw it away maybe if it doesn't get the job done anymore, and build your",
+    "zh": "發展它，如果它不再能完成工作，就丟掉它，然後建立你的"
+  },
+  {
+    "start": 798533,
+    "end": 799126,
+    "text": "own skills.",
+    "zh": "自己的技能。"
+  },
+  {
+    "start": 799671,
+    "end": 802124,
+    "text": "Don't just collect skills created by others.",
+    "zh": "不要只是收集別人創造的技能。"
+  },
+  {
+    "start": 802460,
+    "end": 808215,
+    "text": "Also be aware of the fact that I would say there are 4 main types of skills, though of",
+    "zh": "另請注意，我想說有 4 種主要類型的技能，儘管"
+  },
+  {
+    "start": 808247,
+    "end": 810379,
+    "text": "course, obviously they also kind of overlap.",
+    "zh": "當然，顯然它們也有一些重疊。"
+  },
+  {
+    "start": 810974,
+    "end": 814829,
+    "text": "We have the domain knowledge skill I already talked about, which is, for example, that",
+    "zh": "我們擁有我已經討論過的領域知識技能，例如"
+  },
+  {
+    "start": 814829,
+    "end": 820050,
+    "text": "effect skill I like to add to a project to have certain domain-specific knowledge that",
+    "zh": "效果技能 我喜歡添加到專案中以獲得某些特定領域的知識"
+  },
+  {
+    "start": 820050,
+    "end": 824950,
+    "text": "matters to a project in a skill so that the agent doesn't have to make requests over",
+    "zh": "對專案的一項技能很重要，這樣代理就不必再提出請求"
+  },
+  {
+    "start": 824950,
+    "end": 825545,
+    "text": "and over again.",
+    "zh": "一遍又一遍。"
+  },
+  {
+    "start": 825673,
+    "end": 826605,
+    "text": "That can be useful.",
+    "zh": "這很有用。"
+  },
+  {
+    "start": 827424,
+    "end": 832951,
+    "text": "I have my workflow skills like that create plan skill I showed you for workflows I repeat",
+    "zh": "我有我的工作流程技能，就像我向您展示的工作流程創建計劃技能一樣，我重複一遍"
+  },
+  {
+    "start": 833127,
+    "end": 836517,
+    "text": "over and over again where I also don't want to repeat myself and where I want to have",
+    "zh": "一次又一次我也不想重複自己和我想要的地方"
+  },
+  {
+    "start": 836517,
+    "end": 837497,
+    "text": "a clear structure.",
+    "zh": "結構清晰。"
+  },
+  {
+    "start": 838187,
+    "end": 844989,
+    "text": "Then I have companion skills, with which I mean skills that explain the usage of certain",
+    "zh": "然後我有同儕技能，我的意思是解釋某些特定內容的用法的技能"
+  },
+  {
+    "start": 845037,
+    "end": 846785,
+    "text": "tools to an agent.",
+    "zh": "給代理商的工具。"
+  },
+  {
+    "start": 846930,
+    "end": 853475,
+    "text": "For example, I have a Use Pi Subagents skill, which is a skill, as the name suggests,",
+    "zh": "例如我有一個Use Pi Subagents技能，顧名思義，這是一個技能，"
+  },
+  {
+    "start": 853683,
+    "end": 857533,
+    "text": "fine-tuned for working with Pi, the Pi coding agent.",
+    "zh": "為與 Pi（Pi 編碼代理）配合使用而進行了微調。"
+  },
+  {
+    "start": 858159,
+    "end": 864511,
+    "text": "And that skill has a script, which is there to spin up and control subagents.",
+    "zh": "該技能有一個腳本，用於啟動和控制子代理程式。"
+  },
+  {
+    "start": 864816,
+    "end": 865265,
+    "text": "Through Pi.",
+    "zh": "透過Pi."
+  },
+  {
+    "start": 865473,
+    "end": 866707,
+    "text": "I could be using an extension.",
+    "zh": "我可以使用擴充功能。"
+  },
+  {
+    "start": 866755,
+    "end": 867974,
+    "text": "I'm using a skill instead.",
+    "zh": "我正在使用一項技能。"
+  },
+  {
+    "start": 868278,
+    "end": 870811,
+    "text": "And then that skill explains how to use that script.",
+    "zh": "然後該技能解釋如何使用該腳本。"
+  },
+  {
+    "start": 870859,
+    "end": 877432,
+    "text": "So of course, it's kind of like that generate image script, but it still is a skill that",
+    "zh": "當然，這有點像生成圖像腳本，但它仍然是一項技能"
+  },
+  {
+    "start": 877640,
+    "end": 884421,
+    "text": "explains how to use that Pi coding agent in which a model may be running and how",
+    "zh": "解釋瞭如何使用模型可能在其中運行的 Pi 編碼代理以及如何使用"
+  },
+  {
+    "start": 884549,
+    "end": 888236,
+    "text": "to use it to, for example, work with subagents.",
+    "zh": "例如，使用它來與子代理一起工作。"
+  },
+  {
+    "start": 888621,
+    "end": 894680,
+    "text": "Another example could be for any other CLI you install on your system, which you want",
+    "zh": "另一個例子可能是您在系統上安裝的任何其他您想要的 CLI"
+  },
+  {
+    "start": 894680,
+    "end": 896459,
+    "text": "to explain to an agent.",
+    "zh": "向代理人解釋。"
+  },
+  {
+    "start": 896796,
+    "end": 901908,
+    "text": "And the last type of skill, at least for me, are executables, as I like to call them,",
+    "zh": "最後一種技能，至少對我來說，是可執行的，我喜歡這樣稱呼它們，"
+  },
+  {
+    "start": 902245,
+    "end": 905258,
+    "text": "which would, for example, be that Generate Image skill.",
+    "zh": "例如，這就是“生成圖像”技能。"
+  },
+  {
+    "start": 905690,
+    "end": 911588,
+    "text": "Or maybe even more than that, for me, it's that VPS Setup Hardening skill I have here.",
+    "zh": "或者甚至更重要的是，對我來說，這是我在這裡擁有的 VPS 設定強化技能。"
+  },
+  {
+    "start": 912277,
+    "end": 918191,
+    "text": "This skill has a bunch of scripts and a bunch of configuration templates, for example.",
+    "zh": "例如，這項技能有一堆腳本和一堆配置模板。"
+  },
+  {
+    "start": 918591,
+    "end": 923287,
+    "text": "And I use this skill to, for example, configure a new VPS.",
+    "zh": "例如，我使用此技能來配置新的 VPS。"
+  },
+  {
+    "start": 923560,
+    "end": 930359,
+    "text": "I could do that all with just scripts, but it does actually require some decisions here",
+    "zh": "我可以只用腳本來完成這一切，但它實際上需要在這裡做出一些決定"
+  },
+  {
+    "start": 930391,
+    "end": 934675,
+    "text": "and there, some checks that should be performed, and it's nice to have an agent do that.",
+    "zh": "在那裡，應該執行一些檢查，很高興有代理商來做這件事。"
+  },
+  {
+    "start": 935606,
+    "end": 940789,
+    "text": "Obviously, everybody has to decide for themselves if they want to let an agent roam freely",
+    "zh": "顯然，是否要讓代理商自由漫遊，每個人都必須自己決定"
+  },
+  {
+    "start": 940821,
+    "end": 943934,
+    "text": "on a VPS, but I have had good experience with that.",
+    "zh": "在 VPS 上，但我對此有很好的經驗。"
+  },
+  {
+    "start": 944094,
+    "end": 950561,
+    "text": "I'm using that skill, for example, to execute that workflow of setting up a new VPS",
+    "zh": "例如，我正在使用該技能來執行設定新 VPS 的工作流程"
+  },
+  {
+    "start": 950706,
+    "end": 954268,
+    "text": "together with an agent, and I describe how that works.",
+    "zh": "與代理人一起，我描述了它是如何運作的。"
+  },
+  {
+    "start": 954380,
+    "end": 957782,
+    "text": "I have clearly described workflow here.",
+    "zh": "我在這裡已經清楚地描述了工作流程。"
+  },
+  {
+    "start": 957894,
+    "end": 961007,
+    "text": "And then I have all these hardcoded scripts and configs.",
+    "zh": "然後我就有了所有這些硬編碼的腳本和配置。"
+  },
+  {
+    "start": 961360,
+    "end": 967425,
+    "text": "And for all these things, Agent Skills can be really useful and can be considered.",
+    "zh": "對於所有這些事情，特工技能確實很有用，可以考慮。"
+  },
+  {
+    "start": 967762,
+    "end": 971757,
+    "text": "And that therefore leaves only 2 remaining questions.",
+    "zh": "因此只剩下兩個問題了。"
+  },
+  {
+    "start": 972094,
+    "end": 976635,
+    "text": "One question is where to put those skills, because you can install them globally on your",
+    "zh": "一個問題是將這些技能放在哪裡，因為您可以將它們全域安裝在您的電腦上"
+  },
+  {
+    "start": 976683,
+    "end": 978400,
+    "text": "system or locally per project.",
+    "zh": "系統或每個項目本地。"
+  },
+  {
+    "start": 978833,
+    "end": 983198,
+    "text": "That, of course, should be relatively easy to answer if you have something like my Create",
+    "zh": "當然，如果你有像我的 Create 這樣的東西，這個問題應該相對容易回答"
+  },
+  {
+    "start": 983246,
+    "end": 987814,
+    "text": "plan skill, which applies to many projects, to all the projects I'm working on, it should",
+    "zh": "計劃技巧，適用於許多項目，適用於我正在從事的所有項目，它應該"
+  },
+  {
+    "start": 987814,
+    "end": 988680,
+    "text": "be a global skill.",
+    "zh": "成為一項全球技能。"
+  },
+  {
+    "start": 988872,
+    "end": 993265,
+    "text": "The generate image skill is a global skill because I may want to generate an image from",
+    "zh": "生成圖像技能是一項全局技能，因為我可能想從"
+  },
+  {
+    "start": 993425,
+    "end": 994451,
+    "text": "anywhere on the system.",
+    "zh": "系統上的任何位置。"
+  },
+  {
+    "start": 994964,
+    "end": 999997,
+    "text": "On the other hand, that effect skill with the effect library knowledge, that would be",
+    "zh": "另一方面，效果技能加上效果庫知識，那就是"
+  },
+  {
+    "start": 999997,
+    "end": 1003748,
+    "text": "per project because it doesn't add any value if it's sitting there globally.",
+    "zh": "每個項目，因為如果它位於全球範圍內，它不會增加任何價值。"
+  },
+  {
+    "start": 1004005,
+    "end": 1008076,
+    "text": "Because all the global skills, of course, at least their metadata, their description,",
+    "zh": "因為所有的全域技能，當然，至少是它們的元數據，它們的描述，"
+  },
+  {
+    "start": 1008653,
+    "end": 1011282,
+    "text": "they are always loaded into all your sessions.",
+    "zh": "它們總是加載到您的所有會話中。"
+  },
+  {
+    "start": 1011940,
+    "end": 1014969,
+    "text": "And it's not just about the tokens that are burned by them.",
+    "zh": "這不僅僅是他們燒毀的代幣。"
+  },
+  {
+    "start": 1015050,
+    "end": 1016382,
+    "text": "That's not too bad.",
+    "zh": "那還不錯。"
+  },
+  {
+    "start": 1017232,
+    "end": 1023186,
+    "text": "All these tools, which skills in the end are, simply can lead to worse model performance",
+    "zh": "所有這些工具（到底是哪些技能）只會導致模型效能變差"
+  },
+  {
+    "start": 1023186,
+    "end": 1024342,
+    "text": "the more you have of them.",
+    "zh": "你擁有的越多。"
+  },
+  {
+    "start": 1024872,
+    "end": 1028611,
+    "text": "And therefore, I try to keep my global skills as lean as possible.",
+    "zh": "因此，我盡力保持我的全球技能盡可能精益。"
+  },
+  {
+    "start": 1028804,
+    "end": 1032286,
+    "text": "In general, I try to have as few skills as possible.",
+    "zh": "一般來說，我會盡量少掌握技能。"
+  },
+  {
+    "start": 1032880,
+    "end": 1037278,
+    "text": "And I definitely put everything into a project that can be in a project.",
+    "zh": "我絕對把所有可以在專案中的東西都投入到一個專案中。"
+  },
+  {
+    "start": 1037534,
+    "end": 1043569,
+    "text": "Well, and the other question is, what would you put into AgentsMD or ClaudeMD?",
+    "zh": "那麼，另一個問題是，您會在 AgentsMD 或 ClaudeMD 中放入什麼？"
+  },
+  {
+    "start": 1043874,
+    "end": 1048267,
+    "text": "And For me, these files should be super lean.",
+    "zh": "對我來說，這些文件應該非常精簡。"
+  },
+  {
+    "start": 1048683,
+    "end": 1054678,
+    "text": "I really only put general instructions in there that steer the behavior of the model.",
+    "zh": "我實際上只是在其中放置了指導模型行為的一般指令。"
+  },
+  {
+    "start": 1054726,
+    "end": 1057740,
+    "text": "Something like, keep your responses short.",
+    "zh": "例如，讓你的回答簡短一點。"
+  },
+  {
+    "start": 1058060,
+    "end": 1064296,
+    "text": "Or don't add any legacy or fallback code because models, or at least some models, love",
+    "zh": "或不要添加任何遺留或後備程式碼，因為模型或至少某些模型喜歡"
+  },
+  {
+    "start": 1064328,
+    "end": 1064761,
+    "text": "to do that.",
+    "zh": "這樣做。"
+  },
+  {
+    "start": 1065194,
+    "end": 1070676,
+    "text": "They don't delete code, they just add layer on layer on layer and having such instructions",
+    "zh": "他們不會刪除程式碼，他們只是一層一層地添加並有這樣的指令"
+  },
+  {
+    "start": 1070676,
+    "end": 1073932,
+    "text": "in AgentsMD can help a bit at least.",
+    "zh": "AgentsMD 中至少可以提供一點幫助。"
+  },
+  {
+    "start": 1074092,
+    "end": 1075665,
+    "text": "Now, why not make it a skill?",
+    "zh": "現在，為什麼不把它變成一項技能呢？"
+  },
+  {
+    "start": 1075954,
+    "end": 1077847,
+    "text": "Because a skill must be activated.",
+    "zh": "因為必須發動技能。"
+  },
+  {
+    "start": 1078200,
+    "end": 1080447,
+    "text": "And I don't want to hope for that to be activated.",
+    "zh": "我不希望它被激活。"
+  },
+  {
+    "start": 1080688,
+    "end": 1085550,
+    "text": "If I have hard rules that matter to all the models and all the agents, I put them into",
+    "zh": "如果我有對所有模型和所有代理都很重要的硬性規則，我會將它們放入"
+  },
+  {
+    "start": 1085582,
+    "end": 1090187,
+    "text": "a global agents.md file because you can have global agents and Claude.md files too, not",
+    "zh": "全域代理.md 文件，因為您也可以擁有全域代理程式和 Claude.md 文件，而不是"
+  },
+  {
+    "start": 1090236,
+    "end": 1091616,
+    "text": "just project-specific ones.",
+    "zh": "只是特定於項目的。"
+  },
+  {
+    "start": 1092241,
+    "end": 1095162,
+    "text": "And then they will be loaded for every session and I'm good to go.",
+    "zh": "然後每次會話都會加載它們，我就可以開始了。"
+  },
+  {
+    "start": 1095692,
+    "end": 1097746,
+    "text": "And that's the simple differentiation here for me.",
+    "zh": "這對我來說就是簡單的差別。"
+  },
+  {
+    "start": 1097794,
+    "end": 1103855,
+    "text": "Skills are like tools, like extra patterns or pieces of knowledge that matter often,",
+    "zh": "技能就像工具，就像經常重要的額外模式或知識片段，"
+  },
+  {
+    "start": 1104129,
+    "end": 1105062,
+    "text": "but not always.",
+    "zh": "但並非總是如此。"
+  },
+  {
+    "start": 1105560,
+    "end": 1109920,
+    "text": "If something does matter always, it goes into AgentsMD or ClaudeMD.",
+    "zh": "如果某件事確實很重要，那麼它就會進入 AgentsMD 或 ClaudeMD。"
+  },
+  {
+    "start": 1110788,
+    "end": 1115582,
+    "text": "Yeah, and that is really how you should be using skills in my opinion.",
+    "zh": "是的，在我看來，這確實是你應該如何使用技能的方式。"
+  }
+]

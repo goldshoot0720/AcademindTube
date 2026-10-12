@@ -1,0 +1,1424 @@
+[
+  {
+    "start": 256,
+    "end": 4119,
+    "text": "AI can make building software, web applications, and so on easier.",
+    "zh": "人工智慧可以讓建立軟體、網路應用程式等變得更加容易。"
+  },
+  {
+    "start": 4264,
+    "end": 7389,
+    "text": "But building, of course, is just one building block.",
+    "zh": "但建造當然只是其中的一個組成部分。"
+  },
+  {
+    "start": 7790,
+    "end": 13176,
+    "text": "AI cannot just help with building software, it can also help with deploying it.",
+    "zh": "人工智慧不僅可以幫助建立軟體，還可以幫助部署軟體。"
+  },
+  {
+    "start": 13240,
+    "end": 16639,
+    "text": "It can also help you manage your AWS account.",
+    "zh": "它還可以幫助您管理您的 AWS 帳戶。"
+  },
+  {
+    "start": 17504,
+    "end": 24029,
+    "text": "Because if you ever tried to manage your AWS account manually, you obviously know there",
+    "zh": "因為如果您曾經嘗試手動管理您的 AWS 帳戶，您顯然知道這一點"
+  },
+  {
+    "start": 24077,
+    "end": 25295,
+    "text": "is a lot to learn here.",
+    "zh": "這裡有很多值得學習的地方。"
+  },
+  {
+    "start": 25680,
+    "end": 31018,
+    "text": "Lots of services, lots of different ways of configuring these services, lots of ways",
+    "zh": "很多服務，很多不同的配置這些服務的方法，很多方法"
+  },
+  {
+    "start": 31114,
+    "end": 33313,
+    "text": "of shooting shooting yourself in the foot.",
+    "zh": "搬石頭砸自己的腳。"
+  },
+  {
+    "start": 34245,
+    "end": 40509,
+    "text": "Nonetheless, AWS is of course a very powerful cloud provider, and thankfully AI can help",
+    "zh": "儘管如此，AWS 當然是一個非常強大的雲端供應商，值得慶幸的是人工智慧可以提供幫助"
+  },
+  {
+    "start": 40509,
+    "end": 43417,
+    "text": "you with managing AWS and your resources.",
+    "zh": "您可以管理 AWS 和您的資源。"
+  },
+  {
+    "start": 43562,
+    "end": 50549,
+    "text": "It can do it for you, but there are different levels of using AI here, and you can go",
+    "zh": "它可以為你做到這一點，但是這裡使用人工智慧有不同的級別，你可以去"
+  },
+  {
+    "start": 50549,
+    "end": 57039,
+    "text": "from very bad ideas all the way up to very safe, nonetheless very useful ways of leveraging",
+    "zh": "從非常糟糕的想法一直到非常安全但非常有用的利用方式"
+  },
+  {
+    "start": 57231,
+    "end": 59609,
+    "text": "AI to help you with AWS.",
+    "zh": "AI 可協助您使用 AWS。"
+  },
+  {
+    "start": 60924,
+    "end": 66008,
+    "text": "Now, if you first of all want to build something though, you may want to check out our",
+    "zh": "現在，如果您首先想要建立一些東西，您可能需要查看我們的"
+  },
+  {
+    "start": 66120,
+    "end": 66553,
+    "text": "courses.",
+    "zh": "課程。"
+  },
+  {
+    "start": 66601,
+    "end": 71798,
+    "text": "We got courses on a broad variety of AI coding agents, of technologies like Bun.",
+    "zh": "我們開設了有關各種人工智慧編碼代理以及 Bun 等技術的課程。"
+  },
+  {
+    "start": 72471,
+    "end": 77250,
+    "text": "We have an agents course which gives you all the knowledge about that and much, much",
+    "zh": "我們有一個代理課程，可以為您提供有關這方面的所有知識以及很多很多"
+  },
+  {
+    "start": 77363,
+    "end": 77475,
+    "text": "more.",
+    "zh": "更多的。"
+  },
+  {
+    "start": 77603,
+    "end": 82029,
+    "text": "And you find links below if you want to take your personal skills in the building area",
+    "zh": "如果您想在建築領域發揮個人技能，您可以找到下面的鏈接"
+  },
+  {
+    "start": 82029,
+    "end": 82783,
+    "text": "to the next level.",
+    "zh": "到一個新的水平。"
+  },
+  {
+    "start": 83537,
+    "end": 88922,
+    "text": "But now let's take a look at using AWS with AI and how AI can help you there.",
+    "zh": "但現在讓我們來看看將 AWS 與 AI 結合使用，以及 AI 如何在這方面為您提供幫助。"
+  },
+  {
+    "start": 89547,
+    "end": 91839,
+    "text": "And let's start with the bad approach.",
+    "zh": "讓我們從不好的方法開始。"
+  },
+  {
+    "start": 92416,
+    "end": 94979,
+    "text": "And that would be computer use.",
+    "zh": "那就是計算機的使用。"
+  },
+  {
+    "start": 95861,
+    "end": 100475,
+    "text": "Of course, you could just log into your AWS account as I did here.",
+    "zh": "當然，您可以像我在這裡一樣登入您的 AWS 帳戶。"
+  },
+  {
+    "start": 100988,
+    "end": 107942,
+    "text": "And then you could use ChatGPT or Claude and enable computer use and tell it to",
+    "zh": "然後你可以使用 ChatGPT 或 Claude 並啟用電腦使用並告訴它"
+  },
+  {
+    "start": 107974,
+    "end": 109929,
+    "text": "do whatever you want it to do here.",
+    "zh": "在這裡做任何你想讓它做的事。"
+  },
+  {
+    "start": 110298,
+    "end": 112669,
+    "text": "For example, manage some EC2 instances.",
+    "zh": "例如，管理一些 EC2 執行個體。"
+  },
+  {
+    "start": 113342,
+    "end": 115746,
+    "text": "You can do that, but it's not great.",
+    "zh": "你可以這樣做，但效果並不好。"
+  },
+  {
+    "start": 116227,
+    "end": 117204,
+    "text": "Why is it not great?",
+    "zh": "為什麼不太好呢？"
+  },
+  {
+    "start": 117268,
+    "end": 120249,
+    "text": "Because it's slow, because it's potentially expensive.",
+    "zh": "因為它很慢，因為它可能很昂貴。"
+  },
+  {
+    "start": 120313,
+    "end": 124255,
+    "text": "Computer use tends to use a decent amount of tokens.",
+    "zh": "計算機的使用往往會使用相當數量的代幣。"
+  },
+  {
+    "start": 124864,
+    "end": 126034,
+    "text": "And of course it's insecure.",
+    "zh": "當然這是不安全的。"
+  },
+  {
+    "start": 126547,
+    "end": 128983,
+    "text": "And why is that all the case?",
+    "zh": "為什麼會這樣呢？"
+  },
+  {
+    "start": 129047,
+    "end": 133582,
+    "text": "Well, that is, well, the slow and the token part is self-explanatory.",
+    "zh": "好吧，那就是，好吧，緩慢和象徵性的部分是不言自明的。"
+  },
+  {
+    "start": 133999,
+    "end": 139832,
+    "text": "Insecure, of course, is the case because AI, if used through computer use, can do everything",
+    "zh": "當然，情況並不安全，因為人工智慧如果透過電腦使用，可以做任何事情"
+  },
+  {
+    "start": 139928,
+    "end": 140761,
+    "text": "here you can do.",
+    "zh": "在這裡你可以做。"
+  },
+  {
+    "start": 141050,
+    "end": 142877,
+    "text": "Obviously, that's the idea behind computer use.",
+    "zh": "顯然，這就是電腦使用背後的想法。"
+  },
+  {
+    "start": 143085,
+    "end": 145442,
+    "text": "So yeah, you can do that, but You don't wanna do that.",
+    "zh": "所以是的，你可以這樣做，但你不想這樣做。"
+  },
+  {
+    "start": 146358,
+    "end": 153070,
+    "text": "Now what's better but still potentially bad is use the AWS CLI with",
+    "zh": "現在更好但仍然可能不好的是使用 AWS CLI"
+  },
+  {
+    "start": 153183,
+    "end": 154644,
+    "text": "broad permissions.",
+    "zh": "廣泛的權限。"
+  },
+  {
+    "start": 155752,
+    "end": 160104,
+    "text": "So of course you can use your IAM user account.",
+    "zh": "因此，您當然可以使用您的 IAM 使用者帳戶。"
+  },
+  {
+    "start": 160184,
+    "end": 164649,
+    "text": "So in case you don't know, AWS has the concept called IAM, which allows you to manage",
+    "zh": "如果您不知道，AWS 有一個稱為 IAM 的概念，它允許您管理"
+  },
+  {
+    "start": 164665,
+    "end": 165195,
+    "text": "permissions.",
+    "zh": "權限。"
+  },
+  {
+    "start": 165709,
+    "end": 167202,
+    "text": "And there you can create users.",
+    "zh": "您可以在那裡創建用戶。"
+  },
+  {
+    "start": 167395,
+    "end": 173831,
+    "text": "So for example, I have my user here and then I could basically let AI",
+    "zh": "例如，我在這裡有我的用戶，然後我基本上可以讓人工智慧"
+  },
+  {
+    "start": 174136,
+    "end": 179137,
+    "text": "assume my user's profile in the CLI and do stuff here.",
+    "zh": "在 CLI 中假設我的使用者設定檔並在此處執行操作。"
+  },
+  {
+    "start": 179810,
+    "end": 185517,
+    "text": "So for example, if I wanna get an overview over some of my resources, let's say my VPCs",
+    "zh": "舉例來說，如果我想了解一些資源的概覽，比如說我的 VPC"
+  },
+  {
+    "start": 186303,
+    "end": 189781,
+    "text": "and my security groups, I could of course spin up an agent here.",
+    "zh": "和我的安全團隊，我當然可以在這裡設立一個代理。"
+  },
+  {
+    "start": 189861,
+    "end": 193628,
+    "text": "I'm using Pi and I could ask it to use my SSO profile.",
+    "zh": "我正在使用 Pi，我可以要求它使用我的 SSO 設定檔。"
+  },
+  {
+    "start": 193692,
+    "end": 199640,
+    "text": "So that's like an IAM user but using single sign-on to manage multiple accounts via the",
+    "zh": "這就像 IAM 用戶，但使用單一登入透過"
+  },
+  {
+    "start": 199640,
+    "end": 200024,
+    "text": "CLI.",
+    "zh": "命令列介面。"
+  },
+  {
+    "start": 200201,
+    "end": 205058,
+    "text": "So I already did log in here locally on my machine and now I'm asking, the AI to use",
+    "zh": "所以我已經在我的機器上本地登入了，現在我問，要使用的人工智慧"
+  },
+  {
+    "start": 205058,
+    "end": 211133,
+    "text": "my logged-in CLI, so to say, use my profile and access the account and do something.",
+    "zh": "我登入的 CLI，也就是說，使用我的個人資料並存取該帳戶並執行某些操作。"
+  },
+  {
+    "start": 211566,
+    "end": 216583,
+    "text": "And I'm only asking it here to read something, to just give me an overview.",
+    "zh": "我只是要求它在這裡閱讀一些內容，只是為了給我一個概述。"
+  },
+  {
+    "start": 216632,
+    "end": 218892,
+    "text": "So clearly it should not create anything.",
+    "zh": "很明顯它不應該創造任何東西。"
+  },
+  {
+    "start": 219485,
+    "end": 225128,
+    "text": "But the thing is, I of course have no guarantee that AI will follow my rules here.",
+    "zh": "但問題是，我當然不能保證人工智慧會遵守我的規則。"
+  },
+  {
+    "start": 225176,
+    "end": 232165,
+    "text": "It may decide, unlikely, but it may decide that the best way of reading this information",
+    "zh": "它可能會決定（不太可能），但它可能會決定閱讀此資訊的最佳方式"
+  },
+  {
+    "start": 232165,
+    "end": 238322,
+    "text": "or of getting this information is to spin up, let's say, an AWS Lambda function, and",
+    "zh": "或取得此資訊的方法是啟動一個 AWS Lambda 函數，並且"
+  },
+  {
+    "start": 238562,
+    "end": 243278,
+    "text": "in that function, maybe analyze my account and produce a report.",
+    "zh": "在該功能中，也許可以分析我的帳戶並產生報告。"
+  },
+  {
+    "start": 244031,
+    "end": 245010,
+    "text": "It may do that.",
+    "zh": "它可能會這樣做。"
+  },
+  {
+    "start": 245539,
+    "end": 249853,
+    "text": "And then I would still get the result I wanted, but along the way, I would have paid",
+    "zh": "然後我仍然會得到我想要的結果，但一路走來，我會付出代價"
+  },
+  {
+    "start": 249950,
+    "end": 251297,
+    "text": "for that function execution.",
+    "zh": "用於該函數的執行。"
+  },
+  {
+    "start": 252227,
+    "end": 259156,
+    "text": "So things like that can happen if you allow AI to access your account with broad",
+    "zh": "因此，如果你允許人工智慧廣泛存取你的帳戶，類似的事情就會發生"
+  },
+  {
+    "start": 259188,
+    "end": 261513,
+    "text": "permissions, as I'm doing right here.",
+    "zh": "權限，就像我在這裡所做的那樣。"
+  },
+  {
+    "start": 261610,
+    "end": 267479,
+    "text": "So that is probably not what you want to do because you have no control over what AI",
+    "zh": "所以這可能不是你想要做的，因為你無法控制人工智慧的內容"
+  },
+  {
+    "start": 267607,
+    "end": 272432,
+    "text": "does, even if it does give you the intended result in the end.",
+    "zh": "確實如此，即使它最終確實給了你預期的結果。"
+  },
+  {
+    "start": 272561,
+    "end": 278925,
+    "text": "And even if these modern models and agents are unlikely to go rogue, but even without",
+    "zh": "即使這些現代模特兒和代理人不太可能變得無賴，但即使沒有"
+  },
+  {
+    "start": 279150,
+    "end": 284120,
+    "text": "bad intentions, it's an AI, it doesn't have intentions, but even without that, it may",
+    "zh": "惡意，它是人工智慧，它沒有意圖，但即使沒有意圖，它也可能"
+  },
+  {
+    "start": 284120,
+    "end": 285659,
+    "text": "do stuff you don't want it to do.",
+    "zh": "做你不希望它做的事情。"
+  },
+  {
+    "start": 285979,
+    "end": 289602,
+    "text": "So that is something to keep in mind here.",
+    "zh": "所以這是這裡需要記住的事情。"
+  },
+  {
+    "start": 289987,
+    "end": 296304,
+    "text": "So potentially better than this approach here where you have those broad permissions",
+    "zh": "因此，在您擁有廣泛權限的情況下，可能比這種方法更好"
+  },
+  {
+    "start": 296304,
+    "end": 303229,
+    "text": "and you just allow AI to use your profile is to create dedicated users or roles for",
+    "zh": "您只需允許人工智慧使用您的個人資料即可建立專用使用者或角色"
+  },
+  {
+    "start": 303501,
+    "end": 303790,
+    "text": "AI.",
+    "zh": "人工智慧."
+  },
+  {
+    "start": 305120,
+    "end": 310618,
+    "text": "So on IAM, you could of course create a new user for AI and give it the right permissions,",
+    "zh": "所以在 IAM 上，您當然可以為 AI 創建一個新用戶並賦予其正確的權限，"
+  },
+  {
+    "start": 310811,
+    "end": 312542,
+    "text": "and I'll get back to those right permissions.",
+    "zh": "我會恢復這些正確的權限。"
+  },
+  {
+    "start": 312750,
+    "end": 314466,
+    "text": "Or better, you could create a role.",
+    "zh": "或者更好的是，您可以創建一個角色。"
+  },
+  {
+    "start": 315379,
+    "end": 319435,
+    "text": "The difference is that users are permanent, roles are temporary.",
+    "zh": "差別在於用戶是永久的，角色是臨時的。"
+  },
+  {
+    "start": 319627,
+    "end": 325318,
+    "text": "So with roles, you can create temporary credentials that can be assumed by the AI.",
+    "zh": "因此，透過角色，您可以建立人工智慧可以使用的臨時憑證。"
+  },
+  {
+    "start": 325462,
+    "end": 330691,
+    "text": "And the advantage of that is that if the credentials end up in the AI session, if it",
+    "zh": "這樣做的好處是，如果憑證最終出現在人工智慧會話中，如果它"
+  },
+  {
+    "start": 330691,
+    "end": 335392,
+    "text": "decides to read your secret key or anything like that, and it's quite likely that this",
+    "zh": "決定讀取你的密鑰或類似的東西，很可能這"
+  },
+  {
+    "start": 335504,
+    "end": 341087,
+    "text": "may happen, then you know that those credentials will be invalid after a few hours.",
+    "zh": "可能會發生，那麼您就知道這些憑證將在幾個小時後失效。"
+  },
+  {
+    "start": 341601,
+    "end": 347184,
+    "text": "So if they end up in the training data or get exposed in some other way, the damage is",
+    "zh": "因此，如果它們最終出現在訓練資料中或以其他方式暴露，造成的損害就是"
+  },
+  {
+    "start": 347280,
+    "end": 352205,
+    "text": "contained and most likely there is no damage by the point in time those credentials may",
+    "zh": "包含並且很可能在這些憑證可能的時間點沒有受到損害"
+  },
+  {
+    "start": 352270,
+    "end": 354147,
+    "text": "get shared with others.",
+    "zh": "與他人分享。"
+  },
+  {
+    "start": 354195,
+    "end": 356505,
+    "text": "So that's why roles are better because it's temporary.",
+    "zh": "這就是為什麼角色更好，因為它是暫時的。"
+  },
+  {
+    "start": 356841,
+    "end": 362568,
+    "text": "And then for example, you could create a role which can be assumed by you.",
+    "zh": "例如，您可以建立一個可以由您擔任的角色。"
+  },
+  {
+    "start": 362857,
+    "end": 368680,
+    "text": "So here by my single sign-on profile and in the permissions here, for example, I have",
+    "zh": "因此，透過我的單一登入設定檔和這裡的權限，例如，我有"
+  },
+  {
+    "start": 368872,
+    "end": 370043,
+    "text": "read-only access.",
+    "zh": "只讀訪問。"
+  },
+  {
+    "start": 370139,
+    "end": 376700,
+    "text": "So I added a permission policy that's actually coming with AWS that gives very broad",
+    "zh": "因此，我添加了 AWS 附帶的權限策略，該策略提供了非常廣泛的權限"
+  },
+  {
+    "start": 376732,
+    "end": 381239,
+    "text": "service and resource access but only read-only.",
+    "zh": "服務和資源訪問，但僅限唯讀。"
+  },
+  {
+    "start": 381399,
+    "end": 387840,
+    "text": "So with that role, with that permission, whoever has that role can read",
+    "zh": "因此，有了這個角色，有了這個權限，任何擁有這個角色的人都可以閱讀"
+  },
+  {
+    "start": 388033,
+    "end": 392151,
+    "text": "basically my entire account, but they can't change anything.",
+    "zh": "基本上是我的整個帳戶，但他們無法更改任何內容。"
+  },
+  {
+    "start": 392519,
+    "end": 396749,
+    "text": "And that of course comes with the huge advantage that whoever is using that role can",
+    "zh": "當然，這帶來了巨大的優勢，即無論誰使用該角色都可以"
+  },
+  {
+    "start": 396829,
+    "end": 401540,
+    "text": "only do what I allow here and can't, for example, start an AWS Lambda function.",
+    "zh": "僅執行我允許的操作，例如，不能啟動 AWS Lambda 函數。"
+  },
+  {
+    "start": 402069,
+    "end": 407613,
+    "text": "So outside of an agent, I could assume that role with this command here.",
+    "zh": "因此，在代理之外，我可以使用此命令承擔該角色。"
+  },
+  {
+    "start": 408367,
+    "end": 410806,
+    "text": "And now I get these temporary credentials here.",
+    "zh": "現在我在這裡得到這些臨時憑證。"
+  },
+  {
+    "start": 411014,
+    "end": 414015,
+    "text": "And by the way, by the point of time you're watching the video, they will be invalid.",
+    "zh": "順便說一句，當您觀看影片時，它們將失效。"
+  },
+  {
+    "start": 414063,
+    "end": 416213,
+    "text": "So you don't need to write them down.",
+    "zh": "所以你不需要把它們寫下來。"
+  },
+  {
+    "start": 417353,
+    "end": 420048,
+    "text": "You see, they do expire at some point in time here.",
+    "zh": "你看，它們確實會在某個時間點過期。"
+  },
+  {
+    "start": 420417,
+    "end": 426194,
+    "text": "And now I could just copy that output here if I don't really care, start my AI agent,",
+    "zh": "現在，如果我不在乎的話，我可以將輸出複製到這裡，啟動我的人工智慧代理，"
+  },
+  {
+    "start": 426354,
+    "end": 428633,
+    "text": "paste all that credential information in here.",
+    "zh": "將所有憑證資訊貼到此處。"
+  },
+  {
+    "start": 428826,
+    "end": 433864,
+    "text": "You could also, of course, set up a .env file and store them in there and not directly",
+    "zh": "當然，您也可以設定一個 .env 檔案並將它們儲存在那裡，而不是直接儲存"
+  },
+  {
+    "start": 434201,
+    "end": 435469,
+    "text": "share them with your agent.",
+    "zh": "與您的代理人分享。"
+  },
+  {
+    "start": 435565,
+    "end": 438694,
+    "text": "But here, since they will expire and since I will delete the role too,",
+    "zh": "但在這裡，由於它們將過期並且我也會刪除該角色，"
+  },
+  {
+    "start": 440057,
+    "end": 441500,
+    "text": "I don't care, I'll just share it like this.",
+    "zh": "我不管，我就這樣分享吧。"
+  },
+  {
+    "start": 441836,
+    "end": 448297,
+    "text": "And then you could give your agent the task, use this role to gather information,",
+    "zh": "然後你可以給你的代理任務，使用這個角色來收集信息，"
+  },
+  {
+    "start": 448970,
+    "end": 455911,
+    "text": "and ask it to create that same overview as before, but now using that role that was assumed.",
+    "zh": "並要求它創建與以前相同的概述，但現在使用假定的角色。"
+  },
+  {
+    "start": 456264,
+    "end": 461634,
+    "text": "Now, I will say, in theory, since I'm running this on my system where I did log in with",
+    "zh": "現在，我會說，理論上，因為我在我的系統上運行這個，我確實用"
+  },
+  {
+    "start": 461634,
+    "end": 465705,
+    "text": "my single sign-on account, the agent could still use that.",
+    "zh": "我的單一登入帳戶，代理仍然可以使用它。"
+  },
+  {
+    "start": 465817,
+    "end": 472760,
+    "text": "So I may actually ensure that that single sign-on session is revoked",
+    "zh": "所以我實際上可以確保單點登入會話被撤銷"
+  },
+  {
+    "start": 472840,
+    "end": 477799,
+    "text": "and no longer active to be sure that the agent can't use it even in theory.",
+    "zh": "並且不再主動確保代理即使在理論上也無法使用它。"
+  },
+  {
+    "start": 478794,
+    "end": 482998,
+    "text": "Of course, I can also see what the agent is doing and I can see if it's using that role",
+    "zh": "當然，我也可以看到代理正在做什麼，我可以看到它是否正在使用該角色"
+  },
+  {
+    "start": 483190,
+    "end": 485019,
+    "text": "and it is, so I'm fine.",
+    "zh": "確實如此，所以我很好。"
+  },
+  {
+    "start": 485132,
+    "end": 490186,
+    "text": "But if you wanna be extra safe, you wanna make sure that there are no other ways of the",
+    "zh": "但如果你想更加安全，你需要確保沒有其他方法"
+  },
+  {
+    "start": 490186,
+    "end": 493331,
+    "text": "agent performing the task you ask it to perform.",
+    "zh": "代理執行您要求其執行的任務。"
+  },
+  {
+    "start": 494102,
+    "end": 499445,
+    "text": "Just to be safe because these agents can be really creative in achieving a certain goal",
+    "zh": "只是為了安全起見，因為這些代理商在實現某個目標方面非常有創造力"
+  },
+  {
+    "start": 500039,
+    "end": 504417,
+    "text": "and finding out all kinds of ways around the restrictions you gave them.",
+    "zh": "並找出各種方法來繞過你給他們的限制。"
+  },
+  {
+    "start": 504465,
+    "end": 506710,
+    "text": "So you may wanna keep that in mind.",
+    "zh": "所以你可能想記住這一點。"
+  },
+  {
+    "start": 507190,
+    "end": 512448,
+    "text": "But still, using specific restricted roles and permissions, of course, is better because",
+    "zh": "但是，使用特定的受限角色和權限當然更好，因為"
+  },
+  {
+    "start": 512625,
+    "end": 519165,
+    "text": "all of a sudden you have some control or quite a bit of control, to be fair.",
+    "zh": "公平地說，突然間你就擁有了一些控制權或相當多的控制權。"
+  },
+  {
+    "start": 519454,
+    "end": 524102,
+    "text": "Still, the agent can do all kinds of things, but only within the boundaries of the permissions",
+    "zh": "儘管如此，代理仍然可以做各種各樣的事情，但僅限於權限範圍內"
+  },
+  {
+    "start": 524102,
+    "end": 524551,
+    "text": "you gave it.",
+    "zh": "你給了它。"
+  },
+  {
+    "start": 525048,
+    "end": 530033,
+    "text": "What is still worth pointing out though is that even if you have a permission like I",
+    "zh": "但仍然值得指出的是，即使你有像我這樣的許可"
+  },
+  {
+    "start": 530033,
+    "end": 535436,
+    "text": "do here, which only grants read-only access, it's worth keeping in mind that this still,",
+    "zh": "在這裡做，只授予只讀訪問權限，值得記住的是，這仍然是，"
+  },
+  {
+    "start": 535628,
+    "end": 542296,
+    "text": "depending on the exact details of the policy, allows the agent to read everything in",
+    "zh": "根據保單的具體細節，允許代理商閱讀其中的所有內容"
+  },
+  {
+    "start": 542361,
+    "end": 543707,
+    "text": "your AWS account.",
+    "zh": "您的 AWS 帳號。"
+  },
+  {
+    "start": 543819,
+    "end": 548676,
+    "text": "So this is a very broad read-only policy, gives it full access to all my services essentially.",
+    "zh": "所以這是一個非常廣泛的只讀策略，本質上使它能夠完全存取我的所有服務。"
+  },
+  {
+    "start": 549173,
+    "end": 552572,
+    "text": "And therefore, of course, data exfiltration could still be an issue.",
+    "zh": "因此，當然，資料外洩仍然可能是一個問題。"
+  },
+  {
+    "start": 552636,
+    "end": 553486,
+    "text": "That is worth noting.",
+    "zh": "這是值得注意的。"
+  },
+  {
+    "start": 553982,
+    "end": 557445,
+    "text": "Just because something is read-only does not mean it's secure.",
+    "zh": "僅僅因為某些東西是只讀的並不意味著它是安全的。"
+  },
+  {
+    "start": 558327,
+    "end": 563504,
+    "text": "This permission in the end allows the agent to do, to read anything in my account.",
+    "zh": "該權限最終允許代理執行以下操作：讀取我帳戶中的任何內容。"
+  },
+  {
+    "start": 563921,
+    "end": 568570,
+    "text": "And of course, for example, due to a prompt injection attack or something like that,",
+    "zh": "當然，例如，由於即時注入攻擊或類似的情況，"
+  },
+  {
+    "start": 569147,
+    "end": 572994,
+    "text": "this could exfiltrate very sensitive data.",
+    "zh": "這可能會洩漏非常敏感的資料。"
+  },
+  {
+    "start": 573219,
+    "end": 576585,
+    "text": "It could exfiltrate data I have in an S3 bucket.",
+    "zh": "它可能會洩露我在 S3 儲存桶中的資料。"
+  },
+  {
+    "start": 577082,
+    "end": 579502,
+    "text": "It could exfiltrate all kinds of data.",
+    "zh": "它可以洩露各種資料。"
+  },
+  {
+    "start": 579583,
+    "end": 582725,
+    "text": "So read-only does not mean secure.",
+    "zh": "所以只讀並不意味著安全。"
+  },
+  {
+    "start": 583254,
+    "end": 584905,
+    "text": "Really important to keep that in mind.",
+    "zh": "記住這一點非常重要。"
+  },
+  {
+    "start": 585562,
+    "end": 590323,
+    "text": "And indeed, you may want to have more restricted roles and permission sets therefore,",
+    "zh": "事實上，您可能希望擁有更多受限制的角色和權限集，因此，"
+  },
+  {
+    "start": 590339,
+    "end": 591557,
+    "text": "not just for reading.",
+    "zh": "不只是為了閱讀。"
+  },
+  {
+    "start": 591749,
+    "end": 597729,
+    "text": "For example, you may want to use an agent also to maybe spin up and manage some EC2 instances,",
+    "zh": "例如，您可能還想使用代理程式來啟動和管理一些 EC2 實例，"
+  },
+  {
+    "start": 598065,
+    "end": 603259,
+    "text": "but But instead of giving the agent full access to everything related to EC2, you may",
+    "zh": "但是，您可以不讓代理人完全存取與 EC2 相關的所有內容"
+  },
+  {
+    "start": 603355,
+    "end": 609270,
+    "text": "want to have a very specific policy that restricts which resources the agent can read",
+    "zh": "想要有一個非常具體的策略來限制代理可以讀取哪些資源"
+  },
+  {
+    "start": 609303,
+    "end": 609944,
+    "text": "and write.",
+    "zh": "並寫。"
+  },
+  {
+    "start": 610361,
+    "end": 616083,
+    "text": "For example, here for managing EC2, I have a policy that restricts the amount of instances",
+    "zh": "例如，這裡為了管理EC2，我有一個限制實例數量的策略"
+  },
+  {
+    "start": 616195,
+    "end": 622319,
+    "text": "the agent can create to instance types that are rather cheap to make sure that yes, the",
+    "zh": "代理可以創建相當便宜的實例類型，以確保是的，"
+  },
+  {
+    "start": 622431,
+    "end": 629020,
+    "text": "agent can create EC2 instances and related resources, but I restrict which kind of resources",
+    "zh": "代理可以建立EC2實例和相關資源，但我限制了哪種資源"
+  },
+  {
+    "start": 629084,
+    "end": 635231,
+    "text": "to ensure sure that spinning up very expensive instances, for example, is not possible",
+    "zh": "例如，確保不可能啟動非常昂貴的實例"
+  },
+  {
+    "start": 635280,
+    "end": 636773,
+    "text": "to keep costs under control.",
+    "zh": "以控製成本。"
+  },
+  {
+    "start": 636869,
+    "end": 638218,
+    "text": "And you could do the same for reading.",
+    "zh": "你也可以對閱讀做同樣的事情。"
+  },
+  {
+    "start": 638314,
+    "end": 641669,
+    "text": "You could restrict what can be read and not allow everything.",
+    "zh": "您可以限制可以讀取的內容，並且不允許所有內容。"
+  },
+  {
+    "start": 642344,
+    "end": 647610,
+    "text": "And you may wonder, okay, how do I create these policies that look super complex?",
+    "zh": "您可能想知道，好吧，我該如何創建這些看起來超級複雜的策略？"
+  },
+  {
+    "start": 647706,
+    "end": 652426,
+    "text": "And even if you know a thing or two about it, it still is not fun to write them.",
+    "zh": "即使你對此了解一二，寫它們仍然沒有樂趣。"
+  },
+  {
+    "start": 652780,
+    "end": 659085,
+    "text": "Well, of course, for one, AWS has a visual builder, so you can really",
+    "zh": "嗯，當然，首先，AWS 有一個視覺化建構器，所以你真的可以"
+  },
+  {
+    "start": 660143,
+    "end": 666699,
+    "text": "use the AWS resources they give you to build up on blueprints and also build those policies",
+    "zh": "使用他們為您提供的 AWS 資源來建立藍圖並建立這些策略"
+  },
+  {
+    "start": 666715,
+    "end": 667036,
+    "text": "like this.",
+    "zh": "像這樣。"
+  },
+  {
+    "start": 667517,
+    "end": 674313,
+    "text": "But even easier than that, you can ask an agent to write IAM policies.",
+    "zh": "但比這更簡單的是，您可以要求代理程式編寫 IAM 策略。"
+  },
+  {
+    "start": 674410,
+    "end": 677632,
+    "text": "And with that, I don't mean write and automatically use.",
+    "zh": "就此而言，我的意思並不是說編寫並自動使用。"
+  },
+  {
+    "start": 678097,
+    "end": 681110,
+    "text": "I mean write, and then you can take a look at them.",
+    "zh": "我的意思是寫下來，然後你就可以看一下。"
+  },
+  {
+    "start": 681399,
+    "end": 686897,
+    "text": "And you don't need to be an expert to understand or to get the gist of a policy.",
+    "zh": "您無需成為專家即可理解或掌握政策的要點。"
+  },
+  {
+    "start": 687234,
+    "end": 691969,
+    "text": "Of course, if you skim over a policy like this, you can tell what this is about.",
+    "zh": "當然，如果你瀏覽這樣的政策，你就能知道它是關於什麼的。"
+  },
+  {
+    "start": 692145,
+    "end": 696175,
+    "text": "That describe actions are probably not about writing anything.",
+    "zh": "描述動作可能與寫任何東西無關。"
+  },
+  {
+    "start": 696882,
+    "end": 702582,
+    "text": "That these conditions probably are about restricting the instance types as I showed you.",
+    "zh": "正如我向您展示的那樣，這些條件可能與限制實例類型有關。"
+  },
+  {
+    "start": 703063,
+    "end": 709646,
+    "text": "So even without expert knowledge, you can analyze this policy and look over it to see",
+    "zh": "因此，即使沒有專業知識，您也可以分析該策略並查看它以了解"
+  },
+  {
+    "start": 709646,
+    "end": 711461,
+    "text": "that it's in line with what you wanted.",
+    "zh": "它符合你想要的。"
+  },
+  {
+    "start": 711958,
+    "end": 716839,
+    "text": "And it is also quite likely that the agent wrote a policy you're happy with, to be fair.",
+    "zh": "公平地說，代理人也很可能已經制定了您滿意的保單。"
+  },
+  {
+    "start": 717448,
+    "end": 722690,
+    "text": "So you can have an agent write the policy, then you can review it, then you can use it,",
+    "zh": "所以你可以讓代理人寫政策，然後你可以審查它，然後你可以使用它，"
+  },
+  {
+    "start": 722706,
+    "end": 724341,
+    "text": "and then you can have an agent use it.",
+    "zh": "然後你可以讓代理人使用它。"
+  },
+  {
+    "start": 724726,
+    "end": 727371,
+    "text": "That can be very, very powerful, of course.",
+    "zh": "當然，這可能非常非常強大。"
+  },
+  {
+    "start": 727547,
+    "end": 733655,
+    "text": "Now, there are safer alternatives though if you're not happy with letting the agent use",
+    "zh": "現在，如果您不滿意讓代理商使用，還有更安全的選擇"
+  },
+  {
+    "start": 733703,
+    "end": 734665,
+    "text": "the CLI.",
+    "zh": "CLI。"
+  },
+  {
+    "start": 734825,
+    "end": 741109,
+    "text": "And one safer option would be the AWS MCP server, which is very close to the",
+    "zh": "一種更安全的選擇是 AWS MCP 伺服器，它非常接近"
+  },
+  {
+    "start": 741253,
+    "end": 742744,
+    "text": "CLI but not quite.",
+    "zh": "CLI 但不完全是。"
+  },
+  {
+    "start": 743626,
+    "end": 749220,
+    "text": "You can install that and then also use roles and policies there to control what the can",
+    "zh": "您可以安裝它，然後也可以使用其中的角色和策略來控制可以執行的操作"
+  },
+  {
+    "start": 749236,
+    "end": 750984,
+    "text": "do through the MCP server.",
+    "zh": "透過 MCP 伺服器執行。"
+  },
+  {
+    "start": 751416,
+    "end": 758181,
+    "text": "And one nice thing about using the MCP instead of the CLI is that if a request is",
+    "zh": "使用 MCP 而不是 CLI 的一個好處是，如果請求是"
+  },
+  {
+    "start": 758197,
+    "end": 764513,
+    "text": "made through the MCP, there is a special condition you can check for in your IAM",
+    "zh": "透過 MCP 進行，您可以在 IAM 中檢查一個特殊條件"
+  },
+  {
+    "start": 764641,
+    "end": 765218,
+    "text": "policies.",
+    "zh": "政策。"
+  },
+  {
+    "start": 765282,
+    "end": 772047,
+    "text": "You can check whether a resource reading or editing request is made via MCP, and then",
+    "zh": "您可以檢查是否透過MCP發出了資源讀取或編輯請求，然後"
+  },
+  {
+    "start": 772159,
+    "end": 775093,
+    "text": "you can either deny or grant that access.",
+    "zh": "您可以拒絕或授予該存取權限。"
+  },
+  {
+    "start": 775141,
+    "end": 780255,
+    "text": "So you have an additional field for more fine-grained access so that you could set up",
+    "zh": "因此，您有一個額外的字段可以進行更細粒度的訪問，以便您可以設置"
+  },
+  {
+    "start": 780255,
+    "end": 786358,
+    "text": "a policy that clearly denies certain actions if made through the MCP to protect certain",
+    "zh": "明確拒絕透過 MCP 採取某些行動以保護某些行為的政策"
+  },
+  {
+    "start": 786374,
+    "end": 790919,
+    "text": "resources, because deny rules always take precedence in AWS.",
+    "zh": "資源，因為拒絕規則在 AWS 中始終優先。"
+  },
+  {
+    "start": 791257,
+    "end": 792783,
+    "text": "So that's a little bonus you get there.",
+    "zh": "所以這是你得到的一點好處。"
+  },
+  {
+    "start": 792959,
+    "end": 796814,
+    "text": "But other than that, using the CLI or the MCP is pretty close to each other.",
+    "zh": "但除此之外，使用 CLI 或 MCP 彼此非常接近。"
+  },
+  {
+    "start": 797055,
+    "end": 800991,
+    "text": "By the way, there also is of course another option besides the CLI and the MCP.",
+    "zh": "順便說一句，除了 CLI 和 MCP 之外，當然還有另一種選擇。"
+  },
+  {
+    "start": 801713,
+    "end": 804942,
+    "text": "You could also have the AI just write code, right?",
+    "zh": "你也可以讓人工智慧只寫程式碼，對吧？"
+  },
+  {
+    "start": 805006,
+    "end": 808022,
+    "text": "So you have these 3 options essentially.",
+    "zh": "所以你基本上有這 3 個選擇。"
+  },
+  {
+    "start": 808454,
+    "end": 809832,
+    "text": "CLI, MCP, code.",
+    "zh": "CLI、MCP、代碼。"
+  },
+  {
+    "start": 809880,
+    "end": 811739,
+    "text": "That is what we used thus far, the CLI.",
+    "zh": "這就是我們迄今為止所使用的 CLI。"
+  },
+  {
+    "start": 812139,
+    "end": 813245,
+    "text": "You could use the MCP.",
+    "zh": "您可以使用 MCP。"
+  },
+  {
+    "start": 813501,
+    "end": 820118,
+    "text": "And of course, the AI can also just write a short script that would use AWS SDKs to",
+    "zh": "當然，AI 也可以寫一個簡短的腳本，使用 AWS SDK 來"
+  },
+  {
+    "start": 820454,
+    "end": 821880,
+    "text": "manipulate the account.",
+    "zh": "操縱帳戶。"
+  },
+  {
+    "start": 822313,
+    "end": 825869,
+    "text": "Still, permissions are needed, so that doesn't change, but these are your options here.",
+    "zh": "不過，仍然需要權限，因此這不會改變，但這些是您的選擇。"
+  },
+  {
+    "start": 826478,
+    "end": 830179,
+    "text": "Now, the safer options use a different approach.",
+    "zh": "現在，更安全的選擇使用不同的方法。"
+  },
+  {
+    "start": 830323,
+    "end": 836619,
+    "text": "Instead of leveraging the CLI, MCP, or code, they are all about infrastructure as code.",
+    "zh": "它們不是利用 CLI、MCP 或程式碼，而是基礎設施即程式碼。"
+  },
+  {
+    "start": 837517,
+    "end": 840932,
+    "text": "And what does infrastructure as code mean now?",
+    "zh": "基礎設施即程式碼現在意味著什麼？"
+  },
+  {
+    "start": 841461,
+    "end": 845244,
+    "text": "That means using something like AWS CloudFormation.",
+    "zh": "這意味著使用 AWS CloudFormation 之類的東西。"
+  },
+  {
+    "start": 845612,
+    "end": 851479,
+    "text": "And AWS CloudFormation is all about setting up AWS resources in YAML using a certain",
+    "zh": "AWS CloudFormation 就是使用特定的 YAML 格式設定 AWS 資源。"
+  },
+  {
+    "start": 851479,
+    "end": 852922,
+    "text": "structure and syntax, of course.",
+    "zh": "當然是結構和語法。"
+  },
+  {
+    "start": 853467,
+    "end": 859334,
+    "text": "And then you can deploy such a template here through the CloudFormation service, which",
+    "zh": "然後你可以透過CloudFormation服務在這裡部署這樣的模板，"
+  },
+  {
+    "start": 859334,
+    "end": 865025,
+    "text": "is an official AWS thing, to create the actual resources based on that template.",
+    "zh": "是 AWS 的官方產品，用於根據該範本建立實際資源。"
+  },
+  {
+    "start": 865410,
+    "end": 870336,
+    "text": "And of course, you can have an AI agent write such a template for you, but then you're",
+    "zh": "當然，你可以讓人工智慧代理為你寫這樣的模板，但隨後你就"
+  },
+  {
+    "start": 870400,
+    "end": 875607,
+    "text": "leveraging an agent for creating the template and you can still deploy it on your own",
+    "zh": "利用代理來建立模板，您仍然可以自行部署它"
+  },
+  {
+    "start": 875687,
+    "end": 876395,
+    "text": "as a human.",
+    "zh": "作為一個人。"
+  },
+  {
+    "start": 876845,
+    "end": 881819,
+    "text": "So the agent can write the template or use some other infrastructure as code solution.",
+    "zh": "因此，代理可以編寫模板或使用其他一些基礎設施作為程式碼解決方案。"
+  },
+  {
+    "start": 881868,
+    "end": 882647,
+    "text": "I'll get back to it.",
+    "zh": "我會回過頭來談談。"
+  },
+  {
+    "start": 883149,
+    "end": 884658,
+    "text": "And then in the safest option,",
+    "zh": "然後在最安全的選擇中，"
+  },
+  {
+    "start": 888440,
+    "end": 890033,
+    "text": "you review plus deploy.",
+    "zh": "您進行審查並部署。"
+  },
+  {
+    "start": 890339,
+    "end": 893800,
+    "text": "So you don't let the agent deploy it automatically or anything like that.",
+    "zh": "所以你不要讓代理自動部署它或類似的東西。"
+  },
+  {
+    "start": 894186,
+    "end": 895941,
+    "text": "Instead, you do it manually.",
+    "zh": "相反，您可以手動執行此操作。"
+  },
+  {
+    "start": 896021,
+    "end": 898564,
+    "text": "You just use an agent to generate that template just as it may",
+    "zh": "您只需使用代理來產生該模板即可"
+  },
+  {
+    "start": 900340,
+    "end": 901623,
+    "text": "generate other code.",
+    "zh": "產生其他程式碼。"
+  },
+  {
+    "start": 901799,
+    "end": 905618,
+    "text": "And as mentioned, there are other infrastructure as code solutions.",
+    "zh": "如前所述，還有其他基礎架構即程式碼解決方案。"
+  },
+  {
+    "start": 905666,
+    "end": 909757,
+    "text": "CloudFormation can be a bit clunky, but if agents write it, it is quite okay, I have",
+    "zh": "CloudFormation可能有點笨重，但是如果代理寫的話，那是完全可以的，我有"
+  },
+  {
+    "start": 909757,
+    "end": 910030,
+    "text": "to say.",
+    "zh": "說。"
+  },
+  {
+    "start": 910543,
+    "end": 914409,
+    "text": "But you could be using Terraform, you could be using Pulumi, which allows you to use",
+    "zh": "但是你可以使用 Terraform，你可以使用 Pulumi，它允許你使用"
+  },
+  {
+    "start": 914409,
+    "end": 918805,
+    "text": "TypeScript to define your AWS resources, for example, which can be really nice.",
+    "zh": "例如，用於定義 AWS 資源的 TypeScript 非常好。"
+  },
+  {
+    "start": 919463,
+    "end": 924083,
+    "text": "You can use Alchemy, which is a rather new solution that also uses TypeScript but then",
+    "zh": "您可以使用 Alchemy，這是一個相當新的解決方案，也使用 TypeScript，但隨後"
+  },
+  {
+    "start": 924115,
+    "end": 926329,
+    "text": "uses the Effect library.",
+    "zh": "使用效果庫。"
+  },
+  {
+    "start": 926762,
+    "end": 932858,
+    "text": "To basically blend Effect and all the rules and the safety you get from using the Effect",
+    "zh": "基本上混合效果和所有規則以及使用效果所獲得的安全性"
+  },
+  {
+    "start": 932858,
+    "end": 937558,
+    "text": "library and create your AWS resources in TypeScript then.",
+    "zh": "然後使用 TypeScript 建立您的 AWS 資源。"
+  },
+  {
+    "start": 938135,
+    "end": 941039,
+    "text": "But whatever you use, you can have an agent write that.",
+    "zh": "但無論你使用什麼，你都可以讓代理來寫。"
+  },
+  {
+    "start": 941199,
+    "end": 946942,
+    "text": "And then in the safe solution, you have an agent write it, you review, plus the agent",
+    "zh": "然後在安全的解決方案中，你有一個代理人寫它，你審查，再加上代理人"
+  },
+  {
+    "start": 947118,
+    "end": 948161,
+    "text": "deploys, let's say.",
+    "zh": "部署，比方說。"
+  },
+  {
+    "start": 948498,
+    "end": 953887,
+    "text": "And in the safest option, you deploy so that you're super safe and sure that the agent",
+    "zh": "在最安全的選項中，您進行部署，以便超級安全並確保代理"
+  },
+  {
+    "start": 953887,
+    "end": 956374,
+    "text": "is not doing anything in your production environment.",
+    "zh": "不在您的生產環境中執行任何操作。"
+  },
+  {
+    "start": 956759,
+    "end": 957769,
+    "text": "Instead, you're doing it.",
+    "zh": "相反，你正在這樣做。"
+  },
+  {
+    "start": 958763,
+    "end": 965047,
+    "text": "And that's therefore a set of options you have for letting an AI help you",
+    "zh": "因此，這就是讓人工智慧幫助你的一組選項"
+  },
+  {
+    "start": 965640,
+    "end": 971155,
+    "text": "manage your AWS account, your resources, and a couple of things you should simply consider",
+    "zh": "管理您的 AWS 帳戶、資源以及您應該簡單考慮的一些事項"
+  },
+  {
+    "start": 971267,
+    "end": 972277,
+    "text": "and be aware of.",
+    "zh": "並注意。"
+  },
+  {
+    "start": 972725,
+    "end": 979282,
+    "text": "Because AI can make working with AWS so much more convenient, you really",
+    "zh": "因為 AI 可以讓使用 AWS 變得更方便，您真的"
+  },
+  {
+    "start": 979282,
+    "end": 980372,
+    "text": "shouldn't sleep on it.",
+    "zh": "不應該睡在上面。"
+  },
+  {
+    "start": 980725,
+    "end": 986640,
+    "text": "And which approach you then use simply depends on your own personal preferences, risk",
+    "zh": "然後您使用哪種方法完全取決於您自己的個人喜好、風險"
+  },
+  {
+    "start": 986656,
+    "end": 989685,
+    "text": "profile, and of course, which company you're working at.",
+    "zh": "個人資料，當然還有您在哪家公司工作。"
+  },
+  {
+    "start": 989927,
+    "end": 990477,
+    "text": "And so on.",
+    "zh": "等等。"
+  },
+  {
+    "start": 991480,
+    "end": 996654,
+    "text": "But not doing any of that is probably not a good idea, which is why I wanted to share",
+    "zh": "但不這樣做可能不是一個好主意，這就是為什麼我想分享"
+  },
+  {
+    "start": 996654,
+    "end": 996784,
+    "text": "this.",
+    "zh": "這。"
+  }
+]

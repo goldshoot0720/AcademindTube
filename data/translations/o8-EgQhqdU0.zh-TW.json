@@ -1,0 +1,932 @@
+[
+  {
+    "start": 176,
+    "end": 4825,
+    "text": "Pi is a great AI agent, coding agent, but you can do all kinds of stuff with it.",
+    "zh": "Pi 是一個很棒的人工智慧代理、編碼代理，但你可以用它做各種各樣的事情。"
+  },
+  {
+    "start": 4905,
+    "end": 8544,
+    "text": "And combined with Claude Code, it's been my daily driver for the last few months.",
+    "zh": "與 Claude Code 結合，它成為我過去幾個月的日常驅動程式。"
+  },
+  {
+    "start": 9249,
+    "end": 10756,
+    "text": "I actually prefer Pi though.",
+    "zh": "但實際上我更喜歡 Pi。"
+  },
+  {
+    "start": 11076,
+    "end": 16190,
+    "text": "I use Claude Code for the Anthropic subscription, but Pi is amazing because it's extremely",
+    "zh": "我使用 Claude Code 訂閱 Anthropic，但 Pi 很棒，因為它非常有用"
+  },
+  {
+    "start": 16222,
+    "end": 17793,
+    "text": "minimal and you can make it yours.",
+    "zh": "最小，你可以把它變成你的。"
+  },
+  {
+    "start": 18210,
+    "end": 21336,
+    "text": "And these 2 things together are just chef's kiss.",
+    "zh": "這兩件事加在一起就是廚師之吻。"
+  },
+  {
+    "start": 21993,
+    "end": 25984,
+    "text": "Now, the minimalism is something the Claude Code team also recently discovered that it's",
+    "zh": "現在，克勞德程式碼團隊最近也發現極簡主義"
+  },
+  {
+    "start": 25984,
+    "end": 26449,
+    "text": "quite good.",
+    "zh": "相當不錯。"
+  },
+  {
+    "start": 26882,
+    "end": 32429,
+    "text": "They removed over 80% of Claude Code's system prompt and Pi, for example, is even way",
+    "zh": "他們刪除了 Claude Code 超過 80% 的系統提示符，例如 Pi，甚至是這樣"
+  },
+  {
+    "start": 32429,
+    "end": 33070,
+    "text": "more minimal.",
+    "zh": "更最小。"
+  },
+  {
+    "start": 33391,
+    "end": 38651,
+    "text": "It only has 4 tools out of the box for reading, writing, editing files, and the bash",
+    "zh": "它只有 4 個開箱即用的工具，用於讀取、寫入、編輯檔案和 bash"
+  },
+  {
+    "start": 38667,
+    "end": 42805,
+    "text": "tool for running all kinds of commands or executing all kinds of programs, which is of",
+    "zh": "運行各種命令或執行各種程序的工具，其"
+  },
+  {
+    "start": 42837,
+    "end": 43847,
+    "text": "course the killer tool.",
+    "zh": "當然是殺手級工具。"
+  },
+  {
+    "start": 44264,
+    "end": 47359,
+    "text": "Most agents have that, or most general agents, I should say.",
+    "zh": "我應該說，大多數特工，或者說大多數特工，都有這個。"
+  },
+  {
+    "start": 48193,
+    "end": 54287,
+    "text": "And its system prompt and tool definitions combined come out in below",
+    "zh": "其係統提示和工具定義組合如下"
+  },
+  {
+    "start": 54383,
+    "end": 55795,
+    "text": "1,000 tokens.",
+    "zh": "1,000 個代幣。"
+  },
+  {
+    "start": 56148,
+    "end": 61521,
+    "text": "So that's a very low amount of tokens you're paying for because of course that is loaded",
+    "zh": "所以你所支付的代幣數量非常少，因為當然已經加載了"
+  },
+  {
+    "start": 61521,
+    "end": 64745,
+    "text": "into every context window of every agent session you start.",
+    "zh": "進入您啟動的每個代理會話的每個上下文視窗。"
+  },
+  {
+    "start": 64793,
+    "end": 66767,
+    "text": "So fewer is better,",
+    "zh": "所以越少越好"
+  },
+  {
+    "start": 68082,
+    "end": 74434,
+    "text": "less is more, both from a pricing standpoint, but also it's been shown over and over",
+    "zh": "從定價的角度來看，少即是多，而且這一點也被反覆證明"
+  },
+  {
+    "start": 74434,
+    "end": 79006,
+    "text": "again that if you put a lot of potentially irrelevant information into your agent context",
+    "zh": "再次強調，如果您將大量可能不相關的資訊放入代理上下文中"
+  },
+  {
+    "start": 79006,
+    "end": 81076,
+    "text": "window, they tend to perform worse.",
+    "zh": "窗口期，他們的表現往往會更差。"
+  },
+  {
+    "start": 81236,
+    "end": 87718,
+    "text": "So this is great on its own, but it becomes amazing if you combine that with the extensibility",
+    "zh": "因此，這本身就很棒，但如果將其與可擴展性結合起來，就會變得令人驚奇"
+  },
+  {
+    "start": 87734,
+    "end": 88504,
+    "text": "features of Pi.",
+    "zh": "圓周率的特性。"
+  },
+  {
+    "start": 88873,
+    "end": 93527,
+    "text": "Now, as you can tell, I'm a big fan of Pi, not just because of the extensibility, also",
+    "zh": "現在，如你所知，我是 Pi 的忠實粉絲，不僅因為它的可擴展性，還因為它的可擴展性。"
+  },
+  {
+    "start": 93527,
+    "end": 96753,
+    "text": "because of its tree command, for example, and many other things.",
+    "zh": "例如，因為它的樹命令以及許多其他東西。"
+  },
+  {
+    "start": 96817,
+    "end": 100701,
+    "text": "And that's why I created a complete course, link below, where I teach you all about Pi,",
+    "zh": "這就是為什麼我創建了一個完整的課程，連結如下，我在那裡教你所有關於 Pi 的知識，"
+  },
+  {
+    "start": 100894,
+    "end": 105307,
+    "text": "its main configuration options, how to run it in a container if you want to, because",
+    "zh": "它的主要配置選項，如果你願意的話如何在容器中運行它，因為"
+  },
+  {
+    "start": 105307,
+    "end": 106623,
+    "text": "out of the box it does not.",
+    "zh": "開箱即用，但事實並非如此。"
+  },
+  {
+    "start": 106687,
+    "end": 112753,
+    "text": "We'll dive into its various built-in commands and we'll dive into its extensibility and",
+    "zh": "我們將深入研究它的各種內建命令，我們將深入研究它的可擴展性和"
+  },
+  {
+    "start": 112866,
+    "end": 113540,
+    "text": "what you can do there.",
+    "zh": "你可以在那裡做什麼。"
+  },
+  {
+    "start": 113732,
+    "end": 114519,
+    "text": "It's really great.",
+    "zh": "真的很棒。"
+  },
+  {
+    "start": 114952,
+    "end": 118020,
+    "text": "The course and Pi, so link below if you're interested.",
+    "zh": "課程和 Pi，如果您有興趣，請點擊下面的連結。"
+  },
+  {
+    "start": 118647,
+    "end": 125602,
+    "text": "And Pi, as mentioned, is amazing because of its extensibility most of all, combined with",
+    "zh": "如同前面所提到的，Pi 之所以令人驚奇，最重要的是它的可擴展性，再加上"
+  },
+  {
+    "start": 125698,
+    "end": 126340,
+    "text": "that minimalism.",
+    "zh": "那種極簡主義。"
+  },
+  {
+    "start": 126501,
+    "end": 130581,
+    "text": "Now regarding extensibility, you of course have agents, MD, and skills like in all those",
+    "zh": "現在關於可擴展性，你當然有代理、MD 和所有這些方面的技能"
+  },
+  {
+    "start": 130613,
+    "end": 135962,
+    "text": "modern general agents, and you can have global and local agents, MD, and skills depending",
+    "zh": "現代總代理，您可以根據需要擁有全球和本地代理、MD和技能"
+  },
+  {
+    "start": 136058,
+    "end": 140636,
+    "text": "on if you have global or project-specific instructions or capabilities, but it's the",
+    "zh": "如果您有全域或特定於項目的指令或能力，但這是"
+  },
+  {
+    "start": 140636,
+    "end": 143751,
+    "text": "extensions feature that makes Pi Amazing.",
+    "zh": "擴充功能讓 Pi 變得神奇。"
+  },
+  {
+    "start": 144650,
+    "end": 151580,
+    "text": "Because Pi has a rich extensions API and the Pi agent is aware of its",
+    "zh": "因為Pi有豐富的擴充API並且Pi代理知道它"
+  },
+  {
+    "start": 151644,
+    "end": 155430,
+    "text": "documentation, it's not loaded out of the box, but it knows where to find it.",
+    "zh": "文檔，它不是開箱即用的，但它知道在哪裡可以找到它。"
+  },
+  {
+    "start": 155655,
+    "end": 159120,
+    "text": "And so you can ask Pi to improve itself and we'll do that in just a second.",
+    "zh": "因此，您可以要求 Pi 自我改進，我們很快就會做到這一點。"
+  },
+  {
+    "start": 159650,
+    "end": 162505,
+    "text": "And then it can tap into this rich extensions API.",
+    "zh": "然後它可以利用這個豐富的擴充 API。"
+  },
+  {
+    "start": 162633,
+    "end": 167077,
+    "text": "And of course you could also build extensions on your own, the old school way, writing",
+    "zh": "當然，您也可以按照傳統的方式自己建立擴展，編寫"
+  },
+  {
+    "start": 167125,
+    "end": 172333,
+    "text": "code, but Pi can really self- improve because it is aware of the docs.",
+    "zh": "程式碼，但 Pi 確實可以自我改進，因為它了解文件。"
+  },
+  {
+    "start": 172397,
+    "end": 176306,
+    "text": "It can build its own extensions, extensions for itself, which is amazing.",
+    "zh": "它可以建立自己的擴展，為自己擴展，這是令人驚奇的。"
+  },
+  {
+    "start": 176644,
+    "end": 177963,
+    "text": "And those extensions can do a lot.",
+    "zh": "這些擴充可以做很多事情。"
+  },
+  {
+    "start": 178189,
+    "end": 179222,
+    "text": "They can tweak the UI,",
+    "zh": "他們可以調整使用者介面，"
+  },
+  {
+    "start": 180960,
+    "end": 183066,
+    "text": "they can register new tools.",
+    "zh": "他們可以註冊新工具。"
+  },
+  {
+    "start": 183261,
+    "end": 188301,
+    "text": "So if you want more than the 4 tools for a specific project or in general, maybe you",
+    "zh": "因此，如果您想要針對特定項目或一般情況使用 4 種以上的工具，也許您"
+  },
+  {
+    "start": 188431,
+    "end": 193265,
+    "text": "can build an extension or ask Py to build an extension that registers new tools.",
+    "zh": "可以建立一個擴充或要求 Py 建構一個註冊新工具的擴充。"
+  },
+  {
+    "start": 193927,
+    "end": 199206,
+    "text": "You can register commands, slash commands that do new things, invoke tools or do something",
+    "zh": "您可以註冊命令、執行新操作的斜線命令、呼叫工具或執行某些操作"
+  },
+  {
+    "start": 199206,
+    "end": 199287,
+    "text": "else.",
+    "zh": "別的。"
+  },
+  {
+    "start": 200863,
+    "end": 201376,
+    "text": "Way, way more.",
+    "zh": "方式，更多。"
+  },
+  {
+    "start": 201649,
+    "end": 204363,
+    "text": "You can do so much with those extensions.",
+    "zh": "您可以使用這些擴充功能做很多事情。"
+  },
+  {
+    "start": 204877,
+    "end": 208234,
+    "text": "Now, there also is a marketplace, so to say.",
+    "zh": "現在，可以說也有一個市場。"
+  },
+  {
+    "start": 208490,
+    "end": 213597,
+    "text": "It's free, where you find a lot of community-maintained packages, which are mostly extensions,",
+    "zh": "它是免費的，您可以在其中找到許多社區維護的軟體包，其中大部分是擴展，"
+  },
+  {
+    "start": 213710,
+    "end": 214962,
+    "text": "could also be skills or both.",
+    "zh": "也可以是技能或兩者兼具。"
+  },
+  {
+    "start": 215556,
+    "end": 219956,
+    "text": "And if you, for example, want subagents, which are not built into Pi, you can search",
+    "zh": "例如，如果您想要未內建在 Pi 中的子代理，您可以搜尋"
+  },
+  {
+    "start": 219956,
+    "end": 224662,
+    "text": "there and you'll find a trillion subagent extensions to browse, which you could install.",
+    "zh": "在那裡，您將找到一萬億個可供瀏覽的子代理擴展，您可以安裝它們。"
+  },
+  {
+    "start": 224935,
+    "end": 228339,
+    "text": "Or again, you could just ask Pi to build its own.",
+    "zh": "或者，您也可以要求 Pi 建造自己的。"
+  },
+  {
+    "start": 228387,
+    "end": 229686,
+    "text": "That is all possible.",
+    "zh": "這都是可能的。"
+  },
+  {
+    "start": 230151,
+    "end": 232060,
+    "text": "But this marketplace is amazing too.",
+    "zh": "但這個市場也很棒。"
+  },
+  {
+    "start": 232173,
+    "end": 238204,
+    "text": "It's really easy to extend Pi with nice, uh, extensions very easily by just taking a",
+    "zh": "用很好的，呃，擴展來擴展 Pi 真的很容易，只需採取"
+  },
+  {
+    "start": 238204,
+    "end": 239761,
+    "text": "look at what's there and using those.",
+    "zh": "看看那裡有什麼並使用它們。"
+  },
+  {
+    "start": 240835,
+    "end": 245696,
+    "text": "Now, as mentioned, you can also have Pi build its own extensions, and here it's currently",
+    "zh": "現在，如前所述，您還可以讓 Pi 建立自己的擴展，目前它在此處"
+  },
+  {
+    "start": 245728,
+    "end": 246418,
+    "text": "working on one.",
+    "zh": "正在研究一個。"
+  },
+  {
+    "start": 246691,
+    "end": 251648,
+    "text": "I started this in advance because it can take a bit longer, and the extension I asked",
+    "zh": "我提前開始了，因為它可能需要更長的時間，我要求延期"
+  },
+  {
+    "start": 251728,
+    "end": 257614,
+    "text": "it to build is an extension that allows me to, or that gives me a new cross-send command",
+    "zh": "it to build 是一個擴展，允許我這樣做，或給我一個新的交叉發送命令"
+  },
+  {
+    "start": 257614,
+    "end": 262553,
+    "text": "I can use in my Pi sessions, which opens a picker that then allows me to choose if I",
+    "zh": "我可以在我的 Pi 會話中使用，它會打開一個選擇器，然後允許我選擇是否"
+  },
+  {
+    "start": 262633,
+    "end": 268871,
+    "text": "either want to send the last agent message or a summary of the chat to another session.",
+    "zh": "想要將最後一條代理訊息或聊天摘要傳送到另一個會話。"
+  },
+  {
+    "start": 269705,
+    "end": 274275,
+    "text": "Then it should open a picker that allows me to choose which other Pi session to send",
+    "zh": "然後它應該會打開一個選擇器，讓我可以選擇要發送的其他 Pi 會話"
+  },
+  {
+    "start": 274275,
+    "end": 278764,
+    "text": "the message to, just like the built-in resume command opens such a picker.",
+    "zh": "訊息到，就像內建的恢復命令打開這樣的選擇器一樣。"
+  },
+  {
+    "start": 279085,
+    "end": 282869,
+    "text": "And if I choose a summary, I also want to have another picker that allows me to either",
+    "zh": "如果我選擇摘要，我還想要另一個選擇器，它允許我"
+  },
+  {
+    "start": 283174,
+    "end": 286863,
+    "text": "use the default compaction prompt or provide my custom prompt.",
+    "zh": "使用預設的壓縮提示或提供我的自訂提示。"
+  },
+  {
+    "start": 287569,
+    "end": 289109,
+    "text": "And yeah, then it should send this.",
+    "zh": "是的，那麼它應該發送這個。"
+  },
+  {
+    "start": 289269,
+    "end": 293971,
+    "text": "And then it went ahead, used some of the skills I already had on my system and some of",
+    "zh": "然後它繼續前進，使用了我係統上已有的一些技能以及一些"
+  },
+  {
+    "start": 294003,
+    "end": 296956,
+    "text": "the extensions, my subagent extension which I built myself.",
+    "zh": "擴展，我自己構建的子代理擴展。"
+  },
+  {
+    "start": 297678,
+    "end": 304273,
+    "text": "And then, uh, well, at some point it presented its findings here, and, uh, I read through",
+    "zh": "然後，呃，好吧，在某個時候它在這裡展示了它的發現，而且，呃，我通讀了"
+  },
+  {
+    "start": 304273,
+    "end": 310113,
+    "text": "them, made some decisions, and it now is building that extension on this system so that",
+    "zh": "他們做出了一些決定，現在正在該系統上建立該擴展，以便"
+  },
+  {
+    "start": 310113,
+    "end": 315473,
+    "text": "I can then install it and use it and hopefully send messages between different PySessions.",
+    "zh": "然後我可以安裝它並使用它，並希望在不同的 PySession 之間發送訊息。"
+  },
+  {
+    "start": 316291,
+    "end": 321684,
+    "text": "And this self-improving part combined with that minimalism, as mentioned, really makes",
+    "zh": "如同前面所提到的，這種自我完善的部分與極簡主義結合，確實使"
+  },
+  {
+    "start": 321684,
+    "end": 323578,
+    "text": "Py super powerful.",
+    "zh": "py超級強大。"
+  },
+  {
+    "start": 324011,
+    "end": 328376,
+    "text": "Because if you are tackling a specific problem where you need certain tools or where",
+    "zh": "因為如果您正在解決需要某些工具或需要某些工具的特定問題"
+  },
+  {
+    "start": 328569,
+    "end": 333448,
+    "text": "your life would be easier if you could just have extra tools, you can just tell Py to",
+    "zh": "如果你有額外的工具，你的生活會更容易，你可以告訴 Py"
+  },
+  {
+    "start": 333464,
+    "end": 333752,
+    "text": "build them.",
+    "zh": "建造它們。"
+  },
+  {
+    "start": 334041,
+    "end": 336834,
+    "text": "Could be project-specific, don't have to be global.",
+    "zh": "可以是特定於專案的，不必是全球性的。"
+  },
+  {
+    "start": 337171,
+    "end": 342531,
+    "text": "If you're missing some capability which you really like about Claude Code or Codex, you",
+    "zh": "如果您缺少某些您真正喜歡的 Claude Code 或 Codex 功能，您可以"
+  },
+  {
+    "start": 342531,
+    "end": 343767,
+    "text": "can ask Py to build it.",
+    "zh": "可以要求 Py 來建造它。"
+  },
+  {
+    "start": 344056,
+    "end": 348857,
+    "text": "And if you, for example, have Herder installed too, which I have here, it's my daily",
+    "zh": "例如，如果你也安裝了 Herder，我這裡就有，這就是我的日常"
+  },
+  {
+    "start": 348889,
+    "end": 353835,
+    "text": "driver, my terminal multiplexer that is agent-aware, that works really well together",
+    "zh": "驅動程序，我的終端多路復用器，具有代理意識，可以很好地協同工作"
+  },
+  {
+    "start": 353851,
+    "end": 355473,
+    "text": "with Claude Code and also Pi.",
+    "zh": "與 Claude Code 和 Pi 一起。"
+  },
+  {
+    "start": 355810,
+    "end": 359840,
+    "text": "If you have Herder installed, for example, you could even build Pi extensions that are",
+    "zh": "例如，如果您安裝了 Herder，您甚至可以建立 Pi 擴展"
+  },
+  {
+    "start": 360033,
+    "end": 366809,
+    "text": "aware of Herder and allow you to tap both into the Pi API and the Herder API to, for",
+    "zh": "了解 Herder 並允許您同時利用 Pi API 和 Herder API"
+  },
+  {
+    "start": 366809,
+    "end": 373264,
+    "text": "example, open new panes, to build an extension that branches a session off in a new Herder",
+    "zh": "例如，開啟新窗格，建立一個擴展，在新的 Herder 中分支會話"
+  },
+  {
+    "start": 373280,
+    "end": 374549,
+    "text": "pane, which I actually did.",
+    "zh": "窗格，我實際上就是這樣做的。"
+  },
+  {
+    "start": 374742,
+    "end": 380856,
+    "text": "I built PyHerder Sidetrack, which gives me a sidetrack command where I could enter a",
+    "zh": "我建立了 PyHerder Sidetrack，它為我提供了一個 sidetrack 命令，我可以在其中輸入"
+  },
+  {
+    "start": 380856,
+    "end": 381500,
+    "text": "prompt",
+    "zh": "迅速的"
+  },
+  {
+    "start": 383975,
+    "end": 385999,
+    "text": "like this and send this off.",
+    "zh": "像這樣並將其發送出去。"
+  },
+  {
+    "start": 386224,
+    "end": 389374,
+    "text": "The agent would have to be done here though, not whilst it's currently working.",
+    "zh": "不過，代理必須在這裡完成，而不是在當前工作時完成。"
+  },
+  {
+    "start": 389454,
+    "end": 393474,
+    "text": "I could change this extension, but right now I have to wait for it to be done.",
+    "zh": "我可以更改此擴展名，但現在我必須等待它完成。"
+  },
+  {
+    "start": 393896,
+    "end": 399277,
+    "text": "And it would open a new Herder pane and allow me to continue the conversation there.",
+    "zh": "它將打開一個新的 Herder 窗格，並允許我在那裡繼續對話。"
+  },
+  {
+    "start": 399569,
+    "end": 404387,
+    "text": "So if I show this manually, if I open a new Herder pane here, and I",
+    "zh": "因此，如果我手動顯示此內容，如果我在此處開啟一個新的 Herder 窗格，並且我"
+  },
+  {
+    "start": 405887,
+    "end": 411614,
+    "text": "continue my current conversation, but here it's not actively working because that's the",
+    "zh": "繼續我當前的對話，但這裡它沒有積極工作，因為那是"
+  },
+  {
+    "start": 411614,
+    "end": 412778,
+    "text": "upper pane.",
+    "zh": "上窗格。"
+  },
+  {
+    "start": 413489,
+    "end": 416773,
+    "text": "Here I can use, what are we working on?",
+    "zh": "在這裡我可以使用，我們在做什麼？"
+  },
+  {
+    "start": 417938,
+    "end": 420612,
+    "text": "And now you see a new pane opened there.",
+    "zh": "現在您會看到那裡打開了一個新窗格。"
+  },
+  {
+    "start": 420744,
+    "end": 421941,
+    "text": "I can close the other one.",
+    "zh": "我可以關閉另一個。"
+  },
+  {
+    "start": 423360,
+    "end": 428013,
+    "text": "And there it now picked up that existing conversation but injected a new message.",
+    "zh": "現在它拾取了現有的對話，但注入了一條新訊息。"
+  },
+  {
+    "start": 428966,
+    "end": 429880,
+    "text": "And answers that.",
+    "zh": "並回答了這個問題。"
+  },
+  {
+    "start": 430104,
+    "end": 431627,
+    "text": "But this is now in a new session.",
+    "zh": "但這現在是在新的會議中。"
+  },
+  {
+    "start": 432044,
+    "end": 437494,
+    "text": "So I basically cloned the session and started it by immediately sending my own message",
+    "zh": "所以我基本上克隆了會話並通過立即發送我自己的消息來啟動它"
+  },
+  {
+    "start": 437558,
+    "end": 437815,
+    "text": "in there.",
+    "zh": "在那裡。"
+  },
+  {
+    "start": 438520,
+    "end": 441646,
+    "text": "And really, the sky is the limit, so to say.",
+    "zh": "事實上，可以說，天空才是極限。"
+  },
+  {
+    "start": 441726,
+    "end": 446327,
+    "text": "You can build most of the things you may be imagining or you may be wanting, and therefore",
+    "zh": "您可以建立大部分您可能想像或想要的東西，因此"
+  },
+  {
+    "start": 446375,
+    "end": 447513,
+    "text": "really make Pi yours.",
+    "zh": "真正讓 Pi 成為你的。"
+  },
+  {
+    "start": 447577,
+    "end": 450014,
+    "text": "And I know this sounds like a Pi commercial.",
+    "zh": "我知道這聽起來像 Pi 廣告。"
+  },
+  {
+    "start": 450446,
+    "end": 452017,
+    "text": "I'm not getting paid or anything.",
+    "zh": "我沒有得到報酬或任何東西。"
+  },
+  {
+    "start": 452065,
+    "end": 452931,
+    "text": "I just have that course.",
+    "zh": "我只有那個課程。"
+  },
+  {
+    "start": 453172,
+    "end": 454278,
+    "text": "That is how I can get paid.",
+    "zh": "這就是我可以獲得報酬的方式。"
+  },
+  {
+    "start": 454534,
+    "end": 459279,
+    "text": "But I truly like Pi and how you can make it yours, how you can build your agent that's",
+    "zh": "但我真的很喜歡 Pi 以及如何讓它成為你的，如何建立你的代理"
+  },
+  {
+    "start": 459279,
+    "end": 460545,
+    "text": "perfect for your day-to-day work.",
+    "zh": "非常適合您的日常工作。"
+  },
+  {
+    "start": 461991,
+    "end": 463099,
+    "text": "And it's done.",
+    "zh": "一切都完成了。"
+  },
+  {
+    "start": 464110,
+    "end": 470052,
+    "text": "So now I'll ask it to install this extension globally on this system.",
+    "zh": "所以現在我將要求它在該系統上全域安裝此擴充功能。"
+  },
+  {
+    "start": 470117,
+    "end": 471498,
+    "text": "I won't yet publish it.",
+    "zh": "我還不會發布它。"
+  },
+  {
+    "start": 471723,
+    "end": 473505,
+    "text": "I just wanna test it on this system.",
+    "zh": "我只是想在這個系統上測試一下。"
+  },
+  {
+    "start": 473553,
+    "end": 476348,
+    "text": "So have it install it because it was working in a folder here.",
+    "zh": "所以讓它安裝它，因為它在此處的​​資料夾中工作。"
+  },
+  {
+    "start": 476476,
+    "end": 480652,
+    "text": "So I want to install it so that I can try it out.",
+    "zh": "所以我想安裝它以便我可以嘗試一下。"
+  },
+  {
+    "start": 480812,
+    "end": 482049,
+    "text": "And I can already",
+    "zh": "我已經可以"
+  },
+  {
+    "start": 483301,
+    "end": 487477,
+    "text": "start a new session in that same folder so that I can then really test it.",
+    "zh": "在同一資料夾中啟動一個新會話，以便我可以真正測試它。"
+  },
+  {
+    "start": 488023,
+    "end": 491442,
+    "text": "And then ask what this folder is about and have it analyze it and so on.",
+    "zh": "然後詢問這個資料夾的內容並讓它對其進行分析等等。"
+  },
+  {
+    "start": 492116,
+    "end": 493577,
+    "text": "And so here I got an answer.",
+    "zh": "所以我在這裡得到了答案。"
+  },
+  {
+    "start": 493641,
+    "end": 496322,
+    "text": "Now I'll just need to wait for the installation to finish.",
+    "zh": "現在我只需要等待安裝完成。"
+  },
+  {
+    "start": 496916,
+    "end": 497703,
+    "text": "And it's done.",
+    "zh": "一切都完成了。"
+  },
+  {
+    "start": 498393,
+    "end": 503000,
+    "text": "So now we can reload here, also reload here to make sure the extension is loaded.",
+    "zh": "所以現在我們可以在這裡重新加載，也可以在這裡重新加載以確保擴充功能已加載。"
+  },
+  {
+    "start": 503434,
+    "end": 505504,
+    "text": "And now I have a cross-send command available.",
+    "zh": "現在我有一個可用的交叉發送命令。"
+  },
+  {
+    "start": 505842,
+    "end": 509357,
+    "text": "And if I run this, I get the picker of what I want to send— last agent message, or let's",
+    "zh": "如果我運行這個，我會得到我想要發送的內容的選擇器——最後一條代理訊息，或者讓我們"
+  },
+  {
+    "start": 509357,
+    "end": 511589,
+    "text": "say a summary of the chat with the default summary.",
+    "zh": "使用預設摘要說出聊天摘要。"
+  },
+  {
+    "start": 512183,
+    "end": 515985,
+    "text": "So I'll let it summarize it, creating a summary of what happened here.",
+    "zh": "因此，我將讓它對其進行總結，並對這裡發生的事情進行總結。"
+  },
+  {
+    "start": 516738,
+    "end": 519030,
+    "text": "And then it asks me where I want to send this.",
+    "zh": "然後它問我想把這個發送到哪裡。"
+  },
+  {
+    "start": 519078,
+    "end": 523629,
+    "text": "Now I got some sidetracks from, um, playing around with this earlier, but I want this",
+    "zh": "現在我從之前的嘗試中得到了一些岔路口，但我想要這個"
+  },
+  {
+    "start": 523629,
+    "end": 523693,
+    "text": "one.",
+    "zh": "一。"
+  },
+  {
+    "start": 523869,
+    "end": 524895,
+    "text": "What is this folder about?",
+    "zh": "這個資料夾是關於什麼的？"
+  },
+  {
+    "start": 525632,
+    "end": 526962,
+    "text": "Cross-send message, yes.",
+    "zh": "交叉發送訊息，是的。"
+  },
+  {
+    "start": 527491,
+    "end": 532330,
+    "text": "And now the way this extension is built, we switch to this session.",
+    "zh": "現在這個擴充的建構方式，我們切換到這個會話。"
+  },
+  {
+    "start": 532378,
+    "end": 534397,
+    "text": "So this session was now opened here too.",
+    "zh": "所以這次會議現在也在這裡開幕。"
+  },
+  {
+    "start": 535263,
+    "end": 538243,
+    "text": "We can see that is this reply here, right?",
+    "zh": "我們可以看到這裡就是這個回覆吧？"
+  },
+  {
+    "start": 538324,
+    "end": 540551,
+    "text": "So this folder, blah blah blah.",
+    "zh": "所以這個資料夾，等等等等。"
+  },
+  {
+    "start": 541181,
+    "end": 541784,
+    "text": "We now switched.",
+    "zh": "我們現在換了。"
+  },
+  {
+    "start": 541850,
+    "end": 545407,
+    "text": "That is how this extension was built and my summary was appended here.",
+    "zh": "這就是這個擴充的建構方式，我的總結附在此。"
+  },
+  {
+    "start": 547200,
+    "end": 550960,
+    "text": "So now we have one merged session and I could close this one.",
+    "zh": "現在我們有一個合併會議，我可以關閉這一會議。"
+  },
+  {
+    "start": 551330,
+    "end": 554833,
+    "text": "And if you want an extension like this, it's a different question, depends on how you",
+    "zh": "如果您想要這樣的擴展，這是一個不同的問題，取決於您如何"
+  },
+  {
+    "start": 554945,
+    "end": 555202,
+    "text": "work.",
+    "zh": "工作。"
+  },
+  {
+    "start": 555508,
+    "end": 561082,
+    "text": "The key thing is you can have Pi build its own extensions and that is one of its most",
+    "zh": "關鍵是你可以讓 Pi 建立自己的擴展，這是它最重要的擴展之一"
+  },
+  {
+    "start": 561130,
+    "end": 564369,
+    "text": "amazing features as this small demo hopefully showed you.",
+    "zh": "這個小演示希望向您展示令人驚嘆的功能。"
+  }
+]

@@ -4,12 +4,12 @@
 #   ./serve.sh              rebuild the page from the SRT files, then serve it
 #   ./serve.sh --no-build   skip the rebuild, just serve what's on disk
 #
-# Override defaults with env vars:  PORT=9000 WINDOW=3m ./serve.sh
+# Override defaults with env vars:  PORT=9000 WINDOW=1m ./serve.sh
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PORT="${PORT:-8777}"
-WINDOW="${WINDOW:-1m}"
+WINDOW="${WINDOW:-3m}"
 HOST="${HOST:-127.0.0.1}"
 
 # Prefer the managed venv (project convention), fall back to any python3.

@@ -1,0 +1,894 @@
+1
+00:00:00,096 --> 00:00:05,384
+If you're building web applications using TypeScript to be specific, you shouldn't sleep
+如果您正在使用 TypeScript 建立 Web 應用程序，那麼您不應該睡覺
+
+2
+00:00:05,545 --> 00:00:09,632
+on the Alchemy library framework, whatever you wanna call it.
+在 Alchemy 庫框架上，無論你想怎麼稱呼它。
+
+3
+00:00:10,353 --> 00:00:11,683
+It's really amazing.
+真是太神奇了。
+
+4
+00:00:11,731 --> 00:00:17,982
+Now, last week I shared my thoughts about Effect and that Effect is really good when
+現在，上週我分享了我對 Effect 的想法，當 Effect 非常好時
+
+5
+00:00:17,982 --> 00:00:19,103
+working with AI agents.
+與人工智慧代理合作。
+
+6
+00:00:19,488 --> 00:00:25,787
+Alchemy kind of builds up on Effect, but it's actually about managing the infrastructure
+Alchemy 有點建立在 Effect 的基礎上，但它實際上是關於管理基礎設施
+
+7
+00:00:25,915 --> 00:00:27,229
+that powers your application.
+為您的應用程式提供動力。
+
+8
+00:00:27,277 --> 00:00:29,136
+It's about deploying that infrastructure.
+這是關於部署該基礎設施的。
+
+9
+00:00:29,184 --> 00:00:32,906
+It's about infrastructure as code and merging that with your code.
+這是關於基礎設施即代碼並將其與您的程式碼合併。
+
+10
+00:00:32,954 --> 00:00:34,559
+And I got an example for you.
+我給你舉了一個例子。
+
+11
+00:00:35,121 --> 00:00:37,335
+So I got a very simple codebase here.
+所以我在這裡得到了一個非常簡單的程式碼庫。
+
+12
+00:00:37,705 --> 00:00:39,518
+And first, an example without Alchemy.
+首先，舉一個沒有煉金術的例子。
+
+13
+00:00:39,951 --> 00:00:45,135
+Let's say we want to deploy on Cloudflare, which is already one of the better use cases
+假設我們想要在 Cloudflare 上部署，這已經是更好的用例之一
+
+14
+00:00:45,247 --> 00:00:50,382
+because if you do that, by default you can write your worker code.
+因為如果你這樣做，預設情況下你可以編寫你的工作代碼。
+
+15
+00:00:50,462 --> 00:00:55,453
+Workers are that Cloudflare primitive that allows you to run code in the cloud.
+Workers 是 Cloudflare 原語，可讓您在雲端中執行程式碼。
+
+16
+00:00:55,501 --> 00:00:59,884
+You can think of them as AWS Lambda on Cloudflare, in case you know that.
+如果您知道的話，您可以將它們視為 Cloudflare 上的 AWS Lambda。
+
+17
+00:01:00,173 --> 00:01:05,680
+So it's not an entire server, it's just a thing that temporarily spins up when your code
+所以它不是一個完整的伺服器，它只是當你的程式碼運行時臨時旋轉的東西
+
+18
+00:01:05,712 --> 00:01:10,191
+needs to execute, for example, because of an incoming request, and then shuts down so
+例如，由於傳入請求而需要執行，然後關閉
+
+19
+00:01:10,191 --> 00:01:15,136
+that you only pay for when it's actually executing versus a complete server where you
+您只需在實際執行時付費，而不是在完整的伺服器上付費
+
+20
+00:01:15,168 --> 00:01:15,922
+always pay.
+總是付錢。
+
+21
+00:01:16,292 --> 00:01:21,702
+Of course, this on-demand per-request execution can be more expensive than a server if
+當然，這種按請求按需執行的成本可能比伺服器更昂貴，如果
+
+22
+00:01:21,750 --> 00:01:24,464
+you have a lot of execution, but That's a totally different story.
+你有很多執行力，但那是一個完全不同的故事。
+
+23
+00:01:24,737 --> 00:01:30,166
+Workers are really great and without Alchemy, this is how a worker could look like, how
+工人真的很偉大，沒有煉金術，工人就是這個樣子，怎麼辦
+
+24
+00:01:30,182 --> 00:01:30,969
+you could define it.
+你可以定義它。
+
+25
+00:01:31,146 --> 00:01:37,250
+And then the great thing about Cloudflare is out of the box, it already follows an infrastructure
+Cloudflare 的優點在於開箱即用，它已經遵循基礎設施
+
+26
+00:01:37,346 --> 00:01:38,117
+as code approach.
+作為程式碼方法。
+
+27
+00:01:38,230 --> 00:01:45,056
+You have this wrangler.jsonc file here and in there you define your worker, the
+您在這裡有這個 wrangler.jsonc 文件，您可以在其中定義您的工作人員，即
+
+28
+00:01:45,056 --> 00:01:48,317
+entry point to the worker, any dependencies this worker may have.
+工作人員的入口點，該工作人員可能具有的任何依賴項。
+
+29
+00:01:48,446 --> 00:01:54,034
+So any buckets, R2 buckets, which is object storage, the worker may rely on and so on.
+所以任何桶，R2桶，這是物件存儲，worker可能依賴的等等。
+
+30
+00:01:54,146 --> 00:01:55,190
+So that's already great.
+所以這已經很棒了。
+
+31
+00:01:56,634 --> 00:02:02,365
+Still, it's also something where you have to link these files together, where you have
+儘管如此，您還必須將這些文件連結在一起，您必須
+
+32
+00:02:02,397 --> 00:02:04,676
+to make sure that you have the correct entry point here and so on.
+確保您在這裡有正確的入口點等等。
+
+33
+00:02:05,206 --> 00:02:07,421
+But it's definitely all good and doable.
+但這絕對是好的且可行。
+
+34
+00:02:07,855 --> 00:02:13,649
+But when it comes to that bucket here, for example, you need to create it first.
+但是，例如，當涉及到這裡的儲存桶時，您需要先建立它。
+
+35
+00:02:14,340 --> 00:02:18,128
+You can do that in the Cloudflare dashboard, which means you need to log into your Cloudflare
+您可以在 Cloudflare 儀表板中執行此操作，這表示您需要登入 Cloudflare
+
+36
+00:02:18,128 --> 00:02:22,269
+account and create the bucket there, or you could run a command like this.
+帳戶並在那裡建立儲存桶，或者您可以執行這樣的命令。
+
+37
+00:02:22,398 --> 00:02:24,869
+So not too bad, but it's an extra step.
+所以還不錯，但這是一個額外的步驟。
+
+38
+00:02:25,270 --> 00:02:28,271
+And of course, you must make sure that you get the name right here.
+當然，您必須確保您在此處獲得正確的名稱。
+
+39
+00:02:28,961 --> 00:02:32,765
+So when you create it, you must have the same name as you then specify here.
+因此，當您建立它時，您必須具有與此處指定的名稱相同的名稱。
+
+40
+00:02:33,118 --> 00:02:34,113
+Otherwise, it will fail.
+否則就會失敗。
+
+41
+00:02:34,161 --> 00:02:36,023
+So you see where I'm getting at.
+所以你明白我的意思了。
+
+42
+00:02:36,103 --> 00:02:38,975
+There are things here that you can mess up.
+這裡有些事情你可能會搞砸。
+
+43
+00:02:39,056 --> 00:02:43,742
+And it's also annoying that you have to do this manually, especially now in a world where
+而且你必須手動執行此操作也很煩人，尤其是在現在的世界中
+
+44
+00:02:43,806 --> 00:02:45,716
+we use AI agents for a lot of work.
+我們使用人工智慧代理來完成很多工作。
+
+45
+00:02:45,956 --> 00:02:47,786
+That's the kind of problem Alchemy solves.
+這就是 Alchemy 解決的問題。
+
+46
+00:02:48,155 --> 00:02:50,881
+It's also not the first package to solve this problem.
+它也不是第一個解決這個問題的包。
+
+47
+00:02:50,945 --> 00:02:53,783
+There are others like Terraform, Pulumi, and so on.
+還有其他的，如 Terraform、Pulumi 等。
+
+48
+00:02:54,215 --> 00:02:55,161
+But Alchemy is amazing.
+但煉金術是驚人的。
+
+49
+00:02:55,257 --> 00:02:55,706
+You'll see why.
+你就會明白為什麼。
+
+50
+00:02:56,395 --> 00:02:58,527
+Because Alchemy is just a TypeScript program.
+因為 Alchemy 只是一個 TypeScript 程式。
+
+51
+00:02:58,800 --> 00:03:01,429
+Or if you use Alchemy, you're just writing TypeScript.
+或者，如果您使用 Alchemy，那麼您只是在編寫 TypeScript。
+
+52
+00:03:01,782 --> 00:03:05,020
+Specifically, you're writing TypeScript with Effect.
+具體來說，您正在使用 Effect 編寫 TypeScript。
+
+53
+00:03:05,356 --> 00:03:07,328
+Again, I talked about Effect in another video.
+我在另一個視頻中再次談到了效果。
+
+54
+00:03:07,392 --> 00:03:11,832
+It's a TypeScript library that gives you a certain way of writing your programs, certain
+它是一個 TypeScript 函式庫，為您提供編寫程式的特定方式，某些
+
+55
+00:03:11,945 --> 00:03:16,513
+rules and guidelines to follow, which is really great if you're working with AI agents
+要遵循的規則和指南，如果您與人工智慧代理一起工作，這真的很棒
+
+56
+00:03:16,513 --> 00:03:21,869
+because at least right now, if you have some rules and some guidelines for those agents,
+因為至少現在，如果你對這些特工有一些規則和指導方針，
+
+57
+00:03:22,447 --> 00:03:26,430
+the code they generate tends to be a bit better in my experience.
+根據我的經驗，他們產生的程式碼往往會更好一些。
+
+58
+00:03:26,623 --> 00:03:32,324
+So when you have installed that in your project, you can and you must or should create
+因此，當您在專案中安裝了它後，您可以而且必須或應該創建
+
+59
+00:03:32,324 --> 00:03:33,962
+such an alchemy.run.ts file.
+這樣的 alchemy.run.ts 檔案。
+
+60
+00:03:34,412 --> 00:03:37,945
+And in there you create your Alchemy stack.
+並在其中創建您的 Alchemy 堆疊。
+
+61
+00:03:38,186 --> 00:03:39,744
+And you can also have multiple stacks.
+而且你還可以有多個堆疊。
+
+62
+00:03:39,792 --> 00:03:40,691
+Now what is a stack?
+現在什麼是堆疊？
+
+63
+00:03:40,996 --> 00:03:45,108
+A stack is just a collection of resources that belong together.
+堆疊只是屬於在一起的資源的集合。
+
+64
+00:03:45,172 --> 00:03:46,553
+That's the idea of a stack.
+這就是堆疊的想法。
+
+65
+00:03:46,842 --> 00:03:51,500
+So one application that combines a bunch of different things could be one stack.
+因此，一個組合了一堆不同事物的應用程式可能是一個堆疊。
+
+66
+00:03:52,143 --> 00:03:54,986
+Now that stack has a name which is mostly for you.
+現在該堆疊有了一個主要適合您的名稱。
+
+67
+00:03:55,693 --> 00:04:00,512
+Then you define the provider because Alchemy does not just support Cloudflare, that's
+然後定義提供者，因為 Alchemy 不僅支援 Cloudflare，
+
+68
+00:04:00,512 --> 00:04:05,090
+amazing, it supports lots of providers and new ones are added basically every day.
+令人驚訝的是，它支援許多提供者，基本上每天都會添加新的提供者。
+
+69
+00:04:05,491 --> 00:04:10,149
+You can use it with Cloudflare, you can use it with AWS, with Hetzner, Fly, you see it
+你可以將它與 Cloudflare 一起使用，你可以將它與 AWS 一起使用，與 Hetzner、Fly 一起使用，你看到了
+
+70
+00:04:10,149 --> 00:04:15,482
+here and if you visit the website alchemy.run chances are high that there are many new
+在這裡，如果您訪問網站 alchemy.run，很可能會發現許多新內容
+
+71
+00:04:16,252 --> 00:04:17,390
+providers you can use.
+您可以使用的提供者。
+
+72
+00:04:17,455 --> 00:04:20,709
+It's also not just about hosting or about running your code.
+它也不僅僅是關於託管或運行程式碼。
+
+73
+00:04:21,061 --> 00:04:23,562
+There also are database providers.
+還有資料庫提供者。
+
+74
+00:04:23,626 --> 00:04:27,986
+So if you have a database in the cloud and you don't want to use the database offering
+因此，如果您在雲端中擁有資料庫並且不想使用該資料庫產品
+
+75
+00:04:28,034 --> 00:04:34,447
+of AWS or so, for example, and it has some utility functionality for even defining CLI
+例如，AWS 等，它具有一些實用功能，甚至可以定義 CLI
+
+76
+00:04:34,447 --> 00:04:38,727
+commands, Docker containers, and much, much more.
+命令、Docker 容器等等。
+
+77
+00:04:39,256 --> 00:04:45,956
+The idea behind Alchemy is that it is the library you need for defining everything
+Alchemy 背後的想法是，它是定義一切所需的函式庫
+
+78
+00:04:46,213 --> 00:04:47,639
+around your main application.
+圍繞您的主要應用程式。
+
+79
+00:04:48,297 --> 00:04:52,487
+Which mostly is the infrastructure where it runs, but potentially is more than that.
+其中主要是它運作的基礎設施，但可能不只這些。
+
+80
+00:04:53,032 --> 00:04:58,265
+So you have this stack, you define which provider you want, could be AWS, here it's Cloudflare.
+所以你有了這個堆疊，你可以定義你想要的供應商，可以是 AWS，這裡是 Cloudflare。
+
+81
+00:04:58,811 --> 00:05:04,493
+You then define a state, which is basically where Alchemy will store information about
+然後，您定義一個狀態，這基本上是 Alchemy 儲存以下資訊的地方
+
+82
+00:05:04,605 --> 00:05:06,322
+what was deployed before.
+之前部署了什麼。
+
+83
+00:05:06,515 --> 00:05:13,192
+Because the idea is that when you use Alchemy, if you deploy this, you deploy it via
+因為這個想法是，當你使用 Alchemy 時，如果你部署它，你可以透過
+
+84
+00:05:13,192 --> 00:05:17,700
+a CLI command and Alchemy will check What was deployed in the past?
+CLI 指令和 Alchemy 將檢查過去部署了什麼？
+
+85
+00:05:18,149 --> 00:05:19,495
+What was changed in the code?
+程式碼中發生了什麼變化？
+
+86
+00:05:19,848 --> 00:05:21,964
+Which changes do I need to apply?
+我需要應用哪些變更？
+
+87
+00:05:22,413 --> 00:05:27,862
+The first time you deploy, that means it will have to deploy everything, but the next
+第一次部署時，這意味著必須部署所有內容，但下一次部署
+
+88
+00:05:27,862 --> 00:05:33,600
+times thereafter, it will only make updates to the deployed resources if that suffices.
+此後，它只會在足夠的情況下對已部署的資源進行更新。
+
+89
+00:05:34,434 --> 00:05:35,604
+And that's the really nice thing.
+這真是一件好事。
+
+90
+00:05:35,732 --> 00:05:38,441
+Example, you don't need to do that manually in the dashboard.
+例如，您不需要在儀表板中手動執行此操作。
+
+91
+00:05:38,745 --> 00:05:40,829
+Instead, Alchemy does it for you.
+相反，Alchemy 會為您做到這一點。
+
+92
+00:05:41,070 --> 00:05:46,263
+And again, that's the same concept you may know from other infrastructure as code providers.
+同樣，這與您可能從其他基礎設施（如程式碼提供者）中了解到的概念相同。
+
+93
+00:05:46,375 --> 00:05:48,892
+So what's the kicker for Alchemy then?
+那麼煉金術的關鍵是什麼呢？
+
+94
+00:05:49,822 --> 00:05:55,416
+Well, what's nice is for one that it works with so many providers, but what I like a
+嗯，好的一點是它可以與如此多的提供者合作，但我喜歡的是
+
+95
+00:05:55,416 --> 00:06:01,732
+lot is that it embraces Effect, which again forces agents to write this code correctly.
+重要的是它包含了 Effect，這再次迫使智能體正確編寫這段程式碼。
+
+96
+00:06:01,989 --> 00:06:08,016
+And it does not just do that, but it also blends infrastructure with your application
+它不僅做到了這一點，而且還將基礎設施與您的應用程式融合在一起
+
+97
+00:06:08,080 --> 00:06:08,369
+logic.
+邏輯。
+
+98
+00:06:08,417 --> 00:06:09,314
+And you can see it here.
+你可以在這裡看到它。
+
+99
+00:06:10,084 --> 00:06:15,278
+I got my worker code here in worker.ts and it's no longer in the shape I had when I did
+我在worker.ts 中取得了我的工作程式碼，但它不再是我之前的狀態了
+
+100
+00:06:15,310 --> 00:06:16,239
+not use Alchemy.
+不使用煉金術。
+
+101
+00:06:16,432 --> 00:06:18,723
+There it was just such an exported object.
+那裡就是這樣一個導出的物件。
+
+102
+00:06:19,139 --> 00:06:25,612
+With Alchemy, my worker is a Cloudflare worker thing which I export coming from
+對於 Alchemy，我的工作人員是 Cloudflare 工作人員，我從以下位置匯出該工作人員
+
+103
+00:06:25,949 --> 00:06:26,333
+Alchemy.
+煉金術。
+
+104
+00:06:27,087 --> 00:06:32,903
+And that thing here defines a worker and most importantly, it defines the main code as
+這裡的東西定義了一個工人，最重要的是，它將主要代碼定義為
+
+105
+00:06:33,255 --> 00:06:39,552
+an effect using the Effect library, the code that should run when that worker is activated.
+使用 Effect 函式庫的效果，即啟動該工作程序時應執行的程式碼。
+
+106
+00:06:40,385 --> 00:06:43,958
+So when a request reaches that worker, for example, in this case, it'll send back some
+因此，當請求到達該工作人員時，例如在本例中，它會被發回一些
+
+107
+00:06:44,006 --> 00:06:44,807
+HTML code.
+HTML 程式碼。
+
+108
+00:06:45,417 --> 00:06:46,732
+Using Effect.
+使用效果。
+
+109
+00:06:47,759 --> 00:06:49,011
+That is what it does.
+這就是它的作用。
+
+110
+00:06:49,107 --> 00:06:50,664
+Now, that's in the worker.ts file.
+現在，它位於worker.ts 檔案中。
+
+111
+00:06:50,808 --> 00:06:53,696
+In alchemy.run, I'm importing that worker.
+在 alchemy.run 中，我正在匯入該工作人員。
+
+112
+00:06:54,001 --> 00:06:56,296
+Here it has name website, but that could be anything.
+這裡它有名稱網站，但可以是任何東西。
+
+113
+00:06:56,825 --> 00:07:01,896
+And then I yield it here as a dependency and Alchemy will automatically inject it so
+然後我在這裡將它作為依賴項生成，Alchemy 會自動注入它，這樣
+
+114
+00:07:01,896 --> 00:07:03,340
+that it's available in this function.
+它可以在這個函數中使用。
+
+115
+00:07:03,645 --> 00:07:08,122
+And then I return it like this, pointing at the website URL.
+然後我像這樣返回它，指向網站 URL。
+
+116
+00:07:08,635 --> 00:07:09,711
+It's just some internals.
+這只是一些內部情況。
+
+117
+00:07:09,823 --> 00:07:14,651
+In the end, this links the worker code to this stack here.
+最後，這將工作程式碼連結到此處的該堆疊。
+
+118
+00:07:15,276 --> 00:07:17,424
+And that's the really amazing part.
+這才是真正令人驚奇的部分。
+
+119
+00:07:17,600 --> 00:07:23,756
+Your application code and your infrastructure code, they live side by side and both use
+您的應用程式程式碼和基礎設施代碼，它們並存並且都使用
+
+120
+00:07:23,772 --> 00:07:24,942
+and leverage Effect.
+和槓桿效應。
+
+121
+00:07:25,135 --> 00:07:29,944
+Hence, you get the advantage of the increased type safety Effect gives you, of the extra
+因此，您可以獲得 Effect 為您提供的增強類型的安全性以及額外的優勢
+
+122
+00:07:29,944 --> 00:07:32,444
+guardrails it gives you for your agent.
+它為您的代理提供了護欄。
+
+123
+00:07:32,893 --> 00:07:39,305
+And as a developer, no matter if you're using AI agents or not, you have the advantage,
+身為開發者，無論你是否使用人工智慧代理，你都有優勢，
+
+124
+00:07:39,385 --> 00:07:43,217
+at least for me it's an advantage, that your business logic and the infrastructure is
+至少對我來說這是一個優勢，你的業務邏輯和基礎設施是
+
+125
+00:07:43,649 --> 00:07:44,675
+blended into each other.
+相互融合。
+
+126
+00:07:44,996 --> 00:07:48,234
+And for example, here you can't mess up names.
+例如，在這裡你不能搞亂名字。
+
+127
+00:07:48,314 --> 00:07:54,181
+If I move on to the other example with the bucket, you will see that in alchemy.run now
+如果我繼續使用桶的另一個範例，您現在將在 alchemy.run 中看到它
+
+128
+00:07:54,309 --> 00:07:56,073
+it's no longer just the website worker.
+它不再只是網站工作人員。
+
+129
+00:07:56,137 --> 00:08:00,128
+Instead, there also is a bucket which I'm importing from that worker file too.
+相反，我也從該工作文件匯入一個儲存桶。
+
+130
+00:08:00,561 --> 00:08:05,066
+Because in worker.ts I have my worker, but I also have the documents bucket.
+因為在worker.ts中我有我的worker，但我也有文檔儲存桶。
+
+131
+00:08:05,611 --> 00:08:10,869
+And this, once everything is deployed, will create the bucket on Cloudflare in this case.
+在本例中，一旦部署了所有內容，就會在 Cloudflare 上建立儲存桶。
+
+132
+00:08:11,205 --> 00:08:16,111
+So no need to manually create it with another CLI command or anything like this.
+因此無需使用其他 CLI 命令或類似命令手動建立它。
+
+133
+00:08:16,656 --> 00:08:21,481
+And yet it is deployed automatically and they're linked together because it's just TypeScript
+然而它是自動部署的，並且它們連結在一起，因為它只是 TypeScript
+
+134
+00:08:21,481 --> 00:08:27,300
+code where I use the documents bucket in my worker and Alchemy understands this relation,
+我在工作人員中使用文件儲存桶的程式碼，並且 Alchemy 理解這種關係，
+
+135
+00:08:27,396 --> 00:08:32,189
+makes sure that we are using the right references behind the scenes.
+確保我們在幕後使用正確的參考。
+
+136
+00:08:32,638 --> 00:08:38,152
+So the references you had to manually set up when not using Alchemy, where you made it
+因此，在不使用 Alchemy 時，您必須手動設定引用，也就是您在哪裡建立的
+
+137
+00:08:38,152 --> 00:08:43,298
+very clear which bucket with which name should be exposed to the worker, that is no longer
+非常清楚應該向工作人員公開哪個儲存桶的名稱，這不再是
+
+138
+00:08:43,298 --> 00:08:44,933
+needed when using Alchemy.
+使用煉金術時需要。
+
+139
+00:08:45,510 --> 00:08:50,628
+And then again, you can blend your business logic for a file upload service here with
+然後，您可以將文件上傳服務的業務邏輯與
+
+140
+00:08:50,885 --> 00:08:51,962
+the infrastructure code.
+基礎設施代碼。
+
+141
+00:08:52,428 --> 00:08:55,657
+And I like that a lot and I build all my projects with that.
+我非常喜歡這一點，我用它來建立我所有的項目。
+
+142
+00:08:56,509 --> 00:09:02,020
+And speaking of building projects with that, I have a 2-week program coming up.
+說到以此建構項目，我即將進行為期兩週的計畫。
+
+143
+00:09:02,229 --> 00:09:07,322
+Enrollments are not open yet, but you can sign up to be notified when they do open up.
+註冊尚未開放，但您可以註冊以便在開放時收到通知。
+
+144
+00:09:07,692 --> 00:09:13,091
+And in that program, I share how I build applications with Effect, with Alchemy, with
+在該計劃中，我分享瞭如何使用 Effect、Alchemy 和
+
+145
+00:09:13,219 --> 00:09:15,899
+Cloudflare, but most importantly, with AI agents.
+Cloudflare，但最重要的是，具有 AI 代理程式。
+
+146
+00:09:15,947 --> 00:09:22,116
+I share how I approach this right from the start regarding research, planning, um, and
+我分享我如何從一開始就研究、規劃、嗯，以及
+
+147
+00:09:22,132 --> 00:09:27,404
+then of course instructing agents, orchestrating agents step by step until we build and
+然後當然是逐步指導代理、編排代理，直到我們建立並
+
+148
+00:09:27,484 --> 00:09:30,288
+deploy a real project in that 2-week program.
+在為期兩週的計劃中部署一個真實的專案。
+
+149
+00:09:30,929 --> 00:09:34,727
+Uh, more details are on that page here, which you of course also find linked below the
+呃，更多詳細資訊在該頁面上，您當然也可以在下面找到鏈接
+
+150
+00:09:34,727 --> 00:09:35,047
+video.
+影片.
+
+151
+00:09:35,111 --> 00:09:39,694
+And if that sounds interesting and you maybe also want to see in action how I use Alchemy
+如果這聽起來很有趣，並且您可能還想看看我如何使用 Alchemy
+
+152
+00:09:39,742 --> 00:09:44,154
+on more than just a dummy project here, that program may be interesting for you.
+這裡不僅僅是一個虛擬項目，該程式可能對您來說很有趣。
+
+153
+00:09:44,957 --> 00:09:49,149
+Besides that, what may also be interesting for you is I have open source projects like
+除此之外，您可能還感興趣的是我有像這樣的開源項目
+
+154
+00:09:49,149 --> 00:09:54,866
+this emailer GitHub repository, which is in the end an email sending service, a mass
+這個電子郵件程式 GitHub 儲存庫，它最終是一個電子郵件發送服務，一個品質
+
+155
+00:09:54,914 --> 00:09:57,275
+email sending service, which you can deploy yourself.
+電子郵件發送服務，您可以自行部署。
+
+156
+00:09:57,340 --> 00:09:58,368
+It's free, it's open source.
+它是免費的，它是開源的。
+
+157
+00:09:59,010 --> 00:10:03,892
+I'm not even selling it in any way right now, which you can use to send out marketing
+我現在甚至不會以任何方式出售它，你可以用它來發送行銷訊息
+
+158
+00:10:03,925 --> 00:10:07,474
+email if you don't wanna pay for services that do that for you.
+如果您不想為為您提供服務的服務付費，請發送電子郵件。
+
+159
+00:10:07,602 --> 00:10:08,871
+You need an AWS account.
+您需要一個 AWS 帳戶。
+
+160
+00:10:09,000 --> 00:10:13,252
+So here I'm not using Cloudflare because when I'm recording this, they don't have a mass
+所以在這裡我沒有使用 Cloudflare 因為當我錄製這個時，他們沒有質量
+
+161
+00:10:13,316 --> 00:10:14,823
+marketing email sending service.
+行銷電子郵件發送服務。
+
+162
+00:10:15,624 --> 00:10:19,712
+I'm using that, but you will see that if you dive into the code there, it's the same
+我正在使用它，但是如果你深入研究那裡的程式碼，你會發現它是相同的
+
+163
+00:10:19,728 --> 00:10:24,329
+logic just with way more services, AWS services here.
+邏輯只是更多的服務，這裡是AWS服務。
+
+164
+00:10:24,842 --> 00:10:30,597
+But in this code, you will see that I'm setting up SNS subscriptions, CloudWatch alarms.
+但在此程式碼中，您將看到我正在設定 SNS 訂閱、CloudWatch 警報。
+
+165
+00:10:31,094 --> 00:10:36,657
+You will see that if you dive deeper into this application, into the backend source,
+你會發現，如果你深入研究這個應用程序，研究後端原始碼，
+
+166
+00:10:37,587 --> 00:10:44,234
+There you will have the dispatcher here, which is a Lambda function, which is the
+在這裡您將看到調度程序，它是一個 Lambda 函數，它是
+
+167
+00:10:44,267 --> 00:10:50,818
+worker equivalent of AWS in the end, which is responsible for dispatching messages, getting
+最後worker相當於AWS，負責調度訊息，獲取
+
+168
+00:10:50,850 --> 00:10:52,809
+them from a queue and sending them out.
+將它們從隊列中取出並將它們發送出去。
+
+169
+00:10:52,857 --> 00:10:59,665
+And here you can see on a bigger project how Alchemy allows you to blend business
+在這裡，您可以在一個更大的專案中看到 Alchemy 如何幫助您混合業務
+
+170
+00:10:59,745 --> 00:11:01,142
+logic with infrastructure.
+邏輯與基礎設施。
+
+171
+00:11:02,956 --> 00:11:09,255
+And I think the type safety, the great usability for AI agents and the general idea
+我認為類型安全、人工智慧代理的巨大可用性以及整體思路
+
+172
+00:11:09,848 --> 00:11:11,162
+just is amazing.
+真是太棒了。
+
+173
+00:11:11,306 --> 00:11:13,021
+Infrastructure as code is not new.
+基礎設施即程式碼並不是什麼新鮮事。
+
+174
+00:11:13,149 --> 00:11:13,919
+No, it isn't.
+不，不是。
+
+175
+00:11:14,271 --> 00:11:17,412
+But Alchemy executes it perfectly for me at least.
+但 Alchemy 至少對我來說完美地執行了它。
+
+176
+00:11:17,573 --> 00:11:23,134
+So if you're building a project and you're looking to not create resources manually in
+因此，如果您正在建立一個專案並且您希望不手動建立資源
+
+177
+00:11:23,166 --> 00:11:26,981
+some dashboard and instead have an easy way, take a look at Alchemy.
+一些儀表板，有一個簡單的方法，看看 Alchemy。
+
+178
+00:11:27,237 --> 00:11:31,837
+And if you want to learn more and see more about it, maybe that program which I mentioned
+如果您想了解更多信息並了解更多信息，也許我提到的那個程序
+
+179
+00:11:31,837 --> 00:11:32,863
+is interesting to you too.
+你也很有興趣。

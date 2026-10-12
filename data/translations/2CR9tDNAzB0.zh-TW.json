@@ -1,0 +1,938 @@
+[
+  {
+    "start": 16,
+    "end": 4096,
+    "text": "Herder is one of those tools which I would've loved to discover a bit earlier because",
+    "zh": "Herder 是我希望早點發現的工具之一，因為"
+  },
+  {
+    "start": 4144,
+    "end": 8675,
+    "text": "it is amazing, especially for agentic engineering and working with multiple AI agents.",
+    "zh": "這是令人驚奇的，特別是對於代理工程和與多個人工智慧代理一起工作。"
+  },
+  {
+    "start": 9414,
+    "end": 12048,
+    "text": "Now, this is not a sponsored video or anything like that.",
+    "zh": "現在，這不是贊助影片或類似的東西。"
+  },
+  {
+    "start": 12097,
+    "end": 15502,
+    "text": "It's just an amazing tool and I wanna show you why and how you can use it.",
+    "zh": "這是一個了不起的工具，我想向您展示為什麼以及如何使用它。"
+  },
+  {
+    "start": 15759,
+    "end": 16820,
+    "text": "Now, what is Herder?",
+    "zh": "現在，赫爾德是什麼？"
+  },
+  {
+    "start": 17205,
+    "end": 23278,
+    "text": "It is a terminal multiplexer, which is a fancy way of saying you can run it and then",
+    "zh": "它是一個終端多工器，這是一種奇特的方式，表示您可以運行它，然後"
+  },
+  {
+    "start": 23567,
+    "end": 26892,
+    "text": "you can manage multiple terminal windows in one.",
+    "zh": "您可以在一個終端機視窗中管理多個終端機視窗。"
+  },
+  {
+    "start": 27326,
+    "end": 29044,
+    "text": "Obviously, you wouldn't need Herder for that.",
+    "zh": "顯然，你不需要 Herder。"
+  },
+  {
+    "start": 29092,
+    "end": 34455,
+    "text": "Of course, you can just spin up multiple terminal windows on your system, right?",
+    "zh": "當然，您可以在系統上啟動多個終端窗口，對吧？"
+  },
+  {
+    "start": 34568,
+    "end": 35900,
+    "text": "Well, it's a bit more than that.",
+    "zh": "嗯，還不止於此。"
+  },
+  {
+    "start": 35949,
+    "end": 41360,
+    "text": "It is technically a client-server architecture, which means if you start something in",
+    "zh": "從技術上講，它是一種客戶端-伺服器架構，這意味著如果您在"
+  },
+  {
+    "start": 41456,
+    "end": 46787,
+    "text": "your Herder session, let's say here I'm starting a PyCodingAgent session and I'm asking",
+    "zh": "您的 Herder 會話，假設我正在啟動 PyCodingAgent 會話，並且我要問"
+  },
+  {
+    "start": 46835,
+    "end": 48954,
+    "text": "it, what can you do for me?",
+    "zh": "它，你能為我做什麼？"
+  },
+  {
+    "start": 49484,
+    "end": 52278,
+    "text": "I can technically quit this session.",
+    "zh": "從技術上講我可以退出本次會議。"
+  },
+  {
+    "start": 52712,
+    "end": 57408,
+    "text": "Session here, and when I restart it, I'm back to where I was.",
+    "zh": "會話在這裡，當我重新啟動它時，我又回到了原來的位置。"
+  },
+  {
+    "start": 57505,
+    "end": 59220,
+    "text": "And as you see, it finished its work.",
+    "zh": "正如你所看到的，它完成了它的工作。"
+  },
+  {
+    "start": 59268,
+    "end": 63099,
+    "text": "So processes you start here keep on working.",
+    "zh": "因此，您從此處開始的流程將繼續發揮作用。"
+  },
+  {
+    "start": 63195,
+    "end": 66946,
+    "text": "They keep on doing what they are doing, not just coding agents, of course, any process",
+    "zh": "他們繼續做他們正在做的事情，不僅僅是編碼代理，當然，任何流程"
+  },
+  {
+    "start": 66978,
+    "end": 70633,
+    "text": "you start in such a Herder pane, as it's called, in one of those windows.",
+    "zh": "您可以從其中一個視窗中的 Herder 窗格開始。"
+  },
+  {
+    "start": 71387,
+    "end": 75058,
+    "text": "And that, of course, can be super helpful also, for example, when running this on a remote",
+    "zh": "當然，這也非常有幫助，例如，在遠端運行時"
+  },
+  {
+    "start": 75058,
+    "end": 77847,
+    "text": "host, on a VPS you're connecting to with SSH.",
+    "zh": "主機，位於您透過 SSH 連線的 VPS 上。"
+  },
+  {
+    "start": 78199,
+    "end": 81566,
+    "text": "It works like this because Herder is using a client-server infrastructure.",
+    "zh": "它的工作原理是這樣的，因為 Herder 使用的是客戶端-伺服器基礎設施。"
+  },
+  {
+    "start": 82031,
+    "end": 86215,
+    "text": "And when you run Herder, you're connecting with a client to a server that's also automatically",
+    "zh": "當您執行 Herder 時，您正在將用戶端連接到伺服器，該伺服器也會自動"
+  },
+  {
+    "start": 86215,
+    "end": 90655,
+    "text": "started if it's not already running, and your sessions then technically run on that server,",
+    "zh": "如果尚未運行，則啟動，然後從技術上講，您的會話將在該伺服器上運行，"
+  },
+  {
+    "start": 90863,
+    "end": 95640,
+    "text": "and that server keeps on running even if you close that Herder pane, if you detach from",
+    "zh": "即使您關閉 Herder 窗格，如果您從"
+  },
+  {
+    "start": 95672,
+    "end": 96201,
+    "text": "that session.",
+    "zh": "那次會議。"
+  },
+  {
+    "start": 96314,
+    "end": 97227,
+    "text": "That's how that works.",
+    "zh": "這就是它的工作原理。"
+  },
+  {
+    "start": 97275,
+    "end": 100497,
+    "text": "But still, that is nice, that can be useful.",
+    "zh": "但這仍然很好，很有用。"
+  },
+  {
+    "start": 100882,
+    "end": 105771,
+    "text": "But the killer feature of Herder is its deep integration with coding agents.",
+    "zh": "但 Herder 的殺手級功能是它與編碼代理的深度整合。"
+  },
+  {
+    "start": 106156,
+    "end": 111670,
+    "text": "You see that there is this sidebar here on the left, and there is this agents part in",
+    "zh": "你看到左邊有這個側邊欄，裡面有這個代理部分"
+  },
+  {
+    "start": 111783,
+    "end": 117612,
+    "text": "that sidebar, and that is automatically populated with agent sessions you may have started.",
+    "zh": "此側邊欄會自動填入您可能已啟動的代理會話。"
+  },
+  {
+    "start": 117709,
+    "end": 124081,
+    "text": "Herder automatically detects a broad variety of AI agents like Pi, Codex, Claude Code,",
+    "zh": "Herder 會自動偵測各種 AI 代理，例如 Pi、Codex、Claude Code、"
+  },
+  {
+    "start": 124113,
+    "end": 125116,
+    "text": "Groq, and many more.",
+    "zh": "格羅克等等。"
+  },
+  {
+    "start": 125714,
+    "end": 131634,
+    "text": "And if you start such a coding agent process in Herder, it will add it to this agent",
+    "zh": "如果你在 Herder 中啟動這樣一個編碼代理程式進程，它會將其加入到這個代理程式中"
+  },
+  {
+    "start": 131634,
+    "end": 132604,
+    "text": "sidebar here.",
+    "zh": "側邊欄在這裡。"
+  },
+  {
+    "start": 133348,
+    "end": 137184,
+    "text": "So if I start a Claude Code session here in my other window",
+    "zh": "因此，如果我在另一個視窗中啟動克勞德程式碼會話"
+  },
+  {
+    "start": 138952,
+    "end": 141137,
+    "text": "and I ask it, what's this folder about?",
+    "zh": "我問它，這個資料夾是做什麼用的？"
+  },
+  {
+    "start": 141603,
+    "end": 143740,
+    "text": "You see that's also here in the sidebar.",
+    "zh": "您會看到它也位於側邊欄中。"
+  },
+  {
+    "start": 143933,
+    "end": 146377,
+    "text": "And you see I got this indicator that it's working.",
+    "zh": "你看，我得到了這個指標，表明它正在發揮作用。"
+  },
+  {
+    "start": 146788,
+    "end": 150190,
+    "text": "So it also hooks into those agents and shows you which agent is working, which one is",
+    "zh": "因此，它還會連接到這些代理並向您顯示哪個代理正在工作，哪個代理正在工作"
+  },
+  {
+    "start": 150287,
+    "end": 150511,
+    "text": "not.",
+    "zh": "不是。"
+  },
+  {
+    "start": 151009,
+    "end": 155808,
+    "text": "And that can be really useful if you, like me, are working sometimes at least on multiple",
+    "zh": "如果你像我一樣，有時至少在多個專案上工作，那麼這會非常有用。"
+  },
+  {
+    "start": 155824,
+    "end": 160077,
+    "text": "projects simultaneously, or you have multiple agent sessions going, one for research,",
+    "zh": "同時進行項目，或者您有多個代理會話正在進行，其中一個用於研究，"
+  },
+  {
+    "start": 160093,
+    "end": 162565,
+    "text": "one for something else, and you can easily switch.",
+    "zh": "一個用於另一個，您可以輕鬆切換。"
+  },
+  {
+    "start": 162805,
+    "end": 164523,
+    "text": "As you also see, you got mouse support.",
+    "zh": "正如您所看到的，您獲得了滑鼠支援。"
+  },
+  {
+    "start": 164828,
+    "end": 169931,
+    "text": "It's a terminal-based tool, but you don't need to be a terminal wizard to use it, which",
+    "zh": "它是一個基於終端的工具，但您不需要成為終端精靈即可使用它，這"
+  },
+  {
+    "start": 170525,
+    "end": 174875,
+    "text": "I like a lot because I never fully got into NeoVim.",
+    "zh": "我很喜歡，因為我從來沒有完全融入 NeoVim。"
+  },
+  {
+    "start": 174939,
+    "end": 181521,
+    "text": "It's just beyond me to memorize all these shortcuts and ways of using it, or I never",
+    "zh": "我無法記住所有這些快捷方式和使用方法，或者我從來沒有記住過"
+  },
+  {
+    "start": 181521,
+    "end": 184266,
+    "text": "was willing to take the time to fully learn it.",
+    "zh": "願意花時間充分學習它。"
+  },
+  {
+    "start": 184394,
+    "end": 186208,
+    "text": "Here in Herder, you got shortcuts.",
+    "zh": "在赫爾德，你有捷徑。"
+  },
+  {
+    "start": 186256,
+    "end": 191201,
+    "text": "You can easily open new workspaces, you can split your panes in various ways, you can",
+    "zh": "您可以輕鬆地開啟新的工作區，可以以各種方式分割窗格，您可以"
+  },
+  {
+    "start": 191378,
+    "end": 193256,
+    "text": "open new tabs and stuff like that.",
+    "zh": "打開新標籤之類的東西。"
+  },
+  {
+    "start": 193320,
+    "end": 195102,
+    "text": "And I'll get back to how things are organized.",
+    "zh": "我會回到事情是如何組織的。"
+  },
+  {
+    "start": 195471,
+    "end": 197863,
+    "text": "You got those shortcuts, but you can also use the mouse.",
+    "zh": "您有這些快捷鍵，但您也可以使用滑鼠。"
+  },
+  {
+    "start": 198200,
+    "end": 201267,
+    "text": "You can use the mouse to open a new tab here if you want to.",
+    "zh": "如果需要，您可以使用滑鼠在此處開啟新分頁。"
+  },
+  {
+    "start": 201491,
+    "end": 205756,
+    "text": "You can open the mouse and right-click to rename a workspace.",
+    "zh": "您可以打開滑鼠並右鍵單擊來重新命名工作區。"
+  },
+  {
+    "start": 206061,
+    "end": 208929,
+    "text": "You can click on menu here to find settings.",
+    "zh": "您可以點擊此處的選單來尋找設定。"
+  },
+  {
+    "start": 208977,
+    "end": 211861,
+    "text": "So you can use your mouse here, which is very appealing.",
+    "zh": "所以你可以在這裡使用滑鼠，這是非常吸引人的。"
+  },
+  {
+    "start": 211990,
+    "end": 216412,
+    "text": "Obviously, you may ask though, well, why don't I just use a tool like Codex or Cloud",
+    "zh": "顯然，您可能會問，好吧，為什麼我不使用 Codex 或 Cloud 這樣的工具"
+  },
+  {
+    "start": 216412,
+    "end": 218031,
+    "text": "Code, the desktop app, I mean?",
+    "zh": "我的意思是程式碼，桌面應用程式？"
+  },
+  {
+    "start": 218479,
+    "end": 220386,
+    "text": "There I can also have multiple sessions.",
+    "zh": "在那裡我還可以進行多次會議。"
+  },
+  {
+    "start": 220579,
+    "end": 222197,
+    "text": "T3 Code would be another example.",
+    "zh": "T3 代碼是另一個例子。"
+  },
+  {
+    "start": 222245,
+    "end": 223078,
+    "text": "And you would be right.",
+    "zh": "你是對的。"
+  },
+  {
+    "start": 223383,
+    "end": 224505,
+    "text": "You can, of course, use that.",
+    "zh": "當然，您可以使用它。"
+  },
+  {
+    "start": 224809,
+    "end": 230241,
+    "text": "I personally like this terminal-based approach because Of 2 main reasons.",
+    "zh": "我個人喜歡這種基於終端的方法，因為有兩個主要原因。"
+  },
+  {
+    "start": 230738,
+    "end": 236058,
+    "text": "For one, I really like working with those tuis of those coding agents.",
+    "zh": "其一，我真的很喜歡與這些編碼代理一起工作。"
+  },
+  {
+    "start": 236122,
+    "end": 241426,
+    "text": "For example, Pi has this /tree command where I haven't found a desktop app that would",
+    "zh": "例如，Pi 有這個 /tree 命令，但我沒有找到一個桌面應用程式可以"
+  },
+  {
+    "start": 241426,
+    "end": 241907,
+    "text": "support it.",
+    "zh": "支持它。"
+  },
+  {
+    "start": 242051,
+    "end": 243590,
+    "text": "It's a feature I really like.",
+    "zh": "這是我非常喜歡的功能。"
+  },
+  {
+    "start": 243878,
+    "end": 248093,
+    "text": "And by the way, also a feature I'll explain along with other core Pi features in my upcoming",
+    "zh": "順便說一句，我將在即將發布的文章中與其他核心 Pi 功能一起解釋這個功能"
+  },
+  {
+    "start": 248141,
+    "end": 248669,
+    "text": "Pi course.",
+    "zh": "圓周率當然。"
+  },
+  {
+    "start": 248846,
+    "end": 253749,
+    "text": "The best way to learn about the release of that is to go to academind.com/community and",
+    "zh": "了解該版本發布的最佳方式是訪問 academind.com/community 並"
+  },
+  {
+    "start": 253749,
+    "end": 255191,
+    "text": "sign up for our newsletter there.",
+    "zh": "在那裡註冊我們的電子報。"
+  },
+  {
+    "start": 255576,
+    "end": 261251,
+    "text": "Anyways, so I like working with those TUIs, with those native CLI coding agents.",
+    "zh": "無論如何，我喜歡使用這些 TUI，使用那些本機 CLI 編碼代理。"
+  },
+  {
+    "start": 261908,
+    "end": 266814,
+    "text": "Also because that allows me to use tools like Py, again, a coding agent I like a lot,",
+    "zh": "也因為這讓我可以使用 Py 等工具，Py 也是我非常喜歡的程式設計代理，"
+  },
+  {
+    "start": 267118,
+    "end": 270821,
+    "text": "which is highly extensible and get the best of both worlds, so to say.",
+    "zh": "可以說，它是高度可擴展的，並且可以兩全其美。"
+  },
+  {
+    "start": 271126,
+    "end": 277603,
+    "text": "I can enhance Py and then use it in an environment, Herder, which allows me to easily",
+    "zh": "我可以增強 Py，然後在 Herder 環境中使用它，這使我可以輕鬆地"
+  },
+  {
+    "start": 277699,
+    "end": 280136,
+    "text": "run multiple sessions side by side and switch between them.",
+    "zh": "並行運行多個會話並在它們之間切換。"
+  },
+  {
+    "start": 280184,
+    "end": 283246,
+    "text": "So it is simply my replacement for a capable desktop app.",
+    "zh": "所以它只是我對功能強大的桌面應用程式的替代品。"
+  },
+  {
+    "start": 283310,
+    "end": 286275,
+    "text": "And with the mouse support, I can barely tell the difference, to be honest.",
+    "zh": "老實說，有了滑鼠支持，我幾乎無法分辨出差異。"
+  },
+  {
+    "start": 286596,
+    "end": 287494,
+    "text": "That's one reason.",
+    "zh": "這是原因之一。"
+  },
+  {
+    "start": 287574,
+    "end": 293152,
+    "text": "The other big reason why I'm a big fan of Herder is because it also supports plugins.",
+    "zh": "我喜歡 Herder 的另一個重要原因是它還支援插件。"
+  },
+  {
+    "start": 293265,
+    "end": 297288,
+    "text": "It also can be extended and you can of course use coding agents to extend it.",
+    "zh": "它也可以擴展，你當然可以使用編碼代理來擴展它。"
+  },
+  {
+    "start": 297336,
+    "end": 299933,
+    "text": "So you have that self-improving software.",
+    "zh": "所以你有了自我改進的軟體。"
+  },
+  {
+    "start": 299997,
+    "end": 306409,
+    "text": "You can run a coding agent inside of Herder to tell it to build a Herder plugin to add",
+    "zh": "您可以在 Herder 內部運行一個編碼代理，告訴它建立一個 Herder 插件來添加"
+  },
+  {
+    "start": 306409,
+    "end": 307660,
+    "text": "a feature you want to have.",
+    "zh": "您想要擁有的功能。"
+  },
+  {
+    "start": 308012,
+    "end": 310753,
+    "text": "For example, here I'm in a project I've been working on.",
+    "zh": "例如，我正在參與一個我一直在做的專案。"
+  },
+  {
+    "start": 311122,
+    "end": 315386,
+    "text": "And let's say I want to look at the code because I want to review the work the agent",
+    "zh": "假設我想查看程式碼，因為我想檢查代理程式的工作"
+  },
+  {
+    "start": 315386,
+    "end": 317214,
+    "text": "did to give my agent follow-up tasks.",
+    "zh": "確實給了我的代理人後續任務。"
+  },
+  {
+    "start": 317454,
+    "end": 320839,
+    "text": "Obviously I could open the this project in VS Code or NeoVim or anything like that.",
+    "zh": "顯然我可以在 VS Code 或 NeoVim 或類似的東西中開啟這個專案。"
+  },
+  {
+    "start": 321144,
+    "end": 324257,
+    "text": "I instead installed the Herder File Viewer plugin.",
+    "zh": "我安裝了 Herder 檔案檢視器外掛程式。"
+  },
+  {
+    "start": 324610,
+    "end": 329103,
+    "text": "This is a plugin I installed that was created by someone else, though I contributed to",
+    "zh": "這是我安裝的一個插件，是由其他人創建的，儘管我做出了貢獻"
+  },
+  {
+    "start": 329103,
+    "end": 329199,
+    "text": "it.",
+    "zh": "它。"
+  },
+  {
+    "start": 329504,
+    "end": 333371,
+    "text": "But of course you could also ask Herder to build your own plugin if you want to have",
+    "zh": "當然，如果你想要的話，你也可以要求 Herder 建立自己的插件"
+  },
+  {
+    "start": 333371,
+    "end": 336934,
+    "text": "a functionality that's not available in open source plugins.",
+    "zh": "開源插件中不提供的功能。"
+  },
+  {
+    "start": 337206,
+    "end": 341443,
+    "text": "With this plugin, for example, I have a new shortcut which opens this file viewer and",
+    "zh": "例如，使用此插件，我有一個新的快捷方式可以打開此文件檢視器並"
+  },
+  {
+    "start": 341459,
+    "end": 343240,
+    "text": "now I can see the work my agent did.",
+    "zh": "現在我可以看到我的代理人所做的工作。"
+  },
+  {
+    "start": 343465,
+    "end": 347829,
+    "text": "And I also get highlights about changes, so uncommitted changes, and I can dive into",
+    "zh": "我還得到了有關更改的重點，因此未提交的更改，我可以深入研究"
+  },
+  {
+    "start": 347942,
+    "end": 353627,
+    "text": "those and take a look and see what changed and then give my agent feedback and so on.",
+    "zh": "看看這些，看看發生了什麼變化，然後給我的代理商回饋等等。"
+  },
+  {
+    "start": 354141,
+    "end": 361049,
+    "text": "And I like that extensibility that I can make Herder exactly the tool I want it to be,",
+    "zh": "我喜歡這種可擴展性，我可以讓 Herder 成為我想要的工具，"
+  },
+  {
+    "start": 361595,
+    "end": 366286,
+    "text": "just as I can make Pi, for example, as a coding agent, exactly the coding agent I want",
+    "zh": "就像我可以製作Pi，例如，作為編碼代理，正是我想要的編碼代理"
+  },
+  {
+    "start": 366286,
+    "end": 366768,
+    "text": "it to be.",
+    "zh": "就這樣吧。"
+  },
+  {
+    "start": 367234,
+    "end": 371957,
+    "text": "And yeah, those desktop apps like Codex, T3 Code, they are all great.",
+    "zh": "是的，Codex、T3 Code 等桌面應用程式都很棒。"
+  },
+  {
+    "start": 372118,
+    "end": 375524,
+    "text": "And this is maybe just my thing, but I like this extensibility.",
+    "zh": "這也許只是我的事，但我喜歡這種可擴展性。"
+  },
+  {
+    "start": 375588,
+    "end": 379775,
+    "text": "I like to be able to fine-tune and tweak everything the way I want it to be.",
+    "zh": "我喜歡能夠按照我想要的方式微調和調整一切。"
+  },
+  {
+    "start": 380080,
+    "end": 381555,
+    "text": "Now let's take a step back though.",
+    "zh": "現在讓我們退後一步。"
+  },
+  {
+    "start": 381828,
+    "end": 385500,
+    "text": "How exactly can you work in Herder now that we know that it is?",
+    "zh": "既然我們知道了，你到底能在 Herder 工作嗎？"
+  },
+  {
+    "start": 385676,
+    "end": 390134,
+    "text": "I mentioned already you can have multiple terminal windows in there, and these are in",
+    "zh": "我已經提到你可以有多個終端窗口，這些窗口位於"
+  },
+  {
+    "start": 390182,
+    "end": 394752,
+    "text": "the end organized in workspaces, which are here in that Spaces part of that side area.",
+    "zh": "末端組織在工作空間中，這些空間位於該側面區域的空間部分。"
+  },
+  {
+    "start": 394897,
+    "end": 399403,
+    "text": "So you got Agents and Spaces here, you got your workspaces, and each space consists of",
+    "zh": "所以你在這裡有代理和空間，你有你的工作空間，每個空間都包含"
+  },
+  {
+    "start": 399483,
+    "end": 405303,
+    "text": "one or more tabs, and those tabs then contain those panes, those terminal windows.",
+    "zh": "一個或多個選項卡，然後這些選項卡包含那些窗格、那些終端視窗。"
+  },
+  {
+    "start": 405752,
+    "end": 410801,
+    "text": "So in this project, the mvault project here, I could add a new tab if I wanted to, also",
+    "zh": "因此，在這個專案中，這裡的 mvault 專案中，如果我願意的話，我也可以新增一個選項卡"
+  },
+  {
+    "start": 410801,
+    "end": 412966,
+    "text": "of course with a shortcut, both is supported.",
+    "zh": "當然，如果有快捷方式，兩者都支援。"
+  },
+  {
+    "start": 413430,
+    "end": 418624,
+    "text": "And in each tab I have one pane by default, but I could add more by splitting it also",
+    "zh": "預設情況下，在每個選項卡中我都有一個窗格，但我也可以透過分割它來新增更多窗格"
+  },
+  {
+    "start": 418704,
+    "end": 419329,
+    "text": "with the mouse.",
+    "zh": "用滑鼠。"
+  },
+  {
+    "start": 419474,
+    "end": 423545,
+    "text": "So I could split that down, have multiple windows in there, and now in there I could",
+    "zh": "所以我可以把它分開，在那裡有多個窗口，現在我可以在那裡"
+  },
+  {
+    "start": 423850,
+    "end": 424090,
+    "text": "work.",
+    "zh": "工作。"
+  },
+  {
+    "start": 424251,
+    "end": 428146,
+    "text": "And of course you cannot just use coding agents in there, you can do whatever you want.",
+    "zh": "當然，你不能只在那裡使用編碼代理，你可以做任何你想做的事。"
+  },
+  {
+    "start": 428194,
+    "end": 431641,
+    "text": "You can run your normal terminal commands here if you want to.",
+    "zh": "如果需要，您可以在此處執行常規終端命令。"
+  },
+  {
+    "start": 431865,
+    "end": 436804,
+    "text": "You can also run NeoVim in there and use that, have your code editor here in, in one",
+    "zh": "您也可以在那裡運行 NeoVim 並使用它，將您的程式碼編輯器放在其中，在一個"
+  },
+  {
+    "start": 436836,
+    "end": 439404,
+    "text": "tab or in one pane, have your coding agents in another.",
+    "zh": "標籤或一個窗格中，將您的編碼代理程式放在另一個窗格中。"
+  },
+  {
+    "start": 439869,
+    "end": 441266,
+    "text": "All of that is possible.",
+    "zh": "所有這一切都是可能的。"
+  },
+  {
+    "start": 441731,
+    "end": 448680,
+    "text": "And that is why I think Herder is a really great tool for doing agentic engineering,",
+    "zh": "這就是為什麼我認為 Herder 是進行代理工程的一個非常好的工具，"
+  },
+  {
+    "start": 448776,
+    "end": 450606,
+    "text": "for working on multiple projects.",
+    "zh": "用於處理多個項目。"
+  },
+  {
+    "start": 451120,
+    "end": 454907,
+    "text": "And it's easy to use because of the mouse support and has amazing extensibility.",
+    "zh": "由於支援滑鼠，它很容易使用，並且具有驚人的可擴展性。"
+  },
+  {
+    "start": 455035,
+    "end": 460652,
+    "text": "And of course has all those shortcuts which allow you to work and move quickly once you",
+    "zh": "當然，還有所有這些快捷方式，可以讓您在完成工作後快速工作和移動"
+  },
+  {
+    "start": 460652,
+    "end": 461519,
+    "text": "got the hang of it.",
+    "zh": "掌握了竅門。"
+  },
+  {
+    "start": 461792,
+    "end": 465808,
+    "text": "Now, just to be clear, Herder is not a terminal replacement.",
+    "zh": "現在，需要澄清的是，赫爾德並不是終端替代品。"
+  },
+  {
+    "start": 466130,
+    "end": 471560,
+    "text": "Rather, you install it as a tool with one simple command on Linux or macOS or on Windows",
+    "zh": "相反，您可以在 Linux 或 macOS 或 Windows 上使用一個簡單的命令將其安裝為工具"
+  },
+  {
+    "start": 471592,
+    "end": 472395,
+    "text": "with this command.",
+    "zh": "用這個命令。"
+  },
+  {
+    "start": 472797,
+    "end": 474740,
+    "text": "And then you can start it in any terminal.",
+    "zh": "然後您可以在任何終端中啟動它。"
+  },
+  {
+    "start": 474805,
+    "end": 478789,
+    "text": "So no matter if you're using the default terminal or PowerShell that ships with your",
+    "zh": "因此，無論您使用的是預設終端還是隨您的系統隨附的 PowerShell"
+  },
+  {
+    "start": 478837,
+    "end": 484653,
+    "text": "system, or if you're using Ghosty or Alacritty or whatever it is, you can install Herder",
+    "zh": "系統，或者如果您使用 Ghosty 或 Alacritty 或其他任何東西，您可以安裝 Herder"
+  },
+  {
+    "start": 484685,
+    "end": 486339,
+    "text": "and then just start it.",
+    "zh": "然後就開始吧。"
+  },
+  {
+    "start": 486613,
+    "end": 491352,
+    "text": "And starting it is really just one command, Herder, and that starts it, brings you back",
+    "zh": "啟動它實際上只是一個命令，赫爾德，啟動它，就會帶你回來"
+  },
+  {
+    "start": 491352,
+    "end": 492413,
+    "text": "to your previous layout.",
+    "zh": "到您之前的佈局。"
+  },
+  {
+    "start": 492477,
+    "end": 495385,
+    "text": "And as mentioned, the server will keep on running even if you do quit.",
+    "zh": "如前所述，即使您退出，伺服器也會繼續運作。"
+  },
+  {
+    "start": 495771,
+    "end": 498406,
+    "text": "So you can always quit and come back later.",
+    "zh": "所以你可以隨時退出並稍後再回來。"
+  },
+  {
+    "start": 498582,
+    "end": 504174,
+    "text": "It has many more amazing features like the Herder remote feature, for example, which",
+    "zh": "它還有許多令人驚嘆的功能，例如 Herder 遠端功能，"
+  },
+  {
+    "start": 504270,
+    "end": 507387,
+    "text": "allows you to easily connect to a remote instance of Herder.",
+    "zh": "讓您輕鬆連線到 Herder 的遠端實例。"
+  },
+  {
+    "start": 507500,
+    "end": 511324,
+    "text": "So this one is one running on a VPS I created.",
+    "zh": "所以這個是在我創建的 VPS 上運行的。"
+  },
+  {
+    "start": 511597,
+    "end": 513284,
+    "text": "I installed Herder on there too.",
+    "zh": "我也在那裡安裝了 Herder。"
+  },
+  {
+    "start": 513670,
+    "end": 519410,
+    "text": "And of course I could just connect to that VPS and then run Herder there.",
+    "zh": "當然，我可以連接到該 VPS，然後在那裡運行 Herder。"
+  },
+  {
+    "start": 519554,
+    "end": 524073,
+    "text": "So now that would be Herder on the VPS, but now I would be running it from inside that",
+    "zh": "所以現在是 VPS 上的 Herder，但現在我會從裡面運行它"
+  },
+  {
+    "start": 524105,
+    "end": 524490,
+    "text": "VPS.",
+    "zh": "虛擬專用伺服器。"
+  },
+  {
+    "start": 524891,
+    "end": 531188,
+    "text": "Alternatively, I can run it from my MacBook here with herder --remote and then the identifier",
+    "zh": "或者，我可以在我的 MacBook 上使用 herder --remote 運行它，然後使用標識符"
+  },
+  {
+    "start": 531396,
+    "end": 533448,
+    "text": "or the IP of my VPS.",
+    "zh": "或我的 VPS 的 IP。"
+  },
+  {
+    "start": 533960,
+    "end": 538095,
+    "text": "And then Herder will behind the scenes connect to it via SSH and will still run Herder",
+    "zh": "然後 Herder 將在幕後透過 SSH 連接到它並且仍然運行 Herder"
+  },
+  {
+    "start": 538191,
+    "end": 538864,
+    "text": "on the VPS.",
+    "zh": "在 VPS 上。"
+  },
+  {
+    "start": 538928,
+    "end": 542798,
+    "text": "But for example, with my key binding and settings, from the MacBook, which is nice.",
+    "zh": "但例如，使用 MacBook 上的按鍵綁定和設置，這很好。"
+  },
+  {
+    "start": 542862,
+    "end": 544522,
+    "text": "Lets me bring together both worlds.",
+    "zh": "讓我將兩個世界結合在一起。"
+  },
+  {
+    "start": 545521,
+    "end": 546890,
+    "text": "Yeah, and that is Herder.",
+    "zh": "是的，那就是赫爾德。"
+  },
+  {
+    "start": 547277,
+    "end": 549726,
+    "text": "I definitely can do more deep dives if you're interested.",
+    "zh": "如果你有興趣，我絕對可以進行更深入的研究。"
+  },
+  {
+    "start": 549774,
+    "end": 550193,
+    "text": "Let me know.",
+    "zh": "讓我知道。"
+  },
+  {
+    "start": 550274,
+    "end": 553899,
+    "text": "But yeah, give it a try if you're doing agentic engineering, if you like working with",
+    "zh": "但是，是的，如果你正在做代理工程，如果你喜歡與"
+  },
+  {
+    "start": 553899,
+    "end": 557943,
+    "text": "those TUIs, with those CLI coding agents, and if you want to keep stuff organized.",
+    "zh": "那些 TUI，那些 CLI 編碼代理，如果你想保持東西井井有條。"
+  }
+]

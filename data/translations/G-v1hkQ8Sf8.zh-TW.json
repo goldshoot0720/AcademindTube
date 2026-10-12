@@ -1,0 +1,1808 @@
+[
+  {
+    "start": 176,
+    "end": 4623,
+    "text": "Last week, Ryan Dahl, the creator of Deno, launched Svelte.",
+    "zh": "上週，Deno 的創建者 Ryan Dahl 推出了 Svelte。"
+  },
+  {
+    "start": 5233,
+    "end": 6630,
+    "text": "And Svelte is quite interesting.",
+    "zh": "Svelte 非常有趣。"
+  },
+  {
+    "start": 6694,
+    "end": 12040,
+    "text": "It's a self-hosted distributed durable objects and workers implementation.",
+    "zh": "它是一個自架的分散式持久化物件和工作人員實作。"
+  },
+  {
+    "start": 12634,
+    "end": 13935,
+    "text": "What does that mean though?",
+    "zh": "但這意味著什麼？"
+  },
+  {
+    "start": 14962,
+    "end": 18382,
+    "text": "Durable objects are Cloudflare durable objects.",
+    "zh": "持久化物件是 Cloudflare 持久化物件。"
+  },
+  {
+    "start": 18430,
+    "end": 23889,
+    "text": "It's a service by Cloudflare and it's a service that's all about giving you a worker",
+    "zh": "這是 Cloudflare 提供的一項服務，它的目的是為您提供一個工作人員"
+  },
+  {
+    "start": 24916,
+    "end": 26184,
+    "text": "with some extra stuff.",
+    "zh": "還有一些額外的東西。"
+  },
+  {
+    "start": 26746,
+    "end": 32324,
+    "text": "Because a durable object in the end is just like a worker, an event handler function",
+    "zh": "因為持​​久性物件最終就像一個worker，一個事件處理函數"
+  },
+  {
+    "start": 32373,
+    "end": 35675,
+    "text": "sitting somewhere in the cloud waiting for an event to happen.",
+    "zh": "坐在雲端的某個地方等待事件發生。"
+  },
+  {
+    "start": 35723,
+    "end": 40051,
+    "text": "An event could be an HTTP request arriving at it, that would be quite common.",
+    "zh": "事件可以是到達它的 HTTP 請求，這很常見。"
+  },
+  {
+    "start": 40388,
+    "end": 42039,
+    "text": "It could also be a cron trigger.",
+    "zh": "它也可能是 cron 觸發器。"
+  },
+  {
+    "start": 42472,
+    "end": 47697,
+    "text": "Cloudflare gives you different events you can use to trigger an event handler, a worker.",
+    "zh": "Cloudflare 為您提供了不同的事件，您可以使用它們來觸發事件處理程序（即工作人員）。"
+  },
+  {
+    "start": 48082,
+    "end": 50839,
+    "text": "You can think of it as AWS Lambda in case you know that.",
+    "zh": "如果您知道的話，您可以將其視為 AWS Lambda。"
+  },
+  {
+    "start": 51432,
+    "end": 56257,
+    "text": "Now, a durable object is basically an enhanced version of that, which does not mean it's",
+    "zh": "現在，耐用物件基本上是其增強版本，這並不意味著它是"
+  },
+  {
+    "start": 56482,
+    "end": 60732,
+    "text": "always better, but for certain use cases, it's better because a durable object has that",
+    "zh": "總是更好，但對於某些用例，更好，因為耐用的物件具有"
+  },
+  {
+    "start": 60732,
+    "end": 65161,
+    "text": "event handler function or actually multiple functions if you need them as you'll see,",
+    "zh": "事件處理函數或實際上是多個函數（如果您需要的話），如您所見，"
+  },
+  {
+    "start": 65643,
+    "end": 68419,
+    "text": "but it also comes with persistent storage.",
+    "zh": "但它還附帶持久存儲。"
+  },
+  {
+    "start": 68916,
+    "end": 74725,
+    "text": "Typically modern durable objects created on Cloudflare come with a SQLite storage attached",
+    "zh": "通常，在 Cloudflare 上建立的現代持久性物件都附帶 SQLite 存儲"
+  },
+  {
+    "start": 75030,
+    "end": 77213,
+    "text": "and persistent really means persistent.",
+    "zh": "而堅持確實意味著堅持。"
+  },
+  {
+    "start": 77517,
+    "end": 81224,
+    "text": "It's not just for a few hours or definitely not for one request.",
+    "zh": "這不僅僅是幾個小時或絕對不是一個請求。"
+  },
+  {
+    "start": 81272,
+    "end": 84145,
+    "text": "Instead, it's there for weeks, months, years.",
+    "zh": "相反，它會在那裡存在數週、數月、數年。"
+  },
+  {
+    "start": 84755,
+    "end": 89869,
+    "text": "It's really a function with some fixed storage attached to it.",
+    "zh": "它實際上是一個附加了一些固定存儲的功能。"
+  },
+  {
+    "start": 89949,
+    "end": 94694,
+    "text": "Great for building distributed systems since you can have different handlers for different",
+    "zh": "非常適合建立分散式系統，因為您可以針對不同的情況使用不同的處理程序"
+  },
+  {
+    "start": 94694,
+    "end": 98445,
+    "text": "events and every handler can memorize stuff and store data.",
+    "zh": "事件和每個處理程序都可以記住內容並儲存資料。"
+  },
+  {
+    "start": 98942,
+    "end": 103495,
+    "text": "To make this really useful though, every durable object also comes with a fixed address,",
+    "zh": "為了使其真正有用，每個持久性物件還帶有一個固定位址，"
+  },
+  {
+    "start": 103559,
+    "end": 109778,
+    "text": "which is kind of required so that a future request that is about the same thing can reach",
+    "zh": "這是必需的，以便將來關於同一件事的請求可以到達"
+  },
+  {
+    "start": 109842,
+    "end": 112391,
+    "text": "the same function and operate on the same data.",
+    "zh": "相同的功能並對相同的數據進行操作。"
+  },
+  {
+    "start": 112696,
+    "end": 117578,
+    "text": "Persistent data wouldn't be worth a lot if you had no way of controlling which request",
+    "zh": "如果您無法控制哪個請求，持久性資料就沒有太大價值"
+  },
+  {
+    "start": 117610,
+    "end": 118092,
+    "text": "gets there.",
+    "zh": "到達那裡。"
+  },
+  {
+    "start": 118879,
+    "end": 120951,
+    "text": "So that is a durable object.",
+    "zh": "所以這是一個耐用的物體。"
+  },
+  {
+    "start": 121208,
+    "end": 128178,
+    "text": "And unlike workers, it is also all about saving that storage or having that storage.",
+    "zh": "與工人不同的是，這還在於節省儲存空間或擁有該儲存空間。"
+  },
+  {
+    "start": 128451,
+    "end": 131776,
+    "text": "Now, that's all good, but let's see some example maybe.",
+    "zh": "現在，這一切都很好，但讓我們來看一些例子。"
+  },
+  {
+    "start": 131824,
+    "end": 135855,
+    "text": "And for that, I prepared a little repo which you find attached where I have the same",
+    "zh": "為此，我準備了一個小倉庫，您可以在其中找到我有相同內容的附件"
+  },
+  {
+    "start": 135904,
+    "end": 138602,
+    "text": "examples both in the Svelte and the Cloudflare version.",
+    "zh": "Svelte 和 Cloudflare 版本中的範例。"
+  },
+  {
+    "start": 138650,
+    "end": 141541,
+    "text": "And we'll get back to Svelte, but let's start with Cloudflare.",
+    "zh": "我們將回到 Svelte，但讓我們從 Cloudflare 開始。"
+  },
+  {
+    "start": 142182,
+    "end": 145050,
+    "text": "There in the source folder, you can take a look at the counter.",
+    "zh": "在來源資料夾中，您可以查看計數器。"
+  },
+  {
+    "start": 145162,
+    "end": 148367,
+    "text": "It's a very basic example to understand what durable objects are.",
+    "zh": "這是一個了解什麼是耐用物件的非常基本的範例。"
+  },
+  {
+    "start": 148895,
+    "end": 152837,
+    "text": "You see, I have a class Counter which extends DurableObject, which is coming from Cloudflare.",
+    "zh": "您看，我有一個繼承自 Cloudflare 的 DurableObject 的 Counter 類別。"
+  },
+  {
+    "start": 153702,
+    "end": 155753,
+    "text": "And then I have 2 methods in there.",
+    "zh": "然後我有兩種方法。"
+  },
+  {
+    "start": 155865,
+    "end": 160367,
+    "text": "I mentioned we can have multiple entry points with durable objects for doing different",
+    "zh": "我提到我們可以有多個具有持久性物件的入口點來執行不同的操作"
+  },
+  {
+    "start": 160367,
+    "end": 160687,
+    "text": "stuff.",
+    "zh": "東西."
+  },
+  {
+    "start": 161152,
+    "end": 163491,
+    "text": "Both times we are operating on some storage.",
+    "zh": "這兩次我們都在一些存儲上進行操作。"
+  },
+  {
+    "start": 164052,
+    "end": 168794,
+    "text": "Here, since it's a basic counter example, it's all about getting a value out of the counter",
+    "zh": "在這裡，由於這是一個基本的計數器範例，因此所有內容都是從計數器中獲取值"
+  },
+  {
+    "start": 169083,
+    "end": 170749,
+    "text": "or putting a value back into it.",
+    "zh": "或將一個值放回其中。"
+  },
+  {
+    "start": 171102,
+    "end": 175027,
+    "text": "An incremented version of that value in this case here.",
+    "zh": "在本例中為該值的遞增版本。"
+  },
+  {
+    "start": 175203,
+    "end": 179289,
+    "text": "So managing a counter, but a counter persisted in the cloud.",
+    "zh": "因此管理一個計數器，但計數器仍然存在於雲端。"
+  },
+  {
+    "start": 179337,
+    "end": 183198,
+    "text": "So it is always there, so to say.",
+    "zh": "所以可以這麼說，它總是存在的。"
+  },
+  {
+    "start": 184240,
+    "end": 189399,
+    "text": "Now to reach that durable object, we have an entry point, an index.ts file here.",
+    "zh": "現在為了到達那個持久對象，我們有一個入口點，這裡有一個 index.ts 檔案。"
+  },
+  {
+    "start": 189847,
+    "end": 192219,
+    "text": "And in there we have an actual worker.",
+    "zh": "在那裡我們有一個真正的工人。"
+  },
+  {
+    "start": 192491,
+    "end": 198548,
+    "text": "So a durable object without a fixed address and without storage because this worker has",
+    "zh": "因此，一個沒有固定位址且沒有儲存的持久對象，因為該工作人員有"
+  },
+  {
+    "start": 198596,
+    "end": 199445,
+    "text": "a simple job.",
+    "zh": "一個簡單的工作。"
+  },
+  {
+    "start": 200022,
+    "end": 205294,
+    "text": "It should handle all incoming requests and then forward them to the different durable",
+    "zh": "它應該處理所有傳入的請求，然後將它們轉發到不同的持久"
+  },
+  {
+    "start": 205534,
+    "end": 210967,
+    "text": "objects based on the URL because the URL is that fixed address in the end.",
+    "zh": "基於 URL 的對象，因為 URL 最終就是那個固定位址。"
+  },
+  {
+    "start": 211479,
+    "end": 216399,
+    "text": "So in that worker, we take a look at the URL and we extract the name in the end from",
+    "zh": "因此，在該工作程序中，我們查看 URL，並從最後提取名稱"
+  },
+  {
+    "start": 216511,
+    "end": 223370,
+    "text": "the URL, so from the path in the end, and we take a look if we have a counter",
+    "zh": "URL，所以從最後的路徑來看，我們看看是否有計數器"
+  },
+  {
+    "start": 223722,
+    "end": 224219,
+    "text": "resource.",
+    "zh": "資源。"
+  },
+  {
+    "start": 224395,
+    "end": 229500,
+    "text": "So actually we extract 2 segments from the URL, the type of durable object and then the",
+    "zh": "所以實際上我們從 URL 中提取 2 段，即持久性物件的類型，然後是"
+  },
+  {
+    "start": 229500,
+    "end": 231106,
+    "text": "exact name of it.",
+    "zh": "它的確切名稱。"
+  },
+  {
+    "start": 231684,
+    "end": 236791,
+    "text": "And we check if it's a counter we wanna take a look at, a tickets durable object, which",
+    "zh": "我們檢查它是否是一個我們想要查看的計數器，一個票證耐用對象，"
+  },
+  {
+    "start": 236823,
+    "end": 237466,
+    "text": "we'll get back to.",
+    "zh": "我們稍後會回來。"
+  },
+  {
+    "start": 237787,
+    "end": 240116,
+    "text": "And then we also have an AI agent, which I'll also get back.",
+    "zh": "然後我們還有一個人工智慧代理，我也會把它拿回來。"
+  },
+  {
+    "start": 240501,
+    "end": 243810,
+    "text": "Now you may be wondering, okay, this is a bit too quick.",
+    "zh": "現在您可能想知道，好吧，這有點太快了。"
+  },
+  {
+    "start": 244067,
+    "end": 249190,
+    "text": "Fixed name, now we have counters and that is not the name, but instead the resource.",
+    "zh": "固定名稱，現在我們有了計數器，這不是名稱，而是資源。"
+  },
+  {
+    "start": 249271,
+    "end": 250202,
+    "text": "What's the name about then?",
+    "zh": "那叫什麼名字呢？"
+  },
+  {
+    "start": 250700,
+    "end": 251889,
+    "text": "Let's see it in action.",
+    "zh": "讓我們看看它的實際效果。"
+  },
+  {
+    "start": 252707,
+    "end": 259648,
+    "text": "I have this demo MD file and I already deployed everything so I can send",
+    "zh": "我有這個演示 MD 文件，並且我已經部署了所有內容，因此我可以發送"
+  },
+  {
+    "start": 259680,
+    "end": 261251,
+    "text": "this request here.",
+    "zh": "這個請求在這裡。"
+  },
+  {
+    "start": 261860,
+    "end": 268272,
+    "text": "I deployed my durable objects worker setup, by the way, in case you're interested, that",
+    "zh": "我部署了我的持久對象工作人員設置，順便說一句，如果您有興趣的話，"
+  },
+  {
+    "start": 268272,
+    "end": 274540,
+    "text": "is done with help of a Wrangler JSONC file which basically configures what you wanna",
+    "zh": "是在 Wrangler JSONC 文件的幫助下完成的，該文件基本上配置了您想要的內容"
+  },
+  {
+    "start": 274604,
+    "end": 276944,
+    "text": "deploy and how these things are related.",
+    "zh": "部署以及這些事物之間的關係。"
+  },
+  {
+    "start": 277008,
+    "end": 282923,
+    "text": "You see here I'm registering 3 durable objects and then I also have one main entry point",
+    "zh": "你看，我在這裡註冊了 3 個持久對象，然後我還有一個主要入口點"
+  },
+  {
+    "start": 282923,
+    "end": 288147,
+    "text": "which is that main worker that is responsible for distributing work, so to say.",
+    "zh": "可以說，這是負責分配工作的主要工人。"
+  },
+  {
+    "start": 288724,
+    "end": 295053,
+    "text": "So I have that up and running and therefore I can now send a request like this to this",
+    "zh": "所以我已經啟動並運行了，因此我現在可以向此發送這樣的請求"
+  },
+  {
+    "start": 295598,
+    "end": 297969,
+    "text": "domain and then with this path.",
+    "zh": "網域，然後使用此路徑。"
+  },
+  {
+    "start": 298081,
+    "end": 301734,
+    "text": "Now this path, as you can see, consists of 2 segments and here's why.",
+    "zh": "現在，正如您所看到的，這條路徑由 2 段組成，原因如下。"
+  },
+  {
+    "start": 302391,
+    "end": 305019,
+    "text": "I have that counter durable object, right?",
+    "zh": "我有那個櫃檯耐用的東西，對嗎？"
+  },
+  {
+    "start": 306157,
+    "end": 306637,
+    "text": "This one here.",
+    "zh": "這裡這個。"
+  },
+  {
+    "start": 306974,
+    "end": 312149,
+    "text": "And I want to reach that for every request that targets my worker here that then has",
+    "zh": "我希望針對我的員工提出的每個請求都能達到這個目標"
+  },
+  {
+    "start": 312261,
+    "end": 314553,
+    "text": "a first path segment of counters.",
+    "zh": "計數器的第一路徑段。"
+  },
+  {
+    "start": 314650,
+    "end": 315804,
+    "text": "That's just my definition.",
+    "zh": "這只是我的定義。"
+  },
+  {
+    "start": 315852,
+    "end": 317086,
+    "text": "It's my code, my project.",
+    "zh": "這是我的程式碼，我的專案。"
+  },
+  {
+    "start": 317150,
+    "end": 319603,
+    "text": "I could have chosen a different identifier, but that is mine.",
+    "zh": "我本來可以選擇不同的標識符，但那是我的。"
+  },
+  {
+    "start": 320517,
+    "end": 325294,
+    "text": "However, a durable object is actually replicatable.",
+    "zh": "然而，持久性物件實際上是可複製的。"
+  },
+  {
+    "start": 326063,
+    "end": 331465,
+    "text": "So here I define a durable object, but then we can have multiple instances, which makes",
+    "zh": "所以這裡我定義了一個持久對象，但是然後我們可以有多個實例，這使得"
+  },
+  {
+    "start": 331465,
+    "end": 331593,
+    "text": "sense.",
+    "zh": "感覺。"
+  },
+  {
+    "start": 331658,
+    "end": 332507,
+    "text": "It's a class, right?",
+    "zh": "這是一個班級吧？"
+  },
+  {
+    "start": 332555,
+    "end": 333357,
+    "text": "It's a blueprint.",
+    "zh": "這是一個藍圖。"
+  },
+  {
+    "start": 333405,
+    "end": 339144,
+    "text": "We can have multiple instances of that class and every instance is separate from the",
+    "zh": "我們可以有該類別的多個實例，並且每個實例都與"
+  },
+  {
+    "start": 339256,
+    "end": 340073,
+    "text": "other instances.",
+    "zh": "其他情況。"
+  },
+  {
+    "start": 340618,
+    "end": 346486,
+    "text": "So we have one definition that, but then potentially 10 or 100 or 1 million versions",
+    "zh": "所以我們有一個定義，但可能有 10 個、100 個或 100 萬個版本"
+  },
+  {
+    "start": 346630,
+    "end": 347864,
+    "text": "of that durable object.",
+    "zh": "那個耐用的物品。"
+  },
+  {
+    "start": 348089,
+    "end": 351423,
+    "text": "And it's the individual instances that have the fixed name.",
+    "zh": "具有固定名稱的是各個實例。"
+  },
+  {
+    "start": 352080,
+    "end": 357467,
+    "text": "So I identify which kind of instance I'm interested in, which type of durable object,",
+    "zh": "所以我確定我感興趣的實例類型，持久性物件的類型，"
+  },
+  {
+    "start": 357627,
+    "end": 359711,
+    "text": "but then the name is the last segment.",
+    "zh": "但名稱是最後一段。"
+  },
+  {
+    "start": 360016,
+    "end": 362372,
+    "text": "Alice, for example, to get Alice's counter.",
+    "zh": "以愛麗絲為例，獲取愛麗絲的櫃檯。"
+  },
+  {
+    "start": 363014,
+    "end": 365963,
+    "text": "So if I send this, I get the current value, which here is 2.",
+    "zh": "所以如果我發送這個，我會得到當前值，這裡是 2。"
+  },
+  {
+    "start": 366749,
+    "end": 370051,
+    "text": "And I can then also send that other request here.",
+    "zh": "然後我也可以在此處發送其他請求。"
+  },
+  {
+    "start": 372215,
+    "end": 373610,
+    "text": "To increment that counter.",
+    "zh": "增加該計數器。"
+  },
+  {
+    "start": 374540,
+    "end": 377489,
+    "text": "And if I now get it again, I get 3 here too.",
+    "zh": "如果我現在再次得到它，我也會在這裡得到 3。"
+  },
+  {
+    "start": 378210,
+    "end": 385184,
+    "text": "If I get the counter of Max, I get 0 because this is a new version of the durable",
+    "zh": "如果我得到 Max 的計數器，我得到 0，因為這是耐用的新版本"
+  },
+  {
+    "start": 385184,
+    "end": 390810,
+    "text": "object which was now created in this second where I sent the request because they are",
+    "zh": "現在在我發送請求的那一秒創建了對象，因為它們是"
+  },
+  {
+    "start": 390810,
+    "end": 392141,
+    "text": "of course created lazily.",
+    "zh": "當然是懶惰創建的。"
+  },
+  {
+    "start": 392493,
+    "end": 396052,
+    "text": "But now I sent the request to a durable object that didn't exist before.",
+    "zh": "但現在我將請求發送到一個以前不存在的持久性物件。"
+  },
+  {
+    "start": 396276,
+    "end": 399370,
+    "text": "So a new instance was created, but now it stays there.",
+    "zh": "因此創建了一個新實例，但現在它保留在那裡。"
+  },
+  {
+    "start": 399466,
+    "end": 401759,
+    "text": "Now it has its storage which is persisted.",
+    "zh": "現在它的儲存是持久的。"
+  },
+  {
+    "start": 402160,
+    "end": 404244,
+    "text": "You're not paying for uptime, no worries.",
+    "zh": "您無需為正常運行時間付費，不用擔心。"
+  },
+  {
+    "start": 404694,
+    "end": 408206,
+    "text": "It will go to sleep essentially, but the storage will be persisted.",
+    "zh": "它本質上會進入睡眠狀態，但儲存將被持久化。"
+  },
+  {
+    "start": 408543,
+    "end": 413450,
+    "text": "So if I send a request to increment the counter, for example, it is now 1.",
+    "zh": "例如，如果我發送一個增加計數器的請求，那麼它現在是 1。"
+  },
+  {
+    "start": 414044,
+    "end": 417524,
+    "text": "I'm operating on that same object, but now I have 2 versions of that counter object.",
+    "zh": "我正在對同一個物件進行操作，但現在我有該計數器物件的 2 個版本。"
+  },
+  {
+    "start": 417668,
+    "end": 420074,
+    "text": "That is how durable objects work.",
+    "zh": "這就是耐用物件的工作原理。"
+  },
+  {
+    "start": 420716,
+    "end": 424581,
+    "text": "Now, a more interesting realistic example would be the tickets example.",
+    "zh": "現在，一個更有趣的現實範例是門票範例。"
+  },
+  {
+    "start": 425671,
+    "end": 430820,
+    "text": "It's the same shape, but here the idea is that you could be building a system where people",
+    "zh": "它的形狀相同，但這裡的想法是你可以建立一個系統，人們可以在其中"
+  },
+  {
+    "start": 430820,
+    "end": 434715,
+    "text": "can buy tickets and you have a limited amount of tickets.",
+    "zh": "可以買票，門票數量有限。"
+  },
+  {
+    "start": 435004,
+    "end": 435757,
+    "text": "Here it's 5.",
+    "zh": "這裡是 5。"
+  },
+  {
+    "start": 436286,
+    "end": 442442,
+    "text": "Now, of course, you wanna make sure that it's not really possible for 2 people to send",
+    "zh": "現在，當然，您想確保 2 個人實際上不可能發送"
+  },
+  {
+    "start": 442442,
+    "end": 448710,
+    "text": "a request at about the same time and both get the last ticket, which wouldn't work, but",
+    "zh": "大約在同一時間發出請求，並且都獲得了最後一張票，這是行不通的，但是"
+  },
+  {
+    "start": 448710,
+    "end": 451852,
+    "text": "it would work technically depending on how you set things up.",
+    "zh": "從技術上講，它的工作原理取決於您的設定方式。"
+  },
+  {
+    "start": 452365,
+    "end": 454224,
+    "text": "With durable objects, you're safe.",
+    "zh": "有了耐用的物品，你就安全了。"
+  },
+  {
+    "start": 454368,
+    "end": 460059,
+    "text": "Not only is one advantage that you can easily build distributed systems, but another",
+    "zh": "可以輕鬆建立分散式系統不僅是一個優點，而且是另一個優點"
+  },
+  {
+    "start": 460059,
+    "end": 466679,
+    "text": "advantage which I didn't mention yet is that Cloudflare, will guarantee that requests",
+    "zh": "我還沒有提到的優點是 Cloudflare 將保證請求"
+  },
+  {
+    "start": 466871,
+    "end": 472255,
+    "text": "are processed in order, or to be precise, they can be processed in parallel, but the",
+    "zh": "是按順序處理的，或者準確的說是可以並行處理的，但是"
+  },
+  {
+    "start": 472255,
+    "end": 476246,
+    "text": "storage will be touched and mutated in order.",
+    "zh": "儲存將按順序被觸及和變異。"
+  },
+  {
+    "start": 476727,
+    "end": 482191,
+    "text": "So it's not possible with durable objects on Cloudflare and also on Svelte, as you will",
+    "zh": "因此，在 Cloudflare 和 Svelte 上使用持久性物件是不可能的，正如您所做的那樣"
+  },
+  {
+    "start": 482191,
+    "end": 486759,
+    "text": "later see, to buy the last ticket twice, for example.",
+    "zh": "後來看看，例如把最後一張票買兩次。"
+  },
+  {
+    "start": 486999,
+    "end": 488329,
+    "text": "So that would be one good example.",
+    "zh": "這將是一個很好的例子。"
+  },
+  {
+    "start": 488986,
+    "end": 494419,
+    "text": "And again, it's not just about preventing that simultaneous purchase, it's also about",
+    "zh": "再說一遍，這不僅是為了防止同時購買，也是為了"
+  },
+  {
+    "start": 495252,
+    "end": 498574,
+    "text": "having that advantage of building distributed systems if you want to do that.",
+    "zh": "如果您想這樣做，那麼擁有建立分散式系統的優勢。"
+  },
+  {
+    "start": 499279,
+    "end": 505729,
+    "text": "So here I in the end have again just a counter if you're looking at it like this, because",
+    "zh": "所以如果你這樣看的話，我最終還是有一個計數器，因為"
+  },
+  {
+    "start": 505841,
+    "end": 508906,
+    "text": "I have a capacity, we can get the capacity and we can change it.",
+    "zh": "我有能力，我們可以獲得能力並且可以改變它。"
+  },
+  {
+    "start": 508970,
+    "end": 513398,
+    "text": "It's, it's a counter, but it's a good example for a more realistic durable object.",
+    "zh": "它是，它是一個計數器，但它是一個更現實的耐用物件的好例子。"
+  },
+  {
+    "start": 514024,
+    "end": 520939,
+    "text": "So here to also show this, of course I can send this request to get some meetup tickets.",
+    "zh": "所以在這裡也表明這一點，我當然可以發送此請求以獲得一些聚會門票。"
+  },
+  {
+    "start": 520987,
+    "end": 522174,
+    "text": "Again, the logic is the same.",
+    "zh": "同樣，邏輯是相同的。"
+  },
+  {
+    "start": 522270,
+    "end": 527551,
+    "text": "We have our durable object type and then we have concrete instances with different names",
+    "zh": "我們有持久性物件類型，然後有不同名稱的具體實例"
+  },
+  {
+    "start": 527905,
+    "end": 529431,
+    "text": "and the names are totally up to you.",
+    "zh": "名字完全由你決定。"
+  },
+  {
+    "start": 529511,
+    "end": 534924,
+    "text": "But here if you go for meetup or meetups or whatever, or you can use whatever you want,",
+    "zh": "但在這裡，如果你去參加聚會或聚會或其他什麼，或者你可以使用任何你想要的東西，"
+  },
+  {
+    "start": 535133,
+    "end": 538024,
+    "text": "you see now I have a capacity of 5, sold 0.",
+    "zh": "你看現在我的產能是5，賣了0。"
+  },
+  {
+    "start": 538650,
+    "end": 544288,
+    "text": "If I send that other request, that POST request which is about selling and I also change",
+    "zh": "如果我發送其他請求，即關於銷售的 POST 請求，我也會更改"
+  },
+  {
+    "start": 544288,
+    "end": 548255,
+    "text": "this to meetups, now you see we sold 1, I have remaining 4.",
+    "zh": "這是聚會，現在你看我們賣了 1 個，我還剩下 4 個。"
+  },
+  {
+    "start": 548785,
+    "end": 554243,
+    "text": "If I do that again and again and again, at some point we're out of tickets here.",
+    "zh": "如果我一次又一次地這樣做，到了某個時候我們這裡的票就賣完了。"
+  },
+  {
+    "start": 556157,
+    "end": 558494,
+    "text": "That is an example for a durable object.",
+    "zh": "這是耐用物體的例子。"
+  },
+  {
+    "start": 558970,
+    "end": 564059,
+    "text": "Now, another example would be an AI agent, and agents are pretty good examples for durable",
+    "zh": "現在，另一個例子是人工智慧代理，代理是持久性的很好的例子"
+  },
+  {
+    "start": 564156,
+    "end": 570673,
+    "text": "objects because if you think about it, an AI agent, for one, often should run",
+    "zh": "對象，因為如果你想一想，人工智慧代理，例如，通常應該運行"
+  },
+  {
+    "start": 570705,
+    "end": 571929,
+    "text": "somewhere in the cloud.",
+    "zh": "在雲端的某個地方。"
+  },
+  {
+    "start": 572541,
+    "end": 574844,
+    "text": "You may not want it to run on your system.",
+    "zh": "您可能不希望它在您的系統上運作。"
+  },
+  {
+    "start": 574893,
+    "end": 577802,
+    "text": "Maybe you also want to share it with colleagues, something like this.",
+    "zh": "也許你也想與同事分享，類似這樣的事。"
+  },
+  {
+    "start": 578207,
+    "end": 579066,
+    "text": "So that's one thing.",
+    "zh": "所以這是一回事。"
+  },
+  {
+    "start": 580122,
+    "end": 582018,
+    "text": "In addition, it's definitely stateful.",
+    "zh": "此外，它絕對是有狀態的。"
+  },
+  {
+    "start": 582371,
+    "end": 583688,
+    "text": "It has this conversation.",
+    "zh": "有這樣的對話。"
+  },
+  {
+    "start": 584042,
+    "end": 587447,
+    "text": "Every request you send to the agent has just one message.",
+    "zh": "您發送給代理的每個請求都只有一條訊息。"
+  },
+  {
+    "start": 587833,
+    "end": 593166,
+    "text": "Of course, you could manage the history on your system and send the entire history with",
+    "zh": "當然，您可以管理系統上的歷史記錄並使用以下命令發送整個歷史記錄"
+  },
+  {
+    "start": 593198,
+    "end": 594484,
+    "text": "every request.",
+    "zh": "每一個請求。"
+  },
+  {
+    "start": 594982,
+    "end": 599303,
+    "text": "But if you don't wanna do that, if you wanna save some bandwidth, you could manage the",
+    "zh": "但如果你不想這樣做，如果你想節省一些頻寬，你可以管理"
+  },
+  {
+    "start": 599303,
+    "end": 602066,
+    "text": "history on the server instead in the durable object.",
+    "zh": "伺服器上的歷史記錄而不是持久性物件中的歷史記錄。"
+  },
+  {
+    "start": 602211,
+    "end": 603271,
+    "text": "So state makes sense.",
+    "zh": "所以狀態是有道理的。"
+  },
+  {
+    "start": 603496,
+    "end": 607880,
+    "text": "And it's not just the conversation history, the context, it's also, for example, files",
+    "zh": "它不僅僅是對話歷史記錄、上下文，還有文件等"
+  },
+  {
+    "start": 607977,
+    "end": 610830,
+    "text": "which you maybe want to upload so that the agent can operate on them.",
+    "zh": "您可能想要上傳這些內容，以便代理可以對其進行操作。"
+  },
+  {
+    "start": 611503,
+    "end": 616088,
+    "text": "Now I will say that especially with CELD, which we'll take a look at in a second, you",
+    "zh": "現在我要說的是，尤其是對於 CELD，我們稍後會討論，您"
+  },
+  {
+    "start": 616088,
+    "end": 621010,
+    "text": "don't have a file system, at least right now, in your cells, in your durable objects.",
+    "zh": "至少現在，在您的單元中、在您的耐用物件中沒有檔案系統。"
+  },
+  {
+    "start": 621378,
+    "end": 627021,
+    "text": "But you could kind of replicate it by attaching an S3 bucket, for example, or for small",
+    "zh": "但是您可以透過附加 S3 儲存桶來複製它，例如，或者對於小型儲存桶"
+  },
+  {
+    "start": 627150,
+    "end": 629410,
+    "text": "files you could also store them in SQLite.",
+    "zh": "您也可以將它們儲存在 SQLite 中。"
+  },
+  {
+    "start": 630436,
+    "end": 633209,
+    "text": "And that is what we'll be doing here in this demo, essentially.",
+    "zh": "本質上，這就是我們在本演示中要做的事情。"
+  },
+  {
+    "start": 634300,
+    "end": 640813,
+    "text": "So what we can do here then is still as before expose methods, in this case just one",
+    "zh": "那麼我們在這裡能做的仍然是像以前一樣公開方法，在這種情況下只有一個"
+  },
+  {
+    "start": 640861,
+    "end": 646460,
+    "text": "chat method, but in there we retrieve our history from that",
+    "zh": "聊天方法，但我們從中檢索歷史記錄"
+  },
+  {
+    "start": 647615,
+    "end": 652652,
+    "text": "storage and also our dataset, which is any files we may have.",
+    "zh": "儲存以及我們的資料集，即我們可能擁有的任何文件。"
+  },
+  {
+    "start": 653213,
+    "end": 660207,
+    "text": "And then we also take a look at what we got here and we return a response, we answer",
+    "zh": "然後我們也看看我們在這裡得到了什麼並返回一個回應，我們回答"
+  },
+  {
+    "start": 660993,
+    "end": 663285,
+    "text": "with a response that is AI generated.",
+    "zh": "並由人工智慧產生響應。"
+  },
+  {
+    "start": 663958,
+    "end": 667212,
+    "text": "And if we got a file, by the way, I'm storing that in the database, as I mentioned.",
+    "zh": "順便說一句，如果我們得到一個文件，我會將其儲存在資料庫中，正如我所提到的。"
+  },
+  {
+    "start": 667565,
+    "end": 670996,
+    "text": "Now here I'm using the AI SDK by Vercel.",
+    "zh": "現在我用的是 Vercel 的 AI SDK。"
+  },
+  {
+    "start": 671172,
+    "end": 672663,
+    "text": "That's why this code is quite lean.",
+    "zh": "這就是為什麼這段程式碼非常精簡。"
+  },
+  {
+    "start": 672935,
+    "end": 674715,
+    "text": "But indeed, I am setting up an agent here.",
+    "zh": "但事實上，我在這裡設立了一個代理人。"
+  },
+  {
+    "start": 675179,
+    "end": 680117,
+    "text": "I'm registering some tools, tools which are defined here, tools which allow the agent",
+    "zh": "我正在註冊一些工具，這裡定義的工具，允許代理的工具"
+  },
+  {
+    "start": 680453,
+    "end": 681992,
+    "text": "to actually read a file.",
+    "zh": "實際讀取文件。"
+  },
+  {
+    "start": 682056,
+    "end": 684285,
+    "text": "So get it from the database and read it.",
+    "zh": "所以從資料庫中獲取並讀取它。"
+  },
+  {
+    "start": 684621,
+    "end": 687410,
+    "text": "And also to run some code, some standard JavaScript code.",
+    "zh": "還可以運行一些程式碼，一些標準的 JavaScript 程式碼。"
+  },
+  {
+    "start": 687907,
+    "end": 694142,
+    "text": "JavaScript, because in both Cloudflare Workers and especially also you have, um,",
+    "zh": "JavaScript，因為在 Cloudflare Workers 中，尤其是，嗯，"
+  },
+  {
+    "start": 695376,
+    "end": 697876,
+    "text": "it's not a sandbox, it's not a Linux environment.",
+    "zh": "它不是沙箱，也不是 Linux 環境。"
+  },
+  {
+    "start": 697924,
+    "end": 703004,
+    "text": "You can't install arbitrary tools or execute arbitrary code in there, but you can execute",
+    "zh": "您不能在其中安裝任意工具或執行任意程式碼，但您可以執行"
+  },
+  {
+    "start": 703020,
+    "end": 703982,
+    "text": "JavaScript code in there.",
+    "zh": "JavaScript 程式碼就在那裡。"
+  },
+  {
+    "start": 705136,
+    "end": 711129,
+    "text": "Um, you still may wanna do this in a sandbox instead, uh, but here to keep things simple,",
+    "zh": "嗯，你可能仍然想在沙箱中執行此操作，但是為了簡單起見，"
+  },
+  {
+    "start": 711241,
+    "end": 712972,
+    "text": "we're just executing it in place.",
+    "zh": "我們只是就地執行它。"
+  },
+  {
+    "start": 713741,
+    "end": 714959,
+    "text": "So that's what's happening here.",
+    "zh": "這就是這裡發生的事情。"
+  },
+  {
+    "start": 715167,
+    "end": 717939,
+    "text": "And with that, I can send requests like this.",
+    "zh": "這樣，我就可以發送這樣的請求。"
+  },
+  {
+    "start": 718052,
+    "end": 718806,
+    "text": "This to",
+    "zh": "這到"
+  },
+  {
+    "start": 720057,
+    "end": 725963,
+    "text": "upload my sales CSV file, which is part of my project, and ask a question like which",
+    "zh": "上傳我的銷售 CSV 檔案（這是我的專案的一部分），然後提出一個問題，例如"
+  },
+  {
+    "start": 727022,
+    "end": 729798,
+    "text": "units, which product sold the most units.",
+    "zh": "單位，哪種產品銷售量最多。"
+  },
+  {
+    "start": 730231,
+    "end": 734740,
+    "text": "Or I could also ask for what's the overall revenue.",
+    "zh": "或者我也可以問一下總收入是多少。"
+  },
+  {
+    "start": 736024,
+    "end": 738928,
+    "text": "And now this will upload this file, send this request.",
+    "zh": "現在這將上傳該文件，發送該請求。"
+  },
+  {
+    "start": 738976,
+    "end": 739939,
+    "text": "It can take a short while.",
+    "zh": "這可能需要一段時間。"
+  },
+  {
+    "start": 740276,
+    "end": 742234,
+    "text": "We'll store the file in the database.",
+    "zh": "我們將該檔案儲存在資料庫中。"
+  },
+  {
+    "start": 742282,
+    "end": 747662,
+    "text": "So in following conversations, we shouldn't need to send that file and still be able",
+    "zh": "因此，在接下來的對話中，我們不需要發送該文件，但仍然能夠"
+  },
+  {
+    "start": 747662,
+    "end": 749157,
+    "text": "to ask questions about it.",
+    "zh": "詢問有關它的問題。"
+  },
+  {
+    "start": 750058,
+    "end": 755171,
+    "text": "And we should get back a response by the agent, which is now running in the cloud here.",
+    "zh": "我們應該得到代理的回應，該代理現在在雲端中運行。"
+  },
+  {
+    "start": 757120,
+    "end": 757140,
+    "text": "Yeah.",
+    "zh": "是的。"
+  },
+  {
+    "start": 757140,
+    "end": 762440,
+    "text": "And indeed, I could now send a follow-up message without a file.",
+    "zh": "事實上，我現在可以在沒有文件的情況下發送後續訊息。"
+  },
+  {
+    "start": 762958,
+    "end": 764359,
+    "text": "And for example, send,",
+    "zh": "例如，發送，"
+  },
+  {
+    "start": 767197,
+    "end": 772582,
+    "text": "what is the most popular product in sales CSV.",
+    "zh": "銷售 CSV 中最受歡迎的產品是什麼。"
+  },
+  {
+    "start": 772646,
+    "end": 777719,
+    "text": "And since I uploaded it before, due to the tools we gave this agent, it should be able",
+    "zh": "而且由於我之前上傳過，由於我們為該代理提供的工具，它應該能夠"
+  },
+  {
+    "start": 777847,
+    "end": 783049,
+    "text": "to use these tools in the cloud in this durable object and then answer this question.",
+    "zh": "在這個持久性物件中使用雲端中的這些工具然後回答這個問題。"
+  },
+  {
+    "start": 783547,
+    "end": 784574,
+    "text": "And it is able to do that.",
+    "zh": "它能夠做到這一點。"
+  },
+  {
+    "start": 784847,
+    "end": 788186,
+    "text": "So that is durable objects, but that is not Svelte, right?",
+    "zh": "那是耐用的物體，但那不是 Svelte，對吧？"
+  },
+  {
+    "start": 788443,
+    "end": 792441,
+    "text": "Well, it almost is because Svelte is the same thing but self-deployed.",
+    "zh": "嗯，這幾乎是因為 Svelte 是同一件事，但卻是自行部署的。"
+  },
+  {
+    "start": 792938,
+    "end": 796855,
+    "text": "With Cloudflare durable objects, you get a lot of convenience, but of course you're paying",
+    "zh": "使用 Cloudflare 耐用對象，您可以獲得很多便利，但當然您需要付費"
+  },
+  {
+    "start": 796952,
+    "end": 797610,
+    "text": "for them.",
+    "zh": "對於他們來說。"
+  },
+  {
+    "start": 798669,
+    "end": 805466,
+    "text": "Self-deployed, you're also paying, but per VPS, not per durable object or CEL as it's",
+    "zh": "自行部署，您也需要付費，但按 VPS 付費，而不是按耐用物件或 CEL 付費"
+  },
+  {
+    "start": 805466,
+    "end": 807518,
+    "text": "called in CEL's case.",
+    "zh": "在 CEL 的案例中被稱為。"
+  },
+  {
+    "start": 808207,
+    "end": 813722,
+    "text": "So the idea is that you can still have that same wrangler.json file we had for Cloudflare",
+    "zh": "所以我們的想法是，您仍然可以擁有與 Cloudflare 相同的 wrangler.json 文件"
+  },
+  {
+    "start": 813802,
+    "end": 816992,
+    "text": "because they really want to have that compatibility, at least to some degree.",
+    "zh": "因為他們確實希望擁有這種相容性，至少在某種程度上是如此。"
+  },
+  {
+    "start": 817089,
+    "end": 818499,
+    "text": "Many features are still missing.",
+    "zh": "許多功能仍然缺失。"
+  },
+  {
+    "start": 818547,
+    "end": 822459,
+    "text": "It's also in alpha, so things are broken to some extent or can be broken.",
+    "zh": "它也處於阿爾法階段，所以事情在某種程度上被破壞或可能被破壞。"
+  },
+  {
+    "start": 823261,
+    "end": 825713,
+    "text": "But generally the idea is to have similarity.",
+    "zh": "但一般來說，這個想法是具有相似性。"
+  },
+  {
+    "start": 826210,
+    "end": 828727,
+    "text": "And indeed, just as with Cloudflare, we have an entry point.",
+    "zh": "事實上，就像 Cloudflare 一樣，我們有一個入口點。"
+  },
+  {
+    "start": 829096,
+    "end": 833776,
+    "text": "And we have our durable objects or again, as they're called, cells that are registered.",
+    "zh": "我們有耐用的對象，或者再次，正如它們所說的，已註冊的單元。"
+  },
+  {
+    "start": 834385,
+    "end": 838617,
+    "text": "Then in the index.ts file, just as in the Cloudflare case, we take a look at the incoming",
+    "zh": "然後在index.ts檔案中，就像在Cloudflare案例中一樣，我們看一下傳入的"
+  },
+  {
+    "start": 838649,
+    "end": 843025,
+    "text": "request and we route that and we trigger our different cells.",
+    "zh": "請求，我們路由它並觸發不同的單元格。"
+  },
+  {
+    "start": 843682,
+    "end": 847417,
+    "text": "And such a cell looks almost like a durable object in Cloudflare.",
+    "zh": "這樣的單元看起來幾乎就像 Cloudflare 中的耐用物件。"
+  },
+  {
+    "start": 847689,
+    "end": 850126,
+    "text": "It's a class, but it does not extend anything.",
+    "zh": "它是一個類，但它不擴展任何東西。"
+  },
+  {
+    "start": 850206,
+    "end": 854502,
+    "text": "Instead, it has this constructor where it receives the durable object state that will",
+    "zh": "相反，它有一個建構函數，它接收持久物件狀態，該狀態將"
+  },
+  {
+    "start": 854582,
+    "end": 856537,
+    "text": "be passed in automatically by celled.",
+    "zh": "由 celled 自動傳入。"
+  },
+  {
+    "start": 857307,
+    "end": 859359,
+    "text": "And then here we have a fetch function.",
+    "zh": "然後這裡我們有一個獲取函數。"
+  },
+  {
+    "start": 859807,
+    "end": 864552,
+    "text": "Instead of one function per functionality, we have one shared function.",
+    "zh": "我們不是每個功能一個函數，而是一個共享函數。"
+  },
+  {
+    "start": 864841,
+    "end": 869426,
+    "text": "And in there we then take another look at the incoming request and for example differentiate",
+    "zh": "然後，我們再次查看傳入的請求，例如區分"
+  },
+  {
+    "start": 869426,
+    "end": 870644,
+    "text": "by method.",
+    "zh": "透過方法。"
+  },
+  {
+    "start": 870708,
+    "end": 875741,
+    "text": "But of course you could also again take a look at the URL and then we still access the",
+    "zh": "當然，你也可以再次查看 URL，然後我們仍然可以訪問"
+  },
+  {
+    "start": 875741,
+    "end": 876719,
+    "text": "storage as before.",
+    "zh": "儲存如前。"
+  },
+  {
+    "start": 876783,
+    "end": 880134,
+    "text": "And that's the same for the counter, for the ticket, for the agent.",
+    "zh": "對於櫃檯、機票、代理人都是一樣的。"
+  },
+  {
+    "start": 880486,
+    "end": 886498,
+    "text": "And therefore here I actually did already deploy this to an EC2 instance on AWS and I",
+    "zh": "因此，我實際上已經將其部署到 AWS 上的 EC2 實例，並且我"
+  },
+  {
+    "start": 886498,
+    "end": 889876,
+    "text": "then tunneled it to my local device, which is This is why I have a localhost address.",
+    "zh": "然後將其通過隧道傳輸到我的本地設備，這就是我擁有本地主機地址的原因。"
+  },
+  {
+    "start": 890215,
+    "end": 895649,
+    "text": "So I can again grab that counter here, for example, and then send this counter again,",
+    "zh": "例如，我可以再次在這裡抓取該計數器，然後再次發送該計數器，"
+  },
+  {
+    "start": 895698,
+    "end": 896652,
+    "text": "let's say to max.",
+    "zh": "讓我們說最大。"
+  },
+  {
+    "start": 897056,
+    "end": 902064,
+    "text": "And just as with Cloudflare Durable Objects, a new cell will be created on demand when",
+    "zh": "就像 Cloudflare Durable Objects 一樣，當以下情況發生時，將根據需要建立一個新單元："
+  },
+  {
+    "start": 902242,
+    "end": 904593,
+    "text": "needed, but then the storage will be persisted.",
+    "zh": "需要，但隨後存儲將持久化。"
+  },
+  {
+    "start": 904706,
+    "end": 907257,
+    "text": "And just as with Durable Objects, it's SQLite.",
+    "zh": "就像持久化物件一樣，它就是 SQLite。"
+  },
+  {
+    "start": 907923,
+    "end": 909500,
+    "text": "And if I change that,",
+    "zh": "如果我改變這一點"
+  },
+  {
+    "start": 913269,
+    "end": 915647,
+    "text": "that of course therefore also has an effect.",
+    "zh": "這當然也有影響。"
+  },
+  {
+    "start": 916172,
+    "end": 917150,
+    "text": "And is persisted.",
+    "zh": "並且是堅持下來的。"
+  },
+  {
+    "start": 917359,
+    "end": 919684,
+    "text": "Now, how do you deploy this though?",
+    "zh": "現在，您如何部署它？"
+  },
+  {
+    "start": 920181,
+    "end": 927028,
+    "text": "Well, when using Svelte, what you do is you install the Svelte binary typically on your",
+    "zh": "那麼，當使用 Svelte 時，您要做的就是通常將 Svelte 二進位檔案安裝在您的電腦上"
+  },
+  {
+    "start": 927076,
+    "end": 933089,
+    "text": "device, your MacBook for example, and on the node, on the EC2 instance where you wanna",
+    "zh": "設備（例如您的 MacBook）以及您想要的節點上的 EC2 執行個體上"
+  },
+  {
+    "start": 933570,
+    "end": 934613,
+    "text": "run your Svelte.",
+    "zh": "運行你的 Svelte。"
+  },
+  {
+    "start": 934853,
+    "end": 940273,
+    "text": "It's also worth noting that you're not limited to one VPS, one EC2 instance.",
+    "zh": "另外值得注意的是，您並不局限於一個 VPS、一個 EC2 執行個體。"
+  },
+  {
+    "start": 940626,
+    "end": 946112,
+    "text": "Instead, Svelte makes it very easy to manage a fleet of instances where your cells are",
+    "zh": "相反，Svelte 可以非常輕鬆地管理您的單元所在的一組實例"
+  },
+  {
+    "start": 946240,
+    "end": 948888,
+    "text": "distributed and it automatically handles all of that.",
+    "zh": "分佈式，它會自動處理所有這些。"
+  },
+  {
+    "start": 949049,
+    "end": 950268,
+    "text": "That's the really amazing part.",
+    "zh": "這才是真正令人驚奇的部分。"
+  },
+  {
+    "start": 950814,
+    "end": 954698,
+    "text": "Now what you need for that is an S3 bucket.",
+    "zh": "現在您需要一個 S3 儲存桶。"
+  },
+  {
+    "start": 954746,
+    "end": 958806,
+    "text": "And by the way, there are deployment MD files in this repo with more details.",
+    "zh": "順便說一句，此儲存庫中有包含更多詳細資訊的部署 MD 檔案。"
+  },
+  {
+    "start": 959303,
+    "end": 965835,
+    "text": "But what you need for CELD to work is you need an S3 bucket, you need to create that",
+    "zh": "但要讓 CELD 運作，您需要一個 S3 儲存桶，您需要建立它"
+  },
+  {
+    "start": 966123,
+    "end": 971259,
+    "text": "and you need to create one or more VPS instances, EC2 instances, for example.",
+    "zh": "您需要建立一個或多個VPS實例，例如EC2實例。"
+  },
+  {
+    "start": 971901,
+    "end": 978137,
+    "text": "And then you register that bucket when you use the celled tool on your system for deploying",
+    "zh": "然後，當您在系統上使用 celled 工具進行部署時，您可以註冊該儲存桶"
+  },
+  {
+    "start": 979051,
+    "end": 984756,
+    "text": "and you then deploy, in my case here, the examples/celled folder with that Wrangler JSONC",
+    "zh": "然後，在我的例子中，您可以使用 Wrangler JSONC 部署範例/celled 資料夾"
+  },
+  {
+    "start": 984805,
+    "end": 985157,
+    "text": "file.",
+    "zh": "文件。"
+  },
+  {
+    "start": 985542,
+    "end": 991280,
+    "text": "And behind the scenes, celled will register the node and do all the heavy lifting with",
+    "zh": "在幕後，celled 將註冊節點並完成所有繁重的工作"
+  },
+  {
+    "start": 991536,
+    "end": 996649,
+    "text": "S3, which basically acts as the orchestrator of your fleet of cells.",
+    "zh": "S3，它基本上充當單元群的協調器。"
+  },
+  {
+    "start": 997001,
+    "end": 1002899,
+    "text": "And on the EC2 instance or your VPS, that should be registered as one node that can",
+    "zh": "在 EC2 執行個體或您的 VPS 上，應將其註冊為節點，該節點可以"
+  },
+  {
+    "start": 1003637,
+    "end": 1005628,
+    "text": "launch and run cells.",
+    "zh": "啟動並運行單元。"
+  },
+  {
+    "start": 1006046,
+    "end": 1012275,
+    "text": "On that instance, you set up some environment variables in a special place where you",
+    "zh": "在這種情況下，您可以在一個特殊的位置設定一些環境變量"
+  },
+  {
+    "start": 1012467,
+    "end": 1015662,
+    "text": "point at the S3 bucket that is responsible for orchestrating.",
+    "zh": "指向負責編排的 S3 儲存桶。"
+  },
+  {
+    "start": 1015759,
+    "end": 1017380,
+    "text": "That's how the connection is established.",
+    "zh": "這就是建立連線的方式。"
+  },
+  {
+    "start": 1017685,
+    "end": 1022774,
+    "text": "You deploy to that bucket, and that bucket, by the way, will also hold the storage, the",
+    "zh": "您部署到該存儲桶，順便說一下，該存儲桶還將保存存儲、"
+  },
+  {
+    "start": 1022774,
+    "end": 1024476,
+    "text": "SQLite databases in the end.",
+    "zh": "最後是 SQLite 資料庫。"
+  },
+  {
+    "start": 1024589,
+    "end": 1026836,
+    "text": "They will be copied to the bucket, so to say.",
+    "zh": "可以這麼說，它們將被複製到儲存桶中。"
+  },
+  {
+    "start": 1027238,
+    "end": 1033293,
+    "text": "But then you register each instance that should be available for running cells with that",
+    "zh": "但是然後你註冊每個可用於運行單元的實例"
+  },
+  {
+    "start": 1033293,
+    "end": 1034112,
+    "text": "environment variable.",
+    "zh": "環境變數。"
+  },
+  {
+    "start": 1034385,
+    "end": 1038465,
+    "text": "And then you just run that celled command on that instance.",
+    "zh": "然後您只需在該實例上執行該 celled 命令即可。"
+  },
+  {
+    "start": 1038899,
+    "end": 1039413,
+    "text": "And that is all.",
+    "zh": "僅此而已。"
+  },
+  {
+    "start": 1039783,
+    "end": 1043445,
+    "text": "The entire registration orchestration happens automatically behind the scenes.",
+    "zh": "整個註冊編排在幕後自動發生。"
+  },
+  {
+    "start": 1043702,
+    "end": 1047012,
+    "text": "And again, if you want to try this on your own, there is this deployment.md file in this",
+    "zh": "再說一次，如果你想自己嘗試一下，這裡有這個deployment.md文件"
+  },
+  {
+    "start": 1047012,
+    "end": 1047413,
+    "text": "folder.",
+    "zh": "資料夾。"
+  },
+  {
+    "start": 1047654,
+    "end": 1050144,
+    "text": "You can point your agent at it and play around with it.",
+    "zh": "您可以將您的代理指向它並進行操作。"
+  },
+  {
+    "start": 1050449,
+    "end": 1054674,
+    "text": "You just need to create those AWS resources if you want to deploy there.",
+    "zh": "如果您想部署到那裡，您只需要建立這些 AWS 資源。"
+  },
+  {
+    "start": 1054964,
+    "end": 1056859,
+    "text": "It's of course not limited to AWS though.",
+    "zh": "當然，它不僅限於 AWS。"
+  },
+  {
+    "start": 1057132,
+    "end": 1060200,
+    "text": "And therefore the question is, why would you care?",
+    "zh": "因此問題是，為什麼要關心？"
+  },
+  {
+    "start": 1060425,
+    "end": 1063043,
+    "text": "Why not just use Cloudflare Durable Objects?",
+    "zh": "為什麼不直接使用 Cloudflare Durable Objects？"
+  },
+  {
+    "start": 1063091,
+    "end": 1063927,
+    "text": "And the answer is",
+    "zh": "答案是"
+  },
+  {
+    "start": 1065228,
+    "end": 1072199,
+    "text": "control, predictability over pricing and cost, and potentially also cost savings.",
+    "zh": "控制、定價和成本的可預測性，以及潛在的成本節約。"
+  },
+  {
+    "start": 1072536,
+    "end": 1076937,
+    "text": "Control is clear, it's your server, you have full control over that.",
+    "zh": "控制很明確，這是您的伺服器，您可以完全控制它。"
+  },
+  {
+    "start": 1077852,
+    "end": 1083377,
+    "text": "Predictability can be interesting because Durable Objects are really, really cheap.",
+    "zh": "可預測性可能很有趣，因為耐用物品真的非常非常便宜。"
+  },
+  {
+    "start": 1084019,
+    "end": 1090632,
+    "text": "There is a very generous free limit, and if you got the workers paid plan, you got lots",
+    "zh": "有一個非常慷慨的免費限制，如果你有工人付費計劃，你就會得到很多"
+  },
+  {
+    "start": 1090632,
+    "end": 1091434,
+    "text": "of invocations.",
+    "zh": "的調用。"
+  },
+  {
+    "start": 1091482,
+    "end": 1092542,
+    "text": "It's really cheap.",
+    "zh": "真的很便宜。"
+  },
+  {
+    "start": 1093007,
+    "end": 1099042,
+    "text": "But depending on what you're running there, at some point the cheap part will not",
+    "zh": "但取決於你在那裡運行的是什麼，在某些時候，便宜的部分不會"
+  },
+  {
+    "start": 1099860,
+    "end": 1100807,
+    "text": "suffice anymore.",
+    "zh": "夠了。"
+  },
+  {
+    "start": 1101273,
+    "end": 1107981,
+    "text": "And if you set something up in the wrong way, you could actually incur cost you did not",
+    "zh": "如果你以錯誤的方式設定某些東西，你實際上可能會產生你沒有設定的成本"
+  },
+  {
+    "start": 1108029,
+    "end": 1108639,
+    "text": "anticipate.",
+    "zh": "預料。"
+  },
+  {
+    "start": 1108768,
+    "end": 1111868,
+    "text": "It's not super likely necessary, but it has happened to people.",
+    "zh": "這不太可能是必要的，但它已經發生在人們身上。"
+  },
+  {
+    "start": 1112045,
+    "end": 1114391,
+    "text": "You can be paying way more than you thought you'd be paying.",
+    "zh": "您支付的費用可能比您想像的要多得多。"
+  },
+  {
+    "start": 1114937,
+    "end": 1119163,
+    "text": "And even if that does not happen, there will be a certain threshold where you'll be paying",
+    "zh": "即使這種情況沒有發生，你也會有一定的支付門檻"
+  },
+  {
+    "start": 1119275,
+    "end": 1123292,
+    "text": "more than for a VPS, depending on how expensive your VPS is, of course.",
+    "zh": "比 VPS 還要多，當然取決於您的 VPS 有多貴。"
+  },
+  {
+    "start": 1123758,
+    "end": 1129397,
+    "text": "On the Seltz webpage, they have this chart here where they in the end show the monthly",
+    "zh": "在 Seltz 網頁上，他們有這個圖表，最後顯示了每個月的情況"
+  },
+  {
+    "start": 1129477,
+    "end": 1132739,
+    "text": "cost depending on how many durable objects you got running.",
+    "zh": "成本取決於您運行的耐用物件的數量。"
+  },
+  {
+    "start": 1133494,
+    "end": 1137778,
+    "text": "And there is this point where Self-hosting is more affordable.",
+    "zh": "在這一點上，自架網站更便宜。"
+  },
+  {
+    "start": 1138291,
+    "end": 1143245,
+    "text": "You have that baseline cost because the VPS costs you money even if it's not doing anything,",
+    "zh": "你有這個基準成本，因為即使 VPS 不做任何事情，它也會花費你的錢，"
+  },
+  {
+    "start": 1144063,
+    "end": 1150075,
+    "text": "whereas on Cloudflare, you only pay for the Cloudflare Workers paid plan and then extra",
+    "zh": "而在 Cloudflare 上，您只需支付 Cloudflare Workers 付費方案的費用，然後再支付額外費用"
+  },
+  {
+    "start": 1150075,
+    "end": 1154436,
+    "text": "per invocation if you exceed the thresholds included in those plans.",
+    "zh": "如果您超過這些計劃中包含的閾值，則每次調用。"
+  },
+  {
+    "start": 1155142,
+    "end": 1160528,
+    "text": "But on your VPS, you always pay, but then that of course stays stable until you maybe",
+    "zh": "但在你的 VPS 上，你總是付費，但當然會保持穩定，直到你可能"
+  },
+  {
+    "start": 1160528,
+    "end": 1161250,
+    "text": "need to scale up.",
+    "zh": "需要擴大規模。"
+  },
+  {
+    "start": 1161394,
+    "end": 1164841,
+    "text": "But even then, you can scale up in a more predictable, incrementable way.",
+    "zh": "但即便如此，您也可以以更可預測、可增量的方式進行擴充。"
+  },
+  {
+    "start": 1166206,
+    "end": 1167217,
+    "text": "That can be advantageous.",
+    "zh": "這可能是有利的。"
+  },
+  {
+    "start": 1167410,
+    "end": 1168855,
+    "text": "Again, it's still in alpha.",
+    "zh": "再說一遍，它仍處於 alpha 階段。"
+  },
+  {
+    "start": 1169095,
+    "end": 1172563,
+    "text": "I just found it interesting and I figured why not share it?",
+    "zh": "我只是發現它很有趣，我想為什麼不分享它呢？"
+  },
+  {
+    "start": 1172868,
+    "end": 1175533,
+    "text": "Maybe even durable objects are not clear to everybody.",
+    "zh": "也許連耐用的東西也不是每個人都清楚的。"
+  },
+  {
+    "start": 1175597,
+    "end": 1177363,
+    "text": "So hopefully now it's all a bit clearer.",
+    "zh": "所以希望現在一切都更清楚了。"
+  }
+]
